@@ -4,6 +4,10 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+### Security
+- Run CodeQL on the Python tools and the workflows for every pull request, push to main and once a week.
+- Attach SLSA provenance (`multiple.intoto.jsonl`) to each release and verify it with slsa-verifier.
+
 ## [0.1.0] - 2026-10-28
 
 ### Added
