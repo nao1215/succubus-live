@@ -1,4 +1,4 @@
-.PHONY: check verify scripts draft game committed notices gozen-check voice-size run web web-size desktop voices voices-en banner clean help
+.PHONY: check verify scripts draft game committed notices gozen-check voice-size run web web-size desktop voices voices-en clean help
 
 # gozen comes from go.mod (the tool directive), so the CLI and the player runtimes are one version.
 GOZEN = go tool gozen
@@ -83,9 +83,6 @@ voices-en: ## Render the English voices of new or changed lines and reactions (n
 
 draft: ## Write data/ for the browser draft of src/ (index.html, reader.html; serve it with python3 tools/serve.py)
 	python3 tools/build.py
-
-banner: ## Draw doc/img/banner.png (needs Pillow)
-	python3 tools/make_banner.py
 
 clean: ## Remove the exports and the downloaded runtimes
 	rm -rf dist .cache data

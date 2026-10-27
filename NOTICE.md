@@ -7,7 +7,6 @@ Succubus Live is released under the [MIT License](./LICENSE). The following part
 | File | Font | License |
 | ---- | ---- | ------- |
 | `game/assets/fonts/mplus-1p-regular.ttf` (the same path in the desktop zips) | M+ 1p Regular by M+ FONTS PROJECT | [M+ FONTS License](./game/assets/fonts/LICENSE.txt), beside the font in the desktop zips; `make web` also puts it uncompressed at the top of the site as `LICENSE-mplus.txt` (free to use, copy and distribute, with or without modification) |
-| `tools/banner/LilitaOne-Regular.ttf` (the banner only) | Lilita One by Juan Montoreano | [SIL Open Font License 1.1](./tools/banner/OFL-LilitaOne.txt) |
 
 ## The gozen player
 
