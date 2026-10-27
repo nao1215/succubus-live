@@ -4,8 +4,11 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-28
+
 ### Added
-- Six streamers, always live: Lise (games), Mora (single life), Pim (family life), Ella (music), Nox (programming) and Vespa (pop culture), with 50 streams of 10 to 15 minutes in Japanese and English.
+- Six streamers, always live: Lise (games), Mora (single life), Pim (family life), Ella (music), Nox (programming) and Vespa (pop culture), with 51 streams of 10 to 15 minutes in Japanese and English.
+- Four collabs that open after you have watched both streamers for 30 minutes, one of them with Gyaru from Rabbit Run as a guest.
 - Comments, answers to the streamers' questions and tips; the streamers may read your comment out and answer it, and they remember you.
 - Pre-rendered voices for every line of the streams, in Japanese (Irodori-TTS) and English (Kokoro-82M).
 - The browser version on GitHub Pages and desktop zips for Windows, macOS and Linux.
