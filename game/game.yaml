@@ -1,0 +1,24 @@
+schema_version: 9
+id: succubus-live
+title: Succubus Live
+language: ja
+languages: [ja, en]
+fonts:
+  regular: fonts/mplus-1p-regular.ttf
+screen:
+  width: 1920
+  height: 1080
+# タイトルとメニューは無い（ADR 0049）：最新のセーブ（自動セーブ）から開き、無ければ start から。保存は自動だけ。
+menus: none
+start:
+  location: lobby
+  gold: 3000
+# 配信（ADR 0048）。data/ と streams/ と assets/ は tools/import_stream.py が試作から作る。
+streams: data/streams.yaml
+reactions:
+  lise: react.yaml
+  mora: react.yaml
+  pim: react.yaml
+  ella: react.yaml
+  nox: react.yaml
+  vespa: react.yaml

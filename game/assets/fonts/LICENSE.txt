@@ -1,0 +1,7 @@
+M+ 1p regular 1.060 — M+ FONTS PROJECT
+Copied from the local Gozen novel sample: examples/novel/game/assets/fonts/mplus-1p-regular.ttf.
+License reproduced from examples/novel/ASSETS.md:
+
+These fonts are free software. Unlimited permission is granted to use, copy, and
+distribute them, with or without modification, either commercially or noncommercially.
+THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.

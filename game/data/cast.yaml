@@ -1,0 +1,9 @@
+# 配信者とゲスト（話すだけの人物）。tools/import_stream.py が作る。
+actors:
+  lise: {name: リゼ, puppet: lise/puppet.yaml}
+  mora: {name: モーラ, puppet: mora/puppet.yaml}
+  pim: {name: ピム, puppet: pim/puppet.yaml}
+  ella: {name: エラ, puppet: ella/puppet.yaml}
+  nox: {name: ノクス, puppet: nox/puppet.yaml}
+  vespa: {name: ヴェスパ, puppet: vespa/puppet.yaml}
+  gyal: {name: ギャル, puppet: gyal/puppet.yaml}

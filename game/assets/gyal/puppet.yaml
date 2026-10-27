@@ -1,0 +1,87 @@
+# tools/import_stream.py が試作の assets/<id>/parts.json と src/cast.yaml の rig から作る。
+# 表情は顔の上半分の差分。表情の間はまばたきしない（試作と同じ）。口の閉じは元の顔の口。
+# 胸（soft_sway）は試作の固いばね：揺れは小さく、1〜2回で収まる。
+base: base.png
+face: normal
+faces:
+  normal: {}
+  smile:
+    image: face_smile.png
+    at: [905, 250]
+    eyes: {'off': true}
+  smug:
+    image: face_smug.png
+    at: [905, 250]
+    eyes: {'off': true}
+  shy:
+    image: face_shy.png
+    at: [905, 250]
+    eyes: {'off': true}
+  surprised:
+    image: face_surprised.png
+    at: [905, 250]
+    eyes: {'off': true}
+  annoyed:
+    image: face_annoyed.png
+    at: [905, 250]
+    eyes: {'off': true}
+  sad:
+    image: face_sad.png
+    at: [905, 250]
+    eyes: {'off': true}
+  angry:
+    image: face_angry.png
+    at: [905, 250]
+    eyes: {'off': true}
+  laugh:
+    image: face_laugh.png
+    at: [905, 250]
+    eyes: {'off': true}
+  sleepy:
+    image: face_sleepy.png
+    at: [905, 250]
+    eyes: {'off': true}
+  thinking:
+    image: face_thinking.png
+    at: [905, 250]
+    eyes: {'off': true}
+  flustered:
+    image: face_flustered.png
+    at: [905, 250]
+    eyes: {'off': true}
+eyes:
+  closed:
+    image: eyes_closed.png
+    at: [925, 270]
+  every: [2.2, 6.7]
+  double: 0
+mouth:
+  frames:
+  - face
+  - image: mouth_half.png
+    at: [960, 375]
+  - image: mouth_open.png
+    at: [960, 375]
+  speed: 8
+head:
+  center: [1024, 288]
+  radius: 240
+  neck: [1012, 462]
+soft_sway:
+- ellipse: [826, 708, 138, 138]
+  follow: body
+  axis: y
+  stiffness: 170
+  damping: 15
+  limit: 10.8
+- ellipse: [1048, 710, 132, 132]
+  follow: body
+  axis: y
+  stiffness: 184
+  damping: 15
+  limit: 10.8
+motion:
+  breath: {depth: 0, period: 4.4}
+  sway: {angle: 0, shift: 0, period: 7.3}
+  tilt: {angle: 0}
+  talk: {nod: 0}

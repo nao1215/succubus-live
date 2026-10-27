@@ -1,0 +1,3 @@
+# 開くと配信の一覧。tools/import_stream.py が作る。
+locations:
+  lobby: {name: 配信一覧, stream: lobby}
