@@ -1,0 +1,279 @@
+# 台詞の声（tools/voices.py が読む）。2026-10-27 に決めた。
+# モデル：Irodori-TTS v4.1-Small-MF（MIT、https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF）。CPU で 1 文あたり実時間とほぼ同じ。
+# 声の作り方：caption（声の説明の文）だけで、参照なしに ref_text を読ませた合成の声から、高さが6人で散る1本を選び（design_seed）、
+#   それを参照音声 <id>.flac として残した。台詞は「参照音声＋caption」で読ませるので、行が変わっても同じ声になる。
+#   実在の人の声は使っていない（モデルの規約「Do not use this model to clone or impersonate the voice of any individual」を守る）。
+#   参照音声を作り直すと声が変わるので、消したら assets/voice/<id>/ も全部作り直すこと。
+# 高さ（声の中央値、2026-10-27 に測った）：モーラ 約185Hz < リゼ 約224Hz < ノクス 約270Hz < エラ 約285Hz < ヴェスパ 約340Hz < ピム 約460Hz
+model: Aratako/Irodori-TTS-v4.1-Small-MF
+revision: null   # 決めた版に固定したいときはコミットの sha を書く
+speakers:
+  lise:   # 2026-10-28 作り直し（ユーザー「幼そう」→ 試聴 D を選んだ。約224Hz）。前の声は design_seed 22・約235Hz
+    ref: lise.flac
+    design_seed: 3
+    caption: 二十代前半の女性。涼しく落ち着いた声で、甘さはなく、気だるげにそっけなく話す。
+    ref_text: 起きてないわ。座ってるだけ。楽をしたい人は、バグ技を見つけるのが上手いの。私が言うんだから、本当よ。
+    duration_scale: 1.1
+  mora:
+    ref: mora.flac
+    design_seed: 55
+    caption: 低く落ち着いた声の三十代の女性。淡々と、感情を抑えて、冷静にはっきり話す。
+    ref_text: 番号札の数字ってね、順番じゃないの。窓口ごとに別の帳面で数えてるの。私はそれが許せない。
+    duration_scale: 1.0
+  pim:
+    ref: pim.flac
+    design_seed: 22
+    caption: 明るく元気な若い女性。高めの声で、早口で、はきはきと楽しそうに話す。
+    ref_text: 娘が寝た三十秒後に、夫が廊下の真ん中を踏みました！ 図まで描いて貼ってあるのにです！
+    duration_scale: 0.88
+  ella:
+    ref: ella.flac
+    design_seed: 22
+    caption: 上品で丁寧な口調のお嬢様のような若い女性。柔らかく澄んだ声で、ゆったりと優雅に話す。
+    ref_text: 率直に申し上げます。その転調は、作法として最悪でございます。そして最高でございます。
+    duration_scale: 1.05
+  nox:
+    ref: nox.flac
+    design_seed: 22
+    caption: 内気な若い女性。小声で、ぼそぼそと、ささやくように早口で話す。
+    ref_text: それ、確認なしで消えるの。先に何を指してるか見て。待って、ここ好きなの。
+    duration_scale: 0.85
+  vespa:
+    ref: vespa.flac
+    design_seed: 11
+    caption: 元気いっぱいの若い女性。張りのある大きな声で、テンション高く、勢いよく話す。
+    ref_text: 任せて！ 壁サークルは、壁際に並ぶ大手のことだよ！ ここからオタクの話ね！ 行こう！
+    duration_scale: 0.95
+  gyal:   # ゲスト（Rabbit Run のギャル。成人、明るく活発）。2026-10-27 試聴の B 案をユーザーが選んだ
+    ref: gyal.flac
+    design_seed: 7
+    caption: ハイテンションな若い女性。張りのある明るい声で、語尾を伸ばしながら、早口でノリノリに話す。
+    ref_text: はいはーい、映ってる？ マジ寒いじゃん、この部屋。ウケる！ ほら、動いてないと凍るって！
+    duration_scale: 0.88
+# 読み違える書き方の言い換え（読み上げに渡す文字列だけを変える。ファイル名のハッシュは表示の文字列のまま）。
+# [表示, 読み] の組。上から順に置き換える。
+readings:
+- [二〇二五年, 二千二十五年]
+- [ｗｗｗ, '']
+- [ｗｗ, '']
+- ['1-1', いちのいち]
+- [$FF, エフエフ]
+- ['888', はちはちはち]
+- [emacs, イーマックス]
+- [OAM, オーエーエム]
+# ---------------------------------------------------------------- 英語（tools/voices.py --lang en が読む）
+# モデル：Kokoro-82M（Apache-2.0、https://huggingface.co/hexgrad/Kokoro-82M）。CPU。声はモデルに付いている既製の声（af_/bf_）。
+# 2026-10-27 の試聴で決めた声と速さ。bf_ は英国英語のパイプライン（lang b）で読む。
+# 音声の鍵は表示する英語（lang/en.yaml で訳した後の文字列）。置き場は日本語と同じ assets/voice/<id>/。
+en:
+  model: hexgrad/Kokoro-82M
+  speakers:
+    lise:  {voice: af_sarah,    speed: 0.88}
+    mora:  {voice: bf_emma,     speed: 1.0}
+    pim:   {voice: af_bella,    speed: 1.15}
+    ella:  {voice: bf_isabella, speed: 0.95}
+    nox:   {voice: af_nicole,   speed: 1.15}
+    vespa: {voice: af_heart,    speed: 1.1}
+    gyal:  {voice: af_nova,     speed: 1.1}   # ゲスト（Rabbit Run のギャル）。2026-10-27 試聴の B 案をユーザーが選んだ
+  # misaki の辞書に無い語を読む espeak-ng（OS の。apt install espeak-ng、brew install espeak-ng）。無ければ辞書に無い語は無音になる。
+  # 場所は環境変数 ESPEAK_NG_LIBRARY・ESPEAK_NG_DATA、ここ（library・data）、OS から探した場所の順（tools/voices.py の espeak_paths）
+  espeak:
+    library: null
+    data: null
+  # 読み違える語の発音（misaki の [語](/IPA/) で渡す。読み上げに渡す文字列だけを変え、ハッシュは表示の文字列のまま）。
+  # [表示, 読み] の組。上から順に、語の単位で、大文字小文字を区別せずに置き換える（語の途中や、前の置き換えの [ ] の中は変えない）。
+  # 「Harumi's」の 's は自動で読みに足す。日本語の語（ローマ字）は後ろから二つ目の音節に強勢を置いた読み
+  # （2026-10-27 に台詞の英語 4754 行を misaki に通し、辞書に無かった日本語の語。英語の固有名詞は espeak-ng に任せる）。
+  readings:
+  # 試聴で決めた読みと、英語の名前で espeak-ng が外すもの
+  - ['Kinoko no Yama', '[Kinoko](/kinˈOkO/) no [Yama](/jˈɑmə/)']
+  - ['Takenoko no Sato', '[Takenoko](/tɑkˈɛnOkO/) no [Sato](/sˈɑtO/)']
+  - ['Shiro-Noir', '[Shiro-Noir](/ʃˈiɾO nwˈɑɹ/)']
+  - ['Komeda', '[Komeda](/kˈOmɛdə/)']
+  - ['Comiket', '[Comiket](/kˈɑmikɛt/)']
+  - ['Famicom', '[Famicom](/fˈæmikɑm/)']
+  - ['Lise', '[Lise](/lˈiːzə/)']
+  - ['Nox', '[Nox](/nˈɑks/)']
+  - ['lmao', '[lmao](/ˌɛlˌɛmˌAˈO/)']
+  - ['Mustaine', '[Mustaine](/mʌstˈAn/)']
+  - ['Yngwie', '[Yngwie](/ˈɪŋvA/)']
+  - ['Iommi', '[Iommi](/IˈOmi/)']
+  - ['Cockburn', '[Cockburn](/kˈObɜɹn/)']
+  # 日本語の語
+  - ['Ten-Shio', '[Ten-Shio](/tˈɛn ʃˈiO/)']
+  - ['Ten-Ama', '[Ten-Ama](/tˈɛn ˈɑmɑ/)']
+  - ['Ni-Re', '[Ni-Re](/nˈi ɾˈɛ/)']
+  - ['Re-Ni', '[Re-Ni](/ɾˈɛ nˈi/)']
+  - ['Nira-Reba', '[Nira-Reba](/nˈiɾɑ ɾˈɛbɑ/)']
+  - ['Reba-Nira', '[Reba-Nira](/ɾˈɛbɑ nˈiɾɑ/)']
+  - ['Han-Cha', '[Han-Cha](/hˈɑn ʧˈɑ/)']
+  - ['Cha-Men', '[Cha-Men](/ʧˈɑ mˈɛn/)']
+  - ['Machi-chuka', '[Machi-chuka](/mˈɑʧi ʧˈukɑ/)']
+  - ['Harumi', '[Harumi](/hɑɾˈumi/)']
+  - ['Budokan', '[Budokan](/budˈOkɑn/)']
+  - ['Takenoko', '[Takenoko](/tɑkˈɛnOkO/)']
+  - ['Kinoko', '[Kinoko](/kinˈOkO/)']
+  - ['Senpai', '[Senpai](/sˈɛnpI/)']
+  - ['Minami', '[Minami](/minˈɑmi/)']
+  - ['otsukaresama', '[otsukaresama](/Otsukɑɾɛsˈɑmɑ/)']
+  - ['Yoru', '[Yoru](/jˈOɾu/)']
+  - ['Mimi', '[Mimi](/mˈimi/)']
+  - ['Saizeriya', '[Saizeriya](/sIzɛɾˈijɑ/)']
+  - ['karaage', '[karaage](/kɑɾˈɑɡɛ/)']
+  - ['tenshinhan', '[tenshinhan](/tɛnʃˈinhɑn/)']
+  - ['enka', '[enka](/ˈɛnkɑ/)']
+  - ['gacha', '[gacha](/ɡˈɑʧɑ/)']
+  - ['mochi', '[mochi](/mˈOʧi/)']
+  - ['cheki', '[cheki](/ʧˈɛki/)']
+  - ['Heisei', '[Heisei](/hˈAsA/)']
+  - ['ozoni', '[ozoni](/OzˈOni/)']
+  - ['yakiniku', '[yakiniku](/jɑkinˈiku/)']
+  - ['Sugi', '[Sugi](/sˈuɡi/)']
+  - ['Mura', '[Mura](/mˈuɾɑ/)']
+  - ['Ko', '[Ko](/kˈO/)']
+  - ['mikan', '[mikan](/mˈikɑn/)']
+  - ['desu', '[desu](/dˈɛsu/)']
+  - ['Bikkuriman', '[Bikkuriman](/bikuɾˈimɑn/)']
+  - ['machi', '[machi](/mˈɑʧi/)']
+  - ['chuka', '[chuka](/ʧˈukɑ/)']
+  - ['furusato', '[furusato](/fuɾusˈɑtO/)']
+  - ['Kitakata', '[Kitakata](/kitɑkˈɑtɑ/)']
+  - ['Edokko', '[Edokko](/ɛdˈOkO/)']
+  - ['kintsugi', '[kintsugi](/kintsˈuɡi/)']
+  - ['shin-eitai', '[shin-eitai](/ʃinˈAtI/)']
+  - ['SIGTERM', '[SIGTERM](/sˈɪɡtɜɹm/)']
+  - ['SIGKILL', '[SIGKILL](/sˈɪɡkɪl/)']
+  - ['SIGURG', '[SIGURG](/sˈɪɡɜɹɡ/)']
+  - ['Yamagata', '[Yamagata](/jɑmɑɡˈɑtɑ/)']
+  - ['Oarai', '[Oarai](/OˈɑɾI/)']
+  - ['butaman', '[butaman](/butˈɑmɑn/)']
+  - ['nikuman', '[nikuman](/nikˈumɑn/)']
+  - ['Yumetaro', '[Yumetaro](/jumɛtˈɑɾO/)']
+  - ['Ocha', '[Ocha](/ˈOʧɑ/)']
+  - ['Ito', '[Ito](/ˈitO/)']
+  - ['Uesama', '[Uesama](/uɛsˈɑmɑ/)']
+  - ['agedori', '[agedori](/ɑɡɛdˈOɾi/)']
+  - ['oden', '[oden](/ˈOdɛn/)']
+  - ['tane', '[tane](/tˈɑnɛ/)']
+  - ['shiritori', '[shiritori](/ʃiɾitˈOɾi/)']
+  - ['Anpanman', '[Anpanman](/ɑnpˈɑnmɑn/)']
+  - ['tomorokoshi', '[tomorokoshi](/tOmOɾOkˈOʃi/)']
+  - ['tomokoroshi', '[tomokoroshi](/tOmOkOɾˈOʃi/)']
+  - ['Bamiyan', '[Bamiyan](/bɑmˈijɑn/)']
+  - ['nozei', '[nozei](/nˈOzA/)']
+  - ['nouzei', '[nouzei](/nˈOzA/)']
+  - ['hojicha', '[hojicha](/hOʤˈiʧɑ/)']
+  - ['kayokyoku', '[kayokyoku](/kɑjOkjˈOku/)']
+  - ['yonanuki', '[yonanuki](/jOnɑnˈuki/)']
+  - ['haikei', '[haikei](/hˈIkA/)']
+  - ['Kondo', '[Kondo](/kˈOndO/)']
+  - ['konbini', '[konbini](/kOnbˈini/)']
+  - ['Famichiki', '[Famichiki](/fɑmiʧˈiki/)']
+  - ['doujin', '[doujin](/dˈOʤin/)']
+  - ['Nami', '[Nami](/nˈɑmi/)']
+  - ['kotatsu', '[kotatsu](/kOtˈɑtsu/)']
+  - ['Ikaho', '[Ikaho](/ikˈɑhO/)']
+  - ['Kizuna', '[Kizuna](/kizˈunɑ/)']
+  - ['Nijisanji', '[Nijisanji](/niʤisˈɑnʤi/)']
+  - ['Onyanko', '[Onyanko](/OnjˈɑnkO/)']
+  - ['ohineri', '[ohineri](/Ohinˈɛɾi/)']
+  - ['ita', '[ita](/ˈitɑ/)']
+  - ['Shibuya', '[Shibuya](/ʃibˈujɑ/)']
+  - ['Takahashi', '[Takahashi](/tɑkɑhˈɑʃi/)']
+  - ['Shinjuku', '[Shinjuku](/ʃinʤˈuku/)']
+  - ['Purikura', '[Purikura](/puɾikˈuɾɑ/)']
+  - ['Garigari', '[Garigari](/ɡɑɾiɡˈɑɾi/)']
+  - ['Shiro', '[Shiro](/ʃˈiɾO/)']
+  - ['sakusen', '[sakusen](/sɑkˈusɛn/)']
+  - ['sakusei', '[sakusei](/sɑkˈusA/)']
+  - ['Ichi', '[Ichi](/ˈiʧi/)']
+  - ['Nidone', '[Nidone](/nidˈOnɛ/)']
+  - ['Tanuki', '[Tanuki](/tɑnˈuki/)']
+  - ['Tomomi', '[Tomomi](/tOmˈOmi/)']
+  - ['Ieru', '[Ieru](/iˈɛɾu/)']
+  - ['Aomori', '[Aomori](/ɑOmˈOɾi/)']
+  - ['Obon', '[Obon](/ˈObOn/)']
+  - ['komatsuna', '[komatsuna](/kOmɑtsˈunɑ/)']
+  - ['Kagawa', '[Kagawa](/kɑɡˈɑwɑ/)']
+  - ['anmochi', '[anmochi](/ɑnmˈOʧi/)']
+  - ['Ryukakusan', '[Ryukakusan](/ɾjukɑkˈusɑn/)']
+  - ['natto', '[natto](/nˈɑtO/)']
+  - ['Miyuki', '[Miyuki](/mijˈuki/)']
+  - ['Nakajima', '[Nakajima](/nɑkɑʤˈimɑ/)']
+  - ['noren', '[noren](/nˈOɾɛn/)']
+  - ['fukusa', '[fukusa](/fukˈusɑ/)']
+  - ['kotobuki', '[kotobuki](/kOtObˈuki/)']
+  - ['Goshugi', '[Goshugi](/ɡOʃˈuɡi/)']
+  - ['Torikizoku', '[Torikizoku](/tOɾikizˈOku/)']
+  - ['Nitori', '[Nitori](/nitˈOɾi/)']
+  - ['Chiki', '[Chiki](/ʧˈiki/)']
+  - ['Kameda', '[Kameda](/kɑmˈɛdɑ/)']
+  - ['komochi', '[komochi](/kOmˈOʧi/)']
+  - ['Kansai', '[Kansai](/kˈɑnsI/)']
+  - ['Nichirei', '[Nichirei](/niʧˈiɾA/)']
+  - ['Tensai', '[Tensai](/tˈɛnsI/)']
+  - ['Bakabon', '[Bakabon](/bɑkˈɑbOn/)']
+  - ['Nikkei', '[Nikkei](/nˈikA/)']
+  - ['Jiro', '[Jiro](/ʤˈiɾO/)']
+  - ['Fukushima', '[Fukushima](/fukuʃˈimɑ/)']
+  - ['Bannai', '[Bannai](/bˈɑnnI/)']
+  - ['Shokudo', '[Shokudo](/ʃOkˈudO/)']
+  - ['Kinosaki', '[Kinosaki](/kinOsˈɑki/)']
+  - ['Munetaka', '[Munetaka](/munɛtˈɑkɑ/)']
+  - ['Higuchi', '[Higuchi](/hiɡˈuʧi/)']
+  - ['Kurenai', '[Kurenai](/kuɾˈɛnI/)']
+  - ['Hebimeta', '[Hebimeta](/hɛbimˈɛtɑ/)']
+  - ['Koichi', '[Koichi](/kOˈiʧi/)']
+  - ['Sugiyama', '[Sugiyama](/suɡijˈɑmɑ/)']
+  - ['Masanori', '[Masanori](/mɑsɑnˈOɾi/)']
+  - ['Hachimitsu', '[Hachimitsu](/hɑʧimˈitsu/)']
+  - ['Chuuihou', '[Chuuihou](/ʧuˈihO/)']
+  - ['ninchi', '[ninchi](/nˈinʧi/)']
+  - ['deshita', '[deshita](/dɛʃˈitɑ/)']
+  - ['Iyemon', '[Iyemon](/ijˈɛmOn/)']
+  - ['Dake', '[Dake](/dˈɑkɛ/)']
+  - ['tokkoufuku', '[tokkoufuku](/tOkOfˈuku/)']
+  - ['nigecha', '[nigecha](/niɡˈɛʧɑ/)']
+  - ['kissaten', '[kissaten](/kisˈɑtɛn/)']
+  - ['seichi', '[seichi](/sˈAʧi/)']
+  - ['junrei', '[junrei](/ʤˈunɾA/)']
+  - ['Ibaraki', '[Ibaraki](/ibɑɾˈɑki/)']
+  - ['Shirasu', '[Shirasu](/ʃiɾˈɑsu/)']
+  - ['sento', '[sento](/sˈɛntO/)']
+  - ['Kusatsu', '[Kusatsu](/kusˈɑtsu/)']
+  - ['Hakone', '[Hakone](/hɑkˈOnɛ/)']
+  - ['Washimiya', '[Washimiya](/wɑʃimˈijɑ/)']
+  - ['Washinomiya', '[Washinomiya](/wɑʃinOmˈijɑ/)']
+  - ['Saitama', '[Saitama](/sItˈɑmɑ/)']
+  - ['mikoshi', '[mikoshi](/mikˈOʃi/)']
+  - ['Hida', '[Hida](/hˈidɑ/)']
+  - ['Toyosato', '[Toyosato](/tOjOsˈɑtO/)']
+  - ['Shiga', '[Shiga](/ʃˈiɡɑ/)']
+  - ['Kamakura', '[Kamakura](/kɑmɑkˈuɾɑ/)']
+  - ['Koko', '[Koko](/kˈOkO/)']
+  - ['Kanagawa', '[Kanagawa](/kɑnɑɡˈɑwɑ/)']
+  - ['kusa', '[kusa](/kˈusɑ/)']
+  - ['warai', '[warai](/wˈɑɾI/)']
+  - ['toutoi', '[toutoi](/tOtˈOi/)']
+  - ['akusuta', '[akusuta](/ɑkusˈutɑ/)']
+  - ['Holoca', '[Holoca](/hOɾˈOkɑ/)']
+  - ['Nobuyuki', '[Nobuyuki](/nObujˈuki/)']
+  - ['Daisakusen', '[Daisakusen](/dIsɑkˈusɛn/)']
+  - ['joji', '[joji](/ʤˈOʤi/)']
+  - ['Miho', '[Miho](/mˈihO/)']
+  - ['Sasaki', '[Sasaki](/sɑsˈɑki/)']
+  - ['Papico', '[Papico](/pɑpˈikO/)']
+  - ['Azuki', '[Azuki](/ɑzˈuki/)']
+  - ['Akihabara', '[Akihabara](/ɑkihɑbˈɑɾɑ/)']
+  - ['Denki', '[Denki](/dˈɛnki/)']
+  - ['Mentaiko', '[Mentaiko](/mɛntˈIkO/)']
+  - ['Toranomon', '[Toranomon](/tOɾɑnˈOmOn/)']
+  - ['Hikaru', '[Hikaru](/hikˈɑɾu/)']
+  - ['Tōhō', '[Tōhō](/tˈOhO/)']
+  - ['Kawaii', '[Kawaii](/kɑwˈIi/)']
+  - ['sama', '[sama](/sˈɑmɑ/)']
+  - ['chan', '[chan](/ʧˈɑn/)']
+  - ['kun', '[kun](/kˈun/)']
+  - ['Nana', '[Nana](/nˈɑnɑ/)']
+  - ['Naruto', '[Naruto](/nɑɾˈutO/)']
+  - ['teetee', '[teetee](/tˈɛtɛ/)']
