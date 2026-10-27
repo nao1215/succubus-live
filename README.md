@@ -23,15 +23,15 @@ Succubus Live is a chat-stream game for web browsers, Windows, macOS and Linux: 
 
 ## Streamers
 
-| | Streamer | Talks about | Streams |
-| :---: | --- | --- | :---: |
-| <img src="./doc/img/faces/lise.png" width="120" alt="Lise"> | Lise | Games | 7 |
-| <img src="./doc/img/faces/mora.png" width="120" alt="Mora"> | Mora | Single life | 8 |
-| <img src="./doc/img/faces/pim.png" width="120" alt="Pim"> | Pim | Family life | 7 |
-| <img src="./doc/img/faces/ella.png" width="120" alt="Ella"> | Ella | Music | 10 |
-| <img src="./doc/img/faces/nox.png" width="120" alt="Nox"> | Nox | Programming | 10 |
-| <img src="./doc/img/faces/vespa.png" width="120" alt="Vespa"> | Vespa | Pop culture | 9 |
-| <img src="./doc/img/faces/gyal.png" width="120" alt="Gyaru"> | Gyaru (guest) | From Rabbit Run | collab only |
+| | Streamer | Talks about |
+| :---: | --- | --- |
+| <img src="./doc/img/faces/lise.png" width="160" alt="Lise"> | Lise | Games |
+| <img src="./doc/img/faces/mora.png" width="160" alt="Mora"> | Mora | Single life |
+| <img src="./doc/img/faces/pim.png" width="160" alt="Pim"> | Pim | Family life |
+| <img src="./doc/img/faces/ella.png" width="160" alt="Ella"> | Ella | Music |
+| <img src="./doc/img/faces/nox.png" width="160" alt="Nox"> | Nox | Programming |
+| <img src="./doc/img/faces/vespa.png" width="160" alt="Vespa"> | Vespa | Pop culture |
+| <img src="./doc/img/faces/gyal.png" width="160" alt="Gyaru"> | Gyaru (guest) | From Rabbit Run |
 
 There are four collabs: Lise and Gyaru, Lise and Nox, Mora and Pim, Ella and Vespa. A pair starts to stream together after you have watched each of them for 30 minutes. The streams tease now and then but have nothing explicit.
 
