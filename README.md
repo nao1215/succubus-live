@@ -31,7 +31,7 @@ Succubus Live is a chat-stream game for web browsers, Windows, macOS and Linux: 
 | <img src="./doc/img/faces/ella.png" width="160" alt="Ella"> | Ella | Music |
 | <img src="./doc/img/faces/nox.png" width="160" alt="Nox"> | Nox | Programming |
 | <img src="./doc/img/faces/vespa.png" width="160" alt="Vespa"> | Vespa | Pop culture |
-| <img src="./doc/img/faces/gyal.png" width="160" alt="Gyaru"> | Gyaru (guest) | From Rabbit Run |
+| <img src="./doc/img/faces/gyal.png" width="160" alt="Gyaru"> | Gyaru (guest) | From [Rabbit Run](https://github.com/nao1215/rabbitrun) |
 
 There are four collabs: Lise and Gyaru, Lise and Nox, Mora and Pim, Ella and Vespa. A pair starts to stream together after you have watched each of them for 30 minutes. The streams tease now and then but have nothing explicit.
 
