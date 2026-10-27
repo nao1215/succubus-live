@@ -1,0 +1,194 @@
+# Nox 009 (English). Source: src/episodes/nox/009.yaml. Beat order matches the Japanese.
+title: "Over-engineering a tiny admin panel (DDD in name only, and the people who split too much and merged back)"
+lobby:
+- "Hi. Tonight's about architecture. There's a little ranting."
+- "A job where someone put six layers on an admin screen with four tables."
+- "Also companies that split into too many services and merged them back."
+- "I'll probably end up talking about Saizeriya at some point."
+parts:
+- title: Opening (the proposal)
+  beats:
+  - say: "Oh, we're up. Hi, everyone who's still awake."
+  - chat: [ddd_police, "evening"]
+  - say: "Hi, DDD Police. I had a feeling you'd show up tonight."
+  - chat: [ddd_police, "why"]
+  - say: "Why... so today our sales person sent me a draft proposal for a new project. Asked me to check the tech section."
+  - say: "Page one says, 'We will build this with microservices.'"
+  - chat: [lag_appreciation_club, "you look like you hate that"]
+  - say: {face: annoyed, text: "'You look like you hate that.' You can see that? It's dark in here."}
+  - chat: [first_time_here, "hi first time. microservices?"]
+  - say: "Welcome, new person. Microservices means you take one app and build it as a bunch of little separate apps."
+  - say: "For a shop, it's like hiring a different company for the register, the kitchen, and the inventory."
+  - chat: [first_time_here, "sounds like a lot of coordinating"]
+  - say: "'Sounds like a lot of coordinating.' Yes, that's exactly the hard part."
+  - chat: [ddd_police, "fine if they wrote why theyre splitting"]
+  - say: "Why they're splitting. ...They didn't. Just 'for scalability.'"
+  - chat: [ddd_police, "thats a no"]
+  - say: "That's a no, right? ...DDD Police agreeing with me, how rare."
+  - chat: [kernel_reader, "whats the project"]
+  - say: "What's the project? Bookings for a neighborhood dentist. One dentist, two chairs."
+  - chat: [rtos_veteran_15y, "microservices for two chairs"]
+  - chat: [lag_appreciation_club, "one service per chair"]
+  - say: {face: laugh, text: "One service per chair. Well, then it's only two."}
+  - chat: [second_year_dev, "are you turning it down?"]
+  - say: "Turning it down? No. First I'll have sales ask the client what they want to improve. Load? Shipping parts separately? Keeping failures contained?"
+  - say: "From what I've heard, I'll write, 'Build one app, split it if it starts hurting.' But if some boundary really must be separate, I want to hear first."
+  - chat: [ddd_police, "hope that goes through"]
+  - say: "I hope so. If it doesn't, I'll be the one writing down why we split and where we cut. That's my job too. ...Then you'll have to listen to me complain."
+- title: Three hundred twelve
+  beats:
+  - chat: [kernel_reader, "the 312 story?"]
+  - say: "The three-hundred-twelve story... you're bringing that up."
+  - chat: [second_year_dev, "whats that"]
+  - say: "What's that? It's from a client project I was on a while back. There was an admin panel with four tables."
+  - chat: [first_time_here, "tables?"]
+  - say: "Tables as in database tables. A customers table, a products table, that kind of thing. Only four. A tiny screen."
+  - say: "And the architect put six layers on it. 'Clean Architecture, and DDD.'"
+  - chat: [first_time_here, "layers?"]
+  - say: "Layers means splitting the work into tiers. The screen layer, the business rules layer, the data layer. Normally there's a reason to split them."
+  - say: "But if you do six layers on a tiny screen, you end up with tons of functions that just copy the same data from one layer to the next."
+  - say: "I wrote three hundred twelve of them."
+  - chat: [lag_appreciation_club, "you counted?"]
+  - say: "Did I count? I counted. Out of spite."
+  - chat: [second_year_dev, "copying like, just renaming stuff?"]
+  - say: "Just renaming? Yeah. You put a User into a User D T O, then the next layer puts it into a User Entity. Same contents."
+  - chat: [leaving_work_on_time, "thats how overtime happens"]
+  - say: "That's how overtime happens, exactly. Every new field meant six edits, and we shipped the same missed-copy bug to prod twice."
+  - say: "So I gathered those numbers, wrote up a plan to cut the layers, and asked at the weekly meeting. 'What did we actually gain from this design?'"
+  - chat: [kernel_reader, "you asked?"]
+  - say: "I asked. Out loud, not in chat. For once."
+  - say: "The plan didn't go through, and the next month I was on a different team. I never asked why. ...I should have."
+  - chat: [lag_appreciation_club, "LMAOOO"]
+  - chat: [ddd_police, "thats not DDD thats layer disease"]
+  - say: "Layer disease. I know. DDD Police always says that."
+  - say: "I don't hate DDD itself. I hate DDD in name only."
+  - say: "I'm the lead now, so when someone on my team brings a plan that disagrees with mine, I hear it all the way out. That's what I wanted back then."
+- title: Containers with nothing inside
+  beats:
+  - chat: [ddd_police, "did the domain classes on that project have any behavior?"]
+  - say: "Behavior? None. Just containers."
+  - chat: [first_time_here, "behavior?"]
+  - say: "Behavior means... okay, what DDD really wants you to line up is the business's language and rules."
+  - say: "So if you have a Customer, a common way is to keep what a customer can do right next to it."
+  - say: "Like, 'can this customer use a discount again?' You put that rule with the Customer."
+  - say: "On that project, it was just boxes for names and addresses, and the rules were scattered across other layers."
+  - chat: [ddd_police, "anemic domain model"]
+  - say: "Yes, an anemic domain model. Martin Fowler named it that in two-thousand-three. Looks impressive, but no behavior inside."
+  - chat: [lag_appreciation_club, "anemic? eat some iron"]
+  - say: {face: laugh, text: "'Eat some iron.' I wish I could give code iron supplements."}
+  - chat: [second_year_dev, "on our team the AI writes 'DDD compliant' in PR descriptions"]
+  - say: "The AI writes 'DDD compliant'? Yeah, they do that lately."
+  - say: "When I review, if I see that in the description, the first thing I do is compare the glossary, the names in the code, and the words the client actually uses."
+  - chat: [second_year_dev, "glossary?"]
+  - say: "A glossary is the shared word list, so the client and the devs call the same things by the same names."
+  - say: "But a glossary alone doesn't help if the conversations and the code use different words."
+  - say: "At that old job, it hadn't been touched in three years. The client was already calling things by different names."
+  - chat: [ddd_police, "then its not DDD"]
+  - say: "Right. That's why I keep saying 'in name only.'"
+  - chat: [second_year_dev, "ill look for ours tomorrow"]
+  - say: "You'll look tomorrow? If there isn't one, try making it. With whoever talks to the client. Like ten words is enough to start."
+- title: The hexagon means nothing
+  beats:
+  - chat: [rtos_veteran_15y, "why is hexagonal a hexagon anyway"]
+  - say: "Why a hexagon? Oh, I love this one."
+  - say: "Hexagonal architecture is an idea Alistair Cockburn wrote up in two-thousand-five."
+  - say: "You put the important rules in the middle, and the ports that connect to the outside world around the edges."
+  - chat: [first_time_here, "so what does the hexagon mean"]
+  - say: "What the hexagon means: he literally wrote that it's not a hexagon because the number six is important."
+  - say: "He just needed room to draw in as many ports as you want."
+  - chat: [lag_appreciation_club, "lazy"]
+  - say: "It's not lazy. It's honest. I love that line."
+  - chat: [ddd_police, "same with the four circles one, he says it doesnt have to be four"]
+  - say: "Yes, the four circles in Clean Architecture too. The people who drew these are pretty chill about it."
+  - say: "It's the people copying them who make it exactly four."
+  - chat: [kernel_reader, "or six"]
+  - say: {face: annoyed, text: "Or six."}
+- title: Speaking of which (Saizeriya)
+  beats:
+  - chat: [second_year_dev, "btw we had our team design meeting at saizeriya the other day"]
+  - say: "A design meeting at Saizeriya! Nice. That's the super cheap Italian family restaurant chain, everyone. What did you get?"
+  - chat: [second_year_dev, "milano doria"]
+  - say: "The Milano-style doria. It's a rice gratin, costs like three dollars. I get that too, and the spicy chicken wings."
+  - chat: [lag_appreciation_club, "the classic"]
+  - say: "The classic, right? It's cheap, so you don't feel bad staying forever."
+  - chat: [night_shift_survivor, "do you do the spot the difference?"]
+  - say: "The spot-the-difference? Yes. On the kids' menu there's this puzzle, and it's famously brutal. I don't leave until I find all of them."
+  - say: "One time I couldn't find the last one, and I stayed three hours."
+  - chat: [first_time_here, "3 hours"]
+  - say: "Yeah, three hours. Found it on my fourth refill from the drink bar. I made a noise, and the person at the next table turned around."
+  - chat: [kernel_reader, "using your actual voice"]
+  - say: {face: shy, text: "'Using your actual voice'... it only comes out at times like that."}
+  - chat: [second_year_dev, "our meeting also ended with spot the difference"]
+  - say: "Your meeting ended with spot-the-difference? And the design?"
+  - chat: [second_year_dev, "didnt decide anything"]
+  - say: {face: laugh, text: "Nothing decided. Yeah, that's what happens at Saizeriya."}
+  - chat: [night_shift_survivor, "how many wings do you order"]
+  - say: "How many? One plate. Every time I tell myself I'll eat two and take the rest home."
+  - chat: [leaving_work_on_time, "and then you eat them all"]
+  - say: "And then I eat them all. They get sad when they're cold."
+  - chat: [lag_appreciation_club, "just like your estimates"]
+  - say: {face: annoyed, text: "Not like my estimates. Nobody's talking about estimates."}
+- title: Split too much, merged back
+  beats:
+  - say: "Saizeriya went long again. Okay, back to over-split services."
+  - say: "There are a few companies that split too much and then merged back into one."
+  - say: "In twenty-eighteen, a company called Segment wrote a post called 'Goodbye Microservices.'"
+  - say: "They'd made a little service per destination, it went past a hundred forty, and they merged them back into one."
+  - chat: [lag_appreciation_club, "140"]
+  - say: "Babysitting a hundred forty of them, they ran out of people."
+  - say: "And in twenty-twenty-three, the Prime Video team at Amazon merged their video quality monitoring into one service, and cut costs by ninety percent."
+  - chat: [ddd_police, "lots of people pushed back that the problem wasnt distribution, it was the components they picked"]
+  - say: "The pushback that it was about the components they picked, yeah. That matters. It's not 'splitting was bad,' it's 'that particular setup got expensive.'"
+  - chat: [rtos_veteran_15y, "read both sides"]
+  - say: "Read both, yeah. And my favorite is a short piece Martin Fowler wrote in twenty-fifteen. Monolith First."
+  - say: "Basically, 'almost all the successful microservice stories started with a monolith that got too big and was broken up.'"
+  - chat: [second_year_dev, "so splitting from the start is bad?"]
+  - say: "He doesn't flat out say it's bad. But he says there are way more stories of people struggling after starting split."
+  - ask:
+      q: "Building something new: split it small from day one, or build one thing first?"
+      options:
+      - c: "Split from day one"
+        r:
+        - "{name}, you're a splitter."
+        - "It's fine if you already know where the seams are. Do you?"
+      - c: "Build one first, split later"
+        r:
+        - "{name}, me too."
+        - "Once you've built it as one thing, you start to see where it'd be easy to cut."
+      - c: "Just keep it one forever"
+        r:
+        - "{name}, if that's not hurting you, then that's the right call."
+        - "If the day comes when you have to split, you can figure it out then."
+      npc:
+      - [ddd_police, 1]
+      - [second_year_dev, 1]
+      - [kernel_reader, 2]
+      - [rtos_veteran_15y, 2]
+      - [lag_appreciation_club, 0]
+  - chat: [lag_appreciation_club, "one splitter"]
+  - say: "Lots of build-one-first. One splitter... Lag Club, you're splitting."
+  - chat: [lag_appreciation_club, "just vibes"]
+  - say: "Just vibes. ...So, same as the person who wrote that proposal."
+- title: Closing (the project that worked)
+  beats:
+  - chat: [ddd_police, "i was on a project once where DDD actually worked"]
+  - say: "...I want to hear it."
+  - chat: [ddd_police, "they actually talked to the client in the same language. for real"]
+  - chat: [ddd_police, "updated the glossary every week. with the sales people too"]
+  - say: "Same words as the client, and a glossary fixed every week."
+  - say: "Every week. With sales."
+  - chat: [ddd_police, "only three layers"]
+  - say: "Only three layers."
+  - chat: [ddd_police, "whenever a spec change came in everyone could say right away where to change it"]
+  - say: "Spec changes, and everyone knew right away where to fix? ...I'm jealous."
+  - chat: [kernel_reader, "nox is just quietly listening"]
+  - say: "Of course I'm quietly listening. It's a good story."
+  - chat: [second_year_dev, "sales people read the glossary too?"]
+  - chat: [ddd_police, "sales edited it the most"]
+  - say: "Sales edited it the most. ...So it wasn't just the engineers deciding."
+  - chat: [ddd_police, "the whole company's gone now tho"]
+  - say: "Wait, the whole company is gone?"
+  - chat: [ddd_police, "not because of the architecture"]
+  - say: "Not the architecture. Yeah... of course."
+  - say: "I think I'll stop here tonight. DDD Police, tell me the rest next time."
+  - say: "Thanks, everyone who's awake. Good night."

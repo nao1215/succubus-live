@@ -1,0 +1,184 @@
+# Ella 002 (English). Same beats as src/episodes/ella/002.yaml.
+title: "Black Sabbath's first album, and the great mushroom versus bamboo shoot war"
+parts:
+- title: Opening (what was on the tape)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Today I have brewed a rather strong Assam."
+  - chat: [budokan_balcony_east, "assam means its a sabbath day?"]
+  - say: "'Assam means it's a Sabbath day?' How very sharp of you, Budokan. I do choose my tea by the record I'm playing."
+  - chat: [sold_my_keyboard, "hi. did u listen to the tape?"]
+  - say: "Sold My Keyboard. 'Did you listen to the tape?' Straight to it, are we?"
+  - chat: [new_releases_only, "thats what i came for"]
+  - chat: [headbang_whiplash, "were ur keys on it?"]
+  - say: "So that's what you all came for. Yes, I listened. I borrowed the kitchen machine in the dead of night, very quietly."
+  - say: "Were my keys on it? They were. My very own keyboard."
+  - chat: [sold_my_keyboard, "ohh!"]
+  - say: "Only, it was tiny. Ever so tiny. Far, far behind the guitar, barely there."
+  - chat: [headbang_whiplash, "gil did this"]
+  - say: "Gil did this. I can think of no other explanation. My volume was turned down."
+  - chat: [piano_teacher, "old self-made tapes were often just badly recorded"]
+  - say: "Just badly recorded... Teacher, please don't say that. I would much rather blame Gil."
+  - chat: [new_releases_only, "honest"]
+  - say: "Honest, aren't I. But there is one spot, just one, where the keys come out in front of the guitar."
+  - say: "I rewound that bit about ten times. With a pencil."
+  - chat: [new_releases_only, "u actually used a pencil"]
+  - say: "I did use a pencil. You mentioned it, New Releases, so I simply had to."
+  - chat: [new_releases_only, "i just said it lol"]
+  - say: {face: laugh, text: "You just said it, yes. But I tried it, and it was rather fun, I must say."}
+  - chat: [sold_my_keyboard, "glad u got to hear urself"]
+  - say: "Thank you. It was small, but it was me. I can tell by the habits in my fingers."
+  - chat: [headbang_whiplash, "u can hear finger habits??"]
+  - say: "Oh, you can hear them. When I play a chord, I have this habit of sounding the lowest note just a hair early."
+  - chat: [piano_teacher, "thats one you should fix"]
+  - say: "'You should fix that.' Teacher, that's twice today already."
+- title: Main story (a Friday in nineteen seventy)
+  beats:
+  - say: "Now then. Since today is a Sabbath day, let us talk about Black Sabbath's very first album."
+  - chat: [first_time_here, "first time here. whos sabbath?"]
+  - say: "Welcome, dear newcomer. Who is Sabbath? A British band. People call them the founders of heavy metal."
+  - say: "The singer was Mister Ozzy Osbourne."
+  - chat: [first_time_here, "ive heard the name"]
+  - say: "Oh, his name is famous indeed. Their first album came out on February the thirteenth, nineteen seventy."
+  - chat: [new_releases_only, "56 years ago"]
+  - say: "Fifty-six years ago. To you, New Releases, that must be the age of the dinosaurs."
+  - chat: [new_releases_only, "fossil"]
+  - say: "A fossil, you say. And yet everyone is still listening to this fossil."
+  - say: "And here's the thing. That day was a Friday. Friday the thirteenth."
+  - chat: [headbang_whiplash, "they did that on purpose lol"]
+  - say: "On purpose, surely! Oh, I adore that sort of thing."
+  - chat: [budokan_balcony_east, "the rain at the start of track one is so good"]
+  - say: "The rain on track one! Yes! It opens with rain, and a bell tolling far away."
+  - say: "And then the guitar comes in. Doom. Three notes."
+  - chat: [first_time_here, "sounds scary"]
+  - say: "Sounds scary, doesn't it. It is scary. Those three notes are deliberately set at an unpleasant distance."
+  - say: "It's called a tritone. Roughly speaking, like C against F sharp. A pairing that simply refuses to settle."
+  - chat: [first_time_here, "can you sing it?"]
+  - say: {face: flustered, text: "Sing it? I shall not. I shall not sing, thank you."}
+  - chat: [piano_teacher, "i think its better if you dont"]
+  - say: "'Better if you don't.' Teacher. And what, pray tell, is that supposed to mean?"
+  - chat: [headbang_whiplash, "teacher knows something"]
+  - say: "Teacher knows something? There is nothing to know. Moving on."
+  - chat: [piano_teacher, "not doing the devil's interval thing?"]
+  - say: "I'm not doing the devil's interval story. The one where the church supposedly banned it. Apparently that tale was invented much later."
+  - say: "Honestly, I was dying to tell it. But I could see Teacher's correction coming a mile away."
+  - chat: [piano_teacher, "good restraint"]
+  - say: {face: smug, text: "'Good restraint.' You may praise me more than that, you know."}
+  - say: "Now, the song titles. I am rather fond of translating Sabbath titles into very polite language."
+  - chat: [budokan_balcony_east, "here we go"]
+  - chat: [first_time_here, "translating?"]
+  - say: "Translating, yes. For example, 'Paranoid' becomes, 'Madam is of a most suspicious disposition.'"
+  - chat: [new_releases_only, "nobody laughed"]
+  - chat: [headbang_whiplash, "i laughed a little"]
+  - say: "Nobody laughed... ah, Whiplash says 'I laughed a little.' Thank you. One is quite enough."
+  - chat: [first_time_here, "what about iron man?"]
+  - say: "'Iron Man' becomes, 'The Gentleman of Iron.'"
+  - chat: [piano_teacher, "thats just the same"]
+  - say: "Just the same, yes. Even I think that one was a little lazy."
+- title: Side track (mushrooms versus bamboo shoots)
+  beats:
+  - chat: [headbang_whiplash, "watching while eating takenoko no sato"]
+  - say: "Oh my. Takenoko no Sato. Little chocolate bamboo shoots on a cookie base, for those who don't know. Whiplash, are you Team Bamboo Shoot?"
+  - chat: [headbang_whiplash, "takenoko only"]
+  - say: {face: smile, text: "Takenoko only! A kindred spirit! I am Team Bamboo Shoot as well."}
+  - chat: [new_releases_only, "ella seems like a kinoko person tho"]
+  - say: "I seem like a Kinoko person? That's Kinoko no Yama, the mushroom-shaped ones on a cracker stick. People tell me that all the time. Why, I wonder."
+  - chat: [new_releases_only, "bc ur old fashioned"]
+  - say: "Because I'm old-fashioned. I'm not sure how a chocolate mushroom is old-fashioned, but very well."
+  - say: "For me, it's the cookie. That crumbly bite, right along with the chocolate."
+  - chat: [budokan_balcony_east, "im kinoko. it has a handle"]
+  - say: "Kinoko, because it has a handle. Yes, Budokan, I rather expected as much from you."
+  - chat: [piano_teacher, "my piano kids fight about this every year"]
+  - say: "Your students fight about it every year. Oh, they would. Which side wins in your classroom, Teacher?"
+  - chat: [piano_teacher, "kinoko. but no snacks before lessons"]
+  - say: "Kinoko wins, and snacks are banned before lessons. Of course, their fingers would be covered in chocolate."
+  - chat: [piano_teacher, "the keys turn brown"]
+  - say: {face: surprised, text: "The keys turn brown. So that has actually happened, Teacher."}
+  - chat: [headbang_whiplash, "i eat two takenoko in one bite"]
+  - say: "Two in one bite! Isn't that rather a waste?"
+  - chat: [headbang_whiplash, "perfect mouth size"]
+  - say: "Perfect mouth size, you say. I eat mine one at a time, with a sip of tea in between."
+  - chat: [new_releases_only, "even ur snacking is old fashioned"]
+  - say: "Even my snacking is old-fashioned? I thought that was perfectly normal."
+  - chat: [headbang_whiplash, "kinoko always ends with just the cracker left"]
+  - say: {face: laugh, text: "Just the cracker left at the end... You must never say that in front of the Kinoko people."}
+  - ask:
+      q: "And you, my dears? Kinoko no Yama, or Takenoko no Sato?"
+      options:
+      - c: "Kinoko no Yama"
+        r:
+        - "{name} is Kinoko no Yama. The handle is terribly convenient, I'll grant you."
+        - "I'm Team Takenoko myself, but I don't consider you an enemy. Probably."
+      - c: "Takenoko no Sato"
+        r:
+        - "Takenoko no Sato! {name}, welcome to our side!"
+        - "It's the crumbly cookie, isn't it. I'm so glad you understand."
+      - c: "I like both"
+        r:
+        - "Both. {name}, what a peaceful soul. You'll never quarrel with anyone."
+        - "But if only one were left, which would you take? ...You needn't answer."
+      npc:
+      - [headbang_whiplash, 1]
+      - [budokan_balcony_east, 0]
+      - [new_releases_only, 2]
+      - [piano_teacher, 0]
+      - [sold_my_keyboard, 1]
+  - chat: [sold_my_keyboard, "kinoko has fans too"]
+  - say: "Some of you wrote Kinoko no Yama, I see. The handle really is convenient."
+  - chat: [piano_teacher, "so, the sabbath thing?"]
+  - say: "'So, the Sabbath thing?' ...Ah."
+  - say: "Wait, wait. Where was I?"
+  - chat: [first_time_here, "gentleman of iron"]
+  - say: {face: shy, text: "'The Gentleman of Iron.' Yes, that's where we were. Do forgive me."}
+- title: Back to the story (Iommi's fingers and Ward's beat)
+  beats:
+  - say: "From here on, it gets a little nerdy, if I may."
+  - say: "The guitarist, Mister Tony Iommi. At seventeen, he lost the tips of his fingers in an accident at a factory."
+  - chat: [first_time_here, "what"]
+  - chat: [sold_my_keyboard, "right hand right?"]
+  - say: "Right hand, yes. He's left-handed, so that's the hand that holds down the strings."
+  - chat: [first_time_here, "and he kept playing guitar??"]
+  - say: "He kept playing. He melted down a washing-up liquid bottle and made little caps for his fingertips himself."
+  - chat: [headbang_whiplash, "diy legend"]
+  - say: "A homemade fix, isn't it marvelous. It still hurt to press, so he sought lighter strings. None were sold then, so he used banjo strings, they say."
+  - say: "And later, on the third album, 'Master of Reality,' he tuned his strings down lower."
+  - say: "Slacker strings are easier to press, and the sound comes out lower. Heavier."
+  - chat: [new_releases_only, "so he worked around the pain and it made the sound heavy?"]
+  - say: {face: smile, text: "He worked around the pain, and it made the sound heavy. Yes! Exactly that! Oh, I love this story so!"}
+  - say: "The first album is still in standard tuning, mind you. But from that workaround, born of pain, the heaviness grows. Simply irresistible."
+  - chat: [budokan_balcony_east, "ella-chan is talking so fast"]
+  - say: "Talking fast? Oh, was I? I believed I was speaking perfectly normally."
+  - chat: [headbang_whiplash, "tail is wagging like crazy"]
+  - say: {face: annoyed, text: "My tail is wagging? Kindly do not look at the tail."}
+  - say: "And then there's the drummer, Mister Bill Ward. I adore the way he plays."
+  - say: "He plays ever so slightly late. Just a touch behind where the beat should land."
+  - chat: [first_time_here, "isnt being late bad"]
+  - say: "Isn't being late bad, you'd think. But it's on purpose. Because of it, the music sounds like something heavy being dragged along the floor."
+  - chat: [new_releases_only, "or hes just slow"]
+  - say: "Or he's just slow. No, no, it's not that, it's... oh, I can't explain it."
+  - chat: [new_releases_only, "she gave up explaining"]
+  - say: "Yes, I've given up. Three minutes of listening will do it faster than I can."
+  - chat: [headbang_whiplash, "the one where ur neck moves on its own"]
+  - say: "The one where your neck moves on its own! That's it! Whiplash, that's exactly it."
+  - chat: [headbang_whiplash, "thats how i hurt my neck"]
+  - say: {face: laugh, text: "So that's how you hurt it. Do take care of yourself, my dear."}
+- title: Closing (the sand timer and 'Paranoid')
+  beats:
+  - chat: [sold_my_keyboard, "3 minutes reminds me, how long do u steep tea"]
+  - say: "How long do I steep my tea? Three minutes. I time it with a little sand timer."
+  - say: "Only, some days the sand timer goes missing. On those days, I put on a song about three minutes long."
+  - chat: [first_time_here, "so stylish"]
+  - say: "Stylish, isn't it. And on Sabbath days, I put on 'Paranoid.'"
+  - say: "But that song isn't even three minutes."
+  - chat: [budokan_balcony_east, "about 2 48 right?"]
+  - say: "About two minutes forty-eight. Something like that. So on Sabbath days, my tea is always a touch weak."
+  - chat: [headbang_whiplash, "just pick a different song lol"]
+  - say: "Pick a different song? I refuse. Sabbath days are 'Paranoid' days."
+  - chat: [new_releases_only, "stubborn"]
+  - say: "Stubborn, yes. I'm quite aware."
+  - say: "Well, it's about time. Thank you all for today."
+  - chat: [sold_my_keyboard, "what about replying to the letter?"]
+  - say: "Replying to the letter... that will be for a future stream."
+  - chat: [piano_teacher, "she ran"]
+  - say: "I ran, you say. Yes, I ran. Farewell, my dears."
+  - say: "Team Takenoko, do come again. And Team Kinoko, you too, of course."

@@ -1,0 +1,24 @@
+category: health
+name: 体と健康
+topics:
+- {id: health_cold, q: 風邪をひいたらまず何をする？ 何を食べる？}
+- {id: health_medicine, q: 常備薬は何？（ロキソニン、イブ、パブロン、正露丸など）}
+- {id: health_exercise, q: 運動はしてる？ 何をしてる？}
+- {id: health_walk, q: 一日何歩歩いてる？}
+- {id: health_diet, q: ダイエットしたことある？ 何をした？ 続いた？}
+- {id: health_checkup, q: 健康診断で引っかかったことは？}
+- {id: health_shoulder, q: 肩こり・腰痛はある？ どうしてる？}
+- {id: health_eyes, q: 視力はいくつ？ 目の疲れはどうしてる？}
+- {id: health_dentist, q: 歯医者は好き？ 最後に行ったのはいつ？}
+- {id: health_injection, q: 注射は見る派？ 目をそらす派？}
+- {id: health_massage, q: マッサージや整体に行く？}
+- {id: health_fever, q: 熱が出たときの心細さ、どうしてる？}
+- {id: health_supplement, q: サプリや健康食品は飲んでる？}
+- {id: health_vegetable, q: 野菜はちゃんと食べてる？ 野菜ジュースでごまかす？}
+- {id: health_weak, q: 体の弱いところは？}
+- {id: health_hiccup, q: しゃっくりの止め方は？}
+- {id: health_age, q: 年を感じた瞬間は？}
+- {id: health_stretch, q: 寝る前や朝にストレッチする？ ラジオ体操は？}
+- {id: health_stress, q: ストレス発散の方法は？}
+- {id: health_sick_food, q: 体調が悪いときに食べたくなるものは？（ポカリ、ゼリー、桃缶など）}
+- {id: health_hospital, q: 入院したことある？}

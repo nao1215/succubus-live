@@ -1,0 +1,25 @@
+category: drinks
+name: 飲み物・お酒
+topics:
+- {id: drink_coffee_tea, q: コーヒー派？ 紅茶派？ 緑茶派？, options: [コーヒー, 紅茶, 緑茶, 飲まない]}
+- {id: drink_coffee_how, q: コーヒーはブラック？ ミルク？ 砂糖？}
+- {id: drink_can_coffee, q: 缶コーヒーは何を買う？}
+- {id: drink_tea_bottle, q: ペットボトルのお茶はどれ？, options: [お〜いお茶, 伊右衛門, 綾鷹, 生茶, 爽健美茶, 十六茶]}
+- {id: drink_soda, q: 好きな炭酸飲料は？}
+- {id: drink_cola, q: コーラはコカ・コーラ？ ペプシ？ ゼロ？}
+- {id: drink_energy, q: エナドリは飲む？ 何を飲む？}
+- {id: drink_vending, q: 自販機でつい押すのは？}
+- {id: drink_water, q: 水はどこの水を買う？ 水道水で平気？}
+- {id: drink_milk, q: 牛乳は好き？ 豆乳・オーツミルクは？}
+- {id: drink_beer, q: ビールは何を飲む？, options: [スーパードライ, 一番搾り, 黒ラベル, プレモル, ヱビス, 飲まない]}
+- {id: drink_first_order, q: 居酒屋の一杯目は？}
+- {id: drink_chuhai, q: 缶チューハイの定番は？}
+- {id: drink_sake, q: 日本酒・焼酎・ワイン・ウイスキー、どれが好き？}
+- {id: drink_drunk, q: 酔うとどうなる？}
+- {id: drink_hangover, q: 二日酔いの対処法は？}
+- {id: drink_hot_winter, q: 冬の自販機の「あったか〜い」で選ぶのは？}
+- {id: drink_tapioca, q: タピオカは並んだ？ 好きな店は？, era: 2010s-2020s}
+- {id: drink_morning, q: 朝いちばんに飲むものは？}
+- {id: drink_nonalc, q: ノンアルコールで好きなのは？}
+- {id: drink_tea_kind, q: 紅茶の葉やハーブティーにこだわりはある？}
+- {id: drink_yakult, q: 乳酸菌飲料（ヤクルト・ピルクル・ヤクルト1000）は飲む？}

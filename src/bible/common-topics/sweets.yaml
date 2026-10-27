@@ -1,0 +1,29 @@
+category: sweets
+name: お菓子・スイーツ・アイス
+topics:
+- {id: sweets_fav_snack, q: いちばん好きなお菓子は？}
+- {id: sweets_chips, q: ポテチは何味派？, options: [うすしお, コンソメ, のり塩, 九州しょうゆ, その他]}
+- {id: sweets_chips_brand, q: ポテチはカルビー派？ 湖池屋派？, options: [カルビー, 湖池屋, プリングルズ]}
+- {id: sweets_choco, q: 好きなチョコレートは？}
+- {id: sweets_gummy, q: グミは何が好き？ 硬い派？ 柔らかい派？}
+- {id: sweets_dagashi, q: 駄菓子屋で必ず買ったのは？}
+- {id: sweets_ice, q: いちばん好きなアイスは？}
+- {id: sweets_winter_ice, q: 冬に食べるアイスは？ こたつでアイスはする？}
+- {id: sweets_ice_cup, q: アイスはカップ・棒・コーン・モナカのどれが好き？}
+- {id: sweets_konbini, q: コンビニスイーツで買ってしまうのは？}
+- {id: sweets_cake, q: ケーキ屋で選ぶのは？ ショートケーキ？ モンブラン？}
+- {id: sweets_wagashi, q: 好きな和菓子は？}
+- {id: sweets_donut, q: ミスドで選ぶドーナツは？}
+- {id: sweets_pudding, q: プリンは固め派？ とろとろ派？, options: [固め, とろとろ]}
+- {id: sweets_omiyage, q: もらって嬉しいお土産のお菓子は？}
+- {id: sweets_omiyage_give, q: 手土産に持っていく定番は？}
+- {id: sweets_salty_sweet, q: 甘いの派？ しょっぱいの派？ 交互にいく？}
+- {id: sweets_limited, q: 期間限定の味に弱い？}
+- {id: sweets_candy, q: 飴とガムは何を持ち歩く？}
+- {id: sweets_cookie, q: クッキーやビスケットの定番は？}
+- {id: sweets_rice_cracker, q: 煎餅・あられで好きなのは？}
+- {id: sweets_best_ever, q: 人生でいちばん美味しかった甘いものは？}
+- {id: sweets_late, q: 夜中にお菓子の袋を開けてしまう？ 一袋いく？}
+- {id: sweets_sharing, q: パーティー開けする？ 袋はどう開ける？}
+- {id: sweets_bread_sweet, q: 菓子パンで一番好きなのは？}
+- {id: sweets_kaki, q: 柿の種はピーナッツ込み派？ 柿の種だけ派？}

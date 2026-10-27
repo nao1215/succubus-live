@@ -1,0 +1,191 @@
+# リゼ 005 の英訳（src/episodes/lise/005.yaml）。拍の並びは日本語と同じ。表情は build.py が日本語から写すので書かない。
+title: My favorite Famicom game, and the one I can't stand
+lobby:
+- When people ask my favorite game, I've given the same answer forever. No hesitation.
+- The one I can't stand, I can tell you right away too.
+- Also, the weird NES thing where music playing makes buttons press themselves.
+parts:
+- title: Opening (phone wallpaper)
+  beats:
+  - say: Okay, evening. I'm in a good mood today.
+  - chat: [good_morning_guy, "evening"]
+  - chat: [login_bonus_only, "thats rare. what happened?"]
+  - say: What do you mean rare. What happened is, I changed my phone wallpaper. That's it.
+  - chat: [login_bonus_only, "thats all it takes lol"]
+  - say: That's all it takes. I'm happy every time I look at it.
+  - chat: [first_timer_tanuki, "first time here. whats the wallpaper?"]
+  - say: Hi, Tanuki, welcome. The wallpaper? A fluffy green little guy. His name's Yumetaro.
+  - chat: [first_timer_tanuki, "never heard of him"]
+  - say: Never heard of him, right. He's the hero of a Famicom game called Gimmick. Famicom, the Japanese NES.
+  - chat: [retro_grandpa, "gimmick wallpaper. you have taste"]
+  - say: "\"You have taste.\" See, someone gets it. That's actually what I was going to talk about today."
+  - chat: [login_bonus_only, "do u organize ur apps on the home screen?"]
+  - say: Organize my apps? No. There's like a hundred, all over the place.
+  - say: I just keep one spot clear so Yumetaro's face doesn't get covered.
+  - chat: [coffee_shop_regular, "thats the one thing u care about lol"]
+  - say: That's the one thing. Yeah. It's the only thing I care about.
+- title: The topic (Gimmick)
+  beats:
+  - say: When people ask my favorite game, I've always said Gimmick.
+  - say: Nineteen ninety-two. Made by Sunsoft.
+  - say: Yumetaro makes a star appear over his head, throws it, and that's how you get through.
+  - chat: [first_timer_tanuki, "u just throw stars?"]
+  - say: Not just throw. You can ride the star you threw. That's how you get up to high places.
+  - say: And it bounces, so it hits stuff you weren't even aiming at. It feels so good.
+  - chat: [any_percent_rookie, "its hard tho"]
+  - say: It's hard, yeah. Really hard. I've never made it to the end. Honestly.
+  - chat: [login_bonus_only, "ur favorite game and u never beat it lmao"]
+  - say: Don't laugh at "favorite but never beat it." Loving a game and beating it are different things.
+  - say: Anyway, what's good about it is the music. It's really, really good.
+  - say: Inside the cartridge there's a chip that adds extra sound.
+  - say: So even though it's the Famicom, the sound is super rich.
+  - chat: [here_for_bgm, "still put it on while i work"]
+  - say: You put it on while you work too? Same. I put it on when I go to sleep.
+  - chat: [here_for_bgm, "what else do u fall asleep to?"]
+  - say: Other sleep sounds. Mostly speedrun stream VODs. Someone running a game really fast.
+  - say: The commentary just keeps going, right? It knocks me right out.
+  - chat: [any_percent_rookie, "as a runner i have mixed feelings"]
+  - say: Mixed feelings as a runner? Sorry. It's a compliment. Kind of.
+  - chat: [here_for_bgm, "like rta in japan?"]
+  - say: Yep, RTA in Japan. It's a speedrun marathon, runs a whole week in summer and in winter. I just leave it on.
+  - say: I fall asleep, wake up, and a different game is being run.
+  - chat: [any_percent_rookie, "no nintendo games last summer right"]
+  - say: No Nintendo games last summer, right. So whether I was asleep or awake, it was all games I didn't know. That was kind of fresh, actually.
+  - chat: [here_for_bgm, "im a rain sounds person"]
+  - say: Rain sounds are nice too. I'll try that.
+  - chat: [login_bonus_only, "i sleep in total silence"]
+  - say: You can sleep in silence? Jealous. I can't relax unless something's playing.
+  - chat: [coffee_shop_regular, "kitchen fan noise is elite"]
+  - say: The kitchen fan. Never thought of that.
+  - say: Anyway. I was in the middle of Gimmick.
+  - chat: [first_timer_tanuki, "a sound chip in the cartridge?"]
+  - say: Yep, a sound chip in the cartridge. Old cartridges sometimes had parts inside to help with stuff the console couldn't do on its own.
+  - say: Gimmick has a part that helps with sound.
+  - chat: [retro_grandpa, "the overseas version doesnt have it right"]
+  - say: The overseas version doesn't, right. Outside Japan it only came out in Scandinavia.
+  - say: And that version doesn't have the sound chip.
+  - say: So they remade the music to play on the normal sound hardware.
+  - chat: [here_for_bgm, "i like the scandinavian version music too"]
+  - say: I like the Scandinavian version's music too. Fewer sounds, but it still sounds like the same song.
+- title: Side road (which difficulty do you pick)
+  beats:
+  - chat: [first_timer_tanuki, "arent u bad at hard games?"]
+  - say: Am I bad at hard games? Yes. If I can pick a difficulty, I always pick the easiest one.
+  - chat: [any_percent_rookie, "soft"]
+  - say: I'm allowed to be soft. It's a game.
+  - say: It literally says "Easy" right there. It's a waste not to pick it.
+  - chat: [login_bonus_only, "real. easy is plenty"]
+  - say: Easy is plenty, right? Clear it once on easy, and if you feel like it, bump it up.
+  - chat: [any_percent_rookie, "have u ever felt like it?"]
+  - say: Have I ever felt like it? No.
+  - chat: [coffee_shop_regular, "what about the castle people? like ella?"]
+  - say: The castle people. Ella picks the hardest one. And she picks it without saying a word.
+  - say: I watched her once. No matter how many times she died, her face didn't change. Scary, right?
+  - chat: [any_percent_rookie, "ella is so cool"]
+  - say: Ella's cool, yeah. Cool, but I'm not copying her.
+  - chat: [first_timer_tanuki, "can u pick difficulty in gimmick?"]
+  - say: You can't pick difficulty in Gimmick. So I only get partway. And that's fine.
+  - ask:
+      q: Game difficulty. Which do you pick?
+      options:
+      - c: Easy
+        r:
+        - Easy, {name}. My people. Nothing to be ashamed of.
+      - c: Normal
+        r:
+        - Normal, {name}. Gotta start somewhere.
+      - c: Hard
+        r:
+        - Hard, {name}. Same as Ella.
+        - Can you keep a straight face no matter how many times you die?
+      - c: The highest one, right away
+        r:
+        - Straight to the top, {name}? Not me. I'm tired just watching.
+      npc:
+      - [login_bonus_only, 0]
+      - [any_percent_rookie, 3]
+      - [retro_grandpa, 1]
+      - [coffee_shop_regular, 0]
+      - [here_for_bgm, 1]
+      - [first_timer_tanuki, 0]
+  - say: Easy wins. What a relief.
+- title: Back (buttons that press themselves)
+  beats:
+  - chat: [errata_collector, "speaking of gimmick, the thing where holding up makes it pause"]
+  - say: Holding up makes it pause? Oh, that. You're holding up and it pauses on you.
+  - say: That's related to how it plays sound. I wanted to talk about that.
+  - chat: [first_timer_tanuki, "it pauses?"]
+  - say: It pauses. The NES has this system that goes and fetches data to play sound.
+  - say: And sometimes that butts in while the game is reading the controller buttons.
+  - say: When that happens, it thinks you pressed a button you didn't press.
+  - chat: [first_timer_tanuki, "creepy"]
+  - say: Creepy, right? In Dr. Mario, while music's playing, the rotate button acts weird sometimes.
+  - chat: [any_percent_rookie, "castlevania too right"]
+  - say: Castlevania too, yeah. The North American Castlevania.
+  - say: If you're holding up when the hit sound plays, it turns into Start, and the game pauses.
+  - chat: [login_bonus_only, "so it pauses at the best part"]
+  - say: Pauses at the best part. Yep. Right when it gets exciting.
+  - chat: [just_clicks_agree, "like when u agree to something without pressing anything"]
+  - say: Agreeing to something without pressing anything? That's what you do every day.
+  - say: Gimmick has something similar, where holding up can pause it.
+  - chat: [first_timer_tanuki, "cant they fix it?"]
+  - say: Can they fix it? You read the buttons a few times, and keep rereading until you get the same answer twice. That's one way to fix it.
+  - say: But in Gimmick, apparently that rereading doesn't work right on some consoles.
+  - chat: [errata_collector, "the dr mario one doesnt happen on european consoles"]
+  - say: Right, it doesn't happen on European consoles. The European console has that part fixed.
+  - chat: [first_timer_tanuki, "different by country is so interesting"]
+  - say: Different by country, it's fun, right? Same game, and it happens or doesn't depending on the country.
+- title: Another tangent (the creator's name)
+  beats:
+  - chat: [here_for_bgm, "didnt a new version of gimmick come out"]
+  - say: A new version, yeah. It came out in twenty-twenty-three.
+  - say: But Tomomi Sakai, who made the original, said in an interview he wasn't involved in the new version.
+  - chat: [first_timer_tanuki, "even tho he made it?"]
+  - say: Even though he made it. Yeah. That one thing makes me sad.
+  - say: When someone makes a game I love, I want their name out front. Properly.
+  - chat: [five_am_reporter, "It really hurts when your name doesn't get listed."]
+  - say: It hurts when your name doesn't get listed. Coming from you, that sounds like it means something else.
+  - chat: [five_am_reporter, "No hidden meaning."]
+  - say: No hidden meaning. I know. I said it knowing that.
+- title: The game I can't stand (Battletoads), and my favorite delinquents
+  beats:
+  - chat: [retro_grandpa, "so what game do u hate?"]
+  - say: The one I can't stand is Battletoads. Didn't even have to think.
+  - chat: [any_percent_rookie, "bc its hard right"]
+  - say: Because it's hard, sure, but that's not all.
+  - say: It gave so much grief to the people who make emulators, the software that mimics old consoles on a PC.
+  - say: If the timing is even a little off, the game just freezes.
+  - chat: [first_timer_tanuki, "is it the devs fault?"]
+  - say: Is it the developers' fault? Not really. It ran fine on real hardware.
+  - say: It's just, the emulator people couldn't sleep. So I can't stand it.
+  - chat: [any_percent_rookie, "i like it tho"]
+  - say: You like it, Rookie. That's fine. Me not liking it is just my own selfish reason.
+  - chat: [login_bonus_only, "fav developer?"]
+  - say: Favorite developer. Codemasters. A British company.
+  - say: They put out NES games without Nintendo's permission.
+  - chat: [first_timer_tanuki, "is that even allowed"]
+  - say: Was it allowed? There was a fight about it, yeah. But they were incredibly good.
+  - say: Without a license, the console's lock won't open. So they opened it with their own circuit.
+  - say: In a game called Bee Fifty-Two, they used the NES signal for "too many sprites" as a clock.
+  - chat: [lag_appreciation_club, "the title screen thing"]
+  - say: Yep, the title screen. I love when people use the part nobody else uses.
+  - chat: [five_am_reporter, "Is it okay to say you like the unlicensed stuff?"]
+  - say: Is it okay to like the unlicensed stuff? I like studying how it works. Taking someone else's stuff is a different conversation.
+- title: Wrap-up (the bottom of the used-game bin)
+  beats:
+  - chat: [first_timer_tanuki, "do u own gimmick?"]
+  - say: I own Gimmick, yeah. It came out of the bottom of a bin at a used game shop.
+  - say: The price tag was the same as all the other cartridges.
+  - chat: [retro_grandpa, "thats a jackpot"]
+  - say: Jackpot, right? I held it with both hands all the way to the register. Felt like someone was going to take it.
+  - chat: [first_timer_tanuki, "are used games hit or miss?"]
+  - say: Hit or miss? Yeah. Some have dead batteries, and your saves disappear.
+  - say: I start from the bottom of the bin. The top's already been picked over.
+  - chat: [retro_grandpa, "real. the good stuff is at the bottom"]
+  - say: Good stuff's at the bottom, right? Crouching is effort, but that's the one thing I try hard at.
+  - chat: [login_bonus_only, "so where is gimmick now"]
+  - say: Where is it now? I got home and put it straight under my pillow.
+  - chat: [login_bonus_only, "pillow again lmao"]
+  - say: Mm. Pillow again.
+  - say: Next time, I'll talk about the Switch Two price, and something even weirder that I bought.
+  - say: Okay, good work, everyone. I'm going to fall asleep to the Gimmick soundtrack tonight.

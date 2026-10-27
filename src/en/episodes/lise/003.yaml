@@ -1,0 +1,213 @@
+# リゼ 003 の英訳（src/episodes/lise/003.yaml）。拍の並びは日本語と同じ。表情は build.py が日本語から写すので書かない。
+title: The bot I wrote got banned in nineteen days
+lobby:
+- A long time ago, I wrote a program that played an online game for me.
+- It got caught in nineteen days. Today I'll tell you how.
+- I just got out of the bath. My hair's still wet.
+parts:
+- title: Opening (out of the bath, bath bombs)
+  beats:
+  - say: Okay, I'm on. Sorry, my hair's still wet.
+  - chat: [good_morning_guy, "evening"]
+  - chat: [login_bonus_only, "fresh out the bath huh"]
+  - say: Evening, Morning Guy. Yeah, fresh out of the bath. I started dozing off in the tub, so I'm a little late.
+  - chat: [night_shift_survivor, "falling asleep in the tub is dangerous"]
+  - say: Falling asleep in the tub is dangerous? I know. Ella woke me up today. That was close.
+  - say: Next time, if I get sleepy, I get out. For real.
+  - chat: [onsen_sommelier, "promise?"]
+  - say: Promise. I will. Ella's watching me now anyway.
+  - chat: [login_bonus_only, "what were u even doing in there"]
+  - say: What was I doing. Watching the bath tablet dissolve. It's called Bab, a fizzy tablet everyone in Japan has. The fizzing sound. I could listen to it forever.
+  - chat: [onsen_sommelier, "bath tablet person i see"]
+  - say: Yep, bath tablet person. When it's fully dissolved, that's my signal that I'm allowed to get out.
+  - chat: [login_bonus_only, "so u wait for a signal"]
+  - say: Right. I wait for a signal. That's kind of today's topic too.
+  - say: I wash my face first. Because the first thing I do, half asleep, is splash water on it anyway.
+  - chat: [onsen_sommelier, "i go hair first"]
+  - say: Hair first, Sommelier? Lots of hair-first people. Sounds like it'd wake you up.
+  - ask:
+      q: Do you actually soak in the tub?
+      options:
+      - c: Every day
+        r:
+        - Every day, {name}. My people. But get out when you get sleepy, okay?
+        - Weird thing for me to say, I know.
+      - c: Sometimes
+        r:
+        - Sometimes, {name}. On soak days you want a bath tablet, right?
+      - c: Shower only
+        r:
+        - Showers, {name}. If it gets you to bed faster, fine by me.
+      - c: I love sento and onsen
+        r:
+        - Public baths and hot springs, {name}. I go for the rest area, honestly.
+        - They have these tatami rooms where you can just roll around. Best part.
+      npc:
+      - [onsen_sommelier, 3]
+      - [night_shift_survivor, 2]
+      - [login_bonus_only, 0]
+      - [good_morning_guy, 1]
+      - [retro_grandpa, 1]
+  - say: Mostly sometimes, huh. And some every-day people. You're all so responsible.
+  - chat: [onsen_sommelier, "what do u drink after a bath"]
+  - say: After a bath, coffee milk. It's the classic bathhouse drink here, sweet milky coffee. I'm usually a tea person, but after the bath is different.
+  - chat: [login_bonus_only, "didnt u say no coffee bc it wakes u up?"]
+  - say: Did I say no coffee? I did. But that one's basically milk.
+  - chat: [login_bonus_only, "convenient"]
+  - say: Convenient logic? Yeah. Works for me. And I'm holding one right now. See.
+  - chat: [onsen_sommelier, "not the glass bottle?"]
+  - say: Not a bottle, a carton. Bottles you have to go return. Effort.
+- title: Something like the topic (the bar at the top of the screen)
+  beats:
+  - chat: [first_time_here, "first time here. whats today about?"]
+  - say: Hi, new person. Today, a little bit of game stuff, and then an old failure of mine.
+  - say: In Super Mario, the top of the screen, where the score and coin count are. You know it?
+  - chat: [first_time_here, "Yes"]
+  - say: Right. When Mario walks right and the screen scrolls, that part doesn't move.
+  - chat: [login_bonus_only, "huh now that u mention it it stays still"]
+  - say: Right, now that you mention it. The top stays still, and only the bottom scrolls.
+  - say: But the NES doesn't normally tell you which line of the screen it's drawing right now.
+  - chat: [first_time_here, "then how do they split it"]
+  - say: How do they split it. They sneak one moving sprite on top of the little coin icon in that bar.
+  - say: As the screen gets drawn and reaches that spot, you get a signal. "Just drew this."
+  - say: When the signal comes, you switch over. "Okay, scroll everything below here."
+  - chat: [first_time_here, "the coin was the signal??"]
+  - say: Yep. The coin is the signal. Looks like it's just sparkling, right? It's a marker.
+  - chat: [retro_grandpa, "sprite zero hit"]
+  - say: Right, sprite zero hit. When sprite number zero gets hit, that's the signal.
+  - chat: [lag_appreciation_club, "what if the signal never comes"]
+  - say: If it never comes? It waits. Forever.
+  - say: The code literally says "wait until the signal," so some games just freeze if it doesn't show up.
+  - chat: [first_time_here, "so loyal"]
+  - say: So loyal, seriously. I'd go home and sleep after five minutes.
+- title: Side road (waiting, then the bot)
+  beats:
+  - say: Oh. Talking about waiting reminded me. Of something bad.
+  - chat: [login_bonus_only, "what"]
+  - say: What. I wrote a bot once.
+  - chat: [first_time_here, "a bot?"]
+  - say: A bot is a little program that plays the game for you.
+  - say: In an online game. I let it do all the walking and the healing.
+  - say: Its name was Sleepyhead Number One.
+  - chat: [login_bonus_only, "the name is literally just you"]
+  - say: Literally just me, yeah. Good, right? A kid who works while I sleep. Living the dream.
+  - say: What it did was the same thing as the Mario trick.
+  - say: It watched the color of the health bar on screen and waited until it went red. Red, drink a potion.
+  - chat: [errata_collector, "same shape. wait for a signal"]
+  - say: Yep. Same shape. Wait, and when it comes, move. That's it.
+  - chat: [ex_gold_farmer, "nostalgic. everyone did that back then"]
+  - say: "\"Nostalgic, everyone did that.\" There he is. The ex gold farmer."
+  - chat: [ex_gold_farmer, "appreciate you putting the ex in there"]
+  - say: Of course I say ex. You're an office worker now, right?
+  - say: I don't like selling game money for real money, just so you know. But I'll listen to old stories.
+  - chat: [ex_gold_farmer, "fair"]
+- title: The ban
+  beats:
+  - say: So. Sleepyhead Number One worked for nineteen days, and then got banned.
+  - chat: [first_time_here, "banned?"]
+  - say: Banned means they lock you out. The whole account.
+  - say: All I got was one email. A form letter.
+  - say: "\"Due to confirmed use of an unauthorized program.\""
+  - say: It didn't say how they knew. Not one line.
+  - chat: [login_bonus_only, "well yeah they wouldnt tell u"]
+  - say: Well yeah, they wouldn't. I get it. But I wanted to know.
+  - say: So I looked into it myself. Learned the tools you use to peek inside a running program.
+  - chat: [first_time_here, "u went that far?"]
+  - say: I went that far. If the work is for the sake of being lazy, I'll do any amount of it.
+  - say: And I figured it out. Why it got caught.
+  - say: The time between clicks was exactly one second. Every single time.
+  - chat: [login_bonus_only, "too diligent lmao"]
+  - say: Yep. Too diligent. Humans aren't that diligent.
+  - say: I've never once woken up at the same time two days in a row.
+  - say: It got caught for working harder than its parent.
+  - chat: [ex_gold_farmer, "the farmers randomized the timing on purpose"]
+  - say: The farmers randomized it on purpose? Figures. Shady, but smart.
+  - chat: [ex_gold_farmer, "still got wiped in batches every few months"]
+  - say: Still got wiped in batches. Yeah, the people watching started looking at the habits in the randomizing too. It's a chase.
+  - chat: [ex_gold_farmer, "on wipe days the workshop got real quiet"]
+  - say: The workshop got quiet. Wait, workshop? How many people were in there?
+  - chat: [ex_gold_farmer, "cant say"]
+  - say: Can't say. Okay. I won't ask.
+  - chat: [login_bonus_only, "this got dark"]
+  - say: Dark, yeah. Old online games went deep. I was just napping in the shallow end.
+  - chat: [errata_collector, "by the way what was the window title"]
+  - say: The window title. Don't.
+  - chat: [login_bonus_only, "say it"]
+  - say: Say it, ugh. Fine. The bot's window title. I put my character's name in it.
+  - chat: [login_bonus_only, "lmao"]
+  - chat: [first_time_here, "yeah thats gonna get u caught lol"]
+  - say: Chat's just laughing now. Yeah, that'll get you caught. Don't laugh. Okay, I laugh about it now too.
+  - say: I still think that was half the reason.
+- title: Another side road (if it just fought for me)
+  beats:
+  - chat: [any_percent_rookie, "if the game had auto battle built in u wouldnt have been caught"]
+  - say: If the game had auto battle built in? That. That's all I ever wanted.
+  - say: In Dragon Quest Four, you give your party tactics and they fight on their own, right?
+  - chat: [retro_grandpa, "show no mercy"]
+  - say: Yeah. "Show No Mercy," or "Focus on Healing," that kind of thing.
+  - say: You don't give orders. You just give a direction. The ideal employee.
+  - chat: [any_percent_rookie, "kiryl spamming instant death on bosses"]
+  - say: Kiryl and the instant-death spells. Knew someone would say it. Even with a direction, some kids just don't listen.
+  - say: When I was little, the menu said sakusen in Japanese. Tactics. I read it as sakusei. Which means "create."
+  - chat: [login_bonus_only, "create lmao"]
+  - say: You laughed. Create. I thought it was a command for making stuff.
+  - say: A friend corrected me, and I was so embarrassed I said "the party moves either way."
+  - chat: [first_time_here, "sore loser"]
+  - say: Yeah. Sore loser. I'm only honest when I'm asleep.
+  - ask:
+      q: If a game has auto battle, do you use it?
+      options:
+      - c: Right away
+        r:
+        - Right away, {name}. I get it. Fewer buttons, better.
+      - c: Only when I'm tired of it
+        r:
+        - Only when it's a pain, {name}. Maybe that's the right amount.
+      - c: I want to play it myself
+        r:
+        - You want to do it yourself, {name}. I get that too. I just like watching more.
+      - c: I skip games with auto
+        r:
+        - You don't play them at all, {name}. You've got principles. I kind of want to hear them.
+      npc:
+      - [login_bonus_only, 0]
+      - [any_percent_rookie, 2]
+      - [retro_grandpa, 1]
+      - [first_time_here, 1]
+      - [ex_gold_farmer, 0]
+  - say: Right away and only-when-tired are about even. Lots of my people here.
+  - chat: [any_percent_rookie, "no auto in speedruns tho"]
+  - say: Speedrunners, sure. You're racing for time. Your goal is the opposite of mine.
+- title: Back (Mario's signal, and the shutdown)
+  beats:
+  - chat: [first_time_here, "wait what happened to the mario bar thing"]
+  - say: What happened to the Mario bar? Right, right, I got as far as waiting for the signal.
+  - say: Um. Actually, I think that was basically all of it.
+  - chat: [retro_grandpa, "on the far right edge the hit doesnt trigger"]
+  - say: The far right edge, yeah. On the last column at the right edge of the screen, the signal never fires.
+  - say: Put it there, and you're waiting forever.
+  - chat: [first_time_here, "sleepyhead number one would wait tho"]
+  - say: Sleepyhead Number One would wait. That kid never knew when to stop.
+  - chat: [ex_gold_farmer, "whats that game like now"]
+  - say: That game's gone. In twenty-sixteen. The servers shut down.
+  - say: So. I used to send them an email asking them to lift my ban. Every year, on the same day.
+  - chat: [login_bonus_only, "every year?"]
+  - say: Yep. Every year. Never got a reply.
+  - say: Now the address doesn't exist, so it bounces. I still send it.
+  - chat: [login_bonus_only, "annual login bonus"]
+  - say: Annual login bonus. Yeah. And the reward is "address not found."
+  - chat: [ex_gold_farmer, "more dedicated than the farmers"]
+  - say: More dedicated than the farmers. Is that a compliment? It's one of the few habits a lazy person like me has kept.
+- title: Wrap-up
+  beats:
+  - chat: [just_clicks_agree, "can u still make bots now?"]
+  - say: I'm not telling you how to make a bot. You'll get caught, and the people playing it straight lose out.
+  - say: More importantly, I'm worried about that tool you installed.
+  - chat: [just_clicks_agree, "i said i deleted it"]
+  - say: You said you deleted it. Okay. Then fine. Change your password too.
+  - chat: [onsen_sommelier, "dont fall asleep in the tub next time"]
+  - say: Don't fall asleep in the tub. I'll be careful. Sleepy means get out. I promised earlier.
+  - chat: [first_time_here, "lost it at the bot window title"]
+  - say: The bot name got you? Go ahead and laugh. I tell it as a funny story now too.
+  - say: Next time, the story of how every bug I report comes back as "duplicate."
+  - say: Okay, bye, good work. I'm going to dry my hair. Well. Ella's going to dry my hair.

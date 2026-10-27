@@ -1,0 +1,192 @@
+# English version of src/episodes/mora/003.yaml.
+title: Got a fever and my emergency jelly was gone
+parts:
+- title: Hello, and the scratchy voice
+  beats:
+  - say: Evening. Let's start.
+  - chat: [night_shift_survivor, "evening. is your voice scratchy?"]
+  - say: You can hear it? Yeah. I had a fever last week. I'm fine now.
+  - chat: [cant_make_it_home, "you ok? dont push yourself"]
+  - say: Don't push yourself. Thanks. I'm fine. The voice just hasn't come back yet.
+  - chat: [lives_on_points, "ngl the raspy voice is kinda hot"]
+  - say: Hot? It is not. I'm just talking with a throat lozenge in. Ryukakusan. It's an old Japanese herbal brand, tastes like a pharmacy.
+  - say: I have one before every stream. Tonight's my third.
+  - say: I checked the back of the bag for a daily limit. There wasn't one. So, third.
+- title: The jelly in the fridge
+  beats:
+  - say: When you live alone and get a fever, the first problem is shopping.
+  - say: You don't have the energy to go buy a sports drink. The convenience store is three minutes away.
+  - chat: [night_shift_survivor, "real. 3 min is a marathon"]
+  - say: Three minutes is a marathon, exactly. So I always keep one jelly cup in the fridge. For fevers.
+  - chat: [leaving_work_on_time, "thats prepared"]
+  - say: Prepared, right? So, last week, at night. Thirty-eight degrees, that's like a hundred Fahrenheit. I open the fridge.
+  - say: No jelly.
+  - chat: [lives_on_points, "why"]
+  - say: Why? Because the day before, it hit its expiry date. So I ate it while I was still healthy.
+  - say: And the fever showed up on the exact one day before I restocked. Great timing.
+  - say: What was in the fridge was eggs, natto, and expired eggs.
+  - chat: [cant_make_it_home, "eggs showed up twice lol"]
+  - say: Eggs twice, yeah. Old ones and new ones. With a fever brain, I couldn't tell which was which.
+  - chat: [leaving_work_on_time, "mine is just mayo and beer"]
+  - say: Just mayo and beer? I have beer too. Sapporo Black Label. But I don't drink when I have a fever.
+  - chat: [good_morning_guy, "mine only has condiments"]
+  - say: Good Morning's fridge is only condiments. I get it. You open that door and it feels a little cold. Emotionally.
+  - say: So that night I boiled one egg and ate it. Believing it was a new one.
+  - say: I was fine the next day, so it probably was. The old one is still in the fridge.
+- title: The delivery box is too heavy
+  beats:
+  - say: So I ordered online. Sports drinks.
+  - say: Normal online shopping. And I picked leave at the door. They just drop it outside.
+  - say: I didn't have the energy to talk to a person either.
+  - say: So I get the delivered notification, open the front door.
+  - say: It was a box of six two-liter bottles.
+  - chat: [third_planner_this_year, "thats not a sick person amount"]
+  - say: Not a sick person amount, okay, but the whole box was cheaper. Even with a fever, I look at prices.
+  - say: And I can't lift it. It's twelve kilos. Like twenty-six pounds.
+  - chat: [cant_make_it_home, "so what did you do"]
+  - say: What did I do? Dragged it in. Down the hallway. In my pajamas.
+  - chat: [lives_on_points, "wish i saw that"]
+  - say: {face: annoyed, text: "Wish you saw that, no. Nobody sees my fever pajamas."}
+  - say: They're matching cotton pajamas. Nothing sexy about them. Mismatched ones make me restless, so I buy sets.
+  - chat: [third_planner_this_year, "before leave at door it was missed delivery slip hell"]
+  - say: Missed delivery slip hell! Yes. Back then if you weren't home, they'd put a little slip in your mailbox.
+  - say: And then you call for redelivery. An automated voice, and you punch in numbers.
+  - say: The tracking number is so long. You get one digit wrong halfway and start over.
+  - chat: [leaving_work_on_time, "its an app now"]
+  - say: It's all an app now, yeah. But honestly? Getting a slip made me a little relieved.
+  - chat: [first_time_here, "why"]
+  - say: Why? Because it meant someone came all the way to my door. Even if we didn't meet.
+  - chat: [cant_make_it_home, "i kinda get that"]
+  - say: Can't Make It Home, you kinda get it? Good. I thought that was a weird thing to say.
+- title: 'Side road: bath when you have a fever?'
+  beats:
+  - chat: [good_morning_guy, "do you take a bath when you have a fever?"]
+  - say: A bath with a fever? No. Couldn't even do a shower.
+  - say: I mostly shower anyway, even normally. Filling a whole tub for one person feels like a waste.
+  - chat: [leaving_work_on_time, "tub person. shower doesnt fix the tired"]
+  - say: Some people don't feel rested unless they soak. I get it. When I do fill the tub, I put in Bathclin. Bath salts. A few times a year.
+  - say: A few times a year, so the box never goes down. I have one on its third year.
+  - chat: [third_planner_this_year, "do you bring your phone in the bath?"]
+  - say: Phone in the bath? No. I took my planner in once and the steam made every page wavy.
+  - say: Since then, no paper, no phone. I do nothing in the bath.
+  - chat: [nameless_familiar, "phones are waterproof tho"]
+  - say: The phone's waterproof, my planner isn't. If I bring one, I want to bring the set.
+  - say: And it's just a shower and it still takes fifteen minutes. What am I doing for fifteen minutes.
+  - chat: [night_shift_survivor, "what do you drink after a bath?"]
+  - say: After a bath? Milk! Not coffee milk. The white one.
+  - ask:
+      q: After a bath, what's the first thing you drink?
+      options:
+      - c: Water or tea
+        r:
+        - "{name} goes water or tea. Responsible."
+        - That's probably what your body wants. I know that and still pick milk.
+      - c: Milk or coffee milk
+        r:
+        - "{name}, milk or coffee milk. My people. White or brown?"
+        - Hand on the hip? It's a bathhouse thing here, you chug it with one hand on your hip. I only do it when I'm alone.
+      - c: Beer or soda
+        r:
+        - "{name} goes beer or soda. Very grown-up."
+        - I know a post-bath beer is great. When I have one, I just fall asleep right there.
+      - c: Nothing
+        r:
+        - "{name}, nothing at all? You just go straight to bed?"
+        - Drink at least one glass, okay. Your throat gets bone-dry in the middle of the night.
+      npc:
+      - [third_planner_this_year, 0]
+      - [night_shift_survivor, 1]
+      - [leaving_work_on_time, 2]
+      - [nameless_familiar, 1]
+      - [lives_on_points, 2]
+  - chat: [lives_on_points, "wanna see you drinking milk"]
+  - say: You don't get to see me drink milk either. Same rule as the pajamas.
+  - say: Anyway, the fever night. I could drink the sports drinks, at least.
+- title: Lonely at midnight, and the room downstairs
+  beats:
+  - say: But fevers go up at night, right?
+  - chat: [night_shift_survivor, "middle of the night is the worst"]
+  - say: The middle of the night is the worst, yeah. And you get a little lonely. When you're alone.
+  - say: I'm lying there and the wood grain on the ceiling starts looking like faces. About three.
+  - say: And it feels like all of them are looking at me, so I sleep even worse.
+  - chat: [night_shift_survivor, "fever dreams are so weird too"]
+  - say: Fever dreams are so weird. I had one. I take a number ticket, and mine is the only one that's blank.
+  - chat: [lives_on_points, "the ward office cursed you"]
+  - say: The ward office cursed me? Maybe. I woke up drenched in sweat.
+  - chat: [first_time_here, "did you call anyone?"]
+  - say: Did I call anyone. I thought about calling my mom. Then didn't.
+  - say: She'd worry and probably get on a train. In the middle of the night.
+  - say: And once she's here, she'd say, so, is there anyone special? To me. With a fever.
+  - chat: [lives_on_points, "asking that while nursing you is a power move"]
+  - say: Asking while she nurses you, that's a power move, right? So I didn't call.
+  - say: Instead, I knocked on the floor. Twice. Knock knock.
+  - chat: [third_planner_this_year, "lise lives downstairs right?"]
+  - say: Right, Lise is downstairs. She's usually up all night.
+  - say: Three knocks came back. Knock knock knock.
+  - chat: [good_morning_guy, "cute"]
+  - say: Cute, right? Just that, and I could sleep a little.
+  - say: It's not like we agreed on it, that signal. I knock twice, she knocks three times. That's all.
+  - say: We've never asked each other what it means. If we did, it would get embarrassing.
+  - say: Then in the morning, there was a bag outside my door.
+  - chat: [cant_make_it_home, "lise!"]
+  - say: Yeah, Lise. Canned peaches, three jelly cups. And, for some reason, a game strategy guide.
+  - chat: [night_shift_survivor, "read it while you're bedridden?"]
+  - say: Read it while I'm bedridden? Probably. I don't even play that game.
+  - say: The peaches, I opened the can and ate the whole thing by myself. Canned peaches are the classic sick food here. So good with a fever.
+  - chat: [leaving_work_on_time, "for colds we did grated apple"]
+  - say: Leaving On Time does grated apple for colds. Nice. At home my mom used to do that. Now nobody grates anything for me.
+- title: 'Side road: the hospital, and watching the needle'
+  beats:
+  - chat: [first_time_here, "did you go to the doctor?"]
+  - say: The doctor? I was going to if the fever didn't break, but it did, so I didn't.
+  - chat: [night_shift_survivor, "ever been hospitalized?"]
+  - say: Hospitalized? Yes. Appendix. Five days.
+  - say: Back when I was at the Records Bureau. I was bored in the room, so I had someone bring the work ledgers and I did the books.
+  - say: And a nurse took them away. Please sleep, she said.
+  - chat: [leaving_work_on_time, "the nurse is right"]
+  - say: The nurse is right, I know. But five days is boring. With an IV, all you can do is watch it drip.
+  - chat: [night_shift_survivor, "do you watch the needle when you get a shot?"]
+  - say: Do I watch the needle? I do. I want to check where it's going in.
+  - chat: [leaving_work_on_time, "id pass out"]
+  - say: Some people pass out if they look. Passing out is bad. You don't have to look, that's fine.
+  - chat: [lives_on_points, "so you like getting poked?"]
+  - say: {face: annoyed, text: "Like getting poked? No. I just watch. You always go straight there, huh."}
+  - say: Succubus or not, shots hurt.
+  - chat: [night_shift_survivor, "love when the blood draw person is good"]
+  - say: When the blood draw person is good! When it goes in first try, I want to say, you're really good at this. I don't, though.
+  - chat: [nameless_familiar, "say it to them"]
+  - say: Say it to them, huh. Next time I will. I probably won't.
+  - say: I never properly thanked the nurse from the appendix thing either. On discharge day I was too busy getting my ledgers back.
+  - chat: [first_time_here, "tell us more about the peaches"]
+  - say: More about the peaches? They really saved me. That was the only thing I actually ate during the fever.
+  - say: But honestly, that night, I had no idea what to do first. What do you all do?
+  - ask:
+      q: You're alone and you get a fever. What do you do first?
+      options:
+      - c: Just sleep
+        r:
+        - "{name} just sleeps. They say sleep is the fastest fix anyway."
+        - Me, I opened the fridge before bed, no jelly, and that woke me right up.
+      - c: Contact someone
+        r:
+        - "{name} contacts someone. You have someone to lean on. That's nice."
+        - I knocked on the floor. Does that count as contacting someone?
+      - c: Order delivery
+        r:
+        - "{name} orders delivery. Same as me."
+        - Watch the quantity though. I dragged six two-liters down a hallway.
+      npc:
+      - [night_shift_survivor, 0]
+      - [cant_make_it_home, 0]
+      - [good_morning_guy, 1]
+      - [lives_on_points, 2]
+- title: 'Closing: I bought two jellies'
+  beats:
+  - chat: [first_time_here, "did you thank lise?"]
+  - say: Did I thank Lise? I did. Gave the guide back. Unread. Ate all three jellies.
+  - say: And once I got better, I bought new jelly. Two.
+  - chat: [third_planner_this_year, "why two?"]
+  - say: Why two? One's for fevers. The other's for eating while I'm healthy when it expires.
+  - chat: [cant_make_it_home, "so youre gonna eat both lol"]
+  - say: I'm going to eat both, you say? Probably both. While healthy.
+  - say: Okay, that's it for today. Going in for lozenge number four. Night.

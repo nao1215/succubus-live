@@ -1,0 +1,26 @@
+category: cooking
+name: 家のご飯と料理
+topics:
+- {id: cook_can, q: 自炊する？ 得意料理は？}
+- {id: cook_breakfast, q: 朝ごはんはご飯？ パン？ 食べない？, options: [ご飯, パン, シリアル, 食べない]}
+- {id: cook_miso, q: 味噌汁の好きな具は？}
+- {id: cook_curry_secret, q: 家のカレーの隠し味は？}
+- {id: cook_curry_roux, q: カレーのルウは何を使う？（バーモント、ジャワ、こくまろ、ゴールデンなど）}
+- {id: cook_frozen, q: 冷凍食品の定番は？}
+- {id: cook_instant, q: インスタントの袋麺は何？（サッポロ一番、チャルメラ、出前一丁など）}
+- {id: cook_bento_box, q: 子どもの頃のお弁当の思い出のおかずは？}
+- {id: cook_seasoning, q: 家に必ずある調味料は？}
+- {id: cook_mayo_brand, q: マヨネーズはキユーピー派？ 味の素派？}
+- {id: cook_soy, q: 醤油はどこの？ 卵かけご飯用の醤油は持ってる？}
+- {id: cook_fail, q: 料理の大失敗は？}
+- {id: cook_measure, q: 料理は量る派？ 目分量派？, options: [量る, 目分量]}
+- {id: cook_leftover, q: 作りすぎたものはどうする？}
+- {id: cook_delivery, q: 出前・宅配アプリは使う？ 何を頼む？}
+- {id: cook_takeout, q: 疲れた日の晩ご飯は？}
+- {id: cook_sunday, q: 休みの日の昼ご飯は？}
+- {id: cook_tool, q: 台所の道具で手放せないものは？}
+- {id: cook_mom, q: 実家の味で思い出すのは？}
+- {id: cook_egg, q: ゆで卵は何分？ 半熟？ 固ゆで？}
+- {id: cook_rice_cooker, q: ご飯は炊く？ パックご飯（サトウのごはん）？}
+- {id: cook_nabe_base, q: 鍋の素は使う？ どれ？}
+- {id: cook_new_year, q: おせちで好きなのは？ 嫌いなのは？}

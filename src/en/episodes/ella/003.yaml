@@ -1,0 +1,182 @@
+# Ella 003 (English). Same beats as src/episodes/ella/003.yaml.
+title: "I watched Ozzy Osbourne's final show alone at home, and I cried"
+parts:
+- title: Opening (fresh from the bath)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Forgive me, my hair is still a little damp. I've only just come out of the bath."
+  - chat: [headbang_whiplash, "fresh out of the bath ella"]
+  - say: "'Fresh out of the bath Ella.' Kindly don't put it like that."
+  - chat: [new_releases_only, "how hot is ur bath"]
+  - say: "How hot? Forty-two degrees Celsius. That's about a hundred and eight Fahrenheit."
+  - chat: [new_releases_only, "ouch"]
+  - chat: [budokan_balcony_east, "are you an edokko or something"]
+  - say: "Ouch, and 'am I an Edokko.' That means a born-and-bred old Tokyo type, famous for scalding baths. Hot water clears the head, that's all."
+  - chat: [piano_teacher, "how long do you soak"]
+  - say: "How long? About thirty minutes. That's roughly one side of a record."
+  - say: "I put it on in the changing room, and when the side ends, I get out."
+  - chat: [first_time_here, "so the record is your timer"]
+  - say: "The record is my timer, exactly. When the needle reaches the end, it goes pop, pop, pop. That's my cue."
+  - chat: [sold_my_keyboard, "dont u get dizzy at 42 for 30 min?"]
+  - say: "Do I get dizzy? Not at all. ...Or so I believe. My lady does tell me my face is red."
+  - chat: [headbang_whiplash, "so ur dizzy"]
+  - say: "So I'm dizzy... Perhaps I am."
+  - chat: [budokan_balcony_east, "what temp does everyone else use"]
+  - say: "Everyone else? In the castle, Mora takes hers at forty-one. Pim told her forty-two was far too hot, so she came down a degree."
+  - say: "Pim is at forty. My lady, thirty-nine."
+  - say: "And Nox is at thirty-eight. She says if it's any hotter, the text on her screen wobbles afterwards."
+  - chat: [new_releases_only, "nox thats lukewarm"]
+  - say: "Nox's is lukewarm, isn't it. At thirty-eight, I don't feel as though I've had a bath at all."
+  - chat: [headbang_whiplash, "what about vespa?"]
+  - say: "Vespa? Showers only, at forty-three. So there is someone hotter than me after all."
+  - chat: [budokan_balcony_east, "vespa wins"]
+  - say: {face: annoyed, text: "'Vespa wins.' A bath is not a competition, my dear."}
+  - chat: [sold_my_keyboard, "do u go to hot springs?"]
+  - say: "Hot springs, oh yes! I love Kinosaki Onsen. It's a hot spring town where you walk between seven public bathhouses, and each one echoes differently."
+  - chat: [first_time_here, "echoes?"]
+  - say: "What do I mean by echoes? If you clap once, the sound lingers differently. Some baths ring for ages, some swallow it straight away."
+  - say: "So I made the rounds of all seven, clapping and comparing."
+  - say: "And at the third bath, a local lady told me, 'Young miss, save the applause for after you're out of the water.'"
+  - chat: [headbang_whiplash, "you got scolded lmao"]
+  - chat: [budokan_balcony_east, "if someone was clapping in the onsen id stare too"]
+  - say: {face: shy, text: "You'd stare too. Yes, that's fair. I bathed very quietly in the remaining four."}
+- title: Main story (the summer the lottery said no)
+  beats:
+  - say: "Anyway, I was thinking in the bath. Today I'd like to tell you about last summer."
+  - chat: [budokan_balcony_east, "oh, that"]
+  - say: "'Oh, that.' Yes, that. July the fifth, twenty twenty-five. In Birmingham, England. Mister Ozzy's final show."
+  - chat: [first_time_here, "ozzy, like black sabbath ozzy?"]
+  - say: "Black Sabbath's Ozzy, yes, dear newcomer. Sabbath's singer, who then sang under his own name for decades afterwards."
+  - say: "At Villa Park, the hometown football ground. The show was called 'Back to the Beginning.'"
+  - chat: [new_releases_only, "i know that one. watched the stream"]
+  - say: "You watched the stream, New Releases? So did I."
+  - chat: [first_time_here, "not in person?"]
+  - say: "Not in person, no... I entered the ticket lottery three times."
+  - chat: [headbang_whiplash, "all three??"]
+  - say: "All three? Yes. Lost all three."
+  - chat: [sold_my_keyboard, "that hurts"]
+  - say: "It does hurt. When I saw the third result, I hadn't even the strength to make tea. I sat there drinking plain hot water."
+  - chat: [budokan_balcony_east, "plain hot water lmao"]
+  - say: "Hot water is no laughing matter. And so on the day, I watched it alone, down in the castle's wine cellar."
+  - chat: [piano_teacher, "why the cellar?"]
+  - say: "Why the cellar? The acoustics are lovely, and... I didn't want my lady to see me cry."
+  - chat: [headbang_whiplash, "u fully planned to cry"]
+  - say: "I fully planned to cry, yes. I went down with several handkerchiefs."
+  - say: "The lineup was simply enormous."
+  - chat: [new_releases_only, "metallica AND slayer were there"]
+  - say: "Metallica, and Slayer too. And the musical director was Mister Tom Morello."
+  - chat: [budokan_balcony_east, "like several festivals in one day"]
+  - say: "Several festivals' worth, truly. I went upstairs to make fresh tea I don't know how many times."
+  - chat: [sold_my_keyboard, "it was raising money too right"]
+  - say: "Raising money too, yes. It was a charity show as well."
+  - say: "At first, the papers reported an enormous figure. Later, the family said the real amount was much smaller."
+  - chat: [first_time_here, "oh really"]
+  - say: "Mm. Even so, I'm told every act played without taking a fee."
+  - say: "I was only watching from a cellar, but I clapped at the screen the whole way through."
+  - say: "And then, at the very end, the four of Sabbath."
+  - say: "Mister Ozzy, Mister Iommi, Mister Geezer Butler, and Mister Bill Ward."
+  - say: "The first time all four had been together since two thousand five."
+  - chat: [sold_my_keyboard, "ward being there was huge"]
+  - say: "Ward being there was huge! Sold My Keyboard, that's exactly it!"
+  - say: "To be perfectly frank, I've always found Sabbath without Mister Ward a little hard to love."
+  - chat: [new_releases_only, "ooh spicy"]
+  - say: "'Spicy.' Yes, I'll say it. If I don't say what I love and what I don't, it sits wrong with me."
+  - say: "Mister Ozzy sang seated, on a great big throne."
+  - chat: [first_time_here, "seated?"]
+  - say: "Seated, yes. His body could no longer stand and sing. And still, he sang it all, to the very end."
+  - chat: [budokan_balcony_east, "i cried at that"]
+  - say: "'I cried at that.' Of course you did."
+  - say: "Four Sabbath songs. 'War Pigs,' 'N.I.B.,' 'Iron Man.' And last of all, 'Paranoid.'"
+  - chat: [headbang_whiplash, "madam is of a most suspicious disposition"]
+  - say: {face: laugh, text: "'Madam is of a most suspicious disposition'! You remembered! Oh, Whiplash!"}
+  - chat: [new_releases_only, "not during the sad part pls"]
+  - say: "Not during the sad part, you say, but I shan't stop. I've reached the point where even that translation makes me cry."
+- title: Side track (favorite numbers)
+  beats:
+  - chat: [piano_teacher, "how did it feel to see all four together"]
+  - say: "How did it feel? The moment I realized Mister Ward was there, that alone undid me. I waved at the screen the whole time."
+  - say: "When the four of them lined up on stage, I counted them off on my fingers. One, two, three, four."
+  - chat: [sold_my_keyboard, "its four people u dont need to count"]
+  - say: "I didn't need to count. I know. I knew perfectly well, and I simply couldn't help counting."
+  - chat: [budokan_balcony_east, "same. i count the members when bands tour japan"]
+  - say: "You count the members when they tour Japan. You do, don't you! You want to be sure everyone came."
+  - say: "Four has always been my favorite number, you see. Because the original Sabbath were four."
+  - chat: [headbang_whiplash, "heavy reason"]
+  - chat: [new_releases_only, "whats everyones fav number? mine is 7"]
+  - chat: [piano_teacher, "3. i love triple time"]
+  - say: "Favorite numbers. New Releases says seven, and Teacher says three, for triple time. A waltz girl. New Releases, why seven?"
+  - chat: [new_releases_only, "no reason"]
+  - say: "No reason at all. How refreshing."
+  - chat: [headbang_whiplash, "mine is 69"]
+  - say: {face: annoyed, text: "Whiplash. I shall pretend I never read that number."}
+  - chat: [headbang_whiplash, "how did u know"]
+  - say: "How did I know? My dear, I am a succubus. I can spot that sort of number from across the room."
+  - chat: [sold_my_keyboard, "so what happened after the handkerchief in the cellar?"]
+  - say: {face: shy, text: "After the handkerchief. Ah, yes. I'd got as far as clutching the handkerchief."}
+- title: Back to the story (the cellar door)
+  beats:
+  - say: "The first guitar of 'Paranoid' rang out, and I was already an absolute wreck."
+  - say: "And at that very moment, the cellar door opened."
+  - chat: [budokan_balcony_east, "lise?"]
+  - say: "My lady, you guess? Correct. My lady had come down for a bottle of wine."
+  - chat: [headbang_whiplash, "worst timing ever"]
+  - say: "The worst timing imaginable. On reflex, I pretended to be counting the barrels."
+  - chat: [new_releases_only, "still holding the handkerchief?"]
+  - say: "Still holding the handkerchief? Yes. Handkerchief in hand, in tears, counting barrels."
+  - chat: [piano_teacher, "not convincing"]
+  - say: "Not convincing at all, I know. My lady only asked, 'How many are there?', took one bottle of wine, and went back upstairs."
+  - chat: [sold_my_keyboard, "thats kind"]
+  - say: {face: shy, text: "Kind, yes. I never did answer how many."}
+  - ask:
+      q: "Tell me, my dears. When your favorite band plays, do you go to the venue, or watch the stream?"
+      options:
+      - c: "venue. i want to feel it"
+        r:
+        - "{name} goes to the venue, to feel the sound in their body. How I envy you. Do you bring earplugs?"
+        - "I'm forever forgetting mine, I confess."
+      - c: "stream. home is comfy"
+        r:
+        - "The stream, because home is comfy. {name}, a kindred spirit. One can make as much tea as one likes."
+        - "Though not raising a fist alongside strangers is a little lonely, isn't it."
+      - c: "i want to go but cant get tickets"
+        r:
+        - "Want to go but can't get tickets... Oh, {name}. Come, let us drink plain hot water together."
+        - "The lottery has never once been on my side."
+      npc:
+      - [budokan_balcony_east, 0]
+      - [new_releases_only, 0]
+      - [sold_my_keyboard, 1]
+      - [headbang_whiplash, 0]
+      - [first_time_here, 2]
+  - chat: [budokan_balcony_east, "i can talk venues all day. last year i was in the very back of the second floor"]
+  - say: "Plenty of venue people, I see. Budokan, the very back row of the second floor last year! Could you see anything?"
+  - chat: [budokan_balcony_east, "tiny specks. but the sound hit"]
+  - say: "Tiny specks, but the sound hit. If the sound reaches you, I'd envy even the specks."
+- title: Closing (seventeen days later, and the bands that carry on)
+  beats:
+  - say: "And then. Some of you may know this already. Seventeen days later."
+  - say: "On July the twenty-second, Mister Ozzy passed away. He was seventy-six."
+  - chat: [sold_my_keyboard, "he made it in time though"]
+  - say: "He made it in time. Yes. In his hometown, singing to the very end. He made it."
+  - say: "Afterwards, there was a funeral procession through the streets of Birmingham."
+  - say: "I'm told the cars stopped at a bench in town that bears Black Sabbath's name."
+  - chat: [budokan_balcony_east, "fans left flowers there"]
+  - say: "Fans left flowers. I kept that photo as my phone's lock screen for quite a while."
+  - chat: [headbang_whiplash, "and now?"]
+  - say: "Now my lock screen is my lady, asleep."
+  - chat: [new_releases_only, "suddenly intense"]
+  - say: {face: smug, text: "Intense? Whatever do you mean? It's perfectly normal."}
+  - chat: [piano_teacher, "it is not normal"]
+  - chat: [new_releases_only, "linkin park kept going with a new singer too. bands that last, last"]
+  - say: "Bands that last, last. Quite so. Linkin Park welcomed Miss Emily Armstrong in twenty twenty-four."
+  - chat: [new_releases_only, "people were split at first tho"]
+  - say: "People were split, yes. But for my part, I'm simply happy they carry on at all."
+  - chat: [sold_my_keyboard, "then ella should answer her letter too"]
+  - say: "'Then Ella should answer her letter too'... Ah."
+  - chat: [headbang_whiplash, "direct hit"]
+  - say: {face: flustered, text: "A direct hit. Sold My Keyboard, must you say that right now?"}
+  - chat: [budokan_balcony_east, "she ran"]
+  - say: "Yes, I'm running. My head, so nicely warmed by the bath, has gone quite cold."
+  - say: "Thank you all for today. I'll take my leave before I catch a chill."
+  - chat: [new_releases_only, "back into the 42 degree bath?"]
+  - say: {face: laugh, text: "Back into the forty-two degree bath? I shan't. ...Probably. Farewell, my dears."}

@@ -1,0 +1,31 @@
+category: gear
+name: 持ち物の機種・銘柄
+# ユーザー「スマホはどれとか」。機種・銘柄は実名で。古い機種を使い続ける、ケース、壊れ方などの話で広げる。
+topics:
+- {id: gear_phone, q: いま使っているスマホの機種は？, options: [iPhone, Pixel, Galaxy, Xperia, AQUOS, arrows, その他]}
+- {id: gear_phone_age, q: そのスマホは何年使ってる？ 画面は割れてる？}
+- {id: gear_phone_case, q: スマホケースは何？ 手帳型？ 裸で使う？}
+- {id: gear_first_phone, q: 最初の携帯電話の機種は？, era: 1990s-2010s}
+- {id: gear_carrier, q: キャリアは大手？ 格安SIM？, options: [docomo, au, SoftBank, 楽天モバイル, ahamo・povo・LINEMO, 格安SIM]}
+- {id: gear_pc, q: パソコンは何を使ってる？, options: [Windows ノート, MacBook, 自作PC, ThinkPad, 持ってない]}
+- {id: gear_tablet, q: タブレットは持ってる？ 何に使う？}
+- {id: gear_earphone, q: イヤホンは何？ 有線？ ワイヤレス？（AirPods、ソニー、Shure など）}
+- {id: gear_headphone, q: ヘッドホンやマイク、配信の機材は何を使う？}
+- {id: gear_game_console, q: 持っているゲーム機は？}
+- {id: gear_watch, q: 腕時計はする？ スマートウォッチ？}
+- {id: gear_wallet, q: 財布は長財布？ 二つ折り？ ミニ財布？ ブランドは？}
+- {id: gear_bag, q: いつものカバンは何？ 中身は？}
+- {id: gear_rice_cooker, q: 炊飯器はどこのメーカー？}
+- {id: gear_dryer, q: ドライヤーは何を使ってる？（パナソニックのナノケア、ダイソン、安いやつ）}
+- {id: gear_vacuum, q: 掃除機は何？ ルンバ？ ダイソン？ マキタ？}
+- {id: gear_fridge, q: 冷蔵庫や洗濯機のメーカーは？}
+- {id: gear_tv, q: テレビは持ってる？ 何インチ？}
+- {id: gear_camera, q: カメラはスマホだけ？ デジカメや一眼は？}
+- {id: gear_pen, q: いつも使うペンは？（ジェットストリーム、サラサ、フリクション、万年筆）}
+- {id: gear_notebook, q: ノートや手帳は何を使ってる？}
+- {id: gear_umbrella, q: 傘はビニール傘？ 折りたたみ？ ちゃんとした傘？}
+- {id: gear_shoes, q: いつも履いている靴は？（スニーカーのブランドなど）}
+- {id: gear_glasses, q: 眼鏡？ コンタクト？ 裸眼？}
+- {id: gear_keyboard, q: キーボードやマウスのこだわりは？}
+- {id: gear_oldest, q: いちばん長く使っている持ち物は？}
+- {id: gear_broken, q: 壊れたのに捨てられない機械は？}

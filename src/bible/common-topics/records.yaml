@@ -1,0 +1,31 @@
+category: records
+name: 「最後に〇〇したのいつ」「人生で一番〇〇」
+topics:
+- {id: rec_last_cry, q: 最後に泣いたのはいつ？ なんで？}
+- {id: rec_last_laugh, q: 最近いちばん笑ったことは？}
+- {id: rec_last_angry, q: 最後に本気で怒ったのは？}
+- {id: rec_last_run, q: 最後に全力で走ったのはいつ？}
+- {id: rec_last_letter, q: 最後に手紙を書いたのは？}
+- {id: rec_last_lie, q: 最近ついた小さな嘘は？}
+- {id: rec_last_apology, q: 最後に謝ったのは誰に何を？}
+- {id: rec_last_new, q: 最近初めてやったことは？}
+- {id: rec_last_lost, q: 最近なくしたものは？}
+- {id: rec_last_photo, q: カメラロールの最新の写真は何？}
+- {id: rec_life_best_meal, q: 人生でいちばん美味しかったご飯は？}
+- {id: rec_life_worst_meal, q: 人生でいちばんまずかったものは？}
+- {id: rec_life_scared, q: 人生でいちばん怖かった体験は？}
+- {id: rec_life_embarrassing, q: 人生でいちばん恥ずかしかったことは？}
+- {id: rec_life_expensive, q: 人生でいちばん高い買い物は？}
+- {id: rec_life_lucky, q: 人生でいちばんついていた日は？}
+- {id: rec_life_unlucky, q: 人生でいちばんついていなかった日は？}
+- {id: rec_life_far, q: 人生でいちばん遠くへ行ったのは？}
+- {id: rec_life_hot, q: 人生でいちばん暑かった・寒かった日は？}
+- {id: rec_life_late, q: 人生でいちばん大きな遅刻は？}
+- {id: rec_life_proud, q: 人生でいちばん自慢できることは？}
+- {id: rec_life_regret, q: 人生でいちばんの後悔は？（軽めに）}
+- {id: rec_life_change, q: 人生が変わった出会い・きっかけは？}
+- {id: rec_life_long_wait, q: いちばん長く並んだ行列は？}
+- {id: rec_life_best_present, q: 人生でいちばん嬉しかった誕生日プレゼントは？}
+- {id: rec_this_year, q: 今年いちばん良かったことは？}
+- {id: rec_this_year_buy, q: 今年買ってよかったもの・ダメだったものは？}
+- {id: rec_streak, q: いちばん長く続いている習慣は？}

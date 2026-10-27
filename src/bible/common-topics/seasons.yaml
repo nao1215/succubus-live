@@ -1,0 +1,28 @@
+category: seasons
+name: 季節と天気と行事
+topics:
+- {id: season_fav, q: いちばん好きな季節は？, options: [春, 夏, 秋, 冬]}
+- {id: season_summer, q: 夏はどう過ごす？}
+- {id: season_summer_food, q: 夏に食べたいものは？ そうめん？ 冷やし中華？}
+- {id: season_winter, q: 冬の過ごし方は？ こたつはある？}
+- {id: season_winter_food, q: 冬に食べたいものは？}
+- {id: season_cold_hot, q: 暑いのと寒いの、どっちがまし？, options: [暑い方がまし, 寒い方がまし]}
+- {id: season_rain, q: 雨の日は好き？ 雨の日にすることは？}
+- {id: season_umbrella, q: 傘をなくす頻度は？ ビニール傘は何本ある？}
+- {id: season_typhoon, q: 台風の日にしてしまうことは？}
+- {id: season_snow, q: 雪が降ったらはしゃぐ？}
+- {id: season_hanami, q: お花見はする？ 何を持っていく？}
+- {id: season_hanabi, q: 花火大会は行く？ 好きな花火は？}
+- {id: season_matsuri, q: 夏祭りの屋台で買うのは？}
+- {id: season_halloween, q: ハロウィンは何かする？ 仮装は？}
+- {id: season_xmas, q: クリスマスの過ごし方は？ ケーキは何？}
+- {id: season_xmas_chicken, q: クリスマスのチキンはケンタッキー？}
+- {id: season_newyear, q: 年越しはどう過ごす？ 紅白？ ガキ使？ 寝る？}
+- {id: season_hatsumode, q: 初詣は行く？ おみくじの結果は？}
+- {id: season_valentine, q: バレンタインの思い出は？}
+- {id: season_birthday, q: 誕生日はどう過ごしたい？}
+- {id: season_gw, q: ゴールデンウィークは出かける派？ 家にいる派？}
+- {id: season_obon, q: お盆と正月は実家に帰る？}
+- {id: season_hayfever, q: 花粉症はある？ 対策は？}
+- {id: season_kotatsu_mikan, q: こたつにみかんは？ 冬の家の定番は？}
+- {id: season_heat, q: 猛暑日の過ごし方は？ 冷房は何度？}

@@ -1,0 +1,202 @@
+# Ella 001 (English). Same beats as src/episodes/ella/001.yaml.
+title: "Found a tape of the band that fired me, three hundred yen in a bargain bin"
+parts:
+- title: Opening (Lumonde crumbs)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Oh. We're live already. One moment, if you please. My mouth."
+  - chat: [headbang_whiplash, "what were u eating"]
+  - say: "What was I eating? Lumonde. It's a Japanese cookie, thin crepe layers rolled up in chocolate. I allowed myself just one before we started."
+  - chat: [new_releases_only, "crumbs on ur face"]
+  - say: {face: surprised, text: "Crumbs? Wait, where? Where, exactly?"}
+  - chat: [new_releases_only, "jk"]
+  - say: "Joking. One minute into the stream, New Releases, and already you start."
+  - chat: [budokan_balcony_east, "hi ella-chan"]
+  - say: "'Hi, Ella-chan.' Good day, Budokan. Not 'chan,' if you please. That's what you call a little girl. Lady Ella will do."
+  - chat: [budokan_balcony_east, "hi lady ella-chan"]
+  - say: "'Lady Ella-chan.' That is not the part I meant, honestly."
+  - chat: [first_time_here, "first time here. you like lumonde?"]
+  - say: "Welcome, dear newcomer. Do I like Lumonde? Oh, I adore it! Nothing goes better with tea."
+  - say: "The trouble is, it makes a noise. That little crunch."
+  - chat: [first_time_here, "yeah it does"]
+  - say: "It does, doesn't it. So I have been practicing eating it silently. For the stream."
+  - chat: [headbang_whiplash, "u can practice that??"]
+  - say: "Can one practice that? Certainly one can. My record so far is zero wins."
+  - chat: [piano_teacher, "nox is a lumonde girl too right"]
+  - say: "Well remembered, Teacher. Nox is a Lumonde girl as well. The crumbs get into her keyboard, and still she cannot stop."
+  - say: "I spill mine into my tea, she spills hers into her keyboard. We both suffer, in our ways."
+  - chat: [new_releases_only, "just stop eating it"]
+  - say: {face: laugh, text: "Just stop, you say. My dear, if I could stop, I would not be suffering."}
+- title: Main story (the three-hundred-yen box)
+  beats:
+  - say: "Now then. Today, allow me to tell you about last week. It is a little embarrassing, I confess."
+  - chat: [sold_my_keyboard, "hi. embarrassing how"]
+  - say: "Good day, Sold My Keyboard. Embarrassing how? Oh, you've come at just the right moment."
+  - say: "So, I visit a secondhand record shop down in the castle town. Twice a week."
+  - chat: [budokan_balcony_east, "thats a lot"]
+  - say: "Twice a week is a lot? Not at all. New stock comes in on Tuesdays and Fridays."
+  - say: "The owner and I go back years. When I walk in, he simply points at the metal shelf. Without a word."
+  - chat: [headbang_whiplash, "no talking needed lol"]
+  - say: "Precisely, no talking needed. The other day he pointed, and then he shook his head."
+  - chat: [first_time_here, "meaning?"]
+  - say: "Meaning what, you ask. Meaning, nothing for you today."
+  - chat: [piano_teacher, "lol you understand each other"]
+  - say: "We do, somehow. Anyway, that day. Beside the register, there was a box of cassette tapes. Three hundred yen apiece. That's about two dollars."
+  - chat: [new_releases_only, "they still sell cassettes??"]
+  - say: "Oh, they still sell them. New Releases, have you ever held one?"
+  - chat: [new_releases_only, "the ones u wind with a pencil"]
+  - say: {face: surprised, text: "The ones you wind with a pencil! You do know. Wherever did you learn that?"}
+  - chat: [new_releases_only, "a video"]
+  - say: "A video. Ah. I see. How very modern."
+  - say: "So I was flipping through the box, and I saw handwriting I recognized."
+  - say: "It was a homemade tape. From a band I used to be in."
+  - chat: [budokan_balcony_east, "wait what"]
+  - chat: [first_time_here, "you were in a band??"]
+  - chat: [headbang_whiplash, "first im hearing of this"]
+  - say: "First you're hearing of it, yes. The late eighties. A metal band in the castle town. I played keyboards."
+  - chat: [sold_my_keyboard, "keys!"]
+  - say: "Keys, indeed. Same post as you, Sold My Keyboard."
+  - chat: [new_releases_only, "band name"]
+  - say: "Must I tell you the band's name?"
+  - chat: [new_releases_only, "yes"]
+  - say: "Yes, you say. ...It was called 'Moonlight Banquet.'"
+  - chat: [headbang_whiplash, "LMAOOO"]
+  - chat: [new_releases_only, "the name is already so metal"]
+  - say: {face: annoyed, text: "'So metal.' Please don't laugh. At the time, that was the height of cool."}
+  - chat: [budokan_balcony_east, "80s bands really all had names like that"]
+  - say: "Every band in the eighties had a name like that, didn't they! Thank you, Budokan."
+  - say: "So, this tape. On the front, there's a photo of the members."
+  - say: "And in the photo, there are four people."
+  - chat: [piano_teacher, "how many in the band?"]
+  - say: "How many were in the band? Five."
+  - chat: [sold_my_keyboard, "oh"]
+  - chat: [headbang_whiplash, "no way"]
+  - say: "Yes, exactly what you're thinking. My part had been cut out. With scissors."
+  - chat: [new_releases_only, "thats so brutal im crying"]
+  - chat: [first_time_here, "why?"]
+  - say: "Why, you ask. Because I was fired from that band."
+  - chat: [budokan_balcony_east, "WHAT"]
+  - say: "One morning I arrived for rehearsal, and they handed me a single carriage ticket."
+  - chat: [headbang_whiplash, "one way?"]
+  - say: "One way. A round trip, at least, would have meant they still wanted to talk."
+  - chat: [new_releases_only, "why tho"]
+  - say: "The reason was, and I quote, 'your solos are too long.'"
+  - chat: [piano_teacher, "how many bars"]
+  - say: "How many bars did I play? ...Thirty-two."
+  - chat: [piano_teacher, "thats long"]
+  - say: "It is not long! When the feeling takes you, thirty-two bars go by in a blink!"
+  - chat: [sold_my_keyboard, "it never feels long when ur the one playing"]
+  - say: "It never does when you're the one playing, does it? Keyboard understands me."
+- title: Side track (the school festival solo)
+  beats:
+  - chat: [headbang_whiplash, "first time someone said ur solos were too long?"]
+  - say: "Was that the first time? Well. Actually. It was the second."
+  - chat: [budokan_balcony_east, "THERE WAS A FIRST??"]
+  - say: "There was a first, yes. My school festival, back when I was a student. I played keys in a band we threw together."
+  - say: "When the solo came round, I got carried away. I played three times longer than planned."
+  - chat: [new_releases_only, "three times"]
+  - say: "Afterwards, the guitarist said, 'your solo was too long.' Lifetime count, number one."
+  - chat: [piano_teacher, "you learned nothing"]
+  - say: {face: shy, text: "I learned nothing. Looking back, that is quite true."}
+  - chat: [first_time_here, "what song did you play at the festival?"]
+  - say: "Which song? Deep Purple, 'Highway Star.' It has a keyboard solo, so I chose it myself."
+  - chat: [sold_my_keyboard, "so u picked it AND made it long"]
+  - say: "Picked it myself and stretched it myself. Exactly! The moment I chose it, I fully intended to go long."
+  - chat: [headbang_whiplash, "premeditated"]
+  - chat: [budokan_balcony_east, "how was everyones school festival? i did lights for the music club"]
+  - chat: [new_releases_only, "never did school festival stuff"]
+  - say: "Budokan ran the lights, and New Releases never took part. Well, that does sound restful."
+  - chat: [first_time_here, "my class did a haunted house"]
+  - say: "A haunted house! And the sound? What did you do for the sound effects?"
+  - chat: [first_time_here, "played them off a boombox"]
+  - say: {face: smile, text: "A boombox! Oh, I adore that sort of thing."}
+  - say: "You know that scream that comes out slightly distorted? That is the scariest sound there is."
+  - chat: [piano_teacher, "as a teacher i would stop a 3x solo"]
+  - say: {face: flustered, text: "You'd stop it? Teacher, please, don't stop it."}
+  - say: "But yes. I went long at the festival, and then I did the very same thing in the band."
+  - chat: [sold_my_keyboard, "twice means its ur signature move"]
+  - say: "If you call it my signature move, I feel a little bit redeemed."
+- title: Back to the story (the second reason, and I bought it)
+  beats:
+  - say: "Now, the reasons I was fired. There was actually a second one."
+  - say: "'You keep retuning the guitar. Every single time.'"
+  - chat: [new_releases_only, "ok thats on u ella"]
+  - say: "That's on me? But it was out of tune! Our guitarist, Gil. His third string, every time, just a hair flat."
+  - chat: [first_time_here, "tuning?"]
+  - say: "Tuning means adjusting each string to its proper pitch. Think of it as the instrument's warm-up stretches."
+  - chat: [first_time_here, "i'd want to fix it too if it was off"]
+  - say: "You would, wouldn't you! Our newcomer is on my side."
+  - chat: [piano_teacher, "but fixing someone elses instrument without asking every time tho"]
+  - say: "...Without asking. Well. Yes. It was without asking."
+  - chat: [budokan_balcony_east, "she did it without asking"]
+  - say: "Gil and I have not spoken since."
+  - say: "And so, the tape. I paid my three hundred yen and took it home."
+  - chat: [headbang_whiplash, "YOU BOUGHT IT"]
+  - say: "Of course I bought it. Could you leave a photo of yourself, cut out, sitting in a bin?"
+  - chat: [sold_my_keyboard, "id leave it"]
+  - chat: [new_releases_only, "id buy it and laugh at home"]
+  - say: "Some would leave it, some would buy it and laugh. As for me, honestly, I was furious. And also, curious."
+  - say: "I said nothing to the owner and paid. Three hundred yen, exact change."
+  - chat: [budokan_balcony_east, "does the owner know you were in the band?"]
+  - say: "Does the owner know? He shouldn't. ...I would like to believe he doesn't."
+  - ask:
+      q: "My dears, have any of you ever been in a band?"
+      options:
+      - c: "yes. we fought and broke up"
+        r:
+        - "Fought and broke up. {name}, you're one of us. What did you fight about? In a word, if you would."
+        - "Ours was solo lengths and tuning."
+      - c: "yes. still going"
+        r:
+        - "Still going! {name}, how wonderful. I'm terribly jealous."
+        - "Do tell me about your next gig. I should love to sneak in."
+      - c: "no. just a listener"
+        r:
+        - "{name} is a listener. Without listeners, we players would be quite lost."
+        - "And besides, listeners never get fired."
+      npc:
+      - [sold_my_keyboard, 0]
+      - [budokan_balcony_east, 2]
+      - [headbang_whiplash, 2]
+      - [piano_teacher, 2]
+      - [new_releases_only, 1]
+  - chat: [sold_my_keyboard, "we fought too. over money"]
+  - say: "Plenty of listeners tonight. And Keyboard fought over money. Oh, that's the kind that stays awkward forever."
+  - chat: [sold_my_keyboard, "thats when i sold my keyboard. for rent"]
+  - say: {face: sad, text: "Sold your keyboard. For rent. I see."}
+  - say: "Are you playing anything these days?"
+  - chat: [sold_my_keyboard, "got a digital piano. a small one"]
+  - say: {face: smile, text: "A little digital piano! Oh, good. Small or not, keys are keys."}
+  - chat: [sold_my_keyboard, "i play at night with headphones"]
+  - say: "At night, with headphones. How lovely. You can take your solos as long as you like."
+  - chat: [new_releases_only, "stop steering it back to long solos"]
+  - say: "Stop steering it back? I'm doing no such thing. I'll just have another Lumonde. Crunch. Oh dear, the mic caught that."
+- title: Closing (the letter)
+  beats:
+  - say: "And then, there is a sequel to all this."
+  - say: "In September, a letter arrived. From Moonlight Banquet."
+  - chat: [budokan_balcony_east, "wait NOW?"]
+  - say: "Now, of all times. It's their fortieth anniversary. They're reuniting for one night only, and they would like me to come."
+  - chat: [new_releases_only, "a reunion!!"]
+  - chat: [sold_my_keyboard, "are you going?"]
+  - say: "A reunion. Am I going? ...I have not replied yet."
+  - chat: [headbang_whiplash, "september was over a month ago"]
+  - say: "Over a month ago, yes. Quite right. I have left it sitting."
+  - chat: [piano_teacher, "why"]
+  - say: "Why? These are the people who cut me out of the photo! I hardly know how to face them."
+  - chat: [sold_my_keyboard, "but they invited you"]
+  - say: "They did invite me. ...And that is precisely the trouble."
+  - chat: [budokan_balcony_east, "maybe just listen to the tape first?"]
+  - say: "Listen to the tape first. Yes. There is exactly one cassette player in the castle. At the back of a kitchen shelf."
+  - chat: [first_time_here, "in the kitchen?"]
+  - say: "In the kitchen. The head cook used to play enka on it. That's old-school Japanese ballads, very dramatic. I shall borrow it tonight. Quietly."
+  - chat: [new_releases_only, "check if ur keyboard is on it"]
+  - say: "Whether my keyboard is on it. If it is, I'll tell you all next stream. And if it isn't... I'll tell you that too."
+  - chat: [headbang_whiplash, "so ur telling us either way"]
+  - say: {face: smug, text: "Either way, naturally. I could never keep a story like this to myself."}
+  - chat: [first_time_here, "this was fun. ill be back"]
+  - say: "Thank you, dear newcomer. Do tell me more about that haunted house next time."
+  - say: "And with that, my dears, thank you for today."
+  - say: "I shall now go and finish the rest of my Lumonde. Silently."
+  - chat: [new_releases_only, "not possible"]
+  - say: {face: laugh, text: "Not possible, you say. Not possible indeed. Farewell, my dears."}

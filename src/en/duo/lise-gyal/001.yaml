@@ -1,0 +1,223 @@
+# Lise x Gyaru duo 001 (English). Source: src/duo/lise-gyal/001.yaml. Beat order matches the Japanese. family: true comes from the Japanese.
+# Gyaru is the human guest from Rabbit Run. She has no name, and that joke stays. "Gyaru" is kept as is.
+# Faces come from the Japanese. Viewer names follow scratchpad en-names.yaml (macaron fan: hundred_macarons, new here).
+title: "The Gyaru from Rabbit Run came over. Was it really Tetris at first?"
+lobby:
+- "Today a girl from a different game came to hang out. A human."
+- "It's a running game, but apparently it started out as Tetris."
+- "She said my room is cold. It's a stone castle."
+parts:
+- title: "Opening (a human guest, and a cold room)"
+  beats:
+  - gyal: "Okay okay, are we on? Is this on?"
+  - lise: "It's on. You're way too close to the camera. All I can see is your face."
+  - gyal: "Oh, wait, you're right. My forehead is huge. I'm dead."
+  - chat: [lag_appreciation_club, "its the rabbit run girl!"]
+  - gyal: "Yep! I'm the one cheering on the side in the game where you make a bunny run. Today I got invited to Lise's room."
+  - chat: [just_clicks_agree, "wait, human?"]
+  - gyal: "Human! Like, actual human. No horns, no tail, see?"
+  - lise: "First human guest I've had. Chat got a little quiet, didn't it."
+  - chat: [login_bonus_only, "a real human. sitting up straight for this"]
+  - gyal: "'Sitting up straight'? Relax! What am I, a panda at the zoo?"
+  - gyal: "Also, isn't this room freezing? If I stop moving I'll turn into ice."
+  - lise: "It's a stone castle. The walls are cold even in summer. I solve it with blankets."
+  - gyal: "Gimme one."
+  - lise: "Sure. Not the lap one."
+  - chat: [login_bonus_only, "not the lap one?? how many are there"]
+  - lise: "'How many are there.' Three. I don't give up the lap one."
+  - gyal: "So the lap one is the good one!"
+- title: "I don't have a name"
+  beats:
+  - chat: [first_timer_cub, "gyaru what's your name?"]
+  - lise: "'What's your name.' I was going to ask that too. What do I call you?"
+  - gyal: "My name? Don't have one."
+  - lise: "You don't."
+  - gyal: "Nope, nope. While making us, my creator just called us 'Gyaru,' 'Silver Hair,' 'Green,' and 'Taisho Romance,' like the old-timey Japanese look. And it stuck."
+  - lise: "That's lazier than my bot. I at least gave mine a number."
+  - gyal: "Then just call me Gyaru Number One."
+  - lise: "Don't. Number One got banned after nineteen days."
+  - gyal: "Okay, cursed. Just Gyaru, then."
+- title: "The actual topic (it started as Tetris)"
+  beats:
+  - lise: "So, here's what I want to ask today. Rabbit Run started out as Tetris. True?"
+  - gyal: "Totally true! At first it was a falling-blocks game. It was even called POP TETRIS."
+  - lise: "...And you were cheering next to the Tetris?"
+  - gyal: "Yep. Even back then I was the one on the side making faces."
+  - lise: "That's the game I most wanted to see."
+  - chat: [lag_appreciation_club, "lise literally plays tetris in emacs"]
+  - lise: "Tetris inside Emacs, yeah. I stack every night. I added a thing that stacks for me, so even while I'm asleep."
+  - gyal: "Are you even playing at that point? Anyway, the Tetris part got done super fast."
+  - gyal: "My creator played it to test and just, like, played it for an hour straight. Like, 'Tetris is just too perfect of a game.'"
+  - lise: "Since nineteen eighty-four, stacking blocks and clearing lines hasn't changed."
+  - lise: "If it's fun for an hour, just release it."
+  - chat: [retro_grandpa, "i wanted to play pop tetris"]
+  - gyal: "Grandpa, same! I wanna cheer next to the blocks again!"
+  - gyal: "But the problem wasn't the game. It was the art."
+- title: "The art never finishes generating"
+  beats:
+  - gyal: "Our art is made with AI, and it just never finishes. The computer ran for three days straight and still wasn't done."
+  - lise: "So, the best idle game ever."
+  - gyal: "That's the part you latch onto?!"
+  - lise: "The art piles up while you sleep. Dream job."
+  - gyal: "You make eight, and like one to four are actually usable. Sometimes the face is a different person, or the feet get cut off."
+  - lise: "Pull eight, one to four hits. ...That's gacha."
+  - gyal: "Literally gacha. And each one takes forty to sixty seconds. A GPU ten times faster is like a million yen. My creator cried looking at the price."
+  - lise: "A million yen... How many gems is that."
+  - chat: [login_bonus_only, "says the one who paid back mora's 8000 yen in 3000 gacha gems"]
+  - gyal: "Wait, you paid off a debt in gems? That's wild."
+  - lise: "Inside the account, I paid it back. ...Back to the topic."
+- title: "The game got swapped instead"
+  beats:
+  - gyal: "So, right around when we even had a logo, my creator got worried, like, 'is it okay to put this out?'"
+  - lise: "There's a case where a Tetris clone that looked too close lost in court."
+  - gyal: "Right? So they switched the game to the bunny running one. And I stayed!"
+  - lise: "The one I wanted to play disappeared."
+  - gyal: "You're saying that in front of me?!"
+  - lise: "My game too. Only the placeholder skull stayed."
+  - gyal: "Hold on. Am I in the same category as a skull right now?"
+  - lise: "The kind people asked me to keep. Twenty-eight of them."
+  - gyal: "Then keep me too. Here, let's play it."
+- title: "The select screen (why Gyaru is center)"
+  beats:
+  - lise: "It's open. It runs right in the browser. ...You're already selected from the start."
+  - chat: [first_timer_cub, "why is gyaru in the middle? shes first on the select screen right"]
+  - gyal: "'Why in the middle'? Because I'm the main character! I'm high energy and super easy to bounce around, apparently."
+  - lise: "Main character. Sure."
+  - gyal: "...Also, I was the first one finished."
+  - lise: "Then that saves me the trouble of choosing."
+  - gyal: "I'm sitting right here, at least pretend to think about it!"
+  - lise: "Can I pick a different girl?"
+  - gyal: "Pick me!"
+  - lise: "You get there first and you're the main character. Must be nice. I've sent nine bug reports and never once got my name on one."
+  - chat: [five_am_reporter, "Thanks again for last time."]
+  - gyal: "Wait, Five AM's 'thanks again for last time,' is that what that's about?!"
+  - lise: "...Yes. Three minutes. Five AM got there first."
+  - gyal: "Three minutes! So close! Okay, but today Lise is first. First succubus to invite a human to her room. First place."
+  - chat: [login_bonus_only, "lise looks kinda happy"]
+  - lise: "'Looks happy.' I'm just loading. ...I'm starting."
+- title: "Lise plays (the Gyaru on screen, and the Gyaru next to her)"
+  beats:
+  - lise: "It started. You dodge the walls with the bunny and go up."
+  - lise: "You're on the right side of the screen. ...And on my right, there's also you."
+  - gyal: "Hey, look over here too. The real me is right here!"
+  - lise: "The path's getting narrow."
+  - gyal: "Wait wait, it's narrow there, right, right!"
+  - lise: "The you next to me is louder."
+  - chat: [login_bonus_only, "screen gyaru and real gyaru are making the same face"]
+  - lise: "'Same face.' It's true. The one on screen and the one next to me are panicking with the same face."
+  - lise: "...I hit it."
+  - gyal: "Nooo! The me on screen is crying."
+  - lise: "The you next to me is crying a little too."
+  - gyal: "Am not. That's sympathy crying."
+  - gyal: "Space for the hammer! It breaks every wall on the screen."
+  - lise: "...Tell me that first. I swung it. Everything broke. Easy."
+  - chat: [any_percent_rookie, "not saving the hammer?"]
+  - lise: "'Not saving it'? I already swung it. What you have now, you use now."
+  - gyal: "The music's Vivaldi's Four Seasons as drum and bass. It's a running game, it has to rush you."
+- title: "First one made, so the outfit kept changing"
+  beats:
+  - gyal: "Hey, look at me on screen. Isn't the pink on my hoodie a little different from the last picture?"
+  - lise: "It's different."
+  - gyal: "Being first isn't all good. Back then my creator didn't really know how to make the art. Same hoodie, but a little different every time."
+  - lise: "I'd just say she changed clothes."
+  - gyal: "Lise, are you using that as an excuse to skip laundry?"
+  - lise: "I am."
+  - chat: [lag_appreciation_club, "lise's blanket is a different color every time too"]
+  - lise: "'Blanket's a different color'? It's not. ...I haven't washed it."
+  - gyal: "That blanket is on my lap right now! At least wash it before I come back!"
+  - gyal: "...Partway through, my creator started checking every batch of eight."
+  - chat: [hundred_macarons, "gyaru has way more expressions than the others"]
+  - gyal: "'More expressions'? You noticed?! I have seventy-four faces. The other girls have like forty-seven or forty-eight."
+  - gyal: "I wanna say it's 'cause I'm the main character, but... I think it's because I was first, so they went overboard."
+  - lise: "You go all out on the first one. I get it."
+- title: "Speaking of which (the creator's room is hot)"
+  beats:
+  - gyal: "Oh, speaking of cold, that reminds me. My creator's room is the opposite. It's super hot."
+  - gyal: "Our art took a week, four hundred thirty-four pictures plus little extras. The GPU going full blast the whole time."
+  - gyal: "They kept making art after, so even at fourteen degrees Celsius outside the underfloor cooling was on. Might not even need heating this winter."
+  - lise: "If my room warms up every time I make pictures, maybe I'll do it too."
+  - gyal: "You just wanna be warm. ...I'm not giving the blanket back."
+  - chat: [lag_appreciation_club, "hot or cold, which is worse?"]
+  - lise: "Hot or cold? Cold's better. A blanket fixes it. ...That blanket's mine, by the way."
+  - gyal: "Hot for me! Eat ice cream and you win."
+  - gyal: "...Wait, what were we talking about?"
+  - lise: "No idea. I'm running it again."
+- title: "Made it too hard, no time to look at the art"
+  beats:
+  - lise: "Hey, your course never calms down. It's all turns."
+  - gyal: "My course is the busiest one. Zigzags, stuff like stairs. People say it's very me."
+  - gyal: "But it got way easier. My creator was like, 'isn't this too boring?' and kept cranking it harder."
+  - gyal: "They made courses where you just dodge through a one-tile gap, forever."
+  - gyal: "And then while playing it themselves, they noticed. 'I'm so busy dodging I can't even look at the characters.'"
+  - lise: "I get it. I can't look right now either. ...So I'm looking at you instead. You're standing still."
+  - gyal: "Look at the bunny! You're gonna crash again!"
+  - lise: "I always play on easy. Even with assists, the view is the same."
+  - gyal: "Ehh, harder gets me fired up, though."
+  - lise: "And the fired-up girl's course got toned down by the creator."
+  - gyal: "You're gonna say that?"
+  - lise: "Let's ask chat too."
+  - ask:
+      who: lise
+      q: "Game difficulty. What do you usually play on?"
+      options:
+      - c: "Easy"
+        r:
+        - lise: "Easy, {name}. You're a good person."
+        - gyal: "Lise, you look so happy when someone's on your side."
+      - c: "Normal"
+        r:
+        - lise: "{name} plays on normal. That's where the people who make games most want you."
+        - gyal: "They say normal's the hardest one to make."
+      - c: "Hard"
+        r:
+        - gyal: "{name}, you get it! It's so hype, right?!"
+        - lise: "So hype you never get to look at the art."
+      - c: "Stuck on the select screen"
+        r:
+        - lise: "{name}, you can't decide. If you can't decide, easy is fine."
+        - gyal: "If I can't decide, I go hard!"
+      npc:
+      - [login_bonus_only, 0]
+      - [any_percent_rookie, 2]
+      - [five_am_reporter, 1]
+      - [just_clicks_agree, 3]
+      - [retro_grandpa, 2]
+      - [hundred_macarons, 0]
+      - [ex_gold_farmer, 1]
+  - lise: "Two regulars each. Just Clicks Agree, still stuck on the select screen?"
+  - chat: [just_clicks_agree, "reading the descriptions"]
+  - lise: "Doesn't read the terms, but reads the descriptions."
+- title: "The secret code, and the unlocked treasure chest"
+  beats:
+  - chat: [just_clicks_agree, "is there really a secret code?"]
+  - lise: "'Is there a secret code.' That I want to hear."
+  - gyal: "There is! But I'm not telling. All I'll say is it needs a keyboard."
+  - lise: "You don't have to tell me. ...I could just read the code."
+  - gyal: "No reading! That's cheating!"
+  - gyal: "My creator worked hard on bonuses you get when you meet the conditions and stuff. ...Okay, but honestly?"
+  - gyal: "GitHub, that's where the game's files are public. If you look there, you can see all the reward pictures anyway."
+  - lise: "...All of them."
+  - gyal: "All of them."
+  - lise: "So it's a treasure chest with no lock, guarded by a secret code."
+  - gyal: "Don't say it like that!"
+  - chat: [just_clicks_agree, "just went and peeked at the files"]
+  - lise: "'Just went and peeked.' That was fast. ...I'll look later too. Just look."
+  - gyal: "That was totally a 'look before bed' voice! Run one lap first! I make my best face when you get it."
+  - lise: "...One lap. Before bed."
+- title: "Wrap-up (the treadmill, and coming back)"
+  beats:
+  - gyal: "Lise, you hate running, right?"
+  - lise: "I do. Once I bought a treadmill so I could walk while gaming. In three days it was a laundry rack."
+  - gyal: "Three days?! The laundry rack's lasting longer!"
+  - lise: "But if the bunny runs for me, I get to sit."
+  - chat: [five_am_reporter, "One lap is about three minutes. I just timed it."]
+  - gyal: "Five AM, you already did a lap? So fast! You're first!"
+  - lise: "Someone got there first again. Five AM, again."
+  - chat: [five_am_reporter, "Thanks again for last time."]
+  - lise: "'Last time'? This one was today. Separate grudge."
+  - gyal: "Lise, let's do this again. Next time let's talk about the Tetris that got scrapped."
+  - lise: "Sure. The scrapped Tetris is the one I want to play most."
+  - gyal: "Okay, I'll come back. It's cold, so put out one more blanket next time."
+  - lise: "Not the lap one."
+  - gyal: "Thanks, everyone! Go make the bunny run!"
+  - lise: "Good night, everyone. Now I'm going to play with my eyes closed."

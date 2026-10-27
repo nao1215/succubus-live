@@ -1,0 +1,187 @@
+# Nox 010 (English). Source: src/episodes/nox/010.yaml. Beat order matches the Japanese.
+title: "'You are not expected to understand this': an old Unix comment"
+lobby:
+- "Hi. Tonight's about old Unix."
+- "There's a comment in nineteen-seventies source code that says, basically, 'you don't need to understand this.'"
+- "What it actually meant is a little different."
+- "I might end up talking about the first CD I ever bought."
+parts:
+- title: Opening (the comment I almost wrote)
+  beats:
+  - say: "Oh, we're up. Hi, everyone who's still awake."
+  - chat: [kernel_reader, "evening"]
+  - chat: [rtos_veteran_15y, "evening"]
+  - chat: [lag_appreciation_club, "evening. booting yoru today?"]
+  - say: "Booting Yoru? Maybe. ...Today I was writing a comment in Yoru's code."
+  - chat: [first_time_here, "hi first time. yoru?"]
+  - say: "Welcome, new person. Yoru is the name of a tiny OS I build as a hobby. It means 'night.'"
+  - say: "And I tried to write an explanation in the context-switching code."
+  - say: "I couldn't. And before I knew it I'd typed 'you don't need to understand this.'"
+  - chat: [kernel_reader, "You are not expected to understand this"]
+  - say: {face: smile, text: "'You are not expected to understand this,' that! I almost wrote that!"}
+  - chat: [lag_appreciation_club, "you wrote it and you dont understand it"]
+  - say: "I wrote it and I don't understand it, yeah. If I did, Yoru wouldn't still be crashing."
+  - chat: [rtos_veteran_15y, "so what did you end up writing"]
+  - say: "What did I end up writing? 'TODO: write this later.'"
+  - chat: [lag_appreciation_club, "the worst one"]
+  - say: "The worst one, yeah. But it's more honest than 'you don't need to understand this.'"
+  - chat: [kernel_reader, "dont compete on honesty"]
+  - say: "'Don't compete on honesty'... I'm not competing."
+  - chat: [first_time_here, "you are not... ?"]
+  - say: "'You are not expected to understand this' is a real comment, in real Unix source from the nineteen-seventies. That's tonight."
+- title: Not on the exam
+  beats:
+  - say: "There's a version called Sixth Edition Unix, from around nineteen seventy-five."
+  - say: "In it, right at the code that switches from one running process to another, there's a comment: 'You are not expected to understand this.'"
+  - chat: [first_time_here, "you dont need to understand it?"]
+  - say: "Taken literally, it's 'nobody expects you to get this.' So for ages, people read it as 'mere mortals won't get this.'"
+  - chat: [lag_appreciation_club, "thats so smug"]
+  - say: "It sounds smug, right? But Dennis Ritchie, who wrote it, explained it later."
+  - say: "It wasn't smug. It was more of a joke, like, 'this won't be on the exam.'"
+  - chat: [first_time_here, "not on the exam"]
+  - say: "Not on the exam, yeah. Like a teacher saying, 'you can skip this part.'"
+  - chat: [rtos_veteran_15y, "to be fair the code really was hard to follow"]
+  - say: "It really was hard to follow, yes. It relied on how the C compiler on the P-D-P eleven back then saved registers."
+  - chat: [first_time_here, "registers?"]
+  - say: "Registers are, like, the tiny scratch drawers inside the CPU. It depended on the quirks of how those got used."
+  - say: "So when you moved it to other machines, it broke, and it got rewritten in Seventh Edition."
+  - chat: [kernel_reader, "code that depends on hardware quirks breaks when you port it"]
+  - say: "Code that leans on hardware quirks breaks when you port it, yes. That's probably Yoru's problem too. ...No idea, though."
+- title: The book that spread as copies of copies
+  beats:
+  - chat: [kernel_reader, "do the lions book too"]
+  - say: "The Lions book? Okay."
+  - say: "John Lions, at a university in Australia, wrote a commentary on that whole source, line by line, for his class. Nineteen seventy-seven."
+  - chat: [first_time_here, "a textbook?"]
+  - say: "A textbook, yeah. But after that, the company that owned Unix stopped allowing the source commentary to be used for teaching."
+  - say: "So it couldn't be officially published."
+  - say: "And then students all over the world passed around photocopies of photocopies."
+  - chat: [lag_appreciation_club, "bootleg"]
+  - say: "Bootleg... I mean, when you put it that way, yeah. Kind of."
+  - chat: [rtos_veteran_15y, "theres stories of people meeting at night to read it"]
+  - say: "People meeting at night to read it, yes. Students gathering after class around a photocopy. I love that."
+  - chat: [kernel_reader, "officially published in 1996"]
+  - say: "Officially published in nineteen ninety-six, yeah. About twenty years later. Finally you could just buy it."
+  - chat: [second_year_dev, "twenty years as photocopies?"]
+  - say: "Twenty years of photocopies. That's how many people wanted to read it."
+  - chat: [lag_appreciation_club, "did you read it"]
+  - say: "Did I read it? Yes. I was working the night shift in a university computer lab, and the official edition was sitting on a senior's desk."
+  - say: "Nobody came in at night, so I just kept reading."
+  - chat: [kernel_reader, "how much did you get"]
+  - say: {face: shy, text: "How much did I get... at that famous comment, I didn't really get it."}
+  - chat: [rtos_veteran_15y, "its fine its not on the exam"]
+  - say: "It's fine, it's not on the exam. Right. That's my official story."
+  - chat: [second_year_dev, "is it still worth reading today?"]
+  - say: "Still worth reading? I think so. It's so much smaller than modern OSes, you can read the whole thing. Not many OSes you can read cover to cover."
+  - chat: [kernel_reader, "you cant read all of modern linux"]
+  - say: "You can't read all of modern Linux? Not even you, Kernel Reader?"
+  - chat: [kernel_reader, "not in a lifetime"]
+  - say: "Not in a lifetime. If you can't, then neither can I."
+- title: Speaking of which (my first CD)
+  beats:
+  - chat: [night_shift_survivor, "what were you doing in 1996?"]
+  - say: "What was I doing in ninety-six? I was still in the demon world. I came to the human world the next year, ninety-seven."
+  - chat: [lag_appreciation_club, "what was the first thing you did"]
+  - say: "First thing I did? Worked the counter at a parts shop in Akihabara, Tokyo's electronics district. And with my first paycheck, I bought a CD."
+  - chat: [first_time_here, "what cd?"]
+  - say: "What CD? Denki Groove, 'Shangri-La.' The single. They're a Japanese techno group."
+  - chat: [rtos_veteran_15y, "thats the 1997 one"]
+  - say: "Yes, it came out that year. I played it in the shop, and the manager said it 'doesn't sound like a parts shop.'"
+  - chat: [lag_appreciation_club, "what does a parts shop song even sound like"]
+  - say: "What does a parts shop song sound like... I don't know. But the next day, the manager was the one humming it."
+  - chat: [night_shift_survivor, "manager got hooked"]
+  - say: "The manager got hooked, yeah. Way more than me."
+  - chat: [second_year_dev, "i dont think i ever bought a cd. streaming from the start"]
+  - say: {face: surprised, text: "Streaming from the start? Oh. ...Right, for your generation."}
+  - chat: [kernel_reader, "i rented from the rental shop and dubbed it"]
+  - say: "Rent it and dub it. Half of chat gets that, half doesn't."
+  - chat: [first_time_here, "dont get it"]
+  - say: "Don't get it? Dubbing is copying it onto a cassette tape. Japan had CD rental shops. ...Explaining that suddenly made me feel old."
+  - chat: [lag_appreciation_club, "first phone?"]
+  - say: "First phone? A DoCoMo phone with i-mode, nineteen ninety-nine. Basically mobile internet in Japan before smartphones. Also bought with shop money."
+  - chat: [night_shift_survivor, "i-mode nostalgia"]
+  - say: "So nostalgic, right? Tiny screen, black and white... no wait, maybe it had color already? I don't remember."
+  - chat: [rtos_veteran_15y, "depends on the model"]
+  - say: "Depends on the model. Mine lit up a tiny bit when you pressed the buttons."
+  - chat: [lag_appreciation_club, "bet you turned the light off"]
+  - say: {face: annoyed, text: "'Bet you turned the light off'... back then, I hadn't started doing that yet."}
+  - chat: [first_time_here, "phone now?"]
+  - say: "Phone now? A Pixel six A. It's small, so I can dismiss on-call alerts one-handed. Four years now."
+- title: Where was I (the clock that wraps)
+  beats:
+  - say: "...Wait, what were we talking about."
+  - chat: [kernel_reader, "the you dont need to understand comment"]
+  - say: "The 'not expected to understand' comment, right. Thank you."
+  - say: "There's another source comment I love. This one's in modern Linux."
+  - say: "Linux counts time since boot with a number called jiffies."
+  - chat: [first_time_here, "jiffies"]
+  - say: "Jiffies is a counter that goes up by one every time the timer ticks."
+  - say: "The variable has a fixed size, so eventually it wraps around back to zero."
+  - chat: [lag_appreciation_club, "what happens when it wraps"]
+  - say: "What happens? Code that didn't think about wraparound thinks time went backwards and does weird stuff."
+  - say: "So in Linux, the starting value is offset so the lower thirty-two bits wrap five minutes after boot."
+  - chat: [first_time_here, "32 bits?"]
+  - say: "Thirty-two bits is the size of the box the number lives in. It deliberately starts counting just short of where the box overflows."
+  - chat: [first_time_here, "on purpose?"]
+  - say: "On purpose. The comment says it's so wraparound bugs show up earlier."
+  - chat: [rtos_veteran_15y, "so you dont wait dozens of days"]
+  - say: "So you don't wait dozens of days, right. Some soak tests really run for weeks, but not every time. So it starts just before the wrap."
+  - chat: [kernel_reader, "windows 95 and 49.7 days"]
+  - say: "Windows ninety-five and forty-nine point seven days, yes. Milliseconds in thirty-two bits wrap at about forty-nine point seven days."
+  - say: "Windows back then had a bug where it'd hang if you left it on for forty-nine point seven days."
+  - chat: [lag_appreciation_club, "nobody leaves it on for 49 days"]
+  - say: "Nobody leaves it on for forty-nine days, right. Which is why it took forever to find."
+  - chat: [leaving_work_on_time, "our servers have a rule to reboot once a month"]
+  - say: "You have a rule to reboot once a month?"
+  - chat: [leaving_work_on_time, "nobody knows why"]
+  - say: {face: laugh, text: "Nobody knows why."}
+  - say: "Probably long ago some machine started acting up after a few dozen days. That person's gone, and only the rule is left."
+  - chat: [rtos_veteran_15y, "classic"]
+  - chat: [second_year_dev, "we have that too. monday is reboot day"]
+  - say: "Monday is reboot day, huh. ...Before you drop it, go find the reason. Old incident records, stuff like that."
+  - say: "If you can't find one, run it long in a test environment, push the clock to the boundary, and see. Just don't drop the scheduled reboots in prod."
+  - chat: [lag_appreciation_club, "how many days until yoru crashes"]
+  - say: "How many days until Yoru crashes? The rewrite crashes on the first tick. Wraparound is the least of its problems."
+  - chat: [kernel_reader, "0 days"]
+  - say: {face: annoyed, text: "Don't say zero days. It lasts like a hundredth of a second."}
+  - ask:
+      q: "Ever left a comment in your code that even you couldn't understand later?"
+      options:
+      - c: "Yes"
+        r:
+        - "{name}, you too? What did it say?"
+        - "I found an old one that just said 'don't touch this,' with no reason. In my own handwriting."
+      - c: "'Fix later' — tons of those"
+        r:
+        - "{name}, me too, so many."
+        - "I should've written down when 'later' was. ...At work, I leave the reason and when it'll bite. My hobby ones, though, are piling up."
+      - c: "I barely write comments"
+        r:
+        - "{name}, you're a no-comments person."
+        - "If the code explains itself, fine. Just leave the reasons the code can't say. The next person will need them."
+      npc:
+      - [kernel_reader, 1]
+      - [rtos_veteran_15y, 0]
+      - [second_year_dev, 2]
+      - [lag_appreciation_club, 1]
+      - [ddd_police, 1]
+  - chat: [lag_appreciation_club, "lots of fix later"]
+  - say: "Lots of 'fix later.' We're all the same."
+- title: Closing (New Year's Eve memories)
+  beats:
+  - chat: [rtos_veteran_15y, "speaking of wraparound, Y2K"]
+  - say: "Wraparound, so Y2K, oh, right. On New Year's Eve nineteen ninety-nine, I was working the night shift at the university computer lab."
+  - chat: [night_shift_survivor, "did anything happen?"]
+  - say: "Did anything happen? Nothing. At midnight I went around checking each machine, and they were all normal."
+  - say: "I found out later. There were people who'd been fixing it for years beforehand."
+  - chat: [rtos_veteran_15y, "spent that whole year fixing it"]
+  - say: "You spent that whole year fixing it... you too, R-TOS Veteran?"
+  - chat: [rtos_veteran_15y, "changing two digit years to four digits all year"]
+  - chat: [rtos_veteran_15y, "new years eve soba at the office"]
+  - say: "Two-digit years to four, all year. And New Year's Eve soba at the office. That's the noodles you eat in Japan to see the year out."
+  - chat: [kernel_reader, "i was watching TV at my parents place"]
+  - chat: [night_shift_survivor, "i was still in elementary school"]
+  - say: {face: surprised, text: "TV at your parents' place, still in elementary school..."}
+  - chat: [second_year_dev, "i wasnt born yet"]
+  - say: "Not born yet... okay, I'm ending it here tonight."
+  - say: "I'll boot Yoru tomorrow. Good night, everyone who's awake."

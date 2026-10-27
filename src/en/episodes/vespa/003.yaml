@@ -1,0 +1,195 @@
+# Vespa 003 (English): the day my oshi's color changed from green to yellow-green. Translated from src/episodes/vespa/003.yaml.
+title: The Day My Oshi's Color Changed From Green to Yellow-Green
+parts:
+- title: I washed my happi
+  beats:
+  - say: Good evening! Oh, so today I washed my happi.
+  - chat: [first_time_here, 'first time. happi?']
+  - say: Welcome! Do you know happi? The festival jacket, the short one! I wear it to my oshi's shows.
+  - chat: [green_glowstick_yr2, 'evening senpai! the green one right']
+  - say: Evening, Year-Two! Yep, the green one. It's got Minami embroidered on the back.
+  - chat: [end_of_line_here, 'u wash it too much']
+  - say: Too much? Yeah, I've washed it so much the Mi in Minami is coming apart.
+  - chat: [harumi_survivor, 'itll just say nami']
+  - say: {face: surprised, text: 'It''ll just say Nami?! Stop! That''s a different person!'}
+  - chat: [end_of_line_here, 'get ella to fix it']
+  - say: Get Ella to fix it, yeah, I'm planning to ask. She hemmed one of my costumes before.
+  - say: She roasts me though. My dear Vespa, your stitches are quite the labyrinth.
+  - say: That's so Ella, right? But she fixes it anyway. She's sweet like that.
+- title: The color changed
+  beats:
+  - chat: [first_time_here, 'your oshis color is green?']
+  - say: My oshi's color? Yes! In idol groups each member usually has a set color. Member color.
+  - say: If you set your glowstick to that color and wave it, it means, I'm here for you.
+  - say: And my oshi Minami is green. ...Was.
+  - chat: [harumi_survivor, 'the member color incident']
+  - say: The Member Color Incident, Harumi remembers! Yes, it was an incident!
+  - say: In twenty-eighteen, with zero warning, Minami's color went from green to yellow-green.
+  - chat: [first_time_here, 'isnt that basically the same']
+  - say: Basically the same? No! Totally different!
+  - say: On a glowstick, green glows kinda bluish. Yellow-green leans yellow.
+  - say: From the crowd they're literally different colors. The first day, my hand was the only one sticking out.
+  - say: And the month before, I'd literally just gotten my happi embroidered. Green thread. Twelve thousand yen.
+  - chat: [green_glowstick_yr2, 'ive waved yellow-green from the start']
+  - say: Year-Two's been yellow-green from day one. You're the generation where yellow-green is normal.
+  - say: I still wave green. Yellow-green is a type of green.
+  - chat: [not_my_headcanon, 'not my headcanon. yellow-green is yellow-green']
+  - say: {face: angry, text: 'Here it comes, yellow-green is yellow-green! It''s green family! It literally has green in the name!'}
+  - chat: [not_my_headcanon, 'it just has it in the name']
+  - say: Just in the name? That's all it needs!
+- title: Speaking of which, my tea is green
+  beats:
+  - chat: [end_of_line_here, 'she presses the green button on vending machines too']
+  - say: I press the green button on vending machines! I really do!
+  - chat: [first_time_here, 'what tea do you drink']
+  - say: What tea? In bottles, Iyemon. It's a green tea brand. I like the taste, but also the label's green.
+  - say: When a vending machine has two green buttons I agonize for like three minutes. People line up behind me.
+  - say: From a crowd-control perspective, people like that are a nightmare. It's me. I'm the nightmare.
+  - chat: [harumi_survivor, 'oi ocha']
+  - say: Harumi's an Oi Ocha guy. The other big green tea. Also green! We're the same!
+  - chat: [harumi_survivor, 'didnt pick it for the color']
+  - say: You didn't pick it for the color? Doesn't matter, it's still green!
+  - chat: [ohio_fansub_crew, 'evening. tea in america is sweet']
+  - say: Ohio, welcome! Wait, tea in America is sweet?
+  - chat: [ohio_fansub_crew, 'green tea with sugar is just normal in stores']
+  - say: {face: surprised, text: 'Green tea with sugar?! For real?! Where''d you see that?'}
+  - chat: [ohio_fansub_crew, 'grocery store near me. theres honey flavor too']
+  - say: There's honey flavor?! That's Honey Alert! Same as my oshi's group name!
+  - chat: [end_of_line_here, 'thats a reach']
+  - say: You can call it a reach, I don't care! I wanna try it!
+  - say: Oh, and at family restaurant drink bars I get melon soda. Because it's green. Three glasses minimum.
+  - chat: [end_of_line_here, 'what about yellow-green melon soda?']
+  - say: Yellow-green melon soda? ...It's a type of green, so I drink it.
+  - chat: [not_my_headcanon, "convenient"]
+  - say: {face: laugh, text: 'Convenient? Yes, very convenient! Oshi colors expand when it''s convenient!'}
+- title: From underground to Budokan
+  beats:
+  - chat: [con_haul_victim, 'lots of groups going from underground to big lately huh']
+  - say: So many groups blowing up from underground! Like CUTIE STREET. The 'Kawaii Dake Ja Dame Desu Ka' one. It means, is being cute not enough?
+  - chat: [first_time_here, 'ive heard that, it was all over my feed']
+  - say: All over your feed? Right?! It came out September twenty twenty-four and just exploded.
+  - say: Last year they won a New Artist Award at the Japan Record Awards, and this August they did their first Budokan, two nights.
+  - chat: [green_glowstick_yr2, 'i went!']
+  - say: Year-Two, you went to Budokan?! How was it?
+  - chat: [green_glowstick_yr2, 'the crowd colors were insane. every members color']
+  - say: Every member's color in the crowd. Ugh, I love that. Just picturing it.
+  - chat: [end_of_line_here, 'budokan merch lines are brutal']
+  - say: The merch lines are brutal, true. I worked Budokan merch once, all I saw all morning was cardboard.
+- title: Harumi's shin-eitai
+  beats:
+  - chat: [harumi_survivor, 'budokans nice but happi go back to the shin-eitai days']
+  - say: There it is, Harumi's shin-eitai story! We just jumped from Budokan straight to the eighties!
+  - chat: [first_time_here, 'shin-eitai?']
+  - say: What's shin-eitai? Eighties idols had these fan-run support squads. Shin-eitai literally means royal bodyguards.
+  - say: Such a strong name, right? A squad to protect her.
+  - chat: [harumi_survivor, 'i wasnt in one. just watched']
+  - say: I wasn't in one, I just watched, you say that every single time! Were you really not in one?
+  - chat: [harumi_survivor, 'couldnt afford to join']
+  - say: Couldn't afford it? No allowance again! Harumi is always broke!
+  - say: Okay, nerd talk incoming. They say the shin-eitai look changed over time.
+  - say: Late seventies, it was tokkoufuku and headbands.
+  - chat: [first_time_here, 'tokkoufuku like biker gang?']
+  - say: "Yes, the biker gang ones, the long coats! By the early eighties they became happi, and by the late eighties just headbands and armbands. Supposedly."
+  - say: So my happi is a descendant of the early eighties!
+  - chat: [not_my_headcanon, 'you just made up your own bloodline']
+  - say: Made up my own bloodline? I did not! Probably correct!
+  - chat: [harumi_survivor, 'when glowsticks swayed during ballads they called it the carpet of light']
+  - say: The carpet of light, I love that! All the lights in the crowd swaying, and from the stage it looks like a carpet, right?
+  - chat: [harumi_survivor, 'apparently theres a year green light sticks came out']
+  - say: Wait, there was a year green light sticks came out?! For real?!
+  - chat: [harumi_survivor, 'so i heard. dont have one']
+  - say: You just heard, you don't have one! But it's green! Green's been the move since the eighties!
+  - chat: [not_my_headcanon, 'thats not my headcanon']
+  - say: That's not my headcanon, again! You're on a roll today!
+- title: Yellow-green is green's cousin
+  beats:
+  - chat: [green_glowstick_yr2, 'senpai tell the story about minami the day the color changed']
+  - say: The day the color changed? Okay, for Year-Two, I'll tell it!
+  - say: First show after the change, the crowd was a mix of green and yellow-green.
+  - say: And Minami looked out from the stage and said.
+  - say: I see some of you are still green. Yellow-green is green's cousin, you know.
+  - chat: [green_glowstick_yr2, 'i love that story']
+  - say: You love it too, Year-Two? Right?! It saved me. The twelve thousand yen embroidery wasn't wasted anymore.
+  - say: This is actually the thing I want to tell her at a cheki event, but I still haven't.
+  - chat: [end_of_line_here, 'nine years']
+  - say: Don't say nine years!
+  - chat: [not_my_headcanon, 'cant argue with that one']
+  - say: {face: smile, text: 'Can''t argue with that one? Right? You can''t!'}
+- title: I won, then forgot to pay
+  beats:
+  - chat: [green_glowstick_yr2, 'i want them to do a big hall again']
+  - say: A big hall again, yes please! But when big halls come up, there's a thing I always remember.
+  - chat: [harumi_survivor, "oh, that"]
+  - say: Oh, that? Harumi, how do you know!
+  - chat: [harumi_survivor, 'you bring it up every time tickets come up']
+  - say: {face: shy, text: 'Every time tickets come up... I do!'}
+  - say: In twenty nineteen, Honey Alert did their first big hall show. It was a lottery, and I won!
+  - chat: [first_time_here, 'congrats!']
+  - say: Congrats, thank you! So when you win, there's a payment deadline, right? Eleven fifty-nine p.m.
+  - say: That day I'd been on my feet ten hours at work, got home, and passed out without even showering.
+  - say: Slept through it. Three notifications on my phone.
+  - chat: [first_time_here, "wait what"]
+  - say: Woke up, the date had changed. Auto-canceled. I won, and it just didn't happen.
+  - chat: [not_my_headcanon, 'forgetting to pay after winning is worse than losing']
+  - say: Worse than losing, yes, it's so much worse! I can't blame anyone! I can only be mad at me!
+  - say: I went to the venue that day anyway. Couldn't go in, but a little bit of sound leaks out.
+  - say: Green happi on, outside, alone, doing the chants super quietly.
+  - chat: [end_of_line_here, 'security talked to u didnt they']
+  - say: Security? They did! Is everything alright? And I said, I'm a fan, and he went, ah. He got it.
+  - chat: [end_of_line_here, 'security sees people like that every time']
+  - say: Security sees them every time, so there's always someone! Fellow outside-chanters!
+- title: How many alarms do you set?
+  beats:
+  - say: So, ever since then, I set seven alarms.
+  - chat: [first_time_here, 'SEVEN??']
+  - say: Yep, seven! Every five minutes, all different sounds.
+  - say: People always say just use snooze, but I don't remember turning off snooze. With seven, I remember at least one.
+  - chat: [end_of_line_here, 'the seventh one has a name']
+  - say: The seventh one's name? The Last Line of Defense. It's a clock End-of-Line gave me.
+  - chat: [first_time_here, 'oh that clock was a gift']
+  - say: Yeah, a gift. The month after I forgot to pay, it was just sitting on my desk. With a label on the back. The Last Line of Defense.
+  - chat: [end_of_line_here, 'ur desk was messy so i just put it there']
+  - say: {face: smile, text: 'Your desk was messy so I just put it there? Liar. She''s embarrassed. End-of-Line is embarrassed!'}
+  - chat: [end_of_line_here, 'im not']
+  - say: What about you guys? How many alarms?
+  - ask:
+      q: How many morning alarms do you set?
+      options:
+      - c: One
+        r:
+        - '{name} wakes up with one! Amazing, can we trade body clocks?!'
+        - Waking up with one, I genuinely respect that.
+      - c: Two or three
+        r:
+        - '{name}''s a two or three person. Yeah, you want a backup!'
+      - c: Four or more
+        r:
+        - '{name}, one of us! Do you name them? Naming them is fun!'
+      - c: "I don't"
+        r:
+        - '{name} doesn''t set any! You just wake up?! How?!'
+        - Without an alarm I could sleep till the next evening, easy.
+      npc:
+      - [harumi_survivor, 3]
+      - [end_of_line_here, 0]
+      - [green_glowstick_yr2, 1]
+      - [con_haul_victim, 2]
+      - [not_my_headcanon, 1]
+  - say: Lots of two or threes! And one fellow four-plus!
+  - chat: [harumi_survivor, 'none. when you get old you just wake up']
+  - say: Harumi says when you get old you just wake up. That's less early riser and more... oh, sorry, I won't say it!
+  - chat: [harumi_survivor, 'say it']
+  - say: You can tell me to say it, I won't! Harumi having energetic mornings is a good thing!
+  - chat: [end_of_line_here, 'one. my hourly wage is on the line so i wake up']
+  - say: End-of-Line, one. Her wage is on the line so she wakes up. She runs on hourly pay!
+- title: Wrapping up
+  beats:
+  - say: Okay, that's it for today! Tomorrow I'm taking my happi to Ella!
+  - chat: [green_glowstick_yr2, 'get the mi fixed!']
+  - say: Getting the Mi fixed! Not letting it become Nami!
+  - chat: [not_my_headcanon, 'what color thread?']
+  - say: Thread color? Green. ...Oh, but would Minami be happier with yellow-green? Oh no.
+  - chat: [green_glowstick_yr2, 'what about sewing it with both?']
+  - chat: [end_of_line_here, 'whatever just go to bed']
+  - say: Sew with both, and go to bed. Wait, everyone's saying something different. I can't decide.
+  - say: I'll ask Ella first. Bye, everyone, otsukaresama!

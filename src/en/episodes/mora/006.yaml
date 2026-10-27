@@ -1,0 +1,186 @@
+# English version of src/episodes/mora/006.yaml.
+title: The café owner brought me his receipts in a shoebox again this year
+parts:
+- title: Hello, and today's job
+  beats:
+  - say: Evening. Today I'm streaming while I work.
+  - chat: [night_shift_survivor, 'evening. what work?']
+  - say: What work, Night Shift? Bookkeeping for hire. I take a shop's receipts and turn them into proper books.
+  - chat: [first_time_here, 'first time here. whats "the books"?']
+  - say: Hey, first-timer, welcome. The books are, roughly, a table of when you spent what on what. You use it to file your taxes.
+  - say: And today it's a whole year from the owner of a little coffee shop. A client who comes every year.
+  - chat: [third_planner_this_year, 'i love the cafe guy stories']
+  - say: You love the café guy? Me too. He brings it in the exact same way every year.
+  - say: Same day every year, too. The first Monday in March. No phone call. He just knocks on my door a little after lunch.
+  - say: So on the first Monday of March, I don't write anything in my planner. I keep it empty.
+- title: The shoebox and the insole
+  beats:
+  - say: He puts all the receipts in a shoebox. A whole year's worth.
+  - chat: [lives_on_points, 'a shoebox lol']
+  - say: Yeah, laugh, a shoebox. The same shoebox every year. The corners have gone soft.
+  - say: And at the bottom of that box, there's an old shoe insole.
+  - chat: [first_time_here, 'why']
+  - say: Why an insole? No idea. It was there the first year. Every year it comes out with the receipts.
+  - chat: [third_planner_this_year, 'did you ever ask']
+  - say: Did I ask? Once. I said, "There was an insole in here." He went "ah," and took it home.
+  - chat: [leaving_work_on_time, 'and the next year it was back?']
+  - say: The next year? It was back. Same one.
+  - say: He puts it back in. I think he thinks it's part of the box.
+  - say: And this year when I opened it, there were two insoles.
+  - chat: [nameless_familiar, 'completed the pair']
+  - say: A matching pair? Is it? They're different colors, though.
+  - say: Different shoes. I decided not to ask. If there's three next year, then I'll ask.
+  - chat: [night_shift_survivor, 'just give him a box?']
+  - say: Give him a box? I did! I gave him a real document box once. With a lid, and a little label you can write the date on.
+  - say: He was so happy. "That's a nice box," he said.
+  - say: And the next year he showed up with the shoebox.
+  - chat: [third_planner_this_year, 'where did the box go']
+  - say: Where did my box go? I asked. He keeps the shop's spoons and forks in it.
+  - say: I saw it at the shop once. Everything lined up so neatly.
+  - say: Not how I pictured it being used. But, eh. Fine.
+  - chat: [leaving_work_on_time, 'how did you meet him?']
+  - say: How did we meet? He was my very first client after I left the records bureau. One of his regulars introduced us.
+  - say: The first year, the receipts came in a paper bag. Shoebox from year two.
+  - say: Is that evolution? A box is a little easier than a bag, I'll give him that.
+- title: The fading receipts
+  beats:
+  - say: So this year there was a problem. The ink on the receipts was fading.
+  - chat: [leaving_work_on_time, 'thermal paper?']
+  - say: Yep, thermal paper. Register receipts use paper that prints with heat. So light and heat slowly wash it out.
+  - say: Turns out he'd kept the shoebox on a shelf by the shop window. In the sun.
+  - say: A whole year of sunbathing. The spring receipts were basically blank paper.
+  - chat: [third_planner_this_year, 'so what do you even do']
+  - say: What do I do? I hold them up to the light, tilt them, read them from an angle. The ones I can't read, I ask him.
+  - chat: [lives_on_points, 'does he remember??']
+  - say: Does he remember? He goes, "Beans." Every single one, "beans."
+  - chat: [leaving_work_on_time, 'its a cafe so its mostly beans lol']
+  - say: It's a café, so it's mostly beans, right. The annoying part is he's mostly right.
+  - say: But there was one that wasn't beans. Almost blank, only the amount readable.
+  - say: When I asked, he went quiet for a sec, and said, "That one's flowers." It was his wife's birthday.
+  - say: I didn't ask anything else. For the category, I didn't put it as business entertainment. I made the call and put it under not business-related.
+  - chat: [counter_clerk_12yrs, 'the one that got annoying in 2019 with two tax rates']
+  - say: Two tax rates since twenty-nineteen, yeah. In Japan, takeout food is eight percent and eating in is ten. Sometimes both are on one receipt.
+  - say: His shop sells beans to take home too, so it gets mixed up.
+  - say: It's a pain, but honestly I kind of like sorting that stuff out.
+  - chat: [third_planner_this_year, 'handwritten receipts too?']
+  - say: Handwritten ones too. From his suppliers. The ones addressed to "Uesama."
+  - chat: [first_time_here, 'who is uesama']
+  - say: Who's Uesama? It's what they write when they don't put a name. It literally means "Your Lordship." Like a feudal lord.
+  - say: He is not the lordship type, though. He's always in an apron.
+- title: 'Side track: do you take the receipt?'
+  beats:
+  - chat: [leaving_work_on_time, 'i never take receipts']
+  - say: Leaving On Time doesn't take receipts. I do. I put them in my wallet and copy them into my planner at night.
+  - say: My wallet doesn't get stuffed. I empty it every night.
+  - chat: [nameless_familiar, 'konbini receipts go straight in the receipt bin']
+  - say: Straight in the receipt bin. That little box. Next to the register at the convenience store. So many people use it.
+  - chat: [night_shift_survivor, 'i can never say "no receipt" so i just take it']
+  - say: You can never say "no receipt," I get it! They hand it over before you can say it. So you take it and drop it in the box.
+  - chat: [third_planner_this_year, 'receipts come in the app now']
+  - say: Receipts in the app, yeah. That's handy in its own way, but I like paper.
+  - say: Touching it makes me feel safe. Like I can feel with my hand that the money went down.
+  - say: I'm a cash person. In my wallet, one ten-thousand bill and a few thousands.
+  - chat: [leaving_work_on_time, 'just go cashless']
+  - say: People tell me to go cashless. But if the balance only lives on a screen, it doesn't feel like it went down, and that scares me.
+  - chat: [night_shift_survivor, 'what do you do on payday?']
+  - say: What do I do on payday? I go to the bank and update my passbook. It's a little paper booklet, and the ATM prints your transactions into it.
+  - say: I know I can check it in the app. But when you put the passbook in the machine, it goes zzzt-zzzt, right?
+  - say: I love that sound. The sound of numbers being printed.
+  - chat: [third_planner_this_year, 'that sound is so good']
+  - say: That sound is so good, right? Someone gets it!
+  - say: Once a month, for the sound. I take out cash while I'm there, so it's not a waste.
+- title: 'Side track: favorite coffee place?'
+  beats:
+  - chat: [good_morning_guy, 'is the cafe guys coffee good?']
+  - say: Is his coffee good? It is. He does it properly with flannel. A cloth filter.
+  - chat: [night_shift_survivor, 'where do you usually get coffee mora']
+  - say: Where do I usually go? Doutor. It's a cheap Japanese coffee chain. Milano Sandwich A and a medium blend.
+  - say: The Milano A is so good! You don't have to think about the price, and you can always grab a seat alone.
+  - chat: [lives_on_points, 'no starbucks?']
+  - say: Starbucks, sometimes, yeah. But all I order is "a tall coffee of the day."
+  - say: I can't chant those magic-spell orders. When the person ahead of me has a long one, just listening makes me nervous.
+  - chat: [night_shift_survivor, 'what about at home?']
+  - say: At home, instant. One cup of Nescafé Gold Blend.
+  - say: While the water's boiling I slowly wake up.
+  - chat: [third_planner_this_year, 'how many cups a day?']
+  - say: How many a day? I've decided three max. And then I drink four.
+  - say: What's the point of deciding? If I don't decide, it's five. So there's a point.
+  - chat: [first_time_here, 'where do the other streamers go?']
+  - say: Where do the other streamers go? Vespa's Starbucks. Whenever a new seasonal drink comes out, she goes right away.
+  - say: Pim and Lise are Komeda. That's another chain, think a cozy diner with big soft booths.
+  - say: Lise is probably asleep in one of those deep sofas.
+  - say: Nox is Tully's. Ella goes to little independent cafés. Very Ella, right? She can talk about cups and saucers for thirty minutes.
+  - ask:
+      q: What's your favorite coffee place?
+      options:
+      - c: Starbucks
+        r:
+        - '{name}, Starbucks. Same as Vespa.'
+        - Can you order the long ones? I can only say "coffee of the day."
+      - c: Doutor
+        r:
+        - '{name}, Doutor. My people.'
+        - Are you a Milano A person? I'm A. I like that it's got prosciutto and a bunch of stuff in it.
+      - c: Komeda Coffee
+        r:
+        - '{name}, Komeda. With Pim and Lise.'
+        - Once you sit in a Komeda sofa, getting back up takes real willpower.
+      - c: An independent café
+        r:
+        - '{name}, an independent café. Same as Ella.'
+        - Must be nice, having a good one nearby. Do you chat with the owner?
+      npc:
+      - [night_shift_survivor, 1]
+      - [lives_on_points, 0]
+      - [leaving_work_on_time, 1]
+      - [third_planner_this_year, 3]
+      - [good_morning_guy, 2]
+      - [nameless_familiar, 0]
+- title: Firm pudding or soft pudding?
+  beats:
+  - chat: [third_planner_this_year, 'does the cafe have sweets?']
+  - say: Sweets at his café? Yes! Homemade pudding. Custard pudding, the Japanese kind with caramel on top. He gave me one once as a thank-you for the books.
+  - say: Probably the best sweet thing I've ever eaten.
+  - say: It's firm. You put the spoon in and the mark just stays there.
+  - chat: [lives_on_points, 'soft and wobbly gang']
+  - say: Points is soft and wobbly. The convenience store ones are mostly soft, right. I know they're good.
+  - chat: [leaving_work_on_time, 'firm gang. old school pudding']
+  - say: Firm gang, old school. Yes! The café kind with the bitter caramel. Tastes like egg and caramel.
+  - say: His caramel is a little burnt. I asked if it's on purpose, he said "happened that way." It happens that way every time.
+  - chat: [lives_on_points, 'soft is sexier tho']
+  - say: {face: annoyed, text: "Soft is what? Don't say that about pudding. The pudding did nothing wrong."}
+  - chat: [lives_on_points, 'and firm?']
+  - say: And firm? Firm's fine too. Points, you are relentless today.
+  - ask:
+      q: Firm pudding or soft pudding?
+      options:
+      - c: Firm
+        r:
+        - '{name}, firm. Same here.'
+        - When I spot firm pudding on a café menu, that alone gets me through the door.
+      - c: Soft
+        r:
+        - '{name}, soft, huh.'
+        - Lise recommended it to me once too. I know it's good. I just end up back at firm.
+      - c: I like both
+        r:
+        - '{name} likes both. A peaceful person.'
+        - Getting to pick depending on the day, I'm a little jealous.
+      npc:
+      - [leaving_work_on_time, 0]
+      - [lives_on_points, 1]
+      - [nameless_familiar, 0]
+      - [night_shift_survivor, 2]
+      - [third_planner_this_year, 0]
+- title: 'Ending: back to work'
+  beats:
+  - chat: [good_morning_guy, 'now i wanna go to the cafe guys place']
+  - say: Now you want to go to his café? Right? Talking about pudding made me want some too.
+  - chat: [first_time_here, 'are the books almost done?']
+  - say: Almost done? Ugh. I've still got the spring receipts. The blank ones.
+  - say: I'll be holding them up to the light after this, too.
+  - chat: [lives_on_points, 'ask him about the insoles']
+  - say: The insoles, next year. I decided I'd ask if there's three.
+  - chat: [third_planner_this_year, 'you can ask at two tho']
+  - say: Ask at two? At two it could still be a coincidence. Wait. No. Insoles don't multiply by coincidence.
+  - say: That's it for the stream. Good night. Oh, another blank one.

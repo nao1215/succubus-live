@@ -1,0 +1,41 @@
+category: qbox
+name: 質問箱・マシュマロの定番（もしも・自分のこと）
+topics:
+- {id: qbox_superpower, q: 一つだけ超能力がもらえるなら？}
+- {id: qbox_island, q: 無人島に一つだけ持っていくなら？}
+- {id: qbox_reborn, q: 生まれ変わるなら何になりたい？}
+- {id: qbox_one_day_other, q: 一日だけ別の配信者と入れ替われるなら、誰と？}
+- {id: qbox_100man, q: 100万円もらったら一日で何に使う？}
+- {id: qbox_no_internet, q: 一週間ネットなしで暮らせる？ 何をする？}
+- {id: qbox_zombie, q: ゾンビが来たら生き残れる？ 何を武器にする？}
+- {id: qbox_time_machine, q: 一回だけ過去に戻れるなら、いつの自分に何を言う？}
+- {id: qbox_hobby_new, q: 今いちばんやってみたい趣味は？}
+- {id: qbox_weakness, q: 自分の直したいところは？}
+- {id: qbox_charm, q: 自分のいいところを一つ言って}
+- {id: qbox_habit, q: 自分だけの変なこだわり・癖は？}
+- {id: qbox_mbti, q: MBTI（性格診断）は何？ 信じる？}
+- {id: qbox_blood, q: 血液型や星座の占いは信じる？}
+- {id: qbox_fear, q: 苦手なもの・怖いものは？（高い所、虫、お化け）}
+- {id: qbox_stress_word, q: 言われて嫌な言葉は？}
+- {id: qbox_happy_moment, q: いちばん幸せを感じる瞬間は？}
+- {id: qbox_dream_now, q: 今の夢・目標は？}
+- {id: qbox_first_stream, q: 配信を始めたきっかけは？}
+- {id: qbox_stream_routine, q: 配信の前にすることは？}
+- {id: qbox_viewer_name, q: 視聴者の呼び方の由来は？}
+- {id: qbox_retire, q: 配信をやめたら何をする？}
+- {id: qbox_skill, q: 意外な特技は？}
+- {id: qbox_cant, q: 実はできないことは？}
+- {id: qbox_collection, q: 集めているものは？}
+- {id: qbox_three_words, q: 自分を三文字で言うと？}
+- {id: qbox_day_off, q: 配信がない日は何してる？}
+- {id: qbox_cooking_for, q: 誰かに一品作るなら何を作る？}
+- {id: qbox_word_fav, q: 好きな言葉・口癖は？}
+- {id: qbox_color, q: 好きな色は？ 持ち物に多い色は？}
+- {id: qbox_number, q: 好きな数字は？ 縁起を担ぐ数字は？}
+- {id: qbox_smell, q: 好きな匂いは？}
+- {id: qbox_sound, q: 好きな音・落ち着く音は？}
+- {id: qbox_animal, q: 自分を動物にたとえると？}
+- {id: qbox_cast_rank, q: 6人の中で、いちばん料理が上手そうなのは誰？ 寝坊しそうなのは？}
+- {id: qbox_castle_secret, q: 城の中のお気に入りの場所は？}
+- {id: qbox_human_world, q: 人間界でいちばん好きなものは？}
+- {id: qbox_makai_food, q: 魔界にはない、人間界の好きな食べ物は？}

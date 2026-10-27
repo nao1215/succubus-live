@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Succubus Live</title>
+<style>
+  /* 実在の配信サイトに寄せた、落ち着いた明るい画面。ピンクは差し色だけ。 */
+  :root {
+    --bg: #f4f4f6; --surface: #ffffff; --line: #e3e3e8; --text: #111114; --text2: #5b5b66; --text3: #8d8d98;
+    --brand: #e0457b; --live: #e91916; --ink: #111114;
+    --side: 248px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", system-ui, sans-serif; font-size: 14px; }
+  button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
+  [hidden] { display: none !important; }
+  svg { display: block; }
+
+  /* 上の帯 */
+  .top { position: sticky; top: 0; z-index: 10; height: 52px; display: flex; align-items: center; gap: 14px; padding: 0 16px;
+    background: var(--surface); border-bottom: 1px solid var(--line); }
+  .logo { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 17px; letter-spacing: -.01em; white-space: nowrap; }
+  .logo i { width: 22px; height: 22px; border-radius: 6px; background: var(--brand); display: grid; place-items: center; }
+  .top .sp { flex: 1; }
+  .coin { display: flex; align-items: center; gap: 6px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .coin svg { color: #d99a00; }
+  #langbtn { background: none; border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; font-size: 12px; color: var(--text2); }
+
+  .shell { display: flex; align-items: flex-start; }
+  /* 左の一覧（配信中のチャンネル） */
+  #side { width: var(--side); flex: none; position: sticky; top: 52px; height: calc(100dvh - 52px); overflow-y: auto;
+    background: var(--surface); border-right: 1px solid var(--line); padding: 10px 0; }
+  #side h3 { font-size: 12px; font-weight: 700; color: var(--text2); margin: 4px 14px 8px; }
+  #sidelist { list-style: none; margin: 0; padding: 0; }
+  #sidelist li { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: center; padding: 6px 14px; cursor: pointer; }
+  #sidelist li:hover { background: #f2f2f5; }
+  #sidelist .nm { font-weight: 700; font-size: 13px; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #sidelist .ct { font-size: 12px; color: var(--text3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #sidelist .vw { font-size: 12px; color: var(--text2); display: flex; align-items: center; gap: 5px; }
+  #sidelist .vw::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--live); }
+  #sidelist li.off { opacity: .55; cursor: default; }
+  #sidelist li.off .vw::before { background: none; }
+  .av { width: 30px; height: 30px; border-radius: 50%; background-color: #eee; background-repeat: no-repeat; flex: none; }
+  .av.big { width: 44px; height: 44px; }
+
+  /* 一覧 */
+  #lobby { flex: 1; min-width: 0; padding: 18px 24px 48px; }
+  #lobby h2 { font-size: 18px; font-weight: 800; margin: 0 0 12px; }
+  #none { color: var(--text2); padding: 24px 0; }
+  #grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px 14px; }
+  .card { background: none; border: 0; padding: 0; text-align: left; min-width: 0; }
+  .frame { position: relative; aspect-ratio: 16 / 9; border-radius: 6px; overflow: hidden; background-color: #ddd;
+    background-image: var(--room, none), url(assets/room.jpg); background-size: cover; background-position: center; }
+  .card:hover .frame { outline: 3px solid var(--brand); outline-offset: 0; }
+  .frame canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .frame::before { content: ''; position: absolute; inset: 0; background: var(--still, none); }
+  .live { position: absolute; top: 8px; left: 8px; background: var(--live); color: #fff; font-size: 11px; font-weight: 700;
+    padding: 1px 5px; border-radius: 3px; letter-spacing: .04em; }
+  .viewers { position: absolute; bottom: 8px; left: 8px; background: rgba(0,0,0,.62); color: #fff; font-size: 12px; padding: 1px 6px; border-radius: 3px; }
+  .cap { position: absolute; left: 10%; right: 10%; bottom: 8px; text-align: center; font-size: 12px; line-height: 1.4; }
+  .cap span { background: rgba(0,0,0,.72); color: #fff; padding: 1px 5px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .cap:empty { display: none; }
+  .card:not(.featured) .cap { display: none; }
+  .meta { display: grid; grid-template-columns: 44px 1fr; gap: 10px; padding-top: 10px; }
+  .meta .nm { font-weight: 700; font-size: 15px; line-height: 1.3; }
+  .meta .ct { color: var(--text2); font-size: 13px; margin-top: 2px; }
+  .meta .tags { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .meta .tags span { background: #e9e9ee; color: var(--text2); font-size: 12px; padding: 2px 8px; border-radius: 999px; }
+  .meta .st { color: #d99a00; font-size: 11px; letter-spacing: .1em; }
+  /* 注目の配信：大きな画面と、横のチャット */
+  .card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .card.featured .frame { border-radius: 0; }
+  .card.featured .cap { font-size: clamp(13px, 1.8vw, 18px); bottom: 14px; }
+  .card.featured .meta { padding: 12px 14px; }
+  .minichat { display: none; }
+  .minichat.side { display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; height: 170px; overflow: hidden;
+    padding: 8px 12px; font-size: 13px; line-height: 1.45; border-top: 1px solid var(--line); }
+  .mc { flex-shrink: 0; word-break: break-word; }
+  .mc b { font-weight: 700; margin-right: 4px; }
+  @media (min-width: 1000px) {
+    .card.featured { grid-template-columns: 1fr 320px; }
+    .card.featured .frame { grid-column: 1; grid-row: 1; }
+    .minichat.side { grid-column: 2; grid-row: 1 / 3; height: auto; border-top: 0; border-left: 1px solid var(--line); }
+    .card.featured .meta { grid-column: 1; }
+  }
+
+  /* 配信画面 */
+  #stream { flex: 1; min-width: 0; display: flex; flex-direction: column; height: calc(100dvh - 52px); }
+  .watch { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  @media (min-width: 1000px) {
+    .watch { display: grid; grid-template-columns: 1fr 340px; grid-template-rows: auto 1fr; }
+    .playcol { grid-column: 1; grid-row: 1 / 3; overflow-y: auto; }
+    .chatcol { grid-column: 2; grid-row: 1 / 3; border-left: 1px solid var(--line); }
+  }
+  .playcol { background: var(--bg); }
+  #stage { position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden; background-color: #222;
+    background-image: var(--room, none), url(assets/room.jpg); background-size: cover; background-position: center; }
+  @media (max-width: 700px) { #stage { aspect-ratio: 4 / 3; } }
+  #sfallback { position: absolute; inset: 0; background-repeat: no-repeat; }
+  #scanvas, #scanvas2 { position: absolute; inset: 0; width: 100%; height: 100%; }
+  #scanvas2 { display: none; }
+  #stage.duo #scanvas2 { display: block; }
+  #stage .live { top: 10px; left: 10px; }
+  .capbox { position: absolute; left: 6%; right: 6%; bottom: 5%; text-align: center; }
+  #capwho { display: inline-block; font-weight: 700; font-size: 12px; color: #fff !important; background: rgba(0,0,0,.72); padding: 1px 6px; margin-bottom: 2px; }
+  .capbody { display: inline; font-size: clamp(14px, 2.3vw, 21px); line-height: 1.55; }
+  #caption, #captionEn { background: rgba(0,0,0,.75); color: #fff; padding: 2px 8px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  #captionEn { display: inline-block; margin-top: 4px; font-size: .78em; color: #e6e6ea; }
+  #captionEn:empty, #caption:empty { display: none; }
+  #endbox { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,.6); color: #fff; z-index: 3; }
+  #endbox div { text-align: center; }
+  #endbox button, .ok { background: var(--brand); border: 0; border-radius: 6px; padding: 8px 18px; color: #fff; font-weight: 700; }
+  /* 配信の下のチャンネル情報 */
+  .chinfo { display: grid; grid-template-columns: 44px 1fr auto; gap: 12px; align-items: center; padding: 12px 16px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  #stitle { font-weight: 700; font-size: 15px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .chinfo .sub { color: var(--text2); font-size: 13px; margin-top: 3px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  #sname { font-weight: 700; color: var(--text) !important; }
+  #stag { color: var(--brand); }
+  #aff { color: #d99a00; font-size: 11px; letter-spacing: .1em; }
+  .chinfo .right { display: flex; gap: 8px; align-items: center; }
+  #sviewers { color: var(--live); font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 4px; white-space: nowrap; }
+  .iconbtn { background: none; border: 1px solid var(--line); border-radius: 6px; width: 34px; height: 30px; display: grid; place-items: center; color: var(--text2); }
+  .iconbtn.on { color: var(--brand); border-color: var(--brand); }
+  #back { display: flex; align-items: center; gap: 4px; background: none; border: 0; color: var(--text2); padding: 8px 14px; font-size: 13px; }
+  /* チャット */
+  .chatcol { display: flex; flex-direction: column; min-height: 0; background: var(--surface); flex: 1; }
+  .chathead { padding: 10px 14px; font-size: 12px; font-weight: 700; color: var(--text2); border-bottom: 1px solid var(--line); text-align: center; letter-spacing: .05em; }
+  #chat { flex: 1; overflow-y: auto; padding: 8px 14px; font-size: 13.5px; line-height: 1.5; min-height: 120px; }
+  .msg { padding: 3px 0; word-break: break-word; }
+  .msg b { font-weight: 700; margin-right: 4px; }
+  .msg.streamer b::before { content: '配信者'; font-size: 10px; font-weight: 700; color: #fff; background: var(--brand); border-radius: 3px; padding: 0 4px; margin-right: 4px; vertical-align: 1px; }
+  .msg.mine b { color: #0a8754 !important; }
+  .msg .en { display: block; color: var(--text3); font-size: 12px; }
+  .msg.tip { border-radius: 6px; margin: 6px 0; padding: 6px 8px; }
+  .tiphead { display: flex; justify-content: space-between; font-weight: 700; }
+  .t0 { background: #e3f1ff; } .t1 { background: #fff2c6; } .t2 { background: #ffe0cf; } .t3 { background: #ffd6de; }
+  #choices { display: flex; gap: 6px; padding: 8px 14px; border-top: 1px solid var(--line); flex-wrap: wrap; align-items: center; background: #fafafb; }
+  #choices::before { content: attr(data-label); color: var(--text2); font-size: 12px; margin-right: 2px; }
+  #choices button { background: var(--surface); border: 1px solid var(--brand); color: var(--brand); border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+  .input { display: flex; gap: 6px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); position: relative; }
+  #say { flex: 1; min-width: 0; background: #f1f1f4; border: 1px solid transparent; border-radius: 6px; padding: 9px 12px; color: var(--text); font: inherit; font-size: 16px; }
+  #say:focus { outline: none; border-color: var(--brand); background: #fff; }
+  #send { border: 0; border-radius: 6px; padding: 0 14px; font-weight: 700; background: var(--brand); color: #fff; }
+  #tipbtn { border: 1px solid var(--line); border-radius: 6px; width: 40px; display: grid; place-items: center; background: none; color: #d99a00; }
+  #tipbox { position: absolute; right: 14px; bottom: 58px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px; z-index: 4; width: 230px; box-shadow: 0 6px 24px rgba(0,0,0,.12); }
+  #tipbox .tier { border: 0; border-radius: 6px; padding: 10px; font-weight: 800; }
+  #tipbox .tier:disabled { opacity: .35; cursor: default; }
+  #tipbox p { grid-column: 1 / 3; margin: 0; font-size: 11px; color: var(--text2); }
+
+  /* 窓 */
+  .modal { position: fixed; inset: 0; z-index: 20; background: rgba(17,17,20,.45); display: grid; place-items: center; padding: 16px; }
+  .sheet { background: var(--surface); border-radius: 10px; padding: 18px; width: min(420px, 100%); box-shadow: 0 10px 40px rgba(0,0,0,.2); }
+  .sheet h2 { margin: 0 0 8px; font-size: 17px; }
+  .lead { color: var(--text2); font-size: 13px; }
+  .sheet input { width: 100%; background: #f1f1f4; border: 1px solid transparent; border-radius: 6px; padding: 10px; color: var(--text); font-size: 16px; }
+  .ok { margin-top: 12px; width: 100%; padding: 10px; }
+  #toasts { position: fixed; top: 64px; left: 50%; transform: translateX(-50%); z-index: 30; display: grid; gap: 6px; }
+  .toast { background: var(--ink); color: #fff; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 13px; animation: pop .2s; }
+  @keyframes pop { from { transform: translateY(4px); opacity: .4; } to { transform: none; opacity: 1; } }
+  #errbox { position: fixed; left: 8px; right: 8px; bottom: 8px; z-index: 50; background: #fff; color: #b0002a; border: 1px solid #e91916;
+    border-radius: 8px; padding: 8px 10px; font-size: 12px; white-space: pre-wrap; max-height: 40vh; overflow: auto; }
+
+  /* スマホ：左の一覧は上の横並びに */
+  @media (max-width: 999px) {
+    .shell { display: block; }
+    #side { position: static; width: auto; height: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 10px 0 6px; overflow-x: auto; }
+    #side h3 { display: none; }
+    #sidelist { display: flex; gap: 14px; padding: 0 14px; }
+    #sidelist li { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0; width: 58px; flex: none; }
+    #sidelist .av { width: 52px; height: 52px; box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--live); }
+    #sidelist li.off .av { box-shadow: none; }
+    #sidelist .nm { font-size: 11px; font-weight: 600; max-width: 58px; text-align: center; }
+    #sidelist .ct, #sidelist .vw { display: none; }
+    #lobby { padding: 14px 12px 40px; }
+    #grid { grid-template-columns: 1fr; gap: 18px; }
+    #stream[hidden] + * { display: none; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="logo"><i><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></i>Succubus Live</div>
+  <div class="sp"></div>
+  <div class="coin"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 8l3 4 3-4M12 12v5M9 13h6"/></svg><span id="yen">¥0</span></div>
+  <button id="langbtn">日本語</button>
+</header>
+
+<div class="shell">
+  <aside id="side">
+    <h3 id="sideHead">配信中のチャンネル</h3>
+    <ul id="sidelist"></ul>
+  </aside>
+
+  <main id="lobby">
+    <h2 id="liveHead">配信中</h2>
+    <div id="grid"></div>
+    <p id="none" hidden></p>
+  </main>
+
+  <main id="stream" hidden>
+    <div class="watch">
+      <div class="playcol">
+        <button id="back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg><span id="backText">一覧</span></button>
+        <div id="stage"><div id="sfallback" hidden></div><canvas id="scanvas"></canvas><canvas id="scanvas2"></canvas><span class="live">LIVE</span>
+          <div class="capbox"><span id="capwho" hidden></span><div class="capbody"><span id="caption"></span><br><span id="captionEn"></span></div></div>
+          <div id="endbox" hidden><div><p id="endText"></p><button id="endback">一覧へ</button></div></div>
+        </div>
+        <div class="chinfo">
+          <span class="av big" id="savatar"></span>
+          <div><div id="stitle"></div><div class="sub"><span id="sname"></span><span id="stag"></span><span id="aff"></span></div></div>
+          <div class="right">
+            <span id="sviewers"></span>
+            <button id="ttsbtn" class="iconbtn" hidden title="読み上げ"></button>
+          </div>
+        </div>
+      </div>
+      <div class="chatcol">
+        <div class="chathead" id="chatHead">配信チャット</div>
+        <div id="chat"></div>
+        <div id="choices" hidden></div>
+        <div class="input">
+          <input id="say" maxlength="60" placeholder="メッセージを送信" autocomplete="off">
+          <button id="send">チャット</button>
+          <button id="tipbtn" title="投げ銭"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 8l3 4 3-4M12 12v5M9 13h6"/></svg></button>
+          <div id="tipbox" hidden></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="modal" id="namebox" hidden>
+  <div class="sheet">
+    <h2 id="nameTitle">あなたの名前</h2>
+    <p class="lead" id="nameLead">配信者に読まれる名前です。</p>
+    <input id="nameinput" maxlength="16" placeholder="名無しの使い魔">
+    <button class="ok" id="nameok">決める</button>
+  </div>
+</div>
+
+<div class="modal" id="away" hidden>
+  <div class="sheet">
+    <h2 id="awayTitle">おかえりなさい</h2>
+    <p id="awaytext"></p>
+    <button class="ok" id="awayok">受け取る</button>
+  </div>
+</div>
+
+<div id="toasts"></div>
+<div id="errbox" hidden></div>
+<script src="puppet.js?v=20261027h"></script>
+<script src="app.js?v=20261027h"></script>
+</body>
+</html>

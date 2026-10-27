@@ -1,0 +1,201 @@
+# Nox 008 (English). Source: src/episodes/nox/008.yaml. Beat order matches the Japanese.
+title: "Is writing 'if err != nil' every time annoying? (plus tabs versus spaces)"
+lobby:
+- "Hi. Tonight's about languages. What we love, what we hate."
+- "Specifically, the thing everyone says is annoying about error handling in Go."
+- "At some point I might ask if you're team tabs or team spaces."
+parts:
+- title: Opening (a whole day of Go)
+  beats:
+  - say: "Oh, we're up. Hi, everyone who's still awake."
+  - chat: [lag_appreciation_club, "evening. what did you do today"]
+  - say: "What did I do today? Wrote Go all day. For work."
+  - chat: [lag_appreciation_club, "so you typed if err != nil a hundred times"]
+  - say: {face: annoyed, text: "'If err not equal nil' a hundred times... I did not type it a hundred times."}
+  - chat: [kernel_reader, "how many then"]
+  - say: "How many... I didn't count. A lot."
+  - chat: [first_time_here, "hi first time. if err?"]
+  - say: "Welcome, new person. 'If err' is, like, in a language called Go, you check yourself whether something failed. Every time."
+  - say: "'Did that last thing fail? If it did, stop here.' You write that out, one by one."
+  - chat: [first_time_here, "every time?"]
+  - say: "Every time? Every time. So people make fun of it for being tedious."
+  - chat: [lag_appreciation_club, "it IS tedious"]
+  - say: "It is tedious? Yeah, it is. But I like it. You can see exactly where every failure gets handled."
+  - chat: [ddd_police, "just throw an exception"]
+  - say: "'Just throw an exception.' There it is, the exceptions person. DDD Police, you're a Java person, right?"
+  - chat: [ddd_police, "kotlin actually"]
+  - say: "Kotlin, actually. Sorry. Kotlin."
+  - chat: [second_year_dev, "im typescript"]
+  - say: "Second Year's TypeScript. Everyone's all over the place tonight. I love it."
+  - chat: [rtos_veteran_15y, "C"]
+  - say: "R-TOS Veteran is C. I knew that."
+  - chat: [kernel_reader, "C and sometimes assembly"]
+  - say: "Kernel Reader, you read more than you write, though."
+  - chat: [kernel_reader, "reading is more fun"]
+  - say: "Reading's more fun, I get it. Lately I get more reading work than writing work too."
+- title: nil but not nil
+  beats:
+  - chat: [kernel_reader, "go errors do have a trap tho"]
+  - say: "The error trap, yeah. Today I reviewed code from someone who stepped right on it."
+  - say: "They returned an error that was empty inside, and the caller still treated it as a failure."
+  - chat: [first_time_here, "empty but failed?"]
+  - say: "Empty but failed, right? Okay, so. An error in Go is kind of like a box."
+  - say: "The box holds a tag that says what type of error it is, and the actual contents."
+  - say: "It only counts as 'no error' when both are empty."
+  - say: "If the contents are empty but there's still a type tag in there, it's a box with something in it."
+  - chat: [first_time_here, "an empty box with a name tag on it"]
+  - say: "An empty box with a name tag stuck on it. Yeah, exactly."
+  - chat: [kernel_reader, "theres a whole entry in the go faq"]
+  - say: "There's an entry in the Go FAQ, yeah. 'Why is my nil error value not equal to nil?'"
+  - say: "The answer is, when there's no error, return a plain nil. Not a typed nil pointer."
+  - chat: [second_year_dev, "typescript has that too. null and undefined"]
+  - say: "Null and undefined, right. Looks empty, gets treated differently. Similar trap. Different mechanism, though."
+  - chat: [lag_appreciation_club, "more than one kind of empty, like nox's fridge"]
+  - say: "My fridge? It has eggs, soy milk, and ponzu. It's not empty."
+  - chat: [kernel_reader, "what do you put ponzu on"]
+  - say: "What do I put ponzu on? Joya-nabe. It's a hot pot. You just swish pork and spinach in kelp broth. Ponzu's the citrus soy dipping sauce."
+  - chat: [lag_appreciation_club, "every night?"]
+  - say: {face: annoyed, text: "Every night? Not every night. The name just means 'every night pot.'"}
+- title: Wrap it before you pass it
+  beats:
+  - chat: [second_year_dev, "i see a lot of code that just returns err as is"]
+  - say: "Just returning err as is, yeah, you see that a lot. I write it a lot too."
+  - say: "Now, some errors already carry the file name. Go's file errors do, actually."
+  - say: "But 'why were we reading it' is something only that spot in the code knows. Whoever gets it at the top can't tell."
+  - chat: [first_time_here, "like a game of telephone losing the point"]
+  - say: "Telephone losing the point, yeah. So you wrap it with a little context. 'Tried to load the config, file not found.'"
+  - chat: [kernel_reader, "wrapping with %w"]
+  - say: "Wrapping with percent w, yes. Since Go one-thirteen, in twenty-nineteen, you can wrap it and still dig out what's inside."
+  - say: "With errors dot Is, you can check whether it matches a specific error, including anything wrapped inside."
+  - chat: [second_year_dev, "what if i want to check by type?"]
+  - say: "By type? That's errors dot As. Is asks 'is this exact one in here?' As asks 'is one of this kind in here?'"
+  - chat: [lag_appreciation_club, "wrapping and unwrapping so busy"]
+  - say: "Wrapping and unwrapping, so busy. Like presents. Not that I get many."
+  - chat: [rtos_veteran_15y, "what do yoru's errors say"]
+  - say: {face: shy, text: "Yoru's errors? ...They say 'no.'"}
+  - chat: [kernel_reader, "no to what"]
+  - say: "No to what? I don't know. And I wrote it."
+  - chat: [lag_appreciation_club, "tells everyone else to wrap"]
+  - say: "Tells everyone else to wrap, I know. At work, the error says what we were doing and what was missing. Yoru's... is a hobby. I'll wrap them next time."
+- title: JavaScript's equals signs
+  beats:
+  - chat: [night_shift_survivor, "i dont get the difference between == and === in javascript"]
+  - say: "Double equals versus triple equals? Oh, that one. Double equals tries to convert the types before comparing. On its own."
+  - say: "So a one written as text, and the number one, it says those are the same."
+  - chat: [night_shift_survivor, "thats kind"]
+  - say: "Kind? Too kind. So I write triple equals myself. But when I find someone else's double equals, I don't just silently change it."
+  - chat: [kernel_reader, "why not fix it"]
+  - say: "Because x double-equals null catches both null and undefined."
+  - say: "It might be on purpose. I check the tests and ask whoever wrote it first."
+  - chat: [second_year_dev, "our team bans it with a lint rule"]
+  - say: "Banned with a lint rule, nice. When the team agrees on it and the machine enforces it, nobody has to get yelled at."
+  - chat: [kernel_reader, "have you tried gleam?"]
+  - say: "Gleam? I have! It hit one point oh in twenty-twenty-four."
+  - say: "On Erlang, you get supervisors. A crashed process gets restarted by whoever's watching. Plus static types on top. Won't fix everything. I love it."
+  - chat: [ddd_police, "talking fast for once"]
+  - say: {face: flustered, text: "'Talking fast for once'... I'm not talking fast. I just like it."}
+- title: The shorter syntax never came
+  beats:
+  - chat: [ddd_police, "so theyre never adding shorter error syntax?"]
+  - say: "Shorter error syntax? They decided not to. For now."
+  - say: "In twenty-nineteen there was a proposal for something called try, to make it shorter."
+  - say: "The Go team themselves proposed it. But the community pushback was huge, so it got declined."
+  - chat: [kernel_reader, "some people said it makes it harder to add debug prints"]
+  - say: "Harder to add a debug print, yeah. If it's all one line, you can't easily stick a line in between. I get that part."
+  - say: "After that, for years, people submitted hundreds of proposals to shorten it."
+  - say: "And in June twenty-twenty-five, the official Go blog said, basically, 'we're not pursuing new syntax for error handling for the foreseeable future.'"
+  - chat: [lag_appreciation_club, "they gave up"]
+  - say: "Gave up? Not exactly... they decided to stop deciding."
+  - chat: [rtos_veteran_15y, "C has you check the return value then errno"]
+  - say: "In C it's the return value first. Check errno only when the call failed. Not errno alone, an old value can be sitting there."
+  - say: "...From a C person's view, Go's still the gentle one."
+  - chat: [first_time_here, "did you want it shorter nox?"]
+  - say: "Did I want it shorter? Hmm. ...A little. Around the thirtieth one, my fingers get tired."
+  - chat: [kernel_reader, "you said you liked it"]
+  - say: "'You said you liked it'... I can like it and be tired of it. Both."
+- title: Speaking of which (tabs and spaces)
+  beats:
+  - chat: [second_year_dev, "btw are you team tabs?"]
+  - say: "Team tabs? Tabs."
+  - chat: [lag_appreciation_club, "instant answer"]
+  - say: "Instant. Go leaves it to a tool called gofmt. Tabs for indentation, spaces for alignment sometimes, but the tool decides all of it, so there's no fight."
+  - chat: [ddd_police, "we use 4 spaces"]
+  - say: "Four spaces, a spaces person. The reader could just pick the width, you know."
+  - chat: [night_shift_survivor, "i just mash spacebar in notepad"]
+  - say: "You mash the spacebar in Notepad. Do you count how many times?"
+  - chat: [night_shift_survivor, "i stop when it looks right"]
+  - say: "You stop when it looks right. ...If it lines up, that's fine."
+  - chat: [kernel_reader, "what about pim?"]
+  - say: "Pim? Pim... lines up the numbers in her household budget with full-width spaces."
+  - chat: [rtos_veteran_15y, "full width"]
+  - say: {face: surprised, text: "Full-width! It's a Japanese thing, a space the width of a whole character. When I heard that, a little noise came out of me."}
+  - chat: [lag_appreciation_club, "wish i heard nox scream"]
+  - say: "You will not hear me scream. I didn't tell Pim. For a budget, it's probably fine."
+  - ask:
+      q: "When you line things up at the start of a line, tabs or spaces?"
+      options:
+      - c: "Tabs"
+        r:
+        - "{name}, you're with me."
+        - "One keypress. And you can change the width however you want later."
+      - c: "Spaces"
+        r:
+        - "{name}, you're a spaces person. Same as DDD Police."
+        - "It's fine, as long as it lines up. ...As long as they're not full-width."
+      - c: "Full-width spaces"
+        r:
+        - "{name}... Pim has a friend."
+        - "In a budget, fine. Just not in code. Please."
+      - c: "Let the formatter decide"
+        r:
+        - "{name}, that's the one that causes the fewest fights."
+        - "Most Go people do that. gofmt decides, so nobody gets mad."
+      npc:
+      - [ddd_police, 1]
+      - [kernel_reader, 0]
+      - [second_year_dev, 3]
+      - [lag_appreciation_club, 2]
+      - [rtos_veteran_15y, 0]
+      - [night_shift_survivor, 1]
+  - chat: [lag_appreciation_club, "voted full width"]
+  - say: {face: annoyed, text: "Tabs and spaces, about half and half. ...Lag Club, you didn't have to vote full-width."}
+  - chat: [kernel_reader, "while were at it vim or emacs"]
+  - say: "Vim or Emacs? Vim. Back in the day, whatever server you got into, there was some kind of vi. A lot of containers now don't have anything, though."
+  - chat: [night_shift_survivor, "what about lise?"]
+  - say: "Lise? Lise uses Emacs. Because it has Tetris built in."
+  - chat: [rtos_veteran_15y, "the reason is a game"]
+  - say: "The reason is a game. So Lise, right? I learned how to quit before I learned Tetris."
+  - chat: [lag_appreciation_club, "how to quit vim"]
+  - say: {face: smug, text: "To quit Vim, it's colon, q. ...On day one I didn't know, so I closed the whole window."}
+- title: Loving and hating languages
+  beats:
+  - say: "The editor thing is the same as language wars, really."
+  - say: "Language wars are fun, right? I like a good fight."
+  - say: "But the second it turns into mocking the people who write that language, I'm out."
+  - chat: [second_year_dev, "what about rust?"]
+  - say: "Rust? I like it. I just find the evangelists a little much."
+  - chat: [kernel_reader, "honest"]
+  - chat: [lag_appreciation_club, "python? people say its slow"]
+  - say: "Python's slow? Python. Something big happened in three-fourteen, last October."
+  - say: "There's a build that removes the big lock that only let one thread run at a time. The GIL. And that build lost its 'experimental' label."
+  - chat: [first_time_here, "removing the lock makes it faster?"]
+  - say: "Does removing the lock make it faster? It lets multiple threads truly work at once. But whether that becomes the default build isn't decided yet."
+  - chat: [rtos_veteran_15y, "took long enough"]
+  - say: "Took long enough, yeah. It did. Making sure all the packages around it don't break without the lock was the hard part."
+  - chat: [ddd_police, "no kotlin talk?"]
+  - say: "Kotlin talk? Next time, you can teach me, DDD Police. I don't know it well."
+  - chat: [ddd_police, "deal"]
+  - say: "You'll teach me? Thank you."
+- title: Closing (chat fights it out)
+  beats:
+  - chat: [ddd_police, "4 spaces is objectively correct"]
+  - chat: [second_year_dev, "isnt it 2"]
+  - chat: [lag_appreciation_club, "8"]
+  - say: "Oh, are you fighting about indent spaces again?"
+  - say: "Four, two, eight... it keeps going up."
+  - chat: [kernel_reader, "linux kernel is tabs at width 8"]
+  - chat: [ddd_police, "thats tabs then"]
+  - chat: [second_year_dev, "so tabs win?"]
+  - say: "So tabs win? ...This one never gets settled. Every time."
+  - say: "You all keep going. I'm going to write one more 'if err not equal nil' and go to bed."
+  - say: "Good night, everyone who's awake."

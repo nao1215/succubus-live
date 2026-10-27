@@ -1,0 +1,217 @@
+# リゼ 004 の英訳（src/episodes/lise/004.yaml）。拍の並びは日本語と同じ。表情は build.py が日本語から写すので書かない。
+title: Nine bug reports, and my name was never in the patch notes
+lobby:
+- My hobby is finding bugs in games and reporting them to the company that made them.
+- I've sent nine. My name has never once shown up in the notes. Somebody usually beat me to it.
+- Today, that, and the curry that somehow lasted two days.
+parts:
+- title: Opening (sleep-talking "duplicate," the group chat)
+  beats:
+  - say: Evening. I'm actually awake today. Probably.
+  - chat: [good_morning_guy, "evening"]
+  - chat: [login_bonus_only, "probably lmao"]
+  - say: Don't "probably" me. Listen. Ella told me I say "duplicate" in my sleep.
+  - chat: [login_bonus_only, "working even in ur sleep lol"]
+  - say: Working in my sleep? I'm not. I'm probably still second place in my dreams.
+  - say: Ella tried to record it, so I told her if she does, she's fired.
+  - chat: [coffee_shop_regular, "so she didnt record it?"]
+  - say: She didn't. But now she can do an impression of it. With a straight face.
+  - say: And it's the most accurate one. It's infuriating.
+  - chat: [login_bonus_only, "i wanna hear ellas impression"]
+  - say: "You want to hear Ella's impression? No. So the other day, half asleep, I sent \"duplicate\" to the group chat. On LINE, the app everyone here uses."
+  - chat: [night_shift_survivor, "whose group chat"]
+  - say: Whose? Mora, Ella, and me. The two of them were in the middle of figuring out dinner.
+  - say: And Mora goes, "You mean curry again?"
+  - chat: [login_bonus_only, "the convo just kept going without u"]
+  - say: Right, it just kept going. And then we actually had curry two days in a row.
+  - chat: [coffee_shop_regular, "planning the menu by sleep talking"]
+  - say: Planning the menu in my sleep. I don't remember deciding anything. Day two was still good, though.
+- title: Side road (how spicy the curry is)
+  beats:
+  - chat: [coffee_shop_regular, "what spice level for curry"]
+  - say: Mild. Here, curry comes in levels, mild, medium, hot. If it's spicy, I have to get up for water more.
+  - chat: [onsen_sommelier, "kid palate"]
+  - say: Kid palate, fine. Not getting up is what matters.
+  - say: Put an onsen egg on top and it gets even milder. That's a soft, runny egg.
+  - chat: [login_bonus_only, "onsen egg on mild curry is too soft lol"]
+  - say: Too soft? Soft is fine. I eat it right before bed.
+  - say: At home, Ella likes hot. So she makes two pots.
+  - chat: [night_shift_survivor, "poor ella"]
+  - say: Poor Ella, yeah. It's a lot. I just wait for it to get brought to me.
+  - chat: [night_shift_survivor, "help her out"]
+  - say: Help her? I have helped. Peeling potatoes.
+  - say: I fell asleep mid-peel and woke up still holding the peeler.
+  - chat: [login_bonus_only, "thats dangerous"]
+  - say: Dangerous, yeah, Ella said so too, and I haven't been allowed in the kitchen since.
+  - chat: [coffee_shop_regular, "u did that on purpose"]
+  - say: Not on purpose. It just worked out.
+  - say: If I'm eating out, it's CoCo Ichi delivery. That's the big curry chain here. I don't have to stand in a kitchen.
+  - chat: [coffee_shop_regular, "u dont even go to the restaurant lmao"]
+  - say: I don't go to the restaurant. Delivery shows up even if I'm asleep.
+  - chat: [onsen_sommelier, "best move is mild + add ichimi chili after"]
+  - say: Mild, then add chili powder after? Why? Then what's the point of mild.
+  - chat: [onsen_sommelier, "u get to pick ur own spice level"]
+  - say: Pick my own spice level. Picking is effort. I'll just start with mild.
+  - ask:
+      q: Curry spice level, which one?
+      options:
+      - c: Mild
+        r:
+        - Mild, {name}. My people. Try an onsen egg on it.
+      - c: Medium
+        r:
+        - Medium, {name}. The "just right" one.
+      - c: Hot
+        r:
+        - Hot, {name}. Ella's side.
+        - I'd be up for water three times.
+      - c: Extra hot
+        r:
+        - Extra hot, {name}? I'm sweating just looking at you.
+      npc:
+      - [coffee_shop_regular, 1]
+      - [onsen_sommelier, 2]
+      - [login_bonus_only, 0]
+      - [night_shift_survivor, 1]
+      - [retro_grandpa, 3]
+  - say: Lots of medium. You're all grown-ups.
+  - chat: [first_timer_penguin, "first time here. what was the duplicate thing about?"]
+  - say: Hi, Penguin, welcome. What the duplicate thing was. Yeah. That's what I'm getting to.
+- title: The topic (report number nine)
+  beats:
+  - say: So, when I find a bug in a game, I report it to the company that made it.
+  - say: Since twenty-nineteen I've sent nine. Every reply was "duplicate" or "we're already aware."
+  - chat: [first_timer_penguin, "so someone sent it first?"]
+  - say: Yep. Someone sent it first. Every time, I'm second.
+  - chat: [five_am_reporter, "Good evening. Thanks again for last time."]
+  - say: "\"Thanks again for last time.\" See? There. This is the one who's usually ahead of me."
+  - chat: [first_timer_penguin, "they're HERE lol"]
+  - say: Yeah, they're here. Every time. Gets up at five AM to report bugs.
+  - chat: [five_am_reporter, "What was number nine?"]
+  - say: What was number nine. You're asking. Fine, I'll tell you.
+  - say: It was the gacha history screen in some game.
+  - say: If you took the web address that opens your own history and changed the last number by one.
+  - say: You could see someone else's history.
+  - chat: [just_clicks_agree, "seeing other ppls gacha sounds fun"]
+  - say: Sounds fun? It's not. You can see exactly what they pulled and how much they spent. Yours too.
+  - chat: [just_clicks_agree, "oh i hate that"]
+  - say: You'd hate it, right? So I thought, I have to report this fast.
+  - chat: [first_timer_penguin, "how did u find it"]
+  - say: How did I find it? It's embarrassing. I was trying to look at my own history, half asleep, and I typed the number wrong.
+  - say: And some stranger's history came up, with a crazy number of pulls, and I was suddenly very awake.
+  - chat: [login_bonus_only, "sleepiness finds another bug"]
+  - say: Sleepiness finds it again. Yeah. I found it at three AM.
+  - say: And I wrote half the report, and fell asleep.
+  - chat: [login_bonus_only, "called it"]
+  - say: You called it. When I woke up, someone had sent it forty minutes earlier.
+  - say: "\"This is a duplicate.\""
+  - chat: [errata_collector, "what is that voice"]
+  - say: What voice? My duplicate-reading voice. I'm used to it now.
+  - chat: [five_am_reporter, "This one wasn't me."]
+  - say: It wasn't you this time, I know. The one before was, though.
+  - chat: [first_timer_penguin, "the one before?"]
+  - say: The one before was three years ago. I found a hole where you could get the same item twice, wrote half the report, and fell asleep. Again.
+  - say: When I woke up, this person had sent it three minutes before me.
+  - chat: [first_timer_penguin, "THREE MINUTES lmao"]
+  - say: Three minutes. Funny, right? The name in the patch notes was theirs.
+  - chat: [five_am_reporter, "Thanks again for last time."]
+  - say: Stop saying "last time."
+- title: Side road (write the title, then sleep)
+  beats:
+  - chat: [five_am_reporter, "If you send just the title and repro steps first, you can sleep and still make it."]
+  - say: Just send the title and steps first. I know. I know.
+  - say: But once I write the title, I feel like I'm allowed to sleep.
+  - chat: [login_bonus_only, "real. writing the title feels like doing the work"]
+  - say: Writing the title feels like work, right? I'm so glad somebody gets it.
+  - chat: [leaving_work_on_time, "same with reports at my job"]
+  - say: Work reports too? So everyone's like this.
+  - chat: [leaving_work_on_time, "i have ten files that are just a title"]
+  - say: Ten title-only files. More than me. I feel better.
+  - chat: [five_am_reporter, "Let's submit the next one together."]
+  - say: The next one together. I'll think about it. I might only think about it.
+  - chat: [first_timer_penguin, "why do u even go that hard to report"]
+  - say: Why go that hard, Penguin. The money is basically nothing. Even when there is something, it's a book gift card.
+  - say: What I want is one line in the notes. "Found by." I want my name in there just once.
+  - chat: [login_bonus_only, "hope u get in there at least once"]
+  - say: At least once. Thanks. If it happens, I'm showing it off to everyone.
+  - say: In my next life, I want to be the bug-finding person inside a game company.
+  - say: If you're on the inside, you can find them before anyone, right?
+  - chat: [five_am_reporter, "Insiders get duplicates too."]
+  - say: Insiders get duplicates too? Don't crush my dreams like that.
+- title: Side road (bugs always show up at night, the Second Nap club)
+  beats:
+  - chat: [first_timer_penguin, "how do u even find bugs?"]
+  - say: How do I find bugs. Mostly at night. They show up when I'm sleepy and press buttons in some weird way.
+  - say: When I'm awake, I play properly, so I don't find anything.
+  - chat: [login_bonus_only, "sleepiness is a talent"]
+  - say: Sleepiness is a talent. Thank you. That helps.
+  - say: So, I'm in a little three-person group that hunts bugs in old games. It's called Nidone. Second Nap.
+  - chat: [first_timer_penguin, "the name lmao"]
+  - say: One of them oversleeps every time. One of them is in charge of waking me up every time. And me.
+  - chat: [retro_grandpa, "a club that only works if someone wakes everyone up"]
+  - say: A club that only works with a wake-up person, yeah. Without them, we'd have broken up ages ago.
+  - say: Last year, it was my turn to present at a meetup.
+  - chat: [login_bonus_only, "oh no"]
+  - say: Oh no is right. I overslept. The wake-up person's calls kept ringing, apparently.
+  - chat: [night_shift_survivor, "impressive that u slept through that"]
+  - say: They skipped my turn and the next person presented. The one who always oversleeps.
+  - chat: [first_timer_penguin, "so THEY managed to wake up"]
+  - say: Yep, they woke up. That one day. Unfair, right?
+  - ask:
+      q: Have you ever found a bug in a game?
+      options:
+      - c: Yes, and reported it
+        r:
+        - You reported it too, {name}. You might be the one who beat me to one of mine.
+      - c: Found one, kept quiet
+        r:
+        - You kept quiet, {name}. I mean, that's normal.
+        - Report the next one. Before me. No wait. After me.
+      - c: I played around with it
+        r:
+        - You played with it, {name}. In a single-player game, that's a way to have fun too.
+      - c: Never
+        r:
+        - Never, {name}? Maybe I just press buttons too weirdly.
+      npc:
+      - [five_am_reporter, 0]
+      - [retro_grandpa, 2]
+      - [login_bonus_only, 1]
+      - [first_timer_penguin, 3]
+      - [any_percent_rookie, 2]
+  - say: Lots of you played with the bugs. Yeah. It's fun.
+- title: Another tangent (placeholder art, and the revoked award)
+  beats:
+  - chat: [clip_guy_A, "not a dupe but this reminds me of that award getting revoked last year"]
+  - say: The revoked award? Oh, Clair Obscur, right? Last December.
+  - chat: [first_timer_penguin, "what happened?"]
+  - say: "This RPG sold like crazy. Clair Obscur, Expedition Thirty-Three. It won Game of the Year and the debut award at the Indie Game Awards."
+  - say: And two days later, they took it back.
+  - chat: [first_timer_penguin, "why"]
+  - say: Why. According to the organizers, it was because they'd said "no generative AI" when they submitted.
+  - say: Around launch, a poster stuck on a pillar in the game still had placeholder AI art on it.
+  - chat: [first_timer_penguin, "placeholder?"]
+  - say: Placeholder means art you just stick in for now. You're planning to swap in the real thing later.
+  - say: They apparently swapped it right after launch, but the award went to another game.
+  - chat: [leaving_work_on_time, "the placeholder always ships"]
+  - say: The placeholder always ships. I once sold a game with my placeholder skull art still in it.
+  - chat: [login_bonus_only, "tell the skull story again"]
+  - say: The skull story again? I already told it. Not today.
+  - say: I actually like that game. So I couldn't laugh at it.
+- title: Wrap-up
+  beats:
+  - chat: [first_timer_penguin, "so did they fix the gacha hole?"]
+  - say: The gacha hole got fixed. You can't see other people's anymore.
+  - say: Not thanks to me. But. If it's fixed, that's fine.
+  - chat: [five_am_reporter, "Just to be clear, I wasn't the one who sent it."]
+  - say: "\"I wasn't the one who sent it.\" I know. You said that already."
+  - chat: [coffee_shop_regular, "whats for dinner tonight?"]
+  - say: Dinner tonight? Don't ask. Probably curry again. Day three.
+  - chat: [onsen_sommelier, "day 3 curry is the best curry theory"]
+  - say: Day-three curry is the best. That's true. Even mild gets a little spicier by day three. I feel like.
+  - chat: [coffee_shop_regular, "pretty sure thats in ur head"]
+  - say: In my head? Yeah. Probably.
+  - chat: [login_bonus_only, "this is a duplicate"]
+  - say: Don't you start with "duplicate" too.
+  - say: Next time, I'll talk about games I love and games I can't stand.
+  - say: Good work, everyone. I'm going to finish the report, then sleep. Might just end up writing the title.

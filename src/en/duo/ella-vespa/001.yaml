@@ -1,0 +1,212 @@
+# Ella x Vespa duo 001 (English). Source: src/duo/ella-vespa/001.yaml. Beat order matches the Japanese.
+# Faces come from the Japanese. Viewer names follow scratchpad en-names.yaml.
+# Wordplay: the idol MIX chant is already English words, so Ella's "keigo translation" becomes a stuffy butler-style English version.
+#   Butaman vs nikuman becomes the bag saying "meat bun" when it is clearly pork. DD is glossed as Japanese fan slang.
+title: "Vespa came over to get her happi fixed, so we compared idol show and metal show manners"
+parts:
+- title: "Opening (five minutes early, and seven minutes late)"
+  beats:
+  - say: "Good day, my dears. Ella, at your service."
+  - say: "Today, I am expecting a guest in my room. In theory."
+  - chat: [harumi_survivor, "came from vespa's stream. where is she"]
+  - say: "Oh, welcome, Harumi. Where is she, you ask. ...Not here yet. We agreed on five minutes before we start."
+  - chat: [end_of_line_here, "she always makes exactly one detour"]
+  - say: "Always exactly one detour. You know her well, End-of-Line."
+  - vespa: "Sorry sorry! I'm late! Are we live already?!"
+  - say: "We are live. You are seven minutes late, Vespa dear."
+  - vespa: "Seven minutes?! You were counting?! ...I stopped and got steamed buns. Two of them!"
+  - say: "Let me see. ...The bag says 'meat bun.'"
+  - vespa: "It does! But it's pork inside!"
+  - say: "Calling a pork bun simply 'meat' is rather careless."
+  - vespa: "Right?! So careless! We're on the same side here, so we can eat in peace."
+  - chat: [budokan_balcony_east, "so you're both team pork bun"]
+  - say: "Team pork bun, indeed. For this, I shall forgive the seven minutes."
+  - vespa: "Yesss, I bought seven minutes with a pork bun! ...Heh, what a bargain!"
+- title: "The Mi on the happi, and the thread color"
+  beats:
+  - vespa: "Okay, today's main event! This! My green happi!"
+  - say: "Your festival jacket for Miss Minami. The Mi on the back, the first Japanese letter of her name, is coming loose."
+  - chat: [green_glowstick_yr2, "evening senpai! she said the second stroke of the Mi is about to come off"]
+  - vespa: "Evening, Year-Two! Yeah, the second stroke's all floppy. I washed it too much."
+  - say: "A happi goes in a laundry net, dear."
+  - vespa: "A net?! I had no idea!"
+  - chat: [new_releases_only, "so what color thread"]
+  - vespa: "That! We couldn't decide on my last stream. Green, or yellow-green."
+  - say: "Miss Minami's color changed from green to yellow-green, did it not."
+  - vespa: "In twenty-eighteen! The month after I got the embroidery done! Twelve thousand yen!"
+  - chat: [harumi_survivor, "she says yellow-green is a kind of green every single time"]
+  - vespa: "It is so a kind of green! They're cousins! ...Oh, on my last stream, Year-Two said 'why not sew it with both.'"
+  - chat: [green_glowstick_yr2, "i did!"]
+  - say: "Then we stitch the strokes of the Mi in green, and outline them in yellow-green. A melody and its harmony."
+  - vespa: "Both of them get in! The old green Minami and today's yellow-green Minami! Year-Two, you're hired! And Ella made it real!"
+  - chat: [not_my_headcanon, "not my headcanon. senpai is green and only green"]
+  - vespa: "'Green and only green,' and now Headcanon's here! Okay, let's ask everyone!"
+  - ask:
+      who: vespa
+      q: "What color thread should I use to fix the Mi on my happi?"
+      options:
+      - c: "Green only"
+        r:
+        - "{name} says green only! You get it! Nine years of green!"
+      - c: "Yellow-green only (her color now)"
+        r:
+        - "{name} goes with her color now! ...Ugh, that's correct. It's correct, but!"
+      - c: "Green stitches, yellow-green outline"
+        r:
+        - ella: "Thank you, {name}. That was Year-Two's idea, you know."
+        - "Ella got picked and her tail's wagging!"
+      npc:
+      - [green_glowstick_yr2, 2]
+      - [not_my_headcanon, 0]
+      - [harumi_survivor, 1]
+      - [budokan_balcony_east, 2]
+      - [new_releases_only, 2]
+  - vespa: "Yellow-green outline wins! Decided!"
+  - say: "Then I shall talk while I sew."
+  - vespa: "Thank you, Professor Ella!"
+  - say: "I am no professor. A real teacher is watching, after all."
+  - chat: [piano_teacher, "i felt summoned"]
+- title: "How to get front row"
+  beats:
+  - say: "By the way, Vespa. There is something I have long wished to ask. How does one get the front row at a show?"
+  - chat: [budokan_balcony_east, "ella-chan you've been dying to ask that forever"]
+  - say: "Budokan, please. I kept quiet because asking feels like losing."
+  - vespa: "It's not losing! I'll teach you! At the standing shows I go to, first it's your entry number!"
+  - say: "I know about entry numbers. What I am asking is the technique for getting forward with a bad number."
+  - vespa: "Technique doesn't change your number! And running gets you yelled at! I literally do the calling at my part-time job. You just call them in order!"
+  - say: "For forty years, I truly believed there was some secret trick."
+  - chat: [headbang_whiplash, "ella vs the ticket lottery, game over"]
+  - say: "It is not game over. ...Though it is true the lottery gods and I are not on speaking terms."
+  - chat: [green_glowstick_yr2, "senpai have you ever gotten front row"]
+  - vespa: "Have I gotten front row? Yep! Twenty-twenty-three, number two!"
+  - say: "And from the front row, what did you say to Miss Minami?"
+  - chat: [end_of_line_here, "then at the cheki after, 'otsukaresama'"]
+  - vespa: "'Then at the cheki event, otsukaresama,' End-of-Line! Don't! Getting there is my thing! Talking is not my thing!"
+- title: "Calls and the MIX"
+  beats:
+  - chat: [harumi_survivor, "can ella even do calls"]
+  - vespa: "Oh yeah, Ella, ever done calls? Where everyone shouts the name at a set spot in the song."
+  - say: "At metal shows, perhaps a 'hey, hey.'"
+  - vespa: "That's a call too! Okay, today we're doing the MIX!"
+  - chat: [headbang_whiplash, "mix like in recording?"]
+  - say: "Whiplash, I thought the same. Mixing, where you blend recorded tracks and finish a song."
+  - vespa: "No no! It's like a magic chant everyone yells in the intro or the instrumental break!"
+  - vespa: "Tiger! Fire! Cyber! Fiber! Diver! Viber! Jar Jar!"
+  - say: "Tiger, fire, cyber, fiber, a diver, a... viber. And what, pray, is a jar jar?"
+  - vespa: "Jar jar is jar jar!"
+  - chat: [new_releases_only, "here comes the posh version"]
+  - say: "Then, a more refined translation. 'Presenting, a tiger. A fire, if you please. Something cybernetic. A fiber, madam.' ...Heh."
+  - vespa: "Too long! The break's gonna end!"
+  - chat: [headbang_whiplash, "a fiber, madam lmaooo"]
+  - chat: [harumi_survivor, "theres already a japanese mix btw. starts tora, hi"]
+  - vespa: "Yep, someone already translated it into Japanese!"
+  - say: "...So someone had the translation idea before me."
+  - vespa: "Ella's sulking 'cause someone beat her to it! Same face I make with my discovery journal!"
+  - say: "Still, one thing impressed me. Vespa, in that mix just now, your tempo did not waver once."
+  - vespa: "Wait, is that a compliment?! Say more! I practice every week at solo karaoke!"
+  - vespa: "Okay, your turn! You just yell the name! Ready, go, 'Minamiii!'"
+  - say: "I must decline to sing."
+  - vespa: "It's not singing! It's yelling! Pitch doesn't matter!"
+  - chat: [piano_teacher, "if you're just yelling you can't go flat"]
+  - say: "Even you, Teacher. ...Very well, just once. Minami, if you pleeease!"
+  - vespa: "Drop the 'if you please'! And don't hold the note on it!"
+  - chat: [budokan_balcony_east, "so polite the whole crowd goes silent"]
+- title: "Headbanging, and hand signs"
+  beats:
+  - chat: [headbang_whiplash, "ok now vespa does a headbang"]
+  - vespa: "Headbanging! I wanna try! ...Like this?"
+  - say: "Vespa, dear, you are merely nodding."
+  - chat: [new_releases_only, "just nodding, like at her cheki"]
+  - vespa: "Even New Releases! Ella's people are brutal too! ...But I know the hand one! Like this! Fox!"
+  - say: "That is BABYMETAL's fox sign. We metal folk raise the index and little fingers. The horns."
+  - vespa: "You already have horns on your head!"
+  - say: "So the back of the hall can see them, dear. Mister Dio said his grandmother taught it to him, to ward off the evil eye."
+  - vespa: "His grandma's?! Not the devil's?!"
+  - say: "Not the devil's. ...Although we do happen to be the devil's relatives."
+  - vespa: "Okay, so I'm fox, you're horns. Can we be different, side by side?"
+  - say: "Certainly. As long as you keep it out of my face."
+  - vespa: "Then I'll put my hand next to your head too. Four horns!"
+  - say: "Too close, dear. Two are quite sufficient."
+- title: "One member, or the whole group?"
+  beats:
+  - chat: [not_my_headcanon, "ella who's your favorite member in the band?"]
+  - vespa: "I wanna know! Ella, who's your oshi?!"
+  - say: "My oshi, you say. ...A band is a band only with all of them."
+  - vespa: "Hako-oshi! That means you stan the whole group! I'm a solo stan. Minami only! Nine years!"
+  - say: "Black Sabbath is not Black Sabbath without Mister Ward's drums."
+  - vespa: "But if you don't pick one, how do you know what color towel to buy at merch?!"
+  - say: "All of the colors."
+  - vespa: "All of them?! Stanning the whole group gets expensive!"
+  - ask:
+      q: "And you, my dears? Do you support just one member of a group or band, or all of them?"
+      options:
+      - c: "Just one member"
+        r:
+        - vespa: "{name}, fellow solo stan! What's their color?"
+      - c: "The whole group"
+        r:
+        - "{name}, a band is all of them, is it not."
+      - c: "Depends on the day"
+        r:
+        - "{name}, it depends on the day. ...Vespa, what do you call that?"
+        - vespa: "That's a D D! Japanese fan slang for someone who loves them all! Lise is totally one!"
+      npc:
+      - [green_glowstick_yr2, 0]
+      - [harumi_survivor, 2]
+      - [budokan_balcony_east, 1]
+      - [new_releases_only, 0]
+      - [headbang_whiplash, 1]
+  - say: "I have fellow fans of the whole group here as well. Budokan, and Whiplash."
+  - vespa: "But whole-group people know every member's birthday, right?"
+  - say: "I do not know their birthdays. The brand of the drummer's cymbals, however, I do."
+  - vespa: "That's oshi life! That's even heavier than birthdays!"
+- title: "The merch line"
+  beats:
+  - say: "Speaking of merch, I once waited four hours. And they sold out of my size, only my size, with one person ahead of me."
+  - vespa: "One person ahead?! That's the worst one!"
+  - chat: [end_of_line_here, "happens a lot. putting up the sold out sign hurts us too"]
+  - vespa: "Speaking of signs, I once held the end-of-line sign..."
+  - chat: [end_of_line_here, "upside down for forty minutes"]
+  - vespa: "Upside down, forty minutes! I was gonna say it myself! Everyone still lined up, tilting their heads! Such a nice line!"
+  - chat: [headbang_whiplash, "merch is where succubi get drained"]
+  - vespa: "Merch is where your wallet gets drained!"
+  - say: "Vespa, dear, please do not say 'drained' in front of a succubus. That is our line of work."
+  - vespa: "You did that on purpose! ...But merch drains way better than you. Twenty thousand yen in one go."
+  - say: "Twenty thousand yen. ...We still have much to learn."
+  - chat: [piano_teacher, "don't compete with it"]
+- title: "Going quiet for the last chorus"
+  beats:
+  - vespa: "Oh, speaking of which. The ochi-sabi. What does that look like to a music person?"
+  - say: "Where the band thins out right before the final chorus, yes?"
+  - vespa: "Yes! At the shows I go to, everyone stops the calls there and goes quiet. Glowsticks only, in your oshi's color, held up. Nobody decided it!"
+  - chat: [headbang_whiplash, "how many glowsticks do you bring"]
+  - vespa: "Glowsticks? Two! One in each hand!"
+  - say: "I do horns, with both hands."
+  - vespa: "You can't do horns holding glowsticks! Not enough fingers!"
+  - say: "Classical concerts have their own etiquette for keeping quiet. No applause between movements. By modern standards, at least."
+  - say: "But in seventeen seventy-eight, Mozart's Paris Symphony got applause mid first movement. He wrote his father that he put that spot there on purpose."
+  - vespa: "Wait. So the composer built in the spot for the call?! Mister Mozart is an idol song guy!"
+  - say: "He is not an idol song guy."
+  - vespa: "So next time I go to a classical concert, can I clap in the middle?"
+  - say: "Do follow the etiquette of the hall you are in, dear."
+  - chat: [piano_teacher, "do that now and the person next to you will glare"]
+  - vespa: "Glare! Okay, I'll be quiet! Same as the ochi-sabi!"
+- title: "Wrap-up (the happi, all sewn)"
+  beats:
+  - say: "...There. All sewn. The Mi in green, outlined in yellow-green."
+  - vespa: "Amazing! There's green Minami and yellow-green Minami! Ella, thank you!"
+  - vespa: "To pay you back, next time you go to a show, I'll hold Lise's jacket! You always stand in the back holding it, right? You go up front!"
+  - say: "...Well. I accept, gratefully."
+  - chat: [budokan_balcony_east, "ella-chan's tail is wagging"]
+  - say: "My tail is wagging, you say. ...My tail is outside my jurisdiction."
+  - vespa: "But for the next show, check the ticket system first! Entry numbers, or reserved seats!"
+  - say: "How unromantic. Then I have one for you. At Miss Minami's next cheki event, I am coming with you."
+  - say: "Standing beside you, I shall whisper the next line after 'otsukaresama.'"
+  - vespa: "Please don't! I'll be ten times more nervous!"
+  - chat: [green_glowstick_yr2, "senpai just talk about the happi. say you got it fixed"]
+  - vespa: "The happi... 'I got my happi fixed.' I could maybe say that."
+  - say: "Five words."
+  - vespa: "Stop counting!"
+  - chat: [sold_my_keyboard, "and ella, your letter reply"]
+  - say: "...Keyboard. That is for my own stream. That is all for today. Good day, my dears."
+  - vespa: "Letter? What letter?! ...She ran! Good work today, everyone! Oh no, the pork buns got cold!"

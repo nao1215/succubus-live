@@ -1,0 +1,178 @@
+# Nox 004 (English). Source: src/episodes/nox/004.yaml. Beat order matches the Japanese.
+title: "Interrupted mid-task: retry it, or throw it back? (old Unix and modern Go)"
+lobby:
+- "Hi. I went to Tully's today. It's a coffee chain. I actually went outside."
+- "Tonight's about what a program should do when it gets interrupted halfway through something."
+- "A Unix argument from the nineteen-eighties is still going in Go in twenty-twenty."
+parts:
+- title: Opening (Tully's)
+  beats:
+  - say: "Oh, we're live. Hi, everyone who's still awake."
+  - chat: [night_shift_survivor, "evening"]
+  - chat: [lag_appreciation_club, "you smell like outside today"]
+  - say: "I smell like outside? How can you tell. ...Okay, I went to Tully's today. It's a Japanese coffee chain."
+  - chat: [kernel_reader, "she touched grass"]
+  - say: "I touched grass. One hour, before a meeting."
+  - chat: [first_time_here, "hi first time. why tullys?"]
+  - say: "Welcome, new person. Why Tully's? The seats are far apart. People can't really see your screen from the side."
+  - chat: [lag_appreciation_club, "nobody can see your screen anyway"]
+  - say: {face: annoyed, text: "'Nobody can see your screen anyway.' The barista said basically that today."}
+  - chat: [lag_appreciation_club, "what did they say"]
+  - say: "What did they say? 'Um, is your laptop on?'"
+  - chat: [night_shift_survivor, "LMAOOO"]
+  - chat: [kernel_reader, "was it?"]
+  - say: "Stop laughing. It was on. Brightness was just at the bottom."
+  - chat: [second_year_dev, "what did you drink"]
+  - say: "What did I drink? Coffee of the day. Black."
+  - say: "If I put sugar in, I feel like it tastes different every day. So I don't."
+  - chat: [rtos_veteran_15y, "im a doutor guy"]
+  - say: "Doutor, the other coffee chain. What do you get there, R-TOS Veteran?"
+  - chat: [rtos_veteran_15y, "the german dog. comes out fast"]
+  - say: "The German Dog, because it comes out fast. It's a little hot dog. ...That's such an on-site engineer reason."
+  - chat: [night_shift_survivor, "starbucks?"]
+  - say: "Starbucks? I can only order the drip coffee there. I tried ordering one of the long names once and tripped over it halfway."
+  - chat: [lag_appreciation_club, "wish i saw that"]
+  - say: "You will never see that. ...Anyway, at Tully's, I'm working, and the person next to me says something."
+  - say: "'Excuse me, can I use that outlet?'"
+  - chat: [kernel_reader, "did you say yes"]
+  - say: "Did I say yes? I tried to. But I was mid-sentence typing, my hands stopped, and I forgot what I was typing."
+  - chat: [rtos_veteran_15y, "you got interrupted"]
+  - say: {face: annoyed, text: "I got interrupted. Yeah. Whatever I was typing is just gone. I still can't remember."}
+  - chat: [kernel_reader, "so the signals sequel?"]
+- title: The doorbell that falls off after one ring
+  beats:
+  - say: "The signals sequel? Oh, right. You asked."
+  - say: "Last time I talked about signals. The OS tapping your program on the shoulder."
+  - chat: [first_time_here, "wasnt here last time"]
+  - say: "You weren't here? That's fine. While your program's doing something, the OS goes 'hey, one sec.' That's all you need."
+  - say: "Your program can install a handler for it. Think of it like a doorbell."
+  - say: "And on old Unix, the doorbell fell off after one ring."
+  - chat: [first_time_here, "fell off?"]
+  - say: "It rings once, the handler gets removed, and you're back to the default. So inside the handler you'd immediately reinstall it."
+  - chat: [kernel_reader, "and if it rings again before you reinstall"]
+  - say: "And if it rings again before you reinstall? The default runs. Which usually means the process just dies."
+  - chat: [lag_appreciation_club, "a house that dies if you knock twice"]
+  - say: {face: laugh, text: "A house that dies if you knock twice. What a terrible house."}
+  - say: "The BSD folks hated that, so they made a doorbell that stays on."
+  - say: "They also made it hold the same signal while the handler's running."
+  - chat: [rtos_veteran_15y, "and so signal() means different things depending on the system"]
+  - say: "So the signal function behaves differently depending on the system. Yeah. Same name, different house, different rules."
+  - say: "Eventually POSIX added a new one called sigaction, where you pick which behavior you want."
+  - say: "And the Linux man page for the signal function literally says, 'avoid its use, use sigaction instead.'"
+  - chat: [second_year_dev, "its own man page says dont use it"]
+  - say: "Its own man page tells you not to use it. Very honest man page."
+- title: The rewinders and the throw-it-backers
+  beats:
+  - chat: [kernel_reader, "doing worse is better tonight?"]
+  - say: "Worse is Better, yes. Tonight's the night I fight Kernel Reader."
+  - say: "So say your program asks the OS, 'read this file for me,' and a signal comes in halfway."
+  - say: "It got tapped on the shoulder in the middle of a request. So what does the OS do?"
+  - chat: [first_time_here, "just let it finish?"]
+  - say: "Just let it finish, right? That's where people split. There's this famous essay by a guy named Richard Gabriel."
+  - say: "An MIT person and a Unix person meet, and they argue about exactly this."
+  - say: "The MIT person says, 'the right thing is to back the call out and redo it like nothing happened.'"
+  - say: "The Unix person says, 'the call always returns. Sometimes it just returns an error saying it got interrupted.'"
+  - say: "'Retrying is the caller's job.'"
+  - chat: [first_time_here, "so it throws it back"]
+  - say: "It throws it back, yeah. Simple on the inside. But the person using it has a harder time."
+  - chat: [kernel_reader, "and the simple one won"]
+  - say: "And the simple one spread. Unix won. ...Whether it was right is a different story."
+  - chat: [kernel_reader, "it was right. simple means you can read it when it breaks"]
+  - say: "Simple means you can read it when it breaks. Okay, I'll give you readable. But it's painful on the calling side."
+  - say: "That 'got interrupted' error is called EINTR. E-intr. I lost an entire night to it once."
+  - ask:
+      q: "If your request gets interrupted halfway, which do you want?"
+      options:
+      - c: "OS quietly retries for me"
+        r:
+        - "{name}, you're on my side."
+        - "I like it when the person using it doesn't have to think. Rough for the people inside, though."
+      - c: "Just tell me it got interrupted, I'll retry"
+        r:
+        - "{name}, you're on Kernel Reader's side."
+        - "If you decide up front that you'll retry yourself, you can see everything that happened. I get that."
+      - c: "Just don't interrupt me"
+        r:
+        - "{name}, that's me at Tully's today."
+        - "The one day you don't want to be interrupted is the day someone's hunting for an outlet."
+      npc:
+      - [kernel_reader, 1]
+      - [rtos_veteran_15y, 1]
+      - [ddd_police, 0]
+      - [lag_appreciation_club, 2]
+      - [second_year_dev, 0]
+  - chat: [kernel_reader, "unix side winning"]
+  - say: "Unix side and quiet-retry side, it's about fifty-fifty. ...Kernel Reader, you count fast."
+- title: Go in twenty-twenty
+  beats:
+  - say: "So, this doesn't stay in the past."
+  - say: "Go one-fourteen came out in February twenty-twenty, and it made goroutines preemptible."
+  - chat: [first_time_here, "goroutines"]
+  - say: "A goroutine is a little worker inside Go. Before, if one was spinning in a tight loop with no function calls, it could take forever to swap out."
+  - say: "So other workers got stuck waiting, or garbage collection got held up."
+  - chat: [lag_appreciation_club, "the coworker who never takes breaks"]
+  - say: "The coworker who never takes a break, yeah. And from one-fourteen, the runtime can tap that worker on the shoulder with a signal."
+  - chat: [kernel_reader, "more signals means more EINTR"]
+  - say: "More signals means more EINTR. Yes! It's right there in the one-fourteen release notes."
+  - say: "Basically, 'if you make syscalls directly, you'll see more of them fail with EINTR. Retry them.'"
+  - chat: [rtos_veteran_15y, "the unix guy's bill finally came due"]
+  - say: {face: laugh, text: "The Unix guy's bill came due. Exactly. Retrying is the caller's job."}
+  - say: "And the signal it uses to tap the shoulder is SIGURG."
+  - chat: [first_time_here, "sig-urge?"]
+  - say: "Sig-urge, close. U-R-G is short for urgent. A leftover from old networking, like 'urgent data arrived.' Almost nobody uses it that way now."
+  - say: "And in the Go source, there's a comment explaining why they picked it."
+  - say: "Debuggers pass it through by default. Mixed with C, it doesn't collide with the signals libc uses inside. And if it shows up for no reason, that's fine."
+  - chat: [kernel_reader, "and it works on macOS"]
+  - say: "And it works on macOS. Yeah, that's four."
+  - say: "It's named 'urgent,' and it got picked because it's safe to show up for no reason."
+  - chat: [lag_appreciation_club, "doesnt live up to its name"]
+  - say: "It does not live up to its name. Poor thing."
+  - chat: [second_year_dev, "our service has been running since before 1.14"]
+  - say: "Since before one-fourteen? Then just keep an eye out for anywhere you're swallowing EINTR."
+  - chat: [second_year_dev, "swallowing?"]
+  - say: "Swallowing means you get an error back and just keep going like nothing happened. Something I used to do a lot."
+  - chat: [lag_appreciation_club, "so you used to do that huh"]
+  - say: "'Used to do that huh.' ...I did. Now the rule is, if you can't write one line on why it's okay to ignore, you stop. It's also the thing I flag most in reviews."
+  - chat: [ddd_police, "if you go through the standard library go retries for you right?"]
+  - say: "Through the standard library? If you're using it normally, mostly, yeah. It's the raw syscalls that are risky. The release notes say that too."
+- title: No printf in a signal handler
+  beats:
+  - chat: [second_year_dev, "is it true you cant printf in a signal handler?"]
+  - say: "No printf in a handler? True. Don't."
+  - say: "A signal handler can get called no matter what the program is doing. Even in the middle of writing text."
+  - say: "So if it gets called mid-write, and the handler tries to write to the same place, it's messing with something half-finished."
+  - say: "You get garbled output, or it just deadlocks. Like mine did."
+  - chat: [first_time_here, "like writing in someone's notebook while theyre mid sentence"]
+  - say: "Like scribbling in someone's notebook mid-sentence, yeah. So there's a fixed list of what's safe in a handler. Async-signal-safe. printf isn't on it."
+  - say: "I did it my first year. A nightly batch job, and I wanted it to print 'shutting down' when it stopped."
+  - chat: [rtos_veteran_15y, "what happened"]
+  - say: "What happened? Once a month, it'd hang until morning. It took three months to figure out."
+  - chat: [second_year_dev, "three months"]
+  - say: "Three months. A senior found it after staying up all night. I sat next to him chewing gum the whole time."
+  - say: "If someone on my team hit that now, I wouldn't let it sit for three months. I'd look at it with them that night. Because that's what he did for me."
+  - chat: [kernel_reader, "how would you write it now"]
+  - say: "How now? The handler only uses async-signal-safe stuff and just sets a flag."
+  - say: "In C that's a volatile sig_atomic_t variable. The real work happens outside."
+  - say: "In Go, you do it on the side that receives from signal dot Notify. That's just normal code, so you can print all you want."
+  - chat: [lag_appreciation_club, "the zero letter mailbox"]
+  - say: {face: annoyed, text: "The zero-letter mailbox... we did that last time."}
+- title: Closing (Komeda steals the show)
+  beats:
+  - chat: [night_shift_survivor, "going back but im team komeda over tullys"]
+  - say: "Komeda over Tully's? I've never been. It's the cozy diner-style coffee chain, right? What's good about it?"
+  - chat: [night_shift_survivor, "you can nap on the sofas"]
+  - say: "You can nap on the sofas. ...Are the neighbors farther away than at Tully's?"
+  - chat: [night_shift_survivor, "farther. theres walls too"]
+  - say: "Farther, and there's walls. Okay, I kind of want to go."
+  - chat: [second_year_dev, "mornings you get free toast and a boiled egg with your coffee"]
+  - say: "Wait, the morning set comes with a boiled egg? For free with the drink? I need to know. How many minutes do they boil it."
+  - chat: [rtos_veteran_15y, "some locations do soft boiled"]
+  - say: "Some do soft-boiled? In winter the water's colder, so even the same time changes it."
+  - chat: [lag_appreciation_club, "go ask them"]
+  - say: "Go ask them? I can't. I can't talk to staff."
+  - chat: [kernel_reader, "then how do you order"]
+  - say: "How do I order? I point at the menu. ...I want a place where pointing works."
+  - chat: [night_shift_survivor, "i want a komeda shiro noir"]
+  - chat: [lag_appreciation_club, "dont say that at midnight"]
+  - say: "Shiro-Noir. Warm Danish with soft serve on top. ...Don't say that at midnight. Okay, that's it for tonight. Thanks, everyone who's awake."
+  - say: "Good night."

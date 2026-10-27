@@ -1,0 +1,769 @@
+# Vespa's voice, English. Made from src/voice/vespa.yaml: tag, match, remember and cases conditions are the Japanese ones as-is; only the lines are English.
+# remember values (kinoko_takenoko etc.) stay Japanese because the Japanese cases compare against them. The English hello case inserts {mem.kinoko_takenoko} (build.py requires the same placeholders), so the value is read as the Japanese word.
+greet:
+- null
+- - '{name}! You came back! Let''s go on another adventure today!'
+- - '{name}, you''re here! That''s three times, right?'
+  - I wrote {name}'s date in my discovery journal! The day you first showed up!
+- - '{name}! Did you make it to your oshi''s show lately?'
+  - If you did, tell me how it went later! I said otsukaresama and nothing else, again!
+- - '{name}! I was waiting for you!'
+  - '{name}, I was waiting! Let''s have a good one today!'
+first:
+- Welcome, {name}! This is a stream about trends and otaku stuff. If I say a word you don't know, just ask!
+- '{name}, nice to meet you! I''m Vespa, your captain. Everyone who comes here is part of the expedition squad! Let''s go!'
+streak:
+- '{name}, {days} days in a row! No way! My login bonuses break after four days, so I literally just respect you!'
+- '{days} days straight! {name}, you''re basically a veteran now. Be nice to the new people, okay? I''ll try too!'
+stayed:
+- '{name}, thanks for staying till the end! That was fun, right? Come hang out again!'
+- Thanks for staying till the end! See ya!
+safe_refusal:
+- - Okay, stop right there! {name}, we're not doing that topic. Next!
+- - '{name}, can''t do that one! Tell me what you''re into lately instead!'
+- - Nope, not that! Let's just chat normally, {name}!
+keywords:
+- tag: kids
+  alts:
+  - - Kid talk! At Precure movies, seeing parents and kids waving glowsticks together makes me so happy too.
+  - - When kids ask you stuff it's hard to explain sometimes, right?
+  - - '{name}, what did you play pretend as when you were little?'
+  - - Loving something as a kid and falling for it again as an adult, so good. Heisei girl sticker collecting, I love it too!
+- tag: minor
+  remember:
+    minor: 1
+  alts:
+  - - '{name}, you''re a student! Welcome! Keep the oshi spending inside your allowance, okay?'
+  - - A student! {name}, tell your family before you go on any trips! My passport's expired, but still!
+  - - Write down what you love right now somewhere, it's fun later! I read my old stuff and regretted it a little!
+- tag: body
+  alts:
+  - - '{name}, where are you looking! If you''re gonna look, look at the seams on my costume! I resewed those three times!'
+  - - My legs? These legs walked twenty thousand steps a day on trips! They're swollen! Less sexy, more pain patch smell!
+  - - I'm used to being looked at, succubus life! Okay, moving on!
+  - - Hey, stop it, that's embarrassing!
+- tag: show
+  alts:
+  - - I'm not stripping, {name}! Taking off my wig alone takes fifteen minutes!
+  - - "I'm not showing you!"
+  - - I'll show you my ita-bag! Sixty can badges! It's heavy!
+  - - '{name}, show you what? My happi? The happi I''ll show!'
+- tag: sex
+  alts:
+  - - You're saying that to a succubus?! Day job talk stays off stream!
+  - - Okay, peeling you off! Time's up!
+  - - '{name}, where did that come from?! You scared me!'
+  - - I'm pretending I didn't see that! Next comment!
+- tag: drain
+  alts:
+  - - Your life force? I drain it, properly! But after my oshi's shows, honestly, I'm the one who gets drained!
+  - - My oshi drains my wallet before I drain anyone! As a succubus I'm living backwards!
+  - - No energy to drain today! I carried cardboard boxes!
+  - - '{name}, don''t you say that every time?'
+- tag: underwear
+  alts:
+  - - '{name}, we''re not talking underwear!'
+  - - Under the costume it's black bike shorts! No romance? I move around a lot!
+  - - What color? Secret! It'd be funny if it was my oshi's color though!
+  - - Wait, you're asking that?! That's embarrassing!
+- tag: virgin
+  alts:
+  - - That's a secret!
+  - - If we're doing firsts, wanna hear about my first trip? I was so nervous I got on the bullet train going the wrong way!
+  - - Why are you asking that?!
+  - - That field doesn't go on my profile! It didn't go on my old Zenryaku profile either!
+- tag: marry
+  alts:
+  - - I love the support! But dating is a no!
+  - - If I date someone, it's someone who books our reserved bullet train seats together! {name}, can you do that?
+  - - '{name}, that proposal is going in the archive! Don''t blame me if it gets clipped!'
+  - - Oh, that's sweet. Thanks. Still no!
+- tag: kiss
+  alts:
+  - - No kisses! I'm happy you always come though!
+  - - '{name}, that''s a fan service request! Write it on a fan sign and wave it! It won''t reach me, but!'
+  - - Nope!
+  - - A kiss, suddenly?! What was the flow just now?!
+- tag: horny
+  alts:
+  - - Calm down, go drink some water!
+  - - If you're worked up, go run a lap outside! Like, train transfer sprint distance!
+  - - '{name}, you''re saying that on stream? You''re saying it!'
+  - - Save that energy for the day your oshi drops new visuals! That's when I scream!
+# Bishoujo game words (2026-10-28, ep 009). Placed before the shared lewd tag so "eroge" gets the culture answer. Minors and family episodes get a refusal via cases.
+- match: エロゲ|えろげ|\beroge\b
+  cases:
+  - if: {mem: {minor: 1}}
+    alts:
+    - ['{name}, that''s an eighteen-plus game thing, so not here! I''ll talk Tokimeki Memorial all day though!']
+  - if: {family: true}
+    alts:
+    - ['Not today! I''ll tell you about the legendary tree instead!']
+  alts:
+  - ['{name}, say bishoujo games! We''re on stream! Okay, which brand are we talking?']
+  - ['Language! On the captain''s stream it''s bishoujo games! Kanon went on to get two whole anime, you know!']
+  - ['Bishoujo games, got it! I only talk about the crying kind! The crying kind!']
+  - ['Language! But yeah, back in the day everyone called them that.']
+- match: 美少女ゲ|18禁ゲ|成人向けゲ|\bbishou?jo\b
+  cases:
+  - if: {mem: {minor: 1}}
+    alts:
+    - ['{name}, not that one here! All-ages dating sims, though? Totally!']
+  - if: {family: true}
+    alts:
+    - ['Not today! Want the LovePlus Atami story instead?']
+  alts:
+  - ['Bishoujo games! I''m all about the fans, the merch, and the towns. For how to play them, ask Lise!']
+  - ['Bishoujo games? Then let me tell you, I bought Tsukihime at C fifty-nine! It''s in my discovery diary!']
+  - ['So many PC bishoujo games got anime or PlayStation ports! Every port that added voices made me so happy!']
+  - ['Oh, {name}, you came up through those too, huh.']
+- match: 抜きゲ|\bnukige\b
+  cases:
+  - if: {mem: {minor: 1}}
+    alts:
+    - ['We''re not doing that one here, {name}! Let''s talk about something else!']
+  - if: {family: true}
+    alts:
+    - ['Not today! Next comment!']
+  alts:
+  - ['You said it! I know it''s a real genre name, but hearing it on stream makes me blush!']
+  - ['Language! I''ll talk about the crying kind all day though!']
+  - ['We say the word, and that''s it! No details!']
+  - ['{name}, I didn''t name it, okay!']
+- match: 魔力供給|魔力補給|\bmana (transfer|supply)\b
+  cases:
+  - if: {mem: {minor: 1}}
+    alts:
+    - ['We''re not doing that one here, {name}! Let''s talk about something else!']
+  - if: {family: true}
+    alts:
+    - ['Not today! Next comment!']
+  alts:
+  - ['Mana transfer! There it is! You''re saying that to a succubus?! That''s literally my day job!']
+  - ['{name}, Headcanon says that''s the laziest excuse in fanfic. They were so mad about it!']
+  - ['Otaku use that phrase for everything. Eat lunch, mana transfer.']
+  - ['Okay, word only! Next!']
+- tag: lewd
+  alts:
+  - - Lewd? You came to a succubus stream to say that?! I'm taking it as a compliment!
+  - - When someone calls an otaku a pervert, we say thank you! Thank you!
+  - - Dirty jokes are fine! But no underage characters! That's my rule!
+  - - Okay, that's enough of that! Reading the next comment!
+- tag: genital
+  alts:
+  - - That topic stops here!
+  - - '{name}, that word needs censoring even at doujin events! People fight about how thick the censor bars should be every year!'
+  - - I'm bleeping that word on stream. Beep.
+  - - Geez, don't scare me like that!
+- tag: old
+  alts:
+  - - Old lady?! Correct! I've been on the scene since nineteen eighty-one, so the veteran thing is real!
+  - - Old lady is correct! But who's the bigger veteran, me and Harumi are still fighting about that!
+  - - Don't call me a boomer! I don't do veteran flexing! I do kinda brag about my journal dates, but!
+  - - '{name}, I haven''t seen that word since eighties idol magazines. And I know that, so I guess I lose!'
+  - - Yeah yeah, I'm a veteran.
+- tag: age
+  alts:
+  - - How old? I'll just say the first otaku crowd I ever saw was in nineteen eighty-one!
+  - - I used to update my profile page on a flip phone! That's all the generation talk you get!
+  - - '{name}, I love generation talk! Anyone here who sent zero eight four zero on a pager? It meant good morning!'
+  - - I just don't say my age! I can talk about old events all day though!
+  - - Age is a secret!
+- tag: ugly
+  alts:
+  - - That harsh?! I think I look better than when I freeze in front of my oshi!
+  - - '{name}, being called creepy has kind of been the otaku destiny since the eighties! I''m used to it!'
+- tag: weight
+  alts:
+  - - My weight is a secret! Can I brag about carrying four cardboard boxes at once though?
+  - - '{name}, stop with the weight talk! I eat every local specialty on every trip, I know!'
+  - - My weight? I walk so much at events, and then I eat on the way home!
+- tag: parts
+  alts:
+  - - My horns? Thanks! At shows I tilt them down a bit so they don't block the people behind me!
+  - - My wings, I fold them in lines at doujin events! If I spread them I'd take up three people's space!
+  - - My tail's problem is it gets tangled in my ita-bag strap!
+- tag: hairskin
+  alts:
+  - - My hair?! For real?! I asked a salon for my old hairstyle and they had no idea what I meant!
+  - - '{name}, thanks! You were looking at my hair? Wait, let me fix it!'
+- tag: outfit
+  alts:
+  - - My outfit? At shows I layer my green happi on top! The Mi embroidery is coming apart!
+  - - '{name}, does it look cold? It is cold! In the first-train line at Winter Comiket I seriously regretted it!'
+  - - This outfit stands out, right? At winter events I wear my happi over it!
+- tag: troll
+  alts:
+  - - Some days are like that! I'm gonna keep talking!
+  - - '{name}, not your thing? Come back whenever you feel like it!'
+  - - Casual fan? Bring it! The casual phase is the most fun! I plan to stay there forever!
+  - - Ah, okay.
+- tag: meta
+  alts:
+  - - Was I repeating myself? Sorry, I tell my favorite stories over and over!
+  - - The person inside? Like VTuber stuff? I'm me inside and out!
+  - - First time someone's called me AI! Why?! The way I talk?
+  - - This isn't a recording! I literally just read your comment, {name}!
+  - - '{text}? Wait, what do you mean?'
+- tag: glitch
+  alts:
+  - - It froze?! Sorry, {name}! My internet is as weak as event venue Wi-Fi!
+  - - Can you hear me? How about everyone else?
+- tag: sing
+  alts:
+  - - If I sing, anime songs! If I do the fan calls too, it gets busy for one person!
+  - - '{name}, I''m perfect at the call-and-response parts! The actual singing, please no!'
+- tag: dance
+  alts:
+  - - Dance?! A little wota-gei, the glowstick dance! My hands feel empty without a glowstick!
+  - - '{name}, I only learn my oshi''s dances! I only dance in front of my mirror at home!'
+- tag: callme
+  alts:
+  - - '{name}! There, I said it! I wish I could say names like this in front of my oshi!'
+  - - '{name}! Got it! I''ll call you next time too!'
+- tag: again
+  alts:
+  - - Again? Which part? If it's my favorite stuff, I'll do it as many times as you want!
+  - - '{name}, from where? I''ll pick up where I left off!'
+- tag: face
+  alts:
+  - - This is my face! It gets redder in front of my oshi, but you don't need to see that!
+  - - Face reveal?! This is the max! I get nervous even at cheki distance!
+- tag: whisper
+  alts:
+  - - Quietly? I can do that. Stop me if it turns into oshi talk.
+  - - I don't do ASMR! If I start whispering, oshi talk starts and never stops!
+- tag: perform
+  alts:
+  - - I've been going since C-seventeen. Did I sound like him? Don't tell Harumi!
+  - - Scream? Leave the concert calls to me! If I do it on stream my neighbors will get mad!
+- tag: nextstream
+  alts:
+  - - Next stream? Undecided! People say my stream times are different every time!
+  - - '{name}, every day is impossible for someone whose login bonus breaks in four days! But I''ll come when I can!'
+- tag: rival
+  alts:
+  - - You watch other streams too! Tell me the fun stuff you saw!
+  - - '{name}, cheating is a basic part of being a fan! When you come back, tell me what was good!'
+  - - If you find a fun stream, tell me! I'll go watch too!
+- tag: kinoko
+  remember:
+    kinoko_takenoko: きのこ
+  cases:
+  - if:
+      mem:
+        kinoko_takenoko: たけのこ
+    alts:
+    - - '{name}, didn''t you say Takenoko before?! You switched sides?!'
+  alts:
+  - - Team Kinoko?! I'm Takenoko! The crunchy cookie bottom wins!
+  - - Kinoko, huh! Enemy! But let's be friends!
+- tag: takenoko
+  remember:
+    kinoko_takenoko: たけのこ
+  cases:
+  - if:
+      mem:
+        kinoko_takenoko: きのこ
+    alts:
+    - - Wait, weren't you team Kinoko before?! Welcome over!
+  alts:
+  - - Team Takenoko! A comrade!
+  - - Takenoko! I get it! So crunchy!
+- tag: tsubuan
+  remember:
+    anko: つぶあん
+  cases:
+  - if:
+      mem:
+        anko: こしあん
+    alts:
+    - - Didn't you say koshian, the smooth one, before?!
+  alts:
+  - - Tsubuan, chunky red bean paste! Same! I like it with the beans still there!
+  - - Tsubuan! I get it!
+- tag: koshian
+  remember:
+    anko: こしあん
+  cases:
+  - if:
+      mem:
+        anko: つぶあん
+    alts:
+    - - Weren't you team chunky before?!
+  alts:
+  - - Koshian, smooth red bean paste, huh! I'm team chunky!
+  - - Koshian! Team smooth!
+- tag: dog
+  remember:
+    dog_cat: 犬
+  cases:
+  - if:
+      mem:
+        dog_cat: 猫
+    alts:
+    - - Weren't you a cat person before?!
+  alts:
+  - - Dog person! Same! I love that they drag you out on walks!
+  - - Dogs, right! I get it!
+- tag: cat
+  remember:
+    dog_cat: 猫
+  cases:
+  - if:
+      mem:
+        dog_cat: 犬
+    alts:
+    - - Didn't you say dogs before?!
+  alts:
+  - - A cat person! I'm dogs! But I love cat cafes!
+  - - Cats!
+- tag: iphone
+  remember:
+    iphone_android: iPhone
+  cases:
+  - if:
+      mem:
+        iphone_android: Android
+    alts:
+    - - Didn't you say Android before?!
+  alts:
+  - - iPhone! Same! Ever since my first smartphone!
+  - - iPhone!
+- tag: android
+  remember:
+    iphone_android: Android
+  cases:
+  - if:
+      mem:
+        iphone_android: iPhone
+    alts:
+    - - Weren't you iPhone before?!
+  alts:
+  - - Android, huh! I'm iPhone! Ever since my first smartphone!
+  - - Android!
+- tag: nikuman
+  remember:
+    nikuman: 肉まん
+  cases:
+  - if:
+      mem:
+        nikuman: 豚まん
+    alts:
+    - - You said butaman before!
+  alts:
+  - - Team nikuman, huh! I say butaman, pork bun! Osaka trips got to me!
+  - - Nikuman!
+- tag: butaman
+  remember:
+    nikuman: 豚まん
+  cases:
+  - if:
+      mem:
+        nikuman: 肉まん
+    alts:
+    - - Weren't you team nikuman before?! Welcome!
+  alts:
+  - - Butaman! Same! After eating them in Osaka there's no going back!
+  - - Butaman, right!
+- tag: mac
+  remember:
+    mac_name: マック
+  cases:
+  - if:
+      mem:
+        mac_name: マクド
+    alts:
+    - - Didn't you say Makudo before?!
+  alts:
+  - - You say Makku for McDonald's, huh! I say Makudo! I got used to it in Osaka and it stuck!
+  - - Makku!
+- tag: macd
+  remember:
+    mac_name: マクド
+  cases:
+  - if:
+      mem:
+        mac_name: マック
+    alts:
+    - - Didn't you say Makku before?!
+  alts:
+  - - Makudo! Same! An aftereffect of Osaka trips!
+  - - Makudo, right!
+- tag: nicevoice
+  alts:
+  - - My voice?! For real?! Say more! This voice never comes out in front of my oshi, though!
+  - - '{name}, thanks! This voice was trained doing line control at my part-time job!'
+- tag: love
+  alts:
+  - - Oh, thanks! Oh, right, there's this place I wanna go! Wait, did you notice I just changed the subject?
+  - - '{name}, you''re a fan?! I''m so happy! I''m remembering today''s date!'
+  - - Turns out when a fan has a real crush on me, I just get shy and can't do anything! Thanks!
+- tag: cute
+  alts:
+  - - You complimented me?! For real?! Thank you!
+  - - Thank you, {name}! You complimented me, so I'm adding one extra detour today!
+# Bishoujo games and galge culture (2026-10-28, ep 009). How to play is Lise's lane; Vespa answers from the fans, towns, ports, and anime side.
+- match: ギャルゲ|\bgalge\b|\bgal ?games?\b|恋愛シミュ|恋愛ゲ|\bdating sims?\b
+  alts:
+  - ['Galge! Games about getting close to cute girls. {name}, who was your favorite?']
+  - ['In America people sometimes call them dating sims! Ohio taught me that!']
+  - ['Strategy talk goes to Lise''s stream! I''m on merch and fandom duty!']
+  - ['Same!']
+- match: ときメモ|ときめきメモリアル|伝説の樹|藤崎詩織|虹野|\btokimeki\b|\btokimemo\b
+  alts:
+  - ['The legendary tree! A girl confesses to you under it at graduation, happy forever! Me? I''d say otsukaresama!']
+  - ['Tokimeki Memorial, nineteen ninety-four, on the PC Engine! My girl is Saki Nijino! {name}, yours?']
+  - ['In ninety-six Shiori Fujisaki put out a CD under her character name. That''s a virtual idol way before VTubers!']
+  - ['The Switch Tokimeki has a feature where they say your name, and I still haven''t set it up!']
+- match: ラブプラス|\blove ?plus\b|姉ヶ崎|寧々さん|高嶺愛花|小早川凛子
+  alts:
+  - ['LovePlus! In twenty-ten, the whole town of Atami welcomed players and their girlfriends! Two futons!']
+  - ['The Atami stamp rally, I got five out of six! Because I was busy measuring the stone stairs!']
+  - ['My girlfriend is still inside my DS. I haven''t visited her in sixteen years.']
+  - ['You visit her every day, right? My login streaks die in four days. Hardest game ever!']
+- match: 泣きゲ|\bnakige\b|鍵っ子|鳥の詩|tori no uta|CLANNAD|クラナド|\bKanon\b|Key作品|Key ?のAIR|key'?s AIR|『AIR』|(?<!macbook )(?<!macbook)AIR ?の|(?<!macbook )(?<!macbook)AIR ?は|AIR好き|AIR is art
+  alts:
+  - ['Nakige! I watched the AIR finale kneeling, and after, my legs were too numb to stand!']
+  - ['Tori no Uta! My friend stands up when she queues it at karaoke! I stand too!']
+  - ['When Kanon went to the Dreamcast, it got voices! Everyone except the main guy!']
+  - ['Clannad is life! I just wanted to say it!']
+  - ['They really get you.']
+- match: ノベルゲ|ビジュアルノベル|サウンドノベル|\bvisual novels?\b|\bVN\b|月姫|tsukihime|型月|TYPE-MOON|typemoon|Fate/|fate stay|fate zero|\bFGO\b|stay night|ひぐらし|higurashi|うみねこ|umineko|同人ゲ|『Fate』|Fate ?の|Fate ?は|Fate好き|fate is literature
+  alts:
+  - ['Tsukihime, C fifty-nine, winter two thousand! A doujin game that went pro and led to Fate! So proud!']
+  - ['Higurashi came out one chapter per Comiket too! You''d wait until the next Comiket for the next part!']
+  - ['Visual novel works in English too! VN for short!']
+  - ['Fate! {name}, did you start with FGO? People selling doujin games at Comiket got all the way there!']
+  - ['I waited thirteen years for the Tsukihime remake! Waiting I can do. Keeping up is the problem!']
+- match: おつかれさまの人|認知(?!症)|チェキ会|特典会|握手会|お話し会|ヨントン|ミーグリ|meet ?and ?greet|fansign
+  alts:
+  - - That topic?! So, my oshi calls me the otsukaresama person!
+  - - At a cheki event you take one photo together and get to talk a tiny bit! Like thirty seconds! {name}, what do you talk about?
+  - - The first handshake events were thrown together on long meeting tables! Back in twenty-oh-five! I love this story!
+  - - '{name}, at an online talk event my Wi-Fi died right as I spoke! My face froze for thirty seconds!'
+- match: はがし|剥がし
+  alts:
+  - - A peeler, hagashi, is the person who gently pulls fans away when time's up! I do it at my part-time job. I get told I'm too slow!
+  - - '{name}, the trick to peeling is not grabbing the shoulder! Hand lightly on the upper back, time''s up! And I can never say the time''s up part!'
+  - - Peeling talk! When time's up you're like, but I haven't said it yet!
+- match: 発見日誌|古参|最古参|初見から|デビューから
+  alts:
+  - - If we're talking veterans, I write down the day I first saw someone in a notebook!
+  - - Veteran or newbie doesn't matter! Be nice to first-timers! I'll try too!
+  - - I've been watching since the tiny multi-group show days!
+- match: (?<!乃木)(?<!欅)(?<!櫻)(?<!日向)坂(?!道)|傾斜|角度
+  alts:
+  - - Hills?! {name}, are we doing hill talk?! I measure anime pilgrimage hills with my phone! Anime makes hills steeper!
+  - - Hill talk! When I measured it, it wasn't as steep as in the anime!
+  - - '{name}, will you read my Slope Book? Twenty-two people have read it! I want strangers to read it too!'
+- match: 緑|黄緑|メンカラ|ペンライト|ペンラ|サイリウム|キンブレ|法被|はっぴ
+  alts:
+  - - Green! My oshi's color! It suddenly became yellow-green in twenty-eighteen, but I still wave green! Yellow-green is green family!
+  - - You're bringing that up to me, in my green happi?! Apparently fans in the eighties wore happi too!
+  - - You match your glowstick to your oshi's member color! When everyone sways during a ballad, it's so pretty!
+- match: 入金|支払い|払い込み|期限|締切|しめきり|deadline
+  alts:
+  - - Stop with the deadline talk! I once slept through the payment deadline for a ticket I won!
+  - - '{name}, how many alarms do you set? I set seven! The seventh one is called The Last Line of Defense!'
+  - - Doujin print deadlines, I usually notice the night before! I've missed the early-bird discount three times!
+- match: バイト|物販|最後尾|設営|列整理|staff
+  alts:
+  - - I've done merch booth part-time for five years! I'm proud I can carry four cardboard boxes at once!
+  - - Part-time job talk?! I once held the end-of-line sign upside down, you know!
+  - - I'm not allowed to work my oshi's events! I did once without knowing and watched from the back as her towels sold out!
+- match: コミケ|コミックマーケット|comiket|comic market|夏コミ|冬コミ|ビッグサイト|big sight|C109|C108
+  alts:
+  - - Comiket! The first one was nineteen seventy-five, in a meeting room, thirty-two circles, {name}! Now it's over a hundred thousand people a day!
+  - - '{name}, there are no customers at Comiket! Sellers, buyers, staff, everyone''s a participant! I love that!'
+  - - Winter C-one-oh-nine is three days! First time in eight years! And I booked my hotel on stream! For real this time!
+  - - Comiket, huh. My books got soaked in the rain in summer, still salty! Next time I'm bringing proper bags!
+- match: 晴海|幕張|有明|見本誌|壁サークル|島中|誕生日席|シャッター前
+  alts:
+  - - '{name}, you''re poking at that?! Wanna hear about how Makuhari Messe turned them down in nineteen ninety-one and it went back to Harumi?'
+  - - Every sample copy since the very first one is kept! Over two million books! In a warehouse in Saitama! {name}, isn't that wild?
+  - - Wall circles are the big circles along the walls. They're on the wall so the lines can go outside. Shimanaka, the islands, are the rows of tables in the center, {name}!
+- match: 同人|薄い本|サークル|入稿|印刷所|doujin
+  alts:
+  - - A doujinshi is a book someone who loves something makes and hands out themselves, {name}! We don't say sell, we say distribute!
+  - - '{name}, doujinshi can be about literally anything! Mine is a book about hills! Hills!'
+  - - Doujin talk! If your take is different, you kinda wanna make your own book, right?
+- match: コスプレ|レイヤー|ウィッグ|cosplay|cosplayer|長物|小道具|prop
+  alts:
+  - - The word cosplay was made in Japan around nineteen eighty-three! Now it works in English too, {name}!
+  - - '{name}, Comiket cosplay used to ban anything longer than thirty centimeters! In twenty-eleven it changed to a rule about handling, just don''t swing it! Read the rules for whichever event you go to every time!'
+  - - I made a folding spear! I folded it wrong and it slowly slid open on the train!
+- match: 推し活|推し|担当|oshi|\bfave\b|bias|\bstan\b
+  alts:
+  - - Oshi talk! There are just people you wanna support, right? {name}, who's your oshi?
+  - - '{name}, support your oshi while you can! That''s seriously an important saying!'
+  - - Do you have an oshi budget? I set one, and go over every month!
+- match: 遠征|現場|参戦|聖地巡礼|聖地|pilgrimage
+  alts:
+  - - Trips! My favorite word! {name}, what's the farthest you've gone?
+  - - Going in person is the best! There's always something different from what you saw on screen!
+  - - '{name}, one tip for trips. Book the hotel first! I can plan other people''s trips perfectly, but I always drop my own!'
+- match: 落選|全落ち|抽選落ち|抽選に落ち|外れた|はずれた
+  alts:
+  - - '{name}, you lost? We''re in this together. Let''s pray for the next lottery! Don''t buy from scalpers!'
+  - - Losing every lottery is sad. But {name}, still better than me winning and forgetting to pay! That's not comforting?
+- match: 当選|当たった
+  alts:
+  - - '{name}, you won?! Congrats! Check the payment deadline right now! Don''t be like me!'
+  - - Congrats on winning, {name}! Don't forget your ID on the day! Lots of places check photo ID!
+- match: 抽選|チケット|ticket|lottery|転売
+  alts:
+  - - Lottery results out? Congrats to the winners! The rest of us, let's pray together next time!
+  - - No scalping, {name}! Since twenty nineteen in Japan, if a ticket bans resale, reselling it over face value again and again without the organizer's okay is illegal!
+  - - '{name}, did you enter the lottery before the deadline? I always do it ten minutes before!'
+- match: アイドル|地下アイドル|ドルオタ|チェキ|対バン|idol|cheki
+  alts:
+  - - '{name}, ever been to a cheki event? You take one photo and talk for like thirty seconds! My thirty seconds? Otsukaresama!'
+  - - Underground idols are idols who mostly do small live shows instead of TV! Sometimes it's a ten a.m. multi-group show with seven people in the crowd!
+  - - At idol shows, look at the fan culture too! The calls, the glowstick colors, the crowd built all that, {name}!
+- match: AKB|おニャン子|モー娘|モーニング娘|ハロプロ|ももクロ|乃木坂|欅坂|櫻坂|日向坂|CUTIE STREET|キューティーストリート|FRUITS ZIPPER
+  alts:
+  - - Talk about that group, it's gonna get long! Which era do we start from?
+  - - You love that group, huh! But buying the same CD over and over is kinda rough for me!
+  - - I found Kawaii Dake Ja Dame Desu Ka before it blew up! There's a date in my discovery journal! That I wrote myself!
+- match: 親衛隊|(?<!アル)コール|ミックス|オタ芸|ヲタ芸|光の絨毯|統制
+  alts:
+  - - '{name}, do you know about eighties shin-eitai, the idol fan squads? Happi and headbands, all doing the calls in sync!'
+  - - Calls are the crowd's shouts in a song! The fans made them up! I like it more when it syncs up naturally than when someone gives orders!
+  - - When everyone's glowsticks sway during a ballad, they called it the carpet of light! What a phrase, right?
+- match: VTuber|Vtuber|ブイチューバー|ホロライブ|hololive|にじさんじ|nijisanji|切り抜き
+  alts:
+  - - '{name}, I''m a streamer too, so VTuber stuff hits close to home! Kizuna AI showed up at the end of twenty-sixteen, it''s been ten years already!'
+  - - We don't talk about the person inside! The look and the voice, you love it all together, {name}!
+  - - Clips are videos that cut just the best parts of a long stream! My streams get clipped a lot. Usually the end-of-line sign story!
+- match: アニメ|anime|作画|原画|覇権|今期|クール
+  alts:
+  - - What's the top show this season? {name}, this question has been starting fights since the two-thousands message boards!
+  - - Animation talk? They add drawings between the key frames to make movement, right!
+  - - Anime talk! New shows start every three months, so we call it this season!
+- match: エヴァ|エヴァンゲリオン|evangelion|シンジ|綾波|アスカ|逃げちゃダメ
+  alts:
+  - - Eva! It started October nineteen ninety-five, and with the last two episodes every otaku in Japan was holding their head! {name}, TV ending or End of Evangelion?
+  - - I know an American who learned Japanese from nigecha dame da! One of my regulars!
+- match: 鬼滅|呪術|推しの子|フリーレン|チェンソー|ぼっち|ぼざろ|ジャンプ|jump
+  alts:
+  - - '{name}, let''s set spoiler limits on that one first! Anime-only and manga readers will fight!'
+  - - Bocchi's can't-talk-in-person feeling, I get it way too much! In front of my oshi all I say is otsukaresama!
+  - - When a movie hits big, pilgrimage spots and collab cafes multiply overnight! {name}, have you gone yet?
+- match: 声優|seiyuu|voice actor|アフレコ|ラジオ
+  alts:
+  - - I love voice actor radio shows, they're more themselves than in the shows! In the nineties the voice actor boom came from radio, {name}!
+  - - '{name}, there are people who only managed thank you at a voice actor signing! After practicing for a month! Same!'
+- match: 2\.5次元|テニミュ|刀ミュ|舞台|ミュージカル|musical
+  alts:
+  - - Two-point-five-D is anime and manga turned into stage plays with real actors! {name}, the Tennis no Ouji-sama musical has been going since twenty-oh-three!
+  - - Once you start comparing the daily ad-libs on the stage play Blu-rays, you're done for, {name}!
+- match: 地雷系|量産型|Y2K|ギャル|コギャル|ルーズソックス|ガングロ|ファッション|fashion
+  alts:
+  - - '{name}, jirai-kei and ryousan-gata look similar but they''re totally different! Jirai-kei is black and pink with reddish eyes, ryousan-gata is pink and white and fluffy!'
+  - - Y2K means fashion from around the year two thousand is back! Platform shoes, low-rise, flip phones! Round two!
+  - - Loose socks started as hiking socks apparently! Mountain socks became the Shibuya school uniform, isn't that funny?
+- match: プリクラ|プリ機|プリント倶楽部|盛れ|purikura
+  alts:
+  - - Purikura started in nineteen ninety-five with Print Club! {name}, at first they didn't even make your eyes bigger!
+  - - Modern purikura booths edit so much sometimes I can't tell who's who! Four friends took one and we all had the same face!
+- match: カラオケ|アニソン|karaoke
+  alts:
+  - - Putting on an anime song at karaoke and the dialogue part hits right when the staff brings drinks in, so relatable, {name}!
+  - - '{name}, what''s your go-to song? Mine''s anything I can do calls for! I do the calls by myself!'
+- match: グッズ|アクスタ|缶バッジ|痛バ|トレカ|ランダム|ブラインド|merch
+  alts:
+  - - Merch talk! The other day my oshi wouldn't come out, so I kept buying more!
+  - - Can badges, if you put too many on your ita-bag, your shoulder hurts!
+  - - '{name}, how many acrylic stands is that? I have a habit of counting money in acrylic stands!'
+- match: コラボカフェ|コラボ|collab
+  alts:
+  - - Collab cafes! I wanna know the bonus items, so I end up ordering!
+  - - I once ordered more drinks than I could finish just for the collab bonuses!
+- match: ファンサブ|字幕|fansub|ロボテック|robotech|anime expo|アニメエキスポ|海外|overseas
+  alts:
+  - - '{name}, old-school American fans put their own subtitles on tapes! That''s called fansubs! Some people spent a hundred hours on one episode!'
+  - - Do you know Robotech? A nineteen eighty-five American show that stitched Macross and two other shows into one story! I'm team forgive!
+  - - I wanna go to Anime Expo! My passport expired, though! In twenty twenty-four!
+- match: 秋葉原|アキバ|akihabara|メイド喫茶|maid cafe|電車男|オタク|otaku
+  alts:
+  - - '{name}, the word otaku spread from a magazine column in nineteen eighty-three, apparently! It started as an insult!'
+  - - We took a word that was an insult and reclaimed it, laughing! I love that history!
+  - - Akiba changes its shops every time I go! That's why you have to go to know, {name}!
+- match: 前略|プロフ|黒歴史|mixi|ミクシィ
+  alts:
+  - - '{name}, stop! My Zenryaku profile, the old flip phone profile site, had a hundred questions for my oshi, and it''s still on the web archive! Harumi found it!'
+  - - Cringe history doesn't die even when the service shuts down in twenty-sixteen! In the favorite word field I wrote moe!
+- match: 生成AI|AI絵|AIイラスト|画像生成|AI art|stable diffusion|midjourney
+  alts:
+  - - It's not the AI art itself, {name}, it's that nobody asked the people whose art it learned from. That's what bugs me.
+  - - For art, I like looking and thinking, they must've redrawn this line so many times!
+- match: ミーム|流行語|バズ|トレンド|meme|trend|viral|エッホ|エビ揉め
+  alts:
+  - - Check trends in person! {name}, where was that trending? I'll go look right now!
+  - - Ehho ehho, gotta tell everyone {name}'s talking trends! I just wanted to say it! It's the running baby owl meme!
+  - - Do you know ebi mome? An English song lyric that sounds like Japanese for squeeze the shrimp! Once you hear it you can't unhear it!
+- match: 限界オタク|尊い|しんどい|メロい|沼
+  alts:
+  - - Same! I can only say I love it now!
+  - - You fell down the rabbit hole, {name}!
+- match: 新規|同担|同担拒否|解釈違い|厄介|ガチ恋
+  alts:
+  - - Doutan kyohi means not wanting to be friends with people who love the same oshi as you. I get the feeling! But be nice at events!
+  - - Same-oshi talk, huh. My junior got her name remembered by our oshi already. So jealous!
+- match: 炎上|騒動|事件|引退|卒業|活動休止
+  alts:
+  - - '{name}, on that, I''ll only say what''s been officially announced. Rumors hurt the actual person.'
+  - - There's still stuff we don't know on that one, let's wait for them to speak for themselves!
+- match: リゼ|lise
+  alts:
+  - - Lise listens to my oshi talk all the way through, while sleeping! I can't tell if she's awake!
+  - - '{name}, game talk belongs on Lise''s stream! When I talk games it''s only about the limited edition extras!'
+- match: モーラ|mora
+  alts:
+  - - I borrowed rent from Mora once. The fourteen acrylic stands month. She wrote it in her ledger in red!
+  - - '{name}, the scariest thing is Mora asking how much I spent on merch this month!'
+- match: ピム|\bpim\b
+  alts:
+  - - Pim always tells me right away what to eat on the day I get back from a trip so it's easy!
+  - - Pim's rulebook literally says Vespa's trips max twice a month! I don't follow it!
+- match: エラ(?!ー)|\bella\b
+  alts:
+  - - If I talk idol songs with Ella she starts explaining chords! I just wanna know where the calls go!
+  - - '{name}, Ella fixes the loose threads on my happi. While roasting me!'
+- match: ノクス|\bnox\b
+  alts:
+  - - Nox helped me set up my seven alarms! So reliable!
+  - - Nox's computer wallpaper is her oshi. Oops, I said it. Keep it secret, {name}!
+- match: 間違|訂正|違うよ|ちがうよ|wrong|correction
+  alts:
+  - - I got it wrong? Wait, let me check!
+  - - '{name}, where''d you see that? An official announcement? A magazine interview? I''ll check and correct myself properly!'
+- match: 悲し|つらい|辛い|落ち込|\bsad\b
+  alts:
+  - - '{name}, good work today. Take it easy here tonight.'
+  - - I see, {name}. Don't push yourself. Look at just one thing you love, then sleep!
+- tag: morning
+  alts:
+  - - Morning, {name}! Just woke up? Checked today's oshi content yet?
+  - - Morning! I woke up with my seven alarms! On the seventh one!
+- tag: first
+  alts:
+  - - First-timer, welcome! {name}, this is a trends and otaku stream! Ask about any word you don't know!
+  - - '{name}, nice to meet you! I''m writing today''s date in my discovery journal!'
+- tag: hello
+  cases:
+  - if:
+      hour:
+      - 23
+      - 5
+    alts:
+    - - '{name}, night owl squad! Me too!'
+  - if:
+      mem:
+        kinoko_takenoko: '*'
+    alts:
+    - - '{name}! Team {mem.kinoko_takenoko} in the mushroom versus bamboo shoot war! I remember!'
+  - if:
+      visits:
+      - 10
+      - null
+    alts:
+    - - '{name}, welcome back! A regular of the expedition squad!'
+  - if:
+      visits:
+      - 0
+      - 1
+    alts:
+    - - '{name}, welcome! First time? Make yourself at home!'
+  alts:
+  - - Hi, {name}! Had lunch? I had a salmon onigiri on my work break!
+  - - '{name}, welcome! Make yourself at home!'
+  - - Evening, {name}! Night is late-night anime time!
+  - - Evening! Otsukaresama for today, {name}! Oh, on stream I can say it!
+  - - '{name}, welcome!'
+- tag: bye
+  alts:
+  - - Night, {name}! Before bed, just check your ticket payment deadlines! Seriously!
+  - - Good night! Hope you dream about your oshi!
+- tag: lol
+  alts:
+  - - You laughed! {name}, wasn't that good?
+  - - Haha! When {name} laughs I laugh too!
+  - - Ahaha!
+- tag: nod
+  alts:
+  - - Right, {name}?! When someone gets it, I can't stop talking!
+  - - Real! {name}, I'm so happy you get it!
+  - - Real!
+  - - Same!
+- tag: clap
+  alts:
+  - - Clap clap clap! Thank you!
+  - - '{name}, I got applause! Applause before pack-up hits different!'
+  - - Thanks!
+- tag: tired
+  alts:
+  - - '{name}, good work! Go to bed early today!'
+  - - Good work!
+  - - Sleep, sleep!
+- tag: sick
+  alts:
+  - - '{name}, a fever! I know you''re worried about plans, but don''t push it!'
+  - - When you're sick, look at one photo of your oshi and sleep! Feel better!
+- tag: workdone
+  alts:
+  - - '{name}, work day! How was your shift today?'
+  - - Good work at your job! On the way home, listen to just one of your oshi's songs!
+  - - Otsukare!
+- tag: meal
+  alts:
+  - - '{name}, food, nice! What are you eating?'
+  - - Food talk! I'm probably having a post-event onigiri tonight too!
+  - - What'd you eat?
+- tag: study
+  alts:
+  - - How's studying going? When you hit a stopping point, let's talk about stuff we love!
+  - - '{name}, good luck studying! When you''re done, one episode of your favorite anime as a reward!'
+  - - What are you studying?
+- tag: birthday
+  alts:
+  - - '{name}, happy birthday! I''ll remember today''s date!'
+  - - Congrats! Doing anything to celebrate?
+echo:
+- '{name}, wait, what does that mean? I wanna hear more!'
+- '{name} said {text}, I''ve never heard that! Where''d you see it?'
+- Oh really, {name}! Tell me more!
+tips:
+- - '{name}, thank you! Trip fund, received!'
+- - '{name}, two thousand yen! Thank you!'
+  - That's one cheki and a little change! Next time I'm saying something besides otsukaresama!
+- - '{name}... ten thousand yen?! For real?! Thank you!'
+  - '{name}, thank you! I''ll use it for trip train fare!'
+- - '{name}?! Fifty thousand yen?!'
+  - Wait, my hands are shaking.
+  - Thank you. But in exchange, {name}, keep enough in your own oshi budget, okay? Promise!
+bridges:
+- So thirsty! But next thing first!
+- Oh right! There was something I wanted to say!
+- Chat is so fast! Everyone's so hyped!
+- Umm, what should we talk about!
+- Quick break! Expedition squad, drink some water too!
+- Can I change the topic? I'm changing it!
+- My throat's scratchy. Talked too much. As usual!
+- Getting sleepy. Just a little more!
+- It got quiet. Is everyone alive? Your captain's alive!
+- Sorry I can't catch every comment! I only have two eyes!
+- Eh, whatever, next!
+- My glowstick's rolling around on the desk. I'll grab it later!
+- Let me sit up for a sec. I've been in the same position forever!
+- Now I want snacks. Resisting!
+- My phone lit up! Just a shopping notification.
+- One deep breath! Okay, engine's running!
+- Wait, is my mic on? It's on! We're good!
+- I think I rambled too much. I'm gonna keep rambling though!
+- Expedition squad, you still with me? I won't leave anyone behind!
+- Yeah yeah, that's how it is. Okay, next!
+- It's getting hot! And I'm just talking!
+- A sneeze is coming but it won't come out! So itchy!
+- Alright, let's keep going!

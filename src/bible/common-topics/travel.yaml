@@ -1,0 +1,25 @@
+category: travel
+name: 移動と旅行
+topics:
+- {id: travel_fav_place, q: いちばん好きな旅行先は？}
+- {id: travel_want, q: いま行きたい場所は？}
+- {id: travel_abroad, q: 海外に行ったことある？ どこ？}
+- {id: travel_plan, q: 旅行は計画をきっちり立てる？ 行き当たりばったり？, options: [きっちり, 行き当たりばったり]}
+- {id: travel_pack, q: 荷物は多い派？ 少ない派？ 必ず持っていくものは？}
+- {id: travel_seat, q: 電車や飛行機の席は窓側？ 通路側？, options: [窓側, 通路側]}
+- {id: travel_shinkansen, q: 新幹線で食べるものは？}
+- {id: travel_sa, q: 高速のサービスエリアで買うものは？}
+- {id: travel_hotel, q: 泊まるならホテル？ 旅館？ カプセル？ ネカフェ？}
+- {id: travel_hotel_first, q: ホテルの部屋に入って最初にすることは？}
+- {id: travel_souvenir, q: 旅行先で必ず買うものは？}
+- {id: travel_lost, q: 道に迷いやすい？ 地図アプリは何？}
+- {id: travel_car, q: 車の運転はする？ 免許は？}
+- {id: travel_train_bus, q: 電車派？ バス派？ 自転車？ 歩く？}
+- {id: travel_commute, q: 通勤・通学の時間は何をしてる？}
+- {id: travel_ic, q: 交通系 IC は何？（Suica、PASMO、ICOCA など）}
+- {id: travel_late_train, q: 終電を逃したことある？ どうした？}
+- {id: travel_sleep_through, q: 電車で寝過ごしたいちばん遠い駅は？}
+- {id: travel_alone, q: 一人旅は好き？}
+- {id: travel_trouble, q: 旅先でのいちばんのトラブルは？}
+- {id: travel_dream, q: お金と時間が無限にあったらどこへ行く？}
+- {id: travel_airport, q: 空港で何時間前に着く？}

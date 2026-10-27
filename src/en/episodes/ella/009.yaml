@@ -1,0 +1,172 @@
+# Ella 009 (English). Same beats as src/episodes/ella/009.yaml.
+title: "Miles Davis's masterpiece spent over thirty years spinning a little too fast"
+parts:
+- title: Opening (milk first, or tea first?)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Today is jazz day, so the tea is Darjeeling."
+  - chat: [sold_my_keyboard, "hi. jazz day, thats rare"]
+  - say: "Good day, Sold My Keyboard. Jazz day is rare, isn't it. I thought, just for once, something other than metal."
+  - chat: [headbang_whiplash, "neck rest day"]
+  - say: "A neck rest day, yes. Whiplash, do give your neck a holiday today."
+  - chat: [here_for_bgm, "milk tea person here. i put the milk in first"]
+  - say: "Oh."
+  - say: "Here For BGM, a milk tea person... and the milk goes in first, does it."
+  - chat: [here_for_bgm, "is that bad?"]
+  - say: "Is it bad, you ask. It is not bad! Not bad at all, only... I put the tea in first."
+  - chat: [budokan_balcony_east, "there are factions?"]
+  - say: "There are factions, yes. In Britain, they've apparently been quarreling over it for decades."
+  - say: "The writer George Orwell wrote that the tea should go in first. I am on his side."
+  - chat: [first_time_here, "is there a reason?"]
+  - say: "There is a reason. With the tea in first, you can add milk while watching the color, and judge the amount."
+  - chat: [here_for_bgm, "feels like milk first mixes better"]
+  - say: "Milk first mixes more easily. I understand that too. I do understand. But I cannot yield."
+  - say: "Incidentally, in the castle, my lady takes her milk first."
+  - chat: [new_releases_only, "so ur enemies with lise"]
+  - say: "Enemies with my lady? Not at all. I simply watch. In silence. Every morning."
+  - chat: [piano_teacher, "the silent watching is scary"]
+  - say: "Scary, you say. I say nothing. Nothing at all. But I do watch."
+  - chat: [headbang_whiplash, "i dont do milk. straight tea"]
+  - say: "No milk, straight tea. That's the one way nobody quarrels."
+  - ask:
+      q: "My dears, with milk tea, which goes in first?"
+      options:
+      - c: "milk first"
+        r:
+        - "Milk first. {name}, just like my lady."
+        - "I shall be watching you in silence. ...I jest. As you please."
+      - c: "tea first"
+        r:
+        - "Tea first! {name}, one of us."
+        - "Adding it while watching the color, it's lovely, isn't it."
+      - c: "no milk"
+        r:
+        - "No milk. {name}, you're on the side that never quarrels."
+        - "I'm fond of it straight too. Especially Darjeeling."
+      - c: "dont drink tea at all"
+        r:
+        - "No tea at all. {name}, well, that's fair. Coffee, then?"
+        - "Even in the castle, the coffee drinkers outnumber us. I'm in the minority."
+      npc:
+      - [here_for_bgm, 0]
+      - [budokan_balcony_east, 3]
+      - [new_releases_only, 3]
+      - [sold_my_keyboard, 1]
+      - [piano_teacher, 1]
+  - chat: [sold_my_keyboard, "tea first"]
+  - say: {face: smile, text: "Lots of tea-first people, and lots who don't drink it at all. And Keyboard is tea first! How reassuring."}
+  - chat: [new_releases_only, "some of us dont even drink tea"]
+  - say: "Some of you don't drink it. Indeed. Perhaps this stream is mostly coffee people."
+  - chat: [budokan_balcony_east, "canned coffee"]
+  - say: "Budokan, canned coffee. In Japan you can buy it hot from vending machines. In winter, I secretly drink exactly one. After warming my hands on it."
+  - chat: [headbang_whiplash, "why secretly"]
+  - say: "Why secretly? Well, a tea person caught drinking canned coffee. One would rather not be seen."
+  - say: "Oh dear, I've gotten stuck on tea. Today is jazz, my dears. Jazz."
+- title: Main story (side A of Kind of Blue)
+  beats:
+  - say: "There's an album by Mr. Miles Davis called 'Kind of Blue.' Nineteen fifty-nine."
+  - chat: [first_time_here, "ive heard the name"]
+  - say: "You've heard the name, naturally. It's said to be one of the best-selling jazz albums ever. You'll often hear it playing in shops."
+  - chat: [sold_my_keyboard, "bill evans on piano right"]
+  - say: "Bill Evans on piano. Yes, Keyboard, exactly! Mr. Evans plays on nearly every track."
+  - say: "Only one track has a different pianist. A Mr. Wynton Kelly."
+  - chat: [piano_teacher, "freddie freeloader"]
+  - say: "'Freddie Freeloader,' yes, Teacher. Compare them side by side and their playing is completely different. It's such fun."
+  - chat: [first_time_here, "different how?"]
+  - say: "Hmm... Mr. Kelly bounces, rolls along. Mr. Evans is quiet, placing each chord down so gently."
+  - chat: [first_time_here, "i kind of get it"]
+  - chat: [piano_teacher, "is this about the side A thing?"]
+  - say: "Kind of is plenty, dear newcomer. And, 'the side A thing?' Teacher, of course you know. Yes. Side A."
+  - say: "This album was recorded over two sessions. The three tracks from the first day make up side A of the record."
+  - say: "And on that first day, it seems the tape machine was running just slightly slow."
+  - chat: [new_releases_only, "what happens if its slow"]
+  - say: "What happens? Record it slow, play it back at normal speed, and it sounds a touch faster and a touch higher."
+  - chat: [new_releases_only, "like fast forward?"]
+  - say: "Like fast forward, yes. The tiniest little bit of fast forward."
+  - chat: [first_time_here, "nobody noticed??"]
+  - say: "Well, my dear, it was in nineteen ninety-two, when they were remastering it for CD, that an engineer finally noticed."
+  - chat: [sold_my_keyboard, "it stayed like that 30+ years?"]
+  - say: "Over thirty years like that? Over thirty years. The whole world had been listening to a slightly sharp 'So What.'"
+  - chat: [piano_teacher, "people practicing along must have struggled"]
+  - say: "People practicing along. Yes! Play your horn along with the record, and you're the one who sounds flat."
+  - say: "I'd wager a great many players tore their hair out over that."
+  - chat: [headbang_whiplash, "how far off was it"]
+  - say: "How far off, yes. It's often said to be about a quarter tone sharp."
+  - say: "But when I looked into it, there are also accounts that the machine was only a little over one percent slow, which would mean a much smaller gap."
+  - chat: [new_releases_only, "so which is it"]
+  - say: "Which is it? I'm afraid I couldn't tell. It was certainly off. How far off depends on who's telling it."
+  - chat: [piano_teacher, "ellas singing is a quarter tone flat tho"]
+  - say: {face: annoyed, text: "My singing is a quarter tone flat... Teacher. You bring that up now? Of all moments?"}
+  - chat: [budokan_balcony_east, "sing along with miles and it evens out?"]
+  - say: {face: laugh, text: "Sing with Miles and it evens out? No, no, that only widens the gap. Teacher, you're laughing, aren't you."}
+  - chat: [piano_teacher, "im not laughing"]
+- title: Side track (the club I want to visit)
+  beats:
+  - chat: [sold_my_keyboard, "do you go to jazz clubs?"]
+  - say: "Jazz clubs. There's one I long to visit. The Village Vanguard, in New York."
+  - chat: [first_time_here, "what kind of place is it?"]
+  - say: "A small jazz club, down in a basement, dear newcomer. It's terribly old, and so many classic live albums were recorded there."
+  - say: "Narrow, they say, and you walk down a staircase to get in. Just one night, that's all I ask. I want to listen from inside those walls."
+  - chat: [budokan_balcony_east, "ive been. its tiny"]
+  - say: {face: surprised, text: "You've been, and it's tiny. You've been there! Budokan, jazz as well?"}
+  - chat: [budokan_balcony_east, "once on a business trip. tables so small there was nowhere to put your glass"]
+  - say: "On a business trip. Tables so small there's nowhere for your glass. How marvelous. So you listened holding it?"
+  - chat: [budokan_balcony_east, "held it the whole time"]
+  - say: "Held it the whole time. Oh, I want to do that too."
+  - chat: [new_releases_only, "have u ever been abroad ella?"]
+  - say: "Abroad? Never. Only the demon realm and Japan."
+  - chat: [headbang_whiplash, "does the demon realm count as abroad?"]
+  - say: "Does the demon realm count as abroad? Hard to say. There was no passport control, certainly."
+  - chat: [sold_my_keyboard, "the vanguard is where the bill evans live album is from right"]
+  - say: "Where the Bill Evans live album comes from. Yes! In June of nineteen sixty-one, the Bill Evans Trio recorded there."
+  - say: "And the bassist playing with him, Mr. Scott LaFaro, died in a car accident eleven days later."
+  - chat: [sold_my_keyboard, "that album is hard to listen to knowing that"]
+  - say: "Hard to listen to, knowing. It is. And yet the playing sounds so joyful. The three of them, answering one another's notes."
+  - say: "You can even hear the audience on the recording. Glasses clinking, people chatting."
+  - chat: [budokan_balcony_east, "my glass might be on there"]
+  - say: "Your glass might be on it, Budokan? You surely weren't there yet in nineteen sixty-one."
+  - chat: [budokan_balcony_east, "busted"]
+  - chat: [piano_teacher, "so back to the jazz"]
+  - say: "Busted indeed. And back to the jazz. Ah, yes. Quite right."
+- title: Back to the story (the song that was too fast)
+  beats:
+  - say: "That same year, nineteen fifty-nine, in May, Mr. John Coltrane recorded a piece called 'Giant Steps.'"
+  - chat: [piano_teacher, "scariest tune in jazz"]
+  - say: "The scariest tune in jazz. When Teacher says it, it truly sounds terrifying."
+  - chat: [first_time_here, "whats scary about it?"]
+  - say: "What's scary? Well, partway through, the key changes at a dizzying pace. B major, G major, E flat major, round and round."
+  - say: "A key is, roughly speaking, a song's home. And this is like moving house every couple of seconds."
+  - chat: [first_time_here, "sounds rough"]
+  - chat: [piano_teacher, "and at a super fast tempo"]
+  - say: "Rough, and at a breakneck tempo. Exactly. And Mr. Tommy Flanagan, on piano, is heard struggling through his solo. Right there on the record."
+  - chat: [sold_my_keyboard, "not a kind tune for keys players"]
+  - say: "Not kind to keys players. Not kind at all. He stops partway, then starts again."
+  - chat: [headbang_whiplash, "ever crash sight reading ella?"]
+  - say: "Crash? I have. At a concert in the castle town, when I was helping as page turner."
+  - chat: [first_time_here, "page turner?"]
+  - say: "A page turner sits beside the pianist and turns the pages of the score."
+  - say: "And I turned two pages at once."
+  - chat: [new_releases_only, "oof"]
+  - say: "Oof, quite. And the pianist simply started playing the next page. The piece skipped a little."
+  - chat: [piano_teacher, "for the player thats hell"]
+  - say: "Hell, for the player. Afterwards I went to apologize, and they said, 'the audience didn't notice.'"
+  - chat: [sold_my_keyboard, "thats kind"]
+  - say: "Kind, yes. A very kind person. I moped for about a week."
+  - say: "So when I hear that solo, I can't help but feel it personally."
+  - chat: [new_releases_only, "so hes bad?"]
+  - say: "Bad? Heavens, no. He was a superb player. Throw anyone into that tempo without preparation, and the same would happen."
+  - chat: [piano_teacher, "and later flanagan put out an album with that title"]
+  - say: "Later, an album by that name. Yes! Years afterward, Mr. Flanagan released an album called 'Giant Steps,' dedicated to Mr. Coltrane."
+  - chat: [sold_my_keyboard, "kinda sweet"]
+  - say: "Rather sweet, isn't it. I do love that sort of story."
+- title: Closing (a second cup of Darjeeling)
+  beats:
+  - chat: [here_for_bgm, "going to make a second milk tea"]
+  - say: "A second milk tea. Off you go. Milk first, by all means."
+  - chat: [here_for_bgm, "are you watching?"]
+  - say: "Am I watching, you ask. I am not. Probably."
+  - chat: [headbang_whiplash, "zero metal today"]
+  - say: "Zero metal today. It's nice for a change, isn't it? Gentle on the neck, too."
+  - chat: [headbang_whiplash, "not enough"]
+  - say: "Not enough. Then next time, something loud again."
+  - say: "Thank you for today, my dears. I'll go brew my second cup as well. Tea first. Farewell."

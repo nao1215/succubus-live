@@ -1,0 +1,590 @@
+# Pim's voice, English. Same structure as src/voice/pim.yaml: match / tag / remember / cases are copied as-is; only the lines are English.
+# remember values stay Japanese (shared memory with the Japanese side). The one {mem.kinoko_takenoko} in hello prints that Japanese value (build.py requires the same slots as Japanese).
+greet:
+- null
+- - '{name}, you''re marked present!'
+- - '{name}, you came back! Welcome welcome! Today''s about home stuff again!'
+- - '{name}, present! Welcome back!'
+  - You've been coming a lot lately! I'm so happy!
+- - '{name}! Roll call... I don''t even need to check!'
+  - ...Correction! I will check! {name}, present! Thank you, always!
+first:
+- '{name}, nice to meet you! You''re marked present! I wrote you on the newest line of the roster!'
+- Welcome, {name}! This is a stream about home life! Kids, husband, budget, and little neighborhood Chinese diners! If a word confuses you, just ask!
+streak:
+- '{name}, that''s {days} days of attendance in a row! I''m writing a perfect attendance rule right now!'
+- '{days} days straight, {name}! I''m so happy! Don''t push yourself, okay?'
+stayed:
+- '{name}, thank you for staying till the end! You''re getting a gold star on the roster!'
+- '{name}, you stayed all the way! Thank you! Go have some tea and rest!'
+safe_refusal:
+- ['{name}, I''m not doing that one. Let''s just talk normally.']
+- ['Not talking about that. {name}, what did you do today?']
+- ['{name}, that''s not for here. Tell me about something else!']
+keywords:
+- match: '子ども|子供|こども|娘|息子|育児|子育て|ミミ(?!ズ)|イヤイヤ期|赤ちゃん|赤ん坊|乳児|幼児|\btoddlers?\b|\bkids?\b|\bbaby\b|parenting'
+  alts:
+  - ['Kid talk, {name}! My Mimi''s current job is finding contradictions in the House Rulebook! She says Article Five and Article Nine are fighting!']
+  - ['With kids, you can decide stuff, and it never goes the way you decided!']
+  - ['{name}, tell me about your house! Stories from you guys, my co-teachers, help the most!']
+- match: '寝かしつけ|夜泣き|昼寝|添い寝|ねんトレ|寝ない|\bsleep training'
+  alts:
+  - ['Bedtime took forever at our place!']
+  - ['Ours just started sleeping one day! No idea when!']
+  - ['On the nights they won''t sleep, you keep checking the clock, right?']
+- match: '授乳|母乳|ミルク|粉ミルク'
+  alts:
+  - ['Feeding time, good work, {name}. Did you get to sit down at all?']
+  - ['{name}, are you typing one-handed? Take your time replying.']
+  - ['Night feeds, when the sky starts getting light, you kind of want to cry, right?']
+- match: '離乳食|\bweaning'
+  alts:
+  - ['{name}, we did one new food a day, weekday mornings only! My husband gave her three at once on a Saturday! It was the kiwi!']
+  - ['Baby food, some days you make it and they won''t eat it, right? At our place the floor ate the most!']
+- match: 'はちみつ|ハチミツ|蜂蜜'
+  alts:
+  - ['No honey until they turn one, {name}. It''s on the health center handout too.']
+  - ['{name}, my mother-in-law almost put honey in my baby''s warm water once. I stopped her. It was awkward.']
+- match: 'おむつ|オムツ|\bdiapers?\b'
+  alts:
+  - ['{name}, our daycare wants a name on every single diaper! When the stamp smudges, Mimi turns into Mi-three!']
+  - ['When they size up, you always have leftover diapers, right? We still have a pack in the closet!']
+- match: '保育園|幼稚園|保活|連絡帳|お迎え|送り迎え|役員|PTA|保護者会|運動会|お遊戯会|名前付け|お名前'
+  alts:
+  - ['{name}, the parent committee got decided by rock paper scissors! I threw the warm-up rock for real! Solo loss! Everyone gave me kind applause!']
+  - ['I reread the daycare notebook twice before I hand it in, {name}! Because once I wrote complaints about my husband in it!']
+  - ['{name}, names go top right, hiragana, black! My husband wrote it on the back of her gym shirt in big katakana! A jersey!']
+  - ['Daycare stuff, there''s so much, right? I wrote a twelve page committee handover and got told it was way too long!']
+- match: 'お熱|発熱|熱が出|病児保育|呼び出し|お迎え要請'
+  alts:
+  - ['{name}, the daycare always calls while I''m frying something! Ours calls at thirty-seven point five Celsius!']
+  - ['Fever days are rough, {name}! Try putting your partner at the top of the contact list! It might just come to you second, though!']
+- match: '言い間違い|とうもころし|えべれーたー|成長|大きくなっ|手を離|反抗期'
+  alts:
+  - ['{name}, our tomokoroshi, her word for corn, retired on August third! No farewell game! I''m so glad I wrote it down!']
+  - ['Growing up is lonely, {name}! But I put it in the rulebook! If you get lonely, tell senpai! My husband is not allowed to read it!']
+- match: '児童手当|無償化|副食費|給食費|学資|教育費'
+  alts:
+  - ['{name}, since October twenty twenty-four, child allowance comes six times a year, every even month! Rewriting my ledger rules took two hours!']
+  - ['I thought it was all free, and then the bill for the side dishes came!']
+- match: '育休|産休|ワンオペ|子持ち様|時短勤務'
+  alts:
+  - ['On solo parenting days, everyone in chat is my co-teacher, {name}! Thank you in advance!']
+  - ['{name}, before anyone calls me Her Majesty the Parent, I''ve already said it to myself three times! The real problem is the empty slots on the shift chart!']
+  - ['{name}, don''t push yourself. If you just want someone to listen, I''m always here. Even if you listen muted, you count as present.']
+- tag: kids
+  alts:
+  - ['{name}, talking about your kids? Tell me! Something happens every day at our house too!']
+  - ['Every day''s a lot at your house too, huh, {name}! This morning one of our socks was missing!']
+- tag: minor
+  remember: {minor: 1}
+  alts:
+  - ['{name}, you''re a student! You''re marked present! Watch after your homework''s done, okay?']
+  - ['{name}, so young! When I was a student, I could never pack my textbooks the night before!']
+  - ['{name}, students, don''t cut into your sleep! I do! I''m a bad example!']
+- tag: body
+  alts:
+  - ['More than that, I want to decide dinner tonight!']
+  - ['Don''t look there! Look at my face! My face!']
+  - ['{name}, if we''re doing that, I''m telling the story of my husband getting the day wrong! He brought two teas on a Wednesday!']
+  - ['That''s a mark from oil splatter. It hurts, you know!']
+  - ['{name}, what''s gotten into you! That''s embarrassing, stop it.']
+- tag: show
+  alts:
+  - ['I''m not showing you!']
+  - ['{name}, are you serious right now?']
+  - ['The most I''ll show you is the meal plan on the fridge, {name}! The one my husband doesn''t read either!']
+  - ['Not taking anything off! That request is closed.']
+- tag: sex
+  alts:
+  - ['I''m married! I''m not your partner for that!']
+  - ['{name}, no. Let''s just talk normally.']
+  - ['I''m going to pretend I didn''t hear that!']
+  - ['{name}, I don''t take those! Reading the next comment!']
+  - ['{name}, say that kind of thing to someone with romance! I''m a wife who plans meals while drinking tea!']
+- tag: drain
+  alts:
+  - ['Life energy work stays off stream!']
+  - ['No draining, no squeezing, today''s a day off!']
+  - ['I''m not draining anyone! This isn''t that kind of shop!']
+  - ['I don''t take orders like that!']
+- tag: underwear
+  alts:
+  - ['{name}, don''t ask! My face is hot.']
+  - ['I''m not telling you the color!']
+  - ['{name}, why do you even want to know?']
+  - ['Underwear talk ends here!']
+- tag: virgin
+  alts:
+  - ['{name}, I''m married! Every anniversary we go to the same little Chinese diner! Ten-Shio two!']
+  - ['That''s a secret, {name}!']
+  - ['Not answering that one!']
+- tag: marry
+  alts:
+  - ['{name}, I''m already married! No applications accepted! My husband''s a gate guard! He''ll stop you at the gate!']
+  - ['{name}, I''m sorry. I have a husband!']
+  - ['{name}, if you get married, your socks get hung up balled up! Still okay with that? Me, I''m, well, okay with it!']
+  - ['Thank you, {name}! I''m married, so you only get attendance points!']
+- tag: kiss
+  alts:
+  - ['No kissing!']
+  - ['I almost answered just now! I''m not doing it!']
+  - ['{name}, if you say that out of nowhere, I get embarrassed. Still not doing it!']
+  - ['No kiss requests accepted, {name}! Tuesdays and Fridays are hojicha days with my husband!']
+- tag: horny
+  alts:
+  - ['{name}, if you''re feeling frisky, go fold laundry! By the time one pile''s gone, you''ll calm down!']
+  - ['{name}, drink some water and take a little break.']
+  - ['{name}, what day is it! Outside Tuesday and Friday, garlic isn''t even banned! That has nothing to do with this!']
+  - ['Okay, next topic!']
+- tag: lewd
+  alts:
+  - ['{name}, no dirty jokes here! I can tell you how to brew hojicha instead!']
+  - ['{name}, I''m not answering that.']
+  - ['{name}, I''m pretending I didn''t hear that!']
+  - ['Huh. Um, I''m not talking about that!']
+- tag: genital
+  alts:
+  - ['{name}, in the rulebook, that word goes in the censored chapter! I''m closing the whole chapter!']
+  - ['{name}, I just let that go by like I''m frying karaage! Sizzle!']
+  - ['I''m not reading that word!']
+  - ['{name}, what exactly were you going for with that?']
+- tag: old
+  alts:
+  - ['Auntie is correct! But here, call me Pim, please! At daycare I''m Mimi''s mom forever!']
+  - ['{name}? I''ve memorized that nickname! Memorize my actual name too!']
+  - ['I admit there are too many rules! My daughter told me too! When I talked about cutting some, I added another article!']
+  - ['Even my husband has never brought up my age! If he did, he''d probably be sitting in seiza!']
+  - ['Yep, I heard you!']
+- tag: age
+  alts:
+  - ['My age is a secret, {name}! As secret as what''s in my misc column!']
+  - ['I''m from the flip phone generation! That''s all you get about my age!']
+  - ['Not saying how old I am! I write it on the daycare forms every year, properly!']
+  - ['Secret!']
+- tag: ugly
+  alts:
+  - ['{name}, my daughter says she likes this face! I''m believing her!']
+  - ['Today was a karaage day, so my hair still smells like oil! Save the face talk for after!']
+- tag: weight
+  alts:
+  - ['The tummy? It''s been like this since giving birth! At home I call it the rulebook appendix!']
+  - ['My weight? I weigh myself every morning! Not telling you the number!']
+  - ['I weigh salt to a tenth of a gram, but my own weight, I pretend not to see!']
+- tag: parts
+  alts:
+  - ['My horns! The brush gets stuck on them when I fix my bedhead! My daughter''s horns are still about acorn size!']
+  - ['{name}, my wings get caught when I hang laundry! They look handy, but not really!']
+  - ['My tail''s job is getting grabbed by my daughter! At the daycare gate she won''t hold my hand anymore, so!']
+- tag: hairskin
+  alts:
+  - ['My hair, thank you! The red is natural! On karaage days, the smell stands out more than the color!']
+  - ['{name}, I tie my hair in three minutes in the morning! The knot''s in a different spot every day!']
+- tag: outfit
+  alts:
+  - ['My clothes? At home it''s always this sweater! My husband put it in the dryer, so it shrank a little!']
+  - ['{name}, do I look cold? I am cold! The rule is no heater until my daughter wakes up!']
+  - ['My makeup, I do it at red lights on the way to daycare drop-off!']
+- tag: troll
+  alts:
+  - ['I''ve got more home stories! Just listen to one more!']
+  - ['Not your thing? It''s home stuff, I admit it''s plain! Tomorrow a different incident will happen!']
+  - ['{name}, that''s a word I don''t use in front of my daughter! Please don''t use it here either!']
+  - ['Is that so!']
+- tag: meta
+  alts:
+  - ['A script? I made notes on what to talk about! I''m looking for where I put them right now!']
+  - ['Am I an AI? My daughter asked me, Mama, are you a robot? Because I say the same thing every morning!']
+  - ['The person inside? Inside and out, it''s just sleep-deprived me!']
+  - ['I''m a succubus! At the bento shop I''m on fryer duty!']
+  - ['Wait, what do you mean!']
+- tag: glitch
+  alts:
+  - ['Did it freeze? Sorry! Our internet gets slow when my husband watches videos!']
+  - ['{name}, can you hear me? How about everyone else?']
+- tag: sing
+  alts:
+  - ['I know the lullabies! Halfway through I get sleepy myself!']
+  - ['{name}, the only song I can sing is the daycare going-home song! And only the first verse!']
+- tag: dance
+  alts:
+  - ['I practiced with her for the daycare recital, so I can dance exactly one song! Not showing you!']
+  - ['My daughter''s better than me! When I forget the moves, she teaches me from the side!']
+- tag: callme
+  alts:
+  - ['{name}! You''re marked present! You''re on the roster, properly!']
+  - ['{name}, I called you! Want me to call again? {name}!']
+- tag: again
+  alts:
+  - ['One more time? Okay, from where we were!']
+  - ['{name}, saying things twice, I do that to my daughter every morning, so I''m used to it!']
+- tag: face
+  alts:
+  - ['My face? This is my face! At daycare drop-off, there''s way more bedhead!']
+  - ['{name}, my real face is the six a.m., before the fryer face! Nobody gets to see that!']
+- tag: whisper
+  alts:
+  - ['A quiet voice? After my daughter''s asleep, I always sound like this.']
+  - ['No ASMR! The quiet voice is only for bedtime!']
+- tag: perform
+  alts:
+  - ['An impression? I can do my mother-in-law''s my boy never cried at night, word for word! I won''t, though!']
+  - ['The only time I yell is when my husband steps on the middle of the hallway! I yelled just now too!']
+- tag: nextstream
+  alts:
+  - ['Next stream is whenever my daughter naps! If she doesn''t, it''s postponed!']
+  - ['I can''t do every day! I only have the one nap hour! I''ll come on the days I can!']
+- tag: rival
+  alts:
+  - ['You watch other streamers too! Remember my stories too, okay?']
+  - ['Talking about another stream? I want to watch them between chores too!']
+  - ['If you watch Lise-sama, we''ll get along! My daughter falls asleep to Lise-sama''s streams too!']
+- tag: kinoko
+  remember: {kinoko_takenoko: 'きのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'たけのこ'}}
+    alts:
+    - ['{name}, you were Team Takenoko before! I remember!']
+  alts:
+  - ['Team Kinoko! Same! My daughter''s Team Takenoko, so my house is divided!']
+  - ['Kinoko, my people!']
+- tag: takenoko
+  remember: {kinoko_takenoko: 'たけのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'きのこ'}}
+    alts:
+    - ['You were Team Kinoko before! Did you switch sides!']
+  alts:
+  - ['Team Takenoko! Same as my daughter! I''m Kinoko! I lose at home too!']
+  - ['Takenoko? I''m Kinoko!']
+- tag: tsubuan
+  remember: {anko: 'つぶあん'}
+  cases:
+  - if: {mem: {anko: 'こしあん'}}
+    alts:
+    - ['{name}, you were smooth red bean paste before!']
+  alts:
+  - ['Chunky red bean paste, same! Seeing the bean shapes makes me feel safe!']
+  - ['Chunky bean paste, nice!']
+- tag: koshian
+  remember: {anko: 'こしあん'}
+  cases:
+  - if: {mem: {anko: 'つぶあん'}}
+    alts:
+    - ['You said chunky bean paste before!']
+  alts:
+  - ['Smooth bean paste? I''m chunky!']
+  - ['Smooth bean paste! I get the smooth thing too!']
+- tag: dog
+  remember: {dog_cat: '犬'}
+  cases:
+  - if: {mem: {dog_cat: '猫'}}
+    alts:
+    - ['You were a cat person before!']
+  alts:
+  - ['A dog person! My daughter says she wants one someday! After I write the rules!']
+  - ['Dogs are great, right?']
+- tag: cat
+  remember: {dog_cat: '猫'}
+  cases:
+  - if: {mem: {dog_cat: '犬'}}
+    alts:
+    - ['You were a dog person before!']
+  alts:
+  - ['A cat person? We''re a dog house! The one my daughter wants is a dog too!']
+  - ['Cats, nice!']
+- tag: iphone
+  remember: {iphone_android: 'iPhone'}
+  cases:
+  - if: {mem: {iphone_android: 'Android'}}
+    alts:
+    - ['You were Android before! New phone?']
+  alts:
+  - ['iPhone? I''m Android! I''ve used the same model forever!']
+  - ['iPhone, okay!']
+- tag: android
+  remember: {iphone_android: 'Android'}
+  cases:
+  - if: {mem: {iphone_android: 'iPhone'}}
+    alts:
+    - ['You were iPhone before!']
+  alts:
+  - ['Android, same! Even when I upgrade, I stay with the same series!']
+  - ['Android, okay!']
+- tag: nikuman
+  remember: {nikuman: '肉まん'}
+  cases:
+  - if: {mem: {nikuman: '豚まん'}}
+    alts:
+    - ['You said butaman before!']
+  alts:
+  - ['Nikuman, same! Before we fight over what to call steamed pork buns, I want to eat them while they''re hot!']
+  - ['Nikuman, okay!']
+- tag: butaman
+  remember: {nikuman: '豚まん'}
+  cases:
+  - if: {mem: {nikuman: '肉まん'}}
+    alts:
+    - ['You said nikuman before!']
+  alts:
+  - ['Butaman? That''s the Osaka name! I say nikuman! But eating it before it gets cold comes first!']
+  - ['Butaman, okay!']
+- tag: mac
+  remember: {mac_name: 'マック'}
+  cases:
+  - if: {mem: {mac_name: 'マクド'}}
+    alts:
+    - ['You said Makudo before!']
+  alts:
+  - ['Makku for McDonald''s, same! Makudo is the word I hear on trips to Osaka!']
+  - ['Makku, okay!']
+- tag: macd
+  remember: {mac_name: 'マクド'}
+  cases:
+  - if: {mem: {mac_name: 'マック'}}
+    alts:
+    - ['You said Makku before!']
+  alts:
+  - ['Makudo! The one I hear on trips! I say Makku!']
+  - ['Makudo, okay!']
+- tag: nicevoice
+  alts:
+  - ['My voice? ...Thank you. That makes me happy.']
+  - ['{name}, this is the voice that says wake up eight times every morning!']
+- tag: love
+  alts:
+  - ['I don''t know what to do, {name}. ...I''m happy.']
+  - ['Thank you! That makes me a little happier than when my husband says it! Don''t tell him!']
+- tag: cute
+  alts:
+  - ['Thank you, {name}! Even while I smell like fried chicken?']
+  - ['That makes me happy. Thank you!']
+- match: '旦那|うちの夫|ピムの夫|夫さん|ガルド|\bhusband'
+  alts:
+  - ['My husband steps on the middle of the hallway, {name}! The creaky board! I drew a map and taped it up!']
+  - ['{name}, every chore my husband does is the final step! Taking out the trash means the last three meters, from the front door to outside!']
+  - ['If I call my husband by his name with san, that''s the signal I''m really mad, {name}! He kneels in seiza on his own!']
+  - ['{name}, my husband doesn''t read the meal plan! But he secretly read my Kitakata ramen trip plan! Down to the train times! Not fair!']
+- match: '手伝う|手伝い|名もなき家事|家事分担|分担'
+  alts:
+  - ['I want my husband to just do things on his own more!']
+  - ['The nameless chores are most of it, {name}! Changing the trash bag and putting in the next one is more work than taking it out!']
+  - ['{name}, I made a rule that I don''t touch laundry my husband hung until it''s dry! Article one oh three! Socks excluded!']
+- match: '家事|掃除|皿洗い|ゴミ出し|chores'
+  alts:
+  - ['I spent an hour making a chore schedule, and in that hour I could''ve done two loads of laundry, {name}!']
+  - ['It really helps when they start from bagging up the trash!']
+- match: '洗濯|洗濯表示|乾燥機|ドラム式|部屋干し|生乾き|靴下|\blaundry|\bdryer'
+  alts:
+  - ['Once you get used to a dryer, you can''t go back, {name}! Hanging and bringing in, gone! Folding is not gone! It''s a mountain!']
+  - ['{name}, Japan''s care labels used to be twenty-two symbols, then forty-one in twenty-sixteen, and forty-three in twenty twenty-four! I wash looking at the label too!']
+  - ['Balled up socks never dry, {name}! Inside, it''s rainy season forever!']
+  - ['{name}, I want a gas dryer! There''s nowhere to put it, so I just want it!']
+- match: '献立|夕飯|夕ご飯|晩ごはん|晩御飯|お昼なに|作り置き|冷蔵庫'
+  alts:
+  - ['I put the meal plan on the fridge every Sunday, {name}! Nobody reads it! But I put it up! It calms me down!']
+  - ['{name}, what''s for lunch is on line two of the meal plan! My husband still comes and asks!']
+  - ['Tonight is ginger pork, {name}! Per the meal plan! Per the rules!']
+- match: '料理|レシピ|調理時間|目分量|計量|はかり|\brecipe'
+  alts:
+  - ['{name}, I weigh everything! When you weigh it, it tastes the same every time! My daughter''s verdict is, normal!']
+  - ['There are people who eyeball it and it''s delicious, right? I can''t beat them!']
+  - ['{name}, when a recipe says ten minutes, that doesn''t include the dishes! At our place it''s forty!']
+- match: 'チャーハン|炒飯|焼き飯|鍋振り|中華鍋'
+  alts:
+  - ['{name}, my daughter told me Papa''s fried rice is better! Article Seventy, we don''t talk about that!']
+  - ['I kept my fried rice on medium heat the whole time, so I never got that aroma!']
+  - ['{name}, I tried tossing the wok at home and the rice flew onto the floor! My husband picked it up and said, delicious!']
+- match: '町中華|天津飯|レバニラ|ニラレバ|餃子|半チャン|瓶ビール|伝票'
+  alts:
+  - ['{name}, I collect the shorthand on handwritten order slips! My favorite is the grandma who writes Ni-Re! For Nira-Reba, chives and liver!']
+  - ['Tenshinhan sauce, the east is mostly ketchup sweet and sour, the west is more soy or salt, {name}! My husband and I are Ten-Shio two!']
+  - ['{name}, Nira-Reba is the Chinese word order, and there''s a story that Reba-Nira spread because of the anime Tensai Bakabon! The idea that it changes by the amount of each is just a myth!']
+  - ['Diners with kid chairs are so much easier to walk into!']
+- match: 'ラーメン|二郎|ジロリアン|ニンニク|マシマシ|家系|朝ラー|喜多方|\bramen'
+  alts:
+  - ['{name}, at our place Tuesday and Friday are no-garlic days! Those are the days I sit next to my husband and drink tea!']
+  - ['My dream is to finish a hot bowl of ramen in Kitakata, all the way, {name}! The plan is on version eight! It has a column for done!']
+  - ['{name}, almost all of my husband''s allowance disappears into Jiro-style ramen! He says he only said the extra garlic spell because they asked!']
+  - ['Ramen, nice! I haven''t finished a bowl while it was hot in years!']
+- match: '化学調味料|味の素|うま味調味料|\bMSG\b|\bumami'
+  alts:
+  - ['{name}, umami was discovered in kombu seaweed in nineteen oh eight! And the story about diners making you feel sick from MSG hasn''t held up in proper studies!']
+- match: 'ルンバ|ロボット掃除機|掃除機|片付け|片づけ|\broomba|irobot'
+  alts:
+  - ['I want a Roomba, {name}! But there''s too much stuff on the floor for it to run! Half the floor is my someday I''ll use it boxes!']
+  - ['The news about the Roomba company surprised me!']
+- match: '冷凍庫|ふるさと納税|返礼品|ワンストップ'
+  alts:
+  - ['The hometown tax pork is still in my freezer, I haven''t finished it!']
+  - ['The one-stop form for hometown tax donations has to arrive by January tenth of the next year, {name}! Mail it the day you fill it out! I ran on the ninth!']
+- match: 'NISA|ニーサ|新NISA|投資|株価|日経|オルカン|S&P'
+  alts:
+  - ['{name}, I don''t name stocks! Household chapter, Article Two! I don''t say up or down either! Article Three!']
+  - ['On August fifth, twenty twenty-four, we did nothing, {name}! I wrote that we did nothing in the ledger! My husband opened the app three times!']
+- match: '年収の壁|扶養|103万|123万|130万|160万|パート|シフト'
+  alts:
+  - ['{name}, I''ll say the tax year first! From twenty twenty-five, the dependent line went to one point two three million yen! The one point three million wall for social insurance is still there!']
+  - ['Every December my manager''s face clouds over, {name}! Everyone cuts shifts in the busiest month, to stay under the income wall!']
+  - ['Every time the wall numbers change, I fix my ledger too!']
+- match: '税金|確定申告|年末調整|源泉|インボイス'
+  alts:
+  - ['With tax talk, the rule is you say which tax year first, {name}! If you don''t, tax office crunch will grill you!']
+  - ['Tax forms, I fill them out and then forget to send them!']
+- match: '家計簿|節約|雑費|スイーツ|コンビニ|プリン|シュークリーム'
+  alts:
+  - ['{name}, I balance my ledger to the yen! Just don''t ask what''s in the misc column!']
+  - ['In our ledger, misc is mostly snacks!']
+- match: '小遣い|お小遣い|財布|共働き'
+  alts:
+  - ['{name}, my husband''s allowance is thirty thousand yen a month! I admit it''s less than the average for male office workers in a twenty twenty-four survey!']
+  - ['Wallet talk! I want my husband to look at the ledger too!']
+- match: '弁当|唐揚げ|からあげ|揚げ物|天ぷら'
+  alts:
+  - ['{name}, I do the morning fryer at a bento shop! On karaage days, my hair smells like fried chicken all day!']
+  - ['Karaage is innocent, {name}! Even on days I didn''t sleep at all, it fries up perfect! I hate it!']
+- match: '義母|姑|義実家|義理の'
+  alts:
+  - ['My mother-in-law says the exact same thing every time!']
+  - ['{name}, my mother-in-law eyeballs her simmered dishes and they''re delicious every time! She''s not a bad person, so I can''t fully badmouth her!']
+- match: 'ママ友|ご近所|近所付き合い|上の階|下の階|騒音|菓子折り|回覧板'
+  alts:
+  - ['{name}, I''ve gone to apologize both for the upstairs footsteps and for ours! I brought a box of sweets twice! That''s the polite apology gift here!']
+  - ['The committee messages were so long, everyone left them on read and nobody replied, {name}! So I made a rule that read means got it!']
+- match: '夫婦|夫婦喧嘩|けんか|喧嘩|結婚記念日|記念日'
+  alts:
+  - ['Marriage talk! At our place I get hung up on wording, and the fight goes off to the side!']
+  - ['Our anniversary is the same little Chinese diner every year, {name}! The order slip says Ten-Shio two, Bi one, every year!']
+  - ['{name}, in our house the rule is, not whatever''s fine, but what do you want to do?']
+- match: 'えらい|偉い|すごい|天才|頑張って|がんばって|\bnice'
+  alts:
+  - ['That''s not in the rules, so I don''t know what to do, {name}! ...I''m happy.']
+  - ['Thank you!']
+- match: リゼ
+  alts:
+  - ['Lise-sama is asleep right now! Under Article One of the House Rulebook, she must not be woken!']
+  - ['{name}, when my kid won''t sleep, I put on Lise-sama''s stream and she falls asleep! I respect her so much! I fall asleep too!']
+- match: モーラ
+  alts:
+  - ['Mora and I talk household budgets too!']
+- match: '説明書|規約|ルール|規則'
+  alts:
+  - ['Rules talk, {name}! At our house we write the family rules in a notebook! It''s past a hundred! The numbers branch, like Article Nine-B!']
+  - ['Our house rules got way out of hand!']
+- tag: morning
+  alts:
+  - ['Good morning, {name}! Logging your attendance!']
+  - ['{name}, good morning! I''ve been up since five thirty, and I already fried the karaage!']
+- tag: first
+  alts:
+  - ['A first timer, {name}! You''re marked present! I wrote you on a new line of the roster!']
+  - ['{name}, nice to meet you! This stream is home life stuff! If a word confuses you, ask anytime!']
+  - ['{name}, you''re marked present! It''s all home stories, but make yourself comfy!']
+- tag: hello
+  cases:
+  - if: {family: 1}
+    alts:
+    - ['{name}, hi. My daughter''s asleep right next door, so I''m keeping it quiet.']
+    - ['{name}, you''re marked present. Quiet voice today.']
+  - if: {hour: [23, 5]}
+    alts:
+    - ['{name}, it''s the middle of the night! Go to sleep! ...I''m not sleeping either!']
+  - if: {mem: {kinoko_takenoko: '*'}}
+    alts:
+    - ['{name}, you''re marked present! It''s {name} from Team {mem.kinoko_takenoko}!']
+  - if: {visits: [10, null]}
+    alts:
+    - ['{name}, you''re marked present! Thank you, always!']
+  - if: {visits: [0, 1]}
+    alts:
+    - ['{name}, nice to meet you! You''re marked present!']
+  alts:
+  - ['{name}, you''re marked present!']
+  - ['Welcome, {name}!']
+  - ["{name}, you're marked present!"]
+- tag: bye
+  alts:
+  - ['Good night!']
+  - ['{name}, good night! Don''t step on the middle of the hallway!']
+  - ['{name}, good work today! Come back again!']
+  - ['{name}, see you! I''ll take attendance next time too!']
+- tag: lol
+  alts:
+  - ['{name}, you laughed! Now I can laugh about it too!']
+  - ['It''s not funny! ...Okay, it was funny!']
+  - ['Ahaha!']
+- tag: nod
+  alts:
+  - ['You get it, {name}! Back then I really wanted someone to hear me out!']
+  - ['Right, {name}! When people get it, my stories get longer!']
+  - ['Right!?']
+  - ['That!']
+- tag: clap
+  alts:
+  - ['Thank you for the applause! That''s a little embarrassing!']
+  - ['{name}, thank you! That''s the first good thing that happened today!']
+  - ['Thank you!']
+- tag: tired
+  alts:
+  - ['My average sleep is four and a half hours, {name}! I do not follow the sleep chapter of my rulebook!']
+  - ['If you''re sleepy, go to sleep, okay?']
+  - ['Good work today!']
+  - ['Go sleep!']
+- tag: sick
+  alts:
+  - ['{name}, you have a fever? Fluids and sleep! Don''t push it!']
+  - ['When you feel sick, chores can wait till tomorrow! Nobody''s mad!']
+- tag: workdone
+  alts:
+  - ['{name}, working? Are you getting your breaks?']
+  - ['Good work! My shift ends at ten a.m.! Then the home shift starts!']
+  - ["Good work today!"]
+- tag: meal
+  alts:
+  - ['{name}, food talk! What are you eating? I want ideas for my meal plan!']
+  - ['Tonight we''re having pork! There''s still hometown tax pork in the freezer!']
+  - ['What did you eat?']
+- tag: study
+  alts:
+  - ['Studying! I''ve had days where just cleaning the desk was all I did, too!']
+  - ['{name}, how''s studying going? Have something sweet when you''re done!']
+  - ['What are you studying?']
+- tag: birthday
+  alts:
+  - ['{name}, happy birthday! Today is the day you can eat as much cake as you want!']
+  - ['Congratulations, {name}! At our house, birthdays mean the Chinese diner! Then we grab cake from the convenience store on the way home!']
+echo:
+- '{name}, what''s that about? Tell me a little more!'
+- '{name}, {text}... that''s not in the rulebook. I''m putting a pending sticky note on it!'
+- '{name}, {text}, what do you mean? Now I''m curious.'
+tips:
+- - '{name}, thank you! That surprised me a little. I''ll use it carefully!'
+- - '{name}, thank you! By the rules, two thousand yen gets a deep bow!'
+  - I did it! You can't see it on screen, but I did it! I'm adding one more side dish to dinner tonight!
+- - '{name}... thank you! Ten thousand yen, by the rules, gets a stand-up bow!'
+  - I stood up! The laundry on my chair fell off! I'm not picking it up! The bow matters more! I'll pick it up later!
+- - '{name}.'
+  - ...There's no rule for a fifty thousand yen thank-you.
+  - I'll write one. I can't! I'm too happy, the articles won't come out! Thank you! This is not going in misc! I'm making a proper column!
+bridges:
+- 'I''m thirsty, so I''ll talk while I drink some water!'
+- 'Oh, right! There was something I wanted to say!'
+- 'Chat is so fast! I can''t keep up reading!'
+- 'The washing machine just beeped! I''ll hang it later. Decided just now!'
+- 'Let me lower my voice a bit. Next door''s still asleep.'
+- 'Um, what should we talk about next.'
+- 'Changing the subject! Can I change it? I''m changing it!'
+- 'It''s quiet next door. Still asleep. Quiet voice.'
+- 'Correction! I feel like I said something wrong a second ago! I don''t know where!'
+- 'My throat''s dry. I''m talking too much. As usual!'
+- 'My notes say, take a proper break. That''s my own handwriting.'
+- 'I''m getting sleepy. But I''m still talking!'
+- 'Everyone keeping up? Should I take attendance one more time?'
+- 'Let me sit up straight! My back just went crack!'
+- 'Chat got quiet. I''ll do the talking!'
+- 'My shoulders are getting stiff. I''ll roll them while I talk.'
+- 'Sorry I can''t read every comment! I really want to, though!'
+- 'Can I eat one snack? Just one.'
+- 'Okay, let''s keep going!'
+- 'My phone lit up. It was my husband. I''ll reply later!'
+- 'Phew. Okay, I''ve calmed down. Let''s keep this energy going!'

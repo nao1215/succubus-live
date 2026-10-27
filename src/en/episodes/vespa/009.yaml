@@ -1,0 +1,204 @@
+# Vespa 009 (English): a DS came out of my closet, and LovePlus was inside. Translated from src/episodes/vespa/009.yaml.
+# Bishoujo game and galge culture. Adult titles are only named as a genre; no scenes. "nukige" and the Fate "mana transfer" meme stay at word-and-meme level.
+title: A DS Fell Out of My Closet, and LovePlus Was Inside
+parts:
+- title: The closet
+  beats:
+  - say: Good evening! Okay, listen, today I was cleaning out my closet.
+  - chat: [end_of_line_here, 'how many boxes']
+  - say: How many boxes? Nine! And from the very back, a DS came out.
+  - chat: [harumi_survivor, 'evening. a DS, how nostalgic']
+  - say: Harumi, evening! Right? So nostalgic. And the cartridge still in it was LovePlus.
+  - chat: [first_time_here, 'first time here. loveplus?']
+  - say: Welcome! LovePlus, twenty-oh-nine. You visit your game girlfriend daily, once you're dating.
+  - chat: [first_time_here, 'like a galge?']
+  - say: Like a galge? Yep, same family! Games about getting close to cute girls all go under that.
+  - chat: [not_my_headcanon, 'so not eroge?']
+  - say: {face: annoyed, text: 'Language! Say bishoujo games! We''re on stream!'}
+  - say: Some are adult, some all-ages, but here we say bishoujo games. Adult ones say eighteen-plus.
+  - chat: [end_of_line_here, 'ive counted those boxes at inventory']
+  - say: You've counted them?! What job was that?! Anyway, LovePlus and Tokimeki Memorial aren't adult games.
+  - say: Oh, how-to-play and strategy is Lise's stream. I do fans, towns, and merch. That I can do all night.
+- title: The legendary tree
+  beats:
+  - chat: [harumi_survivor, 'i know tokimemo. the tree one']
+  - say: Harumi, you know Tokimemo! Yes, the tree one!
+  - say: Tokimeki Memorial, May nineteen ninety-four. It first came out on a console called the PC Engine.
+  - say: Three years of high school, then at graduation a girl confesses to you under the legendary tree.
+  - chat: [green_glowstick_yr2, 'evening senpai! whats the legendary tree?']
+  - say: Year-Two, evening! It's this old tree on the school grounds. There's a story about it.
+  - say: Get confessed to under it on graduation day, and that couple stays happy forever.
+  - chat: [green_glowstick_yr2, 'three years for one last day']
+  - say: Exactly! Three years, waiting for one last line. That gets me every time.
+  - say: Me? Nine years of only otsukaresama, like, thanks for your hard work. Even under that tree.
+  - chat: [end_of_line_here, 'thats rude at a graduation']
+  - say: {face: shy, text: 'Otsukaresama at a graduation is rude! I know! I know, but it just comes out!'}
+  - chat: [first_time_here, 'who was your fave?']
+  - say: My fave? Saki Nijino! The sports club manager. All about guts, cheering on people who try hard.
+  - say: Nerd talk! The main heroine, Shiori Fujisaki, put out a CD in ninety-six under her character name!
+  - chat: [green_glowstick_yr2, 'a character debuted with a CD?']
+  - say: Yep, the character debuted! No voice actress name up front. It came out as Shiori.
+  - say: In my discovery diary, that one's filed under virtual idols. Way before VTubers.
+  - chat: [harumi_survivor, 'here comes the discovery diary']
+  - say: Don't here-comes me! There's a ninety-six page and everything! My handwriting's just bad!
+- title: Two futons in Atami
+  beats:
+  - chat: [ohio_fansub_crew, 'hi! is this the dating sim talk?']
+  - say: Ohio, hiii! Dating sim talk, yes! Over there people call romance games that, right?
+  - chat: [ohio_fansub_crew, 'sometimes. if its mostly reading, visual novel']
+  - say: Mostly reading, visual novel. Okay, that fits some of these way better!
+  - say: Back to LovePlus. The twenty-ten sequel, LovePlus Plus, had an overnight trip to Atami with her.
+  - chat: [ohio_fansub_crew, 'atami is in hokkaido?']
+  - say: Atami, Hokkaido? No no no! Shizuoka! It's a sea and hot spring town, a quick train ride from Tokyo!
+  - say: And the real Atami teamed up. From July tenth, twenty-ten, the whole town ran a campaign.
+  - say: I went on day one. I heard it was a town of hills, so I had to go.
+  - chat: [end_of_line_here, 'hills again']
+  - say: Don't hills-again me! The game's inn, Oonoya, is real. A sign out front said Welcome, Towano High School Party.
+  - chat: [green_glowstick_yr2, 'towano high?']
+  - say: Towano High is the school in the game. And the real inn welcomed it like a school group checking in!
+  - say: And get this. If you stayed at Oonoya, you could ask them to lay out two futons. One for her.
+  - chat: [green_glowstick_yr2, 'thats so sweet']
+  - say: Right?! The whole town acted like your girlfriend was really there. My favorite story ever.
+  - chat: [end_of_line_here, 'two futons, do you pay for two?']
+  - say: Pay for two? Didn't check! I only counted futons! Of course you'd ask about the price!
+  - say: There was a stamp rally around town too, six stamps. And I got five.
+  - chat: [harumi_survivor, 'one short']
+  - say: Don't say one short! I was measuring the stone stairs at Izusan Shrine and ran out of time.
+  - chat: [end_of_line_here, 'you have never finished a stamp rally']
+  - say: {face: shy, text: 'Never finished one, yeah, you told me that before. Still haven''t.'}
+- title: Oh right, souvenirs
+  beats:
+  - chat: [con_haul_victim, 'what souvenir did you get in atami?']
+  - say: My Atami souvenir? A limited keychain! These days I'd totally get a local acrylic stand.
+  - say: My souvenir rule is local acrylic stands. A character holding that town's famous food or whatever.
+  - chat: [con_haul_victim, 'my desk has no room left for acrylic stands']
+  - say: No room left! Same! Mine are lined up in front of my monitor. I can't see the bottom of the screen.
+- title: Nakige, and the other word
+  beats:
+  - chat: [not_my_headcanon, 'loveplus is cute but what about nakige']
+  - say: Nakige! Yes! Headcanon, let's make today a no-fighting day.
+  - chat: [first_time_here, 'nakige?']
+  - say: Nakige means crying games. Story-reading bishoujo games built to make you cry.
+  - say: The famous ones are Kanon and AIR, from a brand called Key. Nineteen ninety-nine and two thousand.
+  - chat: [not_my_headcanon, 'making you cry doesnt make it a masterpiece']
+  - say: I never said crying makes it a masterpiece! I just love crying! I'm talking store shelves.
+  - say: Apart from the crying kind, the ones more about steamy scenes than story are called nukige.
+  - chat: [end_of_line_here, 'she said it']
+  - say: {face: shy, text: 'Yes I said it! I didn''t name it! It''s a genre name! The store shelves literally say it!'}
+  - chat: [first_time_here, 'which side are you on as a succubus?']
+  - say: Which side as a succubus? Knew it! If I played those, it'd be a work field trip!
+  - say: The crying side! I'm talking about the crying side! Back on track!
+- title: What ports add
+  beats:
+  - say: Kanon was eighteen-plus in ninety-nine. Next January, a PC version without adult scenes came out.
+  - chat: [ohio_fansub_crew, 'the dreamcast one!']
+  - say: Yes, the Dreamcast! The September two thousand port gave it voices! The PC one had none.
+  - chat: [green_glowstick_yr2, 'no voices at all?']
+  - say: None! All text. With the port everybody talks. Except the main guy. He still doesn't.
+  - chat: [green_glowstick_yr2, 'main guy with no voice is kinda sad']
+  - say: Sad? I actually love it! The main guy is you. You get to read him in your own voice.
+  - say: The first time I heard the voices, they were nothing like the ones in my head. I paused the game.
+  - chat: [harumi_survivor, 'i remember watching the anime']
+  - say: Harumi, you watched it! Toei animated Kanon in oh-two, then Kyoto Animation did it again in oh-six!
+  - say: KyoAni did AIR in oh-five. I watched the finale kneeling, then my legs were too numb to stand.
+  - chat: [ohio_fansub_crew, 'TORI NO UTA!']
+  - say: Tori no Uta! AIR's theme! Fans call it the national anthem. Why? I've heard a few explanations.
+  - say: My friend stands up when she queues it at karaoke. I stand too. Audience part's my job. Structure? Ella.
+- title: From doujin to Fate
+  beats:
+  - chat: [harumi_survivor, 'tsukihime came out at comiket didnt it']
+  - say: Great setup, Harumi! Tsukihime was a doujin game! The full version dropped at C fifty-nine.
+  - say: That circle was TYPE-MOON. They went pro, and their first commercial game was Fate stay night.
+  - chat: [green_glowstick_yr2, 'fate! i got in through FGO']
+  - say: Through FGO! Your generation, Year-Two. Folks selling doujin games at Comiket got all the way there.
+  - say: I lined up for Tsukihime at C fifty-nine, December two thousand. It's in my discovery diary.
+  - chat: [harumi_survivor, 'i was there too']
+  - say: You were there too, Harumi?! For real?! Which line? What time?
+  - chat: [harumi_survivor, 'the catalog is at my parents house']
+  - say: {face: laugh, text: 'The catalog is at your parents'' house! There it is, the parents'' house! Another draw!'}
+  - say: Fate came out January oh-four, eighteen-plus on PC too. A PS2 one minus those scenes came in oh-seven.
+  - say: Okay, nerd talk. Fate has this phrase, mana transfer.
+  - chat: [first_time_here, 'mana transfer?']
+  - say: Mana transfer, in the story, is when you share your magic with someone who's running low.
+  - say: And in the PC version, that's the reason given for, um, those scenes. And that's it! No details!
+  - chat: [end_of_line_here, 'those scenes']
+  - say: Don't repeat those scenes! Anyway, otaku started calling everything mana transfer. Instant meme.
+  - chat: [not_my_headcanon, 'using mana transfer as the excuse in fanfic is lazy']
+  - say: {face: laugh, text: 'Lazy! The fic writer has spoken! So you''re saying a reason doesn''t let you write anything?!'}
+  - chat: [ohio_fansub_crew, 'what about succubus mana transfer?']
+  - say: Do not say mana transfer to a succubus! That's literally my day job!
+  - say: If I did it, they'd be bedridden for three days! Heh, I said it. That was kinda good, right?
+- title: Literature, art, life
+  beats:
+  - chat: [ohio_fansub_crew, 'fate got an english release on steam last year']
+  - say: Not last year, August twenty twenty-four! Switch and Steam, in English. Built on the Vita version.
+  - chat: [ohio_fansub_crew, 'oh 2024. my bad']
+  - say: It's fine, I'm off by a year all the time! Even with my own age!
+  - chat: [not_my_headcanon, 'fate is literature, air is art']
+  - chat: [green_glowstick_yr2, 'CLANNAD IS LIFE']
+  - say: There it is! Fate is literature, AIR is art, Clannad is life! The old internet saying!
+  - say: Clannad was Key's third game, twenty-oh-four. That one was all-ages from the start.
+  - chat: [ohio_fansub_crew, 'clannad got english on steam in 2015. it was crowdfunded']
+  - say: Right, the English version was crowdfunded! A hundred forty grand goal, hit in under a day.
+  - chat: [ohio_fansub_crew, 'i backed it']
+  - say: You backed it?! So Ohio invested in life.
+- title: A girlfriend you can't see for a month
+  beats:
+  - chat: [green_glowstick_yr2, 'wasnt there a phone loveplus too?']
+  - say: There was a phone one! LovePlus Every. It launched October thirty-first, twenty nineteen.
+  - say: But two days in, huge maintenance. You couldn't see your girlfriend until December eleventh.
+  - chat: [first_time_here, 'a girlfriend you cant see for over a month']
+  - say: Over a month without seeing her! That's long distance!
+  - say: And then the service ended August fifth the next year. It didn't even last a year.
+  - say: But, um. I also stopped visiting my DS girlfriend after four days.
+  - chat: [end_of_line_here, 'same as your login streaks']
+  - say: Same as my login streaks, yes, four days! Everything I can't keep up with dies at four days!
+  - say: So that DS from today, I'm scared to turn it on. Sixteen years, since the Atami year, no visits.
+  - chat: [not_my_headcanon, 'she might not be waiting either']
+  - say: She might not be waiting?! Stop! That's even scarier!
+- title: Where did you get in?
+  beats:
+  - say: What about you all? Galge, bishoujo games, where did you first hear about them?
+  - ask:
+      q: Galge and bishoujo games, where did you first hear about them?
+      options:
+      - c: From anime
+        r:
+        - '{name}, from anime! So many people saw the KyoAni ones.'
+      - c: From games
+        r:
+        - '{name}, from the games! Save the how-to-play talk for Lise''s stream!'
+      - c: From Comiket or doujin
+        r:
+        - '{name}, from Comiket! My people! We might have stood in the same line!'
+      - c: Never got into it
+        r:
+        - '{name} never got into it. That''s totally fine! If today made you a little curious, I''m happy.'
+      npc:
+      - [harumi_survivor, 2]
+      - [green_glowstick_yr2, 1]
+      - [not_my_headcanon, 2]
+      - [ohio_fansub_crew, 0]
+      - [end_of_line_here, 3]
+  - say: A bunch of you came from Comiket! That's my expedition squad!
+  - chat: [end_of_line_here, 'never got into it. i did carry the boxes at inventory']
+  - say: Never got into it, but carried the boxes! That's the most on-site way to be involved!
+- title: She says your name
+  beats:
+  - chat: [green_glowstick_yr2, 'tokimemo came out on switch last year right?']
+  - say: Yes, May eighth, twenty twenty-five! They cleaned up the ninety-five PlayStation version for Switch.
+  - say: And get this, if you register your name, the characters say it out loud.
+  - chat: [first_time_here, 'did she say your name?']
+  - say: Did she say my name? Not yet. New names need online setup. Bought it a year and a half ago. Not done.
+  - chat: [end_of_line_here, 'same as your hotel bookings']
+  - say: {face: shy, text: 'Same as my hotel bookings. It is the same. It''s sitting there on hold.'}
+  - chat: [green_glowstick_yr2, 'senpai a game is gonna say your name before your oshi does']
+  - say: A game before my oshi?! Year-Two, that one hit the hardest today!
+  - say: But, like, Shiori saying it before Minami does? That might be kinda nice.
+  - chat: [harumi_survivor, 'is it nice']
+  - say: Is it nice? No, Harumi, it's not! It's not, but I want to hear it!
+- title: Wrap-up
+  beats:
+  - say: Okay, that's it for today! I'll charge the DS after stream.
+  - chat: [end_of_line_here, 'do you have the charger?']
+  - say: The charger. It's somewhere in the closet. Probably. Okay, bye everyone! Come back soon!

@@ -1,0 +1,185 @@
+# Vespa 004 (English): back when American fans subtitled anime themselves. Translated from src/episodes/vespa/004.yaml.
+title: Back When American Fans Subtitled Anime Themselves
+parts:
+- title: It's morning over there
+  beats:
+  - say: Good evening! So today I kinda wanna talk about overseas stuff.
+  - chat: [ohio_fansub_crew, 'good morning']
+  - say: Ohio, good morning! Oh, it's morning for you.
+  - chat: [ohio_fansub_crew, '6am. before work']
+  - say: Six in the morning, before work, and you came?! I'm so happy. Don't be late, okay?
+  - chat: [first_time_here, 'first time. is that person from overseas?']
+  - say: Welcome! From overseas? Yep, this person lives in Ohio, in America.
+  - say: Learned Japanese from Japanese anime tapes back in the nineties.
+  - chat: [ohio_fansub_crew, 'first phrase i learned was nigecha dame da']
+  - say: {face: laugh, text: 'The first phrase was nigecha dame da. I mustn''t run away. The Evangelion line. I laugh every single time.'}
+  - say: Before even hello! When are you ever gonna use that in Japan?
+- title: The people who subtitled tapes
+  beats:
+  - chat: [first_time_here, 'whats a fansub crew']
+  - say: What's a fansub crew? Let me start there. Back in the day you basically couldn't watch Japanese anime in English in America.
+  - say: So fans did the subtitles themselves. That's called a fansub.
+  - chat: [ohio_fansub_crew, 'fan subtitles. fan sub']
+  - say: Yes yes, fan sub. And what came before that is even more fun.
+  - say: They say the first anime club in America started in nineteen seventy-seven.
+  - say: Tapes would come over from Japan, and everyone would dub them and pass them around.
+  - chat: [first_time_here, 'dub?']
+  - say: Dubbing here means copying tape to tape. Like a copy. And then it's a copy of a copy of a copy.
+  - chat: [ohio_fansub_crew, 'some tapes were copied like 15 or 20 times']
+  - chat: [end_of_line_here, 'can u even see anything']
+  - chat: [ohio_fansub_crew, 'mostly snow']
+  - say: {face: laugh, text: 'Copied twenty times, can you even see it, and the answer is mostly snow! They watched a screen full of static!'}
+  - say: But I get it. If anything's moving, you wanna watch.
+  - say: And no subtitles, right? So they'd keep a booklet with the lines translated to English next to them and read along.
+  - chat: [ohio_fansub_crew, 'they sold for 2 or 3 bucks']
+  - say: Those booklets went for two or three dollars. And you go booklet, TV, booklet, TV. My neck would break.
+  - chat: [harumi_survivor, 'we did something like that in japan too. passed around recordings']
+  - say: Passing recordings around in Japan too? Totally! Even in the Harumi days you guys passed tapes around.
+  - chat: [harumi_survivor, 'record on EP mode and the picture is trash']
+  - say: EP mode, trash picture! Extended play! Oh my god, nostalgia!
+  - chat: [first_time_here, 'dont know EP mode']
+  - say: First-timer doesn't know EP mode. VHS had an extended play setting to record three times as long. But the picture got blurry.
+  - say: I still have forty tapes of late-night anime recorded on EP mode, in a cardboard box. I don't even own a VCR anymore.
+  - say: Every time I try to toss them, I see my own handwriting on the labels and put them back.
+- title: Speaking of which, morning coffee
+  beats:
+  - chat: [ohio_fansub_crew, 'watching with coffee rn. dunkin']
+  - say: Coffee, Dunkin! The donut place! So that's the morning spot over there?
+  - chat: [ohio_fansub_crew, 'theres one near work. cheaper than starbucks']
+  - say: Near work and cheaper than Starbucks. Me, I'm team Starbucks.
+  - chat: [first_time_here, 'what do u order']
+  - say: What do I order? A latte. At most I swap to oat milk. I don't really do sweet stuff.
+  - say: What I like about Starbucks is it tastes the same on trips. If I'm lost in some random town, I can always duck in.
+  - say: Basic, right? But. When I'm traveling and there's a Frappuccino that's only in that region, I get it.
+  - chat: [end_of_line_here, 'u said u dont do sweet']
+  - say: I said I don't do sweet? That's different! If it says region-exclusive, that's different!
+  - chat: [not_my_headcanon, 'youre just a sucker for limited stuff']
+  - say: {face: shy, text: 'I''m just a sucker for limited stuff... I am. The word limited. I''m such a sucker.'}
+  - say: One time I got the Miyagi-exclusive one, and while I was taking photos all the ice melted.
+  - say: The photos took fifteen minutes. I couldn't get the angle right. Same habit as measuring hills.
+  - chat: [harumi_survivor, 'i drink house blend at a kissaten']
+  - say: Harumi does the house blend at a kissaten. Old-school coffee shop. That tracks! The kind with newspapers lying around, right?
+  - say: At home I do lots of milk, no sugar. Without this in the morning, I have no voice.
+  - chat: [end_of_line_here, 'some days u dont need a voice']
+  - say: Some days I don't need a voice?! Rude!
+- title: The first subtitled tape
+  beats:
+  - chat: [ohio_fansub_crew, 'what about the first fansubbed tape?']
+  - say: The first subtitled tape! Yes yes, exactly! They say the first tape with subtitles was nineteen eighty-six.
+  - say: An episode of Lupin the Third, with subtitles added on a computer.
+  - chat: [ohio_fansub_crew, 'took over 100 hours']
+  - say: Over a hundred hours?! For one episode, like thirty minutes of anime. You'd have to really love it.
+  - chat: [ohio_fansub_crew, 'they put not for sale rent or auction at the start of the tape']
+  - say: Not for sale, rent, or auction, I love that! That was right on the tape, right?
+  - say: The rent part means, don't put it in a rental shop and charge for it. Passing it to a friend for free was fine.
+  - chat: [first_time_here, 'why would they write that']
+  - chat: [ohio_fansub_crew, 'there were bootleggers selling them']
+  - say: Why write that? Bootleggers. Fans were passing tapes around for free, and some people just started selling them.
+  - say: So getting mad at scalpers was a thing in old-school America too, huh.
+- title: Team forgive, team never
+  beats:
+  - chat: [harumi_survivor, 'not gonna talk about robotech?']
+  - say: Robotech? Harumi, you're bringing that up?! There's gonna be a fight!
+  - chat: [first_time_here, 'robotech?']
+  - say: Robotech was an anime on American TV in nineteen eighty-five. Eighty-five episodes total.
+  - say: But inside, it's three Japanese anime. Macross, Southern Cross, and Mospeada.
+  - chat: [first_time_here, 'three shows into one?']
+  - say: Three into one! Three separate shows stitched together to make one story.
+  - chat: [ohio_fansub_crew, 'that was a crime']
+  - say: That was a crime, there it is, team never forgive!
+  - say: Me, I'm team forgive. It's rough, but that's how Macross reached American kids.
+  - say: I watched the English dub once too. It's Macross but all the names are different, I was laughing the whole time.
+  - chat: [ohio_fansub_crew, 'minmeis story turns into a different story halfway']
+  - say: Minmei's story turns into a different story halfway, it does! It does, but kids watched it!
+  - chat: [ohio_fansub_crew, 'i watched it. loved it']
+  - say: {face: surprised, text: 'You watched it and loved it?! Then you forgive it!'}
+  - chat: [ohio_fansub_crew, 'love it but never forgive']
+  - say: Love it but never forgive! Okay, I get that. Dang, I get it.
+  - chat: [not_my_headcanon, 'same']
+  - say: Same? Headcanon's on that side too?!
+  - chat: [not_my_headcanon, 'i write fanfic so im strict about how things get stitched together']
+  - say: You write fanfic, so you're strict about the stitching. Right, from a writer's point of view that makes sense.
+  - chat: [first_time_here, 'who stitched it']
+  - say: Who stitched it? A company called Harmony Gold, and the guy who put the story together was Carl Macek.
+  - say: Among fans over there he's famous. In a good way and a bad way.
+  - chat: [harumi_survivor, 'macross had low ratings at first in japan too']
+  - say: Macross had low ratings in Japan at first too, yes! It aired early Sunday afternoon, around six percent on average.
+  - say: But on Yamagata TV it aired Wednesday evenings, and there's a recorded number of thirty-six percent.
+  - chat: [first_time_here, '6x?!']
+  - say: Six times?! Wait wait, don't compare those! For Yamagata, I still haven't checked if that's the average or the best episode.
+  - say: Let's just stop at, it was super watched in Yamagata!
+  - chat: [ohio_fansub_crew, 'what do you like most about macross vespa?']
+  - say: What do I like most? The movie! Do You Remember Love, nineteen eighty-four. It's not a TV recap, every frame was redrawn.
+  - say: I saw Minmei in the theater and had my first crush.
+  - chat: [end_of_line_here, 'shes not a person']
+  - say: She's not a person? Doesn't matter! I hummed the song the whole train ride home.
+  - chat: [ohio_fansub_crew, 'in robotech hikaru is rick hunter']
+  - say: {face: annoyed, text: 'Yes! Hikaru is Rick Hunter! That one I don''t forgive either!'}
+  - chat: [not_my_headcanon, 'team forgive is wobbling']
+  - say: Team forgive is wobbling? I'm not. Okay, maybe a little wobble.
+- title: The big American con
+  beats:
+  - chat: [first_time_here, 'is there something like comiket in america?']
+  - say: Something like Comiket in America, yes! It's called Anime Expo. Los Angeles, every summer.
+  - say: The first one was nineteen ninety-two, in a hotel, around seventeen hundred and fifty people.
+  - chat: [ohio_fansub_crew, 'my brother went']
+  - say: Your brother went?! To the first one?! Are there photos?
+  - chat: [ohio_fansub_crew, 'at my parents house']
+  - chat: [harumi_survivor, 'thats what parents houses are for']
+  - say: {face: laugh, text: 'At my parents house, and that''s what parents houses are for! All old stuff lives at your parents'' house!'}
+  - chat: [ohio_fansub_crew, '2025 was 410k']
+  - say: Four hundred ten thousand in twenty twenty-five?! It grew so much! Oh, but that's turnstile count, right?
+  - chat: [first_time_here, 'turnstile count?']
+  - say: Turnstile count means if the same person comes two days, they count as two. So it's not four hundred ten thousand different people.
+  - chat: [ohio_fansub_crew, 'they count by people through the entrance']
+  - say: Counting people through the entrance. Comiket counts the same way, so it's apples to apples.
+  - say: I look at the cosplay photos from over there every year. Tons of people with spears! My people!
+  - chat: [ohio_fansub_crew, 'come next year vespa']
+  - say: Me, next year? I want to! I really want to, but.
+  - chat: [end_of_line_here, 'passport']
+  - say: {face: shy, text: 'My passport... expired. It expired in twenty twenty-four and I didn''t notice until this year.'}
+  - say: I'll renew it! Starting from taking the photo, but!
+  - say: The old photo's from ten years ago. My hair's so different I didn't even recognize myself.
+- title: Wanna go to a con overseas?
+  beats:
+  - say: What about you guys? Would you wanna go to an anime con overseas?
+  - ask:
+      q: Would you want to go to an anime con overseas?
+      options:
+      - c: I want to
+        r:
+        - '{name} wants to go! Let''s go get passports together!'
+        - Apparently the cosplay over there is next level. I wanna see it.
+      - c: I've been
+        r:
+        - '{name}, you''ve been?! Where? Tell me later!'
+      - c: Japan's cons are enough
+        r:
+        - '{name} says Japan is plenty. Fair, you can''t even hit all the ones here.'
+        - And it's nice when people from overseas come over here too.
+      npc:
+      - [harumi_survivor, 2]
+      - [ohio_fansub_crew, 1]
+      - [first_time_here, 0]
+      - [green_glowstick_yr2, 0]
+      - [end_of_line_here, 2]
+  - say: Want-to-go and Japan-is-plenty are about even!
+  - chat: [harumi_survivor, 'planes are bad for my back']
+  - say: Planes are bad for your back? Right, Harumi's back. Still three pain patches?
+  - chat: [harumi_survivor, 'down to two']
+  - say: Down to two! Yay!
+  - chat: [end_of_line_here, 'im curious about the hourly for line staff over there']
+  - say: You're curious about the hourly for line staff over there?! That's your reason to go?!
+- title: Wrapping up
+  beats:
+  - chat: [ohio_fansub_crew, 'gotta head to work soon']
+  - say: Heading to work? Already? Have a good one! Don't spill your Dunkin.
+  - chat: [ohio_fansub_crew, 'already drank it']
+  - say: Already drank it?! Speedrun!
+  - chat: [not_my_headcanon, 'next time we fight about the rest of robotech']
+  - say: Next time we fight about the rest of Robotech? Fine. I'm staying team forgive.
+  - say: Let's do it on a day Ohio isn't about to go to work. I feel like I'd lose if they're watching the clock.
+  - say: Okay, tomorrow I'm getting my passport photo taken. After a latte at Starbucks.
+  - chat: [end_of_line_here, 'drink it before the photo and youll have a milk mustache']
+  - say: {face: surprised, text: 'Drink it before the photo and get a milk mustache, that''s real! Drink after the photo!'}
+  - say: "Okay, that's it for today! Good work, everybody! Otsukaresama!"

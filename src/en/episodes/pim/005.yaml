@@ -1,0 +1,195 @@
+title: Daycare is supposed to be free, so why did I get a lunch bill? (Plus child allowance and the hometown tax pork)
+family: true
+# 英訳（2026-10-27）。日本語は src/episodes/pim/005.yaml。拍の並びは日本語とそろえる。税の数字は年を言う。銘柄は言わない。
+parts:
+- title: オープニング：郵便受けの紙
+  beats:
+  - say: It's Pim! Hello!
+  - say: I just checked the mailbox, and there was a paper from daycare.
+  - chat: [leaving_work_on_time, "hi. what kind of paper"]
+  - say: Leaving work on time, you're marked present! What kind of paper? A bill. For lunches.
+  - chat: [oldest_in_8th_grade, "ahh, the side dish fee"]
+  - say: Senpai, you're marked present. The side dish fee, yes, that one.
+  - chat: [first_time_here, "first time. isnt daycare free now?"]
+  - say: First time here, welcome! Isn't daycare free now? That's what I thought too!
+  - say: Since October twenty-nineteen, daycare fees in Japan are free for ages three to five.
+  - say: I was like, yay! And then the paper came. And it said, side dish fee.
+  - chat: [first_time_here, "side dish fee?"]
+  - say: The side dish fee is, roughly, the cost of the food that goes with the rice. That part was never free.
+  - chat: [oldest_in_8th_grade, "my oldest was that exact age that year, got the same paper"]
+  - say: Your oldest was that exact age, same paper! The first time I saw it, I thought it was a mistake.
+  - chat: [oldest_in_8th_grade, "everyone calls the daycare once"]
+  - say: Everyone calls once... I did. I called.
+  - say: I said, um, I heard it was free? So embarrassing.
+  - chat: [gacha_broke_again, "i get wanting to say it"]
+  - say: You get it? The staff sounded very used to it. I bet a bunch of parents call every year.
+- title: 本題っぽいもの：児童手当と家計簿
+  beats:
+  - chat: [tax_office_crunch, "hi. are we talking money?"]
+  - say: {face: surprised, text: 'Oh, tax office crunch, you''re marked present. We are talking money... You came?'}
+  - chat: [tax_office_crunch, "am i not allowed"]
+  - say: You're allowed! I just get a little nervous when you show up during money talk!
+  - say: Tax office crunch works at a tax accountant's office, and always asks me which year.
+  - chat: [tax_office_crunch, "which year are we talking?"]
+  - say: See, which year? October twenty-nineteen. The free daycare thing.
+  - chat: [tax_office_crunch, "acceptable"]
+  - say: Acceptable, phew... Then let's do child allowance while we're here. That's the monthly money the government pays per kid.
+  - say: It changed in October twenty twenty-four. The income limit is gone, and it goes until the high school years now.
+  - say: And the payments are six times a year now, every even month.
+  - chat: [tax_office_crunch, "thirty thousand a month from the third kid"]
+  - say: Thirty thousand yen a month from the third kid on, yes. We only have one, so that part doesn't apply to us.
+  - say: Since the payment months changed, I rewrote my whole household ledger. Took two hours.
+  - chat: [leaving_work_on_time, "you keep a ledger?"]
+  - say: I keep a ledger. I haven't skipped a single day since we got married.
+  - chat: [first_time_here, "an app?"]
+  - say: Not an app, a spreadsheet on the family computer. The card statements import automatically.
+  - say: Once the sheet broke, and Nox fixed it for me. The formulas.
+  - chat: [gacha_broke_again, "you asked nox?"]
+  - say: I asked Nox! I brought karaage three times as a thank-you. Apparently she loves the chicken breast ones.
+  - chat: [husband_who_helps, "hi. what do you use the child allowance for?"]
+  - say: Husband who helps, hello. The child allowance, all of it goes into my daughter's savings account.
+  - chat: [oldest_in_8th_grade, "good for you. ours melted into living costs at some point"]
+  - say: Melted into living costs... It melts?
+  - chat: [oldest_in_8th_grade, "it melted with kid number three"]
+  - say: With number three. With three, of course it melts... That can't be helped.
+  - chat: [tax_office_crunch, "do you invest?"]
+  - say: A little, with the new NISA. That's a tax-free investment account, the new version started in twenty twenty-four.
+  - chat: [gacha_broke_again, "what are you buying?"]
+  - say: What I'm buying, I don't say. I don't recommend anything, and I don't say up or down.
+  - chat: [gacha_broke_again, "stingy"]
+  - say: Call me stingy, it's fine. If I told you, gacha broke again, it would all go into gacha.
+  - chat: [gacha_broke_again, "not gonna deny it"]
+  - say: Not gonna deny it... So on August fifth, twenty twenty-four, the Nikkei dropped more than four thousand yen in one day, remember?
+  - say: That day, my husband asked me, should we sell?
+  - chat: [tax_office_crunch, "and?"]
+  - say: And what did I do? Nothing. I even wrote did nothing in the ledger.
+  - chat: [tax_office_crunch, "doing nothing is the hardest part"]
+  - say: Doing nothing is the hardest part, so true. My husband opened the app three times that day.
+- title: 脇道：コーヒー屋さん
+  beats:
+  - chat: [leaving_work_on_time, "do you drink coffee while doing the ledger?"]
+  - say: Coffee for the ledger? At home I drink green tea. I don't usually drink coffee.
+  - chat: [leaving_work_on_time, "surprising"]
+  - say: Surprising? But I do drink it at Komeda. With milk and sugar. Komeda is a coffee chain, think cozy diner booths.
+  - chat: [night_shift_survivor, "komeda is nice"]
+  - say: Komeda is so nice! I love their morning service.
+  - say: You order one drink, and you get toast and a boiled egg with it! Free!
+  - chat: [first_time_here, "do you actually come out ahead?"]
+  - say: {face: smug, text: 'Do I come out ahead? I do. Probably. I have not done the math.'}
+  - say: Sometimes on days I drop my daughter at daycare, I go alone. About once a month.
+  - chat: [night_shift_survivor, "solo komeda sounds nice"]
+  - say: Solo Komeda is the best. I peel my boiled egg next to someone reading the newspaper.
+  - say: If the shell comes off in one smooth piece, it's a good day.
+  - chat: [gacha_broke_again, "and if it doesnt?"]
+  - say: If it doesn't? I gather all the shell bits in the corner of the plate and pretend I didn't see.
+  - chat: [first_time_here, "do you not go to starbucks?"]
+  - say: Starbucks, I almost never go. The names are so long, I'm tired before I even order.
+  - chat: [husband_who_helps, "the ones that sound like spells"]
+  - say: The ones that sound like spells, yes! I restarted my order like three times in front of the menu.
+  - chat: [first_time_here, "so what did you get"]
+  - say: What did I get in the end? I said, the one at the top. The barista was so nice about it.
+  - ask:
+      q: Favorite coffee place?
+      options:
+      - c: Starbucks
+        r:
+        - "Starbucks!"
+        - '{name}, can you order smoothly? If there''s a trick, teach me!'
+      - c: Komeda
+        r:
+        - "Komeda!"
+        - '{name}, my people! Have you done the morning set?'
+      - c: Doutor or Tully's
+        r:
+        - "Doutor or Tully's, okay."
+        - '{name}, both are near every station, right? What do you order?'
+      - c: "An independent café"
+        r:
+        - "An independent cafe!"
+        - '{name}, that''s so nice. I kind of want to know what it''s like.'
+      npc: [[night_shift_survivor, 1], [first_time_here, 0], [leaving_work_on_time, 2], [gacha_broke_again, 1]]
+  - say: Lots of Komeda! So many of my people!
+- title: また飛ぶ：雑費の中身
+  beats:
+  - chat: [night_shift_survivor, "whats in the misc category of your ledger"]
+  - say: What's in misc? Wait, why are you asking that now?
+  - chat: [oldest_in_8th_grade, "you said before it was seventy percent sweets"]
+  - say: {face: annoyed, text: 'You said before it was seventy percent sweets... Senpai, you remember things you do not need to remember.'}
+  - say: "...Yes. Convenience store sweets. In summer it's almost all Halo-Halo from Ministop. That's a store chain, and Halo-Halo is their shaved ice!"
+  - chat: [first_time_here, "you like halo-halo"]
+  - say: I love Halo-Halo! I found out it's been around since nineteen ninety-five, and I told my husband.
+  - say: It has history, so this is not miscellaneous.
+  - chat: [gacha_broke_again, "then what category is it"]
+  - say: Then what category, he asked me that too. I couldn't answer, so the next month it went in misc again.
+  - chat: [husband_who_helps, "my wifes other category is sweets too"]
+  - say: Your wife's other category is sweets too. I knew it. Everyone hides it there.
+  - chat: [tax_office_crunch, "do you know the total?"]
+  - say: The total... I don't know. I don't want to look.
+  - chat: [tax_office_crunch, "thats a bit much"]
+  - say: That's a bit much, I know. I know! But misc is the one thing I want to not look at.
+- title: 戻る：ふるさと納税の豚
+  beats:
+  - say: Um... what were we talking about? From the lunch bill, how far did we get?
+  - chat: [tax_office_crunch, "household money. what about furusato nozei? the freezer one"]
+  - say: {face: surprised, text: 'The furusato nozei freezer one? Wait, how do you know about that?'}
+  - chat: [tax_office_crunch, "you told us before"]
+  - say: I told you before... did I? I did.
+  - say: "Furusato nozei, the hometown tax! Donate to a town, get a thank-you gift, pay less tax. I got pork from three towns, and it all came the same week!"
+  - chat: [first_time_here, "freezer packed"]
+  - say: Freezer packed, buried in pork. There was no room for ice cream.
+  - chat: [chinese_diner_heir, "we would've taken the pork"]
+  - say: Chinese diner heir, you're marked present! You'd have taken the pork? Tell me sooner!
+  - say: Since then I stagger the months they arrive.
+  - say: And this year. The chicken I ordered in September and the pork I ordered in December both arrived in March.
+  - chat: [gacha_broke_again, "so much for staggering lol"]
+  - say: So much for staggering, right? They lined up on their end.
+  - chat: [tax_office_crunch, "did you send the one stop form?"]
+  - say: The one-stop form, I sent it. On January ninth.
+  - chat: [tax_office_crunch, "cutting it close. it has to arrive by jan 10 the next year"]
+  - chat: [first_time_here, "whats one stop"]
+  - say: Cutting it close, yes. And what's one-stop? It's a way to handle your hometown tax donations without filing a tax return.
+  - say: But you can only use it if you didn't need to file a return in the first place, and you donated to five towns or fewer.
+  - chat: [tax_office_crunch, "if you file for something like medical deductions, the exemption is void. you put the donations on the return"]
+  - say: If you file for medical deductions or something, you can't use it. Neither of us files, so we use the exemption.
+  - say: And the form has to arrive by January tenth.
+  - say: I filled it out in December, felt relieved, and put it in a drawer.
+  - chat: [oldest_in_8th_grade, "fill it out and feel done"]
+  - say: Fill it out and feel done, exactly. On the ninth, I ran to the post office. Still smelling like fried chicken.
+  - chat: [tax_office_crunch, "if you miss it you file a return"]
+  - say: If I miss it, I file a return. Yes. This year I'm sending it in December.
+- title: 思い出した：十二月のシフト
+  beats:
+  - say: Oh, December reminds me. My part-time shifts.
+  - chat: [tax_office_crunch, "the income wall?"]
+  - say: "The income wall, yes. Part-timers stop at a certain yearly income, or they lose dependent status. Every December my manager's face clouds over."
+  - say: Everyone cuts their December shifts so they don't go over the wall.
+  - chat: [chinese_diner_heir, "part timers dropping at year end happens at our shop too"]
+  - say: At your shop too... The month the shop needs people most, they disappear.
+  - chat: [tax_office_crunch, "but it changed from the 2025 tax year"]
+  - say: It changed from twenty twenty-five, right. The line for staying a dependent went from one point oh three million yen to one point two three million.
+  - chat: [tax_office_crunch, "for your own income tax, 1.6 million for 2025"]
+  - say: For your own income tax it's up to one point six million, yes yes. But the one point three million wall for social insurance is still there, right?
+  - chat: [tax_office_crunch, "correct. and 2026 changed again so be careful"]
+  - say: {face: annoyed, text: 'Correct! But twenty twenty-six changed again? If it changes every year, I cannot keep up!'}
+  - chat: [tax_office_crunch, "it changes every year. thats why you say the year"]
+  - say: It changes every year, so you say the year. That's why you always ask which year. I finally get it.
+  - say: Last year I told my manager, I can work December, and she looked like she was going to cry.
+  - chat: [leaving_work_on_time, "she was happy"]
+  - say: She was happy! But I'd messed up my math once.
+  - chat: [tax_office_crunch, "what"]
+  - say: What? I counted commuting money as income. I walk to work.
+  - chat: [tax_office_crunch, "if you walk theres no commuting allowance"]
+  - say: If you walk, there's no commuting allowance. I'd made a commuting column in my spreadsheet, and I just wanted to put something in it.
+  - chat: [gacha_broke_again, "cant stand an empty cell"]
+  - say: Can't stand an empty cell, that's me. Blanks make me restless. Anyway, I fixed it, so it's fine.
+- title: 締め
+  beats:
+  - chat: [tax_office_crunch, "heading back to work"]
+  - say: Heading back to work, okay. Tax office crunch, thank you so much.
+  - chat: [tax_office_crunch, "i cant come in feb and march, so ask before then"]
+  - say: You can't come in February and March, it's crunch season. Good luck!
+  - chat: [oldest_in_8th_grade, "pay that lunch bill"]
+  - say: I'll pay the lunch bill. I'll put the money in the account tomorrow.
+  - chat: [first_time_here, "going to komeda today"]
+  - say: First timer, Komeda today! Have fun! The morning set is only in the morning, so be careful!
+  - say: Okay, that's it for today. Pim, signing off.

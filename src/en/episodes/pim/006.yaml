@@ -1,0 +1,215 @@
+title: Our couple nights are Tuesday and Friday (so why did my husband come home on a Tuesday reeking of extra garlic)
+# 英訳（2026-10-27）。日本語は src/episodes/pim/006.yaml。拍の並びは日本語とそろえる。
+# 「二人の日」はお茶までしか言わない。下ネタの度合いは日本語と同じ（夜の狩猟団が振り、ピムがほうじ茶で戻す）。
+parts:
+- title: オープニング：今日は夫婦の話
+  beats:
+  - say: It's Pim. Hello.
+  - say: Today is a marriage episode. It's eighty percent complaining about my husband.
+  - chat: [night_hunting_party, "been waiting"]
+  - say: Night hunting party, you're marked present. Been waiting for what, exactly?
+  - chat: [night_hunting_party, "married couple night stuff"]
+  - say: {face: annoyed, text: 'Married couple night stuff... Lower your expectations. Today is wholesome. Today is about tea.'}
+  - chat: [husband_who_helps, "hi. husband complaints, kinda scary"]
+  - say: Husband who helps, hello. Husband complaints are scary? It's about husbands, so yes, be scared.
+  - chat: [first_time_here, "first time. is this a succubus stream?"]
+  - say: First time here, welcome! Is this a succubus stream? I am a succubus! And a housewife!
+  - say: My husband is an incubus, and he's a gate guard at the castle.
+  - chat: [first_time_here, "a succubus and an incubus married, every night must be wild"]
+  - say: {face: annoyed, text: 'Every night must be wild, everyone says that. In reality, every night, we fold laundry.'}
+  - chat: [stuck_on_normal_ending, "hi. marriage episode"]
+  - say: Stuck on normal ending, you're marked present! Yep, marriage episode!
+- title: 本題っぽいもの：火曜のニンニクマシマシ
+  beats:
+  - say: So first, last Tuesday.
+  - say: When my husband came home, I could smell it from the front gate. Garlic.
+  - chat: [chinese_diner_heir, "hi. jiro"]
+  - say: Chinese diner heir, you're marked present. Jiro, correct. Jiro-style ramen. It's a giant, heavy, garlicky ramen with a mountain of bean sprouts on top.
+  - say: At those places, right before they serve it, they ask you, garlic?
+  - say: And that's when you call out extras, more veggies, more fat. Online people call it the spell.
+  - chat: [first_time_here, "oh thats what the spell is"]
+  - say: That's what the spell is. And my husband apparently said, garlic, extra extra. On a Tuesday.
+  - chat: [first_time_here, "whats special about tuesday?"]
+  - say: What's special about Tuesday? In our house, Tuesday and Friday are no-garlic days. We decided it together.
+  - chat: [night_hunting_party, "say no more"]
+  - say: Say no more, no, don't. I haven't said anything yet.
+  - chat: [stuck_on_normal_ending, "why tuesday and friday?"]
+  - say: Why Tuesday and Friday? Those are our couple days.
+  - say: At night we make tea together, talk about our week, and stay up a little late.
+  - chat: [night_hunting_party, "so basically..."]
+  - say: {face: smug, text: 'So basically... hojicha. Roasted green tea.'}
+  - chat: [gacha_broke_again, "hojicha lmao"]
+  - say: Hojicha, don't laugh. We sit next to each other and talk, so garlic is a problem.
+  - chat: [first_time_here, "you have SCHEDULED DAYS!?"]
+  - say: We have scheduled days. If we didn't, my husband would stay up till midnight every night going, let's talk a little.
+  - chat: [night_hunting_party, "well hes an incubus"]
+  - say: He's an incubus has nothing to do with it. That man is just a night owl.
+  - say: I start early at my part-time job. I'm on the fryer at a bento shop.
+  - chat: [leaving_work_on_time, "how did you decide"]
+  - say: How did we decide? We laid out the whole week and looked for days where neither of us has to get up early the next morning.
+  - say: My husband's first offer was, every night. My first offer was, once, at the end of the year.
+  - chat: [gacha_broke_again, "thats a huge gap lol"]
+  - say: A huge gap, it was huge. The air in that meeting froze.
+  - say: Then we met in the middle. Tuesday and Friday. It took three hours.
+  - chat: [stuck_on_normal_ending, "love that you actually talked it out"]
+  - say: Love that you talked it out, they said! The day we agreed, my husband bought me one flower.
+  - chat: [stuck_on_normal_ending, "thats sweet"]
+  - say: {face: shy, text: 'That is sweet, yeah. He is sweet. He has that side.'}
+  - chat: [leaving_work_on_time, "isnt it rare to have set days as a couple?"]
+  - say: Maybe it is rare. But if you don't set it, don't you just lose the time to talk?
+  - say: On weekdays, you eat, clean up, bath, and it's already bedtime.
+  - chat: [husband_who_helps, "same. some days our whole conversation is did you take out the trash"]
+  - say: Your whole conversation is did you take out the trash! That! The whole day ends with work memos!
+  - chat: [tax_office_crunch, "hi. in crunch season we dont even have memos"]
+  - say: Tax office crunch, you're marked present. Not even memos... March does that to you, huh.
+  - chat: [stuck_on_normal_ending, "nov 22 is good couples day right"]
+  - say: "November twenty-second, Good Couples Day! Eleven twenty-two sounds like good couple in Japanese. A leisure group started it in nineteen eighty-eight."
+  - say: Good Couples Day is once a year.
+  - say: We do it twice a week, so we're a good couple about a hundred times a year.
+  - chat: [gacha_broke_again, "thats some forced math lol"]
+  - say: Forced math, sure, fine. I've never actually counted.
+  - chat: [night_hunting_party, "so is couple day really just tea?"]
+  - say: {face: annoyed, text: 'Is it really just tea? Just tea. And rice crackers. Night hunting party, do not ask past that.'}
+  - say: Anyway, back to it. Extra extra on a Tuesday.
+  - chat: [chinese_diner_heir, "answering when theyre asked is proper shop etiquette tho"]
+  - say: Answering when asked is shop etiquette... He's following that, at least. He's only breaking the house rules.
+  - chat: [husband_who_helps, "maybe he forgot what day it was"]
+  - say: The forgot what day it was theory. Correct. He walked in the door and went, oh, it's Tuesday.
+  - chat: [night_hunting_party, "so what happened"]
+  - say: What happened? Nothing happened. That day we had our tea in separate rooms.
+  - say: My husband brushed his teeth three times, alone, on the balcony.
+  - chat: [husband_who_helps, "three times is kinda cute"]
+  - say: Three times is kinda cute... On the third time, I kind of thought so too. Just thought it.
+- title: 脇道：カップヌードルは何味
+  beats:
+  - chat: [gacha_broke_again, "all this jiro talk made me want cup noodles"]
+  - say: Want cup noodles, I get it. I'm getting a little hungry right now too.
+  - chat: [gacha_broke_again, "what cup noodle flavor are you?"]
+  - say: What flavor? Soy sauce. The original one.
+  - chat: [night_shift_survivor, "hi. seafood only"]
+  - say: Night shift, you're marked present. Seafood only, huh.
+  - say: My husband is seafood too. Every time we stock up, we fight about it.
+  - chat: [first_time_here, "just buy both?"]
+  - say: Just buy both, you'd think, right? My husband eats the soy ones too. Because the seafood ran out first.
+  - chat: [night_shift_survivor, "so soy sauce is the minority?"]
+  - say: Soy sauce is the minority, apparently. I'm annoyed, so next time I'll try seafood.
+  - say: With Cup Noodle, I can wait without timing the three minutes.
+  - chat: [stuck_on_normal_ending, "i thought pim would time everything"]
+  - say: You thought I'd time everything? I weigh all my cooking, but Cup Noodle is the one thing I eat by feel.
+  - chat: [chinese_diner_heir, "my dad doesnt time cup noodles either"]
+  - say: Your dad doesn't time it either! He eats cup noodles on his days off, right?
+  - chat: [chinese_diner_heir, "yeah. starts eating at two minutes"]
+  - say: Starts at two minutes! He must like them firm!
+  - chat: [night_shift_survivor, "after night shift i wait five and let them get soft"]
+  - say: There's a wait five minutes, let them go soft team too. That sounds good in its own way.
+  - ask:
+      q: Favorite Cup Noodle flavor?
+      options:
+      - c: Soy sauce
+        r:
+        - "Soy sauce!"
+        - '{name}, my people! Fellow minority!'
+      - c: Seafood
+        r:
+        - "Seafood, okay."
+        - '{name}, same as my husband. Guard your stash.'
+      - c: Curry
+        r:
+        - '{name}, curry! Nobody said curry! A brand new faction!'
+      - c: I don't eat cup noodles
+        r:
+        - "You don't eat cup noodles at all, huh."
+        - '{name}, there are people like that, yeah.'
+      npc: [[gacha_broke_again, 2], [night_shift_survivor, 1], [first_time_here, 0], [night_hunting_party, 1]]
+  - say: Lots of seafood... Soy sauce really is the minority.
+- title: 戻る：水曜日の件
+  beats:
+  - chat: [night_hunting_party, "so whats the rest of the married couple night story?"]
+  - say: It's not married couple night story, it's couple day. Don't change the wording.
+  - say: Something happened last month on a Wednesday. A Wednesday.
+  - chat: [leaving_work_on_time, "not one of the set days"]
+  - say: Not a set day! I was already asleep, and my husband taps me on the shoulder.
+  - say: Hey, wake up. It's Friday, right? Holding two cups of tea.
+  - chat: [stuck_on_normal_ending, "wrong day lol"]
+  - say: Wrong day! I was half asleep and pointed at the calendar.
+  - say: He stares at it, goes, oh, it's Wednesday. And then he drank both teas himself.
+  - chat: [night_shift_survivor, "both of them lol"]
+  - say: Both of them. And when he went back to his room, he said, good night.
+  - chat: [night_shift_survivor, "after waking you up lol"]
+  - say: {face: annoyed, text: 'After waking me up, right!?'}
+  - say: Before I even said the day, the first thing out of my mouth was, it is not good night.
+  - say: Like, I'm awake now, thanks.
+  - chat: [gacha_broke_again, "THAT'S your complaint lol"]
+  - say: That's my complaint, yeah, that came out first! I was half asleep!
+  - say: He said, sorry, good night, one more time, and left.
+  - chat: [night_shift_survivor, "could you sleep after that?"]
+  - say: Could I sleep after? No. It just turned into morning, and I went to fry karaage.
+  - chat: [first_time_here, "why not text before waking you?"]
+  - say: Text first? Oh, he texts. On LINE, the messaging app everyone here uses. From inside the same house. Is today couple day?
+  - chat: [first_time_here, "he could just walk over and ask lol"]
+  - say: "When I'm asleep, LINE is fine. When I'm awake, just walk over!"
+  - say: He could just walk over and ask, right? The next room is five steps. He does five steps over LINE.
+  - chat: [first_time_here, "so if you leave it on read that means yes?"]
+  - say: If I leave it on read, does that mean yes? No. Read means I read it. It does not mean okay.
+  - chat: [tax_office_crunch, "my boss at the office thinks a read receipt is a reply too"]
+  - say: Your boss thinks read counts as a reply too... There's always one of those.
+  - chat: [night_hunting_party, "what did you reply"]
+  - say: What did I reply? It's Wednesday. No sticker.
+  - chat: [husband_who_helps, "no sticker is terrifying"]
+  - say: No sticker is terrifying, right? The next day, he sat in seiza on his own, the formal kneeling. Before I even called him Gard-san.
+  - chat: [husband_who_helps, "seiza lol"]
+  - say: In our house, when I call my husband by his name with san on it, that's the signal I'm really mad.
+  - say: He knows that, so he sits before I even say it.
+- title: また飛ぶ：「座ってるだけでいいよ」
+  beats:
+  - say: Oh, and there's a thing my husband says a lot.
+  - say: When I'm tired, he goes, if you're tired, you can just sit there today.
+  - say: Like, I'll do the tea and the rice crackers.
+  - chat: [stuck_on_normal_ending, "thats sweet"]
+  - say: {face: annoyed, text: 'You''re gonna say that''s sweet. It is sweet. That''s what I hate. The ''just sit there'' part.'}
+  - chat: [stuck_on_normal_ending, "isnt he just trying to give you a break?"]
+  - say: Trying to give me a break, I know. I know it's kindness.
+  - say: But I'm the one who decides how much tea leaf, and the water temperature, and all that.
+  - say: When he says just sit there, it feels like he's brushing that off.
+  - chat: [night_hunting_party, "wouldnt a succubus prefer the easy option tho"]
+  - say: A succubus would prefer the easy option? No! Succubi also want to do things properly. The tea.
+  - chat: [night_hunting_party, "the tea"]
+  - say: The tea. Night hunting party, you just tried to swap in a different word, didn't you.
+  - chat: [chinese_diner_heir, "my dad gets mad when people say ill just have the half fried rice"]
+  - say: {face: surprised, text: 'He gets mad at, just the half fried rice?'}
+  - chat: [chinese_diner_heir, "he says he tosses the half portion full power too"]
+  - say: He tosses the half portion full power too... I get your dad's feelings.
+  - say: At the bento shop, when someone says it's fine if it's cold, I want to re-fry it.
+  - say: ...Saying all this, I'm realizing I'm kind of a difficult wife.
+  - chat: [husband_who_helps, "i used to tell my wife whatever for dinner is fine"]
+  - say: Whatever for dinner is fine... Oh, that's the one that's hard for the cook.
+  - chat: [husband_who_helps, "i thought i was being considerate"]
+  - say: You thought you were being considerate. I think she knows that.
+  - say: But when you say whatever, I spend like an hour figuring out what whatever means.
+  - chat: [husband_who_helps, "from now on ill ask what do you want to do"]
+  - say: {face: smile, text: 'From now on, what do you want to do. I think that is great. I will try it on my husband.'}
+  - chat: [night_hunting_party, "so if he says just sit there, cant you just say what do you want to do back"]
+  - say: Just say what do you want to do back... Night hunting party, you're making sense today.
+  - ask:
+      q: A husband who says if you're tired, just sit there. What do you think?
+      options:
+      - c: Sounds sweet
+        r:
+        - '{name}, on my husband''s side. Maybe I should practice taking it as kindness.'
+      - c: A little rude
+        r:
+        - '{name}, that''s exactly how I feel.'
+      - c: You're both a lot
+        r:
+        - '{name}, you''re probably right. We are two difficult people.'
+      npc: [[night_hunting_party, 2], [stuck_on_normal_ending, 0], [gacha_broke_again, 2], [husband_who_helps, 0], [chinese_diner_heir, 1]]
+- title: 締め
+  beats:
+  - say: Sweet and you're both a lot, tied... Two difficult people, accurate. We're almost out of time.
+  - chat: [night_hunting_party, "btw what day is it today?"]
+  - say: What day is it today... Friday.
+  - chat: [night_hunting_party, "oh"]
+  - say: {face: annoyed, text: 'Do not oh me. Tonight is ginger pork and hojicha.'}
+  - chat: [chinese_diner_heir, "garlic?"]
+  - say: No garlic. It's Friday.
+  - say: {face: shy, text: '...He might already be boiling the water. Pim, signing off.'}

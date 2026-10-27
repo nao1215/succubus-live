@@ -1,0 +1,242 @@
+# Lise x Nox duo 001 (English). Source: src/duo/lise-nox/001.yaml. Beat order matches the Japanese.
+# Faces come from the Japanese. Viewer names follow scratchpad en-names.yaml and src/en/common.yaml.
+# GIF: the Japanese "jifu / gifu" argument is the same jif vs gif fight English speakers already have, so it stays as is.
+title: "Nox came over. A bug that pays out twice if you tap while the game lags"
+lobby:
+- "Tonight Nox came up from the basement to hang out."
+- "I found a game bug last night. Nox is going to write the report for me."
+- "...I haven't asked her yet."
+parts:
+- title: "Opening (right on time, and a fifteen-minute Cup Noodle)"
+  beats:
+  - nox: "Oh, we're live. ...Lise, we're live. We're live, Lise."
+  - lise: "I know. My eyes are just closed."
+  - chat: [login_bonus_only, "asleep one second in"]
+  - chat: [lag_appreciation_club, "wait nox is here"]
+  - nox: "Lag Club, you're here. Evening. I'm in Lise's room tonight."
+  - lise: "'Asleep one second in.' No. Nox showed up too early."
+  - nox: "I didn't. I knocked at the exact time we agreed on."
+  - lise: "First time I've seen someone show up exactly on time. Normal people are a little late."
+  - nox: "...Um, Lise, what's that on your desk?"
+  - lise: "Cup Noodle. Seafood. I poured the water in before you knocked."
+  - nox: "That's been sitting for fifteen minutes."
+  - lise: "Fifteen is fine. It's on purpose."
+  - chat: [login_bonus_only, "idle game cooking"]
+  - lise: "Yep. Idle cooking. It soaks up all the broth and turns into a different food."
+  - nox: "I'm a set-a-timer-for-three-minutes person. I can tell at four. Four is already soggy."
+  - chat: [kernel_reader, "the four out of six person"]
+  - nox: "Kernel Reader, we are not doing the four-out-of-six thing right now."
+  - lise: "Here. Have a bite."
+  - nox: "I don't want it. ...One bite."
+  - nox: "...It's good. I hate that."
+  - chat: [lag_appreciation_club, "nox lost"]
+  - lise: "I win. Idle wins."
+- title: "The actual topic (tap it while it lags)"
+  beats:
+  - chat: [just_clicks_agree, "so why'd you invite nox"]
+  - lise: "'Why'd you invite Nox.' I found a bug. Last night."
+  - nox: "This is the first I'm hearing about it."
+  - lise: "If I tell you after you get here, you can't say no."
+  - chat: [login_bonus_only, "its a trap"]
+  - lise: "It's not a trap. It's a favor. I need you to write the bug report. When I write them, I fall asleep halfway."
+  - chat: [five_am_reporter, "Thanks again for last time."]
+  - lise: "Don't 'thanks again' me. ...See? This is what happens."
+  - nox: "What's the bug?"
+  - lise: "My usual idle game. Not saying which. There's a spot with tons of enemies where the game gets really laggy."
+  - lise: "If you hit the claim button there, sometimes the reward comes in twice."
+  - nox: "Sometimes meaning how many out of how many?"
+  - lise: "I saw it like three times."
+  - nox: "Three times out of how many tries?"
+  - lise: "Didn't count. I was sleepy."
+  - nox: "If you saw it, you were awake. I believe it's a bug."
+  - nox: "But then they won't fix it. Other companies close reports with no repro steps as 'cannot reproduce.' My team wouldn't, but."
+  - lise: "Just write that I saw it."
+  - nox: "I've had one closed like that. Twenty-fourteen. Three years later someone else filed it with basically the same steps, and theirs got fixed."
+  - lise: "Writing steps is a pain. You tap, you count, you tap again."
+  - nox: "I know. But that annoying part is exactly the part that decides if it gets fixed."
+  - chat: [login_bonus_only, "the host is losing in her own room"]
+  - lise: "I'm not losing. I'm loading."
+  - lise: "Also, this one's serious. You can trade that stuff between players."
+  - lise: "If someone dupes a pile and sells it, everybody who idled honestly ends up with stuff worth less."
+  - nox: "...Okay, that one really should get reported."
+  - lise: "Right? And I'm not saying how to tap it, chat. That goes to the support form. Only there."
+- title: "Only when it lags"
+  beats:
+  - nox: "Only when it lags. ...I love that. That's my favorite kind of bug."
+  - chat: [lag_appreciation_club, "lag frames time to shine"]
+  - lise: "Lag Club's time to shine. When the game can't finish its work in one frame, it often skips reading your inputs."
+  - nox: "Wait. So the tap gets carried into the next frame and..."
+  - lise: "Don't stop in the middle."
+  - nox: "Why it lags and why it pays twice might be two different things. For now, we look at them separately."
+  - chat: [kernel_reader, "there it is. separate them"]
+  - nox: "It's, like, my team's catchphrase. If you mix them up, at the postmortem everyone's talking about a different thing."
+  - lise: "Team? You have a team?"
+  - nox: "...A small one. Five people. I'm the one who reviews the designs."
+  - chat: [ddd_police, "her reviews get like forty comments every time"]
+  - nox: "The forty part is true. Three of them are must-fix. The rest are, like, discussion."
+  - chat: [second_year_dev, "please tell me the three first"]
+  - nox: "Put the three first. ...Yeah. That one's on me. I'll fix that."
+  - lise: "My report is one line. It won't get forty comments."
+  - nox: "Even one line, I'll read it."
+- title: "Getting it twice (the double invoice)"
+  beats:
+  - lise: "So what's with it paying out twice."
+  - nox: "When things are slow, people press again. The other side gets it twice. It's a really common accident."
+  - lise: "You've sent stuff twice too. Invoices. You told me once, down in the basement."
+  - nox: "Lise, you're bringing that up?"
+  - lise: "I am. It's my stream."
+  - nox: "...At an old job, the nightly billing ran nine hours early, and then ran again right on time. Every invoice went out twice."
+  - chat: [kernel_reader, "the nine hour incident"]
+  - nox: "Yeah. Another team had switched the machine clock to U T C, the global time standard. The meeting ended with 'Nox didn't double-check.'"
+  - nox: "So at my team's postmortems, we don't write anyone's name. We only write where it turned into two."
+  - lise: "Nice. I wish they'd done that with my nine duplicates."
+  - nox: "Yours are the same person filing nine times, so..."
+  - lise: "Don't write my name."
+  - chat: [second_year_dev, "is there a way to make it count once even if it arrives twice"]
+  - nox: "Good question, Second Year. Each claim gets an I D, reused on retry. Same I D again, you answer 'already paid.' That's called idempotency."
+  - lise: "So if the claim request arrives twice, you just hand out one reward."
+  - lise: "So the report's the same. However many times I ask, it's one report."
+  - nox: "...Wait. Did I just agree to it?"
+  - lise: "Well, it got delivered once."
+  - chat: [kernel_reader, "an ack is not a yes"]
+  - nox: "Right. Receiving the request and saying I'll do it are two different things."
+  - lise: "...Talking back, huh. From Nox. So does that idle game not check the ID?"
+  - nox: "Maybe. When it lags, the first claim might not be saved yet, so the second one still looks like 'hasn't claimed yet.' Maybe."
+  - lise: "I thought you didn't say stuff you haven't checked."
+  - nox: "...I said 'maybe.' Twice."
+  - chat: [login_bonus_only, "lise 2-1"]
+  - lise: "That's two wins for me tonight. I don't count the loss."
+- title: "Speaking of which (jif or gif)"
+  beats:
+  - chat: [lag_appreciation_club, "attach a clip of the stutter? as a GIF"]
+  - lise: "'As a G I F.' Sure. Hard G, for me."
+  - nox: "Soft G."
+  - lise: "Hard G."
+  - nox: "The guy who made it says it with a soft G. Jif. At an awards show, twenty-thirteen. He went out of his way to say it."
+  - lise: "Nox, in meetings you use a hard G."
+  - nox: "...How do you know that."
+  - lise: "When I stopped by the basement once, I heard you through the door. On a call."
+  - nox: "...That one word, I said it out loud. A new person used a hard G, so I went with it."
+  - lise: "That's called folding. Let's ask chat."
+  - ask:
+      who: lise
+      q: "GIF, the moving picture format. How do you say it?"
+      options:
+      - c: "Soft G, jif"
+        r:
+        - nox: "Soft G, {name}. ...Thank you."
+        - lise: "Nox got a backup."
+      - c: "Hard G"
+        r:
+        - lise: "Hard G, {name}. Yes. That's right."
+        - nox: "...Okay."
+      - c: "Don't care"
+        r:
+        - lise: "Don't care, huh. {name}'s a peaceful person."
+        - nox: "It matters. ...Only during meetings, it doesn't."
+      - c: "Never said it out loud"
+        r:
+        - nox: "{name}, I like the honesty. It's the name of that moving picture format."
+        - lise: "You don't have to say it to use it. That's what I do."
+      npc:
+      - [kernel_reader, 0]
+      - [lag_appreciation_club, 1]
+      - [login_bonus_only, 1]
+      - [rtos_veteran_15y, 0]
+      - [just_clicks_agree, 3]
+      - [five_am_reporter, 2]
+  - lise: "See, the hard-G people showed up. Lag Club. Login Bonus."
+  - nox: "The soft-G people showed up too. Kernel Reader, and R-TOS Veteran."
+  - lise: "Just Clicks Agree never said it out loud. Of course. Doesn't read the terms either."
+  - lise: "Soft G at home, hard G in meetings. That's Nox."
+  - nox: "...Mm."
+  - lise: "See, her answers are getting shorter."
+- title: "Tangent (Tetris in Emacs)"
+  beats:
+  - chat: [ddd_police, "what editor are you writing the report in"]
+  - nox: "My editor? Vim. ...We're back on track."
+  - lise: "I use Emacs."
+  - nox: "Lise, what do you even write in Emacs?"
+  - lise: "Nothing. I play Tetris. You can add a thing that plays it for you, too."
+  - chat: [rtos_veteran_15y, "speaking of tetris, someone crashed the NES version"]
+  - lise: "Yeah. End of twenty-twenty-three. The first human player to reach the crash."
+  - lise: "Nintendo's Tetris on the NES. From level one fifty-five, it can freeze, depending on how you clear lines."
+  - lise: "The score math is slow. The higher the level, the more times it repeats the same addition."
+  - lise: "And before it finishes, the part that draws the screen cuts in."
+  - nox: "Wait. So the thing cutting in doesn't know the math is half done."
+  - lise: "Nope. It shows up thinking the math finished at the usual spot. If it didn't, it crashes."
+  - nox: "That might be the same shape as Yoru!"
+  - chat: [lag_appreciation_club, "exclamation mark spotted"]
+  - chat: [kernel_reader, "exclamation mark spotted"]
+  - nox: "Yeah, it came out. ...Sorry, I started talking fast."
+  - nox: "So Yoru crashes on the first timer interrupt. Maybe when the interrupt shows up, setup isn't done yet."
+  - lise: "My Tetris just got you unstuck after nine years?"
+  - chat: [rtos_veteran_15y, "check that init is done before you enable interrupts"]
+  - nox: "Check init before interrupts. Yes. ...Oh, I said yes. I'll check."
+- title: "Back to it (writing the report)"
+  beats:
+  - chat: [five_am_reporter, "About the double reward. Are you not writing the report?"]
+  - lise: "I did write it. One line. 'When it lags, sometimes pays twice. Sleepy.'"
+  - nox: "Okay, review time. Turn 'sometimes' into a number. Delete 'sleepy.'"
+  - lise: "Sleepy is true."
+  - nox: "Even if it's true, a line that doesn't help the person fixing it gets cut. ...Lise, do you have last night's recording?"
+  - lise: "Yep. I just leave the recorder running on idle games."
+  - nox: "Good job. I'll skim only the laggy parts. ...Ten taps. Paid twice, two times."
+  - lise: "See? A bug."
+  - nox: "It was a bug from the start. Now it's a report that gets it fixed."
+  - nox: "I'll write it up. What happened, when it happens, how many times. ...Clean copy in two hours."
+  - chat: [lag_appreciation_club, "x3.7"]
+  - chat: [second_year_dev, "x3.7"]
+  - nox: "'Times three point seven.' ...You both typed it. Even Second Year."
+- title: "Point oh five, and the random seed"
+  beats:
+  - chat: [kernel_reader, "is RNG involved?"]
+  - nox: "Haven't checked the random numbers yet. All we know is it happened while lagging. I'll put it on the list of things to check."
+  - lise: "Don't get me started on random numbers. They burned you way worse than me."
+  - nox: "Lise."
+  - lise: "You fixed the random seed 'for reproducibility.' In a wallet."
+  - chat: [lag_appreciation_club, "here comes the 0.05 story"]
+  - nox: "I just carried a test setting over into production."
+  - nox: "It was a wallet. I went to sleep, woke up, and it was at zero. I wrote my own postmortem."
+  - lise: "Sleepyhead Number One lasted nineteen days. Your wallet lasted one night."
+  - chat: [any_percent_rookie, "fixed seed = same key fits the same hole every time"]
+  - nox: "Same key, same hole, yeah. We're talking about keys. ...Half the time."
+  - lise: "Don't phrase it like that in a succubus's room. It picks up extra meanings."
+  - chat: [login_bonus_only, "file the extra meanings under the dupe bug"]
+  - lise: "The extra meanings, I'm not reporting."
+- title: "Wrap-up (Yoru, and line forty-two of THANKS)"
+  beats:
+  - nox: "Okay, the report draft's done."
+  - chat: [five_am_reporter, "Actually, I saw it once yesterday too. Same spot."]
+  - lise: "...You saw it?"
+  - chat: [five_am_reporter, "Only once, so I didn't file it. I couldn't reproduce it."]
+  - nox: "Only once, it'd get closed as 'cannot reproduce.' I get why you didn't file it, Five AM."
+  - nox: "But you can send even one. Add 'happened once, couldn't reproduce.' Then they know it happened to someone else too. I want to compare conditions."
+  - lise: "Nox, add Five AM's one time and send it. Now."
+  - nox: "No polishing first? Straight to the real thing?"
+  - lise: "The real thing should be your specialty. You're a succubus."
+  - nox: "...We're talking about the report. Sent."
+  - nox: "Got a reply. 'Received.' The automatic one."
+  - lise: "Not 'duplicate.' Nice."
+  - chat: [kernel_reader, "not booting yoru?"]
+  - nox: "Yoru? Here? ...Earlier I added one line that checks setup is done before allowing interrupts."
+  - lise: "Go ahead. I'll idle and watch until it crashes."
+  - nox: "It printed 'yoru.' Okay. Enabling interrupts."
+  - nox: "...It crashed."
+  - chat: [lag_appreciation_club, "crashed again"]
+  - nox: "But before it crashed, the check line printed. That setup was already done. The thing I suspected today was wrong. Next spot."
+  - nox: "Lise, I'm adding a line to THANKS. Line forty-two."
+  - lise: "Forty-two? You have that many people?"
+  - nox: "It's forty-one right now. One of them is a cactus."
+  - lise: "The cactus was in there and I wasn't?"
+  - nox: "You are now."
+  - chat: [login_bonus_only, "lise is loading"]
+  - nox: "Oh. Typo. It says L S I E."
+  - lise: "Fix it. Right now."
+  - nox: "You can just say 'fix it.' That's amazing. My name's been N X O forever and I never said anything."
+  - lise: "Say something. It's your name."
+  - nox: "...Fixed. And Lise, finish one report yourself sometime. Just once."
+  - lise: "Nope. Next time I'm calling you again."
+  - nox: "If you call me, I'll come right on time."
+  - lise: "Then I'll wake up a little late. Good night, everyone."
+  - nox: "Thanks, everyone who's awake. Go to bed. ...Lise's already asleep, though."

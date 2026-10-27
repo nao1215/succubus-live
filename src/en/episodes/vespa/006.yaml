@@ -1,0 +1,189 @@
+# Vespa 006 (English): explaining VTubers to Harumi from scratch. Translated from src/episodes/vespa/006.yaml.
+title: I Tried Explaining VTubers to Harumi From Scratch
+parts:
+- title: Virtual enka singer
+  beats:
+  - say: Good evening! Okay, listen, something made me laugh so hard yesterday.
+  - chat: [harumi_survivor, 'evening']
+  - say: Harumi, perfect timing. It's about you, actually.
+  - say: Harumi, yesterday in chat you called VTubers virtual enka singers. Enka, the old-school Japanese ballads.
+  - chat: [harumi_survivor, "its not?"]
+  - say: {face: laugh, text: 'It''s not! Most of them don''t sing enka! Some sing, but!'}
+  - chat: [first_time_here, 'first time. whats a vtuber?']
+  - say: Welcome! What's a VTuber? Perfect, just listen along with Harumi.
+  - say: A VTuber is someone who does videos and streams as a drawn or 3D character.
+  - say: The voice and movement are a real person, but what you see on screen is the character.
+  - chat: [harumi_survivor, 'like a mascot costume']
+  - say: Like a mascot costume? Oh, close! Close, but if you say costume, people might get a little mad.
+  - say: It kinda assumes there's someone inside. Keeping that part fuzzy is the kind thing to do.
+  - chat: [harumi_survivor, 'complicated']
+  - say: Complicated? It's not! It's like a character from an anime you used to watch, talking to you live.
+  - chat: [harumi_survivor, 'that. would be nice']
+  - say: That would be nice, he says! Right?!
+- title: The first one
+  beats:
+  - chat: [first_time_here, 'since when?']
+  - say: Since when? The famous one is Kizuna AI. She started in December twenty-sixteen and called herself the world's first virtual YouTuber.
+  - chat: [harumi_survivor, 'she named herself that?']
+  - say: She named herself that! I love that about her.
+  - say: Then in twenty-eighteen they exploded. Over a thousand by spring, six thousand by the end of the year.
+  - say: Back then a new one debuted every day, it was so hard to keep up.
+  - say: I even tried doing it myself once. I installed the face tracking software and my computer made this horrible noise and got super hot, so I quit.
+  - chat: [end_of_line_here, 'u wrote it in your journal right']
+  - say: "Oh, the new girlies popping up every day?"
+  - say: In my journal? I did. But I couldn't keep up writing, so there are pages that are just names.
+  - chat: [green_glowstick_yr2, 'evening senpai! nijisanji was 2018 too right']
+  - say: Evening, Year-Two! Nijisanji, twenty-eighteen, yep, February. They debuted with eight people.
+  - chat: [harumi_survivor, '8. fewer than onyanko']
+  - say: Fewer than Onyanko? Harumi, your comparison is from the eighties.
+  - chat: [harumi_survivor, 'onyanko started with 11']
+  - say: Started with eleven, I mean, yes! That part's right, but!
+  - chat: [first_time_here, 'onyanko?']
+  - say: Onyanko Club was an eighties idol group that came out of an after-school TV show. Basically Harumi's youth.
+  - chat: [harumi_survivor, 'i just watched']
+  - say: Every time, I just watched!
+- title: Wait, mushrooms or bamboo shoots?
+  beats:
+  - chat: [con_haul_victim, 'watching while eating takenoko no sato']
+  - say: Wait, you're eating Takenoko no Sato?! We're the same!
+  - chat: [first_time_here, "im team kinoko"]
+  - say: First-timer is team Kinoko. Oh. An enemy.
+  - chat: [first_time_here, 'ENEMY??']
+  - say: {face: laugh, text: "Kidding, kidding! Okay so, Mushroom Mountain and Bamboo Shoot Village, two Meiji chocolate snacks, eternal war. I'm Takenoko. That crunchy cookie!"}
+  - chat: [harumi_survivor, 'kinoko has a handle. no dirty fingers']
+  - say: Harumi's team Kinoko! It has a handle, no dirty fingers. At summer events, okay, I kinda get that.
+  - say: I once ate Takenoko in line and got chocolate all over my hands and couldn't touch my catalog.
+  - chat: [end_of_line_here, 'so switch to kinoko']
+  - say: So switch to Kinoko? Never! You just wash your hands!
+  - ask:
+      q: Kinoko no Yama or Takenoko no Sato, which team are you?
+      options:
+      - c: Kinoko no Yama
+        r:
+        - '{name}''s team Kinoko. The handle is nice, I''ll admit it! Still not eating it!'
+      - c: Takenoko no Sato
+        r:
+        - '{name}, team Takenoko! Welcome! To the crunchy side!'
+      - c: I like both
+        r:
+        - '{name} likes both. A peaceful soul.'
+        - If I ever get tired of the war, I'll come over there.
+      - c: I don't eat either
+        r:
+        - '{name} is sitting this one out! Then what do you eat? Tell me later.'
+      npc:
+      - [harumi_survivor, 0]
+      - [first_time_here, 0]
+      - [con_haul_victim, 1]
+      - [green_glowstick_yr2, 1]
+      - [end_of_line_here, 3]
+  - say: Kinoko and Takenoko, dead even! The war continues!
+  - chat: [end_of_line_here, 'neither. my break snack is onigiri']
+  - say: End-of-Line doesn't eat either, break is onigiri. Right. I've never seen you eat a snack.
+  - chat: [green_glowstick_yr2, 'senpai im takenoko!']
+  - say: Year-Two is Takenoko! I believed in you!
+- title: The person inside
+  beats:
+  - chat: [harumi_survivor, 'so who is inside these vtubers characters']
+  - say: Who's inside the character, there it is! Harumi, the rule is you don't ask that.
+  - chat: [harumi_survivor, 'why']
+  - say: Why? Because the character, the voice, and what they talk about, it's all one person. If you try to peek inside, that one person breaks.
+  - chat: [harumi_survivor, 'like not prying into an idols private face']
+  - say: Like not prying into an idol's private life, yes, that's close! Harumi, that was a great way to put it.
+  - chat: [first_time_here, 'is it different from voice actors?']
+  - say: "Different from voice actors? Hmm, kinda similar, but most VTubers come up with their own stuff and talk in their own words. Chatting, games, all that."
+  - chat: [not_my_headcanon, 'is there someone inside vespa?']
+  - say: {face: surprised, text: 'Someone inside me?! Nope! I''m a succubus! Inside and outside, all me!'}
+  - chat: [end_of_line_here, 'inside is a person who carries cardboard boxes']
+  - say: Inside is someone who carries cardboard? Also me! All me! Okay, back on track!
+- title: Chat words
+  beats:
+  - chat: [harumi_survivor, 'someone keeps writing kusa. what is it']
+  - say: What's kusa? Oh, that means laughing! In Japanese chat people type w for warai, laughing, and a row of w's looks like grass. Kusa means grass.
+  - chat: [harumi_survivor, 'in my day it was (laughs)']
+  - say: In your day it was laughs in parentheses? If you do that now it's kinda scary. Like you're saying it with a straight face.
+  - chat: [clip_guy_A, 'evening. teach him teetee too']
+  - say: "clip_guy_A, evening! Teach him teetee, okay. It's toutoi, precious, all mushed up. That feeling when people are being close and you go, aww."
+  - chat: [harumi_survivor, 'toutoi. that i understand']
+  - say: Toutoi, that I understand, he says! He gets it!
+  - chat: [first_time_here, 'clips?']
+  - say: Clips are when you cut the fun parts of a long stream into a short video. This person's great at it.
+  - chat: [clip_guy_A, 'clipping virtual enka singer from today']
+  - say: {face: laugh, text: 'You''re clipping virtual enka singer?! No clipping! Harumi''s gonna get famous!'}
+  - chat: [harumi_survivor, 'i dont mind']
+  - say: You don't mind getting famous?!
+  - chat: [first_time_here, 'i see superchat a lot too']
+  - say: Superchat is a tip you can send during a stream. Your comment shows up highlighted with the money.
+  - say: The first time I sent one and it got read, I stumbled over my own name. In front of my screen. And I was the one who sent it!
+  - chat: [harumi_survivor, 'so its ohineri']
+  - say: So it's ohineri, yes, ohineri! That's like, coins wrapped in paper you'd toss to street performers. Harumi, you're picking stuff up fast today.
+  - chat: [harumi_survivor, 'i get it if i swap it for something old']
+  - say: You get it if you swap it for something old. That's a great way to learn.
+  - chat: [first_time_here, 'since when have you watched vespa?']
+  - say: Since when have I watched? Since early Nijisanji. Around spring twenty-eighteen.
+  - say: At first it was on the side while watching underground idol streams. It came up in my recommendations, I clicked, and I couldn't stop.
+  - say: Falling asleep with a chatting stream on in the middle of the night is basically my daily routine now.
+  - say: My login bonuses break after four days, but this one's still going. Maybe because I'm just sleeping.
+  - chat: [green_glowstick_yr2, 'falling asleep on stream, i get that']
+  - say: Year-Two gets it too? You get it, right? You wake up and it's some stranger's stream.
+- title: Half the money is merch
+  beats:
+  - chat: [end_of_line_here, 'do vtuber companies make money?']
+  - say: Do VTuber companies make money, that's what you're curious about? But actually, there's a fun number.
+  - say: A twenty twenty-two survey said about half of VTuber revenue is merch.
+  - say: Yep, acrylic stands, can badges. My room is full of them.
+  - chat: [first_time_here, 'acrylic stand?']
+  - say: An acrylic stand is a clear plastic plate with a character printed on it, and you stand it on your desk. In Japan, everyone calls them akusuta.
+  - say: Oh, and card games. The hololive card game came out in twenty twenty-four and sold like crazy.
+  - chat: [green_glowstick_yr2, 'my friend plays holoca']
+  - say: Your friend plays Holoca? So many people do. The company's merch sales went up over sixty percent in one year.
+  - chat: [end_of_line_here, 'more and more merch boxes']
+  - say: More and more merch boxes, she's feeling it on the job!
+  - say: Can badge boxes are heavy, right? I put sixty badges on my ita-bag and hurt my shoulder.
+  - chat: [first_time_here, 'ita-bag?']
+  - say: "An ita-bag is a bag covered in your oshi's badges, lined up in the clear window. Ita means painful, like cringe. Painful bag. We own it."
+  - say: The chiropractor asked me, what are you carrying around?
+  - chat: [harumi_survivor, 'what did you say']
+  - say: What did I say? My oshi. He didn't ask anything after that.
+  - chat: [end_of_line_here, 'he told u to cut the weight in half right']
+  - say: Cut the weight in half? He did. I cut it in half, and new ones went in the empty space.
+  - chat: [not_my_headcanon, 'so it didnt go down']
+  - say: It didn't go down. Nope. I haven't told him yet.
+- title: Things that ended
+  beats:
+  - chat: [green_glowstick_yr2, 'holoearth ended huh']
+  - say: Holoearth ended, yeah. This June.
+  - chat: [first_time_here, 'holoearth?']
+  - say: Holoearth was like a town on the internet where you could walk around as an avatar and watch shows.
+  - say: In May they announced it was ending in June. I logged in on the last day too.
+  - say: I just walked in circles in an empty plaza. Alone.
+  - chat: [harumi_survivor, 'like when the harumi venue went away']
+  - say: Like when the Harumi venue went away... yeah. It's lonely when a place disappears.
+  - say: But some things come back. Kizuna AI went on break after her twenty twenty-two show, right?
+  - chat: [green_glowstick_yr2, 'she came back last year!']
+  - say: Came back last year, yes, February twenty twenty-five! I was so happy when she came back.
+  - say: I remember the show before the break too. Waving my glowstick in front of my screen. Alone.
+  - chat: [con_haul_victim, 'finished my takenoko']
+  - say: {face: laugh, text: 'You finished your Takenoko?! Now?! You''re telling me that now?! So fast!'}
+- title: Harumi's oshi
+  beats:
+  - chat: [harumi_survivor, 'so who should i watch']
+  - say: Who should I watch?! Wait, Harumi, you're actually considering it?!
+  - chat: [harumi_survivor, 'are there any who sing enka']
+  - say: Any who sing enka? Maybe! I'll look! I know a few who are really good singers.
+  - chat: [green_glowstick_yr2, 'there are a lot of showa song streams']
+  - say: Showa-era song streams, yes! Like, old songs from his era. Harumi, you'd totally love those.
+  - say: Chat even types the next line of the lyrics. Harumi, you'd totally join in.
+  - chat: [harumi_survivor, 'cant read if the text is small']
+  - say: Can't read small text? You can change the chat font size. I'll show you next time.
+  - say: It'd be so funny if Harumi got hooked. He'd start saying, I've been watching since the Harumi days.
+  - chat: [harumi_survivor, 'havent watched yet']
+  - say: Haven't watched yet, he says. Right. Yeah.
+- title: Wrapping up
+  beats:
+  - say: Okay, I guess that's it for today. I'll make a list to send Harumi later.
+  - chat: [not_my_headcanon, 'manuscript before the list']
+  - say: Manuscript before the list? The list only takes five minutes!
+  - chat: [end_of_line_here, 'its never taken 5 min']
+  - say: It's never taken five minutes... it might not. Whatever.
+  - say: Thanks, everyone! Team Takenoko, go buy Takenoko tomorrow! Otsukaresama!

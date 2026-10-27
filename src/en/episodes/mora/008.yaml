@@ -1,0 +1,199 @@
+# English version of src/episodes/mora/008.yaml.
+title: I made cup yakisoba at midnight and put the sauce in first
+parts:
+- title: 挨拶と、夜食
+  beats:
+  - say: "Evening. Let's start."
+  - chat: [night_shift_survivor, 'evening. were you eating something?']
+  - say: Was I eating something? How can you tell?
+  - chat: [night_shift_survivor, 'you''re chewing']
+  - say: Chewing? I'm not. ...I was, until a minute ago. Cup yakisoba.
+  - chat: [lives_on_points, 'at this hour?']
+  - say: Yep, at this hour. When you're hungry, the clock doesn't matter.
+  - chat: [leaving_work_on_time, 'midnight yakisoba tastes like sin']
+  - say: Midnight yakisoba tastes like sin. Real. You know it'll be good, and you regret it the second it's gone.
+  - say: "I had exactly one hiding at the back of the cupboard. My own sticky note on it. \"Emergency.\" It wasn't one. My stomach thought it was."
+- title: ペヤングの湯切り
+  beats:
+  - chat: [third_planner_this_year, 'which yakisoba?']
+  - say: Which one? Peyoung. Plain sauce yakisoba. It's the classic square cup instant noodle here.
+  - chat: [nameless_familiar, 'UFO gang']
+  - say: Familiar's team UFO, huh. That one's good too. I've always been Peyoung. I like that it's square.
+  - say: "With cup yakisoba you pour in hot water, then drain it through holes in the lid. I hold it with both hands over the sink and go, \"okay, ready, go.\""
+  - chat: [night_shift_survivor, 'who are you saying that to']
+  - say: Nobody, Night Shift. I'm alone in my apartment, saying it to the sink.
+  - say: A long time ago, the lid peeled back and half the noodles fell into the sink.
+  - chat: [lives_on_points, 'splooosh']
+  - say: Yep. Splooosh. I've said "ready, go" every time since.
+  - chat: [leaving_work_on_time, 'did that once. made a second one']
+  - say: Leaving On Time, you did it too and just made a second one? In the middle of the night?
+  - chat: [leaving_work_on_time, 'made it. ate the whole thing']
+  - say: Made it and ate the whole thing. Is that admirable? I don't know. But it's impressive.
+  - say: When mine fell, I just ate the half that was left. I didn't have the energy to make another.
+  - say: Half the noodles, plus the whole sauce packet. It was so strong.
+  - say: But it was good. And it being good kind of annoyed me.
+  - chat: [third_planner_this_year, 'I never know how to open the drain holes']
+  - say: The drain holes, yes! Which way do you peel it? I read the lid every single time.
+  - ask:
+      q: What's your go-to cup noodle?
+      options:
+      - c: Cup Noodle
+        r:
+        - '{name} goes Cup Noodle. The classic.'
+        - While you wait the three minutes, don't you want to warm something on top of the lid? Just me?
+      - c: Peyoung
+        r:
+        - '{name} goes Peyoung. My people.'
+        - Do you say anything when you drain it? I say "ready, go."
+      - c: Nissin U.F.O. yakisoba
+        r:
+        - '{name} is team UFO.'
+        - The drain spout on that one opens so easily. I'm jealous.
+      - c: Donbei or Akai Kitsune
+        r:
+        - '{name} goes Donbei or Akai Kitsune. The udon ones with fried tofu. Very Japanese. I''m Akai Kitsune.'
+        - Whether you save the tofu for last or eat it first, that's a whole other long conversation.
+      npc:
+      - [nameless_familiar, 2]
+      - [third_planner_this_year, 0]
+      - [lives_on_points, 1]
+      - [night_shift_survivor, 3]
+      - [leaving_work_on_time, 1]
+- title: ソースを先に入れた
+  beats:
+  - say: So, tonight. The draining went fine.
+  - say: Went fine. Except, before that, I'd already put the sauce in.
+  - chat: [night_shift_survivor, 'before the hot water??']
+  - say: Yep. Before the water. I took out the little veggie packet, and the sauce came out with it, and I just... did it.
+  - say: The water turns sauce-colored. And then you pour it all down the drain.
+  - say: It tasted weak. A yakisoba-shaped something, with a faint hint of sauce.
+  - chat: [throws_out_manuals, 'that''s what you get for not reading the back']
+  - say: I did read the back! The steps are numbered! I read them! My hands just moved first.
+  - chat: [throws_out_manuals, 'if reading doesn''t help why read']
+  - say: If reading doesn't help, why read... I can't argue with that tonight.
+  - chat: [leaving_work_on_time, 'just add mayo and it''s fine']
+  - say: Add mayo and it's fine? I did. It tasted like mayo.
+  - say: And the water I poured out, that smelled like proper sauce. Coming up from the sink. It smelled great. I was so mad.
+- title: 流しの前で立って食べる
+  beats:
+  - say: And then I ate it standing up. In front of the sink.
+  - chat: [cant_make_it_home, 'sit down lol']
+  - say: Sit down? When I'm alone, I don't sit. If I sit, it turns into a proper meal.
+  - say: Plus the only dishes are the cup and the chopsticks.
+  - chat: [third_planner_this_year, 'some people eat straight out of the pot']
+  - say: Straight out of the pot? Haven't done that yet. Yet.
+  - say: But when I finished and looked at the empty cup in the sink, it suddenly hit me. That empty feeling.
+  - chat: [leaving_work_on_time, 'it always hits']
+  - say: It always hits. There's a little bit of sauce color left at the bottom.
+  - chat: [cant_make_it_home, 'your mom would be mad']
+  - say: My mom would be mad. I tell her I always sit down to eat.
+  - say: At home, if you ate standing up, she'd say one word. "Manners." I can still kind of hear it at the sink.
+- title: 脇道：コンビニのレジ横と、冷凍のご飯
+  beats:
+  - chat: [nameless_familiar, 'should''ve just gone to the konbini']
+  - say: The convenience store? Too much effort. And if I go, I end up buying fried chicken from the hot case by the register.
+  - chat: [night_shift_survivor, '7-eleven agedori slaps']
+  - say: Seven-Eleven's agedori is so good! Not the Nana Chiki, the agedori one. Convenience store fried chicken here is seriously good, by the way.
+  - chat: [lives_on_points, 'karaage-kun or nothing']
+  - say: Karaage-kun or nothing? That's Lawson's little chicken nuggets. Good pick. They put a toothpick in the box. Respect.
+  - say: So one winter I bought fried chicken and some daikon from the oden pot. Oden's this stew they keep simmering by the register.
+  - say: I got home, and while I was moving the oden into a bowl, the chicken went cold.
+  - say: I want to eat both while they're hot, but alone, you can only do one at a time. I've only got two hands.
+  - chat: [night_shift_survivor, 'don''t you cook rice?']
+  - say: Rice I freeze. I cook three cups, wrap it one bowl at a time, and freeze it.
+  - say: But I messed up once. I meant to cook one cup, and I filled the water up to the two-cup line.
+  - chat: [third_planner_this_year, 'the porridge outcome']
+  - say: Yep, porridge. I didn't even have a fever and I ate rice porridge for three days.
+  - say: When you live alone, whatever you make takes three days to get through. Curry, three days.
+  - chat: [leaving_work_on_time, 'day three curry is the best']
+  - say: Day three? I think day two is the best. Day three I turn it into udon.
+  - say: And turning it into curry udon makes one more serving. So.
+  - chat: [first_time_here, 'it never ends']
+  - say: It never ends, right, it doesn't. ...Wait, what were we talking about. Yakisoba?
+  - chat: [good_morning_guy, 'you were about to talk about midnight snacks']
+  - say: I was about to talk about midnight snacks? I wasn't. You just brought it up. Fine. Let's do it.
+- title: 脇道：夜中のお菓子
+  beats:
+  - chat: [good_morning_guy, 'ok then. do you open snacks at midnight?']
+  - say: Do I open snacks at midnight? I do. And when I open the bag, I say out loud, "just half."
+  - chat: [night_shift_survivor, 'did you stick to it?']
+  - say: Did I stick to it? Never once.
+  - say: Last time I put a clip on the bag at the halfway point.
+  - say: I had the clip off in under three minutes.
+  - chat: [first_time_here, 'what snack?']
+  - say: Kaki no tane, first-timer. Kameda's. Little spicy rice crackers mixed with peanuts.
+  - chat: [leaving_work_on_time, 'the one where they cut the peanuts']
+  - say: Where they cut the peanuts, yes! The cracker-to-peanut ratio used to be six to four. In twenty-twenty it became seven to three.
+  - chat: [nameless_familiar, 'it was a vote right']
+  - say: A vote, yep, the customers voted. Seven to three got the most votes, apparently.
+  - chat: [night_shift_survivor, 'I wanted to vote 6:4']
+  - say: You wanted six to four? Peanut person. I kept one bag from before the change and lined it up next to a new one.
+  - chat: [lives_on_points, 'did you count them?']
+  - say: Did I count? I counted. There were fewer peanuts. Confirmed.
+  - say: And after counting, I ate everything. Both bags.
+  - ask:
+      q: Do you end up opening a snack bag at midnight?
+      options:
+      - c: Yes. The whole bag.
+        r:
+        - '{name} does the whole bag. Honest. I''m on that side too.'
+        - And then in the morning you see the empty bag and go real quiet.
+      - c: I can stop at half
+        r:
+        - '{name}, you can stop at half? Wow. How?'
+        - I clipped mine and took it off in three minutes. If there's a trick, tell me.
+      - c: I don't eat at midnight
+        r:
+        - '{name} doesn''t eat at midnight. Iron will.'
+        - I feel like I used to be that way too. I don't remember when it changed.
+      npc:
+      - [night_shift_survivor, 0]
+      - [lives_on_points, 0]
+      - [good_morning_guy, 2]
+      - [leaving_work_on_time, 1]
+      - [third_planner_this_year, 0]
+  - chat: [lives_on_points, 'eating at night makes you fat']
+  - say: Eating at night makes you fat. I know. But this chat's full of night owls, so we're all in the same boat.
+  - chat: [nameless_familiar, 'frozen yaki onigiri are dangerous too']
+  - say: Frozen yaki onigiri, dangerous! Grilled rice balls, soy sauce on the outside. The big Nissui ones. I do two.
+  - say: One isn't quite enough. Two is too much.
+  - say: I wish I could do one and a half. If I split one and put half back in the freezer, next time I see it I'm like, why is this half.
+- title: 脇道：次の朝の胃と、健康診断
+  beats:
+  - chat: [night_shift_survivor, 'doesn''t your stomach hate you the next morning?']
+  - say: My stomach, next morning? Yeah. After a late-night snack it feels heavy.
+  - say: I've got a weak stomach. Probably because of the snacks.
+  - chat: [leaving_work_on_time, 'if you know, then stop']
+  - say: If I know, then stop. If I could stop, I wouldn't be in this situation.
+  - chat: [third_planner_this_year, 'how was your health check?']
+  - say: My health check. So, this year my stomach got a "keep under observation."
+  - chat: [first_time_here, 'what does that mean?']
+  - say: In Japan most workers get a yearly health check, and that mark means, not bad enough for a hospital, but watch it.
+  - say: I get exactly one every year. Last year cholesterol. The year before, eyesight.
+  - say: It's different every year. If it were the same, I'd know what to watch. It shows up somewhere new every time.
+  - chat: [night_shift_survivor, 'so this year it was your stomach']
+  - say: Yep, stomach this year. I pulled out last year's results and compared them. Lined them up. Learned nothing.
+  - chat: [nameless_familiar, 'health check envelopes are scary to open']
+  - say: Those envelopes are scary. And page one is always height and weight. The bad news is like page three.
+  - chat: [leaving_work_on_time, 'the courage to flip to page 3']
+  - say: The courage to get to page three? I flip from the back. I want to see the bad stuff first.
+  - chat: [third_planner_this_year, 'same way you read manuals']
+  - say: Same way I read manuals. Maybe. But even after seeing my stomach results, I haven't quit the midnight snacks.
+  - say: Bad, right? I had one tonight.
+- title: 終わり：今日しゃべった人
+  beats:
+  - chat: [cant_make_it_home, 'did you talk to anyone today?']
+  - say: Did I talk to anyone today? Let's see.
+  - say: The Seven-Eleven clerk at lunch, and the mail carrier.
+  - say: To the mail carrier, I said "thanks for your hard work." To the clerk, "no bag, thanks."
+  - chat: [lives_on_points, 'does that count as talking?']
+  - say: Does that count? It counts. They said "thank you" back.
+  - say: Two people. Plus you guys, right now.
+  - chat: [good_morning_guy, 'you can count us']
+  - say: I can count you? Then that's a lot of people today.
+  - chat: [leaving_work_on_time, 'ever had your first word of a day off be "ah" at night']
+  - say: First sound out of your mouth all day, at night, is "ah." Yes. A delivery came and I said "ah, yes," and my voice cracked.
+  - chat: [third_planner_this_year, 'does talking to yourself count?']
+  - say: Does talking to yourself count? Hmm. I don't want to count "ready, go" at the sink.
+  - chat: [lives_on_points, 'count it']
+  - say: Count it, huh. Eh, whatever. I'm heading to bed. After I wash the cup in the sink. Night.

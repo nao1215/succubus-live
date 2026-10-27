@@ -1,0 +1,28 @@
+category: media
+name: テレビ・ラジオ・映画・本・音楽の聴き方
+topics:
+- {id: media_tv_now, q: 最近見ているテレビ番組は？ テレビ自体見る？}
+- {id: media_tv_child, q: 子どもの頃にいちばん見ていたテレビ番組は？}
+- {id: media_drama, q: 好きなドラマは？}
+- {id: media_variety, q: 好きなバラエティ番組・お笑い芸人は？}
+- {id: media_m1, q: M-1 は毎年見る？ 好きな漫才師は？}
+- {id: media_radio, q: ラジオは聴く？ 好きな番組は？}
+- {id: media_movie, q: 人生でいちばん好きな映画は？}
+- {id: media_movie_theater, q: 映画館で座る席は？ ポップコーンは塩？ キャラメル？}
+- {id: media_cry, q: 最近泣いた作品は？}
+- {id: media_book, q: 最近読んだ本は？}
+- {id: media_manga, q: 人生でいちばん読み返した漫画は？}
+- {id: media_anime_now, q: 今期見ているアニメは？}
+- {id: media_music_now, q: 最近よく聴いている曲は？}
+- {id: media_karaoke_song, q: カラオケの十八番は？}
+- {id: media_karaoke_score, q: カラオケの採点は入れる？ 最高点は？}
+- {id: media_first_cd, q: 初めて買ったCDは？, era: 1980s-2000s}
+- {id: media_music_app, q: 音楽は何で聴いてる？ Spotify？ Apple Music？ YouTube？}
+- {id: media_video_sub, q: 動画のサブスクは何？（Netflix、Prime Video、U-NEXT、dアニメストア）}
+- {id: media_bgm, q: 作業中の BGM は？}
+- {id: media_speed, q: 動画を倍速で見る？}
+- {id: media_horror, q: ホラーは平気？ いちばん怖かった作品は？}
+- {id: media_celebrity, q: 似ていると言われた芸能人は？}
+- {id: media_ad, q: 頭から離れない CM ソングは？}
+- {id: media_live, q: 初めて行ったライブ・コンサートは？}
+- {id: media_comedy_line, q: つい真似してしまうギャグ・決め台詞は？}

@@ -1,0 +1,27 @@
+category: net
+name: スマホの使い方・ネット・SNS
+topics:
+- {id: net_charge, q: スマホの充電は何％で充電する？ 寝る前に挿す？}
+- {id: net_screen_time, q: 一日のスクリーンタイムは何時間？}
+- {id: net_home_screen, q: ホーム画面は整理してる？ 壁紙は何？}
+- {id: net_notifications, q: 通知の赤いバッジは消す派？ ためる派？, options: [すぐ消す, ためる]}
+- {id: net_unread, q: メールやLINEの未読は何件ある？}
+- {id: net_sns, q: いちばん使っている SNS は？, options: [X, Instagram, TikTok, YouTube, LINE, Bluesky, 5ch]}
+- {id: net_reply_speed, q: LINEの返信は早い？ 遅い？ 既読無視する？}
+- {id: net_stamp, q: よく使うスタンプは？}
+- {id: net_search, q: 最近ネットで調べたことは？}
+- {id: net_youtube, q: よく見る YouTube のジャンルは？}
+- {id: net_sleep_video, q: 寝る前に何を見る？}
+- {id: net_password, q: パスワードはどう管理してる？}
+- {id: net_photo, q: スマホの写真は何枚ある？ いちばん多いのは何の写真？}
+- {id: net_selfie, q: 自撮りはする？ 加工アプリは？}
+- {id: net_game_app, q: スマホのゲームは何をしてる？ ログボだけのゲームは？}
+- {id: net_burn, q: ネットでやらかしたことある？ 誤爆は？}
+- {id: net_typing, q: スマホの入力はフリック？ ローマ字？ 音声？}
+- {id: net_pc_type, q: パソコンのタイピングは速い？ ブラインドタッチ？}
+- {id: net_ai, q: AI（ChatGPT など）は何に使ってる？}
+- {id: net_wifi, q: 家の Wi-Fi の名前とパスワード、言える？}
+- {id: net_brightness, q: 画面の明るさは？ 文字の大きさは？}
+- {id: net_tab, q: ブラウザのタブは何枚開いてる？}
+- {id: net_ringtone, q: スマホはマナーモードのまま？ 着信音は？}
+- {id: net_streamer, q: よく見る配信者・VTuber は？（同業として）}

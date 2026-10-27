@@ -1,0 +1,239 @@
+# 6人の派閥の割り当て（2026-10-27）。各人の likes/<id>.yaml の答えはこれに従う。
+# 記号：lise リゼ / mora モーラ / pim ピム / ella エラ / nox ノクス / vespa ヴェスパ。
+# 回で使うときは、同じ派閥の二人を共闘させ、敵対する二人にいじり合わせる（「エラはたけのこ派なんだって、信じられない」）。
+# 正しさは決めない。チャットも派閥で参戦させる。
+# 各項目：派閥名: [メンバー]。note は台詞にしやすい一言（理由の芯）。
+factions:
+  fac_kinoko_takenoko:
+    きのこの山: [lise, nox, pim]
+    たけのこの里: [mora, ella, vespa]
+    note: 3対3。ピムはきのこ派なのに娘ミミがたけのこ派で家庭内が割れている。エラは作法の人なのにたけのこ（チョコが多いのは正義）。
+  fac_karaage_lemon:
+    かける: [vespa, ella]
+    かけない: [lise, nox]
+    自分の皿だけ: [mora, pim]
+    note: ピムは規則帳に「唐揚げのレモンは取り分けてから」の条文がある。モーラは「帳面を分けるのと同じ」。
+  fac_medamayaki:
+    醤油: [mora, pim]
+    ソース: [vespa]
+    塩こしょう: [ella, nox]
+    ケチャップ: [lise]
+  fac_anko:
+    つぶあん: [mora, pim, vespa]
+    こしあん: [ella, nox, lise]
+    note: 3対3。リゼは「皮を噛むのが面倒」でこしあん。
+  fac_subuta_pine:
+    あり: [vespa, lise, pim]
+    なし: [mora, ella, nox]
+  fac_curry_spicy:
+    甘口: [lise, pim]
+    中辛: [mora, nox]
+    辛口: [ella, vespa]
+    note: ピムは娘に合わせた甘口に、自分だけ後から一味を量って足す。
+  fac_ramen_hardness:
+    バリカタ: [vespa]
+    カタ: [nox]
+    普通: [mora, ella, pim]
+    やわめ: [lise]
+  fac_nikuman:
+    肉まん: [lise, mora, pim, nox]
+    豚まん: [vespa, ella]
+    note: ヴェスパは大阪遠征で551蓬莱に染まった。エラは「豚の饅頭を肉と申すのは、雑でございます」。
+  fac_mac_name:
+    マック: [lise, mora, pim, nox]
+    マクド: [vespa]
+    略さない（マクドナルド）: [ella]
+  fac_hiyashi_chuka:
+    マヨネーズ: [vespa, lise]
+    そのまま: [mora, nox]
+    からし: [ella, pim]
+  fac_potato_size:
+    S: [mora, pim]
+    M: [nox]
+    L: [lise, vespa]
+    ポテトは頼まない: [ella]
+  fac_sweet_tamagoyaki:
+    甘い: [pim, lise, vespa]
+    しょっぱい・だし巻き: [mora, ella, nox]
+  fac_sushi_order:
+    ネタにつける: [ella, mora]
+    シャリにつける: [lise]
+    気にしない: [vespa, pim, nox]
+  fac_natto_mix:
+    前に混ぜる: [nox, mora, pim, ella]
+    後に混ぜる: [lise, vespa]
+  fac_toilet_paper:
+    手前に垂れる: [nox, ella, mora]
+    奥に垂れる: [pim, lise, vespa]
+    note: 3対3。ピムは「ミミが転がして全部出すので奥」。ノクスは特許の図面を持ち出す。
+  fac_escalator:
+    左に立つ: [mora, lise, pim]
+    右に立つ: [vespa]
+    歩かない（両側に立つ）: [ella, nox]
+    note: ピムは左に立つ東京式だが、保育園のお迎えの日だけ右を歩く（自分で規則違反を認める）。
+  fac_wari_kan:
+    きっちり割り勘: [mora]
+    多く払う側: [vespa, ella]
+    奢られたい: [lise]
+    飲んだ分だけ: [nox, pim]
+  fac_bath_order:
+    頭から: [mora, pim, vespa]
+    体から: [ella, nox]
+    顔から: [lise]
+  fac_towel:
+    毎回洗う: [ella, nox]
+    数回使う: [mora, lise, vespa, pim]
+  fac_sock_color:
+    全部同じ黒: [nox, mora, ella]
+    色や柄: [vespa, lise]
+    白: [pim]
+  fac_miso_soup_place:
+    ご飯が左: [ella, mora, pim]
+    気にしない: [lise, nox, vespa]
+  fac_heating:
+    エアコン: [pim]
+    こたつ: [lise, vespa]
+    石油ストーブ: [mora]
+    ガスファンヒーター: [ella]
+    我慢（サーバーの排熱）: [nox]
+  fac_pc_phone:
+    PC: [nox, ella, lise, mora]
+    スマホ: [pim, vespa]
+  fac_iphone_android:
+    iPhone: [vespa, ella, mora]
+    Android: [nox, lise, pim]
+    note: 3対3。
+  fac_win_mac:
+    Windows: [lise, mora, pim]
+    Mac: [ella, vespa]
+    Linux: [nox]
+  fac_ps_switch:
+    Nintendo Switch: [lise, pim, mora]
+    PlayStation: [ella, vespa]
+    PC: [nox]
+    note: リゼはゲームの人なので「全部持ってる。寝ながらできるから Switch」。
+  fac_tab_space:
+    タブ: [nox, lise, ella]
+    スペース: [mora, pim, vespa]
+    note: 3対3。プログラマーはノクスだけ。ほかはエクセルやメモ帳や譜面の話で答える（エラ「タブ譜でございますので」、ピム「全角スペースで揃えます！」→ノクスが小声で悲鳴）。
+  fac_vim_emacs:
+    vim: [nox]
+    emacs: [lise]
+    VS Code: [ella]
+    その他: [mora, pim, vespa]
+    note: リゼは「emacs の中にテトリスがあるから」。モーラはExcel、ピムはスマホのメモ帳、ヴェスパはXの下書き。
+  fac_dark_light_mode:
+    ダーク: [nox, lise, vespa]
+    ライト: [mora, pim, ella]
+  fac_line_reply:
+    失礼: [pim, vespa]
+    気にしない: [lise, nox, mora]
+    未読スルーの方が失礼: [ella]
+  fac_ebook:
+    紙: [ella, mora, vespa]
+    電子書籍: [nox, lise, pim]
+  fac_shibari:
+    初見は攻略を見ない: [vespa, ella]
+    すぐ攻略を見る: [pim, mora, nox]
+    縛りで遊ぶ: [lise]
+  fac_difficulty:
+    やさしい: [lise, pim, mora]
+    ふつう: [vespa, nox]
+    高難度: [ella]
+  fac_music_sub:
+    サブスク: [nox, pim, vespa]
+    CD・レコード: [ella, mora]
+    両方: [lise]
+  fac_live_phone:
+    撮る: [lise, pim, mora]
+    撮らない: [ella, vespa, nox]
+  fac_oshi_hako:
+    単推し: [vespa, pim]
+    箱推し: [ella, mora]
+    DD: [lise]
+    同担拒否: [nox]
+  fac_anime_original:
+    原作が先: [nox, ella, mora]
+    アニメが先: [vespa, lise, pim]
+  fac_spoiler:
+    絶対だめ: [vespa, ella, nox]
+    平気: [lise, pim]
+    先に知りたい: [mora]
+    note: モーラは取扱説明書を「困ったときは」から読むのと同じで、小説も最後の頁から読む。
+  fac_kaji:
+    半々にする: [pim, mora]
+    得意な方がやる: [ella, vespa, nox]
+    手伝うでいい: [lise]
+  fac_cash_cashless:
+    現金: [mora, ella]
+    キャッシュレス: [nox, lise, vespa, pim]
+  fac_morning_night:
+    朝型: [pim, ella]
+    夜型: [lise, nox, mora, vespa]
+  fac_dog_cat:
+    犬: [vespa, pim, mora]
+    猫: [lise, nox, ella]
+  fac_punctual:
+    5分前に着く: [mora, pim, ella]
+    時間ちょうど: [nox]
+    少し遅れる: [lise, vespa]
+  fac_umbrella_rain:
+    すぐさす: [ella, pim, mora]
+    少しならささない: [lise, vespa, nox]
+
+# 派閥の問い以外で、答えをばらけさせるために先に決めたもの（実名）。
+choices:
+  chain_konbini: {mora: セブン-イレブン, ella: セブン-イレブン, lise: ローソン, nox: ローソン, vespa: ファミリーマート, pim: ミニストップ}
+  chain_cafe: {mora: ドトール, vespa: スターバックス, pim: コメダ珈琲店, lise: コメダ珈琲店, ella: 個人の喫茶店, nox: タリーズ}
+  chain_burger: {lise: マクドナルド, pim: マクドナルド, vespa: マクドナルド, ella: モスバーガー, mora: ロッテリア（ゼッテリア）, nox: バーガーキング}
+  chain_gyudon: {ella: 吉野家, nox: 吉野家, mora: 松屋, lise: 松屋, pim: すき家, vespa: なか卯}
+  chain_famires: {mora: サイゼリヤ, nox: サイゼリヤ, lise: ガスト, pim: バーミヤン, ella: ロイヤルホスト, vespa: デニーズ}
+  chain_sushi: {lise: くら寿司, vespa: くら寿司, pim: スシロー, mora: はま寿司, nox: かっぱ寿司, ella: 回らない店}
+  drink_coffee_tea: {mora: コーヒー, nox: コーヒー, vespa: コーヒー, ella: 紅茶, lise: 紅茶, pim: 緑茶}
+  drink_beer: {mora: 黒ラベル, ella: ヱビス, pim: プレモル, vespa: スーパードライ, lise: 飲まない, nox: 飲まない}
+  drink_tea_bottle: {mora: お〜いお茶, nox: 綾鷹, pim: 十六茶, lise: 爽健美茶, vespa: 伊右衛門, ella: 生茶}
+  sweets_chips: {mora: うすしお, lise: コンソメ, vespa: コンソメ, pim: のり塩, nox: 九州しょうゆ, ella: その他（湖池屋プライドポテト）}
+  sweets_chips_brand: {lise: カルビー, mora: カルビー, nox: カルビー, pim: カルビー, ella: 湖池屋, vespa: プリングルズ}
+  sweets_pudding: {mora: 固め, ella: 固め, pim: 固め, lise: とろとろ, vespa: とろとろ, nox: とろとろ}
+  season_fav: {lise: 冬, nox: 冬, mora: 秋, ella: 秋, pim: 春, vespa: 夏}
+  bath_shower_tub: {lise: 湯船, ella: 湯船, pim: 湯船, mora: シャワー, nox: シャワー, vespa: シャワー}
+  bath_temp: {lise: 39度, mora: 41度（熱いとのぼせる）, pim: 40度, ella: 42度, nox: 38度, vespa: 43度}
+  sleep_futon: {mora: ベッド, nox: ベッド, pim: 布団, ella: 布団, vespa: 布団, lise: ソファ}
+  food_ramen: {mora: 醤油, pim: 醤油, lise: 味噌, ella: 塩, vespa: 豚骨, nox: 家系}
+  food_soba_udon: {mora: 蕎麦, ella: 蕎麦, nox: 蕎麦, lise: うどん, pim: うどん, vespa: うどん}
+  food_karaage: {lise: もも, vespa: もも, pim: もも, mora: むね, nox: むね, ella: 手羽}
+  cook_breakfast: {pim: ご飯, mora: ご飯, ella: パン, vespa: パン, nox: 食べない（ゆで卵だけ）, lise: 食べない}
+  cook_measure: {pim: 量る, nox: 量る, ella: 量る, mora: 目分量, lise: 目分量, vespa: 目分量}
+  gear_phone: {nox: Pixel 6a, lise: Galaxy Z Fold, pim: AQUOS sense, vespa: iPhone 16, mora: iPhone SE（第2世代）, ella: iPhone 15 Pro}
+  gear_carrier: {pim: au（家族割）, mora: 格安SIM（IIJmio）, nox: povo, lise: 楽天モバイル, vespa: ahamo, ella: docomo（主様の契約の家族回線）}
+  gear_pc: {nox: ThinkPad, lise: 自作PC, ella: MacBook, vespa: MacBook, mora: Windows ノート, pim: Windows ノート（家族共用）}
+  net_sns: {vespa: X, nox: Bluesky, lise: 5ch, mora: LINE, ella: YouTube, pim: Instagram}
+
+# 2026-10-27 追加の論争（common-topics/factions.yaml の末尾）
+factions_added:
+  fac_zoni:
+    角餅のすまし: [mora, pim]
+    丸餅の白味噌: [ella, lise]
+    丸餅のすまし: [nox]
+    あん餅（香川）: [vespa]
+    note: リゼの雑煮はエラが作るので白味噌。エラは最初に仕えた館の京風。
+  fac_milk_tea:
+    ミルクが先: [lise, pim, vespa]
+    紅茶が先: [ella, mora]
+    ミルクは入れない: [nox]
+    note: エラはオーウェルの側。主様がミルクを先に入れるのを毎朝黙って見ている。
+  fac_onigiri_name:
+    おにぎり: [lise, mora, nox, vespa]
+    おむすび: [ella, pim]
+  fac_gif:
+    ジフ: [nox, ella]
+    ギフ: [lise, mora, pim, vespa]
+    note: ノクスは「作った人が言ってるから」、エラは「作者様がそう仰せでございますので」。
+  fac_potesara:
+    惣菜で十分: [mora, lise, nox, vespa]
+    手作りしたい: [pim, ella]
+    note: ピムは手作り派だが「人に言われて作るものではありません！」と怒る側。
+  fac_dress_color:
+    青と黒: [mora, ella, vespa]
+    白と金: [lise, nox, pim]
+    note: ノクスは画面を最低の明るさで見たので白と金に見えた、と言い張る。

@@ -1,0 +1,205 @@
+# Nox 002 (English). Source: src/episodes/nox/002.yaml. Beat order matches the Japanese.
+title: "Why a probe that landed on Mars kept rebooting itself (nineteen ninety-seven)"
+lobby:
+- "Hi. Tonight we're going to Mars."
+- "In nineteen ninety-seven, a probe landed on Mars and then kept rebooting."
+- "The cause? Urgent work got stuck waiting on work that wasn't urgent."
+- "If this turns into a bath tangent, sorry in advance."
+parts:
+- title: Opening (soft-boiled)
+  beats:
+  - say: "Oh, we're up. Hi, everyone who's still awake."
+  - chat: [lag_appreciation_club, "hi (dark)"]
+  - say: "'Hi, parenthesis, dark.' You don't need the parenthesis."
+  - chat: [rtos_veteran_15y, "evening"]
+  - chat: [night_shift_survivor, "isnt it cold today?"]
+  - say: "Is it cold today, Night Shift? I live in a basement, so I can't tell. The server room next door keeps it warm."
+  - say: "But I did figure out it got cold. From an egg."
+  - chat: [first_time_here, "hi first time. egg?"]
+  - say: "Welcome, new person. So, every morning I boil an egg for exactly seven minutes. My morning is, like, the evening. But still."
+  - say: "Today I cracked it open and it was soft-boiled."
+  - chat: [kernel_reader, "winter soft boil arc"]
+  - say: "The winter soft-boil is here. When the tap water gets cold, the same seven minutes gives you a runny one."
+  - chat: [first_time_here, "water temp changes it?"]
+  - say: "It does. Same pot, same amount of water, same timer. All of it."
+  - chat: [rtos_veteran_15y, "just measure the water temp"]
+  - say: "Measure the water temp. I know. I know I should."
+  - say: {face: shy, text: "But I kind of love the winter soft-boil. So I haven't fixed it."}
+  - chat: [lag_appreciation_club, "wontfix"]
+  - say: "Won't fix. It's seasonal."
+  - chat: [second_year_dev, "evening. been waiting for the mars one"]
+  - say: "Second Year, you were waiting for the Mars one? You remembered."
+  - say: "Last time I told you how my 'OK' killed the notifications. The phone call on the toilet."
+  - say: "Something with a similar piece to it happened on Mars in nineteen ninety-seven. The one holding the lock can't move. That's tonight."
+- title: Rebooting on Mars
+  beats:
+  - chat: [first_time_here, "mars?"]
+  - say: "Mars. A probe called Mars Pathfinder. It landed on July fourth, nineteen ninety-seven."
+  - chat: [first_time_here, "i only know the nissan pathfinder"]
+  - say: "Oh, the car. Well, a tiny rover went down with it, so that's kind of right."
+  - say: "And for a few days after landing, it kept rebooting on its own."
+  - chat: [night_shift_survivor, "rebooting on mars is terrifying"]
+  - say: "Rebooting on Mars is terrifying, right? You can't go over and pull the plug."
+  - say: "The cause is called priority inversion."
+  - chat: [first_time_here, "priority in..."]
+  - say: "You got stuck at 'priority in'? The name's scary. Okay, roughly."
+  - say: "A program has urgent tasks and not-urgent tasks. Urgent ones get to run first."
+  - say: "Priority inversion is when that flips. The urgent one ends up waiting because of the not-urgent one."
+  - chat: [first_time_here, "why"]
+  - say: "Why? It's the bathroom again. Sorry."
+  - say: "The low-priority task goes in first and locks the door. Then the urgent one shows up and waits outside."
+  - chat: [first_time_here, "just come out already"]
+  - say: "Just come out, right? It wants to! But a bunch of medium-priority tasks keep showing up and running ahead of it."
+  - say: "So the low one never gets its turn, never finishes, never unlocks the door."
+  - chat: [lag_appreciation_club, "medium guys are the villains"]
+  - say: "The medium ones are the villains? No. The medium ones just ran because it was their turn."
+  - say: "You can't pin it all on one person, and it still jams. Awful, right? I love it, though."
+  - chat: [kernel_reader, "you love it?"]
+  - say: "Do I love it? Yeah. It's a case you can't close by blaming one person. There was a real miss in there, though."
+- title: There are two versions
+  beats:
+  - say: "So, um, this incident has the version everyone spread, and the version the guy who built it wrote later."
+  - say: "That December, someone from the company that made the probe's operating system gave a talk at a conference."
+  - say: "Mike Jones at Microsoft heard it and sent out an email summary."
+  - say: "The subject line was 'What really happened on Mars?'"
+  - chat: [kernel_reader, "and then the actual guy replies"]
+  - say: "And then the actual guy replies! Glenn Reeves, who led the software on the probe."
+  - say: "His opening line is basically, 'I've had this summary forwarded to me by about four hundred people.'"
+  - chat: [lag_appreciation_club, "400 lmao"]
+  - chat: [night_shift_survivor, "getting your own incident forwarded to you is rough"]
+  - say: {face: laugh, text: "Getting your own incident forwarded to you, so rough. Four hundred emails. What did his inbox look like."}
+  - say: "And when you read Reeves's version, some parts don't match what Jones said."
+  - chat: [rtos_veteran_15y, "reeves never actually calls it a watchdog"]
+  - say: "'Reeves never calls it a watchdog.' R-TOS Veteran, don't spoil it. You're right, though."
+  - chat: [first_time_here, "watchdog?"]
+  - say: "A watchdog is a timer that reboots the system if it doesn't hear back for a while. In Jones's version, the watchdog did the reboot."
+  - say: "In Reeves's version, there's a scheduler that ticks eight times a second, and at each tick it checks, 'did last cycle's work finish?'"
+  - say: "If it didn't, reboot. Right there."
+  - chat: [kernel_reader, "same result though"]
+  - say: "Same result? It rebooted either way. But what matters isn't the name, it's what it was watching."
+  - say: "In Reeves's version, it was watching deadlines. They chased down why the deadline got missed, and that led them to the lock."
+- title: Speaking of baths (showers only)
+  beats:
+  - chat: [night_shift_survivor, "random but its cold so i ran a hot bath tonight"]
+  - say: "You ran a bath because it's cold? Oh, nice. How long do you stay in?"
+  - chat: [night_shift_survivor, "next thing i know its been an hour"]
+  - say: {face: surprised, text: "An hour? Don't you get dizzy?"}
+  - chat: [lag_appreciation_club, "are you a bath person nox"]
+  - say: "Am I a bath person? No, showers only. Even in winter."
+  - chat: [first_time_here, "isnt that cold?"]
+  - say: "Isn't it cold? It is. So before I get out, I just keep the hot water on my feet."
+  - say: "One time I cranked the shower really hot."
+  - say: "And when I got out, the text on my screen looked wobbly."
+  - say: "I misread a line of code."
+  - chat: [kernel_reader, "was that really the shower's fault"]
+  - say: "Was it really the shower's fault... it was the shower. That's my official story."
+  - chat: [second_year_dev, "morning or night shower?"]
+  - say: "Morning or night? Morning. After work, before bed. Ten minutes and I'm out."
+  - chat: [lag_appreciation_club, "graceful shutdown"]
+  - say: {face: annoyed, text: "Don't call it a graceful shutdown. ...I mean, it is."}
+  - chat: [leaving_work_on_time, "you dont soak?"]
+  - say: "Why don't I soak? I'm scared I'll fall asleep in there. If the on-call phone rings, I can't pick up."
+  - chat: [leaving_work_on_time, "you think about on call even in the bath"]
+  - say: "I do. Leaving On Time, you don't think about work in the bath?"
+  - chat: [leaving_work_on_time, "i leave on time so i dont have to"]
+  - say: {face: surprised, text: "You leave on time so you don't have to think about it. I'm so jealous. How do you even do that."}
+- title: The weather guy
+  beats:
+  - chat: [rtos_veteran_15y, "baths are nice but who was stuck waiting on mars"]
+  - say: "Who was stuck waiting on Mars. Right. Mars."
+  - say: "The question is which task got frozen while holding the lock."
+  - say: "The weather task. It's called A-S-I slash MET."
+  - chat: [first_time_here, "the weather guy"]
+  - say: "Yeah, the weather guy."
+  - say: "All the other tasks got their data through a kind of shared bulletin board. Only the weather guy did it differently."
+  - say: "It got data through a pipe, and it waited using a thing called select. Like, 'did anything come in yet?'"
+  - chat: [kernel_reader, "the lock is inside select"]
+  - say: "'The lock is inside select.' Yes, that! The weather guy didn't make that lock. It was inside the OS's select."
+  - chat: [lag_appreciation_club, "exclamation mark spotted"]
+  - say: {face: flustered, text: "'Exclamation mark spotted.' There wasn't one. Okay, there was."}
+  - say: "If you make a lock yourself, you look at its settings when you make it. But the lock inside the OS? Nobody looked."
+  - chat: [second_year_dev, "i never look inside libraries"]
+  - say: "You never look inside libraries, right. Last time I didn't check how slow the other company's API could get, either."
+  - say: "So, back on Earth they had an identical copy of the hardware, and they ran the same work on it over and over."
+  - say: "With tracing turned on, so it logged everything that happened inside. And in under eighteen hours, it happened."
+  - chat: [rtos_veteran_15y, "the twin on the ground"]
+  - say: "The twin on the ground. You can't bring the one on Mars home, so you make the twin do it."
+  - chat: [first_time_here, "they didnt notice before launch?"]
+  - say: "Did they miss it before launch? It actually happened during testing. But they couldn't reproduce it, so it got pushed back."
+  - say: "Because finishing the landing software came first."
+  - say: "Reeves wrote, 'We had our priorities right.'"
+  - chat: [kernel_reader, "saying that about a priority bug"]
+  - say: {face: laugh, text: "Saying that about a priority bug. He said it. On purpose, I think."}
+- title: The fix
+  beats:
+  - chat: [second_year_dev, "how did they fix it"]
+  - say: "How did they fix it? They changed one setting and turned on priority inheritance."
+  - say: "The low task holding the lock gets to borrow the waiting urgent task's priority, just for that moment."
+  - chat: [first_time_here, "temporary promotion"]
+  - say: "Yes, a temporary promotion. Now the medium tasks can't cut in front of it, so it gets out fast."
+  - say: "But that one setting applied to every lock inside select. So they tested on the ground twin that nothing else changed behavior before they sent it up."
+  - chat: [kernel_reader, "didnt they type code into it on mars"]
+  - say: "They typed code in on Mars, right? That's the version that spread. That they fixed it with the interpreter on board."
+  - say: "Reeves wrote that they did not change the software from the shell."
+  - say: "They sent a diff against the version they'd fixed on the ground, and dedicated software on the probe verified it before applying."
+  - chat: [lag_appreciation_club, "boring"]
+  - say: "Boring, right? But that version gives me way more butterflies."
+  - chat: [lag_appreciation_club, "so you dont touch prod directly"]
+  - say: "You don't touch prod directly? No, you don't. ...Hey. Don't look at me like that."
+  - chat: [lag_appreciation_club, "says the person who blacked out her stream mid stream last week"]
+  - say: {face: annoyed, text: "'Blacked out her stream mid-stream.' That was my stream settings. Not Mars."}
+  - chat: [rtos_veteran_15y, "prod is prod"]
+  - say: "...Yes, sir."
+  - chat: [rtos_veteran_15y, "btw im team ceiling not inheritance"]
+  - say: "R-TOS Veteran is team ceiling. Here we go. We fight about this every time."
+  - say: "There are a few flavors of priority ceiling. Mine is, you decide up front, 'anyone who enters this bathroom gets promoted the second they walk in.'"
+  - chat: [rtos_veteran_15y, "you get bounded wait times at design time"]
+  - say: "You get bounded waits at design time, yes. If you know every resource and every deadline, ceiling is really strong."
+  - say: "But you can't set it unless you can list out who uses which bathroom."
+  - say: "And like today, sometimes the lock's buried in the OS and you can't list it."
+  - ask:
+      q: "Promote only while someone's waiting (inheritance), or promote up front (ceiling)? Which do you like?"
+      options:
+      - c: "Only while waiting (inheritance)"
+        r:
+        - "{name}, same as me."
+        - "It's nice that it stays out of everyone's way normally. It only shows up when there's trouble."
+      - c: "Up front (ceiling)"
+        r:
+        - "{name}, you're on R-TOS Veteran's side."
+        - "If the design lets you list it all out, I'd pick ceiling too. ...Me being lazy about listing stuff is a separate issue."
+      - c: "Just don't use locks"
+        r:
+        - "{name}, then a whole different kind of pain starts."
+        - "Even without locks, you still need something to keep things in order. The hard part just moves somewhere else."
+      npc:
+      - [rtos_veteran_15y, 1]
+      - [kernel_reader, 0]
+      - [ddd_police, 2]
+      - [lag_appreciation_club, 1]
+      - [second_year_dev, 0]
+  - chat: [rtos_veteran_15y, "ceiling's winning"]
+  - say: {face: annoyed, text: "Ceiling's winning? It's basically fifty-fifty. Don't count tonight."}
+  - chat: [lag_appreciation_club, "you're losing"]
+  - say: "I'm not losing. It's even."
+- title: Closing (Yoru)
+  beats:
+  - chat: [second_year_dev, "does linux have inheritance now?"]
+  - say: "Linux today? You can turn it on. But a plain pthread mutex doesn't do inheritance unless you ask."
+  - say: "The default is P-thread prio none. Same as Mars. If you don't ask for it, you don't get it."
+  - chat: [second_year_dev, "ill check our code tomorrow"]
+  - say: "You'll check tomorrow? Even if you find nothing, remember that you looked."
+  - chat: [first_time_here, "brb bath"]
+  - say: "Off to the bath? Have fun. What temperature?"
+  - chat: [first_time_here, "40C"]
+  - say: "Forty Celsius. That's a normal Japanese bath. Don't stay in so long you get dizzy."
+  - say: "Okay, I'm booting Yoru. The OS I'm building."
+  - chat: [kernel_reader, "todays hypothesis?"]
+  - say: "Today's hypothesis: I swapped the order of one setup step. The setup right before it takes the timer interrupt."
+  - say: "It printed 'yoru.' Okay. Enabling interrupts."
+  - say: {face: surprised, text: "It crashed."}
+  - chat: [lag_appreciation_club, "crashed again"]
+  - chat: [rtos_veteran_15y, "test it on a ground twin"]
+  - say: "Test it on a ground twin? I don't have a twin. ...Oh, I could use one of the old machines in my room. Next week."
+  - say: "Thanks, everyone who's awake. That was fun."
+  - say: "Go to bed. I'm eating my soft-boiled egg first, though."

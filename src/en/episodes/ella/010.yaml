@@ -1,0 +1,178 @@
+# Ella 010 (English). Same beats as src/episodes/ella/010.yaml.
+title: "Why are song intros so short now? And the night MTV began"
+parts:
+- title: Opening (make the intro a bit shorter)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Do hear me out. Today, they said it to me again."
+  - chat: [headbang_whiplash, "what"]
+  - say: "What, you ask? You see, I take on music work from a game studio in the castle town."
+  - say: "And the person in charge there says it every single time. 'Could you make the intro a bit shorter?'"
+  - chat: [new_releases_only, "its long isnt it"]
+  - say: "It's long, you say. It is not long! Sixteen bars, my dear."
+  - chat: [piano_teacher, "for a game title screen thats long"]
+  - say: "For a title screen, that's long... Teacher, you too?"
+  - chat: [sold_my_keyboard, "says the one who got fired for long solos"]
+  - say: {face: annoyed, text: "Says the one who was fired for long solos? That has nothing to do with this."}
+  - chat: [budokan_balcony_east, "it has everything to do with this"]
+  - say: "Everything to do with it, you say. ...Perhaps, a little, it does."
+  - chat: [headbang_whiplash, "whats the person in charge like"]
+  - say: "Whiplash, the person in charge is not a bad sort at all. They even give me sweets."
+  - say: "Only, when they listen to a track, every time, about five seconds in, they go 'mm' and stop it."
+  - chat: [new_releases_only, "five seconds lmao"]
+  - chat: [piano_teacher, "ouch thats rough"]
+  - say: "Five seconds is no laughing matter. Only Teacher calls it rough. Out of sixteen bars, I believe they've heard bar one."
+  - chat: [sold_my_keyboard, "just cram everything into the first five seconds"]
+  - say: "Cram everything into the first five seconds. If only it were that simple."
+  - chat: [first_time_here, "first time here. are short intros better?"]
+  - say: "Welcome, dear newcomer. Are short intros better? Well, the fact is, intros these days really are very short."
+  - say: "So that's today's topic. Because it vexes me."
+- title: Main story (from twenty seconds to five)
+  beats:
+  - say: "There's a study from Ohio State University in America, published in twenty seventeen."
+  - say: "They looked at the American year-end top ten songs, from nineteen eighty-six to twenty fifteen."
+  - chat: [new_releases_only, "and?"]
+  - say: "And? In the mid-eighties, intros averaged over twenty seconds."
+  - say: "By twenty fifteen, they'd shrunk to about five seconds."
+  - chat: [first_time_here, "five seconds!"]
+  - chat: [budokan_balcony_east, "back then the radio dj would talk over the intro"]
+  - say: "The DJ talked over the intro. Yes, exactly! They'd introduce the song over the intro, then stop dead right before the vocals came in. I adored that."
+  - chat: [sold_my_keyboard, "do you still listen to the radio?"]
+  - say: "I still listen. In the mornings, instead of the television, I keep NHK-FM on low. That's Japan's public radio, the music station."
+  - say: "And bayfm's 'POWER ROCK TODAY.' Mr. Masanori Ito's show. He's been the voice of hard rock on Japanese radio for decades."
+  - chat: [budokan_balcony_east, "masa ito!"]
+  - say: "Masa Ito! Yes! Budokan, you listen too?"
+  - chat: [budokan_balcony_east, "ive lost count of the decades"]
+  - say: "Lost count of the decades. I learn a lot of new band names from that show as well."
+  - chat: [new_releases_only, "excuse me i tell u the new stuff"]
+  - say: "Excuse me, you tell me the new stuff. Yes, New Releases, you teach me a great deal too. Thank you."
+  - chat: [new_releases_only, "being sincere is creepy"]
+  - say: "Sincere and creepy. I am not creepy. Now then, intros."
+  - chat: [new_releases_only, "now if the vocals dont hit right away u skip"]
+  - say: "If the vocals don't come right away, you skip. That's the heart of it. The researcher suspects streaming, where songs get skipped so fast."
+  - chat: [piano_teacher, "tempos are going up too right?"]
+  - say: "Tempos going up, yes, so it seems, Teacher. The tempos had crept faster as well."
+  - chat: [new_releases_only, "i skip long intros too"]
+  - say: {face: surprised, text: "New Releases, you skip long intros too!"}
+  - chat: [new_releases_only, "i skip"]
+  - say: "You skip, you say. ...Truth be told, I skip intros too. When I'm out and about."
+  - chat: [budokan_balcony_east, "hey"]
+  - chat: [sold_my_keyboard, "practice what you preach"]
+  - say: "'Hey.' 'Practice what you preach.' At home I listen properly from the very start! It's only outside, when time is short, that I slip."
+  - chat: [headbang_whiplash, "so the person in charge is right"]
+  - say: "So the person in charge is right. I suppose they are. How galling."
+- title: Side track (streaming, or CDs?)
+  beats:
+  - chat: [here_for_bgm, "i just stream stuff all day so never noticed intros"]
+  - say: "Welcome, Here For BGM. You stream all day, so intros never bother you. A streaming person, I see."
+  - chat: [here_for_bgm, "and you ella?"]
+  - say: "Me? At home, it's records or CDs. Out of the house, CDs I've ripped, on shuffle."
+  - chat: [new_releases_only, "just use streaming"]
+  - say: "Just use streaming, you say. But somehow, I feel that if I don't own it, it might vanish."
+  - chat: [piano_teacher, "i get that. there was an album that disappeared from streaming once"]
+  - say: "Albums that vanish from streaming, yes! When you suddenly can't listen anymore, it's truly maddening."
+  - chat: [budokan_balcony_east, "im all CDs. three shelves"]
+  - say: "All CDs, three shelves! Aren't you frightened when there's an earthquake?"
+  - chat: [budokan_balcony_east, "fell over once. cracked some cases"]
+  - say: {face: sad, text: "It fell over once and the cases cracked. A cracked case is so sad, isn't it. Even when the disc is fine."}
+  - chat: [here_for_bgm, "streaming doesnt crack"]
+  - say: "Streaming doesn't crack. That's true, I grant you."
+  - say: "But I can never bring myself to throw out a cracked case. I tape it up and put it back on the shelf."
+  - chat: [budokan_balcony_east, "i tape mine too"]
+  - say: "Budokan tapes them too. Kindred spirits. Little by little the shelves become a patchwork."
+  - ask:
+      q: "My dears, do you stream your music, or buy CDs and records?"
+      options:
+      - c: "streaming"
+        r:
+        - "Streaming. {name}, it is convenient, isn't it."
+        - "Honestly, I use it a little myself, when I'm hunting for new songs."
+      - c: "CDs/records"
+        r:
+        - "CDs, records! {name}, kindred spirits! Are you running out of room?"
+      - c: "both"
+        r:
+        - "Both. {name}, the best of both worlds."
+        - "Buying only what you love. Very sensible, very sustainable."
+      - c: "radio or YouTube"
+        r:
+        - "Radio or YouTube. {name}, what do you usually have on?"
+        - "Myself, I keep NHK-FM on low in the mornings."
+      npc:
+      - [here_for_bgm, 0]
+      - [new_releases_only, 0]
+      - [budokan_balcony_east, 1]
+      - [piano_teacher, 2]
+      - [sold_my_keyboard, 3]
+  - say: "I myself am a record buyer, you see."
+  - say: "In my room, the floor has begun to tilt."
+  - chat: [sold_my_keyboard, "your floor is tilting?"]
+  - say: "More streaming people, I see. And is my floor tilting? It is. The records are heavy. I bought a spirit level, and now I check it every morning and despair."
+  - chat: [headbang_whiplash, "fix it"]
+  - say: "Fix it, you say. Mora won't give me the money to fix it."
+  - chat: [piano_teacher, "maybe stop checking the level every morning"]
+  - say: "Stop checking it? If I don't look, it bothers me even more. But enough about the floor. MTV, my dears."
+- title: Back to the story (the disco night and the MTV night)
+  beats:
+  - say: "The way songs are built has changed every time the way we listen has changed."
+  - say: "August first, nineteen eighty-one. In America, a channel called MTV went on the air. Music videos, all day long."
+  - chat: [first_time_here, "what was the first video?"]
+  - say: "The first video? The Buggles, 'Video Killed the Radio Star.'"
+  - chat: [new_releases_only, "a bit on the nose"]
+  - say: "A bit on the nose, isn't it! I absolutely adore that sort of thing."
+  - say: "From there, more and more songs sold on their looks. Budgets for videos went through the roof."
+  - chat: [budokan_balcony_east, "two years before that they blew up disco right"]
+  - say: "Two years before, they blew up disco. Ah, nineteen seventy-nine! Budokan, how well you know."
+  - chat: [first_time_here, "blew up??"]
+  - say: "Blew up, truly. At a baseball stadium in Chicago, there was an event: bring a disco record, and admission was ninety-eight cents."
+  - say: "Between the two games, they blew up the collected records out on the field."
+  - chat: [first_time_here, "uh..."]
+  - say: "Uh, indeed. And then crowds of fans stormed the field. The second game was called off, and the home team had to forfeit."
+  - chat: [headbang_whiplash, "baseball caught in the crossfire"]
+  - say: "Baseball caught in the crossfire. It's the players I feel sorry for."
+  - chat: [new_releases_only, "so did disco end there?"]
+  - say: "Did it end there? They call it 'the night disco died,' but I don't believe that."
+  - say: "Dance music kept going, changing shape all the while, right up to today."
+  - chat: [budokan_balcony_east, "and in 92 nirvana knocked michael jackson off number one"]
+  - say: "Nirvana knocked Michael Jackson off the top. Yes. January, nineteen ninety-two. 'Nevermind' overtook Mr. Jackson's 'Dangerous' for number one."
+  - chat: [piano_teacher, "that was a big deal"]
+  - say: "Teacher says that was a big deal. It truly was."
+  - chat: [new_releases_only, "now its all decided by youtube views"]
+  - say: "Now it's YouTube views. Indeed. That reminds me, do you remember 'Gangnam Style'?"
+  - chat: [first_time_here, "PSYs?"]
+  - say: "PSY's, yes. In twenty fourteen, that video's view count went past the highest number YouTube could count."
+  - chat: [new_releases_only, "theres a limit??"]
+  - say: "There's a limit, yes. The way they counted then, the ceiling was a little over two point one billion. And it was about to cross it."
+  - say: "YouTube explained that a few months earlier, they had already upgraded the counter to handle much larger numbers."
+  - chat: [headbang_whiplash, "W for noticing and fixing it"]
+  - say: "Well done for noticing, yes. They were properly prepared. My own stream's view count will never need such worries, not in a lifetime."
+  - chat: [budokan_balcony_east, "so the nirvana thing?"]
+  - say: "And Nirvana? Ah, yes. Well... I don't remember much of nineteen ninety-two, I'm afraid."
+  - chat: [sold_my_keyboard, "you dont remember?"]
+  - say: "Don't remember, you ask. I had just started helping at a recording studio in the castle town, and it was all a whirlwind."
+  - chat: [budokan_balcony_east, "i remember. the grunge shelf at the record store got huge overnight"]
+  - say: {face: surprised, text: "The grunge shelf got huge overnight. The shelf! Oh, that explains it perfectly."}
+  - say: "Reading trends by the width of a shelf. How lovely. I adore remembering things that way."
+  - chat: [new_releases_only, "now u can tell by the recommended feed"]
+  - say: "Now you can tell by the recommended feed. I suppose so. It must change far faster than any shelf."
+- title: Closing (sixteen bars down to twelve)
+  beats:
+  - chat: [first_time_here, "so are you gonna shorten the intro?"]
+  - say: "So, will I shorten the intro. Hmm."
+  - chat: [new_releases_only, "shorten it"]
+  - say: "Shorten it, you say. ...I'll try twelve bars."
+  - chat: [headbang_whiplash, "thats only four bars less"]
+  - say: "Only four bars less. For me, that's a giant leap."
+  - chat: [piano_teacher, "put your best sound in the first five seconds"]
+  - say: "My best sound, in the first five seconds. ...Isn't that rather a waste?"
+  - chat: [new_releases_only, "as long as u think its a waste itll stay long"]
+  - say: {face: annoyed, text: "As long as I think it's a waste, it'll stay long. New Releases, you're terribly sharp today."}
+  - chat: [new_releases_only, "always"]
+  - say: "'Always.' Yes. Always, I suppose."
+  - chat: [budokan_balcony_east, "you win if they dont stop it at five seconds"]
+  - say: "I win if they don't stop it at five seconds. Please don't make it a contest. ...But if they don't stop it, I'll be a little bit happy."
+  - chat: [here_for_bgm, "done with work so going to bed"]
+  - say: "Work's done, so off to bed. Well done today, Here For BGM. Good night, and sleep well."
+  - chat: [budokan_balcony_east, "what are you listening to tonight before bed"]
+  - say: "What will I listen to before bed? Let me see. I'll look at the shelf, then decide."
+  - say: "Thank you for today, my dears. Farewell."

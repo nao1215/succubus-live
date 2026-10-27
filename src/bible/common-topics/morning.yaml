@@ -1,0 +1,23 @@
+category: morning
+name: 朝と身支度の習慣
+topics:
+- {id: morning_alarm, q: アラームは何個かける？ 何分おき？}
+- {id: morning_snooze, q: スヌーズは何回押す？}
+- {id: morning_first, q: 起きて最初にすることは？}
+- {id: morning_wake_time, q: 平日は何時に起きる？ 休みの日は？}
+- {id: morning_face, q: 顔は水で洗う？ 洗顔料？}
+- {id: morning_teeth, q: 歯磨きは朝ごはんの前？ 後？, options: [前, 後, 両方]}
+- {id: morning_toothpaste, q: 歯磨き粉は何を使う？ 歯ブラシは電動？}
+- {id: morning_socks, q: 靴下は左右どっちから履く？}
+- {id: morning_shoes, q: 靴は左右どっちから履く？ 靴紐は結び直す？}
+- {id: morning_clothes, q: 服は前の夜に決める？ 朝決める？}
+- {id: morning_makeup, q: 身支度に何分かかる？}
+- {id: morning_hair, q: 寝ぐせはどう直す？}
+- {id: morning_weather, q: 朝、天気予報は何で見る？}
+- {id: morning_tv, q: 朝のテレビは何をつけていた？ 今は？}
+- {id: morning_late, q: 遅刻しそうなとき、どこを削る？}
+- {id: morning_routine, q: 朝の「これをしないと一日が始まらない」は？}
+- {id: morning_perfume, q: 香水や制汗剤は何を使う？}
+- {id: morning_nail, q: 爪を切るのは何曜日？ 切った爪を飛ばす？}
+- {id: morning_weekend, q: 休みの日の朝は二度寝する？}
+- {id: morning_key, q: 家を出てから鍵を閉めたか不安になる？ 戻る？}

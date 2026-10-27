@@ -1,0 +1,26 @@
+category: people
+name: 人付き合い・恋愛（軽く）
+topics:
+- {id: people_friend_count, q: 友達は多い方？ 少ない方？}
+- {id: people_best_friend, q: いちばん長い付き合いの友達とはどう知り合った？}
+- {id: people_first_impression, q: 第一印象でよく言われることは？}
+- {id: people_shy, q: 人見知りする？}
+- {id: people_party, q: 飲み会は好き？ 一次会で帰る？}
+- {id: people_seat, q: 飲み会でどこに座る？ 端の席？}
+- {id: people_gift_recv, q: もらっていちばん嬉しかったプレゼントは？}
+- {id: people_type, q: 好きなタイプは？}
+- {id: people_first_love, q: 初恋はいつ？ どんな人？}
+- {id: people_confess, q: 告白はする派？ される派？}
+- {id: people_date, q: 理想のデートは？}
+- {id: people_contact, q: 連絡はマメな方？}
+- {id: people_fight, q: 喧嘩したら先に謝る？}
+- {id: people_nickname_now, q: 今呼ばれているあだ名は？}
+- {id: people_family_call, q: 家族とどれくらい連絡を取る？}
+- {id: people_parent_say, q: 親によく言われることは？}
+- {id: people_secret, q: 人に言っていない小さな秘密は？（言える範囲で）}
+- {id: people_angry, q: どんなときに怒る？}
+- {id: people_compliment, q: 褒められたら素直に喜べる？}
+- {id: people_wedding, q: 結婚式の余興・ご祝儀の思い出は？}
+- {id: people_neighbor_greet, q: ご近所に挨拶する？}
+- {id: people_alone, q: 一人でどこまで行ける？（一人焼肉、一人カラオケ、一人旅）}
+- {id: people_group_chat, q: グループLINEでは喋る方？ 見てるだけ？}

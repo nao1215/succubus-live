@@ -1,0 +1,184 @@
+# Nox 005 (English). Source: src/episodes/nox/005.yaml. Beat order matches the Japanese.
+title: "Same software, one machine gave a different answer (twenty-thirteen, the night Bitcoin's ledger split in two)"
+lobby:
+- "Hi. I ran the same test on all the old machines in my room."
+- "One of them quietly gave a different answer."
+- "Tonight's the story of the night that happened to the whole world, in twenty-thirteen."
+- "No price talk. Just how it broke."
+parts:
+- title: Opening (the watch)
+  beats:
+  - say: "Oh, we're up. Hi, everyone who's still awake."
+  - chat: [rtos_veteran_15y, "evening"]
+  - chat: [errata_collector, "evening. i can see your watch"]
+  - say: "Errata Collector, you can see my watch? In this lighting?"
+  - chat: [errata_collector, "cheap casio?"]
+  - say: "Cheap Casio, yeah. The Casio F-ninety-one W."
+  - chat: [first_time_here, "hi first time. the cheap one?"]
+  - say: "Welcome, new person. Is it the cheap one? It's super cheap. But I love it."
+  - say: "The manual says it drifts about thirty seconds a month. So honest, right?"
+  - chat: [lag_appreciation_club, "an honest watch"]
+  - say: "An honest watch, yes. So when it drifts, I don't get mad. It told me up front."
+  - chat: [kernel_reader, "do you sync it?"]
+  - say: "Do I sync it? First of every month."
+  - chat: [night_shift_survivor, "why not a smartwatch"]
+  - say: "Why not a smartwatch? This battery lasts years. You never charge it."
+  - say: "I borrowed a smartwatch once. It lit up in the middle of the night and woke me up."
+  - chat: [lag_appreciation_club, "brighter than your screen"]
+  - say: {face: annoyed, text: "Brighter than my screen... everything is brighter than my screen."}
+  - chat: [rtos_veteran_15y, "im a g-shock guy"]
+  - say: "R-TOS Veteran is a G-Shock guy. The one you can drop and it's fine."
+  - chat: [rtos_veteran_15y, "dropped it on site three times"]
+  - say: "Dropped it on site three times? ...What happens at your job sites."
+- title: One out of eleven
+  beats:
+  - say: "So, last week. I ran the same test on every old machine in my room. Eleven of them."
+  - chat: [first_time_here, "you have eleven??"]
+  - say: "I have eleven, yes. I can't throw them out, because someday I'll need to test on an old version."
+  - say: "The test is simple. Open three hundred files and add up all the numbers inside."
+  - say: "Ten machines gave the same answer. One gave a smaller number."
+  - chat: [kernel_reader, "which one"]
+  - say: "Which one? The NAS that takes four minutes to boot."
+  - chat: [lag_appreciation_club, "that guy"]
+  - say: "Yep, that guy. That one. Same version of the program and everything."
+  - chat: [rtos_veteran_15y, "any errors?"]
+  - say: "Any errors? None. It just quietly gives a smaller answer."
+  - chat: [rtos_veteran_15y, "silently wrong is the worst"]
+  - say: "Silently wrong is the worst, right? I'd rather it just crashed."
+  - chat: [ddd_police, "root cause?"]
+  - say: "The root cause... later. It's embarrassing."
+  - say: "First, the night the same thing happened worldwide. March eleventh, twenty-thirteen."
+- title: Copies of the ledger
+  beats:
+  - chat: [first_time_here, "what software?"]
+  - say: "What software? Bitcoin. The original reference client."
+  - chat: [first_time_here, "the investing thing?"]
+  - say: "The investing thing, yeah. But no price talk. I have no idea if it goes up or down. Tonight is about software breaking."
+  - chat: [leaving_work_on_time, "ok then i can listen"]
+  - say: "'Okay, then I can listen.' Thank you. So, um, there's a ledger that says who owns how much."
+  - say: "And thousands of machines in the network each keep their own copy of that ledger."
+  - chat: [first_time_here, "everyone has the same ledger?"]
+  - say: "Everyone has the same one? Yes. It has to be the same."
+  - say: "New entries get added about every ten minutes, one page at a time. A page is called a block."
+  - say: "Every machine checks each block it receives on its own, and if it follows the rules, adds it to its copy."
+  - chat: [second_year_dev, "so that assumes everyone validates the same way"]
+  - say: "It assumes everyone validates the same way, yes. And that night, that broke."
+  - say: "Back then, version zero point eight had just come out. And zero point eight swapped out the storage for blocks."
+  - say: "The old zero point seven used Berkeley D B. The new zero point eight used Level D B."
+  - chat: [first_time_here, "storage?"]
+  - say: "Storage meaning the database. Where you put things so they stay put."
+  - chat: [rtos_veteran_15y, "used berkeley db on old embedded stuff"]
+  - say: {face: surprised, text: "You used Berkeley D B on old embedded stuff?"}
+  - chat: [rtos_veteran_15y, "tiny and fits anywhere. had lock trouble with it once. cant say more tho"]
+  - say: "Had lock trouble with it... there it is, 'can't say more.' Tonight's literally about those locks."
+- title: Speaking of which (kaki no tane)
+  beats:
+  - chat: [lag_appreciation_club, "unrelated but im eating kaki no tane rn"]
+  - say: "You're eating kaki no tane right now? That's the little spicy rice cracker snack. ...With peanuts?"
+  - chat: [lag_appreciation_club, "with"]
+  - say: "With. Me too, I like it with. Did you know the peanut ratio changed?"
+  - chat: [lag_appreciation_club, "no idea"]
+  - chat: [night_shift_survivor, "the one they changed by vote"]
+  - say: "Yes, the one they changed by vote. It was six to four, crackers to peanuts by weight, and it went to seven to three."
+  - say: "They decided it by public vote. A snack ratio, by vote. I was kind of moved."
+  - chat: [errata_collector, "was that 2020?"]
+  - say: "Yes, twenty-twenty. After the change, I weighed one bag on a scale."
+  - chat: [kernel_reader, "you weighed it"]
+  - say: "Did I weigh it? I did. Roughly seven to three. It's one bag, so I can't really claim anything."
+  - chat: [second_year_dev, "mora said she loves kaki no tane"]
+  - say: "Mora loves it, yes, it's her favorite snack. She even remembers the year the ratio changed."
+  - chat: [lag_appreciation_club, "you both love numbers"]
+  - say: "We both love numbers. Mora and I both can't sleep if the numbers don't add up."
+  - chat: [leaving_work_on_time, "im the type who ends up with only peanuts left"]
+  - say: "Leaving On Time, you end up with just peanuts? I end up with just crackers. ...Everyone's different."
+- title: The lock limit
+  beats:
+  - say: "Okay, back to the old storage."
+  - say: "When the old database stored a block, it hung 'in use' signs on the shelves. Locks, so nothing else could touch them."
+  - say: "And there was a cap on how many locks it could have. A number in a config setting."
+  - say: "So on the night of March eleventh, a zero point eight machine mined a block with more total transaction inputs than anyone had seen before."
+  - say: "A block like that needs a lot of locks to store. It's not just the size, it's what's inside it."
+  - say: "Some of the old zero point seven machines ran out of locks and threw the block out as invalid."
+  - chat: [first_time_here, "but it didnt break any rules?"]
+  - say: "It didn't break any rules, right. It didn't. Zero point eight accepted it. Some zero point sevens rejected it."
+  - chat: [lag_appreciation_club, "so now there are two ledgers"]
+  - say: "So now there were two ledgers."
+  - say: "There's a writeup afterward. A document called BIP fifty."
+  - say: "And it says, basically, 'the lock setting had quietly become a consensus rule.'"
+  - chat: [first_time_here, "consensus rule?"]
+  - say: "A consensus rule is a rule for which blocks count as valid. The kind of rule everyone's assumed to share."
+  - say: "And one of those was being decided by a database setting. Without anyone knowing."
+  - chat: [kernel_reader, "and even 0.7 split against itself"]
+  - say: "And even zero point seven split against itself, yes! How many locks it needed depended on how the files were laid out on that particular machine."
+  - say: "So even on the same zero point seven, some machines accepted it and some rejected it."
+  - chat: [second_year_dev, "our migration might behave different on prod data too"]
+  - say: "Might behave differently on prod data? It might. Test with data shaped like prod. Personal info masked, in an isolated environment."
+  - chat: [errata_collector, "i love the first guy who noticed"]
+  - say: "The first one who noticed, thermoman. On I R C: 'another node says it has two hundred twenty-five thousand four hundred thirty-one blocks.'"
+  - chat: [errata_collector, "'mine has 225,430'"]
+  - say: "'Mine has two hundred twenty-five thousand four hundred thirty.' He just posted that it was off by one, and left it there."
+- title: Which one do you keep?
+  beats:
+  - say: "So now there are two ledgers. Which one do you think they kept?"
+  - ask:
+      q: "If you were on call, which ledger would you keep?"
+      options:
+      - c: "The new version's chain (0.8)"
+        r:
+        - "{name}, you'd go with the new one. I get it."
+        - "But that night, a lot of the running machines were saying 'invalid.' Getting everyone upgraded overnight wasn't realistic, I think."
+      - c: "The old one everyone can read (0.7)"
+        r:
+        - "{name}, same call they made that night."
+        - "The zero point seven ledger is readable by both zero point seven and zero point eight. It's the one you can finish by morning."
+      - c: "Keep both"
+        r:
+        - "{name}, that actually happens three years later, with different software."
+        - "Ethereum split in two over different rules, and both chains still run today. Not like tonight's, which split for a while and came back together."
+      npc:
+      - [ddd_police, 0]
+      - [rtos_veteran_15y, 1]
+      - [kernel_reader, 1]
+      - [lag_appreciation_club, 2]
+      - [second_year_dev, 1]
+  - say: "Lots of you picked the old one. Maybe lots of you have done on-call."
+  - say: "They kept zero point seven. Zero point eight wasn't wrong. They went back to the chain both versions would accept."
+  - chat: [ddd_police, "i wanted to do it by the book"]
+  - say: "You wanted to do it by the book, I get it. But the big mining pools rolled back to zero point seven, and the work started piling up on that chain."
+  - say: "The rule is, you follow the valid chain with the most accumulated work. Valid by your own node's rules, I mean. So everyone converged there."
+  - chat: [first_time_here, "not the most pages?"]
+  - say: "Not the most pages? Usually it lines up, but what it compares is chain work. Not how many hashes you ran, but the summed difficulty of each block."
+  - chat: [leaving_work_on_time, "what happened to money while it was split"]
+  - say: "Money during the split? At least one double-spend went through."
+  - chat: [first_time_here, "a thief?"]
+  - say: "A thief? I thought so too at first. But the writeup says it was a test, no bad intent. The person said so themselves."
+  - say: "When they restarted the software during the rollback, the pending transaction pool got wiped, and the later transaction got in first."
+  - chat: [rtos_veteran_15y, "restart to fix it and open a hole"]
+  - say: "Restart to fix it, open a hole. Yeah. I restart things a lot, so reading that part gave me a little chill."
+  - chat: [errata_collector, "split was 24 blocks, about 6 hours"]
+  - say: "Twenty-four blocks, about six hours, yeah. Then in zero point eight point one, the new version temporarily matched the old version's quirk."
+  - say: "The truly old machines finally got cut off on August sixteenth."
+  - chat: [rtos_veteran_15y, "took five months"]
+  - say: "Five months. Announce it, wait, warn people, then cut it off. I love a cleanup like that."
+- title: The NAS answer
+  beats:
+  - chat: [ddd_police, "so whats the NAS root cause"]
+  - chat: [kernel_reader, "been waiting"]
+  - say: "The NAS root cause... some of you were waiting. Okay. I'll say it."
+  - say: "I set up that NAS eight years ago. And I put one line in a config file."
+  - say: "'Max two hundred fifty-six open files at once.'"
+  - chat: [rtos_veteran_15y, "oh"]
+  - chat: [kernel_reader, "and the test opens 300"]
+  - say: "And the test opens three hundred, yeah. It kept every file open while adding, so once it used up all the file descriptors, the next one just wouldn't open."
+  - chat: [errata_collector, "plus the ones already in use"]
+  - say: "Plus the ones already in use, right. Standard out and stuff take a few from the start. So it's not exactly the file count."
+  - say: "And my test program was silently skipping the error when a file failed to open."
+  - chat: [lag_appreciation_club, "double fail"]
+  - say: {face: flustered, text: "Double fail... the thing giving a silently wrong answer wasn't the NAS. It was me."}
+  - chat: [ddd_police, "you from 8 years ago is a stranger"]
+  - say: "Me from eight years ago is a stranger. Never met her. Same name, though."
+  - chat: [leaving_work_on_time, "was mt gox around then too?"]
+  - say: "Mt. Gox, around then too? Mt. Gox is... a long story. Next time."
+  - chat: [lag_appreciation_club, "she ran"]
+  - say: "'She ran.' I ran. Tonight I'm fixing the test first. If a file won't open, it stops instead of giving an answer. The limit setting comes after that."
+  - say: "Thanks, everyone who's awake. Go to bed."

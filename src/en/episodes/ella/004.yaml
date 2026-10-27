@@ -1,0 +1,182 @@
+# Ella 004 (English). Same beats as src/episodes/ella/004.yaml.
+title: "From Loudness to BABYMETAL: how Japanese metal sold in America"
+parts:
+- title: Opening (a visitor, and last year's blunder)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - chat: [new_releases_only, "boomer hour"]
+  - say: "'Boomer hour.' Good day, New Releases. How very young of you, as ever."
+  - chat: [new_releases_only, "thank u boomer"]
+  - chat: [budokan_balcony_east, "hi ella-chan"]
+  - say: "'Thank you, boomer'... and Budokan, Ella-chan again today. ...I shan't mention the 'Lady' any more. I'm worn out."
+  - chat: [budokan_balcony_east, "i win"]
+  - chat: [headbang_whiplash, "she finally gave up"]
+  - chat: [watching_from_abroad, "hello from Ohio! japanese metal is the best"]
+  - say: {face: surprised, text: "Hello from Ohio! My goodness, all the way from Ohio! Japanese metal is the best, you say. Welcome, welcome."}
+  - chat: [watching_from_abroad, "i love BABYMETAL"]
+  - say: "You love BABYMETAL. Splendid. As it happens, that's just the sort of thing I meant to talk about today."
+  - chat: [new_releases_only, "before that. do u get sleep token yet?"]
+  - say: "'Do you get Sleep Token yet?' Here it comes."
+  - chat: [piano_teacher, "whats this about?"]
+  - chat: [new_releases_only, "last year ella said she didnt get them. then they went number 1 in the US"]
+  - say: "What is this about, Teacher? May of twenty twenty-five. Sleep Token's album 'Even in Arcadia' went to number one in America."
+  - say: "And shortly before that, I said on stream, 'I don't get it.'"
+  - chat: [new_releases_only, "i bring it up every time"]
+  - say: "Every time, yes. I am reminded every single time. So I listened properly, for one whole night."
+  - chat: [new_releases_only, "and?"]
+  - say: "And? To be perfectly frank. ...I've come to like them. A little."
+  - chat: [new_releases_only, "LETS GO"]
+  - chat: [headbang_whiplash, "the boomer has fallen"]
+  - say: {face: flustered, text: "The boomer has fallen. Fallen, indeed. How mortifying."}
+  - chat: [new_releases_only, "what part got u"]
+  - say: "What part got me? Where it's quiet, and then suddenly goes crushingly heavy. That drop was far better than I expected."
+  - chat: [new_releases_only, "thats literally the best part"]
+  - say: "The best part, yes. The first time, I'd stopped it during the quiet bit. What a waste."
+  - chat: [piano_teacher, "you said you didnt get it without finishing it?"]
+  - say: {face: shy, text: "Said I didn't get it without finishing it... Yes. That is what happened."}
+  - chat: [budokan_balcony_east, "thats on you ella-chan"]
+  - say: "That's on me. I do beg your pardon."
+- title: Main story (number seventy-four, nineteen eighty-five)
+  beats:
+  - say: "Now. Today's topic is Japanese metal."
+  - chat: [budokan_balcony_east, "JAPAMETAL!"]
+  - say: "Japametal, as they say over here. Nineteen eighty-five. Loudness released an album called 'Thunder in the East,' and it sold in America."
+  - say: "On the Billboard album chart, number seventy-four."
+  - chat: [first_time_here, "is 74 a big deal?"]
+  - say: "Is seventy-four a big deal? Oh, it is. A Japanese metal band, with its name on the American charts."
+  - chat: [budokan_balcony_east, "everyone went nuts over the chart in the magazines back then"]
+  - say: "Everyone went wild over the magazine charts. Of course, BURRN! started in nineteen eighty-four. Japan's very first magazine devoted entirely to metal."
+  - chat: [budokan_balcony_east, "i have the first issue"]
+  - say: {face: surprised, text: "You have the first issue! You can't be serious."}
+  - chat: [budokan_balcony_east, "its in a closet at my parents place"]
+  - say: "In a closet at your parents' house. I want to see it. I want to see it this instant. Do send me a photo sometime."
+  - chat: [new_releases_only, "tail is wagging"]
+  - say: "My tail is wagging? It's allowed to wag. That one deserved it."
+  - chat: [sold_my_keyboard, "its been a while since loudness' drummer higuchi passed huh"]
+  - say: "Mister Munetaka Higuchi. He passed away in two thousand eight. He was forty-nine."
+  - chat: [budokan_balcony_east, "his last album used drums he recorded before he died right"]
+  - say: "His last album, with drums he'd already recorded. Yes. 'The Everlasting.' An album built on the drum tracks he laid down before he passed."
+  - say: "Whenever I play that album, I end up following nothing but the drums."
+  - chat: [sold_my_keyboard, "same"]
+  - say: "You understand. Whenever that album comes up, I always go a little quiet."
+- title: Side track (the first CD you ever bought)
+  beats:
+  - chat: [headbang_whiplash, "whats everyones first cd?"]
+  - say: "The first CD you ever bought. Oh, I'd love to know. What was yours, my dears?"
+  - chat: [new_releases_only, "never bought a cd. streaming from day one"]
+  - say: {face: surprised, text: "Never bought a single CD, streaming from day one! So that's the age we live in."}
+  - chat: [piano_teacher, "a chopin nocturnes album. my parents bought it"]
+  - say: "Chopin's Nocturnes. How very like you, Teacher. Whose recording was it?"
+  - chat: [piano_teacher, "dont remember. the cover was blue"]
+  - say: "Don't remember the pianist, but the cover was blue. Oh, I understand completely, remembering by color."
+  - chat: [first_time_here, "what about you ella?"]
+  - say: "What about me? Well, mine was..."
+  - say: "Oh."
+  - chat: [budokan_balcony_east, "no way"]
+  - say: "Yes, exactly that. Loudness, 'Thunder in the East.' The first of those little discs I ever bought was that one."
+  - chat: [headbang_whiplash, "and were back on topic lmao"]
+  - say: "Back on topic. It came right back round. I swear I didn't plan it."
+  - chat: [sold_my_keyboard, "mine was a record. on my parents turntable"]
+  - say: "A record, on your parents' turntable! What did you put on?"
+  - chat: [sold_my_keyboard, "YMO. dropping the needle was scary"]
+  - say: "YMO, Yellow Magic Orchestra. Dropping the needle is frightening, isn't it. Your hand trembles the very first time."
+  - chat: [sold_my_keyboard, "hand shook and it started on track 2"]
+  - say: {face: laugh, text: "Your hand shook and it started on track two! Well, that's a memory in itself."}
+  - chat: [budokan_balcony_east, "mine was iron maidens number of the beast. my friends big brother recommended it"]
+  - say: {face: surprised, text: "Iron Maiden, 'The Number of the Beast.' For a very first record! Thank you, friend's big brother."}
+  - chat: [first_time_here, "mine was an anime theme song single"]
+  - say: "An anime theme single, how lovely. My lady's first was game music too, I'm told."
+  - ask:
+      q: "My dears, what was the first CD or record you ever bought?"
+      options:
+      - c: "western music"
+        r:
+        - "Western music. {name} started there. Do tell us in chat which album."
+        - "Those whose first record was Western music usually tumble straight down the rabbit hole."
+      - c: "j-pop or japanese music"
+        r:
+        - "{name}, J-pop, Japanese music. Was it a single? Oh, those long skinny CD singles we had in Japan, how nostalgic."
+        - "I still keep a few of those skinny ones, you know."
+      - c: "anime or game music"
+        r:
+        - "Anime or game music. {name}, just like my lady!"
+        - "I'm a little envious of people who came in through game music."
+      - c: "never bought one"
+        r:
+        - "Never bought one. {name}, you and New Releases are two of a kind."
+        - "Do pick one up someday. The weight of it in your hand is rather nice."
+      npc:
+      - [budokan_balcony_east, 0]
+      - [new_releases_only, 3]
+      - [sold_my_keyboard, 1]
+      - [headbang_whiplash, 2]
+      - [watching_from_abroad, 2]
+  - chat: [watching_from_abroad, "my first CD was Pokemon soundtrack"]
+  - say: "Lots of anime and game music, I see. And Ohio's was the Pokemon soundtrack! Delightful. Oh, do forgive all the Japanese names."
+  - chat: [watching_from_abroad, "its ok i watch ur japanese clips with auto translate"]
+  - say: "My Japanese clips, with auto-translate. Thank you, my dear. I do wonder how my formal Japanese comes out over there."
+  - chat: [new_releases_only, "100 percent comes out as weird english"]
+  - say: "Weird English, surely. I suspect so. I'm especially curious what it does with 'Tōhō,' the humble word I use for 'I' in Japanese."
+  - chat: [watching_from_abroad, "it says this side"]
+  - say: {face: laugh, text: "'This side'! Oh, that's not even entirely wrong."}
+  - chat: [piano_teacher, "so, the rest of the loudness story?"]
+  - say: "The rest of the Loudness story, yes. Now, where was I?"
+  - chat: [budokan_balcony_east, "number 74 and the first issue"]
+  - say: "Number seventy-four and the first issue. Thank you. And don't forget that photo."
+- title: Back to the story (the man behind it, and the word Japametal)
+  beats:
+  - say: "From here on, it gets a little nerdy, if I may."
+  - say: "The man who produced 'Thunder in the East' was an Englishman named Max Norman."
+  - chat: [piano_teacher, "who?"]
+  - say: "Who? Teacher, this is the part I've been dying to tell!"
+  - say: "He's the one who took over recording Mister Ozzy's first solo album, 'Blizzard of Ozz,' partway through."
+  - chat: [budokan_balcony_east, "really?"]
+  - say: "Really. Things didn't work out with the first producer, so Norman took over. He's credited as engineer, but not as producer."
+  - say: "And what's more, he later mixed Megadeth's 'Rust in Peace' as well."
+  - chat: [new_releases_only, "oh megadeth shows up too"]
+  - say: "Megadeth shows up too! The same man keeps appearing on my favorite albums. The night I noticed, I was too happy to sleep."
+  - chat: [headbang_whiplash, "ur faves are always the behind the scenes guys"]
+  - say: "My favorites always turn out to be behind the scenes. They always do!"
+  - say: "And so. There's one thing I can never quite decide."
+  - say: "That word, 'Japametal.' Every time, I wonder whether I ought to say it."
+  - chat: [new_releases_only, "why? everyone says it"]
+  - chat: [budokan_balcony_east, "we said it with pride"]
+  - say: "Everyone says it, and you said it with pride. For Budokan's generation, that's true, isn't it."
+  - say: "It's only that I've never been able to confirm how the bands themselves felt about being called that, back then."
+  - chat: [budokan_balcony_east, "depends on the person? my crowd was proud i think"]
+  - say: "Proud, 'I think.'"
+  - chat: [budokan_balcony_east, "its a memory from a drinking party 40 years ago"]
+  - say: "A memory from a drinking party forty years ago. My own memories from that era are rather shaky too, so I'll say nothing."
+  - chat: [new_releases_only, "young people just say it normally now"]
+  - say: "The young say it without a thought, and Budokan says it with pride. Only I end up mumbling."
+  - chat: [piano_teacher, "you're overthinking it"]
+  - say: "Perhaps I am overthinking it, as Teacher says. So today, again, I won't decide. I'll leave it undecided."
+- title: Closing (forty years, and number nine)
+  beats:
+  - chat: [watching_from_abroad, "BABYMETAL top 10 in US!"]
+  - say: "BABYMETAL in the American top ten! Yes, indeed! Twenty twenty-five, 'Metal Forth.' Number nine on Billboard."
+  - chat: [new_releases_only, "first all japanese act ever in the top 10"]
+  - say: "The first all-Japanese act in the top ten. You know your facts, New Releases. Now you've left me nothing to say."
+  - chat: [new_releases_only, "not letting u talk"]
+  - chat: [new_releases_only, "and they did wembley before that too"]
+  - say: "Not letting me talk, you say. Wembley was April of twenty sixteen. Wembley Arena in London, the first Japanese act ever to headline there."
+  - chat: [watching_from_abroad, "I watched that on youtube"]
+  - say: "You watched it on YouTube! So did I."
+  - chat: [new_releases_only, "ella do u actually like babymetal?"]
+  - say: "Do I like BABYMETAL? I do. At first, I thought, an idol group mixed with metal, how could that possibly work."
+  - say: "But the musicians behind them are simply astonishing. I surrendered almost at once."
+  - chat: [new_releases_only, "surrendering again"]
+  - say: "Surrendering again. That's twice today, isn't it."
+  - chat: [budokan_balcony_east, "from 74 to 9 in 40 years huh"]
+  - say: "'From seventy-four to nine in forty years'... It's true. Forty years, from number seventy-four up to number nine."
+  - say: "I confess, that just got me a little."
+  - chat: [sold_my_keyboard, "number 9 was a shock"]
+  - say: "Number nine was a shock to me too. The morning the chart came out, I checked it twice."
+  - chat: [watching_from_abroad, "what was your first CD again?"]
+  - say: "What was my first CD? Loudness! 'Thunder in the East'! ...Did that come through?"
+  - chat: [watching_from_abroad, "i will listen!"]
+  - say: {face: smile, text: "You'll listen! How wonderful! Do start from track one, if you please."}
+  - say: "And with that, my dears, thank you for today."
+  - say: "Budokan, I truly am waiting for that photo of the first issue."
+  - chat: [budokan_balcony_east, "scared to open that closet"]
+  - say: {face: laugh, text: "Scared to open the closet. Then we shall be scared together. Farewell, my dears."}

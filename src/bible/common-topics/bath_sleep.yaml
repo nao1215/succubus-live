@@ -1,0 +1,28 @@
+category: bath_sleep
+name: お風呂と寝る
+topics:
+- {id: bath_temp, q: お風呂の温度は何度？}
+- {id: bath_shower_tub, q: シャワー派？ 湯船派？, options: [シャワー, 湯船]}
+- {id: bath_time, q: お風呂は何分入る？ 長風呂？ カラスの行水？}
+- {id: bath_when, q: お風呂は夜派？ 朝派？, options: [夜, 朝, 両方]}
+- {id: bath_salt, q: 入浴剤は使う？ どれ？（バスクリン、バブ、きき湯など）}
+- {id: bath_shampoo, q: シャンプーは何を使ってる？ リンスインシャンプー？}
+- {id: bath_phone, q: お風呂でスマホを見る？ 歌う？}
+- {id: bath_onsen, q: 好きな温泉地は？}
+- {id: bath_sento, q: 銭湯・スーパー銭湯・サウナには行く？ ととのう？}
+- {id: bath_after, q: 風呂上がりに飲むものは？ コーヒー牛乳？}
+- {id: bath_hair_dry, q: 髪はすぐ乾かす？ 自然乾燥？}
+- {id: sleep_hours, q: 何時間寝る？ 何時に寝る？}
+- {id: sleep_before, q: 寝る前にすることは？}
+- {id: sleep_position, q: 寝相は？ 寝る向きは？}
+- {id: sleep_pillow, q: 枕のこだわりは？ 何個使う？}
+- {id: sleep_futon, q: ベッド派？ 布団派？, options: [ベッド, 布団, ソファ]}
+- {id: sleep_dark, q: 真っ暗にして寝る？ 豆電球？}
+- {id: sleep_ac, q: 夏は冷房をつけっぱなしで寝る？}
+- {id: sleep_dream, q: 最近見た変な夢は？}
+- {id: sleep_talk, q: 寝言・いびき・歯ぎしりを言われたことある？}
+- {id: sleep_nap, q: 昼寝はする？ 何分？}
+- {id: sleep_allnighter, q: 最後に徹夜したのは何のため？}
+- {id: sleep_sheep, q: 眠れないときどうする？}
+- {id: sleep_pajama, q: 寝るときの格好は？ パジャマ？ ジャージ？}
+- {id: sleep_stuffed, q: 一緒に寝るぬいぐるみや抱き枕はある？}

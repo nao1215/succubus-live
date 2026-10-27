@@ -1,0 +1,184 @@
+# Vespa 007 (English): when the word cosplay was born, and my two-meter spear. Translated from src/episodes/vespa/007.yaml.
+title: When the Word Cosplay Was Born, and My Two-Meter Spear
+family: true  # a schoolkid calls her a hero, and trick-or-treat kids come up. No sexual jokes in this episode
+parts:
+- title: Halloween's almost here
+  beats:
+  - say: Good evening! Halloween's almost here, huh. The whole town's going orange.
+  - chat: [green_glowstick_yr2, 'evening senpai! are you dressing up?']
+  - say: Evening, Year-Two! Dressing up? Nope. I cosplay all year anyway.
+  - chat: [end_of_line_here, 'but u go to shibuya']
+  - say: I go to Shibuya! Just to look. I like going where the crowds are.
+  - chat: [end_of_line_here, 'as someone who works it, pls dont come']
+  - say: Please don't come? Oh right, some years End-of-Line works security there.
+  - chat: [first_time_here, 'first time. is dressing up different from cosplay?']
+  - say: Welcome! Dressing up versus cosplay? Ooh, good question. The way I see it.
+  - say: Dressing up is like, a witch, a ghost, a general vibe. Cosplay is becoming one specific character from an anime or game.
+  - chat: [not_my_headcanon, 'the line is blurry']
+  - say: The line's blurry, yeah, it is. Lots of people do anime characters for Halloween too.
+  - chat: [first_time_here, 'what character do you do']
+  - say: What character? Ones with spears! I love spears.
+  - chat: [harumi_survivor, 'evening. spears again']
+  - say: Evening, Harumi. Spears again, don't say again.
+  - chat: [ohio_fansub_crew, 'evening. halloween here the neighbors go all out']
+  - say: Ohio, evening! The neighbors go all out? They decorate their houses?
+  - chat: [ohio_fansub_crew, 'theres a house with ten skeletons in the yard']
+  - say: Ten skeletons in the yard! I'd scream walking past that at night!
+  - chat: [end_of_line_here, 'packing that up sounds rough']
+  - say: Packing that up sounds rough, she goes straight to cleanup! But I get it, where do you even store ten skeletons?
+- title: Who came up with the word cosplay?
+  beats:
+  - chat: [first_time_here, 'how old is the word cosplay?']
+  - say: How old is the word? Okay, it has an actual starting point. Nineteen eighty-three.
+  - say: They say the first use was by a guy named Nobuyuki Takahashi, in his column in an anime magazine.
+  - chat: [harumi_survivor, 'short for costume play']
+  - say: Yep, short for costume play. But apparently his editor told him costume play sounds kinda weird in English.
+  - say: So he named the column Cosplay Daisakusen. Operation Cosplay. Just shorten it, he figured.
+  - chat: [ohio_fansub_crew, 'now in english we just say cosplay']
+  - say: Now in English you just say cosplay, right?! The word he shortened because it sounded weird is English now!
+  - chat: [ohio_fansub_crew, 'its in the dictionary too']
+  - say: It's in the dictionary too! Mister Takahashi must've been so surprised.
+  - say: Meanwhile the words I make up only work inside my own journal.
+- title: The Triton mix-up
+  beats:
+  - chat: [harumi_survivor, 'i heard the first cosplay in japan was triton of the sea']
+  - say: The first was Triton of the Sea, there it is, that story! Okay, apparently that's not quite right.
+  - chat: [harumi_survivor, 'its not?']
+  - say: It's not? So, at a sci-fi convention in nineteen seventy-eight, there were people dressed like the art on a sci-fi book cover.
+  - say: And people around them just assumed, oh, Triton. And the cosplayers themselves didn't really push back.
+  - say: Yep. And that's how the first one was Triton story spread.
+  - chat: [harumi_survivor, 'ive believed that for over 40 years']
+  - say: {face: laugh, text: 'Believed it over forty years?! It''s not your fault, Harumi!'}
+  - chat: [not_my_headcanon, 'misunderstandings spreading is a classic fandom thing']
+  - say: Misunderstandings spreading, classic fandom moment. Yeah, that happens.
+- title: The first otaku I ever saw
+  beats:
+  - say: So, the first time I ever saw human otaku was Shinjuku, nineteen eighty-one.
+  - chat: [first_time_here, '1981?']
+  - say: Nineteen eighty-one, right? I've been around a long time. Succubus thing.
+  - say: There was an event at the east exit of Shinjuku Station called the Anime New Century Declaration, and over ten thousand people showed up.
+  - chat: [harumi_survivor, 'before the gundam movie']
+  - say: Yep, like Harumi says, the event before the Gundam movie. The crowd was huge, I was like, what's going on, and walked over.
+  - say: And there were people in homemade costumes.
+  - say: They were there already back then! Nobody knew what to call it yet, though.
+  - chat: [end_of_line_here, '10k in front of a station. station staff mustve suffered']
+  - say: You're worried about the station staff? But yeah, I bet it was really rough.
+  - say: But honestly, I still remember that crowd. Everyone facing the same way, strangers just talking to each other.
+  - say: I'd never seen anything like that in the demon world. That you could get hyped with strangers over something you love.
+  - say: So from the next day on, I started showing up at all kinds of events.
+  - chat: [harumi_survivor, 'ive been going since then too']
+  - say: Since then too, Harumi? Since C-seventeen, right? I know! I've heard it a hundred times!
+  - chat: [harumi_survivor, 'then ill tell it a hundred and first time']
+  - say: {face: laugh, text: 'No hundred and first! Let me talk about my spear!'}
+- title: Speaking of which, purchases I regret
+  beats:
+  - chat: [con_haul_victim, 'do you make the spear yourself?']
+  - say: I make the spear myself! I buy the materials. And those materials were a pretty regrettable purchase.
+  - chat: [first_time_here, 'why?']
+  - say: Why? I bought a long pole without having it cut. Longer than I am tall.
+  - say: And I couldn't get on the train.
+  - chat: [harumi_survivor, 'of course not']
+  - say: Of course not, right? I walked forty minutes from the store to my place with it on my shoulder.
+  - say: And halfway there an elementary school kid yelled, it's a hero!
+  - say: I was kinda happy. My shoulder hurt the whole time, though.
+  - chat: [end_of_line_here, 'i regret buying three wallets']
+  - say: End-of-Line bought three wallets?! Why three?
+  - chat: [end_of_line_here, 'they were on sale']
+  - say: Because they were on sale? You buy three if they're on sale. When you only have enough money to fill one.
+  - chat: [end_of_line_here, 'dont say that']
+  - say: {face: smug, text: 'Don''t say that! Finally, I''m the one saying it!'}
+  - chat: [ohio_fansub_crew, 'i bought four vcrs']
+  - say: Four VCRs! For dubbing tapes!
+  - chat: [ohio_fansub_crew, 'none of them work now']
+  - say: None of them work now. But you can't throw those out, huh.
+- title: The era of bans
+  beats:
+  - chat: [harumi_survivor, 'there used to be events that banned cosplay']
+  - say: Events that banned cosplay, yes! From the late eighties, more doujin events banned it, because of crowding and manners problems.
+  - chat: [first_time_here, 'banned?!']
+  - chat: [harumi_survivor, 'there wasnt even a place to change']
+  - say: Right, no place to change, so some people came from home already in costume, and that became a problem too.
+  - say: But at Comiket, cosplayers went from like two hundred in nineteen ninety-one to around eight thousand in nineteen ninety-seven.
+  - say: Even with bans, the people who love it just keep growing.
+  - say: These days, this summer's Comiket changing rooms had almost nine thousand people, just counting registrations.
+  - chat: [end_of_line_here, 'ive seen the changing room line']
+  - say: You've seen the changing room line? It's long, right? More women than men, almost double.
+  - chat: [ohio_fansub_crew, 'people come from overseas too']
+  - say: From overseas too, yeah, tons. There's also the World Cosplay Summit, which started in Nagoya in twenty-oh-three.
+  - say: At first it was a TV show where a station invited five cosplayers from overseas.
+  - chat: [ohio_fansub_crew, 'now people come from lots of countries']
+  - say: Now it's tons of countries. From five people. Amazing, right?
+- title: Just don't swing it
+  beats:
+  - chat: [green_glowstick_yr2, 'senpai can you bring your spear to comiket?']
+  - say: Can I bring my spear to Comiket? These days, yes! It used to be a no. Nothing longer than thirty centimeters.
+  - chat: [first_time_here, '30cm is like a ruler?']
+  - say: Thirty centimeters, yeah, like a ruler. Swords, staffs, spears, basically all banned.
+  - say: Then in summer twenty-eleven, it changed from banning by length to focusing on how you handle it. Don't swing it around.
+  - chat: [not_my_headcanon, 'they made rules about the action, not the object']
+  - say: The action, not the object. Yes, that. I really love that fix. So many more costumes became possible.
+  - say: "Oh, but if you're going now, read that event's rules, okay? What you can bring, where you can take photos, it's all listed. I reread it every time too."
+  - chat: [end_of_line_here, 'how many cm is that spear']
+  - say: How many centimeters is the spear... two meters.
+  - chat: [end_of_line_here, 'how many rulers']
+  - say: {face: laugh, text: 'How many rulers, don''t count in rulers! Like seven!'}
+  - say: I made it fold into three so I can take it on the train. Put hinges in the middle.
+  - say: But I attached one wrong, and it slowly slid open on the train.
+  - chat: [harumi_survivor, 'thats swinging it']
+  - say: That's swinging it? It is not! It extended by itself!
+  - chat: [gacha_broke_again, 'everyone around you mustve freaked out']
+  - say: Did people freak out? They did! The guy next to me took a step back. I apologized like crazy, got off at the next station, and folded it back up.
+  - say: {face: shy, text: 'Lesson learned. If you can''t carry it home, maybe don''t build it. Found that out after I built it!'}
+- title: Doing anything for Halloween?
+  beats:
+  - ask:
+      q: Are you doing anything for Halloween?
+      options:
+      - c: Dressing up and going out
+        r:
+        - '{name} is dressing up! As what? If you carry a spear, don''t swing it!'
+      - c: Just buying candy
+        r:
+        - '{name}''s team candy. You always end up buying the Halloween-limited snacks, right?'
+      - c: Nothing
+        r:
+        - '{name}''s doing nothing. That''s good too. Chilling at home is peaceful.'
+      npc:
+      - [green_glowstick_yr2, 1]
+      - [harumi_survivor, 2]
+      - [end_of_line_here, 2]
+      - [con_haul_victim, 0]
+      - [ohio_fansub_crew, 0]
+  - say: Dressing up and doing nothing are about even!
+  - chat: [ohio_fansub_crew, 'in america kids go house to house. they come to mine too']
+  - say: Kids going house to house, oh, trick or treat! Do you give out candy?
+  - chat: [ohio_fansub_crew, '60 came last year']
+  - say: Sixty last year?! You need line control!
+  - chat: [ohio_fansub_crew, 'there were 12 narutos last year']
+  - say: Twelve Narutos! I wanna see that!
+  - say: I live in an apartment building, so nobody comes. One year I got candy ready and waited, and ended up eating it all myself.
+  - chat: [con_haul_victim, 'this year its gotta be frieren']
+  - chat: [green_glowstick_yr2, 'chainsaw man too probably']
+  - chat: [ohio_fansub_crew, 'ill show you if i get pics']
+  - say: This year Frieren, Chainsaw Man? Show me the pics, show me! I'm so excited.
+  - chat: [not_my_headcanon, 'last year there were tons of reze']
+  - say: Tons of Reze last year, oh, maybe! The Chainsaw Man Reze movie was huge last year.
+  - chat: [first_time_here, 'that big?']
+  - say: That big? At first they expected like five billion yen, and it went over ten billion.
+  - chat: [con_haul_victim, 'tons of reze at winter comiket too']
+  - say: Tons of Reze at Winter Comiket, yes, so many! When a movie hits, the costumes at the next event change like that. Insanely fast.
+  - chat: [green_glowstick_yr2, 'how many days does a costume take?']
+  - say: How many days for a costume? Depends on the person. For me, the spear alone took two months. The outfit took a week.
+  - chat: [end_of_line_here, 'wrong order']
+  - say: Wrong order? The spear is the main part. For me, anyway.
+  - say: The outfit... works out! Ella hems it for me.
+  - chat: [harumi_survivor, 'leaving it to others']
+  - say: Leaving it to others, but Ella's hems are so clean! When I do it myself it comes out crooked.
+- title: Wrapping up
+  beats:
+  - chat: [not_my_headcanon, 'all this halloween talk and i forgot to ask about the manuscript']
+  - say: Forgot about the manuscript? You could've just kept forgetting!
+  - chat: [not_my_headcanon, 'remembered']
+  - say: Remembered?! Don't remember. I'm doing it, I said.
+  - say: Okay, that's it for today! If you're going to Shibuya, be careful not to get crushed in the crowd.
+  - say: Otsukaresama, everyone!

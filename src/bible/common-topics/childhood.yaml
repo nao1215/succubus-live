@@ -1,0 +1,26 @@
+category: childhood
+name: 子どもの頃
+topics:
+- {id: child_lesson, q: 子どもの頃の習い事は？ 続いた？}
+- {id: child_dream, q: 子どもの頃の夢は？}
+- {id: child_toy, q: いちばん好きだったおもちゃは？}
+- {id: child_anime, q: 子どもの頃に見ていたアニメは？}
+- {id: child_game_first, q: 初めて遊んだゲームは？}
+- {id: child_play, q: 外では何をして遊んだ？ ケイドロ？ 色鬼？}
+- {id: child_secret_base, q: 秘密基地を作った？}
+- {id: child_collect, q: 子どもの頃に集めていたものは？（シール、カード、ビックリマン、たまごっちなど）}
+- {id: child_scold, q: 親にいちばん怒られたことは？}
+- {id: child_mistake, q: 子どもの頃の勘違い・言い間違いは？}
+- {id: child_scared, q: 子どもの頃に怖かったものは？}
+- {id: child_allowance, q: お小遣いはいくらだった？ 何に使った？}
+- {id: child_santa, q: サンタを何歳まで信じてた？}
+- {id: child_otoshidama, q: お年玉は親に「預かる」と言われた？}
+- {id: child_summer, q: 子どもの頃の夏休みの思い出は？}
+- {id: child_rajio_taiso, q: ラジオ体操のスタンプは全部たまった？}
+- {id: child_book, q: 子どもの頃に好きだった本・絵本は？}
+- {id: child_magazine, q: コロコロ派？ ボンボン派？ りぼん？ なかよし？ ちゃお？}
+- {id: child_food_hate, q: 子どもの頃に嫌いだった食べ物は？ 今は？}
+- {id: child_nickname, q: 子どもの頃のあだ名は？}
+- {id: child_birthday_party, q: 子どもの頃の誕生日の思い出は？}
+- {id: child_hurt, q: 子どもの頃のいちばん大きなけがは？}
+- {id: child_pet, q: 子どもの頃に飼っていた生き物は？}

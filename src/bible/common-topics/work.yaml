@@ -1,0 +1,21 @@
+category: work
+name: 仕事とバイト
+topics:
+- {id: work_first_job, q: 人生初のバイト・仕事は？}
+- {id: work_worst_job, q: いちばんきつかった仕事は？}
+- {id: work_desk, q: 仕事の机の上はどうなってる？}
+- {id: work_lunch, q: 仕事の日の昼ご飯は？}
+- {id: work_meeting, q: 会議・打ち合わせは好き？}
+- {id: work_phone, q: 電話は得意？ 苦手？}
+- {id: work_remote, q: 家で仕事派？ 外で仕事派？ カフェで作業する？}
+- {id: work_overtime, q: いちばん長く働いた日は？}
+- {id: work_payday, q: 給料日にすることは？}
+- {id: work_mistake, q: 仕事のいちばんの失敗は？}
+- {id: work_boss, q: 忘れられない上司・客は？}
+- {id: work_ai, q: AI で仕事は変わった？}
+- {id: work_dream_job, q: 生まれ変わったら何の仕事がしたい？}
+- {id: work_motivation, q: やる気が出ないときはどうする？}
+- {id: work_holiday, q: 休みの日は何をしてる？}
+- {id: work_procrastinate, q: 締切はどう守る？ ギリギリ派？}
+- {id: work_resign, q: 辞めたいと思った瞬間は？}
+- {id: work_skill, q: 仕事で身についた変な特技は？}

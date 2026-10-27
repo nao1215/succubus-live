@@ -1,0 +1,194 @@
+# Nox 007 (English). Source: src/episodes/nox/007.yaml. Beat order matches the Japanese.
+title: "What happens if you drop one slow check? (a twenty-eighteen vuln, and my first all-nighter patching)"
+lobby:
+- "Hi. Tonight's about whether it's okay to remove a slow check."
+- "In twenty-eighteen, a check that got removed for speed turned into a massive vulnerability."
+- "I'll also tell you about the pudding from the first night I stayed up patching a vuln."
+parts:
+- title: Opening (pudding)
+  beats:
+  - say: "Oh, we're up. Hi, everyone who's still awake."
+  - chat: [night_shift_survivor, "evening. eating konbini pudding rn"]
+  - say: "Night Shift, you're eating pudding right now? Nice. Firm or melty?"
+  - chat: [night_shift_survivor, "firm"]
+  - say: "Firm. I'm a melty person. For everyone outside Japan, this is custard pudding, the caramel kind. Convenience stores sell it everywhere."
+  - chat: [lag_appreciation_club, "firm is the only real pudding"]
+  - say: "'Firm is the only real pudding'... with firm ones the spoon has to work so hard. With melty ones, the spoon looks relaxed. I like that."
+  - chat: [kernel_reader, "the spoon's feelings"]
+  - say: "The spoon's feelings. They matter."
+  - chat: [lag_appreciation_club, "ok best konbini dessert then"]
+  - say: "Best konbini dessert? Lawson's Premium Roll Cake. I like that you eat it with a spoon."
+  - chat: [lag_appreciation_club, "its always the spoon"]
+  - say: "It's always the spoon, yeah. I like things you eat with a spoon. They don't get your keyboard dirty."
+  - chat: [kernel_reader, "the reason is always the keyboard"]
+  - say: {face: annoyed, text: "'The reason is always the keyboard'... the keyboard is important."}
+  - chat: [second_year_dev, "whats the best pudding youve ever had?"]
+  - say: "The best pudding ever? I have one. ...I don't remember its name, though."
+  - say: "In April twenty-fourteen, a huge vulnerability called Heartbleed went public."
+  - chat: [first_time_here, "hi first time. heartbleed?"]
+  - say: "Welcome, new person. Heartbleed was a hole in a piece of software that handles encryption on the internet. The whole world scrambled to patch it."
+  - say: "At my old job, that night, we patched the hole, made new keys, and swapped a hundred and twenty customer certificates. And revoked the old ones."
+  - chat: [rtos_veteran_15y, "120"]
+  - say: "A hundred twenty. We finished in the morning. And a senior just silently put a convenience store pudding on my desk."
+  - chat: [night_shift_survivor, "good senior"]
+  - say: "Yeah, a really good senior. That was the best one ever."
+  - say: "But I ate it before I looked at the label. So I don't know what pudding it was."
+  - chat: [lag_appreciation_club, "just ask him"]
+  - say: "'Just ask him'... I can't. I'm bad at talking to seniors."
+  - chat: [kernel_reader, "did he say anything the next day?"]
+  - say: "The next day he said, 'Nox, you didn't say a single word all night.' I'd typed everything in chat."
+- title: Second Year's PR
+  beats:
+  - chat: [second_year_dev, "can i ask something?"]
+  - say: "Second Year, you want to ask something? Sure. On-call stuff?"
+  - chat: [second_year_dev, "last week i opened a PR that removes a slow check"]
+  - chat: [second_year_dev, "got an LGTM and it merged"]
+  - say: {face: surprised, text: "You removed a slow check, got an LGTM, and it merged... wait. Whose LGTM?"}
+  - chat: [second_year_dev, "the AI reviewer"]
+  - say: "The AI reviewer. Yeah, those come back instantly. ...What kind of check was it?"
+  - chat: [second_year_dev, "the same check happens later in the pipeline so i figured we didnt need it here"]
+  - say: "The same check happens later, so you didn't need it here. Okay. That happens a lot."
+  - say: "Removing it isn't bad by itself. It's just, there's a really similar story that turned into a giant vuln."
+  - chat: [kernel_reader, "the 2018 one"]
+  - say: "The twenty-eighteen one, yeah. C-V-E twenty-eighteen, one-seven-one-four-four."
+  - chat: [first_time_here, "cve..."]
+  - say: "A C-V-E is, like, a serial number that gets assigned to a vulnerability once it's found."
+  - say: "This one's in Bitcoin's reference client."
+  - say: "Since twenty-twelve, there'd been a check for 'is this one transaction spending the same coin twice?'"
+  - say: "And in a version released in twenty-seventeen, they removed it. For speed."
+  - chat: [lag_appreciation_club, "same as second year"]
+  - chat: [second_year_dev, "my stomach"]
+  - say: "'Same as Second Year,' and now your stomach... too early for the stomach. Hear the whole thing first."
+- title: Speaking of which (energy drinks)
+  beats:
+  - chat: [leaving_work_on_time, "speaking of stomachs do you drink energy drinks on call nights?"]
+  - say: "Energy drinks on call? No."
+  - chat: [leaving_work_on_time, "surprising"]
+  - say: "Surprising, right? At my old job, during an outage, I once drank four."
+  - say: "And my hands started shaking, and I kept mistyping commands. One time it was kind of close."
+  - chat: [rtos_veteran_15y, "four is way too many"]
+  - say: "Four is way too many, yes. Way too many. Haven't had one since. Now, before I run anything scary, I have my partner read it first."
+  - chat: [first_time_here, "so what do you drink"]
+  - say: "So what do I drink? Coffee. And gum. The xylitol kind that comes in a bottle."
+  - say: "I can tell how panicked I am by how fast I'm chewing."
+  - chat: [lag_appreciation_club, "panic = faster gum"]
+  - say: "Panic means faster gum. Yep. Fast enough that the mic picks it up."
+  - chat: [night_shift_survivor, "i do three canned coffees on night shift"]
+  - say: "Three canned coffees on night shift. ...Georgia Black? Canned coffee from vending machines is a whole thing here."
+  - chat: [night_shift_survivor, "boss"]
+  - say: "Boss, okay. At the vending machine at night, I usually hit Georgia Black. People are really split on this."
+- title: The assert somewhere else
+  beats:
+  - chat: [second_year_dev, "so why did they remove it in 2018"]
+  - say: "Why did they remove it? The reason at the time was, 'it's already checked somewhere else.' Same as you."
+  - say: "And that 'somewhere else' was an assert."
+  - chat: [first_time_here, "assert?"]
+  - say: "An assert is a promise in the code that says, 'at this point, this condition should hold.' If it doesn't, the program stops."
+  - chat: [rtos_veteran_15y, "what if asserts are compiled out in prod?"]
+  - say: "What if they're compiled out in prod? This software keeps them on, actually. But either way, an assert isn't the tool for rejecting bad input from outside."
+  - say: "In the first version after the removal, a mined block with a transaction spending the same input twice would hit that assert and crash the node."
+  - chat: [kernel_reader, "crashing is bad too though"]
+  - say: "And 'just crashing' isn't small. One block like that could've knocked over nodes worldwide. That alone is a big hole. No new money yet, though."
+  - say: "But in the next version, they reworked the code around it, and the assert ended up checking something weaker."
+  - say: "Under certain conditions, it didn't stop anymore. It just let it through. In a way that could inflate the supply."
+  - chat: [lag_appreciation_club, "creepy"]
+  - say: "Creepy, right? When it got removed it was a crash bug. Then the code around it changed, and it became a money bug."
+  - chat: [rtos_veteran_15y, "in embedded we strip asserts in prod a lot"]
+  - say: "In embedded you strip them in prod a lot, right. So input from outside gets rejected by real validation. Asserts check your own code's promises."
+  - chat: [ddd_police, "the mistake was treating an assert as validation"]
+  - say: "The mistake was treating an assert as validation? Half yes. ...But I don't think the person who wrote it thought of it that way either."
+  - say: "What I love is the timeline in the disclosure."
+  - say: "September seventeenth, in the afternoon, an anonymous report comes in, and in under three hours, someone realizes the inflation bug is there too."
+  - say: "And the next day, a patched release is out."
+  - chat: [kernel_reader, "its timestamped to the minute"]
+  - say: "Timestamped to the minute, yeah. Reading it, you can tell nobody slept."
+  - ask:
+      q: "Ever removed a slow check because 'it's checked somewhere else anyway'?"
+      options:
+      - c: "Yes"
+        r:
+        - "{name}, you too. Put a test on that 'somewhere else,' so you know it's still checking the same thing."
+        - "When the code around it changes, it can stop checking. Like tonight's story."
+      - c: "Almost did, then stopped"
+        r:
+        - "{name}, you hesitated. What made you stop?"
+        - "'It just felt wrong' is right a surprising amount of the time."
+      - c: "Never seen a slow check"
+        r:
+        - "{name}, your codebase must be fast. Jealous."
+        - "Or someone already removed them. ...Kidding. Probably."
+      npc:
+      - [second_year_dev, 0]
+      - [rtos_veteran_15y, 1]
+      - [leaving_work_on_time, 0]
+      - [lag_appreciation_club, 2]
+      - [ddd_police, 1]
+- title: For Second Year
+  beats:
+  - say: "About the same number removed one and almost did. Everyone's hesitated at least once."
+  - chat: [second_year_dev, "so what do i do about mine"]
+  - say: "What do you do about yours? First: is it already running in prod? And what was that check protecting?"
+  - chat: [second_year_dev, "its in prod. it checked order amounts"]
+  - say: "It touches money. Then tell whoever's on call and your lead tonight. Until you know it's safe, decide together whether to roll it back."
+  - say: "Only remove it once a test shows both checks look at the same condition, and every way in hits it before money moves."
+  - say: "And measure how much faster it actually got."
+  - chat: [second_year_dev, "so i shouldnt trust the AI review?"]
+  - say: "Shouldn't trust the AI review? It's fine to use it. But a change that removes a check should get at least one human reviewer."
+  - say: "My team does that now. We decided it after my four A M LGTM."
+  - say: "And finding the other check once isn't enough to remove yours. Look at it with your lead."
+  - chat: [second_year_dev, "messaging on call now"]
+  - chat: [kernel_reader, "or feed it the input that removed check was supposed to reject, in a test"]
+  - say: "Yeah, that's the best one. In a test environment. Check with your lead it gets rejected before money moves, from every way in. If not, roll back."
+  - chat: [lag_appreciation_club, "hows second year's stomach"]
+  - chat: [second_year_dev, "a little better"]
+  - say: "Your stomach's a little better, Second Year? Good."
+- title: The vuln on-call night
+  beats:
+  - chat: [leaving_work_on_time, "do you get called when a big vuln drops too?"]
+  - say: "When a vuln drops? I do. These days I run vuln response for my team."
+  - chat: [first_time_here, "vuln on call?"]
+  - say: "Vuln response is, when a big hole is found in something we use and goes public, you go around patching our machines and our customers' that night."
+  - say: "My first was Heartbleed night, at my old job. And what took longest that night wasn't the patching."
+  - chat: [rtos_veteran_15y, "counting versions"]
+  - say: "Counting versions, yeah. Which machine is running which version of which component. All of it."
+  - say: "But wait to finish counting and you're too late. We patched what faces the internet and what we knew was hit first. Counted the rest with help."
+  - say: "A machine you can't confirm doesn't go in 'not affected.' It goes in 'don't know yet.'"
+  - chat: [second_year_dev, "i dont think we could list all of ours either"]
+  - say: "You don't think you could list all of yours? That's normal. That's why you build the inventory on days when nothing's happening."
+  - say: "My team keeps ours updated, so on vuln night we post 'what we know, and what we don't know yet' within the first hour."
+  - chat: [lag_appreciation_club, "what about the 11 machines in your room"]
+  - say: {face: flustered, text: "The work machines, I can list. The eleven in my room... I can't."}
+  - chat: [lag_appreciation_club, "cant list them lol"]
+  - say: "I can't. And I tell everyone else to count."
+  - chat: [kernel_reader, "what about the npm thing last year"]
+  - say: "The npm thing last year, September twenty-twenty-five. I was counting all night for that one too."
+  - chat: [first_time_here, "npm?"]
+  - say: "npm is, like, a giant shelf where JavaScript packages get handed out. Everyone pulls their parts from there."
+  - say: "The author of some really popular packages got phished there."
+  - say: "A fake 'please update your two-factor' email that looked exactly like the real thing."
+  - chat: [lag_appreciation_club, "how do you fall for that"]
+  - say: "'How do you fall for that,' but people do. On a busy day, when it looks exactly real, I wouldn't be able to tell either."
+  - say: "And then crypto-stealing code got pushed into their packages. Chalk, debug, packages with over two billion downloads a week."
+  - chat: [second_year_dev, "my team was freaking out that day"]
+  - say: "Your team was freaking out, Second Year. ...Did you get any sleep?"
+  - chat: [second_year_dev, "was staring at lockfiles till morning"]
+  - say: "Lockfiles till morning... good work. New person, a lockfile is the list of exactly which version of which package you're using."
+  - chat: [first_time_here, "so with that you can count?"]
+  - say: "With that you can count? You can narrow it down fast."
+  - chat: [first_time_here, "so the list is enough?"]
+  - say: "Not quite. A lockfile is what you meant to install, so you also check what actually shipped."
+  - say: "The bad versions got pulled within hours, but you still have to find everyone who installed during those hours."
+  - chat: [second_year_dev, "we werent affected"]
+  - say: {face: smile, text: "You weren't affected? Oh, good... my stomach was hurting just listening."}
+- title: Closing (the egg)
+  beats:
+  - chat: [night_shift_survivor, "maybe ill go buy another pudding"]
+  - say: "Another pudding? A second one at midnight is... fine, I think. I have no reason to stop you."
+  - chat: [leaving_work_on_time, "get a melty one"]
+  - chat: [night_shift_survivor, "firm til i die"]
+  - say: "They said get a melty one, and you're staying firm. Fine. Firm it is."
+  - say: "I should eat something too. Today I put an egg on to boil and..."
+  - say: {face: surprised, text: "Oh. The pot's still on the stove."}
+  - chat: [lag_appreciation_club, "hey"]
+  - chat: [rtos_veteran_15y, "its past 7 minutes"]
+  - say: "It's way past seven minutes. Sorry, I'm cutting it here tonight. Good night."

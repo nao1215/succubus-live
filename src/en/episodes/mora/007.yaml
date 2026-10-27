@@ -1,0 +1,187 @@
+# English version of src/episodes/mora/007.yaml.
+title: My washing machine stopped, so I read the manual backwards
+parts:
+- title: 挨拶と、止まった洗濯機
+  beats:
+  - say: Evening. We're starting. Sorry if you hear the washing machine beeping back there.
+  - chat: [night_shift_survivor, 'evening. doing laundry?']
+  - say: Doing laundry. That was the plan. It just stopped. Beep beep beep.
+  - chat: [third_planner_this_year, 'error code?']
+  - say: Yep. Error. There's a letter and a number on the screen. No idea what it means.
+  - chat: [lives_on_points, 'just hit it']
+  - say: Just hit it? I'm not hitting it. That machine's still fairly new.
+  - say: I'm reading the manual. Got it right here.
+- title: 説明書は後ろから読む
+  beats:
+  - say: So, I read manuals backwards. I start from the troubleshooting page.
+  - chat: [first_time_here, 'you don''t start at the beginning?']
+  - say: Start at the beginning? The front is ten pages of "for your safety." I know that part.
+  - say: I love the table at the back. Symptom, cause, fix. Three neat columns.
+  - say: Okay, I'm looking for the code from the screen in that table. Found it.
+  - chat: [night_shift_survivor, 'so what''s the cause']
+  - say: The cause is, quote, "the lid is not closed."
+  - chat: [lives_on_points, 'LMAOOO']
+  - say: Don't laugh. I thought it was closed. I went to look, and the corner of a towel was stuck in the lid.
+  - say: {face: shy, text: 'Closed it again. It''s spinning. Okay. Fixed.'}
+  - say: Now it's about an hour of waiting for laundry. So I'm just gonna talk.
+  - say: Back to the table. The manual for my mom's old rice cooker had the best one I've ever seen.
+  - say: The very last row said, "If it still doesn't work, don't push yourself."
+  - say: And that's fine. Don't push yourself. Because right after that, they actually give you a phone number.
+  - chat: [throws_out_manuals, 'you can figure it out without reading. I toss manuals the day I buy stuff']
+  - say: There it is. Throws Out Manuals. I knew you'd show up.
+  - say: The same day you buy it? With the box?
+  - chat: [throws_out_manuals, 'with the box']
+  - say: With the box. So what do you do when something breaks?
+  - chat: [throws_out_manuals, 'google it']
+  - say: Google it. And when you google it, you get a picture of the manual, right?
+  - chat: [throws_out_manuals, 'yeah']
+  - say: {face: smug, text: 'See? You''re reading a manual somebody else kept.'}
+  - chat: [throws_out_manuals, 'the maker has a PDF on their site']
+  - say: A PDF on the maker's site. Okay, fair. The company keeps it for you.
+  - say: Hmm. So you're saying that's why you can toss it. I mean, I guess that works. I'm still not tossing mine.
+  - chat: [night_shift_survivor, 'ever called customer support?']
+  - say: I have, with my old washer. But their phone line is only open weekdays, during the day.
+  - chat: [leaving_work_on_time, 'so people with jobs can''t call']
+  - say: People with jobs can't call! Exactly! Same as city hall. You have to take a day off just to ask about your washing machine.
+  - say: And when you finally get through, hold music. And it loops back to the same spot, over and over.
+  - say: I learned the whole song. I still hum it sometimes.
+  - chat: [lives_on_points, 'sing it']
+  - say: I'm not singing, Points. Maybe just a little... no. Not singing.
+  - chat: [nameless_familiar, 'what happened when you got through?']
+  - say: When I got through, they were super polite. "Please unplug it, wait a moment, and plug it back in."
+  - say: And that fixed it. Thirty minutes on hold, three minutes of talking.
+  - chat: [throws_out_manuals, 'pretty sure that''s in the manual too']
+  - say: It's in the manual too? ...It might have been. Back then I hadn't started reading them backwards yet.
+- title: 脇道：本棚のネジが二本余った
+  beats:
+  - chat: [leaving_work_on_time, 'I read the manual and still have screws left over']
+  - say: You read it and still have leftover screws? Me too! My bookshelf.
+  - say: I got a bookshelf from Nitori, it's basically Japan's IKEA, and put it together alone. At the end, two screws left over.
+  - chat: [first_time_here, 'even after reading the manual?']
+  - say: I read it, new friend. Three times. Still no idea where those screws go.
+  - chat: [third_planner_this_year, 'aren''t those just spares']
+  - say: Just spares? It didn't say spares. If it said spares, I could relax.
+  - say: And the shelf is standing. Books on it and everything.
+  - say: People say, if it's standing, it's fine. No. That's what scares me. It's standing with something missing.
+  - chat: [leaving_work_on_time, 'where are the screws now?']
+  - say: The leftover screws are on the top shelf.
+  - say: In a little envelope. I wrote on it, "Bookshelf. Screws. Two. Where from?" Writing a question on an envelope doesn't get you an answer, though.
+  - chat: [throws_out_manuals, 'I toss the extra screws too']
+  - say: {face: surprised, text: 'You toss the screws too? Even the screws?'}
+  - chat: [throws_out_manuals, 'it''s standing so']
+  - say: It's standing, so. You're tough, you know that. Not jealous, though.
+  - chat: [nameless_familiar, 'building stuff alone you never have enough hands to hold the boards']
+  - say: Not enough hands! One hand on the board, one on the screwdriver, and my foot holding a different board.
+  - say: When you live alone, feet count as hands for furniture.
+  - say: And the last part, the thin back panel you hammer in with tiny nails. That was the worst.
+  - say: It was night, so every tap-tap-tap, I'm wondering if the people downstairs can hear.
+  - chat: [first_time_here, 'who''s downstairs?']
+  - say: Downstairs is Lise. Right after I finished, she texts me, "what are you building." She heard.
+  - chat: [third_planner_this_year, 'should''ve just asked her to help']
+  - say: Asked her to help? She wouldn't come. Lise plays games all night.
+- title: 脇道：小説も最後から読む
+  beats:
+  - chat: [third_planner_this_year, 'do you read novels backwards too?']
+  - say: Novels? Yep. I start with the last page.
+  - chat: [first_time_here, 'that''s spoilers tho']
+  - say: People say "that's spoilers," but I don't mind. Honestly, I want to know first.
+  - say: If you know the ending, you catch stuff along the way. "Oh, so that's why she said that."
+  - chat: [nameless_familiar, 'absolutely not. spoilers are a crime']
+  - say: The "absolutely not" crowd. Vespa's one of them.
+  - say: I told her about this once, and she got genuinely mad. "Reading the ending first is disrespectful to the author!"
+  - chat: [nameless_familiar, 'I''d be mad too']
+  - say: You too, Familiar? I know I'm the one in trouble here. So I don't do it to other people's books. Only ones I bought.
+  - chat: [first_time_here, 'so you read the end and then go back to the start?']
+  - say: Do I go back? Yeah. I read the last two pages, then start from page one like a normal person.
+  - say: With mysteries, you know who did it the whole time. So every time they show up, you're like, "oh, she just lied."
+  - chat: [night_shift_survivor, 'ngl that sounds kinda fun']
+  - say: Night Shift says that sounds kinda fun. It is! Hardly anyone ever says that to me.
+  - chat: [nameless_familiar, 'what about movies?']
+  - say: Movies? I can't watch those backwards, so I read the whole plot summary before I go.
+  - say: And I still cry. I know what happens and I still cry. Actually, because I know, I start crying early. Here it comes, here it comes.
+- title: 脇道：洗濯物はたたむ？ 干すのはどこ？
+  beats:
+  - chat: [good_morning_guy, 'do you fold your laundry?']
+  - say: Do I fold? I fold. If I don't, I lose track of how many of everything I have.
+  - chat: [leaving_work_on_time, 'I just wear stuff straight out of the basket']
+  - say: Straight out of the basket. Yeah, I hear that a lot from people who live alone.
+  - chat: [first_time_here, 'do you hang it outside?']
+  - say: Outside? Indoors. Most people here hang laundry on the balcony, but I'm on the third floor of a castle and it's windy. Stuff flies away.
+  - chat: [lives_on_points, 'has anything flown away?']
+  - say: Yes. One sock landed on Lise's balcony downstairs.
+  - say: It came back three days later. Hanging on my doorknob.
+  - say: Sweet of her. But I don't know why it took three days.
+  - chat: [lives_on_points, 'good thing it wasn''t your underwear']
+  - say: {face: annoyed, text: 'Good thing it wasn''t underwear? I don''t hang underwear outside. ...Don''t ask about that.'}
+  - chat: [lives_on_points, 'what color?']
+  - say: What color? We're talking about socks. Black. All of them black.
+  - chat: [night_shift_survivor, 'all black means losing one doesn''t matter']
+  - say: All black means you can lose one and it doesn't matter, exactly! One goes to Lise's balcony, the rest still make pairs.
+  - chat: [leaving_work_on_time, 'what brand is your washer?']
+  - say: My washer? Sharp. Fridge is Sharp too. Same store, same day.
+  - say: I wanted to get it all done in one trip when I moved. The clerk asked, "Are you newlyweds?"
+  - chat: [first_time_here, 'what did you say']
+  - say: What did I say? "It's just me." The clerk looked so sorry.
+  - say: I wanted to say, don't be sorry. But saying that makes it weirder, right? So I asked about which way the fridge door opens. Left or right.
+  - ask:
+      q: Do you fold your laundry?
+      options:
+      - c: Fold it and put it away
+        r:
+        - '{name} folds and puts it away. Same as me.'
+        - When you fold, you know what you've got and how much. It's calming.
+      - c: Wear it straight from the basket
+        r:
+        - '{name} wears it straight from the basket. Honest. I like that.'
+        - Isn't there always that one shirt that lives at the bottom of the basket?
+      - c: Leave it on the hanger and hang it up
+        r:
+        - '{name} just puts the hangers in the closet. Smart.'
+        - I kinda want to copy that. Folding at midnight makes me sleepy.
+      npc:
+      - [good_morning_guy, 0]
+      - [leaving_work_on_time, 1]
+      - [night_shift_survivor, 2]
+      - [lives_on_points, 1]
+      - [third_planner_this_year, 0]
+- title: 終わり：きのこたけのこ
+  beats:
+  - chat: [nameless_familiar, 'what are you snacking on while you wait?']
+  - say: What am I eating? Takenoko no Sato. Chocolate on a little cookie, shaped like a bamboo shoot. I just opened it.
+  - chat: [lives_on_points, "im team kinoko"]
+  - say: "And there it is. Kinoko, the rival, chocolate mushroom caps on cracker stems. A holy war here. I'm team bamboo. Chocolate and cookie run out evenly."
+  - chat: [lives_on_points, 'kinoko is better bc you get the stem left at the end']
+  - say: You like the stem left over? When it's just the cracker at the end, I get kind of sad.
+  - ask:
+      q: "Kinoko no Yama or Takenoko no Sato, which team are you?"
+      options:
+      - c: "Kinoko no Yama"
+        r:
+        - '{name} is team mushroom, huh.'
+        - Do you eat the stem last? Or first?
+      - c: "Takenoko no Sato"
+        r:
+        - '{name} is team bamboo. My people.'
+        - The problem with bamboo is, once you open a bag, you can't stop.
+      - c: "Suginoko Mura"
+        r:
+        - '{name}, Suginoko! Now that is a name I haven''t heard in forever.'
+        - I wonder how many people even remember that one.
+      npc:
+      - [lives_on_points, 0]
+      - [night_shift_survivor, 1]
+      - [leaving_work_on_time, 0]
+      - [nameless_familiar, 1]
+      - [third_planner_this_year, 2]
+  - chat: [third_planner_this_year, 'takenoko won the official meiji election in 2018']
+  - say: Bamboo won the twenty-eighteen election, yep. Meiji, the company, actually held a vote. And then the next year, mushroom won.
+  - chat: [night_shift_survivor, 'rigged. bloc votes']
+  - say: If you start saying "rigged," this never ends, Night Shift.
+  - chat: [leaving_work_on_time, 'takenoko is really about the cookie']
+  - chat: [lives_on_points, 'kinoko is really about the chocolate']
+  - say: Everyone's arguing about which part is the "real" snack. I don't care. The broken bits at the bottom of the bag are my favorite.
+  - chat: [nameless_familiar, 'compromise: alfort']
+  - say: Alfort, the compromise? Are you allowed to bring that up? Oh, the washer just went into rinse.
+  - chat: [lives_on_points, 'mushroom wins']
+  - chat: [night_shift_survivor, 'bamboo wins']
+  - say: Mushroom wins, bamboo wins, you're still going. They're both good, okay? I'm eating bamboo till the laundry's done. Night.

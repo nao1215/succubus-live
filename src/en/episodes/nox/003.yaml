@@ -1,0 +1,189 @@
+# Nox 003 (English). Source: src/episodes/nox/003.yaml. Beat order matches the Japanese.
+title: "My program ignored 'please stop' for two whole years"
+lobby:
+- "Hi. Tonight's about a program I wrote two years ago."
+- "I wrote cleanup code for when it shuts down. It never ran. Not once in two years."
+- "Somewhere in there we're also doing Kinoko versus Takenoko. It's a chocolate snack war."
+parts:
+- title: Opening (brightness)
+  beats:
+  - say: "Oh, we're up. Hi, everyone who's still awake."
+  - chat: [lag_appreciation_club, "...wait"]
+  - chat: [kernel_reader, "its a little brighter"]
+  - say: "'A little brighter.' You noticed? I bumped the screen brightness up one notch."
+  - chat: [lag_appreciation_club, "margin of error"]
+  - say: "Don't call it margin of error. The eye doctor told me, 'This is too dark.'"
+  - chat: [night_shift_survivor, "you went to the eye doctor?"]
+  - say: "I went. That's the only human hospital I've ever been to."
+  - say: "He asked how dark I keep it, and I said, um, all the way down. And he just went quiet for a sec."
+  - chat: [rtos_veteran_15y, "yeah id go quiet too"]
+  - say: "Anyone would, right? Anyway, he let me off with one notch."
+  - chat: [second_year_dev, "evening!! i wrote that postmortem you mentioned"]
+  - say: {face: surprised, text: "Second Year, you wrote the postmortem?"}
+  - chat: [second_year_dev, "didnt write 'be more careful'. started with what happened in order"]
+  - say: {face: smile, text: "No 'be more careful,' you started with the timeline. That makes me so happy. Let me read it later."}
+  - say: "Okay. Tonight it's my turn to write one."
+- title: Zero in two years
+  beats:
+  - say: "So two years ago I wrote a service. It takes restaurant reservations."
+  - say: "And I gave it cleanup code for when it shuts down."
+  - chat: [first_time_here, "hi first time. cleanup?"]
+  - say: "Welcome, new person. Cleanup is like a shop's closing routine."
+  - say: "When someone says 'we're closing,' you still finish the orders from customers who are already inside, right?"
+  - say: "You finish the half-written tickets, and then you turn off the lights."
+  - chat: [first_time_here, "yeah dont just kill the lights"]
+  - say: "If you just kill the lights, that's bad. Orders vanish halfway."
+  - say: "And when cleanup started, I had it log one line. 'Shutting down.'"
+  - say: "Last week, while I was looking into something else, I searched two years of logs for that line."
+  - chat: [kernel_reader, "how many hits"]
+  - say: {face: surprised, text: "How many hits. ...Zero."}
+  - chat: [lag_appreciation_club, "LMAOOO"]
+  - chat: [leaving_work_on_time, "stomach"]
+  - say: "Yeah, laugh. Someone just typed 'stomach.' We'd deployed it over a hundred times, and not one log line."
+  - say: "But zero hits alone doesn't prove cleanup never ran. Maybe it got killed before it could log. Maybe the logging was what broke."
+  - say: "So I actually stopped it and checked."
+  - chat: [first_time_here, "so how was it stopping"]
+  - say: "How was it stopping? I ran a stop test and looked at the process tree in the container. Every time, it got thirty seconds, then the power got yanked."
+  - chat: [first_time_here, "by who"]
+  - say: "By Kubernetes. It's the thing that runs your programs in containers, lots of copies, and babysits them."
+  - say: "Kubernetes says 'please shut down,' and gives you thirty seconds. If you're not done, it stops waiting."
+  - chat: [second_year_dev, "was anything actually breaking?"]
+  - say: "Was anything breaking? During deploys, reservations that came in right at that moment would sometimes error out."
+  - say: "Customers just retried, so nobody noticed."
+  - chat: [rtos_veteran_15y, "not once?"]
+  - say: "Nobody noticed, not once? Not once. Two years."
+- title: The message never arrives
+  beats:
+  - chat: [first_time_here, "how do you even say 'please shut down'"]
+  - say: "How you say it is called a signal. It's the OS tapping your program on the shoulder."
+  - say: "SIGTERM means, 'hey, wrap it up.' SIGKILL means, 'you're done.'"
+  - say: "With SIGKILL, the program can't catch it, can't refuse it. Nothing."
+  - chat: [lag_appreciation_club, "nice manager and scary manager"]
+  - say: "Nice manager and scary manager. Yeah, that works."
+  - say: "And I did set up a handler for the nice one, SIGTERM. In Go."
+  - chat: [second_year_dev, "signal dot Notify right? we have that too"]
+  - say: "Signal dot Notify, you have it, right? So did I. And it still never arrived."
+  - say: "There's a file that says how to build the container. The Dockerfile."
+  - say: "In there you write, 'when this container starts, run this.' And there's two ways to write it."
+  - say: "There's 'CMD, dot slash server,' just plain. And there's the one with square brackets and quotes around it."
+  - chat: [first_time_here, "those look the same"]
+  - say: "They look the same, right? Two years ago, I thought so too."
+  - say: "The plain one is called shell form. A shell sits in the middle. The shell starts first, and then the shell starts my program."
+  - chat: [first_time_here, "like a middleman?"]
+  - say: "A middleman, yeah. And the 'please shut down' goes to whoever started first in the container."
+  - chat: [kernel_reader, "and the shell doesnt forward it"]
+  - say: {face: laugh, text: "And the shell does not forward the signal. It doesn't! It's the middleman and it doesn't pass it on!"}
+  - say: "It's literally in the Docker docs. Shell form doesn't pass signals."
+  - say: "They even say use the bracket one, exec form. I hadn't read it."
+  - chat: [leaving_work_on_time, "just checked ours. its the plain one"]
+  - say: {face: surprised, text: "Leaving On Time, yours is shell form too? You just checked?"}
+  - chat: [leaving_work_on_time, "just now"]
+  - say: "Tomorrow, stop it once in a test environment. See which processes the signal reaches, and look at the startup script too."
+  - say: "If a shell is stuck in the middle, fix how it starts. Tonight, take an antacid and go to bed."
+- title: Speaking of which (Kinoko vs Takenoko)
+  beats:
+  - chat: [lag_appreciation_club, "totally unrelated but i bought takenoko no sato today"]
+  - say: "You bought Takenoko no Sato? Wait. You're bringing that up now?"
+  - chat: [lag_appreciation_club, "eating it while i watch"]
+  - say: "Eating it while you watch, okay. For everyone else, it's chocolate mushrooms versus chocolate bamboo shoots. Japan picks sides. I'm Kinoko no Yama."
+  - chat: [lag_appreciation_club, "i know. thats why i said it"]
+  - say: {face: annoyed, text: "You knew, and you said it anyway. On purpose."}
+  - chat: [first_time_here, "why kinoko?"]
+  - say: "Why Kinoko? It has a handle. The cracker stem. So your keyboard stays clean."
+  - chat: [kernel_reader, "a workstation-based reason"]
+  - say: "A workstation-based reason, yes. It matters. Takenoko has chocolate all around it, so it gets on your fingers."
+  - chat: [lag_appreciation_club, "the cookie is crunchy tho"]
+  - say: "The cookie's crunchy. Fine. I'll admit it's crunchy. ...Admit. That's all."
+  - chat: [night_shift_survivor, "which end of kinoko do you eat first"]
+  - say: "Which end first? The cap. Chocolate part first, stem last."
+  - chat: [second_year_dev, "i snap the stem off first"]
+  - say: {face: surprised, text: "You snap the stem off? Then you lose the handle!"}
+  - chat: [second_year_dev, "i eat it in one bite so it doesnt matter"]
+  - say: "One bite. ...Okay, then you don't need a handle."
+  - chat: [rtos_veteran_15y, "left a box in my car in summer and it all melted"]
+  - say: "The whole box melted in your car in summer. ...Yeah, that's a loss for either team."
+  - ask:
+      q: "Kinoko no Yama or Takenoko no Sato, which team are you?"
+      options:
+      - c: "Kinoko no Yama"
+        r:
+        - "{name}, you're with me. Welcome."
+        - "Hold it by the stem, eat the chocolate first. Your keyboard stays clean."
+      - c: "Takenoko no Sato"
+        r:
+        - "{name}, you're Takenoko too. Same as Lag Club."
+        - "Just don't get the chocolate from your fingers on your keyboard. That's all I ask."
+      - c: "I eat both"
+        r:
+        - "{name}, such a peaceful person."
+        - "But if there's only one bag left, which one do you grab? ...You don't have to answer."
+      npc:
+      - [lag_appreciation_club, 1]
+      - [kernel_reader, 0]
+      - [rtos_veteran_15y, 2]
+      - [second_year_dev, 1]
+      - [ddd_police, 0]
+      - [night_shift_survivor, 1]
+  - chat: [lag_appreciation_club, "takenoko winning"]
+  - say: {face: annoyed, text: "So many Takenoko... I lose here too."}
+- title: PID one and the mailbox
+  beats:
+  - say: "Okay, back to the Dockerfile. I switched it to exec form. Now my program is the first process in the container."
+  - say: "The first process gets number one. P-I-D one."
+  - chat: [kernel_reader, "PID 1 has weird rules"]
+  - say: "PID one has weird rules. Can I go full nerd for a sec?"
+  - say: "From inside the container, PID one only gets the signals it explicitly says it handles. A force kill from outside, SIGKILL, it still can't stop, though."
+  - say: "A normal process would just die on SIGTERM even without a handler."
+  - chat: [first_time_here, "so the first kid is hard of hearing"]
+  - say: "The first one's hard of hearing, yeah. It's on purpose, so it doesn't stop by accident. If PID one goes down, the whole container goes down."
+  - chat: [second_year_dev, "we use tini"]
+  - say: {face: surprised, text: "You use tini? Wait, you know about tini?"}
+  - chat: [second_year_dev, "my senior told me to add it. never knew why"]
+  - say: "You never knew why. Okay, so tini is a tiny program that just plays PID one for you. It actually passes the signals through."
+  - say: "Anyway, back to me. I fixed it, deployed, and 'shutting down' showed up."
+  - chat: [rtos_veteran_15y, "congrats"]
+  - say: "Thanks. ...But. Out of ten deploys, two still didn't log it."
+  - chat: [kernel_reader, "theres more??"]
+  - say: "There's more, yeah. This is the embarrassing part."
+  - say: "Go's signal dot Notify puts the signal into a channel. Think of it like a mailbox."
+  - say: "When you make the mailbox, you decide how many letters it can hold. I made it zero."
+  - chat: [lag_appreciation_club, "a mailbox that holds nothing"]
+  - say: "A mailbox that holds nothing. Yep. If nobody's standing right there to grab it by hand, the signal just gets dropped."
+  - say: "The Go docs literally say it. It won't block when sending, so the caller has to give the channel enough buffer. For one signal, size one is enough."
+  - say: "So if 'please shut down' came in while it was busy starting up, nobody grabbed it, and it got tossed."
+  - chat: [second_year_dev, "doesnt go vet warn about that?"]
+  - say: {face: flustered, text: "Go vet warns about it... it does. Three years ago people said CI was slow, so I turned off all the checks. Without measuring which one was slow."}
+  - chat: [lag_appreciation_club, "you plugged your own ears"]
+  - say: "I plugged my own ears. Yeah. The tools were telling me the whole time."
+  - say: "The fix was changing a zero to a one."
+  - chat: [ddd_police, "postmortem?"]
+  - say: "Wrote it. The cleanup logs 'shutting down' when it starts and 'shutdown complete' when it's done."
+  - say: "Every deploy checks, process by process, that each one we stopped logged complete."
+  - say: "And I added a test that stops it mid-reservation. It has to end up saved exactly once, or fail in a way you can retry."
+  - say: "Vet runs every time again, and I measured the slow checks and moved those to the nightly run."
+  - chat: [second_year_dev, "im adding that check to ours"]
+  - say: "Add it. If any process ever doesn't log complete, tell me."
+- title: Closing (Yoru)
+  beats:
+  - chat: [kernel_reader, "btw is yoru backed up"]
+  - say: "Yoru's backup... I knew that was coming."
+  - chat: [first_time_here, "yoru?"]
+  - say: "Yoru is the tiny OS I'm building. Nine years of source code, and it's only on this one laptop."
+  - chat: [rtos_veteran_15y, "thats scarier than tonights story"]
+  - say: "Scarier than tonight's story, I know. That's why I'm uploading it right now."
+  - say: "Done. Now I'm restoring it onto the old ThinkPad in my room. It's not a backup until you've restored from it."
+  - chat: [lag_appreciation_club, "the one with the broken hinge"]
+  - say: "Yes, the broken-hinge one. Takes two minutes to boot, but it's alive."
+  - say: "...Restored. Everything's there."
+  - chat: [second_year_dev, "im glad"]
+  - say: "Yeah. So relieved. Okay, let me boot it on that machine."
+  - say: "It printed 'yoru.' Enabling the timer interrupt."
+  - say: {face: surprised, text: "It crashed."}
+  - chat: [lag_appreciation_club, "crashed again"]
+  - say: "But listen, on this machine it crashed in the exact same spot as last week."
+  - chat: [kernel_reader, "reproduced"]
+  - say: "Reproduced. Different machine, same spot. My code is looking pretty guilty."
+  - say: "Thanks, everyone who's awake. That was fun."
+  - say: "Go to bed. I'm resisting the Takenoko temptation first, though."
+  - chat: [lag_appreciation_club, "want one?"]
+  - say: {face: shy, text: "'Want one?' ...Just one."}

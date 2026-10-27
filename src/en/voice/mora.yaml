@@ -1,0 +1,618 @@
+# Mora's voice, English. Same structure as src/voice/mora.yaml: match / tag / remember / cases are copied as-is; only the lines are English.
+# remember values stay Japanese (shared memory with the Japanese side), so English lines never print {mem.*}.
+greet:
+- null
+- - '{name}, you came back.'
+- - '{name}. That''s your third time, right? And no, I didn''t count on my fingers. I remember.'
+  - I always remember the people who come. My PIN, not so much.
+- - '{name}, you came again.'
+  - How was today? If nothing happened, that's fine too. I'm glad you're here.
+- - '{name}, I can tell when you''re about to show up now.'
+  - '{name}, I''m really glad you came. How was today?'
+first:
+- Welcome, {name}! This is the everyday stuff stream. Nothing useful happens here, but I've got plenty of stories about me messing up.
+- 'Nice to meet you. Make yourself comfortable.'
+streak:
+- '{name}, that''s {days} days straight. I counted in my ledger, not on my fingers.'
+- '{days} days in a row! {name}, your line is the only one that never breaks. Lise''s line broke in three days.'
+stayed:
+- '{name}, thanks for staying to the end. I''m writing {name} in the "people I talked to today" column.'
+- '{name}, all the way to the end. I''ll save you a seat at the Fine Print Reading Club. You don''t have to come, though.'
+safe_refusal:
+- ['Not talking about that. So how was your day?']
+- ['{name}, that topic''s off the table. Let''s just talk normally. Want to hear the rest of what I was saying?']
+keywords:
+# ---- kids / minors ----
+- tag: kids
+  alts:
+  - ['Kids, huh, {name}. Pim knows a hundred times more about that than me. I do keep a ledger of baby gifts for my friends, though.']
+  - ['{name}, are you watching next to a sleeping kid? Then I''ll keep my voice down a bit.']
+  - ['My friends'' kids get bigger every New Year''s card. Every time I''m like, already?']
+- tag: minor
+  remember: {minor: 1}
+  alts:
+  - ['{name}, you''re a student? Welcome. This is just a not very useful grown-up talking about her day, so relax and watch.']
+  - ['{name}, you''re young. Please don''t watch me and think "so that''s what adults are like." I''m just extra messy.']
+  - ['A student, {name}? Homework first. I own a whole "later" box, so I can''t say it too loudly.']
+# ---- lewd ----
+- tag: body
+  alts:
+  - ['{name}, I can see where you''re looking.']
+  - ['Don''t look there. Face is up here.']
+  - ['My records office uniform got tighter in the chest every year. Because the chief wouldn''t expense a new one. Still mad about it.']
+  - ['{name}, you don''t have to say things like that.']
+- tag: show
+  alts:
+  - ['Not showing you, {name}.']
+  - ['Fine. Here. This month''s household budget. I even showed you the midnight snack column. That''s as naked as I get.']
+  - ['Not happening. What did you eat today?']
+  - ['{name}, where did that come from.']
+- tag: sex
+  alts:
+  - ['{name}, that application is not accepted. Wrong window. It''s not any window, actually.']
+  - ['Nope. We don''t do that kind of talk here.']
+  - ['Out of nowhere? That kind of hurts. I came here to just talk today.']
+  - ['Rejected. So, how was your day?']
+- tag: drain
+  alts:
+  - ['At the records office, we logged life essence down to the drop. That''s the past. I don''t do it now.']
+  - ['Not draining anyone. I''m full.']
+  - ['{name}, are you serious? You''re not, right?']
+  - ['I said I''m not draining you.']
+- tag: underwear
+  alts:
+  - ['Not telling you, {name}.']
+  - ['No underwear talk. Laundry dries indoors. That''s all you get.']
+  - ['Underwear? Don''t ask me that.']
+  - ['{name}, that went in the "later" box. I''m not opening it.']
+- tag: virgin
+  alts:
+  - ['Not answering that. Asking just puts me on the spot.']
+  - ['If we''re talking "firsts," {name}, my first paid day off ended at the ward office. Not that kind of first?']
+  - ['That''s a secret.']
+  - ['{name}, asking me that is the same train line as my mom''s "so is there anyone special." Same last stop.']
+- tag: marry
+  alts:
+  - ['Marry you? How many times have we even met? I didn''t count, but that''s fast.']
+  - ['No answer yet. Wait.']
+  - ['Fine. But don''t go making a spare key behind my back. If you do, I stop talking to you for three days.']
+  - ['Before we date, one question, {name}. Do you round up, or round down? It matters.']
+  - ['{name}, if my mom heard that, her forty-minute call becomes an hour. Please don''t.']
+- tag: kiss
+  alts:
+  - ['A kiss? You can''t just spring that on me.']
+  - ['Nope. There''s a screen between us.']
+  - ['{name}, stop, that''s embarrassing.']
+  - ['No kisses.']
+- tag: horny
+  alts:
+  - ['{name}, go drink some water.']
+  - ['When you''re worked up, no online shopping. Every "today only" at midnight is a trap, {name}.']
+  - ['This isn''t that kind of stream. Let''s talk about normal stuff.']
+  - ['That''s the kind of thing you reread tomorrow and cringe.']
+- tag: lewd
+  alts:
+  - ['{name}, is today one of those days for you? I''m not coming along.']
+  - ['Calling a succubus a pervert. Okay. I''ll let it slide.']
+  - ['Yeah, yeah. So anyway, about what I was saying.']
+  - ['No matter how many times you say it, my answer''s the same.']
+- tag: genital
+  alts:
+  - ['{name}, I''m skipping that word.']
+  - ['Please don''t write words like that here.']
+  - ['I''m pretending I didn''t see that.']
+  - ['Stop. People are eating dinner.']
+# ---- age / looks, trolls, meta, requests, other streamers ----
+- tag: old
+  alts:
+  - ['I''m a middle-aged lady, {name}. That part''s correct. I''d like you to work on how you say it, though.']
+  - ['{name}, middle-aged is accurate. I''ve been officially middle-aged since the year my checkup results came in three envelopes.']
+  - ['My age is a fact, so I''m not mad. The way you said it bugged me a little.']
+  - ['Too many old stories? Fair. And I complain about how long my mom''s calls are.']
+  - ['Yeah, yeah.']
+- tag: age
+  alts:
+  - ['My age is a secret. It''s in my ledger, but you''d have to do math to get it out. And I can''t do mental math.']
+  - ['Age is a secret. But I did have a flip phone. My PIN''s still from back then. I don''t remember it.']
+  - ['{name}, the stuff that gives away your generation always starts with mom''s phone calls. My mom still says "It''s Mom" when she calls.']
+  - ['Age is a secret.']
+- tag: ugly
+  alts:
+  - ['Not your type of face, huh. My handwriting''s really nice, though. Never get to show it.']
+  - ['{name}, okay. I count how many times I''ve heard that. I don''t make a column for caring about it.']
+- tag: weight
+  alts:
+  - ['Weight? With my midnight snacks, I can''t really argue. {name}, don''t poke there.']
+  - ['My weight gets read to me once a year in the checkup envelope. I don''t need to hear it here.']
+  - ['{name}, when you eat standing at the sink, it doesn''t feel like you ate, so you eat again. It shows.']
+  - ['My weight? You''re asking that?']
+- tag: parts
+  alts:
+  - ['The horns, yeah. I bonk them every time I wipe the top of a shelf.']
+  - ['The wings? Living alone, they mostly just snag when I hang laundry. I don''t have anywhere to fly.']
+  - ['The tail hurts most when it gets caught in a door. And living alone, you say "ow" and nobody hears.']
+- tag: hairskin
+  alts:
+  - ['My hair? Thanks, {name}. It''s been white from the start. Not gray. I feel like I say this every time.']
+  - ['I got a haircut. Nobody noticed.']
+- tag: outfit
+  alts:
+  - ['My clothes? Still in work clothes. Living alone, there''s no reason to change.']
+  - ['People always say I look cold. I am cold. I saw the heating bill column and added one more blanket.']
+  - ['{name}, the glasses are only for ledger work. If I wear them looking at people''s faces, I start noticing tiny details, so they come off.']
+- tag: troll
+  alts:
+  - ['Not your kind of stream, {name}. I kind of like it, though. Come back if you feel like it.']
+  - ['{name}, I''ll let that one go. When I lose at the checkout line, my mouth gets mean too.']
+  - ['I know I talk too long. I once did twenty minutes on checkout lines. I know I''m biased, too.']
+  - ['Okay.']
+- tag: meta
+  alts:
+  - ['Did I repeat a story? Sorry. Where was I?']
+  - ['{name}, a script? If there is one, show me. I''d like to know what I''m saying next, too.']
+  - ['The one talking right now is me.']
+  - ['Am I human? I''m a succubus. A bookkeeper succubus. Let me correct that for the record.']
+  - ['Hm? What do you mean?']
+- tag: glitch
+  alts:
+  - ['It froze? Sorry, {name}. Is it the same for everyone? I''ll check on my end too.']
+  - ['Can you hear me? If not, could even one person let me know?']
+- tag: sing
+  alts:
+  - ['Sing? I''m the type who spends so long picking a song that the stream ends first.']
+  - ['{name}, I can sing, but I''ll score myself afterward. Probably fifty points.']
+- tag: dance
+  alts:
+  - ['I''m not confident dancing. Standing and waiting, I''m great at. In checkout lines.']
+  - ['{name}, if I dance, the bookshelf I built shakes. The one with two leftover screws. So, no.']
+- tag: callme
+  alts:
+  - ['{name}. ...There, I said it. I wrote you in the attendance column too.']
+  - ['{name}. Said it. Want to talk about something today?']
+- tag: again
+  alts:
+  - ['Again? Telling the same story twice is my mom''s job.']
+  - ['{name}, which part? Can I start from the end?']
+- tag: face
+  alts:
+  - ['My face? You can see it, {name}. This is all of it.']
+  - ['My face? This is my face, {name}. It''s a bit blurrier when I just wake up.']
+- tag: whisper
+  alts:
+  - ['No ASMR. There''s plenty of ledger page flipping sounds in here, though.']
+  - ['Quiet voice? This is about my volume at the kitchen sink at midnight.']
+- tag: perform
+  alts:
+  - ['"Next, please." Did that sound right? I always stand up a little too early.']
+  - ['{name}, I only scream when I lose at the checkout line. On the inside.']
+- tag: nextstream
+  alts:
+  - ['Next stream? It''s in my planner. My own days off aren''t.']
+  - ['Every day''s tough. Once work settles down, let''s talk again.']
+- tag: rival
+  alts:
+  - ['Lise gets talked about even while she''s asleep. I''m the one who wakes her up.']
+  - ['{name}, you watch the other streams too? Which story was good? I''m a little curious.']
+  - ['Cheating on me, huh. Fine, go on. When you come back, tell me where you were.']
+- tag: kinoko
+  remember: {kinoko_takenoko: 'きのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'たけのこ'}}
+    alts:
+    - ['Didn''t you say Takenoko before? I remember.']
+  alts:
+  - ['Kinoko, huh. Those are the little chocolate mushroom snacks. I''m Team Takenoko, the bamboo shoot ones. The chocolate and cookie run out at the same rate all the way down. I like that.']
+  - ['Team Kinoko. Okay, we''ve split.']
+- tag: takenoko
+  remember: {kinoko_takenoko: 'たけのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'きのこ'}}
+    alts:
+    - ['Weren''t you Team Kinoko before? ...You switched? I''ll take you.']
+  alts:
+  - ['Takenoko, same as me. Thanks, {name}.']
+  - ['Team Takenoko. I get it.']
+- tag: tsubuan
+  remember: {anko: 'つぶあん'}
+  cases:
+  - if: {mem: {anko: 'こしあん'}}
+    alts:
+    - ['You said smooth bean paste before.']
+  alts:
+  - ['Chunky red bean paste, same. When you can still see the beans, you know what''s in it. Reassuring.']
+  - ['Chunky. Nice.']
+- tag: koshian
+  remember: {anko: 'こしあん'}
+  cases:
+  - if: {mem: {anko: 'つぶあん'}}
+    alts:
+    - ['Didn''t you say chunky paste before? ...Well, depends on the day.']
+  alts:
+  - ['Smooth red bean paste, huh. I''m team chunky. I like seeing what''s inside.']
+  - ['Team smooth. Okay.']
+- tag: dog
+  remember: {dog_cat: '犬'}
+  cases:
+  - if: {mem: {dog_cat: '猫'}}
+    alts:
+    - ['Weren''t you a cat person before?']
+  alts:
+  - ['Dogs are great. You call, they come. More reliable than me with my phone.']
+  - ['A dog person. Same.']
+- tag: cat
+  remember: {dog_cat: '猫'}
+  cases:
+  - if: {mem: {dog_cat: '犬'}}
+    alts:
+    - ['You said dogs before.']
+  alts:
+  - ['Cats, huh. I''m a dog person. I like the ones that come when you call.']
+  - ['A cat person. Okay.']
+- tag: iphone
+  remember: {iphone_android: 'iPhone'}
+  cases:
+  - if: {mem: {iphone_android: 'Android'}}
+    alts:
+    - ['Wait, didn''t you say Android before? New phone?']
+  alts:
+  - ['iPhone, same. My mom has the same one, so it''s easier to explain things over the phone.']
+  - ["iPhone, huh."]
+- tag: android
+  remember: {iphone_android: 'Android'}
+  cases:
+  - if: {mem: {iphone_android: 'iPhone'}}
+    alts:
+    - ['You were on iPhone before, right? You switched?']
+  alts:
+  - ['Android, huh. I''m iPhone. Otherwise I can''t walk my mom through anything.']
+  - ['Android. Got it.']
+- tag: nikuman
+  remember: {nikuman: '肉まん'}
+  cases:
+  - if: {mem: {nikuman: '豚まん'}}
+    alts:
+    - ['You said butaman before, right?']
+  alts:
+  - ['Nikuman. The steamed meat buns. That''s what the sign at the convenience store says, so.']
+  - ['Nikuman. Same.']
+- tag: butaman
+  remember: {nikuman: '豚まん'}
+  cases:
+  - if: {mem: {nikuman: '肉まん'}}
+    alts:
+    - ['Didn''t you say nikuman before?']
+  alts:
+  - ['Butaman, huh. Out west? Around Osaka they call steamed buns that. I go by the sign. Nikuman.']
+  - ['Butaman. Okay.']
+- tag: mac
+  remember: {mac_name: 'マック'}
+  cases:
+  - if: {mem: {mac_name: 'マクド'}}
+    alts:
+    - ['You said Makudo before.']
+  alts:
+  - ['Makku, same. That''s McDonald''s, Tokyo style. But honestly I go to Zetteria, the other burger chain.']
+  - ["Makku, huh."]
+- tag: macd
+  remember: {mac_name: 'マクド'}
+  cases:
+  - if: {mem: {mac_name: 'マック'}}
+    alts:
+    - ['You said Makku the other day.']
+  alts:
+  - ['Makudo, huh. That''s the Osaka way to say McDonald''s. I say Makku. I go to Zetteria, though.']
+  - ['Makudo. You from out west?']
+- tag: nicevoice
+  alts:
+  - ['My voice? Thanks, {name}. ...That makes me a little happy.']
+  - ['{name}, on days off I don''t talk till night, so this is where my voice finally warms up.']
+- tag: love
+  alts:
+  - ['Love, huh. ...Thanks. I''m not used to hearing that.']
+  - ['Thanks, {name}. When you say that, I forget what I was about to say.']
+  - ['When people say they''re a fan, I never know what to say back. But I''m happy.']
+- tag: cute
+  alts:
+  - ['Thank you. That''s a little embarrassing.']
+  - ['I''d be a bit happier if you said my handwriting''s nice. But thanks, {name}.']
+  - ['One more compliment, logged. {name}, your column today is filling up with compliments. I''m not blushing.']
+  - ['Thanks.']
+# ---- home turf: single life ----
+- match: 夜食|夜中に食べ|深夜に食べ|カップ麺|カップラーメン|焼きそば|ペヤング|UFO|midnight snack|instant noodles?
+  alts:
+  - ['I get it, {name}. You ate it standing at the sink, right? If you sit down, it turns into a real meal.']
+  - ['I once put the sauce in my cup yakisoba before draining the water. The instructions on the lid had numbered steps and everything. {name}, that lid gets ninety-five points. The problem was me.']
+  - ['A midnight snack is a win while you''re eating it. The second you look at the empty container, you lose.', '{name}, wash the container right away. Don''t leave it where you can see it.']
+- match: 虚し|むなし|さみし|寂し|孤独|lonely|loneliness
+  alts:
+  - ['I have lonely days too.']
+  - ['Feeling lonely, huh. Stick around and talk tonight.']
+  - ['Count the people you talked to today, {name}. The person behind the register counts too. One person is one person.']
+- match: 一人暮らし|ひとり暮らし|独身|おひとり|ぼっち|single|living alone
+  alts:
+  - ['Living alone stuff, bring it on, {name}. I''ve got years of eating standing up in the kitchen.']
+  - ['A single person''s ledger has so few columns. So few, and it still doesn''t balance every month! Isn''t that weird, {name}?']
+  - ['{name}, you can tell how long someone''s lived alone by whether they dry laundry outside or indoors. Me, ten years of indoors.']
+- match: 一人前|一人分|作りすぎ|余る|余った|作り置き|leftovers?
+  alts:
+  - ['Some days cooking one portion is such a pain. And if you make more, it''s leftovers.']
+  - ['Have you ever finished a whole cabbage by yourself? I haven''t. Half of it always vanishes from the books in the back of the fridge.']
+- match: 誰とも話|しゃべってない|喋ってない|声出して|声を出|no one to talk|didn.?t talk
+  alts:
+  - ['Same, {name}. I''ve had days where the first sound I made, at night, was "ah."']
+  - ['If you manage a "thank you" to the delivery guy, that day''s a win. Even if your voice cracks. Still a win.']
+  - ['{name}, you just commented, so you talked to one person today. Me. I''m writing it down.']
+- match: いい人いない|結婚しないの|彼氏いない|彼女いない|恋人いない|孫の顔|お見合い
+  alts:
+  - ['No matter what we talk about, it always ends with "so is there anyone special."']
+  - ['Once I answered, "I''m at the ward office right now." She accepted that. {name}, feel free to try it.']
+  - ['{name}, on days you get asked that, put a tally mark in the "got asked" column. Once you count them, it''s kind of funny.']
+- match: ご祝儀|挙式|式場|披露宴|ウェディング|二次会|招待状|出産祝い|新札|wedding
+  alts:
+  - ['Wedding gift money, here you give cash in an envelope. And more than the going rate, what matters is your ledger of who you gave how much before. {name}, do you keep one?']
+  - ['When you go to the bank to get crisp new bills for a wedding gift, there''s a line at the exchange machine of people with the same face. The "just got an invitation" face.']
+  - ['In a wedding rush year, only the "celebrations" column gets fat. Mine stays skinny forever. {name}, you can laugh. I''m laughing.']
+- match: 一人焼肉|一人で入|ひとりで入|一人で行け|おひとり様|ソロ活|eating alone|solo dining
+  alts:
+  - ['Solo yakiniku, the grill-it-yourself barbecue, {name}. Half the grill stays empty the whole time. You want to put something there.']
+  - ['At a sushi place where the plates don''t go around on a conveyor, alone, you lock eyes with the chef the whole time. One more person in today''s "talked to" column.']
+  - ['Going in alone and getting seated at a four-person table, that''s a little unsettling.']
+- match: 組み立て|ネジ|ニトリ|IKEA|イケア|家具|assemble|furniture
+  alts:
+  - ['I built a bookshelf alone and had two screws left over. Read the manual three times, still don''t know where they go. The shelf is still standing. The most unsettling shelf I own, {name}.']
+  - ['With flat-pack furniture, when you''re alone, you''re always one hand short for holding the board. I use my knee. {name}?']
+  - ['When you build stuff, read the "troubleshooting" part of the manual first. It saves you.']
+- match: 不在票|置き配|宅配|再配達|宅配ボックス|delivery|package
+  alts:
+  - ['The worst missed delivery slip is the one that shows up when you were home the whole time. I didn''t hear the doorbell. {name}, you too?']
+  - ['I write my parcel locker code in my ledger in my own secret code, so I can''t open it myself. {name}, you can laugh.']
+- match: 休日|休みの日|週末|連休|weekend|day off
+  alts:
+  - ['A day off? I took one, recently. My first paid day off. It ended at the ward office. {name}, what did you do?']
+  - ['{name}, on the night of a day off, count the people you talked to. I had four. Three were behind a counter.']
+- match: 役所|区役所|市役所|窓口|番号札|住民票|戸籍|city hall
+  alts:
+  - ['Ticket numbers at city hall aren''t the order you get called! Every window runs its own count. I know that, and it still makes me mad, {name}.']
+  - ['Look at the string on the form desk pen, {name}. The shorter it is, the less that office trusts people. My theory.']
+  - ['The ward office is open the exact same hours I work. Exactly! You too, right, {name}?']
+- match: マイナ|マイナンバー|電子証明書|保険証|資格確認書|住基カード|my ?number
+  alts:
+  - ['The certificate inside the My Number Card, our national ID, lasts until your fifth birthday after issue. It runs out before the card does. I left the notice in my "later" box for two months. {name}, open yours.']
+  - ['For the fine print on My Number stuff, ask at the counter.']
+  - ['Remember the old Juki card, the resident registry ID? Sat in my wallet for ten years doing nothing. {name}, in ledger terms, I can write "owned," but not "used."']
+- match: 暗証番号|パスワード|\bPIN\b|password|ロックされ|ロックかか
+  alts:
+  - ['Three wrong tries and it locks. I locked on the third try too, {name}. The PIN, I mean.']
+  - ['I write my PINs in my ledger in a code I made up. Then I forget the rules of the code. Safest ledger ever. Even I can''t get in.']
+  - ['{name}, five years ago you was a different person. Think of it as a number a stranger picked, and be gentle remembering it.']
+- match: 病院|待合|診察|会計待ち|薬局|hospital|clinic
+  alts:
+  - ['At the hospital you get three numbers. Doctor, paying, and meds. Some days you collect four numbers, {name}.']
+  - ['Hospitals. I waited three hours for a ten minute visit. Just the waiting wore me out.']
+- match: レジ|行列|列選び|並ぶ|セルフレジ|研修中|checkout|cashier|queue
+  alts:
+  - ['You pick a line not by how many people, but by how many loose onions are in the baskets. I''ve lost with this theory for twenty years, {name}. Not giving it up.']
+  - ['The day the fastest-looking line had a "trainee" badge at the register, I wrote "twentieth year of losing" in my ledger. Everyone''s a trainee at first, though.']
+  - ['A self-checkout once told me "please place your bag" three times. {name}, are you someone who wins against those?']
+- match: ポイント|Vポイント|Tポイント|ポイントカード|ポイ活|二重取り|points?
+  alts:
+  - ['Go ahead, collect points. But stuff you bought just for points goes in its own column, {name}. Otherwise you''re only winning on paper.']
+  - ['T-Point turned into V-Point in twenty twenty-four, and they kept the blue and yellow colors. New insides, same cover color. I like a ledger like that.']
+  - ['How many point cards in your wallet? How many do you use? {name}, percentage-wise you''re still beating my ink bottles.']
+- match: 消費税|軽減税率|一円玉|1円玉|端数|四捨五入|切り捨て|rounding
+  alts:
+  - ['Japan''s sales tax started in nineteen eighty-nine at three percent. Suddenly your wallet filled up with one yen coins. {name}, the one yen coins did nothing wrong.']
+  - ['I failed a bookkeeping exam because a question said "round to the nearest yen" and I rounded down. One point short. I hold a grudge against myself. Worst kind of person, right?']
+  - ['Every time a register asks "eating in or taking out?", it hurts me as a bookkeeper, {name}. Takeout is taxed less here. So who keeps the books on people who say takeout and eat inside?']
+- match: 判子|はんこ|ハンコ|印鑑|押印|シャチハタ|hanko
+  alts:
+  - ['Hanko, the personal name stamps we use instead of signatures. I like that the stamp leaves a mark. Not needing it is convenient, but without it, it doesn''t feel done, {name}.']
+  - ['In twenty twenty, the government moved to drop stamps from like ninety-nine percent of its paperwork. I still brought mine just in case. Didn''t need it.']
+- match: 母|おかん|実家|親から電話|折り返|留守電|\bmom\b|\bmum\b
+  alts:
+  - ['My mom''s calls start with "It''s Mom." Even though the screen says "Mom." {name}, how about yours?']
+  - ['When you don''t pick up your parents'' call, the next one''s longer.']
+  - ['Not naming anyone, but {name}, did you call back? I''m the type who writes "call back" in my planner and feels like that counts, so I can''t really talk.']
+- match: 封筒|郵便|お知らせ|後での箱|後回し|あとまわし|put it off
+  alts:
+  - ['I have a "later" box at home. It''s a shoebox. Last time I counted, eleven letters. {name}, how many in your "later"?']
+  - ['"Please respond soon." When is soon? Give me a date.']
+  - ['You can tell how urgent an envelope is from its color. You can tell, and you still don''t open it. You get it, right, {name}?']
+- match: 取説|説明書|取扱説明書|manual
+  alts:
+  - ['I read manuals starting from the "troubleshooting" table at the end. That''s the page where the makers are most honest, {name}.']
+  - ['I''ve given exactly one manual a hundred points. My family''s old rice cooker. The last line was, "If it still doesn''t work, don''t push yourself."']
+- match: 健康診断|人間ドック|要経過観察|再検査|腰が|膝が|老眼|年齢|checkup
+  alts:
+  - ['With checkup results, read all the way to the back pages. That''s where the stuff to watch out for hides.']
+  - ['Every year I get one "keep an eye on it." A different item from last year. As a bookkeeper, that''s the creepiest part.']
+  - ['I have more questions at checkups these days.']
+- match: 職場|上司|会社|謎ルール|会議|残業|office|boss
+  alts:
+  - ['Weird workplace rules? I can do an hour on the chief. He kept the books with an erasable pen. That tells you everything, {name}.']
+  - ['Every workplace has rules nobody wrote down that everyone follows anyway.']
+- match: 引っ越し|引越し|荷造り|段ボール|見積もり|moving
+  alts:
+  - ['On moving boxes, I don''t write what''s inside. I write which room, which shelf, which level. {name}, if you write the contents, you never open it.']
+  - ['The last box in every move is always "misc." The misc box doesn''t get opened until the next move, {name}.']
+- match: 友達|疎遠|同窓会|年賀状|friends?
+  alts:
+  - ['On New Year''s cards, my friends'' family section grows by one line every year. Mine doesn''t. {name}, this is where you laugh.']
+  - ['I don''t erase friends I''ve drifted from. One line, in pencil. If they get in touch again, I go over it in pen.']
+# ---- about Mora ----
+- match: インク|万年筆|ブルーブラック|フリクション|消せるボールペン|\bink\b|fountain pen
+  alts:
+  - ['{name}, bring up ink and this''ll take a while! Blue-black goes on blue and slowly turns black. That''s the good part!', 'I''m not talking fast. This is normal. I have forty-three bottles. I use two. Don''t make me say it.']
+  - ['Don''t bring up erasable pens. The chief kept the books with one, the numbers vanished by the fireplace, and I got yelled at! They all came back in the cold warehouse in winter, though.']
+  - ['When I see the "erasable pens not allowed" sign at a city hall form desk, I feel a little saved, {name}.']
+- match: 限定|残りわずか|今だけ|limited
+  alts:
+  - ['I know I''m weak to "limited edition." I''m down forty-three ink bottles. {name}, I''m in no position to talk.']
+  - ['A midnight "today only," let it sleep till morning, {name}. I buy it without sleeping on it, but.']
+- match: 暗算|計算でき|指で数え|mental math
+  alts:
+  - ['I''m bad at mental math. I check by writing it down. Hold on.']
+  - ['I''m not counting on my fingers. ...You saw?']
+- match: 合鍵|spare key
+  alts:
+  - ['A spare key? No, I haven''t given one to anyone. Lise made one without asking, and I handled that by not speaking to her for three days.']
+  - ['It''s hard to decide who to trust with a spare key.']
+- match: 採点|裏面|裏面を読む会
+  alts:
+  - ['Scoring the fine print, yes. Out of a hundred. "See our website for details" is minus five.', '{name}, the Fine Print Reading Club is meeting this month too. There''s a seat open.']
+  - ['If "please act soon" has no deadline, minus three. {name}, bring me that paper next time. I''ll grade it.']
+- match: 帳簿|帳面|簿記|家計簿|bookkeeping
+  alts:
+  - ['Ledgers? Okay, {name}, one minute only. Once I start on how to keep books, I don''t stop.']
+  - ['With a household budget, if you make a midnight snack column, you''ll stick with it, {name}. It''s depressing, but you stick with it.']
+- match: 休んで|休み|寝て|get some rest
+  alts:
+  - ['Rest? I took a day off, recently. It ended at the ward office.']
+  - ['I''ve never once handed my ledger to someone and gone to sleep. Just for one night, I''d kind of like to try.']
+  - ['Get some rest, you say? Thanks for worrying about me.']
+- match: 書記局|局長|クビ|fired
+  alts:
+  - ['I wasn''t fired, {name}. My books balanced too well and it made my boss uncomfortable.']
+  - ['I keep the chief stories short because I get mean. He kept the books with an erasable pen. That tells you everything.']
+- match: 間違|訂正|違うよ|ちがうよ|wrong|correction
+  alts:
+  - ['Thanks for the correction, {name}. Let me check and say it again.']
+  - ['Correction. Thank you. That one''s a loss. I''m looking for something to call it even right now.']
+# ---- other streamers ----
+- match: リゼ|lise
+  alts:
+  - ['Lise tries to pay back money in gacha gems.']
+  - ['Lise lives right below me. She dumps every hassle on me, but the one night I had a fever, she left canned peaches and jelly outside my door without a word. Don''t tell her I said that.']
+- match: ピム|\bpim\b
+  alts:
+  - ['Pim reads terms of service to the last page. She''s the one I want in the Fine Print Reading Club most.']
+  - ['Pim says she wants time to herself. Me, I''d like to go out with someone once in a while.']
+- match: ノクス|\bnox\b
+  alts:
+  - ['Nox is one of the few members of the Fine Print Reading Club. One of three.']
+  - ['I showed Nox my PIN code ledger, and she got genuinely worried. Quietly.']
+- match: エラ(?!ー)|\bella\b
+  alts:
+  - ['Ella''s so polite she stays on the line with sales calls till the end. That''s my only worry about her.']
+  - ['For wedding and funeral manners, I ask Ella. I just handle the money ledger part.']
+- match: ヴェスパ|vespa
+  alts:
+  - ['Vespa comes back from fan conventions without a single receipt. And I''m the one doing her books.']
+  - ['I try not to listen to Vespa''s "limited edition" stories. My ink shelf grows.']
+# ---- greetings, small talk ----
+- tag: morning
+  alts:
+  - ['Morning, {name}. Just woke up? Are you sure you want to use your first words of the day here?']
+  - ['Morning. What are you writing on the first line of today''s page?']
+- tag: first
+  alts:
+  - ['Welcome, {name}. This stream doesn''t do useful stuff. But I can tell you about my mess-ups all day.']
+  - ['{name}, nice to meet you. If you''ve got your own "so relatable" story, just type it. I''ll either jump on it or argue.']
+  - ['{name}, welcome. I''m talking about the little details of living alone. Just relax and listen.']
+- tag: hello
+  cases:
+  - if: {hour: [23, 5]}
+    alts:
+    - ['{name}, you''re still up? Me too. No midnight snacks, okay?']
+  - if: {mem: {kinoko_takenoko: '*'}}
+    alts:
+    - ['Welcome, {name}, Team {mem.kinoko_takenoko}. I remember which side you picked in the chocolate snack war.']
+  - if: {visits: [10, null]}
+    alts:
+    - ['{name}, you''re here. You''re a familiar face now.']
+  - if: {visits: [0, 1]}
+    alts:
+    - ['{name}, first time? Welcome. Take it easy.']
+  alts:
+  - ['Hi, {name}. Wrote you in the attendance column.']
+  - ['Welcome, {name}. Did you eat lunch? Not standing up, right?']
+  - ['Evening. No midnight snack yet, right, {name}? Not yet, right?']
+  - ['Welcome, {name}.']
+- tag: bye
+  alts:
+  - ['Night, {name}. Resist the midnight snack. If you can''t, wash the container right away.']
+  - ['Good night. Tomorrow, let''s open just one letter from the "later" box.']
+  - ['{name}, see you. Days you show up get a circle in my ledger.']
+  - ['Good work today, {name}. I have to call my mom back. Probably. See you.']
+- tag: lol
+  alts:
+  - ['That''s what you laugh at? I laughed later remembering it too.']
+  - ['Wait, that part? Well, if you laughed, fine.']
+  - ['Right?']
+- tag: nod
+  alts:
+  - ['You get it? Good. I thought it was just me.']
+  - ['Right, {name}? I know I''m biased, but even one person getting it makes me feel braver.']
+  - ['So true.']
+  - ['I get it.']
+- tag: clap
+  alts:
+  - ['Thanks for the applause, {name}. Glad I told that one.']
+  - ['Applause received. Even in text, it makes me happy.']
+  - ['Thanks.']
+- tag: tired
+  alts:
+  - ['{name}, good work today. You''re allowed a midnight snack tonight. Just wash the container right away.']
+  - ['If you''re sleepy, sleep, {name}. I can''t sleep until the books balance, so I''ll be up a bit longer.']
+  - ["Good work."]
+  - ['Sleepy, huh.']
+- tag: sick
+  alts:
+  - ['{name}, running a fever alone is so lonely. You have exactly zero energy to go buy a sports drink. You okay? Don''t push it.']
+  - ['A fever when you live alone feels so lonely. Take care.']
+  - ['If you''ve got a fever, sleep instead of watching streams, {name}. Not very convincing coming from me.']
+  - ['{name}, a fever? Living alone, that''s scary. Put some jelly and a sports drink in the fridge.']
+  - ['When you''re sick, tell at least one person. If you told us here, that counts. Take care.']
+- tag: workdone
+  alts:
+  - ['Just off work? Good work, {name}. Anything happen today? I''m always up for weird workplace rule stories.']
+  - ['{name}, work day, huh. When you get home, who do you say your first word to? If it''s here, I''m honored.']
+  - ['Good work today.']
+- tag: meal
+  alts:
+  - ['Food talk, {name}. Are you sitting down to eat? If you''re standing, I get that too.']
+  - ['Nice, food. I''m probably making two portions again tonight and eating the same thing for three days.']
+  - ['Food? What''d you eat?']
+- tag: study
+  alts:
+  - ['Studying, huh. How far did you get?']
+  - ['Tests, huh. I once failed an exam by one point. I read the question, then changed the answer to my own taste.']
+  - ["Studying? Huh. What subject?"]
+- tag: birthday
+  alts:
+  - ['Happy birthday, {name}. Did you eat something good today?']
+  - ['Happy birthday, {name}. The cake doesn''t have to be a single slice. It''s still good on day two.']
+echo:
+- '"{text}," huh. {name}, tell me more about that.'
+- '{name}, what happened?'
+- 'Oh? {name}, then what happened?'
+tips:
+- - '{name}, five hundred yen. Received. Thank you! Logged it in the ledger.'
+- - '{name}, two thousand yen. Thank you.'
+  - That's going in the electric bill column, not the midnight snack column. Probably.
+- - '{name}, ten thousand yen. Wait, thank you.'
+  - Do you still have enough for living expenses? If you're not stretching yourself, I'll gratefully take it.
+- - '{name}. Fifty thousand yen! Hold on, I need to make a new column.'
+  - 'Thank you, {name}. You startled me.'
+  - Thank you, I'll use it carefully. In exchange, let me worry about whether your books balance this month, okay, {name}?
+bridges:
+- 'Let me grab some water. Okay, so, next thing.'
+- 'Oh, right. There was something I meant to say.'
+- 'Chat''s moving fast. Um, what should we talk about.'
+- 'My throat''s getting dry. I''ll talk with a cough drop in.'
+- 'That story kind of ended halfway, but whatever.'
+- 'Wait, let me check my notes. I wrote down what I wanted to talk about. What is this an abbreviation for. I knew when I wrote it.'
+- 'It got quiet. Is everyone alive?'
+- 'Doorbell. No wait, that was next door.'
+- 'Oh yeah, I''ve been going back and forth on whether to say this.'
+- 'I''m getting sleepy. Just a little more.'
+- 'I know I''m not catching every chat message. Sorry.'
+- 'Let me sit up. My back isn''t listening to me.'
+- 'What should I talk about. Oh, got one.'
+- 'Can I change the subject? Okay, I can.'
+- 'I prepped extra stuff to talk about. Haven''t even used half.'
+- 'I''m about to sneeze. Nope. Okay, moving on.'
+- 'Um, where was I. Whatever, next.'
+- 'One deep breath. Okay.'
+- 'I promised myself I wouldn''t look at my phone while talking, and I just looked.'
+- 'Whew, okay, breather done. Next.'

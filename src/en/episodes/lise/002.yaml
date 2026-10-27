@@ -1,0 +1,203 @@
+# リゼ 002 の英訳（src/episodes/lise/002.yaml）。拍の並びは日本語と同じ。表情は build.py が日本語から写すので書かない。
+title: The mushroom in Mario 3 doesn't come out of the block
+lobby:
+- In Mario Three, you hit a block and a mushroom slides up out of it, right?
+- It looks like it's coming out of the block. It isn't.
+- Also, I'll tell you about an embarrassing bug in a game I made once.
+parts:
+- title: Opening (Karaage-kun and traffic lights)
+  beats:
+  - say: Okay, evening. I'm on. Good.
+  - chat: [good_morning_guy, "evening"]
+  - chat: [login_bonus_only, "are you chewing rn"]
+  - say: Chewing? I was. Karaage-kun.
+  - chat: [login_bonus_only, "3am lawson run huh"]
+  - say: "Yep, late-night Lawson. Convenience store. Karaage-kun is their little box of fried chicken bites. I eat one at every red light on the way home."
+  - say: There are only three lights between there and my place, and the box is still empty before I get home.
+  - chat: [retro_grandpa, "how long are u stopping at these lights"]
+  - say: I just stop, okay? Even when it turns green, I don't cross until I finish chewing.
+  - chat: [login_bonus_only, "ur not waiting for the light ur waiting for the chicken"]
+  - say: Waiting for the chicken. Okay. When you put it like that, yeah.
+  - say: I thought about going back for a second box. Didn't. Too much effort.
+  - chat: [login_bonus_only, "THAT'S where you draw the line lol"]
+  - say: That's where I draw the line. Walking is effort. Eating isn't.
+  - chat: [coffee_shop_regular, "do u squeeze lemon on fried chicken"]
+  - say: No lemon. It makes the batter go soggy.
+  - say: Soggy means more chewing. Effort.
+  - chat: [coffee_shop_regular, "but its so much fresher with lemon"]
+  - say: Fresher. Ella says that too. She squeezes it on before she even brings the plate out.
+  - say: So lately I grab one piece first, then hand the plate back.
+  - chat: [login_bonus_only, "self defense lmao"]
+  - say: If you want lemon, put it on your own piece. That's all I ask.
+  - chat: [retro_grandpa, "people who lemon the shared plate start wars"]
+  - say: The shared-plate lemon people. Yeah, that starts fights. I just grab mine before the fight starts.
+  - say: Karaage-kun doesn't come with lemon on it, so. Peace.
+- title: Into the topic (how stickers overlap)
+  beats:
+  - say: Okay. Today's about a little magic trick in an old game.
+  - say: I told you before, the NES can only do eight moving pictures side by side, right?
+  - chat: [first_timer_cat, "first time here. didnt know that"]
+  - say: Hi, Cat, welcome. It's fine if you don't know.
+  - say: The pictures that move around on screen are called sprites. Think stickers.
+  - say: Today is about what happens when stickers overlap.
+  - say: If two of them overlap, which one do you think ends up on top?
+  - chat: [first_timer_cat, "the one placed last?"]
+  - say: The one placed last, you'd think. Nope. The lower number goes in front.
+  - chat: [login_bonus_only, "the younger one goes on top"]
+  - say: Don't say "the younger one goes on top." That sounds like a whole different industry.
+  - chat: [just_clicks_agree, "what industry?"]
+  - say: You don't need to know what industry.
+  - say: Anyway. You can also give a sticker a flag that says "go behind the background."
+  - chat: [first_timer_cat, "what happens when it goes behind"]
+  - say: It goes behind the wallpaper, so you can't see it. So far, normal.
+- title: Side road (mushrooms, then Kinoko vs Takenoko)
+  beats:
+  - chat: [login_bonus_only, "u said mushroom and now i want kinoko no yama"]
+  - say: Mushroom talk made you want Kinoko no Yama? Same. I'm Team Kinoko.
+  - chat: [coffee_shop_regular, "takenoko is the only correct answer"]
+  - say: "Here we go. A Takenoko person. For everyone outside Japan, two chocolate snacks, little mushrooms and little bamboo shoots. People fight. For real."
+  - say: The mushroom has a stem to hold. You can eat it lying down and your fingers stay clean.
+  - chat: [coffee_shop_regular, "but takenoko is crunchier"]
+  - say: I'll admit it's crunchier. But there's nothing to hold.
+  - chat: [coffee_shop_regular, "what do you mean hold"]
+  - say: What do I mean, the mushroom stem. Hold that and you can lie flat and it's fine.
+  - say: At home, I hand Ella the bag that has both. She's Team Takenoko.
+  - say: And she picks out just the mushrooms and puts them on my plate.
+  - chat: [retro_grandpa, "making your maid sort them lmao"]
+  - say: Don't say I make her sort them. She eats the bamboo shoots, so it works out.
+  - chat: [first_timer_cat, "i eat just the chocolate part first"]
+  - say: Just the chocolate first? What. You bite off the mushroom cap only?
+  - chat: [first_timer_cat, "yeah. crackers later"]
+  - say: Crackers later. So the crackers you eat later are just. Plain crackers.
+  - chat: [coffee_shop_regular, "third faction has entered the chat"]
+  - chat: [first_timer_cat, "its a peaceful way to eat"]
+  - ask:
+      q: Kinoko no Yama, or Takenoko no Sato?
+      options:
+      - c: "Kinoko no Yama"
+        r:
+        - Mushroom, {name}. The one with a handle. My people.
+        - Hold it by the stem. Least effort.
+      - c: "Takenoko no Sato"
+        r:
+        - Bamboo shoot, {name}. Ella will be happy.
+        - Crunch person. You can have the bamboo ones from my bag.
+      - c: I like both
+        r:
+        - Both, {name}. A peaceful soul.
+        - Help me sort next time I open a bag.
+      - c: Never had either
+        r:
+        - Never, {name}? They're chocolate snacks. I like the mushroom, because your fingers stay cleaner.
+      npc:
+      - [login_bonus_only, 0]
+      - [coffee_shop_regular, 1]
+      - [retro_grandpa, 0]
+      - [first_timer_cat, 2]
+      - [just_clicks_agree, 1]
+      - [good_morning_guy, 1]
+  - say: Bamboo's a little ahead. Annoying. But that's a nice split.
+  - chat: [login_bonus_only, "still shook about the cap-only person"]
+  - say: Shook about the cap-only person? Me too. Might be the biggest shock of the day.
+  - say: Mushroom people's reason is basically always "my hands stay clean."
+  - chat: [coffee_shop_regular, "so team kinoko is just lazy people"]
+  - say: Just lazy people. Rude. Call us the clean-hands faction.
+  - chat: [just_clicks_agree, "so where does the mushroom come out"]
+  - say: Oh, where the mushroom comes out. Right. I was talking about Mario.
+  - say: Where was I. The sticker going behind the background.
+- title: Back (the Mario 3 magic trick)
+  beats:
+  - say: In Super Mario Bros. Three, you hit a block.
+  - say: And a mushroom slides up out of it, right?
+  - chat: [first_timer_cat, "yeah it pops out"]
+  - say: It looks like it's coming out of the inside of the block.
+  - say: But actually, the mushroom is moving in front of the block art.
+  - chat: [first_timer_cat, "then why does it look hidden"]
+  - say: Why does it look hidden. They put one more sticker right where the block is. With the go-behind flag on.
+  - say: That one is behind the background, so it's invisible itself.
+  - say: But it has a lower number, so it counts as being in front of the mushroom.
+  - say: So it hides the mushroom too, and you see the background through it.
+  - chat: [first_timer_cat, "an invisible guy is standing in front of the mushroom?"]
+  - say: Yeah. Exactly that. An invisible guy standing in front of the mushroom.
+  - chat: [login_bonus_only, "thats way too complicated"]
+  - say: It's complicated. I reread it three times the first time.
+  - say: The moment it clicked, I said "that's cheating" out loud. Alone.
+  - chat: [frame_by_frame, "the note blocks in 1-2 where the corners get cut off"]
+  - say: The note blocks in World one-two? You know that? Did you see it frame by frame?
+  - chat: [frame_by_frame, "yep"]
+  - say: You did. The note block has round corners, but the hiding sticker is square.
+  - say: So when the mushroom comes out, just the corners get cut off, square.
+  - chat: [first_timer_cat, "you can see how the trick works"]
+  - say: Right, you can see the trick. Only the four corners. Finding stuff like that makes me so happy.
+  - chat: [lag_appreciation_club, "the hiding sprite still takes up a slot on the line right"]
+  - say: Yeah, the hiding one takes a slot too. Invisible, but it still counts as one of the eight.
+  - say: So if there are a lot of enemies on the line where the mushroom comes out, some other guy might vanish.
+  - chat: [lag_appreciation_club, "so someone vanishes every time a mushroom comes out"]
+  - say: Every time? Sometimes, yeah. Not always.
+  - chat: [login_bonus_only, "goomba sacrificed for the mushroom"]
+  - say: A goomba sacrificed for the mushroom? If it's a goomba, who cares? Wait, no. Actually that's bad.
+  - chat: [retro_grandpa, "and then u run into an invisible goomba"]
+  - say: Running into the invisible goomba. Yeah, we're the ones who get hit. I'll be nice to goombas.
+  - chat: [first_timer_cat, "how did whoever made this think of it"]
+  - say: Cat, how they thought of it, I don't know. This part is just me guessing, but somebody probably found it by accident.
+  - say: Like, "huh, something disappeared." And then, "wait, we can use this."
+  - chat: [login_bonus_only, "bug turned into a feature"]
+  - say: Yep. A bug turned into a feature. I love those.
+  - chat: [retro_grandpa, "gonna look for that next time i play mario 3"]
+  - say: Do it, Grandpa. Once you notice it, it's all you'll see.
+- title: Another tangent (zero and F-F, the skull bug)
+  beats:
+  - chat: [errata_collector, "where do you put unused sprites again?"]
+  - say: Where do unused sprites go? You're asking that? Mean. You know the answer.
+  - chat: [errata_collector, "yes"]
+  - say: Don't just say yes. Unused sprites get pushed off the screen. In numbers, that's hex F-F.
+  - say: If you leave them at zero, they show up in the top left corner of the screen.
+  - chat: [first_timer_cat, "why'd they ask that now?"]
+  - say: Why now? Because I messed that up once, and this person knows.
+  - say: A few years ago, I made an NES game with the castle familiars.
+  - chat: [first_timer_cat, "you can still make those??"]
+  - say: You still can. Lots of people make them as a hobby.
+  - say: We sold just thirty copies at a convention. Fifteen hundred yen each.
+  - say: My job was placing the enemies.
+  - say: And then someone who bought one sent me a photo.
+  - say: "\"There's a big pile of skulls in the top left.\""
+  - chat: [login_bonus_only, "SKULLS lmao"]
+  - say: I'd set all the unused sprites to zero. And they all gathered in the top left.
+  - chat: [login_bonus_only, "why is it a skull tho"]
+  - say: Why a skull. Placeholder art. I was going to replace it later.
+  - say: I didn't.
+  - chat: [leaving_work_on_time, "the placeholder always ships"]
+  - say: The placeholder always ships. And that line was full, so actual enemies were vanishing too.
+  - chat: [leaving_work_on_time, "you didnt catch it in playtesting?"]
+  - say: Didn't catch it in playtesting? I was the playtester.
+  - say: I noticed the top left looked weird, started writing a note, and fell asleep.
+  - chat: [five_am_reporter, "Falling asleep mid-note goes way back, then."]
+  - say: Goes way back. I don't want to hear that from you, Five AM.
+  - say: And money-wise, we didn't even cover the parts.
+  - chat: [third_planner_this_year, "in the red lol"]
+  - say: In the red. I did not want to show Mora the books.
+  - say: So I messaged everyone that I'd send a fixed version.
+  - say: And almost everyone said "keep the skulls."
+  - chat: [con_haul_victim, "wholesome"]
+  - say: Wholesome, right? I still keep one copy.
+  - chat: [login_bonus_only, "under ur pillow i bet"]
+  - say: Under my pillow. How do you know that.
+  - chat: [con_haul_victim, "i want a skull version"]
+  - say: Not selling the skull version. That one copy is mine.
+  - chat: [con_haul_victim, "gonna make another one?"]
+  - say: Another one. I'd like to. This time I'll check the top left first.
+- title: Wrap-up
+  beats:
+  - say: Okay. Let's wrap it up.
+  - chat: [coffee_shop_regular, "one last word from team takenoko"]
+  - say: A last word from Team Takenoko? What.
+  - chat: [coffee_shop_regular, "say hi to ella for me"]
+  - say: Say hi to Ella. I'll pass it on. She'll probably just nod.
+  - chat: [first_timer_cat, "mushroom talk was fun. ill be back"]
+  - say: You'll be back. Thanks. When you come back, I'll ask Kinoko or Takenoko again.
+  - chat: [just_clicks_agree, "deleted the tool"]
+  - say: You deleted the tool? Really? Good. Did you change your password too?
+  - chat: [just_clicks_agree, "tomorrow"]
+  - say: Tomorrow. Okay. If you forget, I'll ask again.
+  - say: Next time, I'll talk about why the score bar at the top of the screen doesn't scroll.
+  - say: Okay, good work, everyone. I'm hungry. Maybe one more Lawson run. ...No. Bed.

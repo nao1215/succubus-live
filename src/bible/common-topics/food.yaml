@@ -1,0 +1,38 @@
+category: food
+name: 食べ物（好物・定番・食べ方）
+topics:
+- {id: food_fav, q: いちばん好きな食べ物は？}
+- {id: food_last_meal, q: 最後の晩餐に何を食べたい？}
+- {id: food_dislike, q: 苦手な食べ物は？}
+- {id: food_overcome, q: 大人になって食べられるようになったものは？}
+- {id: food_cupnoodle, q: カップ麺の定番は？}
+- {id: food_ramen, q: ラーメンは何味派？, options: [醤油, 味噌, 塩, 豚骨, 家系, 二郎系]}
+- {id: food_ramen_topping, q: ラーメンのトッピングで外せないのは？}
+- {id: food_curry_house, q: カレーは家のカレーと店のカレー、どっちが好き？}
+- {id: food_curry_topping, q: カレーにのせたいトッピングは？}
+- {id: food_onigiri, q: コンビニのおにぎりの具は何を選ぶ？}
+- {id: food_sushi, q: 回転寿司で最初に取る皿は？}
+- {id: food_sushi_last, q: 寿司の締めは何？}
+- {id: food_nabe_finish, q: 鍋の締めは雑炊・うどん・ラーメン・ちゃんぽん麺のどれ？, options: [雑炊, うどん, ラーメン, ちゃんぽん麺, 締めない]}
+- {id: food_nabe, q: いちばん好きな鍋は？}
+- {id: food_gyoza, q: 餃子は焼き・水・揚げのどれ？ タレは？}
+- {id: food_karaage, q: 唐揚げはもも派？ むね派？, options: [もも, むね, 軟骨, 手羽]}
+- {id: food_yakiniku, q: 焼肉で最初に頼むのは？}
+- {id: food_yakitori, q: 焼き鳥は塩かタレか。好きな串は？}
+- {id: food_soba_udon, q: 蕎麦とうどん、どっち派？, options: [蕎麦, うどん]}
+- {id: food_natto, q: 納豆に何を混ぜる？}
+- {id: food_tkg, q: 卵かけご飯のこだわりは？}
+- {id: food_rice_friend, q: ご飯のお供で一番は？}
+- {id: food_bento, q: 好きな駅弁・お弁当は？}
+- {id: food_pizza, q: ピザのトッピングで一番好きなのは？}
+- {id: food_bread, q: パン屋で絶対買うパンは？}
+- {id: food_sandwich, q: サンドイッチの具は何が好き？}
+- {id: food_spicy, q: 辛いものはどこまでいける？}
+- {id: food_local, q: 地元や好きな土地の名物で推したいものは？}
+- {id: food_junk, q: 夜中に食べたくなるジャンクフードは？}
+- {id: food_eat_order, q: 好きなものは先に食べる？ 最後に残す？, options: [先に食べる, 最後に残す]}
+- {id: food_rice_amount, q: ご飯は大盛り派？ 少なめ派？}
+- {id: food_mayo, q: マヨネーズは何にかける？ どこまでかける？}
+- {id: food_oden, q: おでんの具で一番好きなのは？}
+- {id: food_okonomiyaki, q: お好み焼きは関西風？ 広島風？ もんじゃ？, options: [関西風, 広島風, もんじゃ]}
+- {id: food_teishoku, q: 定食屋で頼む定食は？}

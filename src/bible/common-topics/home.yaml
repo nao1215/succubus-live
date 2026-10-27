@@ -1,0 +1,27 @@
+category: home
+name: 家と家電・掃除・洗濯
+topics:
+- {id: home_room, q: 部屋はきれい派？ 散らかってる派？}
+- {id: home_best_buy, q: 最近買ってよかったものは？}
+- {id: home_regret_buy, q: 買って後悔したものは？}
+- {id: home_must_appliance, q: 手放せない家電は？}
+- {id: home_want_appliance, q: 次に買いたい家電は？}
+- {id: home_cleaning, q: 掃除はどこからする？ 掃除機は何？}
+- {id: home_laundry_fold, q: 洗濯物はたたむ？ 干したまま使う？}
+- {id: home_laundry_dry, q: 洗濯物は外に干す？ 部屋干し？ 乾燥機？}
+- {id: home_detergent, q: 洗剤や柔軟剤のこだわりは？}
+- {id: home_dishes, q: 洗い物はすぐやる？ ためる？}
+- {id: home_trash, q: ゴミの日を間違えたことは？}
+- {id: home_plants, q: 植物やペットはいる？}
+- {id: home_sofa, q: 家でいちばん長くいる場所は？}
+- {id: home_interior, q: 部屋のこだわりの一品は？}
+- {id: home_neighbor, q: 隣や上の階の音で困ったことある？}
+- {id: home_move, q: 引っ越しの回数と、いちばん大変だった引っ越しは？}
+- {id: home_fridge, q: 冷蔵庫にいつも入っているものは？}
+- {id: home_toilet, q: トイレでスマホ見る？ 長居する？}
+- {id: home_pet_wish, q: 飼うなら何を飼いたい？}
+- {id: home_bug, q: 部屋に虫（G）が出たらどうする？}
+- {id: home_key_place, q: 鍵や財布の置き場所は決まってる？}
+- {id: home_shoes_count, q: 靴は何足持ってる？}
+- {id: home_storage, q: 押し入れやクローゼットの奥に眠っているものは？}
+- {id: home_light, q: 部屋の照明は白い光？ オレンジ？}

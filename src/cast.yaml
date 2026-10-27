@@ -1,0 +1,135 @@
+# 配信者の見た目。rig は base.png（1024x1536）の座標：neck 首、chest 胸の楕円 [x,y,半径]、top/bottom 映す範囲、cx 映す中心。
+# 2026-10-27：5人に絞った。ノクスの立ち絵は monsters の succubus-auto-188（紫の肌・黒髪ボブ）。
+streamers:
+- id: lise
+  voice: {pitch: 0.9, rate: 0.95}  # 読み上げの声の高さと速さ（ブラウザのとき）
+  name: リゼ
+  tag: ゲーム
+  color: '#c58cff'
+  tagline: レトロから最新まで、ゲームの裏話
+  rig:
+    neck: [1120, 870]
+    chest:
+    - [1160, 1150, 136]
+    - [1292, 1150, 148]
+    top: 460
+    bottom: 1320
+    cx: 1150
+    breath: 4.4
+    bounce: 10
+    tilt: 1.3
+    sway: 6
+- id: mora
+  voice: {pitch: 1.0, rate: 1.05}  # 読み上げの声の高さと速さ（ブラウザのとき）
+  name: モーラ
+  tag: 独身あるある
+  color: '#b9c7d6'
+  tagline: 一人暮らしのあるある、話します
+  rig:
+    neck: [1060, 544]
+    chest:
+    - [980, 810, 150]
+    - [1224, 810, 150]
+    top: 140
+    bottom: 980
+    cx: 1080
+    breath: 4
+    bounce: 8
+    tilt: 1.1
+    sway: 5
+- id: pim
+  voice: {pitch: 1.3, rate: 1.15}  # 読み上げの声の高さと速さ（ブラウザのとき）
+  name: ピム
+  tag: 家庭あるある
+  color: '#ff6b7d'
+  tagline: 子育てと夫と家計の話です！
+  rig:
+    neck: [976, 596]
+    chest:
+    - [904, 880, 210]
+    - [1200, 940, 190]
+    top: 180
+    bottom: 1360
+    cx: 1010
+    breath: 4.8
+    bounce: 12
+    tilt: 1.6
+    sway: 6
+- id: ella
+  voice: {pitch: 1.1, rate: 0.95}  # 読み上げの声の高さと速さ（ブラウザのとき）
+  name: エラ
+  tag: 音楽
+  color: '#e0b98a'
+  tagline: 古今東西の音楽を、好き嫌いで語ります
+  rig:
+    neck: [1040, 790]
+    chest:
+    - [1000, 1054, 150]
+    - [1224, 1054, 150]
+    top: 340
+    bottom: 1220
+    cx: 1100
+    breath: 4
+    bounce: 8
+    tilt: 0.8
+    sway: 4
+- id: nox
+  voice: {pitch: 0.8, rate: 0.9}  # 読み上げの声の高さと速さ（ブラウザのとき）
+  name: ノクス
+  tag: プログラミング
+  color: '#b48cff'
+  tagline: プログラマーの失敗談と裏話
+  # 2026-10-28：立ち絵を新しいノクス（灰色のカーディガン、メガネ、assets/nox 2048x3072）に替えた。rig はその座標。
+  # top/bottom は顔の大きさと目の高さをほかの人（リゼ・ギャル）にそろえた（目の幅／枠の高さ ≈ 0.24、目の高さ ≈ 枠の上から 3 割。モーラ・ヴェスパに近い）
+  rig:
+    neck: [1035, 520]
+    chest:
+    - [955, 760, 120]
+    - [1185, 760, 120]
+    top: 60
+    bottom: 1000
+    cx: 1035
+    breath: 3.6
+    bounce: 8
+    tilt: 1
+    sway: 4
+- id: vespa
+  voice: {pitch: 1.15, rate: 1.1}  # 読み上げの声の高さと速さ（ブラウザのとき）
+  name: ヴェスパ
+  tag: ポップカルチャー
+  color: '#ff6b6b'
+  tagline: アニメ・アイドル・オタクの流行り話
+  rig:
+    neck: [1120, 600]
+    chest:
+    - [1024, 872, 192]
+    - [1284, 862, 192]
+    top: 120
+    bottom: 1040
+    cx: 1100
+    breath: 4.8
+    bounce: 10
+    tilt: 1.5
+    sway: 7
+# ゲスト（guest: true）：一人配信・チャンネル・声を持たず、二人配信の相手にだけなれる（tools/build.py が一覧から外し、index の guests に出す）。
+# 2026-10-27 夜：別のゲーム「Rabbit Run」のギャル（人間）。名前は無い（ゲームでも「ギャル」と呼ばれているだけ）。表示名を変えるときは name だけ直す。
+# 2026-10-28：立ち絵は Rabbit Run の normal の種（112001）で作り直した正面の立ち姿（assets/gyal、2048x3072）。rig はその座標。
+- id: gyal
+  guest: true
+  voice: {pitch: 1.25, rate: 1.15}  # 仮
+  name: ギャル
+  tag: ゲスト
+  color: '#ff8fc8'
+  tagline: Rabbit Run から遊びに来た
+  rig:
+    neck: [1012, 462]
+    chest:
+    - [895, 770, 125]
+    - [1115, 770, 120]
+    top: 60
+    bottom: 1000
+    cx: 1010
+    breath: 4.4
+    bounce: 12
+    tilt: 1.3
+    sway: 6

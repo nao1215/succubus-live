@@ -1,0 +1,184 @@
+title: '[Kids Ep] Someone asked when night waking ends, so here''s how it went for us (plus baby food and the honey thing)'
+family: true
+# 英訳（2026-10-27）。日本語は src/episodes/pim/003.yaml。拍の並びは日本語とそろえる。医療の判断は言い切らない。
+parts:
+- title: オープニング：朝早くのコメント
+  beats:
+  - say: It's Pim. Hi. Sorry, I'm a little late.
+  - say: I was putting her down for her nap and I fell asleep too. Like fifteen minutes.
+  - chat: [gacha_broke_again, "hi. classic accidental nap"]
+  - say: Gacha broke again, you're marked present. Accidental nap, classic, right?
+  - say: When I woke up, my daughter's foot was on my face.
+  - chat: [oldest_in_8th_grade, "hi. kid feet always end up on your face"]
+  - say: Senpai, you're marked present! Kid feet always end up on your face. They do! Why the face?
+  - chat: [oldest_in_8th_grade, "my youngest is in 2nd grade and still does it"]
+  - say: Your youngest is in second grade and still!? So I've got a few more years of feet.
+  - chat: [parental_leave_no_sleep, "hi. awake again today"]
+  - say: Parental leave no sleep, you're marked present. Awake again today, huh.
+  - chat: [parental_leave_no_sleep, "baby woke up four times last night"]
+  - say: Four times last night... Good work. I mean it.
+  - chat: [husband_who_helps, "hi. whats the topic today?"]
+  - say: Husband who helps, hello. What's the topic... I didn't pick one.
+  - say: I didn't, but last week parental leave asked me something.
+  - chat: [parental_leave_no_sleep, "the night waking thing?"]
+  - say: Yes, the night waking thing. When does it end.
+  - say: Last week I ran out of time and couldn't answer properly.
+  - chat: [parental_leave_no_sleep, "you remembered"]
+  - say: Of course I remembered. So let's start with that today.
+- title: 本題っぽいもの：夜泣きはいつ終わるのか
+  beats:
+  - say: Parental leave, how many months is your baby now?
+  - chat: [parental_leave_no_sleep, "five months. never slept three hours straight"]
+  - say: Five months, and never three hours straight... You made it this far. That's a lot.
+  - say: Mine started waking every two hours around seven months. For three months.
+  - chat: [night_shift_survivor, "three months is brutal"]
+  - say: Brutal, yes, it was. I kept a tally of every wake-up on the back of a notebook. We tally in fives here, with a five-stroke kanji.
+  - say: Near the end my handwriting fell apart, and the five-stroke tally turned into a four-stroke one. Even my tallies were missing strokes.
+  - chat: [parental_leave_no_sleep, "you lose the energy to even write"]
+  - say: You lose the energy to even write, right? At some point I lost track of which wake-up it was.
+  - chat: [parental_leave_no_sleep, "when did it end"]
+  - say: When did it end. One day, I noticed she'd slept until morning.
+  - say: "She was about ten months old."
+  - say: I don't remember changing anything. And the notebook was blank that one day.
+  - chat: [parental_leave_no_sleep, "you dont know?"]
+  - say: I don't know. I really don't. I'm sorry, that's not much of an answer.
+  - chat: [oldest_in_8th_grade, "same for all three of mine. it just ended, no idea why"]
+  - say: All three of yours ended without a reason too, senpai?
+  - chat: [oldest_in_8th_grade, "it ends and you never find out why. thats the real answer i think"]
+  - say: It ends and you never find out why. That's us too. It felt long back then, though.
+  - chat: [parental_leave_no_sleep, "that helps a little"]
+  - say: It helps a little? I'm glad. But every night's different. Think you can sleep a bit tonight?
+  - chat: [parental_leave_no_sleep, "my partner has night duty today. probably"]
+  - say: Your partner has night duty today! Good. Go sleep.
+  - chat: [husband_who_helps, "what did your husband do during the night waking?"]
+  - say: {face: annoyed, text: 'What did my husband do? He slept. Snoring.'}
+  - say: Baby crying, husband snoring, right next to each other. A duet.
+  - chat: [husband_who_helps, "ouch. there was a stretch where i didnt wake up either"]
+  - say: A stretch where you didn't wake up. People who don't wake up really just don't wake up. What is that?
+  - chat: [husband_who_helps, "i figured even if i got up i cant breastfeed"]
+  - say: Even if you got up, you can't breastfeed... Husband who helps.
+  - say: You can make formula, right?
+  - chat: [husband_who_helps, "yes"]
+  - say: You can change a diaper, right?
+  - chat: [husband_who_helps, "yes..."]
+  - say: {face: smile, text: 'Yes... Okay. That is all. I am not blaming you. I am just confirming.'}
+  - chat: [gacha_broke_again, "scariest confirmation ever lol"]
+  - chat: [husband_who_helps, "i got up with our second. like one in three times"]
+  - say: {face: surprised, text: 'Scariest confirmation ever, he says... wait, one in three times with your second? Okay, you are allowed to say that.'}
+- title: 脇道：お風呂の順番
+  beats:
+  - chat: [leaving_work_on_time, "does bath time affect bedtime?"]
+  - say: Does bath time matter for bedtime? A lot of people say yes. In our house she falls asleep pretty soon after the bath.
+  - chat: [leaving_work_on_time, "do you bathe together?"]
+  - say: We bathe together! Pretty normal for parents and little kids here. I keep the water on the lukewarm side, because she says hot.
+  - say: So I wash her first, right? Starting with her hair, because the suds run down her body.
+  - say: And by the time it's my turn, she's already in the tub going, I wanna get out.
+  - chat: [oldest_in_8th_grade, "moms hair is always a rush job"]
+  - say: Mom's hair is always a rush job. A rush job! I basically just rinse my own head.
+  - chat: [husband_who_helps, "on days i do bath, the kid never wants to come out"]
+  - say: {face: surprised, text: 'When dad does bath, they never come out! I know! Ours stays in for thirty minutes!'}
+  - say: I went to check what they were doing, and they were playing shiritori in the tub. It's a word chain game.
+  - chat: [husband_who_helps, "shiritori never ends"]
+  - say: Shiritori never ends, so true. Before they boiled, I walked in to say a word ending in N. In shiritori, if your word ends in N, you lose.
+  - chat: [gacha_broke_again, "force quit lol"]
+  - say: Yes, force quit. I said mikan, like the orange, and closed the door.
+  - say: Bath time is when she talks the most all day. What happened at daycare and stuff.
+  - chat: [oldest_in_8th_grade, "kids always talk in the tub"]
+  - say: Kids talk in the tub! Also, I have to sing the Anpanman March. Every day. Anpanman is the bread-head superhero every Japanese toddler loves.
+  - chat: [husband_who_helps, "same here. through the second verse"]
+  - say: At your house it's through the second verse! Ours is the first verse, three times.
+  - chat: [first_time_here, "first time. i hear after the bath is a war"]
+  - say: First time here, welcome! After the bath is a war, yes. It's a war.
+  - say: Dry her off, pajamas on, dry her hair. And the whole time I'm in one towel.
+  - chat: [first_time_here, "and your own?"]
+  - say: My own? My hair is last. If she falls asleep while I'm drying it, I go to bed half wet.
+  - chat: [parental_leave_no_sleep, "do you use bath bombs?"]
+  - say: Bath tablets, yes, we use Bub. It's a fizzy tablet brand here. But my daughter has to watch the whole thing dissolve.
+  - say: "She won't get in till it's done, so we both wait on the washing floor for like five minutes. Japanese bathrooms have a wash spot outside the tub!"
+  - chat: [oldest_in_8th_grade, "i get it. they wanna watch it fizz"]
+  - say: They wanna watch it fizz, yes. In winter it's cold, so once I broke one in half.
+  - say: And she was so happy. She goes, I get to see it twice!
+  - chat: [husband_who_helps, "one box lasts twice as long"]
+  - say: {face: smug, text: 'One box lasts twice as long! Exactly! Budget friendly!'}
+  - ask:
+      q: What takes you the longest in the bath?
+      options:
+      - c: Washing my hair
+        r:
+        - '{name}, do you have long hair? I always just rinse and I''m done.'
+      - c: Zoning out in the tub
+        r:
+        - '{name}, that sounds nice. I''m jealous of zoning out time.'
+      - c: Drying my hair after
+        r:
+        - '{name}, I get it. Drying is the most annoying part, right?'
+      - c: Shower only, so fast
+        r:
+        - '{name}, fast is good! Morning or night?'
+      npc: [[gacha_broke_again, 3], [night_shift_survivor, 1], [leaving_work_on_time, 2], [parental_leave_no_sleep, 2]]
+- title: 戻る：離乳食とはちみつ
+  beats:
+  - say: Lots of drying your hair, same. ...Oh right, parental leave. Last week you also asked about baby food, didn't you?
+  - chat: [parental_leave_no_sleep, "i did. wanted to ask"]
+  - say: You wanted to ask. Is it almost time?
+  - chat: [parental_leave_no_sleep, "almost. what did you start with?"]
+  - say: What did we start with. I'll only tell you what we did, okay? The right answer is the handout from your local health center.
+  - say: We followed the government guide, so every new food was one spoonful at a time.
+  - say: And new foods only on weekday mornings.
+  - chat: [parental_leave_no_sleep, "why weekday mornings?"]
+  - say: Why weekday mornings? Because if anything happens, the clinics are open.
+  - chat: [oldest_in_8th_grade, "thats important. we did that too"]
+  - say: And my husband broke that rule.
+  - say: {face: surprised, text: 'On a Saturday when I was out, he gave her three brand new foods. At once.'}
+  - chat: [gacha_broke_again, "what"]
+  - say: What? Egg, bread, and kiwi.
+  - say: She got red around the mouth, and we couldn't tell which one did it.
+  - chat: [husband_who_helps, "why kiwi"]
+  - say: Why kiwi. According to my husband, because the green was pretty.
+  - chat: [husband_who_helps, "i kinda get it"]
+  - say: You kinda get it. Please don't get it. ...I mean, it was pretty.
+  - say: We talked to the doctor and tried them again, one at a time. It was the kiwi.
+  - chat: [parental_leave_no_sleep, "was she okay?"]
+  - say: She was okay. She eats it normally now. My husband still looks away from kiwis.
+  - say: And this part is a little bit serious.
+  - say: Please don't give honey to babies before they turn one.
+  - say: There's an illness called infant botulism.
+  - say: Roughly, honey can have bacteria in it, and babies can get really sick from it.
+  - chat: [parental_leave_no_sleep, "didnt know. writing it down"]
+  - say: Write it down. It should be on the health center handout too.
+  - say: In twenty-seventeen in Tokyo, a baby died, and they think honey was the cause.
+  - say: After that, the government put out the warning again.
+  - say: My mother-in-law once tried to put honey in my baby's warm water.
+  - chat: [oldest_in_8th_grade, "ahh the we used to give it back in the day thing"]
+  - say: Back in the day, yes, I got that one. Everyone used to give it, dear.
+  - say: I stopped her, but I kind of grabbed her wrist without thinking.
+  - chat: [night_shift_survivor, "right but awkward"]
+  - say: {face: shy, text: 'Right but awkward, exactly. And then the simmered veggies she made after were amazing, so it got even more awkward.'}
+  - chat: [oldest_in_8th_grade, "the mother in law cooking is too good problem"]
+  - say: The mother-in-law cooking is too good problem! It's so good. She eyeballs everything. I weigh it all and still lose.
+  - chat: [parental_leave_no_sleep, "are you two close now?"]
+  - say: Are we close now? Normal. Every time we meet she says, my boy never cried at night. Normal.
+  - chat: [gacha_broke_again, "thats normal? lol"]
+  - say: You ask if that's normal, but. It's the exact same wording every time. Even how she says my boy.
+  - chat: [oldest_in_8th_grade, "classic mother in law"]
+  - say: And the boy in my boy is my husband.
+  - chat: [husband_who_helps, "so the guy who never cried at night is snoring next to the crying baby lol"]
+  - say: {face: annoyed, text: 'The guy who never cried at night, snoring next to the crying! Yes! He has been good at sleeping since he was tiny!'}
+  - chat: [night_shift_survivor, "its a gift"]
+  - say: It's a gift. For my daughter, I hope she takes after him, not me. Just on that one thing.
+- title: 締め：とうもころし
+  beats:
+  - chat: [parental_leave_no_sleep, "what does mimi say these days"]
+  - say: What does Mimi say? She talks totally normally now. Until last summer, for corn, tomorokoshi, she said tomokoroshi. Which has kill in it.
+  - chat: [parental_leave_no_sleep, "cute"]
+  - say: Cute, right? It was so cute. A very violent vegetable.
+  - say: And then this summer, at the supermarket, out of nowhere, she goes, buy tomorokoshi.
+  - chat: [oldest_in_8th_grade, "ahh..."]
+  - say: She said it perfectly. I froze right at the register. The person behind me bumped into me.
+  - chat: [oldest_in_8th_grade, "the little mistakes leave without warning"]
+  - say: The little mistakes leave without warning... It really was without warning. I'm a little sad.
+  - chat: [parental_leave_no_sleep, "i wonder if mine will say stuff like that"]
+  - say: Will yours say stuff like that? They will. When they do, write it down somewhere. It disappears fast.
+  - chat: [parental_leave_no_sleep, "will do. gonna nap for a bit"]
+  - say: {face: smile, text: 'Gonna nap for a bit, okay. See you. I''ll count you as present.'}
+  - say: I'm gonna grab some barley tea before she wakes up too. Pim, signing off.

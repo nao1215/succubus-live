@@ -1,0 +1,26 @@
+category: money
+name: お金と買い物
+topics:
+- {id: money_pay, q: 支払いは現金？ カード？ スマホ決済？, options: [現金, クレジットカード, PayPay, 交通系IC, iD・QUICPay]}
+- {id: money_point, q: ポイントは何を貯めてる？（Vポイント、楽天、Ponta、dポイントなど）}
+- {id: money_saving, q: 貯金はできる派？}
+- {id: money_splurge, q: 最近いちばん高かった買い物は？}
+- {id: money_impulse, q: 衝動買いしてしまうものは？}
+- {id: money_lottery, q: 宝くじが当たったら何に使う？}
+- {id: money_coins, q: 小銭はどうしてる？ 貯金箱？}
+- {id: money_receipt, q: レシートはもらう？ 捨てる？}
+- {id: money_bag, q: レジ袋はもらう？ エコバッグは何？}
+- {id: money_net_shop, q: ネット通販は Amazon？ 楽天？}
+- {id: money_sale, q: セールや「限定」に弱い？}
+- {id: money_subscription, q: 入っているサブスクは何？ 解約し忘れは？}
+- {id: money_gacha, q: ガチャに使った最高額は？}
+- {id: money_household, q: 家計簿はつけてる？ 何で？}
+- {id: money_furusato, q: ふるさと納税はしてる？ 何をもらう？}
+- {id: money_nisa, q: 投資や NISA はやってる？}
+- {id: money_lend, q: 人にお金を貸したことある？ 返ってきた？}
+- {id: money_secondhand, q: メルカリやフリマで売り買いする？}
+- {id: money_price_check, q: スーパーで値段を見て買う？ 半額シールを待つ？}
+- {id: money_gift, q: 人へのプレゼントは何を選ぶ？ 選ぶのは得意？}
+- {id: money_wallet_cash, q: 財布にいつもいくら入れてる？}
+- {id: money_luxury, q: ここだけはお金をかけるというものは？}
+- {id: money_cheap, q: ここだけはケチるというものは？}

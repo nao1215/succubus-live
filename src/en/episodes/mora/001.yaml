@@ -1,0 +1,213 @@
+# English version of src/episodes/mora/001.yaml (beat order matches the Japanese).
+title: I got my My Number Card PIN wrong three times at city hall
+parts:
+- title: Hello, and my first paid day off
+  beats:
+  - say: Okay, we're live. Evening, everyone.
+  - chat: [lives_on_points, "evening. you look tired"]
+  - say: '"You look tired." That''s your opener? Yes. I am tired. I went to the ward office yesterday.'
+  - chat: [counter_clerk_12yrs, "ooh"]
+  - say: Counter Clerk's already going "ooh." Fast reaction. I'm not even through the front door yet.
+  - chat: [first_time_here, "first time here. what happened at the ward office"]
+  - say: A new face, welcome. What happened? So. Ward office is basically city hall. I went to renew my My Number Card. That's the national ID card here.
+  - say: There's a little digital certificate inside it, and that expires every five years. They mail you a notice.
+  - chat: [cant_make_it_home, "when did the notice come"]
+  - say: When did it come? Two months ago.
+  - say: Don't laugh. A pale envelope just looks so... relaxed. Like it's in no hurry.
+  - chat: [night_shift_survivor, "real. i only open the red ones"]
+  - say: Night Shift only opens the red ones. Right? Red, you open. Two little windows, you open.
+  - say: And the ward office is open the exact same hours I work. The exact same.
+  - chat: [leaving_work_on_time, "this"]
+  - say: So I took a day off. A paid day off.
+  - chat: [cant_make_it_home, "wait mora took a day off??"]
+  - say: '"Mora took a day off," don''t say it like it''s breaking news. It''s my right. ...Okay, first time I''ve ever used it.'
+  - say: {face: shy, text: "My first ever paid day off, spent at the ward office. Yeah. I know."}
+- title: The ticket machine, and two-oh-eight after sixty-one
+  beats:
+  - say: So you walk in, and there's the number ticket machine. Seven buttons.
+  - say: '"Moving in or out." "Residence certificate." "Family register." And yes, "My Number Card."'
+  - say: But under that, in tiny print, it says "pickup." I'm not picking up. I'm renewing.
+  - chat: [first_time_here, "so which one did you press"]
+  - say: Which one? I couldn't find a renewal button, so I hit the one with the longest line. "Moving in or out."
+  - say: I should've just asked. There was a guide standing right by the door.
+  - chat: [counter_clerk_12yrs, "ours has an \"other\" button"]
+  - say: You have an "other" button? Unfair. I want to move to your ward. Using the moving-in button.
+  - say: So my ticket says seventy-three. The screen says sixty-one.
+  - chat: [ledger_counter, "so 12 people ahead"]
+  - say: Twelve people, right? That's what you'd think. Next number called? Two hundred eight.
+  - chat: [counter_clerk_12yrs, "each window has its own numbers"]
+  - say: Yep. Every window counts separately. Hundreds are family register, two hundreds are residence, that kind of thing.
+  - say: Just stick a letter in front! A, B, whatever. But no. Numbers only.
+  - chat: [night_shift_survivor, "hospitals too. later numbers get called first"]
+  - say: Hospitals, yes, later numbers jump ahead. Same. You get one number for the doctor, one for paying, one for meds.
+  - say: Then the pharmacy gives you another one. Four numbers in a day, and one errand done. What is that.
+  - chat: [night_shift_survivor, "i fell asleep in a waiting room once"]
+  - say: You fell asleep in the waiting room? That's expert level. Did you wake up when they called you?
+  - chat: [night_shift_survivor, "the old lady next to me woke me up"]
+  - say: {face: smile, text: "The old lady next to you woke you up? Oh, what a good grandma. I want one sitting next to me."}
+  - ask:
+      q: While you're waiting for your number, what do you do?
+      options:
+      - c: Stare at my phone
+        r:
+        - '{name}''s on the phone. Normal person. I wish I could be like that.'
+        - But then you look up and it's jumped three numbers, and you panic.
+      - c: Watch the number screen the whole time
+        r:
+        - '{name} watches the screen the whole time. Same as me.'
+        - I know staring doesn't make it faster. But if I look away, I feel like someone's gonna cut ahead.
+      - c: Peek at other people's tickets
+        r:
+        - '{name}, you peek at other people''s tickets? Are we allowed to do that?'
+        - I did it too. The guy next to me had seventy-four. I felt like I'd won something.
+      npc:
+      - [night_shift_survivor, 0]
+      - [ledger_counter, 1]
+      - [lives_on_points, 2]
+      - [counter_clerk_12yrs, 1]
+  - chat: [counter_clerk_12yrs, "from behind the counter you can always spot the screen watchers. their heads move"]
+  - say: {face: shy, text: "Screen watchers' heads move, huh. Mine was moving. Probably the whole time."}
+- title: 'Side track: the vending machine and canned coffee'
+  beats:
+  - say: So, nothing to do but wait. I went to the vending machine.
+  - say: Usually I just get Oi Ocha, the green tea. Decided ages ago. Choosing takes too long.
+  - say: But the ward office machine had Georgia Emerald Mountain. Canned coffee. Japan has hot coffee in cans, in vending machines, everywhere.
+  - chat: [leaving_work_on_time, "emerald mountain omg nostalgia"]
+  - say: Yes, Emerald Mountain! So nostalgic. The vending machine in the hallway at the records office had it.
+  - say: Closing nights, everyone had one on their desk.
+  - chat: [first_time_here, "records office?"]
+  - say: The records office is where I used to work. At the Demon Lord's government. The department that keeps the ledgers. Every coin in, every coin out.
+  - say: People laugh when I say Demon Lord's government, but it was a normal job. Normal overtime, too.
+  - say: Empty cans line up on the desk, right? Four cans in a row means you're not going home till morning.
+  - chat: [night_shift_survivor, "cans as a clock is terrifying"]
+  - say: Cans as a clock, terrifying, yeah. It is. When someone cracks the fourth one, everybody goes quiet.
+  - chat: [third_planner_this_year, "emerald mountain is from 1994 right"]
+  - say: Planner, you know your stuff. Yep, nineteen ninety-four. Right after I started at the records office.
+  - chat: [lives_on_points, "BOSS coffee or nothing"]
+  - say: BOSS or nothing? A BOSS person. Fine. BOSS is good too.
+  - chat: [nameless_familiar, "canned coffee is way too sweet for me"]
+  - say: Some people can't do the sweetness. It is sweet. But Emerald Mountain is sweet and still actually bitter. That's why I like it.
+  - say: Oh, I gave one to Lise once. She handed it back after one sip. "Bitter."
+  - say: Lise is a tea person. And when she gave it back, she set it down with the mouth of the can facing me.
+  - chat: [lives_on_points, "indirect kiss attempt??"]
+  - say: {face: annoyed, text: "An indirect kiss attempt? No. That's the \"you clean this up\" angle."}
+  - chat: [lives_on_points, "which way does YOUR can face mora"]
+  - say: My can? Away from you. Points, save up some points before you ask me that. You never will, but.
+  - say: Wait. What was I talking about.
+  - chat: [first_time_here, "number 73"]
+  - say: Right, seventy-three. Thanks, newcomer, you remembered. I finished my coffee and came back, and it was still in the sixties.
+- title: The pen at the form desk
+  beats:
+  - say: While I waited, they told me to fill out the application, so I went to the form desk.
+  - chat: [third_planner_this_year, "the pen on a string"]
+  - say: Yes, the pen on a string. And the string is like twenty centimeters. Eight inches, maybe.
+  - say: It doesn't reach the bottom right of the form. So you drag the paper over to the pen.
+  - chat: [counter_clerk_12yrs, "longer strings tangle with the next one. i untangle them every morning"]
+  - say: {face: surprised, text: "Longer strings tangle with the next pen, so you untangle them every morning? When nobody's touched them?"}
+  - say: That's a ghost story! The strings are getting cozy at night?
+  - say: And there was a sign taped to the desk. "Erasable pens not allowed."
+  - chat: [lives_on_points, "the chief lol"]
+  - chat: [first_time_here, "who's the chief"]
+  - say: Right, you don't know the chief. My old boss at the records office. He kept the books with one of those pens that erase when you rub them.
+  - say: Terrible idea, right? And he kept the ledger standing on a shelf next to the fireplace.
+  - say: That ink vanishes at around sixty degrees Celsius. On a summer closing day, we opened the ledger and half the numbers were gone.
+  - chat: [counter_clerk_12yrs, "oof"]
+  - say: And who got yelled at? Me. I was the one writing in permanent ink.
+  - say: Awful, right? So when I see that sign, I feel a tiny bit better.
+  - chat: [counter_clerk_12yrs, "i actually wrote that sign for our ward"]
+  - say: {face: surprised, text: "Wait, you wrote that sign? Thank you. Seriously."}
+  - chat: [counter_clerk_12yrs, "we get multiple redo forms a month from ink vanishing"]
+  - say: Multiple redos a month from vanishing ink. So there's a chief in every town.
+- title: I can't read my own PIN note
+  beats:
+  - say: So finally, they call seventy-three. At the moving in or out window.
+  - say: And they go, "Renewals are window four." I knew. I figured it out halfway through.
+  - say: But the guy walked me over to window four himself, and let me keep my same ticket.
+  - say: So kind. Yesterday was a day the counter staff saved me.
+  - say: So, window four. "Please enter your PIN."
+  - chat: [cant_make_it_home, "no way"]
+  - say: '"No way," yep. Way. I didn''t remember it.'
+  - chat: [first_time_here, "but you're a bookkeeper?"]
+  - say: '"But you''re a bookkeeper?" No, because I''m a bookkeeper, it''s written in my planner. I brought the planner.'
+  - chat: [counter_clerk_12yrs, "writing your PIN in a planner is"]
+  - say: '"Writing your PIN in a planner is," I know! That''s why I didn''t write it straight. I wrote it in my own code.'
+  - say: And I forgot the code.
+  - chat: [night_shift_survivor, "safest planner in the world lol"]
+  - say: {face: annoyed, text: "Safest planner in the world. It is. Even I can't get in."}
+  - say: 'The planner just said: "blue bird, minus three."'
+  - say: What does that mean? You tell me. Ask me from five years ago.
+  - chat: [third_planner_this_year, "old twitter??"]
+  - say: Old Twitter? I thought that too. But that doesn't make a number.
+  - chat: [law_books_as_pillow, "the blue bird of happiness"]
+  - say: The blue bird of happiness? So, happiness minus three? Don't. Don't subtract from my happiness.
+  - say: I said it out loud at the window. Quietly. "Why a bird."
+  - say: The four digit one locks after three tries. And the staff just waits. Silently. With a line behind me.
+  - ask:
+      q: You don't know your PIN. You get three tries. What's try number one?
+      options:
+      - c: My birthday
+        r:
+        - '{name} goes birthday. Honest. My first try was my birthday too.'
+        - Wrong. Apparently me five years ago wasn't that simple.
+      - c: The number I always use
+        r:
+        - '{name} uses the usual number. A recycler.'
+        - That was my second try. Same as my bank one. Wrong. Five years ago me was careful about that one thing.
+      - c: Crack the code on the spot
+        r:
+        - '{name} cracks the code on the spot. Diligent.'
+        - But solving a puzzle in front of the counter is so embarrassing. There are people waiting behind you.
+      npc:
+      - [night_shift_survivor, 0]
+      - [lives_on_points, 1]
+      - [third_planner_this_year, 2]
+      - [cant_make_it_home, 0]
+  - say: Try one, birthday. Nope. Try two, bank number. Nope.
+  - say: Try three, I went with how many bottles of fountain pen ink I have at home.
+  - chat: [third_planner_this_year, "the 43 bottles? that's not 4 digits"]
+  - say: Yes, forty-three. Not four digits, so I put two zeros in front. Zero zero four three. For one second, I felt like a genius.
+  - chat: [counter_clerk_12yrs, "how many bottles did you have five years ago"]
+  - say: How many five years ago... oh.
+  - say: Five years ago I had fewer. I don't remember how many.
+  - say: {face: shy, text: "And then it locked."}
+- title: After the lock, and the ceiling at the counter
+  beats:
+  - chat: [first_time_here, "what happens when it locks"]
+  - say: After it locks, you can reset the PIN right there at the window. One more form.
+  - say: If you remember one of the two PINs, you can do it at a convenience store machine. But I forgot both. Both.
+  - chat: [counter_clerk_12yrs, "forgetting both isn't rare"]
+  - say: Forgetting both isn't rare? Really? You're not just being nice?
+  - chat: [counter_clerk_12yrs, "just a fact"]
+  - say: '"Just a fact." Okay then. That actually helps.'
+  - chat: [lives_on_points, "how many tries to unlock mora tho"]
+  - say: {face: smug, text: "To unlock me? You don't. Third try, I shut. There's no fourth try. Go back to the counter and start over from ID check."}
+  - chat: [nameless_familiar, "we're still talking about PINs right?"]
+  - say: '"We''re still talking about PINs, right?" Yes. PINs. It''s been PINs the entire time.'
+  - chat: [counter_clerk_12yrs, "can i share a counter-side thing"]
+  - say: A counter-side thing? Go ahead. Today's your day.
+  - chat: [counter_clerk_12yrs, "everyone covers the keypad with their hand but we're not looking anyway"]
+  - say: Everyone covers it, but you weren't looking in the first place? Then where are you looking?
+  - chat: [counter_clerk_12yrs, "the ceiling. the biggest stain looks like hokkaido"]
+  - say: A ceiling stain shaped like Hokkaido. That's the big island up north. I love that. You were being considerate.
+  - say: Next time I go, I'm looking at the ceiling too. Hunting for Hokkaido.
+  - chat: [law_books_as_pillow, "let's not narrow down which ward"]
+  - say: Let's not narrow down the ward, yeah. I won't. Law Books, saying something useful for once.
+  - chat: [law_books_as_pillow, "i always do"]
+  - say: '"I always do"? I''d believe that if you hadn''t repeated a year.'
+- title: 'Wrap-up: where did I write the new PIN'
+  beats:
+  - say: So I picked a new PIN. And this time I wrote it down without a code.
+  - chat: [counter_clerk_12yrs, "please don't write it down"]
+  - say: '"Please don''t write it down," if I don''t write it, I don''t remember it! But I wrote the number and what it''s for on different pages.'
+  - chat: [third_planner_this_year, "can you read it next time tho"]
+  - say: Can I read it next time. That's what worries me. First I have to remember where I wrote it.
+  - say: The page that says what it's for, I remember. The number page...
+  - say: I can't think of it right now.
+  - chat: [counter_clerk_12yrs, "we'll be waiting at the counter"]
+  - say: '"We''ll be waiting at the counter," don''t wait for me! If I don''t use it till the next renewal, it''s fine. Probably.'
+  - chat: [counter_clerk_12yrs, "btw that stain, looked closer. it's aomori"]
+  - say: {face: surprised, text: "Looked closer and it's Aomori? Hey. You said Hokkaido."}
+  - say: Fine. Counter people misread ceilings too. That's comforting.
+  - say: Okay, that's it for today. When an envelope comes, let's open it. I'll open mine too.
+  - chat: [cant_make_it_home, "did you open the one that came today?"]
+  - say: The one that came today? That's... for later. Good night.

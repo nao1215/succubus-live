@@ -1,0 +1,231 @@
+# リゼ 001 の英訳（src/episodes/lise/001.yaml）。拍の並びは日本語と同じ。表情は build.py が日本語から写すので書かない。
+# 視聴者の名前は scratchpad の en-names.yaml の対訳。
+title: Why NES enemies used to flicker
+lobby:
+- Remember how enemies in old games used to flicker?
+- They weren't broken. That's today's topic.
+- I didn't sleep. I was stepping through a game one frame at a time and then it was morning.
+parts:
+- title: Opening (no sleep, the duplicate email)
+  beats:
+  - say: Oh, am I live? Morning.
+  - chat: [good_morning_guy, "good morning"]
+  - chat: [login_bonus_only, "u look dead lol"]
+  - say: Morning, Morning Guy. Do I look sleepy? I am. I didn't sleep.
+  - chat: [login_bonus_only, "again??"]
+  - say: Yes, again. I was pausing an old game and going through it frame by frame.
+  - say: For like four hours. Then I looked up and it was light outside.
+  - chat: [night_shift_survivor, "go to bed"]
+  - say: Go to bed, he says. I tried. And then there was an email waiting.
+  - chat: [login_bonus_only, "oh no. i know where this is going"]
+  - say: Yeah, you know. That one. "Thank you for your report. This is a duplicate."
+  - chat: [errata_collector, "which number is this now?"]
+  - say: Which number? Nine. Every time I find a bug and send it in, somebody already sent it.
+  - chat: [five_am_reporter, "Good morning. Thanks again for last time."]
+  - say: Oh, Five AM showed up. Don't "thanks again for last time" me. It wasn't you this time, right?
+  - chat: [five_am_reporter, "no. probably"]
+  - say: Probably? What's probably. Ugh. That's a story for another day.
+  - chat: [first_time_here, "first time here. what bug?"]
+  - say: Hey, new person, welcome. So what bug. My hobby is finding glitches in games and reporting them to the company that made it.
+  - say: And I'm always second.
+  - chat: [first_time_here, "lmao"]
+- title: Into the topic (eight in a row)
+  beats:
+  - say: Okay so. What was I stepping through frame by frame.
+  - say: On the NES, enemies used to blink in and out, right? That.
+  - chat: [retro_grandpa, "oh yeah. all the time"]
+  - chat: [first_time_here, "seen it in videos. thought the game was broken"]
+  - say: You thought it was broken? It's not. It's on purpose.
+  - chat: [first_time_here, "on purpose?"]
+  - say: Yep, on purpose. The NES can only draw eight moving pictures side by side on one line.
+  - say: Mario, enemies, bullets, anything that moves. They're called sprites.
+  - chat: [just_clicks_agree, "isnt sprite a soda"]
+  - say: Not the soda. Okay, fine, I thought that too at first.
+  - say: Think of them as stickers. Stickers you slap on top of the background and move around.
+  - chat: [just_clicks_agree, "got it. i agree"]
+  - say: You don't have to agree. Just understanding is fine.
+  - say: So, those stickers. Eight per line, max. The ninth one doesn't get drawn.
+  - chat: [first_time_here, "wait so its there but invisible"]
+  - say: Yep. It's there, but you can't see it. That's the fun part.
+  - chat: [lag_appreciation_club, "how does it pick which one is ninth"]
+  - say: How does it pick? Lowest numbers first, eight of them. From the ninth on, they just vanish on that line.
+  - say: Inside, it rebuilds a little guest list of eight, every single line. A thirty-two byte guest list.
+  - chat: [lag_appreciation_club, "secondary OAM"]
+  - say: Right, secondary OAM. Love having someone who knows stuff. Saves me talking.
+- title: Side road (coffee or tea, Komeda)
+  beats:
+  - chat: [night_shift_survivor, "if ur sleepy just drink coffee"]
+  - say: Just drink coffee? I don't. It wakes me up.
+  - chat: [login_bonus_only, "isnt that the point??"]
+  - say: I don't want to be awake. I just want to stay up.
+  - chat: [login_bonus_only, "how is that different"]
+  - say: How is it different? Completely different. I'm a tea person. Earl Grey.
+  - say: I leave the tea bag in. Even when it goes pitch black, I drink it.
+  - chat: [retro_grandpa, "thats just bitter at that point"]
+  - say: It's bitter. But taking the bag out is effort.
+  - chat: [first_time_here, "do u ever go to cafes?"]
+  - say: Cafes? Sure. Komeda. It's a Japanese coffee chain, think cozy diner with big sofa booths. I like the sofas.
+  - say: Thing is, I sit down and get sleepy. So I try to leave before I've been there too long.
+  - chat: [login_bonus_only, "so u go there to nap"]
+  - say: I don't go to nap. I leave so I don't nap. I dozed off once and woke up to the sound of them refilling my water.
+  - say: So embarrassing. Since then, the second I'm sleepy, I pay and go.
+  - chat: [coffee_shop_regular, "komeda = shiro noir. no debate"]
+  - say: Shiro Noir. It's a warm Danish with soft-serve on top. I order it and get sleepy. It's good, though.
+  - say: What do you usually get?
+  - chat: [coffee_shop_regular, "the giant size iced coffee"]
+  - say: The giant coffee. If I drank that I wouldn't sleep for three days.
+  - chat: [night_shift_survivor, "dramatic lol"]
+  - say: Not dramatic. Okay. Two days, maybe.
+  - ask:
+      q: Coffee or tea?
+      options:
+      - c: Coffee
+        r:
+        - Coffee, huh, {name}. You get to stay up all night. I'm kind of jealous.
+        - One sip and I'm wide awake, and then I regret it at three AM.
+      - c: Tea
+        r:
+        - Tea. {name}, you're one of us.
+        - Do you take the bag out? Or leave it in? I leave it in.
+      - c: Green tea
+        r:
+        - Green tea, {name}. If you're fine with bitter, you could probably handle my pitch-black tea.
+      - c: None of them
+        r:
+        - None, {name}? Water person? Probably the best for sleeping, honestly.
+      npc:
+      - [night_shift_survivor, 0]
+      - [retro_grandpa, 0]
+      - [login_bonus_only, 3]
+      - [coffee_shop_regular, 0]
+      - [good_morning_guy, 2]
+  - say: Lot of coffee people. How do you all sleep?
+  - chat: [night_shift_survivor, "night shift. i sleep during the day"]
+  - say: Night shift, so you sleep in the day. Right, I forgot. Sounds kind of nice. Also kind of awful.
+  - chat: [first_time_here, "so what about the flickering"]
+  - say: Oh. The flickering. Right. Wait, where was I.
+  - chat: [lag_appreciation_club, "ninth one vanishing"]
+  - say: Right, thanks. The ninth one disappearing.
+- title: Back (flicker is a rotation)
+  beats:
+  - say: So. If the ninth one is always the same guy, that guy is just never visible, right?
+  - chat: [first_time_here, "poor guy"]
+  - say: Poor guy. And if you run into an enemy you can't see, that's a problem too.
+  - chat: [any_percent_rookie, "ive died to an invisible bullet before"]
+  - say: Died to an invisible bullet? Yeah, it happens. You can't see it, but it's there.
+  - say: The hit detection is still alive even when the thing isn't drawn.
+  - chat: [any_percent_rookie, "thats so unfair"]
+  - say: Super unfair. I almost threw a controller over that once.
+  - chat: [login_bonus_only, "almost threw (did not throw)"]
+  - say: I didn't throw it. My mom was watching.
+  - say: Anyway, the developers hate that too. So every frame, they shuffle the order.
+  - say: This time this one disappears, next time that one does.
+  - chat: [login_bonus_only, "so theyre taking turns"]
+  - say: Yeah. Taking turns. Everybody disappears a little bit.
+  - say: And to your eyes, that looks like flickering.
+  - chat: [first_time_here, "so its better than one guy being gone forever?"]
+  - say: Exactly. Better than one guy being gone forever. Blinking at least tells you something's there.
+  - chat: [retro_grandpa, "some games the hero never flickers"]
+  - say: The hero never flickering, yeah. They just always put the hero first in line.
+  - say: If you can't see yourself, you can't play.
+  - chat: [login_bonus_only, "lise disappears sometimes too"]
+  - say: I don't disappear. My eyes are just closed.
+  - chat: [login_bonus_only, "thats called sleeping"]
+  - say: That's called sleeping. Okay, I've got nothing. Moving on.
+- title: The hiding trick (eight invisible ones, Zelda)
+  beats:
+  - say: So here's my favorite part. You can use it backwards.
+  - say: If the limit is eight, just line up eight invisible stickers first.
+  - chat: [just_clicks_agree, "and then?"]
+  - say: Then that line is full. Anything that shows up after just disappears.
+  - chat: [first_time_here, "they hide stuff on purpose?"]
+  - say: On purpose. You use it to hide what you don't want seen.
+  - chat: [retro_grandpa, "zelda doors"]
+  - say: Yes. That. The dungeon doors in The Legend of Zelda.
+  - say: When Link walks through a door at the top, his body kind of slides away, right?
+  - chat: [first_time_here, "isnt he just going behind the wall"]
+  - say: You'd think he's going behind the wall. I thought so too. Nope.
+  - say: There are eight invisible guys standing on that line. Link is number nine. He's just not drawn.
+  - chat: [login_bonus_only, "the hero is ninth in line lmao"]
+  - say: The hero, ninth in line. Rude, right? After everything he does in that game.
+  - chat: [frame_by_frame, "ninja gaiden cutscenes too"]
+  - say: Oh, the Ninja Gaiden cutscenes. That's literally what I was staring at for four hours last night.
+  - chat: [login_bonus_only, "ngl i get wanting to frame step those"]
+  - say: Right? The movie-style scenes have those black bars.
+  - say: They line up eight invisible guys outside the bars so the art doesn't spill over.
+  - chat: [frame_by_frame, "do they do it everywhere?"]
+  - say: Not everywhere. When you fall in a pit, that's hidden a different way.
+  - say: If you go frame by frame you can tell. Here they're lining them up, here they're not. It was so fun I kept going till morning.
+  - chat: [frame_by_frame, "real. i was up till 3 doing that yesterday"]
+  - say: Three? You didn't sleep either.
+  - chat: [frame_by_frame, "i cant stop pressing the frame advance button"]
+  - say: Can't stop pressing it. I get it. One more frame. One more frame.
+  - say: Stepping through it is way more addictive than actually playing.
+  - chat: [night_shift_survivor, "glad ur having fun"]
+  - say: Glad I'm having fun, he says. I did have fun. I'm just sleepy.
+  - chat: [retro_grandpa, "castlevania 2 swamps too right"]
+  - say: The swamps. Castlevania Two. When Simon walks into the swamp, his lower half disappears.
+  - chat: [login_bonus_only, "losing the lower half is a problem"]
+  - say: Big problem. For a succubus, that's the important half.
+  - chat: [first_time_here, "suddenly succubus"]
+  - say: What do you mean suddenly. I am a succubus. Technically. Okay, back to games.
+- title: Removing the limit in an emulator
+  beats:
+  - chat: [physics_engine_believer, "just turn off the 8 sprite limit in an emu and no flicker"]
+  - say: Just turn off the eight-sprite limit? Here it comes. That one.
+  - chat: [first_time_here, "whats an emu"]
+  - say: An emulator. It's software that pretends to be an old console, on your PC.
+  - say: And some of them have a setting to remove the eight-per-line limit.
+  - chat: [physics_engine_believer, "you see everything. so comfy"]
+  - say: It is comfy. I happily turned it off too, at first.
+  - say: And then I went into a Zelda dungeon.
+  - say: And Link was walking on top of the wall by the door.
+  - chat: [physics_engine_believer, "oh"]
+  - say: "\"Oh.\" Right? That's the \"oh\" I wanted to hear."
+  - chat: [login_bonus_only, "so all the hidden stuff shows up"]
+  - say: Yep, it all shows up. The eight invisible guys stop working.
+  - chat: [frame_by_frame, "so what do they do about it"]
+  - say: What they do, apparently, is spot when there's exactly eight of the same tile lined up on one line, and treat that as a hiding trick.
+  - say: How they do it inside, I haven't checked, so I'm not going to say.
+  - chat: [errata_collector, "not saying what you havent checked. important"]
+  - say: It's important. Really. I said something without checking once and people brought it up for like three days. Learned my lesson.
+  - ask:
+      q: When you play on an emulator, what do you do with the sprite limit?
+      options:
+      - c: Same as hardware
+        r:
+        - Same as the real thing, {name}. You enjoy the flicker as part of it.
+      - c: I turn it off
+        r:
+        - You turn it off, {name}. It is easier to see, I'll give you that.
+        - If Link starts walking on walls in Zelda, tell me. I'll laugh.
+      - c: Depends on the game
+        r:
+        - Game by game, {name}? That's a lot of effort. I wouldn't.
+      - c: No emulators
+        r:
+        - No emulators, {name}? You play on real hardware? Nice. Honestly.
+      npc:
+      - [retro_grandpa, 0]
+      - [physics_engine_believer, 1]
+      - [frame_by_frame, 2]
+      - [just_clicks_agree, 3]
+      - [lag_appreciation_club, 0]
+  - say: Mostly real-hardware settings, huh. This chat is full of those people.
+- title: Wrap-up (just_clicks_agree, next time)
+  beats:
+  - chat: [just_clicks_agree, "no gacha talk today?"]
+  - say: Gacha? No. Actually, wait. You.
+  - say: That "free gems tool" you mentioned last week. Did you delete it?
+  - chat: [just_clicks_agree, "not yet"]
+  - say: Not yet? Delete it. The gems don't go up, and your account can get stolen.
+  - chat: [just_clicks_agree, "yes"]
+  - say: Mm. Tell me when it's gone.
+  - chat: [login_bonus_only, "ok mom"]
+  - say: I'm not your mom. I'm just worried.
+  - chat: [first_time_here, "this was fun. never knew why they flickered"]
+  - say: Never knew why they flickered? Good. That was fun for me too. Even half asleep.
+  - chat: [night_shift_survivor, "gn"]
+  - say: Night. Make sure you actually sleep.
+  - say: Next time, I'll talk about where the mushroom in Mario Three really comes out from. Probably.
+  - say: Okay. Good work, everyone. I'm going to bed too.

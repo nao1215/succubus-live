@@ -1,0 +1,30 @@
+category: chains
+name: お店・チェーン
+topics:
+- {id: chain_konbini, q: コンビニはどこ派？, options: [セブン-イレブン, ファミリーマート, ローソン, ミニストップ, セイコーマート]}
+- {id: chain_konbini_hot, q: コンビニのレジ横（ホットスナック）で買うのは？}
+- {id: chain_cafe, q: 好きなコーヒー屋さんは？, options: [スターバックス, ドトール, タリーズ, コメダ珈琲店, 星乃珈琲店, 個人の喫茶店]}
+- {id: chain_sutaba_order, q: スタバで頼むのは？ 呪文みたいなカスタムはする？}
+- {id: chain_burger, q: ハンバーガーはどこ派？, options: [マクドナルド, モスバーガー, バーガーキング, ロッテリア（ゼッテリア）, フレッシュネス]}
+- {id: chain_mac_order, q: マックで頼むのは？}
+- {id: chain_gyudon, q: 牛丼はどこ派？, options: [吉野家, すき家, 松屋, なか卯]}
+- {id: chain_famires, q: ファミレスはどこ派？, options: [サイゼリヤ, ガスト, ジョナサン, デニーズ, ロイヤルホスト, バーミヤン]}
+- {id: chain_saize, q: サイゼリヤで頼む定番は？}
+- {id: chain_sushi, q: 回転寿司はどこ派？, options: [スシロー, くら寿司, はま寿司, かっぱ寿司, 回らない店]}
+- {id: chain_udon, q: 丸亀製麺・はなまるうどんで頼むのは？}
+- {id: chain_ramen_chain, q: ラーメンチェーンはどこが好き？（天下一品、一蘭、日高屋、幸楽苑、来来亭など）}
+- {id: chain_chicken, q: フライドチキンはケンタッキー？ コンビニのチキン？}
+- {id: chain_donut, q: ドーナツはミスド？ クリスピー・クリーム？}
+- {id: chain_teishoku, q: 定食チェーン（やよい軒、大戸屋）は行く？}
+- {id: chain_super, q: よく行くスーパーは？}
+- {id: chain_drugstore, q: ドラッグストアは何を買いに行く？}
+- {id: chain_hyakkin, q: 100円ショップはダイソー？ セリア？ キャンドゥ？}
+- {id: chain_furniture, q: 家具はニトリ？ IKEA？ 無印良品？}
+- {id: chain_uniqlo, q: 服はユニクロ？ GU？ ワークマン？ しまむら？}
+- {id: chain_bookstore, q: 本屋はどこで買う？ 紀伊國屋？ ブックオフ？ Amazon？}
+- {id: chain_karaoke, q: カラオケはどこ派？ ビッグエコー？ まねきねこ？ ジャンカラ？}
+- {id: chain_izakaya, q: 好きなチェーンの居酒屋は？（鳥貴族、串カツ田中など）}
+- {id: chain_pizza, q: 宅配ピザは何を頼む？ ドミノ？ ピザーラ？ ピザハット？}
+- {id: chain_costco, q: コストコに行く？ 行ったら何を買う？}
+- {id: chain_bakery, q: 好きなパン屋のチェーンは？（アンデルセン、ポンパドウル、神戸屋など）}
+- {id: chain_indie, q: チェーンじゃない行きつけの店はある？}

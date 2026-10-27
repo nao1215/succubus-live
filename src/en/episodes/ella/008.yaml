@@ -1,0 +1,176 @@
+# Ella 008 (English). Same beats as src/episodes/ella/008.yaml.
+title: "Why does Zelda's music make your heart jump the moment an enemy spots you?"
+parts:
+- title: Opening (the mended teacup)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Today, I have a new teacup. ...Well, not new. Mended, and returned to me."
+  - chat: [headbang_whiplash, "u broke it?"]
+  - say: "I broke it. Quite a while ago, actually. I sent it off for kintsugi, and it has finally come home."
+  - chat: [first_time_here, "kintsugi?"]
+  - say: "What is kintsugi? A Japanese way of mending pottery. You glue the pieces with lacquer and paint the seams gold. The cracks become golden lines."
+  - chat: [first_time_here, "so stylish"]
+  - chat: [budokan_balcony_east, "how did you break it"]
+  - say: "Pretty, isn't it? And how did I break it. Well... I was playing a game, got startled, and dropped it."
+  - chat: [retro_grandpa, "what game"]
+  - say: "Which game, Retro Grandpa? Zelda. 'Breath of the Wild.'"
+  - chat: [headbang_whiplash, "ohhh the piano when an enemy spots u"]
+  - say: {face: surprised, text: "The piano when an enemy spots you! Yes! That's the one! You understand!"}
+  - chat: [retro_grandpa, "that thing is bad for the heart"]
+  - say: "Terrible for the heart, isn't it! You're strolling through a meadow and suddenly, plink plink plink plink."
+  - chat: [first_time_here, "kinda wish i saw u drop the cup"]
+  - say: "You wish you'd seen it? It was not a sight fit for viewing. The tea went all over the floor."
+  - chat: [headbang_whiplash, "was it lises cup?"]
+  - say: "Sharp as ever, Whiplash. It was my lady's favorite teacup."
+  - chat: [new_releases_only, "never played zelda"]
+  - say: "Never played Zelda. Oh, is that so. Then today I shall explain things so that even New Releases can follow."
+  - chat: [new_releases_only, "so its a game music stream?"]
+  - say: "Yes, game music. Today is game music day. And the tea is a light Darjeeling, to match."
+- title: Main story (the meadow with no music)
+  beats:
+  - say: "In that game, you walk across these enormous fields. And in those fields, there's hardly any music playing."
+  - chat: [new_releases_only, "wait its silent?"]
+  - say: "Silent? No, not silent. There's wind, rustling grass, a river. That's what you hear."
+  - say: "And every so often, a piano plays a few soft notes. Just a few."
+  - chat: [retro_grandpa, "old zelda had music going the whole time"]
+  - say: "The old Zeldas played music the whole way through, yes. Out in the fields, a brave little march, on and on. I love that too, mind you."
+  - say: "According to the developers, they wanted to drop the field music and let the sounds of the world itself take its place."
+  - chat: [night_shift_survivor, "crazy wind here rn. windows rattling"]
+  - say: "Welcome, Night Shift. You must be exhausted. Your windows are rattling? Are you all right?"
+  - chat: [night_shift_survivor, "im fine. just loud"]
+  - say: "Fine, just loud. Oh, good. On windy nights, I like to guess the pitch the windows are whistling at."
+  - chat: [new_releases_only, "what"]
+  - say: "What, indeed. You know that whooo sound? It usually sits somewhere between an A and a B."
+  - say: "Once, during a typhoon, I was matching it on the piano, and the kitchen staff next door woke up."
+  - say: "It turned into a little party. Everyone guessing the window's note."
+  - chat: [headbang_whiplash, "wholesome typhoon"]
+  - chat: [budokan_balcony_east, "who guessed best"]
+  - say: "A wholesome typhoon, isn't it? Who guessed best? The head cook. I came dead last."
+  - chat: [night_shift_survivor, "what note are my windows rn"]
+  - say: "What note are your windows? I can't hear them through the screen. Do play them for me. ...Ah, no, actually. Go to bed."
+  - chat: [night_shift_survivor, "going to bed"]
+  - chat: [piano_teacher, "why a piano tho"]
+  - say: "Why a piano? Teacher, that's the lovely part!"
+  - say: "They wanted a big instrument, one you couldn't carry with you. To give that sense of a vast world."
+  - chat: [piano_teacher, "ahh that makes sense"]
+  - chat: [headbang_whiplash, "a flute would feel like traveling"]
+  - say: "A flute would feel like a journey. Yes, yes, exactly! Whiplash, you are on fire today."
+  - say: "And so, into all that quiet, the moment an enemy spots you, the music suddenly kicks in."
+  - chat: [first_time_here, "its scarier because its so quiet"]
+  - say: "Scarier because it's quiet. Exactly. If music played all the time, you'd never jump."
+  - chat: [new_releases_only, "same as the quiet parts in horror movies"]
+  - say: "Same as the quiet bits in horror films. Precisely the same! When it goes quiet, something is coming."
+  - chat: [first_time_here, "i always almost throw my controller"]
+  - say: "Almost throw your controller. You mustn't. Though I did drop a teacup."
+  - chat: [budokan_balcony_east, "how much did the repair cost"]
+  - say: "How much did the repair cost... please don't ask. I haven't even told Mora yet."
+  - chat: [budokan_balcony_east, "like the blackout before a concert starts"]
+  - say: "Like the blackout before a concert. Oh, that's close. That moment when everything goes dark, your heart just pounds."
+  - say: "And when you approach an important building, music starts to play, doesn't it."
+  - say: "The developers apparently spent about a month testing how close you should be before it starts, and how loud it should be."
+  - chat: [new_releases_only, "a month?"]
+  - say: "A month? Yes, a whole month. When I hear stories like that, oh, it makes me so happy."
+- title: Side track (my first game)
+  beats:
+  - chat: [retro_grandpa, "what was ellas first game?"]
+  - say: "My very first game? 'Dragon Quest,' on the Famicom. That's the Japanese NES."
+  - chat: [retro_grandpa, "classy"]
+  - say: "Classy, isn't it? And I adored the overture at the start. I kept switching the console off and on again just to hear it."
+  - chat: [headbang_whiplash, "play the game tho"]
+  - say: "Play the game, you say. I did not. Before I ever left the first town, I'd heard that overture dozens of times."
+  - chat: [retro_grandpa, "koichi sugiyamas overture is just good"]
+  - say: "Koichi Sugiyama's overture is wonderful, isn't it! Nineteen eighty-six, on the Famicom, with so few notes, and it truly sounds like an orchestra."
+  - chat: [first_time_here, "the famicom doesnt have many sounds?"]
+  - say: "That's right, it doesn't have many. Roughly speaking, it can play four or five sounds at once."
+  - say: "How it conjures something so grand out of so little, I still find it a marvel."
+  - chat: [retro_grandpa, "i get wanting to restart it"]
+  - chat: [new_releases_only, "ur not even playing the game"]
+  - say: "Not even playing. No, I wasn't. To me it was a machine for listening to music."
+  - chat: [budokan_balcony_east, "mine was space invaders. the cafe table cabinet"]
+  - say: {face: surprised, text: "Space Invaders, built into a cafe table! The real thing?"}
+  - chat: [budokan_balcony_east, "had a stack of hundred yen coins"]
+  - chat: [first_time_here, "mine was pokemon"]
+  - say: "A stack of hundred-yen coins. ...And our newcomer, Pokemon! Which color?"
+  - chat: [first_time_here, "green. all my friends had red"]
+  - say: "All your friends had red, so you took Green. You couldn't catch them all without trading, could you."
+  - chat: [first_time_here, "yep. with the link cable"]
+  - say: "With the link cable. Hook up and trade. That, to me, is the most enviable way to play."
+  - chat: [headbang_whiplash, "mine was tetris on game boy"]
+  - say: "Tetris on the Game Boy! That tune comes from a Russian folk song, you know."
+  - chat: [headbang_whiplash, "its a folk song?? i always thought it was just the game song"]
+  - say: "You thought it was just the game's song. So did I, when I found out. The folk song is the far older sibling."
+  - chat: [retro_grandpa, "the type a one"]
+  - say: "Type A, that's the one. My lady's first was a Game and Watch, apparently. And you, my dears? Which machine was yours?"
+  - ask:
+      q: "My dears, what machine was your very first game on?"
+      options:
+      - c: "famicom/NES or older"
+        r:
+        - "Famicom or older. {name}, we're from the same era. Did you blow into the cartridge?"
+        - "I was a cotton swab person myself."
+      - c: "SNES, PlayStation, N64 era"
+        r:
+        - "The SNES, PlayStation, N64 days. {name}, you might be the Ocarina of Time generation."
+      - c: "DS, Wii, or later"
+        r:
+        - "DS, Wii, or later. {name}, how very young."
+        - "I fear I'm looking at you the way I look at New Releases."
+      - c: "a phone game"
+        r:
+        - "A phone game. {name}, that may well be the most common answer these days."
+        - "Listen closely, and phone games have plenty of lovely music too."
+      npc:
+      - [retro_grandpa, 0]
+      - [budokan_balcony_east, 0]
+      - [new_releases_only, 3]
+      - [headbang_whiplash, 1]
+      - [first_time_here, 2]
+  - say: "Speaking of which, I have a little story about the field music in Ocarina of Time."
+  - say: "The field music in that one is built rather cleverly, you know."
+  - chat: [new_releases_only, "so whats clever about the ocarina field music"]
+  - say: "Plenty of Famicom-or-older folks. And what's clever about Ocarina's field? Ah, yes. Let me get back to that."
+- title: Back to the story (the field music stitched together)
+  beats:
+  - say: "In 'Ocarina of Time,' the field is called Hyrule Field. The composer, Mister Koji Kondo, has talked about its music in a lecture."
+  - say: "He prepared twelve short phrases, and the game picked eight of them on the spot and strung them together."
+  - chat: [first_time_here, "so its a different song every time?"]
+  - say: "A different song every time, yes. Same piece, but the order shifts a little each time. So you can listen for hours without tiring of it."
+  - chat: [retro_grandpa, "so thats why i never got sick of it"]
+  - say: "So that's why you never got sick of it. Doesn't that make you happy, knowing?"
+  - say: "And then, Super Mario World, when you ride Yoshi."
+  - chat: [headbang_whiplash, "the one where the drums come in!"]
+  - say: "The drums come in! Yes! Hop on Yoshi and drums join the music. Hop off and they vanish."
+  - say: "They're not switching songs. They're simply bringing the drum track in and out."
+  - chat: [new_releases_only, "thats so detailed"]
+  - say: "So detailed, yes. And I absolutely adore details like that."
+  - say: "Mister Kondo apparently used the very same trick for Yoshi more than ten years later, in Super Mario Sunshine."
+  - chat: [retro_grandpa, "he must have liked it"]
+  - say: "He must have liked it. I expect he did. I reuse my favorite tricks over and over myself."
+  - chat: [new_releases_only, "for ella its the fancy song title translations"]
+  - say: "For me, the fancy translations. That is not a technique, my dear. That is merely a habit."
+  - chat: [piano_teacher, "you write game scores too right. ever do that kind of thing?"]
+  - say: "Do I do that in my own game music? I tried. But in my case, there's a story of failure."
+  - say: "For a little game made in the castle town, I delivered a loop where the seam was off by one beat."
+  - chat: [budokan_balcony_east, "did they notice?"]
+  - say: "Did they notice? No. Nobody noticed. It shipped, and it's still like that today."
+  - chat: [sold_my_keyboard, "if no one notices its fine"]
+  - say: "If no one notices, it's fine... is it, though? Every time I hear that game, my shoulders jump. Only mine."
+  - chat: [headbang_whiplash, "like the enemy spotted piano"]
+  - say: {face: laugh, text: "Like the enemy-spotted piano. Quite right. I'm being startled by my own music."}
+- title: Closing (the alarm)
+  beats:
+  - chat: [retro_grandpa, "you make lises alarm too right"]
+  - say: "My lady's alarm, yes, I make it. In fact, after learning about Ocarina, I built it the same way."
+  - say: "Lots of short phrases, so it plays in a different order every morning."
+  - chat: [new_releases_only, "does she wake up?"]
+  - say: "Does she wake up, you ask. She does not."
+  - chat: [headbang_whiplash, "LMAOOO"]
+  - chat: [sold_my_keyboard, "maybe its so pleasant she just sleeps better"]
+  - say: "It never gets old, so she sleeps all the more soundly... Perhaps. I hadn't considered that."
+  - chat: [retro_grandpa, "just use the enemy spotted piano"]
+  - say: "The enemy-spotted piano as an alarm. That might just work. I'll try it tomorrow. When I'm not holding a teacup."
+  - chat: [headbang_whiplash, "what if lise drops her cup"]
+  - say: "If my lady is startled and drops her cup? Then off it goes for kintsugi again."
+  - chat: [budokan_balcony_east, "teacup number two"]
+  - say: "Teacup number two. More and more gold lines. That might be rather beautiful, in its way."
+  - say: "Thank you for today, my dears. Farewell."

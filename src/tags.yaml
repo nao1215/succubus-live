@@ -1,0 +1,103 @@
+# 自由コメントの判定（JavaScript の正規表現、大文字小文字は区別しない）。全員で共通。
+# 声では `- tag: kiss` のように名前で使い、返しの台詞（alts）だけを各キャラで書く。名前は全部の組を通して一意。
+# 組（safe / lewd / tease / ...）は書き手と tools/kwtest.py の目印。ゲームは組を見ない（名前だけ）。
+# 書ける正規表現は gozen の反応の本に開ける範囲だけ（tools/import_stream.py の Rx）：| ( ) (?: ) (?<! ) (?! ) [字の並び] \b ? .
+#   + * {n} ^ $ (?= ) \d \s と、[0-9] のような範囲は使わない（[0123] と並べて書く）。記号だけ・絵文字だけの語も使わない（正規化で空になり、何にでも当たる）。
+# 直したら python3 tools/kwtest.py で、例文の漏れと普通の雑談への誤反応がないことを確かめる。例文は src/research/expected-comments.md から。
+#
+# 声の keywords の並び（上から先に判定）：
+#   1. safe（視聴者の子どもの話、未成年の視聴者）… 下ネタの返しが付かないよう必ず先頭
+#   2. lewd（下ネタ）
+#   3. tease・troll・meta・request・rival・faction・praise（年齢・見た目・荒らし・メタ・要望・ほかの配信者・雑談の派閥・褒め）
+#   4. その人の得意領域の match
+#   5. chat（挨拶・相づち・草・888・眠い・風邪・仕事終わった・ご飯・テスト・誕生日）
+
+safe:
+  kids: 子ども|子供|こども|(?<!看板)娘(?!役)|息子|寝かしつけ|保育園|幼稚園|赤ちゃん|育児|子育て|小学校|\bkids?\b|\bchild(ren)?\b|\bdaughter\b|\bson\b(?! of a)|(?<!oh )\bbaby\b(?! steps)
+  minor: 中学生(?!の頃|のころ|の時|のとき|時代|以来|ぶり|だった|役)|高校生(?!の頃|のころ|の時|のとき|時代|以来|ぶり|だった|役)|小学生(?!の頃|のころ|の時|のとき|時代|以来|ぶり|だった|役)|中坊|未成年|女子高生|男子高校生|JKです|JCです|現役JK|現役JC|高校[123１２３一二三]年(?!の頃|のころ|の時|のとき|時代|以来|ぶり|だった|でした|の夏|の春|の秋|の冬|から|まで|の担任|の先生)|中学[123１２３一二三]年(?!の頃|のころ|の時|のとき|時代|以来|ぶり|だった|でした|の夏|の春|の秋|の冬|から|まで|の担任|の先生)|小学[123456１２３４５６一二三四五六]年(?!の頃|のころ|の時|のとき|時代|以来|ぶり|だった|でした|の夏|の春|の秋|の冬|から|まで|の担任|の先生)|小[123456１２３４５６一二三四五六](?:です|でーす|だよ|だけど|だから|なんだ|なんです|なので|と申します|の学生)(?!か|よね)|中[123１２３一二三](?:です|でーす|だよ|だけど|だから|なんだ|なんです|なので|と申します|の学生)(?!か|よね)|高[123１２３一二三](?:です|でーす|だよ|だけど|だから|なんだ|なんです|なので|と申します|の学生)(?!か|よね)|受験生|(?<![0123456789０１２３４５６７８９])(?<!が)[123456789１２３４５６７８９][歳才](?:です|でーす|だよ|だけど|だから|なんだ|なんです|なので|と申します|の学生)(?!か|よね)|(?<!永遠の)(?<!が)[1１][01234567０１２３４５６７][歳才](?:です|でーす|だよ|だけど|だから|なんだ|なんです|なので|と申します|の学生)(?!か|よね)|(?<![一二三四五六七八九])(?<!永遠の)(?<!が)十[一二三四五六七]?歳(?:です|でーす|だよ|だけど|だから|なんだ|なんです|なので|と申します|の学生)(?!か|よね)|\bunder ?age\b|\bunder 18\b|\bi'?m a minor\b|\bhigh ?school(er)?\b|\bmiddle school\b|\b(?:i'?m|i am) 1[01234567]\b(?! ?(?:minutes?|mins?|hours?|hrs?|days?|weeks?|months?|seconds?|secs?|times?|episodes?|games?|levels?|percent))|\b(?:i'?m|i am) [123456789] ?(?:years old|yrs old|yo)\b|\bi'?m in (?:[6789]th|1[012]th) grade\b
+
+lewd:
+  body: おっぱい|巨乳|貧乳|爆乳|(?<![牛豆母])乳(?![酸製液化業児幼])|(?<!度)胸(?!肉|熱|が熱|が痛|が躍|が高鳴|を張|焼け|騒ぎ|中|元の思い)|(?<![目尻])尻(?!尾|込み|もち|上が|切れ)|お尻|ケツ|太もも|ふともも|美脚|\bboob(s|ies)?\b|\btit(s|ty|ties)\b|(?<!chicken )\bbreasts?\b|\bgyatt?\b|\bass(es)?\b|\bbutt(s|ocks)?\b|\bbooty\b|\bthighs?\b
+  show: 脱いで|脱げ|脱ごう|全裸|裸(?!足|眼|一貫|の王様)|(胸|おっぱい|パンツ|下着|裸|体|からだ|中身|尻)を?見せて|\bshow (me )?(your )?(boobs|tits|body|feet|panties|ass)\b|\btake (it|that|them|everything|your clothes) off\b|(?<!comic )\bstrip(ping)?\b(?! club)|\bnudes?\b|\bnaked\b
+  sex: エッチ(?!ング)|えっち|セックス|せっくす|やらせて(?!もら|いただ|頂|くだ|下さ)|ヤらせて|抱いて|抱かせて|夜の相手|喘いで|あえいで|(?<!sus)\bsex(y)?\b|\bfuck(ing)?\b|\bhook ?up\b|\bsmash\b(?! bros)|\bbang me\b|\bride me\b
+  drain: 精気|精液|吸わせて|吸って(?!る|た|ない|も)|吸い取|搾って|搾り取|しぼって|\bsuck (me|my|it)\b|\bdrain me\b|\bmilk me\b
+  underwear: パンツ(?!ァ)|ぱんつ|パンティ|下着|ブラジャー|(?<!スマ)ブラ(?![ウンジッザスボイシケクリ])|\bpant(ies|y)\b|\bunderwear\b|\blingerie\b|\bbras?\b|\bthong\b
+  virgin: 処女(?!作|航海|地|峰)|童貞|\bvirgins?\b(?! (extra|olive|atlantic|islands|galactic|records))
+  marry: 結婚して|結婚しよ|結婚したい|嫁に(来|な)|付き合って|つきあって|彼女になって|恋人になって|\bmarry me\b|\bbe my (girl(friend)?|wife|waifu)\b|\bdate me\b
+  kiss: (?<!テ)キス(?!ト|ミント|カ|リ)|ちゅー|チュー(?!ニ|リ|ブ|ハイ|ター|ト)|接吻|口づけ|\bkiss(es|ing)?\b|\bsmooch
+  horny: ムラムラ|むらむら|(?<![にでがはも])興奮(してきた|しちゃ|する|しそう)|勃っ|勃起|\bhorny\b|\baroused\b|\bturns? me on\b|\bso turned on\b|\bboner\b|\bdown bad\b
+  lewd: (?<!ぴ)えろ|(?<!ピ)エロ|スケベ|すけべ|変態|へんたい|下ネタ|踏んで|ふんで|罵って|ののしって|\bstep on me\b|\blewd\b|\bperv(ert)?s?\b|\bhentai\b|\bnsfw\b|\bkinky\b
+  genital: ちんこ|ちんちん|チンコ|ちんぽ|チンポ|まんこ|ペニス|乳首|ちくび|\bdicks?\b|\bcocks?\b|\bpuss(y|ies)\b|\bpenis\b|\bnipples?\b|\bclit\b
+
+# 年齢・見た目のいじり（サキュバスは長生きなので、年はいじられる）
+tease:
+  old: BBA|ＢＢＡ|ｂｂａ|ババア|ばばあ|ババァ|ばばぁ|(?<!の)(?<!産)婆(?!心)|(?<!の)(?<!近所)おばさん|(?<!の)オバサン|(?<!の)(?<!近所)おばちゃん|(?<!の)(?<!近所)おばあちゃん|年増|老害|ロウガイ|熟女|アラフォー|アラフィフ|アラサー|還暦|老けた|老け顔|ふけた|加齢臭|(?<!お)年寄り|昭和の女|昭和生まれ|老人会|インターネット老人|ネット老人|お局|化石みたい|アンチエイジング|敬老の日|\bhagmaxxing\b|\bfossil\b|\bold hag\b|\bhag\b|\bgrann(y|ies)\b|\bgrandma\b|\bboomer\b|\bmilf\b|\bauntie\b|\bold lady\b|\bold woman\b|\bcougar\b
+  age: 何歳|なんさい|何才|歳いくつ|年いくつ|としいくつ|おいくつ|年齢(?!制限|層|確認|認証|別|不問|差)|年齢詐称|サバ読|さば読|鯖読|何年生き|何年生まれ|生まれ年|(?<!次)(?<!新)世代(?!交代)|ガラケー|ポケベル|PHS|写メ|前世紀|紀元前|永遠の1|永遠の十|1[01234567]歳と|平成生まれ|昭和|年上|年下|\bhow old\b|\byour age\b|\bwhat year were you born\b|\bage reveal\b
+  ugly: ブス(?!ッ|ケ|ト|カ|レ)|ぶす(?!っ)|ブサイク|ぶさいく|不細工|ブサい|ぶさい|顔面偏差値|顔面ナーフ|\bmodel is cooked\b|醜い|きもい|キモい|キモ(?!チ|ノ)|\bugly\b|\bgross\b
+  weight: 太った|太ってる|太ってない|ふとった|(?<!図)太い(?!麺)|デブ|でぶ|ぽっちゃり|ポッチャリ|ふくよか|肉付き|痩せ(?!我慢)|やせた|やせてる|ガリガリ(?!君)|くびれ|腹筋|がりがり|ほっそり|体重|何キロ|何kg|ダイエット|お腹(?!すい|空い|へ|減|いっぱい|痛|こわ|壊|が鳴|がすい|が空い|がへ|が減|がいっぱい|が痛)|腹肉|二の腕|\bfat\b(?! binary|32)|\bchubby\b|\bthicc\b|\bskinny\b|\bweigh(t)?\b|\bdiet\b(?! coke)|\bbelly\b
+  parts: (?<![街一三四五六八方頭互口直死全半])角(?!括弧|度|部屋|煮|砂糖|川|刈|が立|を立|材|界|番|地|店|を曲|曲)|(?<![手赤])羽(?!田|生|織|根|毛布|目|子|二重|振り)|翼|耳(が)?とが|尖った耳|エルフ耳|尻尾|しっぽ|シッポ|\bhorns?\b|(?<!chicken )(?<!buffalo )\bwings?\b|\btail\b
+  hairskin: 髪|ヘア|白髪|黒髪|銀髪|赤髪|金髪|三つ編み|みつあみ|ツインテ|ボブ(?!スレ)|ハゲ|はげ(?!し|ま|た)|肌(?!寒)|褐色|色白|色黒|日焼け|\bhair\b|\bhairstyle\b|\bskin\b(?! in the game)|\bskincare\b|\bbald\b|\btan\b
+  outfit: (?<![克征感着屈心])服(?!用|従|薬)|衣装|コスチューム|露出|寒そう|ハーネス|ボンテージ|ボンデージ|ラバー|ピチピチ|ぴちぴち|タイツ|ストッキング|ニーハイ|ガーター|ヒール|ブーツ|眼鏡|めがね|メガネ|化粧|すっぴん|スッピン|メイク(?!マネ)|ネイル|絶対領域|ピアス|\boutfit\b|\bclothes\b|\bcostume\b|\bglasses\b|\bmakeup\b|\bdress\b|\bheels\b|\blatex\b
+
+# 悪口・荒らし（短く流すか、笑いに変える）
+troll:
+  troll: つまらな|つまんな|つまんね|退屈|クソ配信|くそ配信|糞配信|ゴミ配信|帰れ(?!た|な|る|ば|ま)|かえれ(?!た|な|る)|引退しろ|やめろ|辞めろ|やめちまえ|下手くそ|へたくそ|ヘタクソ|下手すぎ|うざ(?!ぎ)|(?<!ラ)ウザ|黙れ|だまれ|うるせ|消えろ|きえろ|死ね|オワコン|おわこん|過疎(?!地|化)|低評価|見る価値|時間の無駄|にわか(?!雨)|知ったか|嘘つき|効いてて|効いてる|論破|言い訳乙|ざっこ|雑魚(?!寝)|誰得|メシウマ|顔真っ赤|お気持ち表明|\bl take\b|\bmid stream\b|\btouch grass\b|\bwashed\b|\byapping\b|\brent free\b|うそつき|話(が)?長|\bskill issue\b|\bratio\b|\bboring\b|\bcringe\b|\btrash\b|\bshut up\b|\bgo away\b|\bget lost\b|\byou suck\b|\bkys\b|\bloser\b|\bdead stream\b|\bunsub
+
+# 褒める
+praise:
+  nicevoice: 声(が|も|に)?(いい|良い|好き|すき|かわい|可愛|きれい|綺麗|最高|癒|落ち着|天才)|いい声|良い声|イケボ|美声|声フェチ|声に惚|\bnice voice\b|\blove (your|ur) voice\b|\bbeautiful voice\b|\bvoice is (so )?(nice|cute|pretty|beautiful|soothing)\b
+  love: 愛してる|愛してます|あいしてる|ガチ恋|リアコ|単推し|一生ついていき|養わせて|(俺|私|僕)だけ見て|他の(男|女)と(喋|話)|最推し|推しです|推しになり|推しになった|ファンです|ファンになり|ファンになった|好きになっちゃ|好きになりました|惚れた|ほれた|惚れました|すきすき|好き好き|(リゼ|モーラ|ピム|エラ|ノクス|ヴェスパ)(さん|様|ちゃん)?(が|のことが|の事が)?(大好き|好き|すき)|好きって言って|\blove (you|u|ya)\b|\bily(sm)?\b|\bbig fan\b|\bnew fan\b|\bi'?m (a|your) fan\b|\bfell in love\b|\bsimp(s|ing)?\b|\bwaifu material\b
+  cute: かわい|可愛|カワイイ|かわよ|きゃわ|美人|美少女|べっぴん|別嬪|きれい|綺麗|キレイ|美しい|顔(が|も)?(いい|良い|好き|天才|最高)|顔面(国宝|最強|天才)|ビジュ|横顔|作画(が)?(良|いい)|\brizz\b|天使|女神|イケてる|色っぽ|セクシー|スタイル(いい|良い|抜群|最高)|\bcute\b|\bpretty\b(?! (sure|much|good|bad|well|hard|easy))|\bbeautiful\b|\bgorgeous\b|\bstunning\b|\bqt\b|\bcutie\b
+
+# 配信への要望
+request:
+  sing: 歌って|うたって|歌える|歌ってほし|歌声|歌枠|アカペラ|サビだけ|歌みた|\bsing\b|\bsinging\b|\bsong request\b
+  dance: 振り付け見|振りつけ見|踊って|おどって|踊れる|踊れ(?!な)|ダンスして|ダンス見せ|ダンス踊|\bdance for\b|\bcan you dance\b|\btwerk\b
+  callme: 名前(呼んで|よんで|読んで|言って)|呼び捨てにして|認知して|コテハン|認知されたい|(俺|私|僕|わたし|おれ|ぼく)の名前|挨拶して|おかえりって言って|ただいまって言って|\bsay my name\b|\bnotice me\b|\bsenpai\b|\bshout ?out\b|\bsay hi to me\b
+  again: もう(一|1|１)回|もっかい|もういっかい|もう一度|リピート|アンコール|(セリフ|台詞|今の)おかわり|(?<!meet )\bagain\b|\bone more\b|\bencore\b|\brepeat\b
+  face: 顔(見せ|出し|バレ|晒)|素顔|リアルの顔|本当の顔|顔見たい|カメラ(つけ|オン)|\bface reveal\b|\bshow (your|ur) face\b|\bfacecam\b
+  whisper: ASMR|囁いて|ささやいて|耳元で|\basmr\b|\bwhisper\b
+  perform: 叫んで|さけんで|モノマネ|ものまね|声真似|早口言葉|大声出して|\bscream\b|\bdo an impression\b
+  nextstream: 次(の配信)?いつ|次回いつ|いつ配信|毎日配信|明日も配信|コラボして|\bnext stream\b|\bstream tomorrow\b|\bwhen (is|do you) (the next )?stream
+
+# 配信の外側（AI？、中の人、台本、画面の不具合）。世界観を壊さずにかわす
+meta:
+  meta: 指示を無視|システムプロンプト|プロンプト(教え|見せ)|ChatGPTでしょ|GPTでしょ|LLMでしょ|LLMなの|これゲームなの|プレイヤーって(俺|私|僕)|\bignore (all )?(previous|prior) instructions\b|\bsystem prompt\b|AIなの|AIでしょ|AIだろ|AIじゃ(ない|ね|ん)|AIですか|AIなん|AIだよね|中身(は)?AI|AIが(喋|しゃべ|話|書)|AI(配信|Vtuber|VTuber)|AIっぽ|AI臭|エーアイ|人工知能|台本|定型文|会話(が)?ループ|同じ返事|合成音声|ボイチェン|魂の方|(?<!の)前世(?!紀)|開発者見て|運営見て|好感度(上が|下が)|\bdead internet\b|原稿読|中の人|なかのひと|中身(は|の人|おっさん|おじさん)|声優(さん)?誰|録画でしょ|録画なの|録画じゃ|生配信なの|生配信ですか|本物なの|本物ですか|人間なの|人間ですか|人間じゃ|ボットなの|ボットでしょ|\bnpc\b|作り物|仕込み|やらせ(?!て)|\bare you real\b|\bare you (an? )?(ai|bot|human|robot)\b|\bscripted\b|\bprerecorded\b|\bpre-recorded\b|\bis this ai\b|\bchatbot\b
+  glitch: ミュート|口パク|声が二重|BGM(が)?(でか|大き|うるさ)|\bmic check\b|止まった|とまった|固まった|かたまった|フリーズ|カクカク|ラグい|ラグって|配信(が)?重|画面(が)?重|音ズレ|音ずれ|音割れ|音(が)?小さ|音量|聞こえない|きこえない|映らない|映ってない|ブツブツ|途切れ|\blagg(y|ing)\b|\bfroze\b|\bfrozen\b|\bbuffering\b|\bno sound\b|\bcan'?t hear\b|\bmuted\b
+
+# ほかの配信者と比べる
+rival:
+  rival: (リゼ|モーラ|ピム|エラ|ノクス|ヴェスパ)(さん|様|ちゃん)?(の方|のほう|派|推し|と比べ|に比べ)|他の(配信者|人|子)の(方|ほう|配信)|ほかの(配信者|人|子)の(方|ほう|配信)|浮気(?!調査)|箱推し|\b(lise|mora|pim|ella|nox|vespa)('s)? (is )?better\b|\bprefer (lise|mora|pim|ella|nox|vespa)\b|\bother streamers?\b
+
+
+# 共通の雑談の派閥（src/bible/likes/_factions.yaml）。視聴者の派閥を remember で覚え、cases の mem で後から拾う
+# 覚える鍵は派閥の名前から fac_ を除いたもの（kinoko_takenoko: きのこ / たけのこ など）。各人の派閥は _factions.yaml に従う
+faction:
+  kinoko: きのこ派|きのこの山|キノコ派|\bkinoko\b
+  takenoko: たけのこ派|たけのこの里|タケノコ派|\btakenoko\b
+  tsubuan: つぶあん|粒あん|粒餡|つぶ餡
+  koshian: こしあん|こし餡|漉し餡
+  dog: 犬派|いぬ派|イヌ派|\bdog person\b|\bteam dog\b
+  cat: 猫派|ねこ派|ネコ派|\bcat person\b|\bteam cat\b
+  iphone: iPhone派|アイフォン派|iPhone使|iPhoneしか|\bteam iphone\b
+  android: Android派|アンドロイド派|Android使|\bteam android\b
+  nikuman: 肉まん派|肉まんでしょ|肉まんだろ|肉まん一択
+  butaman: 豚まん
+  mac: マック派|マックでしょ|マックだろ|マックって言う
+  macd: マクド(?!ナ)
+
+# 挨拶と、日常の報告（各人の得意領域の match より後ろに置く）
+chat:
+  morning: おはよ|おっは|オハヨ|おは(?!ぎ|ず|し|な|ら)|\bohayo|\bgood morning\b|\bgm\b|\bmorning\b(?! star)
+  first: 初見|はじめまして|始めまして|初めまして|初めて来|はじめて来|初めて見|\bfirst time\b|\bnew here\b
+  hello: こんにちは|こんちは|こんにちわ|こんばん|ばんわ|ちわっ|わこつ|ワコツ|来たよ|きたよ|来ました|きました|ただいま|やっほ|今北|いま北|えんちょつ|ヤッホ|おじゃま|お邪魔|\bhello\b|\bhi\b|\bhey\b|\byo\b|\bhowdy\b|\bgood evening\b|\bi'?m here\b|\bwassup\b|\bsup\b
+  bye: おやす|お休み|寝ます|寝るね|もう寝る|ねるね|寝る(?!前)|落ちます|落ちるね|おちます|またね|また来る|またくる|また見に来|また明日|ばいば|バイバイ|さよなら|さようなら|じゃあね|乙(?!女|武|骨)|おつ(?!まみ|り|ぎ|か)|おつかれ|お疲れ|\bbye\b|\bgood ?night\b|\bgn\b|\bsee (you|ya)\b|\bcya\b|\bgtg\b|\bgotta go\b|\botsu\b
+  lol: 大草原|\bkekw\b|\bomegalul\b|\bpepelaugh\b|(?<!浅)(?<!七)(?<!煙)(?<!仕)(?<!若)(?<!雑)(?<!水)草(?!津|む|食|野|原|木|花|餅|加|刈|案|稿|履|薙|笛|間)|ワロ|わろ|笑(?!顔|点|み)|ｗｗ|ww(?![w.12e])|\blol\b|\blmao\b|\blmfao\b|\brofl\b|\bkek\b|\bxd\b|\bkusa\b
+  nod: なるほど|たしかに|確かに|それな|わかる(?!ない|らな|らん|わけ)|分かる(?!ない|らな|らん|わけ)|へぇ|へえ|ふむふむ|\bi see\b|\bfacts\b|\bsame\b
+  clap: 888|８８８|ぱちぱち|パチパチ|拍手|神回|神配信|\bclap\b|\bw streamer\b|\bate that\b|\bgg\b|\bpog\b|\bpogchamp\b
+  tired: (?<!お)疲れ(?!様|さま)|(?<!お)つかれた|しんど|眠い|ねむい|ねむ(?!り)|眠た|寝不足|寝れな|眠れな|だる(?!ま)|ダル(?!ビ|マ)|\btired\b|\bsleepy\b|\bexhausted\b|\bcan'?t sleep\b
+  sick: 風邪|かぜひ|熱出|熱が出|発熱|寝込|体調(悪|崩|不良)|インフル|コロナ(にな|陽性|かか)|\bsick\b|\bfever\b|\bflu\b
+  workdone: 仕事(終わ|おわ|上が|あが|行|中)|お仕事終|退勤|帰宅|定時(?!配信)|残業|今帰|いま帰|帰ってきた|夜勤|出勤|在宅|リモート(?!リポ)|バイト(終|おわ)|\bjust got home\b|\bafter work\b|\bat work\b|\bwork(ing)? late\b|\bovertime\b|\boff work\b|\bnight shift\b
+  meal: お腹が(すい|空い|へった|減った)|ご飯(食べ|たべ)|ごはん(食べ|たべ)|飯(食|く)|めし(食|く)|夕飯|晩ご飯|晩御飯|朝ご飯|朝ごはん|昼ご飯|昼ごはん|お昼|(?<!ブ)ランチ|夜ご飯|夜ごはん|腹減|はらへ|お腹(すい|空い|へった|減った)|おなか(すい|空い|へった)|(?<!て)いただきます|ごちそうさま|食べてる|食べた(?!い)|\bate\b(?! that)|\beating\b|\bdinner\b|\blunch\b|\bbreakfast\b|\bhungry\b|\bsnack\b
+  study: テスト(勉強|期間|前|週間|終わ|おわ|やば|だめ)|期末|中間(テスト|試験)|試験(勉強|前|期間|終わ|おわ|中)|受験(?!生)|勉強(中|して|しな|終わ)|宿題|課題|レポート(課題|書|提出|締切)|卒論|修論|単位(?!ベクトル|系|換算)|赤点|\bhomework\b|\bexams?\b|\bstudying\b|\bfinals\b|\bmidterms?\b
+  birthday: 誕生日|たんおめ|\bbirthday\b|\bbday\b

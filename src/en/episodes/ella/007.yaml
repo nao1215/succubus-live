@@ -1,0 +1,184 @@
+# A regular's grandchild (sports day) comes up, so no sexual jokes in this one (family: true).
+# Ella 007 (English). Same beats as src/episodes/ella/007.yaml.
+title: "Megadeth's final album hit number one in America, for the first time in forty years"
+family: true
+parts:
+- title: Opening (health checkup results)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "My health checkup results arrived today."
+  - chat: [headbang_whiplash, "how was it"]
+  - say: "How was it? Mostly fine. But on the hearing test, the high frequencies in my right ear had dropped a little."
+  - chat: [piano_teacher, "wait are you ok?"]
+  - say: "Thank you for worrying, Teacher. I'm fine. Not enough to trouble me day to day."
+  - say: "But I know exactly why. Summer twenty twenty-four, a festival in the castle town. I forgot my earplugs."
+  - chat: [new_releases_only, "u always tell everyone else to wear earplugs"]
+  - say: "I tell everyone else to wear earplugs. Everyone else, yes. Everyone else."
+  - say: "My right ear rang for about three days after. And now, it seems, it's finally shown up in the numbers."
+  - chat: [sold_my_keyboard, "one of my ears is a bit bad too. used to work at a live house"]
+  - say: "You worked at a live house, a little music club, and one ear went. You too, Keyboard. ...My dears, truly, please carry earplugs. That's a sincere request."
+  - chat: [first_time_here, "theres earplugs for concerts?"]
+  - say: "Concert earplugs, yes. Music earplugs don't block everything. They only take off the part that's far too loud."
+  - chat: [first_time_here, "didnt know that"]
+  - say: "Many people don't. The nurse asked, 'Do you work in music?' and I hadn't a word to say."
+  - chat: [budokan_balcony_east, "how many pairs do u carry?"]
+  - say: "I haven't counted, Budokan. But whenever I travel, I always pack them. I check three times that they're in."
+  - say: "And even so, when I open my bag at the other end, sometimes they aren't there."
+  - chat: [headbang_whiplash, "where do they go"]
+  - say: "Where do you suppose? When I get home, there they are. On the little dish by the front door."
+  - chat: [new_releases_only, "u checked three times tho"]
+  - say: "Checked three times. And all three times, I believed I'd packed them. A mystery."
+  - chat: [budokan_balcony_east, "just wear them around ur neck"]
+  - say: "Around my neck. Oh, that's rather good. On a string, hanging from my neck."
+  - chat: [headbang_whiplash, "theyd fly off when u headbang"]
+  - say: "They'd fly off when I headbang. Whiplash, kindly heal your neck first."
+- title: Main story (a first number one, on the final album)
+  beats:
+  - say: "So today, a story from this January."
+  - say: "Megadeth announced their final album, and their final tour."
+  - chat: [new_releases_only, "i listened to that one. its new"]
+  - say: {face: smile, text: "You listened because it's new. New Releases, listening to Megadeth!"}
+  - chat: [new_releases_only, "i have a rule that i listen to every new release"]
+  - say: "A rule to listen to every new release. I'm rather fond of rules like that, I must say."
+  - say: "The album is simply called 'Megadeth.' Released January the twenty-third, this year."
+  - say: "And it went to number one on the American album chart."
+  - chat: [budokan_balcony_east, "their first number one right"]
+  - say: "Their first number one! Some forty years in, and on the very last record, the first one."
+  - chat: [piano_teacher, "what was their best before that?"]
+  - say: "Their best before that? Number two. 'Countdown to Extinction,' nineteen ninety-two."
+  - chat: [budokan_balcony_east, "and number one that week was billy ray cyrus"]
+  - say: "And number one that week was Billy Ray Cyrus. Quite so. A country singer took the top spot from them."
+  - chat: [new_releases_only, "the guy from old town road?"]
+  - say: "The man from 'Old Town Road,' yes, him. He sang on Lil Nas X's song."
+  - chat: [headbang_whiplash, "country is the nemesis"]
+  - say: "Country, the nemesis. I wouldn't go that far... but in my heart, perhaps a little."
+  - chat: [new_releases_only, "old town road got pulled off the country chart right"]
+  - say: "Pulled off the country chart, exactly! Twenty nineteen. It went onto the country chart first, then was removed for 'not being country enough.'"
+  - say: "Then the version with Mister Billy Ray Cyrus came out, and it sat at number one in America for nineteen weeks."
+  - chat: [first_time_here, "19 weeks!"]
+  - chat: [budokan_balcony_east, "the guy who blocked megadeth got number one again"]
+  - say: "Nineteen weeks! The man who blocked Megadeth's number one, at number one again. Ninety-two and twenty nineteen. I do bow to that gentleman."
+  - chat: [new_releases_only, "apparently that beat was bought for 30 bucks"]
+  - say: {face: surprised, text: "The beat was bought for thirty dollars? Goodness, is that so?"}
+  - chat: [new_releases_only, "the one that samples nine inch nails"]
+  - say: "It samples Nine Inch Nails. I didn't know that at all. Nine Inch Nails and country music, joined in the unlikeliest place."
+  - chat: [piano_teacher, "music connects in weird places"]
+  - say: "In weird places, truly. And near the end of this album, there's a surprising song."
+  - say: "Megadeth's final album, I mean."
+  - chat: [sold_my_keyboard, "ride the lightning"]
+  - say: "Keyboard beat me to it. Yes. Megadeth plays Metallica's 'Ride the Lightning.'"
+  - chat: [first_time_here, "their rivals song?"]
+  - say: "Their rivals' song, I know. But Mister Mustaine is one of the people who wrote it."
+  - say: "He co-wrote it back when he was in Metallica."
+  - chat: [budokan_balcony_east, "and he put that on the final album"]
+  - say: "And he put it on the final album. He did. The first time I heard it, I cried."
+  - chat: [headbang_whiplash, "is that the last time u cried?"]
+  - say: "Yes, Whiplash. That was the last time I cried."
+  - chat: [new_releases_only, "polite translation?"]
+  - say: "My polite translation. 'Ride the Lightning.' 'Would madam care to board the lightning?'"
+  - chat: [headbang_whiplash, "i would not"]
+  - chat: [piano_teacher, "i would not let her"]
+  - say: "One would not, one would not allow it. How cold you all are."
+- title: Side track (the last time you cried)
+  beats:
+  - chat: [sold_my_keyboard, "which part made u cry?"]
+  - say: "Which part made me cry? The moment the first guitar came in, I was gone. That riff, played the Mustaine way."
+  - chat: [headbang_whiplash, "now i wanna hear it"]
+  - say: "Now you want to hear it. Please do. Track eleven. ...Oh, but listen from track one, in order, won't you."
+  - chat: [new_releases_only, "i skipped to it"]
+  - say: "You skipped? ...Well. How very like you."
+  - chat: [first_time_here, "when did everyone last cry?"]
+  - chat: [budokan_balcony_east, "last week, grandkids sports day"]
+  - say: {face: surprised, text: "Last week, at your grandchild's sports day! Budokan, you're a grandfather?"}
+  - chat: [budokan_balcony_east, "didnt i say?"]
+  - say: "Didn't you say? This is the first I've heard! I've had forty years of venue stories from you, but not that."
+  - chat: [new_releases_only, "havent cried. dont listen to crying music"]
+  - say: "You don't listen to music that makes you cry. Is there nothing new that brings a tear?"
+  - chat: [new_releases_only, "i dance instead of cry"]
+  - say: "Dance instead of cry. That's lovely too."
+  - chat: [headbang_whiplash, "when i cut onions"]
+  - say: "When you cut onions. That does not count as crying."
+  - chat: [headbang_whiplash, "it counts. tears came out"]
+  - say: "Tears came out, so it counts. ...Very well, we'll count it."
+  - chat: [sold_my_keyboard, "seeing the sunrise after a night shift"]
+  - say: "The sunrise after a night shift. That one I understand. An ordinary sunrise, and suddenly it hits you."
+  - chat: [first_time_here, "for me it was a movie"]
+  - say: "A movie, for our newcomer. Which film, I wonder?"
+  - chat: [first_time_here, "sorry dinners ready, gotta go"]
+  - say: "Dinner's ready. Oh, off to eat, then. Do go. Enjoy your meal at leisure."
+  - chat: [piano_teacher, "is the final tour coming to japan?"]
+  - say: "Is the final tour coming to Japan? Ah, yes. I meant to talk about the tour."
+- title: Back to the story (the final tour)
+  beats:
+  - say: "The tour is still having dates added, region by region."
+  - chat: [budokan_balcony_east, "coming to japan?"]
+  - say: "You're wondering too, Budokan. As far as I've found, nothing's known yet."
+  - chat: [sold_my_keyboard, "would u go if they came?"]
+  - say: "I'd go, if they came. And this time, earplugs in my bag. Not on the little dish by the door."
+  - chat: [new_releases_only, "going for front row?"]
+  - say: "Front row? Front row is up to the lottery gods. In Japan, tickets are often a lottery, you see. And the lottery and I are not on speaking terms."
+  - chat: [headbang_whiplash, "front row pressed against the barrier"]
+  - say: "Front row, pressed against the barrier. I'd love to try it. I'm always somewhere at the back."
+  - chat: [budokan_balcony_east, "front row hurts ur neck too. from looking up"]
+  - say: "The front row hurts your neck from looking up, does it. So, Budokan, you've done the front row too."
+  - ask:
+      q: "Your favorite band's 'final tour.' My dears, would you go?"
+      options:
+      - c: "going. no matter what"
+        r:
+        - "Going, no matter what. {name}, what splendid resolve. Do bring earplugs, and a charm for your neck."
+        - "If I could go, I would crawl there myself."
+      - c: "not going. dont want to see the end"
+        r:
+        - "You don't want to see the end. {name}, I understand that feeling too."
+        - "Even I wavered a little, the night before Mister Ozzy's last show."
+      - c: "waiting. they always come back after 'final'"
+        r:
+        - "Waiting, because they always come back after 'final.' {name}, spoken like someone who's watched metal a long time."
+        - "And if they do come back, that's a joy of its own."
+      npc:
+      - [budokan_balcony_east, 0]
+      - [new_releases_only, 2]
+      - [sold_my_keyboard, 1]
+      - [headbang_whiplash, 0]
+      - [piano_teacher, 2]
+  - chat: [sold_my_keyboard, "i picked dont want to see it but honestly i want to go"]
+  - say: "Goers and waiters, about even. And Keyboard picked 'don't want to see it,' but really wants to go. In that case, I believe, it's usually best to go."
+  - chat: [budokan_balcony_east, "lots of bands said final tour and came back"]
+  - say: "Bands who said 'final' and came back. There are some, aren't there. A few spring to mind. I shan't name them."
+  - chat: [headbang_whiplash, "ur not gonna say??"]
+  - say: "Not going to say, you ask. If I did, their fans would scold me."
+  - chat: [new_releases_only, "ud be happy if they came back tho"]
+  - say: "I'd be happy if they came back. I would. Terribly, terribly happy."
+- title: Closing (a second letter from Gil)
+  beats:
+  - say: "And finally, just one story of my own."
+  - say: "Last week, a second letter arrived from Gil."
+  - chat: [budokan_balcony_east, "moonlight banquet?"]
+  - chat: [new_releases_only, "u didnt reply and u got a second one"]
+  - say: "From Moonlight Banquet, yes. I never replied, and a second one came anyway. Inside was the set list for that night."
+  - say: "Eight songs. And one of them was a song whose opening I wrote."
+  - chat: [sold_my_keyboard, "ohh"]
+  - say: "And beneath the set list, the songwriters were listed."
+  - chat: [headbang_whiplash, "was ur name there?"]
+  - say: "My name was there. Right beside Gil's."
+  - chat: [sold_my_keyboard, "yay!"]
+  - say: "Yay, indeed, except. It said, 'Written by Gil and Ellla.' With three L's."
+  - chat: [headbang_whiplash, "ellla"]
+  - chat: [new_releases_only, "THREE Ls lmaooo"]
+  - say: {face: annoyed, text: "Laugh, by all means. One L too many. Forty years on, and the man still misspells my name."}
+  - chat: [piano_teacher, "on purpose?"]
+  - say: "On purpose? I can't tell. On purpose, or he truly doesn't remember. Either way, it makes me cross."
+  - say: "But I was on it."
+  - chat: [sold_my_keyboard, "so did u reply?"]
+  - say: "So, did I reply. ...I'm in the middle of writing it."
+  - chat: [budokan_balcony_east, "what are u writing"]
+  - say: "What am I writing? A formal Japanese letter opens with one word, 'haikei,' meaning 'respectfully.' I've been stuck on that word for two days."
+  - chat: [piano_teacher, "after haikei comes the seasonal greeting"]
+  - say: "After haikei, the line about the season. Teacher, that's exactly where I'm stuck. I don't know what to write."
+  - chat: [headbang_whiplash, "like 'its autumn so guitars go out of tune easily'"]
+  - say: {face: laugh, text: "'As autumn deepens, guitars do so easily fall out of tune.' Gil would be furious, I think."}
+  - chat: [sold_my_keyboard, "so make him furious"]
+  - say: "Make him furious. ...Now I rather want to write it."
+  - chat: [new_releases_only, "no progress"]
+  - say: "No progress, you say. None whatsoever. To be continued. And with that, my dears, farewell."

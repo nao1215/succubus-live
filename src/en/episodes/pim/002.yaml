@@ -1,0 +1,207 @@
+title: '[Kids Ep] I was mid-fry on the karaage when daycare called: she has a fever'
+family: true
+# 英訳（2026-10-27）。日本語は src/episodes/pim/002.yaml。拍の並びは日本語とそろえる。
+parts:
+- title: オープニング：髪が唐揚げの匂い
+  beats:
+  - say: It's Pim! My daughter's napping, so let's go!
+  - say: I had a shift today. My hair still smells like karaage. That's Japanese fried chicken!
+  - chat: [gacha_broke_again, "sounds like it smells good"]
+  - say: Gacha broke again, you're marked present! Smells good, huh? Don't worry, smell doesn't go through the internet.
+  - say: I work at a bento shop, the boxed lunch kind, three mornings a week on the fryer. From six.
+  - chat: [first_time_here, "first time. frying stuff at 6am is wild"]
+  - say: First time here, welcome! Frying at six a.m. is fine once you're used to it. Wakes you right up.
+  - chat: [husband_who_helps, "hi. bet your husband follows the smell"]
+  - say: Husband who helps, hello. Bet he follows the smell... he does.
+  - say: But he's following the fried chicken smell. Not me.
+  - chat: [leaving_work_on_time, "thats sad"]
+  - say: Don't say that's sad! ...Okay, it's a little sad.
+  - chat: [oldest_in_8th_grade, "hi. good work at your shift today"]
+  - say: Senpai, you're marked present! Good work at the shift, thank you!
+  - say: I did not fry four hundred pieces today. Normal day.
+  - chat: [oldest_in_8th_grade, "scary that four hundred days exist"]
+  - say: The four hundred days are real, at year end! On New Year's Eve, I fry and fry and the order slips never get shorter!
+  - chat: [oldest_in_8th_grade, "party platter orders huh"]
+  - say: "Party platters, yes, exactly! Last year after the shift I couldn't lift my arms, so my husband fed me my New Year's Eve soba. It's a whole tradition!"
+  - chat: [gacha_broke_again, "elder care lol"]
+  - say: He called it elder care. Yes. It was elder care. My daughter was next to me going, say aaah.
+- title: 本題っぽいもの：「お熱です」の電話
+  beats:
+  - say: So today I wanted to talk about a phone call from last week.
+  - say: The exact second I dropped the chicken in the oil, my phone rang.
+  - chat: [oldest_in_8th_grade, "daycare"]
+  - say: {face: surprised, text: 'It was daycare! How did you know!'}
+  - chat: [oldest_in_8th_grade, "it always rings while youre frying"]
+  - say: It always rings while you're frying... Was it like that for you too, senpai?
+  - chat: [oldest_in_8th_grade, "three kids, ten years, every time"]
+  - say: Three kids, ten years... Mine was, she has a fever, thirty-seven point eight.
+  - say: That's Celsius, so a hundred Fahrenheit-ish. At our daycare, over thirty-seven point five, they call you. It's the rule.
+  - chat: [leaving_work_on_time, "the 37.5 wall"]
+  - say: The thirty-seven point five wall, yes. In the morning she was thirty-six point nine! I measured! I sent her in properly!
+  - chat: [night_shift_survivor, "the noon spike"]
+  - say: Night shift, yes, the noon spike. Why do kids' fevers always go up at lunchtime?
+  - say: And the chicken. The chicken is still in the oil.
+  - say: My manager goes, go, go, and I ran out still in my apron.
+  - chat: [gacha_broke_again, "smelling like fried chicken"]
+  - say: Smelling like fried chicken. The daycare teacher definitely noticed.
+  - chat: [night_shift_survivor, "what about the chicken?"]
+  - say: My manager fried it for me. My manager is so nice.
+  - say: ...But the next day, my manager looked a little tired.
+  - chat: [husband_who_helps, "this is the parents get special treatment thing"]
+  - say: "Oh, komochi-sama, Her Majesty the Parent, for people who leave early for their kids. Nobody's said it to me. I've said it to myself three times first."
+  - chat: [oldest_in_8th_grade, "the problem is not having enough staff"]
+  - say: The problem is not enough staff... Senpai, thank you. I'll choose to believe that.
+  - say: The next day I made pudding and brought it to work as a thank-you.
+  - chat: [night_shift_survivor, "homemade, nice"]
+  - say: She said homemade, nice! Eggs, milk, sugar, I weighed everything.
+  - chat: [first_time_here, "you weigh it?"]
+  - say: I weigh it! I have a scale that does a tenth of a gram!
+  - chat: [night_shift_survivor, "at my work when someone calls out its hell"]
+  - say: When someone calls out it's hell... On night shift, finding a replacement must be so hard.
+  - chat: [night_shift_survivor, "two people out last week. i had twenty beds alone"]
+  - say: {face: surprised, text: 'Twenty by yourself... You haven''t slept, have you.'}
+  - chat: [night_shift_survivor, "sleeping now"]
+  - say: Going to sleep now. Please sleep. You can let this play in the background.
+  - chat: [leaving_work_on_time, "people at my work take off for kid fevers too. i think its fine, we all have stuff"]
+  - say: When people say we all have stuff, it really, really helps.
+  - say: And on days my manager takes off, I plan to fry everything myself. It hasn't happened once yet.
+- title: 脇道：唐揚げにレモン
+  beats:
+  - chat: [gacha_broke_again, "btw do you put lemon on karaage?"]
+  - say: Lemon on karaage? Oh, you're asking that? You're asking the person who fries it?
+  - chat: [gacha_broke_again, "thats exactly why im asking"]
+  - say: Exactly why, okay. Me, only on my own plate. Never on the big shared plate.
+  - say: I take mine first, then squeeze on just mine.
+  - chat: [leaving_work_on_time, "the peaceful way"]
+  - say: The peaceful way! You know the people who don't ask and just squeeze it over everything?
+  - chat: [night_shift_survivor, "theres one at every work party"]
+  - say: There's one at every work party! There is! Half of it goes soggy! From the frying side, I could cry a little.
+  - say: Oh, and Mora's the same as me. Own plate only.
+  - chat: [first_time_here, "so people who fry it dont use lemon?"]
+  - say: Do fryers skip lemon? Actually, lots of them use it. My manager squeezes it on everything. She likes how the fresh sizzle goes quiet.
+  - chat: [first_time_here, "the sound lol"]
+  - say: The sound! The sizzle goes, shhh, and she likes that. I don't really get it.
+  - chat: [husband_who_helps, "my wife does lemon. i dont"]
+  - say: Your wife does lemon and you don't. Divided house! How do you handle it?
+  - chat: [husband_who_helps, "i grab three first"]
+  - say: {face: smile, text: 'You grab three first... First come, first served. That is strong.'}
+  - chat: [oldest_in_8th_grade, "what about your husband? lemon?"]
+  - say: Is my husband team lemon? My husband is... team mayonnaise.
+  - chat: [gacha_broke_again, "mayo lmao"]
+  - say: Mayo. When I bring home karaage from the shop, he puts it on right in front of me.
+  - say: In front of the person who fried it! The nerve on that man!
+  - chat: [night_shift_survivor, "in front of the cook is bold"]
+  - say: And lately my daughter copies him and puts mayo on too.
+  - say: {face: annoyed, text: 'I am losing two to one. With my own chicken.'}
+  - chat: [oldest_in_8th_grade, "kids love mayo"]
+  - say: Kids love mayo, right? If she'd put it on broccoli, I'd be happy, though.
+  - ask:
+      q: Lemon on your karaage?
+      options:
+      - c: "I do"
+        r:
+        - '{name}, team lemon! On the big plate, just ask everyone first, okay?'
+      - c: "I don't"
+        r:
+        - '{name}, you respect the crunch. As a fryer, that makes me happy.'
+      - c: Own plate only
+        r:
+        - "Only on your own plate!"
+        - '{name}, same as me and Mora!'
+      - c: Mayonnaise
+        r:
+        - "Team mayo, huh."
+        - '{name}, you''re with my husband and daughter... I''m trying not to look.'
+      npc: [[gacha_broke_again, 0], [husband_who_helps, 1], [leaving_work_on_time, 2], [night_shift_survivor, 3]]
+  - say: All over the place! Night shift survivor is team mayo!
+  - chat: [night_shift_survivor, "mayo hits different after a night shift"]
+  - say: Mayo hits different after a night shift... Okay, that's allowed. After a night shift, anything goes.
+- title: 戻る：お迎えの電話
+  beats:
+  - chat: [husband_who_helps, "so when daycare called, your husband couldnt pick her up?"]
+  - say: {face: annoyed, text: 'My husband could not pick her up. Oh, you are going there?'}
+  - say: My husband is a gate guard at the castle, so he can't leave the gate. According to him.
+  - chat: [husband_who_helps, "according to him"]
+  - say: But at the festival the other day, he left a coworker on the gate and went to buy yakisoba. Fried noodles.
+  - chat: [gacha_broke_again, "so he CAN leave lol"]
+  - say: So he can leave, right? For yakisoba, he can leave.
+  - chat: [husband_who_helps, "ouch. at my place they only call my wife too"]
+  - say: They only call your wife... Same here. I'm at the top of the daycare contact list.
+  - say: ...And the one who put me at the top was me.
+  - chat: [leaving_work_on_time, "yourself lol"]
+  - say: Yes, myself. When I filled out the enrollment forms, I just wrote myself first without thinking.
+  - chat: [oldest_in_8th_grade, "just put your husband at the top"]
+  - say: {face: surprised, text: 'Put my husband at the top... Senpai, that is it. Why did I never think of that.'}
+  - chat: [oldest_in_8th_grade, "if he doesnt pick up it comes to you anyway tho"]
+  - say: If he doesn't pick up, it comes to me anyway. Second in line. Right.
+  - say: But I want to see his phone ring first, just once. In front of the yakisoba stand.
+  - ask:
+      q: When daycare or school calls, who gets the call in your house?
+      options:
+      - c: Pretty much me
+        r:
+        - "So it's pretty much always you."
+        - '{name}, my people. Did you start hating your ringtone a little?'
+      - c: My partner
+        r:
+        - "So the call goes to your partner."
+        - '{name}, lucky! Tell me how you made that happen, later.'
+      - c: We take turns
+        r:
+        - '{name}, a rotation! Do you have a chart? I want to see it!'
+      - c: Never had the call yet
+        r:
+        - '{name}, no calls yet, lucky. Please stay that way.'
+      npc: [[oldest_in_8th_grade, 0], [husband_who_helps, 1], [parental_leave_no_sleep, 3], [leaving_work_on_time, 3]]
+  - say: Lots of never had the call yet, lucky! Husband who helps, did you just press my partner?
+  - chat: [husband_who_helps, "yep"]
+  - say: "Yep, he says. So you just admitted every call goes to your wife."
+  - chat: [husband_who_helps, "from my wifes side, im the partner. so its correct"]
+  - say: {face: surprised, text: 'From your wife''s side, you are the partner... That is correct. Technically correct. I hate it.'}
+  - chat: [oldest_in_8th_grade, "same trick as mimi"]
+  - say: Same trick as Mimi, oh my god. Same trick as a four-year-old.
+  - chat: [parental_leave_no_sleep, "hi. late. the phone call stuff is scary"]
+  - say: Parental leave no sleep, you're marked present. The calls are scary? They're not that scary. Probably.
+  - say: When it comes, you figure it out. And my manager's got my back.
+- title: また飛ぶ：役員のじゃんけん
+  beats:
+  - chat: [oldest_in_8th_grade, "speaking of contacts, hows the parent committee phone tree this year?"]
+  - say: The committee phone tree... oh, senpai, you're reminding me of that?
+  - chat: [leaving_work_on_time, "youre on the committee?"]
+  - say: Am I on the committee? I am. Japanese daycares have a parent committee, and it got decided at the April parents' meeting.
+  - say: Nobody volunteered, so twelve of us did rock paper scissors.
+  - say: Here we start it with, first is rock, then rock paper scissors. Like a warm-up rock.
+  - chat: [gacha_broke_again, "no way"]
+  - say: {face: shy, text: 'Yes way. I threw the warm-up rock. For real. Only me.'}
+  - chat: [gacha_broke_again, "solo loss lmaooo"]
+  - say: Solo loss. Eleven people threw paper, and me, rock.
+  - say: And then everyone clapped for me. It was a kind applause.
+  - chat: [husband_who_helps, "kind applause hurts"]
+  - say: Kind applause hurts, so true. Getting yelled at would be easier.
+  - chat: [oldest_in_8th_grade, "but if you do it once its easier later"]
+  - say: Doing it once makes it easier later... Senpai, you told me that in April too.
+  - say: So I got fired up and made a handover document. Twelve pages.
+  - chat: [oldest_in_8th_grade, "what did the last person leave?"]
+  - say: The last person? One memo. Order the ice for the summer festival the day before.
+  - chat: [oldest_in_8th_grade, "and that was enough"]
+  - say: {face: surprised, text: 'That was enough!? Just the ice!'}
+  - chat: [oldest_in_8th_grade, "twelve pages and the next person wont read it"]
+  - say: Twelve pages and they won't read it... They won't. Even I might not read it.
+  - say: Next year I'll make it one page. And I'll write the ice part properly.
+  - chat: [night_shift_survivor, "ice is important"]
+  - say: Night shift says ice is important too. Last year the ice never came, and the shaved ice was apparently just syrup.
+- title: 締め
+  beats:
+  - say: Okay, tonight I'm talking to my husband about switching the contact order.
+  - chat: [husband_who_helps, "im switching ours today too"]
+  - say: You're switching yours today too? Wait, husband who helps, on your own?
+  - chat: [husband_who_helps, "shell probably say obviously"]
+  - say: She'll probably say obviously. But I think she'll be happy. I would be.
+  - chat: [husband_who_helps, "ill report back"]
+  - say: Waiting for the report!
+  - say: Oh, my phone lit up. It's my husband.
+  - chat: [night_shift_survivor, "what's he say?"]
+  - say: What does he say? What's for dinner. Again.
+  - chat: [gacha_broke_again, "asking again lol"]
+  - say: Asking again. I'll text back, karaage. ...Oh, and while I'm at it, I'll ask which days he can do pickup.
+  - say: {face: smile, text: 'While I have him! Pim, signing off!'}

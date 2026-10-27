@@ -1,0 +1,218 @@
+# Vespa 002 (English): in front of my oshi I can only say "otsukaresama". Translated from src/episodes/vespa/002.yaml.
+title: In Front of My Oshi, All I Can Say Is Otsukaresama
+parts:
+- title: Before even saying hi
+  beats:
+  - say: Good evening! Thanks for coming again today!
+  - chat: [end_of_line_here, 'gj. you were slow peeling yesterday']
+  - say: {face: surprised, text: 'You were slow peeling yesterday?! That''s your first line?! Before hello?!'}
+  - chat: [harumi_survivor, 'evening. slow at what']
+  - say: Harumi, you do not need to ask slow at what!
+  - chat: [first_time_here, 'first time. whats peeling']
+  - say: Welcome! What's peeling? Okay so, at idol events there's this time where fans get to talk to the idol one by one, just for a bit.
+  - say: And when time's up, there's a person who goes, time's up, and gently pulls the fan away. In Japanese it's called hagashi. Literally, the peeler.
+  - chat: [first_time_here, 'peeling fans off']
+  - say: Peeling fans off, it sounds terrifying in writing! But it's gentle peeling, I promise.
+  - say: So yesterday I did that at my part-time job. Not for my oshi. Oshi is like, your number one, your person. A different group.
+  - chat: [end_of_line_here, 'team lead warned u twice']
+  - say: Warned me twice? One and a half! The second one got cut off, so it's half!
+  - chat: [end_of_line_here, 'half a warning is still a warning']
+  - say: Half is still a warning... but, like, the fan was in the middle of talking!
+  - say: Someone's gotten as far as, um, last week I, how am I supposed to peel that? Don't you want to hear the rest?
+  - chat: [end_of_line_here, 'hearing the rest is the idols job']
+  - say: {face: thinking, text: 'Hearing the rest is the idol''s job. Ugh. Okay, fair.'}
+  - chat: [end_of_line_here, 'next persons time gets shorter']
+  - say: The next person's time gets shorter. Yeah. Right. The next person practiced what to say at home too.
+  - say: Like me.
+  - chat: [end_of_line_here, 'u practice and still cant say it tho']
+  - say: {face: annoyed, text: 'You practice and still can''t say it?! I was being deep for a second!'}
+- title: Nine years of otsukaresama
+  beats:
+  - chat: [first_time_here, 'do you have an oshi too vespa?']
+  - say: My oshi? Yes! Minami, the green member of an underground idol group called Hachimitsu Chuuihou. It means Honey Alert.
+  - chat: [first_time_here, 'underground idol?']
+  - say: Underground idols are idols who mostly play small live venues instead of being on TV. Not literally underground. Usually.
+  - say: So, two days ago was Minami's cheki event.
+  - chat: [first_time_here, 'cheki event?']
+  - say: A cheki is an instant camera, the little one where the photo pops right out. You take one photo with your oshi and get to talk for a bit.
+  - say: For Honey Alert it's fifteen hundred yen a photo, about thirty seconds.
+  - chat: [harumi_survivor, 'so what did you say']
+  - say: What did I say? ...Otsukaresama desu.
+  - chat: [end_of_line_here, "called it"]
+  - chat: [harumi_survivor, 'how many years now']
+  - say: Don't say knew it. How many years? Nine. Nine years of otsukaresama desu. It's like, thanks for your hard work. That's all I say.
+  - chat: [first_time_here, 'NINE YEARS??']
+  - say: Yes, nine years! I can talk this much on stream! But face to face my brain goes completely blank.
+  - say: Minami smiles and says thanks for coming. And what comes out of my mouth? Otsukaresama desu.
+  - chat: [green_glowstick_yr2, 'evening senpai! minami remembers you btw']
+  - say: Year-Two, evening! Wait, Minami remembers me? For real?!
+  - chat: [green_glowstick_yr2, 'she said oh the otsukaresama person came again today']
+  - say: {face: flustered, text: 'The otsukaresama person?! That''s what I''m called?!'}
+  - chat: [end_of_line_here, 'does that count as being recognized tho']
+  - say: Does it count as being recognized? Yes it does! She remembers me! Not my name, but!
+  - chat: [first_time_here, 'recognized?']
+  - say: Being recognized means your oshi remembers your face or your name. Fans call it ninchi. It's a whole thing.
+  - chat: [green_glowstick_yr2, 'also she called me by my name the other day']
+  - say: Oh. She called you by name?
+  - chat: [green_glowstick_yr2, 'two months in']
+  - say: Two months?! Congrats! I mean congrats, but two months?!
+  - chat: [end_of_line_here, 'ur voice is shaking']
+  - say: My voice is shaking? It's shaking with joy!
+  - chat: [green_glowstick_yr2, 'you should just tell her your name senpai']
+  - say: Just tell her my name? If I could, it wouldn't have taken nine years!
+- title: I practice in the shower
+  beats:
+  - chat: [not_my_headcanon, 'where do you practice']
+  - say: Where do I practice? The shower! I say it while I'm showering. It echoes, so I sound kinda good.
+  - chat: [con_haul_victim, 'how hot do you like your bath']
+  - say: How hot? You're asking that? Forty-three degrees, shower!
+  - say: If it's not hot I don't wake up. And I'm out in ten minutes.
+  - say: I only use a bathtub at hot springs. In and out, like a crow, that's the Japanese saying.
+  - chat: [con_haul_victim, 'im a tub guy. up to my shoulders']
+  - say: con_haul_victim is a soak-to-the-shoulders guy. Jealous. I get bored in a tub in five minutes.
+  - say: Even if I bring my phone, the screen fogs up and I can't see my oshi's face.
+  - chat: [harumi_survivor, '45 for me']
+  - say: {face: surprised, text: 'Forty-five?! Harumi, isn''t that scalding? I could never.'}
+  - chat: [harumi_survivor, 'im an edokko']
+  - say: Because you're an Edokko? That's like, a true-born old-school Tokyo guy. Harumi, are you actually one?
+  - chat: [harumi_survivor, 'in spirit']
+  - say: Edokko in spirit!
+  - say: So, I also practiced fan chants in the shower, and once my neighbor knocked on the wall. Thunk.
+  - say: Next day I went over with snacks to apologize. And turns out the neighbor's an idol fan too!
+  - say: They taught me the chants for a different group!
+  - chat: [green_glowstick_yr2, 'you became friends!']
+  - say: We're friends now! Now we both practice quietly. Mutual respect.
+- title: Can you guys talk?
+  beats:
+  - chat: [not_my_headcanon, 'so does the line you practice at home ever come out for real']
+  - say: Does the practiced line come out for real? No! That's the thing, that's literally the thing.
+  - say: In the shower it flows, and then I see Minami's face and it's all gone.
+  - say: Hey, what about you guys? Can you talk in front of someone you like?
+  - ask:
+      q: Can you actually talk in front of someone you like, or your oshi?
+      options:
+      - c: I can talk
+        r:
+        - '{name} can talk! Amazing, I respect you!'
+        - If you have tips, drop them in chat later. I'm taking notes!
+      - c: My mind goes blank
+        r:
+        - '{name}, one of us! Blank-brain squad, over here!'
+        - It just means you like them so much your brain melts. Let's go with that!
+      - c: I don't go. Watching is enough
+        r:
+        - '{name} is a watcher. That''s nice too.'
+        - Apparently people clapping from the back are totally visible from the stage too.
+      npc:
+      - [green_glowstick_yr2, 0]
+      - [harumi_survivor, 2]
+      - [end_of_line_here, 0]
+      - [not_my_headcanon, 1]
+      - [ohio_fansub_crew, 1]
+  - say: The talkers and the blank-brains are about even! I'm blank-brain squad!
+  - chat: [not_my_headcanon, 'blank. in front of authors i like i can only say one copy of the new book please']
+  - say: The new book please, that's all you can say, I get it! At a wall circle!
+  - chat: [first_time_here, 'wall circle?']
+  - say: Wall circles are the big circles at doujin events that get put along the walls. They're popular, so the lines are huge.
+  - chat: [ohio_fansub_crew, 'i could only say thank you at a voice actor signing too']
+  - say: Even Ohio could only say thank you! So your brain goes blank in English too!
+  - chat: [ohio_fansub_crew, 'after practicing japanese for a month']
+  - say: {face: laugh, text: 'A month of Japanese practice! I get it! The more you practice the less comes out!'}
+- title: The handshake event on a folding table
+  beats:
+  - say: But you know, these events started out tiny. There's a story I love.
+  - say: AKB48's very first handshake event. December twenty-oh-five.
+  - chat: [first_time_here, 'wasnt it big from the start?']
+  - say: Big from the start? Not at all! It was the theater's eighth day, and the equipment broke, so the show got canceled.
+  - say: But a few dozen fans had shown up.
+  - say: So they lined up some long meeting tables and threw together a handshake event on the spot.
+  - chat: [harumi_survivor, 'so they didnt send people home']
+  - say: They didn't send people home! I love this story so much!
+  - chat: [end_of_line_here, 'any peelers?']
+  - say: Peelers? Nope! Back then there wasn't even a peeler.
+  - chat: [end_of_line_here, 'a few dozen people u dont need one']
+  - say: A few dozen people, you don't need one. The professional assessment has arrived!
+  - say: And by twenty-oh-nine, over four thousand people showed up to a venue for like five hundred. A one-kilometer line outside.
+  - chat: [end_of_line_here, '1km. ten signs and a megaphone']
+  - say: One kilometer, ten signs and a megaphone. So specific! That's a real answer!
+  - chat: [gacha_broke_again, 'i wanna shake vespas hand']
+  - say: gacha_broke_again, you wanna shake my hand? Sure! I'm great at handshakes! My grip is forty-five kilos!
+  - chat: [gacha_broke_again, 'pls dont grip at 45kg']
+  - say: {face: laugh, text: 'Don''t grip at forty-five, I''ll go easy! I put my hand on people every week at work! ...To peel them, but!'}
+- title: Frozen on the other side of the screen
+  beats:
+  - chat: [green_glowstick_yr2, 'senpai did you do the online talk events?']
+  - say: The online talk events? I did. In twenty twenty-one. We couldn't meet in person then, so it turned into talking on your phone.
+  - chat: [first_time_here, 'like a video call?']
+  - say: Yeah, like a video call. You take turns talking to Minami through the screen.
+  - say: I thought, through a screen I can do it. I'm at home, I won't be nervous.
+  - chat: [end_of_line_here, 'and?']
+  - say: And? ...The second I said otsukaresama desu, my Wi-Fi died.
+  - say: My face froze, mid otsukaresama, mouth open, for thirty seconds!
+  - chat: [green_glowstick_yr2, 'minami might remember that']
+  - say: {face: flustered, text: 'Minami might remember?! Please don''t! Forget the frozen face!'}
+  - chat: [ohio_fansub_crew, 'korea has something similar. yeontong']
+  - say: Korean yeontong, I've heard of it! The video call fansign, right?
+  - chat: [ohio_fansub_crew, '1 or 2 min each. you buy albums and enter a lottery']
+  - chat: [ohio_fansub_crew, 'my sister bought 40 and won once']
+  - say: One or two minutes each, and your sister bought forty albums and won once?! For two minutes!
+  - say: Honestly I'm not great with systems where you compete by how many copies you buy. No shade to people who love it.
+  - say: But thinking of your sister getting her two minutes, I'm rooting for her.
+  - chat: [ohio_fansub_crew, 'apparently she cried the whole 2 min']
+  - say: Cried the whole two minutes, I get it! I'd do the whole two minutes of otsukaresama!
+- title: The nine-second line
+  beats:
+  - chat: [not_my_headcanon, 'if you have a line youve practiced for nine years say it out loud right now']
+  - say: The nine-year line, right now?! On stream?!
+  - chat: [harumi_survivor, 'say it']
+  - chat: [end_of_line_here, 'ill time it']
+  - say: Harumi says say it, End-of-Line says I'll time it. Don't time it! No wait, actually time it.
+  - say: Minami, thank you for saying yellow-green is green's cousin back in twenty-eighteen. I've been waving green ever since.
+  - chat: [end_of_line_here, '9 sec']
+  - say: Nine seconds?! I don't even need thirty!
+  - chat: [first_time_here, 'yellow-green?']
+  - say: Yellow-green is Minami's color. She used to be green, and then in twenty-eighteen it suddenly switched to yellow-green.
+  - say: And to all of us still waving green, she said from the stage, yellow-green is green's cousin.
+  - say: So the happi coat I'd just gotten embroidered didn't go to waste.
+  - chat: [green_glowstick_yr2, 'senpai im gonna cry']
+  - say: {face: shy, text: 'Gonna cry? Don''t cry, Year-Two! Then I''ll cry!'}
+  - say: But for real, these nine seconds never come out. So just the first words, you guys decide!
+  - ask:
+      q: At the next cheki event, what should my first words be?
+      options:
+      - c: Thank her for green's cousin
+        r:
+        - '{name}, the nine-year one!'
+        - Okay, I'll say it first. If I can't, I'll say it on the second photo! Wait, I'm already assuming I buy two!
+      - c: Just 'thanks for everything'
+        r:
+        - "Just 'thanks for everything,' got it!"
+        - '{name} likes it short! Short, I might manage!'
+        - Maybe my mouth knows it, like, right after otsukaresama.
+      - c: Otsukaresama is fine
+        r:
+        - '{name}, that''s cheating!'
+        - But yeah. Otsukaresama was getting through to her too, huh. I feel a little lighter!
+      npc:
+      - [green_glowstick_yr2, 0]
+      - [not_my_headcanon, 0]
+      - [harumi_survivor, 1]
+      - [end_of_line_here, 2]
+      - [ohio_fansub_crew, 0]
+  - say: Lots of votes for the green's cousin thank-you! Chat says say the nine-year one!
+  - chat: [end_of_line_here, 'one vote for otsukaresama']
+  - say: End-of-Line, one vote for otsukaresama. I knew you'd pick that!
+- title: Wrapping up
+  beats:
+  - say: Okay, next cheki event is this Saturday. First words, the nine-year one!
+  - chat: [end_of_line_here, 'i have work saturday. someone else is peeling']
+  - say: You're working Saturday and someone else is peeling? Thank god! If you peeled me I'd lose it laughing.
+  - chat: [con_haul_victim, 'practice in the shower the night before']
+  - say: Practice in the shower the night before, I will! At forty-three degrees! Quietly!
+  - chat: [harumi_survivor, 'report back if you say it']
+  - say: Report back if I say it? I will! First thing next stream!
+  - chat: [harumi_survivor, 'and if you dont?']
+  - say: And if I don't? I'll say that first too!
+  - say: Thanks for coming today, everyone! Otsukaresama deshita!
+  - chat: [green_glowstick_yr2, 'you said it!']
+  - say: {face: laugh, text: 'You said it, she says! Here I can say it! Byeee!'}

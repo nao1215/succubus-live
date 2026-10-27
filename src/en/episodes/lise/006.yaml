@@ -1,0 +1,214 @@
+# リゼ 006 の英訳（src/episodes/lise/006.yaml）。拍の並びは日本語と同じ。表情は build.py が日本語から写すので書かない。
+title: The Switch 2 price, and my weird twenty-three-thousand-yen purchase
+lobby:
+- I bought a thing for a forty-year-old console. Twenty-three thousand yen.
+- Twenty-three thousand. Mora was not happy.
+- Also, what I did after a phone call from my mom.
+parts:
+- title: Opening (the call from mom)
+  beats:
+  - say: Evening. Okay, listen to this. It's from last week.
+  - chat: [good_morning_guy, "evening"]
+  - chat: [login_bonus_only, "what happened"]
+  - say: What happened is, my mom called. "Are you still playing games?"
+  - chat: [login_bonus_only, "parents always say that"]
+  - say: Parents always say that. So I said, "I'm not playing games. I talk about games."
+  - say: And she goes, "That's worse."
+  - chat: [leaving_work_on_time, "lmao"]
+  - chat: [first_timer_bunny, "mom wins"]
+  - say: Mom wins, right? She's strong. I had nothing.
+  - say: Then she asked "What about work?" and I said "I look for bugs in games."
+  - say: And she goes, "Like, catching beetles?"
+  - chat: [login_bonus_only, "beetles lmao"]
+  - say: Don't laugh at beetles. I mean. Beetles does sound nicer.
+  - say: So after that call, I went and sulk-napped. And forgot to end the stream.
+  - chat: [falls_asleep_on_stream, "how many hours?"]
+  - say: How many hours? Eight.
+  - chat: [falls_asleep_on_stream, "one of us"]
+  - say: You're one of us, yeah. Apparently all you could see on screen was the sofa and the corner of a blanket.
+  - say: When I woke up, there were more viewers than usual.
+  - chat: [first_timer_bunny, "why?"]
+  - say: No idea why. The comments were basically all "are you alive" and "I can hear her breathing."
+  - chat: [clip_guy_A, "the clip from that one is blowing up btw"]
+  - say: The clip's blowing up? I know. You're the one who clipped it.
+  - chat: [clip_guy_A, "yes"]
+  - chat: [first_timer_bunny, "whats the clip called?"]
+  - chat: [clip_guy_A, "\"Succubus waits eight hours for a sprite zero hit\""]
+  - say: "\"Succubus waits eight hours for a sprite zero hit.\" That one. I once did a stream on the top of the Mario screen, where the game waits for a signal."
+  - say: So I guess everyone was waiting eight hours for me to wake up.
+  - chat: [first_timer_bunny, "no idea what that means but its funny"]
+  - say: No idea but it's funny? You don't need to get it. I'm just annoyed it's clever.
+  - say: I told them not to clip me sleeping. Whatever.
+  - chat: [login_bonus_only, "was ur mom always strict?"]
+  - say: She was always strict, yeah. When I was a kid, I played the NES till late at night, and she pulled the plug.
+  - chat: [retro_grandpa, "the worst thing she could do"]
+  - say: The worst thing, right? It was right before a save.
+  - chat: [login_bonus_only, "id cry"]
+  - say: Cry, yeah. I cried. From the next day on, I'd wait until I heard her go to sleep, then start.
+  - chat: [leaving_work_on_time, "zero regrets lol"]
+  - say: Zero regrets, when you put it like that. Yeah. That's why I'm still talking about games.
+- title: The topic (the twenty-three-thousand-yen thing)
+  beats:
+  - say: So, the actual topic. I bought a weird thing the other day.
+  - say: A cartridge that lets you run games you made yourself on an old NES.
+  - chat: [first_timer_bunny, "thats a thing??"]
+  - say: It's a thing. You put whatever game data you want on it, plug it into the console, and it runs.
+  - say: Twenty-three thousand yen.
+  - chat: [backlog_of_1000, "pricey"]
+  - say: Pricey, yeah. Mora said the same thing.
+  - say: "\"Not something you buy in a month when your report got marked duplicate again.\""
+  - chat: [leaving_work_on_time, "mora is not wrong"]
+  - say: Mora's not wrong. That's the problem.
+  - chat: [gacha_broke_again, "coulda bought a switch 2 with that"]
+  - say: Could've bought a Switch Two? No. The Japanese-language-only model is forty-nine thousand nine hundred eighty yen.
+  - chat: [gacha_broke_again, "so not even half"]
+  - say: Right, not even half. The Mario Kart bundle is fifty-three thousand nine hundred eighty.
+  - chat: [first_timer_bunny, "its gotten so expensive"]
+  - say: It's gotten expensive. Games too. In the US, Mario Kart World alone is seventy-nine ninety-nine.
+  - chat: [backlog_of_1000, "in yen thats insane"]
+  - say: Insane in yen, yeah. I stopped doing the math. It's scary.
+- title: Side road (Switch or PlayStation, how to arrange consoles)
+  beats:
+  - chat: [first_timer_bunny, "lise are u switch or playstation?"]
+  - say: Bunny, you can ask Switch or PlayStation, but I have all of them. From the NES to the Switch Two.
+  - chat: [login_bonus_only, "didnt u just say u couldnt buy one?"]
+  - say: Did I say I couldn't? I have one. I meant twenty-three thousand isn't even enough for one console.
+  - chat: [login_bonus_only, "confusing lol"]
+  - say: That was confusing, sorry. But I do want another one. For the bedroom.
+  - chat: [leaving_work_on_time, "u sleep on the sofa tho. u have a bedroom?"]
+  - say: A bedroom, when I sleep on the sofa? Yeah, no. I don't have one. Just sounded nice.
+  - say: As for which one I play most. Switch. Because I can play lying down.
+  - chat: [backlog_of_1000, "ps5 for me. sitting up properly in front of the tv"]
+  - say: Backlog, you sit up properly in front of the TV with your PS5. Look at you.
+  - say: Ella at our place plays PlayStation in seiza too. Kneeling. Back straight.
+  - say: I arrange my consoles by how easy they are to reach from the sofa.
+  - say: And it ended up almost exactly reverse release order.
+  - chat: [retro_grandpa, "so the nes is farthest away?"]
+  - say: Yep. The NES is the farthest. The oldest one is the farthest. Most walking to get to it.
+  - chat: [login_bonus_only, "how many steps is most walking"]
+  - say: How many steps. Like five.
+  - chat: [login_bonus_only, "thats close lmao"]
+  - say: Close, he says. It's far for me.
+  - ask:
+      q: What do you play on most these days?
+      options:
+      - c: Switch
+        r:
+        - Switch, {name}. You can lie down. I get it.
+      - c: PlayStation
+        r:
+        - PlayStation, {name}. Big TV person? Sitting up straight?
+      - c: PC
+        r:
+        - PC, {name}. Careful during sales.
+      - c: Phone
+        r:
+        - Phone, {name}. Anytime, anywhere. Just decide your gacha stopping point ahead of time.
+      npc:
+      - [login_bonus_only, 3]
+      - [backlog_of_1000, 2]
+      - [retro_grandpa, 0]
+      - [gacha_broke_again, 3]
+      - [first_timer_bunny, 0]
+      - [leaving_work_on_time, 1]
+  - say: Phone and Switch, about half and half.
+- title: Back (the people who sell cheap)
+  beats:
+  - chat: [here_for_bgm, "but silksong was cheap"]
+  - say: Silksong was cheap, yeah. That. Back to prices. Perfect timing.
+  - say: Silksong came out at nineteen dollars and ninety-nine cents. In Japan it was twenty-three hundred yen.
+  - chat: [here_for_bgm, "way too cheap"]
+  - say: Way too cheap, right? I think it would've sold even if they charged more, and they still went cheap. I love that.
+  - chat: [backlog_of_1000, "its cheap so its in my backlog"]
+  - say: Cheap so it's in your backlog? No. Don't pile it up, play it.
+  - chat: [backlog_of_1000, "theres a thousand in line ahead of it"]
+  - say: A line of a thousand games. That's more than what's piled around my sofa.
+  - chat: [backlog_of_1000, "every sale it grows"]
+  - say: Grows every sale. I get it. I'm weak to sales too.
+  - say: I'd never buy it full price, but the moment it says half off, I just buy it.
+  - chat: [gacha_broke_again, "and then never play it"]
+  - say: And then never play it. Never. Getting to the title screen is a good day.
+  - chat: [backlog_of_1000, "if i see the title screen it counts as half played"]
+  - say: Title screen counts as half played? I like that. I'm doing that starting today.
+  - chat: [third_planner_this_year, "how many games in ur backlog?"]
+  - say: Planner, I've never counted my backlog. If I count it, Mora will put it in the books.
+  - ask:
+      q: How many games have you bought but not played yet?
+      options:
+      - c: Zero
+        r:
+        - Zero, {name}? You play all of them? Teach me how.
+      - c: One to five
+        r:
+        - A few, {name}. That's doable. Eventually. Probably.
+      - c: Six or more
+        r:
+        - Six or more, {name}. About the same as me, maybe. I haven't counted.
+      - c: I don't want to count
+        r:
+        - You don't want to count, {name}. I get it. Let's pretend we didn't see.
+      npc:
+      - [backlog_of_1000, 3]
+      - [gacha_broke_again, 2]
+      - [third_planner_this_year, 1]
+      - [login_bonus_only, 3]
+      - [first_timer_bunny, 0]
+  - say: Lots of don't-want-to-count. Put me in that group too.
+  - chat: [any_percent_rookie, "what about gta 6?"]
+  - say: GTA Six isn't out yet. It's scheduled for November nineteenth.
+  - say: Last November, it got pushed back from May this year.
+  - chat: [any_percent_rookie, "its gonna get delayed again"]
+  - say: Delayed again? Even if it is, if they make it properly, I'll wait.
+  - chat: [leaving_work_on_time, "wish my deadlines at work got pushed back"]
+  - say: Your deadlines at work don't get pushed back?
+  - chat: [leaving_work_on_time, "nope. they get moved UP"]
+  - say: They get moved up. That's rough. Go to bed early tonight.
+- title: Another tangent (was it worth it)
+  beats:
+  - chat: [first_timer_bunny, "so what did u use the 23k thing for"]
+  - say: What did I use it for. I put a game I made a long time ago on it.
+  - say: Hooked it up to an old TV and ran it on real hardware again.
+  - chat: [con_haul_victim, "the skull one?"]
+  - say: Yep, the skull one. The one with skulls in the top left. They showed up. Properly.
+  - say: On an old TV it looks a little blurry. That was cute.
+  - chat: [first_timer_bunny, "skulls?"]
+  - say: For a new person that's "skulls?", yeah. It's an old bug. Long story. Next time.
+  - chat: [first_timer_bunny, "now im curious lol"]
+  - say: If you're curious, come back.
+  - chat: [gacha_broke_again, "sounds like a good buy then"]
+  - say: A good buy, you think? Okay. Then it was a good buy. Officially.
+  - chat: [third_planner_this_year, "what are u gonna tell mora"]
+  - say: Tell Mora? Nothing. It's already in the books anyway.
+  - chat: [login_bonus_only, "so she already knows lol"]
+  - say: Yep, she knows. From the start.
+  - chat: [retro_grandpa, "love that cartridges still work after decades"]
+  - say: Still working after decades, yeah. Turn it on, it still runs.
+  - say: Some games now just stop being playable when the servers shut down, right?
+  - chat: [ex_gold_farmer, "like that mmo"]
+  - say: Like that MMO, yeah. The game where my bot got caught. It's gone now.
+  - chat: [first_timer_bunny, "wasnt there a petition to stop that?"]
+  - say: The petition, yeah. Stop Killing Games, in Europe.
+  - say: It got over one point four million signatures, and this January, the EU confirmed about one point two nine million as valid.
+  - chat: [first_timer_bunny, "thats a lot"]
+  - say: That's a lot, right? I signed it too. After reading it properly.
+  - chat: [just_clicks_agree, "i signed it too. didnt read it"]
+  - say: Didn't read it? Read it. Read before you press.
+  - chat: [just_clicks_agree, "reading it now"]
+  - say: Reading it now. Um. Well. You already pressed it, so. Read it after, I guess.
+- title: Wrap-up
+  beats:
+  - chat: [falls_asleep_on_stream, "dont forget to end stream today"]
+  - say: Don't forget to end the stream. I'll be careful. Watch me press it at the end.
+  - chat: [clip_guy_A, "if u forget ill clip it"]
+  - say: If I forget, you'll clip it? Don't. Okay, anything but the breathing part is fine.
+  - chat: [first_timer_bunny, "say hi to ur mom"]
+  - say: Say hi to my mom. If I do, she'll just say "are you still playing games" again.
+  - chat: [login_bonus_only, "show ur mom this stream?"]
+  - say: Show my mom this stream? No. She'll say "that's worse." Guaranteed.
+  - chat: [first_timer_bunny, "she might actually be happy"]
+  - say: She might be happy. You think? Hmm. I'll think about it.
+  - say: If I show her one, it'll be one where I'm not asleep.
+  - chat: [falls_asleep_on_stream, "is there one where ur not asleep?"]
+  - say: Is there one? Today. I was awake today, right? The whole time.
+  - say: Next time, maybe the sprite counts on the Game Boy and Super Famicom. Haven't decided.
+  - say: Okay, good work, everyone. I'm ending it properly this time.

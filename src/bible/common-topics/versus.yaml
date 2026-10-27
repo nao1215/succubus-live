@@ -1,0 +1,34 @@
+category: versus
+name: 究極の二択（軽い方）
+# ネットで大きく燃えるものは factions.yaml。ここは即答して笑える軽い二択。
+topics:
+- {id: vs_mountain_sea, q: 山派？ 海派？, options: [山, 海]}
+- {id: vs_rice_bread, q: 一生ご飯だけ？ 一生パンだけ？, options: [ご飯, パン]}
+- {id: vs_ramen_curry, q: 一生ラーメンだけ？ 一生カレーだけ？, options: [ラーメン, カレー]}
+- {id: vs_sweet_salty_life, q: 一生甘いもの禁止？ 一生しょっぱいもの禁止？, options: [甘いもの禁止, しょっぱいもの禁止]}
+- {id: vs_invisible_fly, q: 透明人間になれる？ 空を飛べる？, options: [透明人間, 空を飛ぶ]}
+- {id: vs_past_future, q: 過去に行ける？ 未来に行ける？, options: [過去, 未来]}
+- {id: vs_city_country, q: 都会に住む？ 田舎に住む？, options: [都会, 田舎]}
+- {id: vs_indoor_outdoor, q: インドア派？ アウトドア派？, options: [インドア, アウトドア]}
+- {id: vs_sukiyaki_shabu, q: すき焼き？ しゃぶしゃぶ？, options: [すき焼き, しゃぶしゃぶ]}
+- {id: vs_tsukemen_ramen, q: つけ麺？ ラーメン？, options: [つけ麺, ラーメン]}
+- {id: vs_sauce_shoyu, q: とんかつはソース？ 塩？ 味噌？, options: [ソース, 塩, 味噌カツ]}
+- {id: vs_tempura_salt, q: 天ぷらは塩？ 天つゆ？, options: [塩, 天つゆ]}
+- {id: vs_fries_hash, q: ハッシュポテト？ フライドポテト？, options: [ハッシュポテト, フライドポテト]}
+- {id: vs_strawberry_first, q: ショートケーキのいちごは先に食べる？ 最後？, options: [先, 最後]}
+- {id: vs_watermelon_salt, q: スイカに塩をかける？, options: [かける, かけない]}
+- {id: vs_tomato_sugar, q: トマトに砂糖・塩・マヨネーズ、何をかける？, options: [何もかけない, 塩, 砂糖, マヨネーズ]}
+- {id: vs_pocky_pretz, q: ポッキー？ プリッツ？ トッポ？, options: [ポッキー, プリッツ, トッポ]}
+- {id: vs_cheap_sweet, q: ブラックサンダー？ チョコモナカジャンボ？ 安い幸せはどっち？, options: [ブラックサンダー, チョコモナカジャンボ]}
+- {id: vs_cream_bread, q: メロンパン？ クリームパン？ あんパン？, options: [メロンパン, クリームパン, あんパン]}
+- {id: vs_beach_pool, q: 海水浴？ プール？, options: [海, プール]}
+- {id: vs_sleep_eat, q: 三日寝なくていい？ 三日食べなくていい？, options: [寝ない, 食べない]}
+- {id: vs_phone_tv, q: 一生スマホなし？ 一生テレビなし？, options: [スマホなし, テレビなし]}
+- {id: vs_money_time, q: お金がたくさん？ 時間がたくさん？, options: [お金, 時間]}
+- {id: vs_love_friend, q: 恋人と友達、どっちと旅行？, options: [恋人, 友達]}
+- {id: vs_talk_listen, q: 話す方が好き？ 聞く方が好き？, options: [話す, 聞く]}
+- {id: vs_morning_onsen, q: 温泉旅館の朝風呂は入る？, options: [入る, 寝る]}
+- {id: vs_aisu_soft, q: ソフトクリームはバニラ？ チョコ？ ミックス？, options: [バニラ, チョコ, ミックス]}
+- {id: vs_zaru_kake, q: 蕎麦はざる？ かけ？, options: [ざる, かけ]}
+- {id: vs_cheese_beef, q: 牛丼にチーズはあり？, options: [あり, なし]}
+- {id: vs_donbei_redfox, q: どん兵衛？ 赤いきつね？, options: [どん兵衛, 赤いきつね]}

@@ -1,0 +1,202 @@
+title: My daughter said Papa's fried rice is better, so I started going to machi-chuka diners
+family: true
+# 英訳（2026-10-27）。日本語は src/episodes/pim/004.yaml。拍の並びは日本語とそろえる。
+parts:
+- title: オープニング：お昼は天津飯
+  beats:
+  - say: It's Pim! Hello!
+  - say: "For lunch I had tenshinhan at the machi-chuka by my house. That's the little neighborhood Chinese diner, every town in Japan has one!"
+  - chat: [chinese_diner_heir, "hi. tenshinhan, sweet and sour or salt?"]
+  - say: Chinese diner heir, you're marked present! Sweet and sour or salt? Salt!
+  - chat: [chinese_diner_heir, "classy"]
+  - say: Classy, apparently! Tenshinhan is a crab omelet on rice with a glossy sauce on top, and that place lets you pick the sauce. I love that you get to pick!
+  - chat: [first_time_here, "first time. is tenshinhan from tianjin?"]
+  - say: First time here, welcome! Is it from Tianjin, the city in China? Apparently, they don't have it in Tianjin.
+  - say: It was born in Japanese Chinese restaurants. Only the name is Tianjin.
+  - chat: [first_time_here, "didnt know that"]
+  - say: Right? And people say in the east of Japan it's mostly a ketchup sweet and sour sauce, and in the west it's more soy sauce or salt.
+  - chat: [gacha_broke_again, "hi. im from kansai and ours was more soy than salt"]
+  - say: Gacha broke again, hello! Soy sauce in Kansai, the Osaka side? So you're a west person!
+  - chat: [gacha_broke_again, "ordered it in tokyo and it was red. shook me"]
+  - say: "You ordered it in Tokyo and it was red! Shock, right? For me it was the opposite. First time I saw the salt one, I was like, does this have flavor?"
+  - chat: [chinese_diner_heir, "we only do sweet and sour"]
+  - say: We only do sweet and sour. So your family's place is sweet and sour! Next time I go, I'll order sweet and sour, properly.
+  - chat: [oldest_in_8th_grade, "hi. solo diner lunch sounds nice"]
+  - say: Senpai, you're marked present! Solo diner lunch, nice, right? A little luxury, only on daycare days.
+- title: 本題っぽいもの：パパのチャーハン
+  beats:
+  - say: So, there's a reason I started going to diners so much.
+  - chat: [chinese_diner_heir, "here it comes, that story"]
+  - say: Here it comes, says the heir. Yes. One Sunday last month, my husband made fried rice for lunch.
+  - say: My daughter took one bite and said, Papa's fried rice is better.
+  - chat: [gacha_broke_again, "BETTER"]
+  - say: {face: annoyed, text: 'Yes. Better. You do not need me to say better than whose.'}
+  - chat: [first_time_here, "you make fried rice too?"]
+  - say: Do I make it too? Every Saturday lunch. And I weigh everything.
+  - say: Two hundred grams of rice, one egg, salt, one point two grams.
+  - chat: [chinese_diner_heir, "first time ive seen someone weigh salt"]
+  - say: First time you've seen someone weigh salt? I weigh it! If you don't, it tastes different every time!
+  - chat: [husband_who_helps, "what about your husband?"]
+  - say: My husband? Weighs nothing. Flame all the way up, toss the wok, and at the end he swirls soy sauce around the edge of the pan. That's it.
+  - chat: [chinese_diner_heir, "thats literally the correct way"]
+  - say: {face: surprised, text: 'Wait, that is the correct way?'}
+  - chat: [chinese_diner_heir, "the soy burns on the hot edge and turns into aroma"]
+  - say: The soy burns on the edge and turns into aroma... I kept it on medium the whole time so nothing would burn.
+  - chat: [gacha_broke_again, "safe driving fried rice"]
+  - say: Safe driving fried rice! That was me! It never fails, but my daughter called it, normal.
+  - chat: [parental_leave_no_sleep, "tasting the same every time is impressive tho"]
+  - say: Same every time is impressive... Parental leave, thank you. ...But the verdict was still, normal.
+  - say: And I was so frustrated I started doing recon at diners.
+  - chat: [chinese_diner_heir, "recon lol"]
+  - say: Recon, don't laugh! I sit at the end of the counter and watch them toss the wok.
+  - chat: [oldest_in_8th_grade, "how many plates?"]
+  - say: How many plates? Just last month, seven plates of fried rice.
+  - chat: [oldest_in_8th_grade, "and your weight?"]
+  - say: My weight... I didn't weigh it. That's the one thing I decided not to weigh.
+  - chat: [chinese_diner_heir, "so did you figure anything out?"]
+  - say: Did I figure anything out? I did! None of the old guys at the shops weigh anything!
+  - chat: [chinese_diner_heir, "my dad doesnt weigh anything either"]
+  - say: Your dad doesn't either! They don't weigh, and it's the same flavor every time! How!?
+  - chat: [chinese_diner_heir, "because hes been tossing the same wok for forty years"]
+  - say: Forty years on the same wok... I've had my scale for two years.
+  - chat: [chinese_diner_heir, "also a home stove cant do it. the rice just flies"]
+  - say: On a home stove the rice just flies. It flew! I tossed it, and rice on the floor.
+  - say: My husband picked up the floor rice and ate it. And said, delicious.
+  - say: {face: annoyed, text: 'I wanted him to compliment the rice on the plate. Not the floor.'}
+  - chat: [husband_who_helps, "fried rice is the one thing i beat my wife at too"]
+  - say: Wait, husband who helps, fried rice is the one thing you beat her at too? Why are husbands so strong at this?
+  - chat: [husband_who_helps, "probably cause its the only dish i make, so its the only one i practice"]
+  - say: The only dish you make, so it's the only one you practice... Ohh. That might be it.
+  - say: I make like twenty dishes a week. My husband makes one, once a month. Fried rice.
+  - chat: [oldest_in_8th_grade, "cant beat a specialist"]
+  - say: You can't beat a specialist. You can't. And I've got all the other cooking every day!
+  - chat: [chinese_diner_heir, "my dad also says mom cooks everything better except fried rice"]
+  - say: {face: surprised, text: 'Wait, your dad says your mom cooks everything better except fried rice!?'}
+  - chat: [chinese_diner_heir, "mom does all the cooking at home. dad does nothing at home"]
+  - say: Does nothing at home... A man who's tossed a wok in a restaurant for forty years.
+  - chat: [chinese_diner_heir, "on his days off he eats cup noodles"]
+  - say: Cup noodles on his day off... Weirdly, that makes me feel better.
+- title: 脇道：冷凍チャーハンとファミレス
+  beats:
+  - chat: [night_shift_survivor, "why not fight him with frozen fried rice?"]
+  - say: Fight him with frozen fried rice, I did that! Nichirei's frozen one, it's the big famous brand here.
+  - say: I put it next to my husband's and asked my daughter, which one is yummier?
+  - chat: [night_shift_survivor, "what happened"]
+  - say: What do you think happened? My daughter mixed them together on her plate and ate that.
+  - chat: [gacha_broke_again, "option three lol"]
+  - say: {face: surprised, text: 'Option three! It was supposed to be a comparison and we got a brand new fried rice!'}
+  - say: My husband said, a collab. He looked so happy.
+  - chat: [first_time_here, "the nichirei one is good tho"]
+  - say: The Nichirei one is so good. Apparently Nox loves it too.
+  - say: Nox cooks it exactly by the amounts on the back of the bag. On that part, we get along.
+  - chat: [leaving_work_on_time, "hi. does recon include family restaurants?"]
+  - say: Leaving work on time, you're marked present! Family restaurants for recon? Yes! Bamiyan. It's a Chinese food family restaurant chain.
+  - say: I go to check how fluffy and separate the fried rice grains are.
+  - say: Once my daughter ate theirs and said, same as Papa's.
+  - chat: [chinese_diner_heir, "your husband, bamiyan tier"]
+  - say: Your husband, Bamiyan tier. Exactly. I wrote that in my notes too.
+  - say: I honestly don't know if that's a compliment or an insult.
+  - chat: [husband_who_helps, "i think its a compliment"]
+  - say: You think it's a compliment? I'll go with that.
+  - say: Family restaurants, everyone's different, right?
+  - say: Mora and Nox are Saizeriya, the super cheap Italian one. Because you don't stand out going in alone.
+  - say: Lise-sama is Gusto. Because a robot brings the food to your table.
+  - chat: [gacha_broke_again, "so lise lol"]
+  - say: Ella's Royal Host, the fancier one, and Vespa's Denny's. Apparently for late night strategy meetings.
+  - ask:
+      q: Favorite family restaurant?
+      options:
+      - c: Saizeriya
+        r:
+        - "Saizeriya!"
+        - '{name}, same as Mora and Nox!'
+      - c: Gusto
+        r:
+        - "Gusto!"
+        - '{name}, Lise-sama''s side! The robots are cute, right?'
+      - c: Bamiyan
+        r:
+        - "Bamiyan!"
+        - '{name}, my people! Check out the fried rice!'
+      - c: Royal Host or Denny's
+        r:
+        - "Royal Host or Denny's, okay."
+        - '{name}, Ella or Vespa''s side, then!'
+      npc: [[gacha_broke_again, 0], [night_shift_survivor, 1], [chinese_diner_heir, 2], [leaving_work_on_time, 0]]
+  - chat: [chinese_diner_heir, "come to a machi chuka instead of family restaurants"]
+  - say: Lots of Saizeriya! ...And heir says, come to a machi-chuka instead. I do go! I just don't know where yours is.
+  - chat: [night_shift_survivor, "i love getting the breakfast set at a family restaurant after night shift"]
+  - say: The morning set after a night shift, so nice, right? It's empty.
+  - chat: [night_shift_survivor, "eating a hamburg steak alone at 7am"]
+  - say: Seven a.m., alone, a hamburg steak!
+  - chat: [night_shift_survivor, "after night shift its dinner"]
+  - say: After night shift it's dinner... Oh, right, it's dinner for you.
+  - chat: [gacha_broke_again, "awkward if the next table is eating morning toast"]
+  - chat: [night_shift_survivor, "not awkward. my day is over"]
+  - say: My day is over. So someone ending their day sits right next to someone starting theirs. Family restaurants are amazing.
+  - chat: [night_shift_survivor, "i once slept two hours at the drink bar table"]
+  - say: Two hours asleep at the drink bar... The staff are so kind.
+- title: 戻る：伝票の字
+  beats:
+  - say: Oh right, recon. While I'm doing recon, there's something I collect.
+  - chat: [night_shift_survivor, "what"]
+  - say: {face: smug, text: 'What? Order slip handwriting.'}
+  - chat: [leaving_work_on_time, "here we go, the order slips"]
+  - say: Don't say here we go! When staff write the order by hand, they abbreviate, right? I collect those.
+  - say: Like tenshinhan with sweet and sour is Ten-Ama, and salt is Ten-Shio.
+  - chat: [gacha_broke_again, "ten-shio is literally a salt brand lol"]
+  - say: Literally a salt brand, yes! On the order slip, my tenshinhan is a seasoning.
+  - say: My favorite is from one place, where the grandma writes Ni-Re.
+  - chat: [first_time_here, "ni-re? like the tree?"]
+  - say: Ni-Re, not the elm tree, no. Nira-Reba. Chives and liver stir fry.
+  - chat: [chinese_diner_heir, "my dad writes re-ni"]
+  - say: {face: surprised, text: 'Your dad writes Re-Ni! So at his place it is Reba-Nira!'}
+  - say: In the Chinese word order it's Nira-Reba, and there's a story that Reba-Nira spread because of the old anime Tensai Bakabon.
+  - chat: [chinese_diner_heir, "my dad would get mad if i told him that"]
+  - say: Your dad would get mad? Don't tell him. The Ni-Re grandma and the Re-Ni dad are both delicious.
+  - chat: [leaving_work_on_time, "nobodys laughing"]
+  - say: Nobody's laughing... Only me. It's fine. This one's for me.
+  - chat: [chinese_diner_heir, "its kinda funny"]
+  - say: {face: smile, text: 'Kinda funny, says the heir! Somebody gets it!'}
+  - chat: [chinese_diner_heir, "btw my dad writes fried rice as just cha. one letter"]
+  - say: One letter! Just Cha!
+  - chat: [chinese_diner_heir, "half fried rice is han-cha. char siu ramen is cha-men"]
+  - say: Half fried rice is Han-Cha, and char siu ramen is Cha-Men. Wait, if those are next to each other, can the kitchen even tell?
+  - chat: [chinese_diner_heir, "only my dad can"]
+  - say: Only your dad can tell... So what happens on your dad's day off?
+  - chat: [chinese_diner_heir, "the shop is closed"]
+  - say: The shop's closed. Oh, right. The whole shop takes the day off.
+  - chat: [gacha_broke_again, "is the order slip thing still going?"]
+  - say: Still going, you ask, and I'd love to keep going, but gacha broke again sounds cold, so I'll stop.
+  - chat: [oldest_in_8th_grade, "do you take pictures of them?"]
+  - say: I take pictures, yes. My phone camera roll is all my daughter and order slips.
+  - ask:
+      q: Which tenshinhan sauce do you like?
+      options:
+      - c: Sweet and sour
+        r:
+        - '{name}, the eastern classic! On the slip, that''s Ten-Ama!'
+      - c: Salt
+        r:
+        - '{name}, same as me! On the slip, that''s Ten-Shio!'
+      - c: Soy sauce
+        r:
+        - '{name}, are you from the west side? I want to try the soy one!'
+      - c: Never had tenshinhan
+        r:
+        - '{name}, try it once! At a place where you can pick, even deciding is fun!'
+      npc: [[first_time_here, 3], [gacha_broke_again, 2], [chinese_diner_heir, 0], [oldest_in_8th_grade, 0]]
+- title: 締め
+  beats:
+  - say: Lots of sweet and sour! Heir, you voted for your own shop. ...In the end, I still haven't beaten my husband's fried rice.
+  - chat: [chinese_diner_heir, "takes forty years"]
+  - say: Forty years... Maybe when I'm a grandma I'll win.
+  - chat: [oldest_in_8th_grade, "your husband will have gotten better by then too"]
+  - say: {face: annoyed, text: 'Your husband will have gotten better by then too... Senpai, please do not say that.'}
+  - chat: [first_time_here, "now i want tenshinhan. heading out"]
+  - say: Now you want tenshinhan! First time here, thank you for coming! Decide sweet and sour or salt before you walk in, okay?
+  - say: If you start deciding after they ask, the stares from the customers behind you hurt.
+  - chat: [chinese_diner_heir, "ill tell my dad about the recon"]
+  - say: You'll tell your dad! If I find out where the shop is, I want to go. Don't call it recon, though!
+  - chat: [chinese_diner_heir, "we only have sweet and sour tho"]
+  - say: {face: smile, text: 'Only sweet and sour, right. Sweet and sour, I will order it! Pim, signing off!'}

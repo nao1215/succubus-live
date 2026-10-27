@@ -1,0 +1,195 @@
+# English version of src/episodes/mora/002.yaml (beat order matches the Japanese).
+title: My mom's calls always start with "It's Mom"
+parts:
+- title: Hello, and three voicemails
+  beats:
+  - say: Evening. Let's start.
+  - chat: [cant_make_it_home, "evening. what'd you do today?"]
+  - say: What did I do today? Well. I looked at my phone and had three voicemails. All from my mom.
+  - chat: [lives_on_points, "three lol"]
+  - say: 'Number one: "It''s Mom, I''ll call again." Number two: just "It''s Mom."'
+  - say: 'Number three: "Are you alive?"'
+  - chat: [cant_make_it_home, "my mom sends those too"]
+  - say: Your mom does that too? Of course she does. I'm alive. I'm alive, my phone's just on silent.
+  - chat: [third_planner_this_year, "do you delete voicemails or keep them?"]
+  - say: Delete or keep? I keep them. Pressing delete feels kind of mean.
+  - say: So I've got my mom's voicemails going back to last year. Every single one starts with "It's Mom."
+  - say: The mailbox filled up once. So my mom called me to tell me, "Your voicemail is full."
+  - chat: [lives_on_points, "she told you BY PHONE lmao"]
+  - say: Yes, by phone. And I picked up that one time. Pure luck.
+  - say: So I had to delete the old ones. Like one from three years ago, "It's Mom, did the mandarins arrive?"
+  - say: And when I delete them, I listen to each one all the way to the end. And they're all "It's Mom."
+- title: 'Side track: is your phone on full silent?'
+  beats:
+  - say: My phone is always on full silent. No sound, no vibration. So I never notice calls.
+  - chat: [leaving_work_on_time, "mine's always on silent too"]
+  - say: Leaving On Time, you too. Once, I actually turned the ringer on. I was gonna answer my mom properly.
+  - say: And the first call that rang? The dentist, confirming my appointment.
+  - chat: [lives_on_points, "not mom lol"]
+  - say: Not mom. And it just goes off in your quiet room, right? I jumped out of my chair. Nobody was there.
+  - chat: [night_shift_survivor, "the standing up is so real"]
+  - say: Night Shift gets the standing up. You stand up! And I turned everything off again immediately.
+  - say: Ringtones are so loud in your own room. In a store, totally fine.
+  - ask:
+      q: What's your phone usually set to for calls?
+      options:
+      - c: No sound, no vibration
+        r:
+        - '{name} goes full silent. My people.'
+        - Peaceful and quiet, and then you look and there are three voicemails.
+      - c: Ringer on
+        r:
+        - '{name} keeps the ringer on. A responsible adult.'
+        - You don't need to know the panic when it goes off on the train. Wait, you already know.
+      - c: Vibrate only
+        r:
+        - '{name} does vibrate only. Best of both worlds.'
+        - I tried that. But when it buzzes on a desk, it's so loud. Scared me anyway.
+      npc:
+      - [leaving_work_on_time, 0]
+      - [cant_make_it_home, 0]
+      - [good_morning_guy, 1]
+      - [night_shift_survivor, 2]
+  - chat: [good_morning_guy, "give your mom her own ringtone"]
+  - say: Her own ringtone? I did that, back in the day. Flip phone era. Only my mom got the old rotary phone ring.
+  - say: That was the custom ringtone era. She'd call, it'd go brrring brrring, and the whole office turned around.
+  - chat: [night_shift_survivor, "rotary ring at the office is LOUD lol"]
+  - say: A rotary ring at the office stands out. And everyone goes, "Your mom?" Everyone knew. Everyone.
+- title: Mom's first words
+  beats:
+  - say: Okay, today's story. I finally called her back tonight.
+  - say: Guess what her first words were.
+  - chat: [night_shift_survivor, "Hello?"]
+  - chat: [cant_make_it_home, "it's mom"]
+  - say: {face: surprised, text: '"Hello," and "It''s Mom." Can''t Make It Home wins. "It''s Mom."'}
+  - say: I called her! And the screen says "Mom" right on it!
+  - chat: [third_planner_this_year, "my parents say their full name"]
+  - say: Planner's parents give their full name? That's next level.
+  - chat: [first_time_here, "why do they announce themselves"]
+  - say: Why? Because old phones didn't show the caller's number. You didn't know who it was till you picked up.
+  - say: Caller ID went nationwide here in nineteen ninety-eight.
+  - chat: [counter_clerk_12yrs, "surprisingly recent"]
+  - say: Surprisingly recent? That's almost thirty years ago. But my mom still has the manners from before that.
+  - say: It's cute. What she called about was less cute.
+  - ask:
+      q: When your parents call, what's the first thing they say?
+      options:
+      - c: Hello?
+        r:
+        - '{name}''s family goes "hello." Normal. I''m jealous.'
+        - My mom says who she is before hello. Wrong order.
+      - c: You got a sec?
+        r:
+        - '{name}''s parents ask "you got a sec?" Considerate.'
+        - But even if you say no, they start talking anyway, right?
+      - c: They say who it is
+        r:
+        - '{name} gets the name announcement too. Same club.'
+        - The number's on the screen. I think they just can't feel settled without saying it.
+      - c: Straight to business
+        r:
+        - '{name}''s parents go straight to business. Strong.'
+        - No warm-up, just "where did you put that thing?" I know that one too.
+      npc:
+      - [night_shift_survivor, 0]
+      - [lives_on_points, 1]
+      - [cant_make_it_home, 2]
+      - [third_planner_this_year, 2]
+      - [leaving_work_on_time, 3]
+- title: She called about her health insurance card
+  beats:
+  - say: "So what she wanted was, \"Is the paper health insurance card really dead?\" Everyone here has public insurance, and you show a card at the doctor."
+  - chat: [counter_clerk_12yrs, "ahh"]
+  - say: Counter Clerk's "ahh" knows everything. I said yes, it's done. Even after they expired you could still use them for a bit, but that ended in July too.
+  - chat: [law_books_as_pillow, "from august it's basically my number insurance card or an eligibility certificate"]
+  - say: "From August, it's the My Number Card as insurance card, or an eligibility certificate. Yes, that. Law Books, you're quick today. Exams?"
+  - chat: [law_books_as_pillow, "exams coming up"]
+  - say: '"Exams coming up." So you get nice before exams? Please have exams every week.'
+  - say: So I told her, "You should've gotten a paper called an eligibility certificate." And she goes, "Never came."
+  - chat: [cant_make_it_home, "it 100% came"]
+  - say: It a hundred percent came, yeah. It came. My mom's the type who puts envelopes in a cookie tin without opening them.
+  - chat: [night_shift_survivor, "so just like mora"]
+  - say: {face: shy, text: '"So just like Mora," don''t say that. Mine''s a shoebox, hers is a tin. ...Yeah, same.'}
+  - say: I had her open the tin while we were on the phone, and it was right on top.
+  - say: A nice fresh envelope. My mom said, "Oh." That's all.
+- title: 'Side track: I sent a LINE to the wrong person'
+  beats:
+  - chat: [good_morning_guy, "do you and your mom do LINE?"]
+  - say: LINE with my mom? Yeah. That's the messaging app everyone here uses. But I messed up once.
+  - say: I'd lent Lise money. Eight thousand yen. Like fifty, sixty bucks. I went to message her to pay me back.
+  - chat: [first_time_here, "who's lise?"]
+  - say: Newcomer, Lise lives in the room below mine. She streams games. Always looks sleepy.
+  - say: So I send "Pay me back the eight thousand yen," and it goes to my mom.
+  - chat: [lives_on_points, "worst misfire ever"]
+  - say: Worst misfire ever. She read it instantly. Normally it takes her three days.
+  - say: Five minutes later she calls, and I pick up, and she goes, "How much trouble are you in?"
+  - say: She's so sweet. It took twenty minutes to explain.
+  - say: Started with "Who is Lise," then she's the girl downstairs, she's a game person... and at the end Mom was worried. "Is that girl eating properly?"
+  - chat: [leaving_work_on_time, "so did you get the 8000 back?"]
+  - say: Did I get it back? I got three thousand gems in a gacha game.
+  - say: She said, "At the exchange rate, that's a good deal." I don't even play that game.
+  - chat: [nameless_familiar, "i once misfired \"roger that bunny hop\" to my boss"]
+  - say: {face: surprised, text: "You sent your boss a bunny-cute \"roger\"? What did your boss do?"}
+  - chat: [nameless_familiar, "he replied \"roger\""]
+  - say: He just replied "roger." Your boss is a grown-up. I'd have thought about it all day.
+- title: In the last minute, she gets there
+  beats:
+  - say: So, back to Mom's call. We finish the insurance card thing, and then it turns into the neighbor's dog.
+  - say: The dog's name changed twice in the middle. There are probably two dogs. Probably.
+  - chat: [third_planner_this_year, "you don't ask?"]
+  - say: Why don't I ask? Because if you ask, it does another lap. So I don't.
+  - say: Meanwhile I wrote in my planner, "Dog, probably two." So I'm ready next time she asks.
+  - say: The dog never came up again in the next call, though.
+  - say: So, about forty minutes in, the last minute. Here it comes.
+  - chat: [night_shift_survivor, "so are you seeing anyone"]
+  - say: {face: annoyed, text: 'Night Shift, correct. There it is. "So, is there anyone special?"'}
+  - say: From the insurance card, past two dogs, and she arrives there. A different route every time, same station.
+  - chat: [lives_on_points, "tell her it's me"]
+  - say: Tell her it's you? No. If I introduce you, she'll end up signing up for a point card.
+  - chat: [cant_make_it_home, "what did you say"]
+  - say: What did I say. "I'm cooking dinner right now." I wasn't.
+  - say: And Mom goes, "Sit down when you eat, okay?"
+  - chat: [night_shift_survivor, "she knows"]
+  - say: Yeah, she knows. When I'm alone I eat standing at the sink. How does she know?
+- title: 'Side track: I only go home for New Year''s, and ozoni'
+  beats:
+  - chat: [good_morning_guy, "do you go home a lot?"]
+  - say: Do I go home a lot? Just New Year's. I skip Obon, the summer one where people visit family.
+  - say: When I go home, my mom puts out a floor cushion for me. Just mine, the extra fluffy one.
+  - say: "Then the ozoni comes out. New Year's mochi soup. Square rice cakes, clear broth, chicken, komatsuna greens, one slice of pink-swirl naruto fishcake."
+  - chat: [leaving_work_on_time, "naruto in ozoni is rare"]
+  - say: Naruto's rare? Ours has exactly one slice. There have never been two.
+  - chat: [nameless_familiar, "ours is round mochi in white miso"]
+  - say: Round mochi in white miso! Lise's ozoni is that too, apparently. Ella makes it.
+  - say: The mansion Ella used to serve in was Kyoto style. So she makes Lise a bowl too.
+  - say: I really want to try it once. Round mochi is kind of cute.
+  - chat: [lives_on_points, "kagawa puts mochi with red bean paste in it"]
+  - say: Kagawa does the sweet bean mochi, yes, anmochi! That's Vespa's.
+  - say: White miso with sweet red bean mochi. The first time I heard it, I thought I'd misheard.
+  - say: But Vespa talks about it so happily every year, it must be good.
+  - chat: [cant_make_it_home, "i haven't had my family's ozoni in three years"]
+  - say: You haven't had your family's ozoni in three years? Three years, huh.
+  - say: Your mom's ozoni never tastes the same when you make it yourself.
+  - say: I tried once. Something was off. Same naruto, too.
+  - say: It's probably the broth. I asked my mom and she said, "Just eyeball it." I was asking for amounts.
+  - say: I wrote "eyeball it" in my planner. I've reread it. Still means nothing.
+- title: 'Wrap-up: a promise to call back'
+  beats:
+  - say: Not naming anyone. But someone said a while back that their mom had been calling.
+  - chat: [cant_make_it_home, "still haven't called back"]
+  - say: Still haven't called back? Still, huh. I knew.
+  - chat: [cant_make_it_home, "do YOU pick up every time?"]
+  - say: Do I pick up every time? One in three.
+  - chat: [cant_make_it_home, "you can't talk then"]
+  - say: {face: annoyed, text: "I can't talk? I can't! I know! I'm saying it anyway."}
+  - say: Every call you miss makes the next one longer. Like interest.
+  - chat: [cant_make_it_home, "so i owe three years of interest"]
+  - say: Three years of interest! That's not getting paid off in one night.
+  - chat: [cant_make_it_home, "i'll call this week"]
+  - say: This week? Good. Then I'll pick up on the first ring next time. Promise.
+  - say: Oh, by the way. Last week, I called her. Me. For no reason at all.
+  - chat: [lives_on_points, "proud of you"]
+  - say: Right? And her first words were, "Why are you calling?"
+  - chat: [night_shift_survivor, "LMAOOO"]
+  - say: Chat's dying. I should be asking that. Then we talked for a whole hour anyway.
+  - say: Okay, that's it for today. Just for tonight, I'll turn my ringer on. Good night.

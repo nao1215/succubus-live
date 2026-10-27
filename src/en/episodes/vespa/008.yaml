@@ -1,0 +1,185 @@
+# Vespa 008 (English): I lost the puffy sticker lottery three times. Translated from src/episodes/vespa/008.yaml.
+title: I Lost the Puffy Sticker Lottery Three Times
+family: true  # mostly about collecting and trading stickers as a kid. No sexual jokes in this episode
+parts:
+- title: Lost again
+  beats:
+  - say: Good evening. Listen. I lost again.
+  - chat: [end_of_line_here, 'lost what']
+  - say: Lost what? The sticker lottery! That's three times now!
+  - chat: [first_time_here, 'first time. sticker lottery?']
+  - say: Welcome! A lottery for stickers? Like, what? Right? So right now these puffy stickers are insanely popular.
+  - say: They're called Bonbon Drop Stickers. Clear, puffed up, super glossy.
+  - chat: [green_glowstick_yr2, 'evening senpai! i lost too']
+  - say: Year-Two lost too?! We're the same. The losers club.
+  - chat: [first_time_here, 'stickers have a lottery??']
+  - say: Stickers have a lottery, yep. They sell out the second they hit the shelf, so more stores sell them by lottery now.
+  - chat: [harumi_survivor, 'evening. back in the day we had bikkuriman stickers']
+  - say: Back in the day we had Bikkuriman. Harumi, I knew you'd say that today!
+- title: The Heisei girlies
+  beats:
+  - chat: [first_time_here, 'why stickers now?']
+  - say: Why stickers now? Last summer the phrase Heisei joji went viral on social media. Heisei girls.
+  - say: "It means stuff girls loved in elementary school in the Heisei era. Like the nineties and two-thousands. Sticker books, sparkly stationery."
+  - chat: [con_haul_victim, 'i had a sticker book']
+  - say: con_haul_victim had a sticker book too! And those girls grew up and started collecting all over again.
+  - say: Then puffy stickers showed up and it just caught fire. By this February, fifteen million had shipped in total.
+  - chat: [first_time_here, '15 million?!']
+  - say: Fifteen million, wild, right? I own three of them.
+  - say: The other day there were people lined up outside a store before it opened. And out of work habit, I went looking for the end of the line.
+  - chat: [not_my_headcanon, 'apparently there are fakes too']
+  - say: There are fakes, yeah. And scalpers. Seeing even stickers sold at crazy prices honestly makes me so sad.
+  - say: It sucks when the people who love it can't buy it at a normal price.
+- title: The trade rates
+  beats:
+  - chat: [con_haul_victim, 'i fought over sticker trades as a kid']
+  - say: Fighting over sticker trades, oh, you fight! There's a whole thing of which sticker is worth how many.
+  - chat: [first_time_here, 'worth how many?']
+  - say: Like, one sparkly one trades for three normal ones. Rules that only exist among kids.
+  - chat: [con_haul_victim, 'puffy ones were worth five normal ones']
+  - say: Puffy ones worth five normal! So strong!
+  - chat: [green_glowstick_yr2, 'people still show each other sticker books at events']
+  - say: People still show each other their sticker books, yes! The other day after my merch shift, some adults were doing it on a bench at the station.
+  - say: What about this one and this one, trading with the most serious faces ever.
+  - say: I was watching from the side and I just really wanted to say something.
+  - chat: [end_of_line_here, 'and u did didnt u']
+  - say: And I did, didn't I... I did. I said, those are so cute! And they gave me one.
+  - say: So sweet. I had nothing to trade, so I gave them one of my can badges.
+  - chat: [not_my_headcanon, 'the rate doesnt match']
+  - say: The rate doesn't match, it doesn't, right. But they seemed a little happy. Probably.
+  - say: I'm not great with random blind-box merch, but I love trading culture. It's a reason to talk to strangers.
+  - chat: [end_of_line_here, 'says shes not great with it and pulls anyway']
+  - say: {face: shy, text: 'Says I''m not great with it and pulls anyway... ugh, I do. The other day I pulled fourteen before I got my oshi.'}
+  - say: The not great part is real. I hate myself while I'm pulling. But I pull.
+- title: Did you collect stickers?
+  beats:
+  - say: What about you guys? Did you collect stickers as a kid?
+  - ask:
+      q: Did you collect stickers as a kid?
+      options:
+      - c: I did
+        r:
+        - '{name}, one of us! Is your sticker book still at your parents'' place?'
+        - If you have trading memories, write them in chat later. I wanna read them!
+      - c: A little
+        r:
+        - '{name} did a little. Did you have one favorite?'
+      - c: Never did
+        r:
+        - '{name} never collected. Then start now! Let''s lose the lottery together!'
+      npc:
+      - [con_haul_victim, 0]
+      - [green_glowstick_yr2, 0]
+      - [end_of_line_here, 2]
+      - [harumi_survivor, 0]
+      - [not_my_headcanon, 1]
+  - say: Lots of collectors! Everybody went through it, huh.
+  - chat: [harumi_survivor, 'i collected. bikkuriman']
+  - say: Harumi, of course, Bikkuriman!
+  - chat: [first_time_here, 'what did you collect vespa?']
+  - say: What did I collect? Back in the demon world, shiny rocks. There were no stickers, so I kept shiny rocks from the river in a box.
+  - chat: [not_my_headcanon, 'demon world heisei girlie']
+  - say: Demon world Heisei girlie, except it wasn't Heisei! Way before!
+  - say: And when I came to the human world, the first thing I got hooked on was Bikkuriman. Rocks turned into stickers.
+  - chat: [harumi_survivor, 'from rocks to stickers']
+  - say: Rocks to stickers. Yep, I used the same box.
+- title: About Bikkuriman
+  beats:
+  - chat: [first_time_here, 'whats bikkuriman?']
+  - say: Bikkuriman is a chocolate snack with one sticker inside. It was a huge craze in the eighties.
+  - say: The series in nineteen eighty-five, Devils versus Angels, is what made it explode.
+  - chat: [harumi_survivor, 'the whole class freaked out when someone pulled a head']
+  - say: The whole class freaked out over a head. A head is the shiniest one, the jackpot sticker.
+  - chat: [harumi_survivor, 'my allowance wasnt enough']
+  - say: Your allowance wasn't enough? Harumi, broke again!
+  - say: But there's a kinda sad part too. Some kids took out the sticker and threw away the chocolate.
+  - say: "Such a waste, right? It became a whole social issue, and in nineteen eighty-eight the Fair Trade Commission literally stepped in with a warning."
+  - say: And apparently it cooled off a bit after that.
+  - chat: [end_of_line_here, 'same as random merch now']
+  - say: "Same as random merch now, yeah, I thought so too. You buy a mystery bag and hunt for the hit. Literally the ancestor of random acrylic stands."
+  - chat: [not_my_headcanon, 'your fourteen from earlier too']
+  - say: My fourteen from earlier, same thing. The ancestors have been making me pull this whole time.
+  - chat: [end_of_line_here, 'rent']
+  - say: Just the word rent?! Don't! I borrowed it from Mora! I paid it back already!
+  - chat: [end_of_line_here, 'she wrote it in red in her ledger']
+  - say: Written in red in her ledger? That's Mora's ledger business!
+- title: Speaking of which, purikura
+  beats:
+  - chat: [con_haul_victim, 'i stuck purikura in my sticker book too']
+  - say: Purikura in your sticker book, yes yes! Purikura are stickers too. Those photo booth sticker pics.
+  - chat: [first_time_here, 'since when has purikura existed?']
+  - say: Since when? July nineteen ninety-five. At first it was called Print Club.
+  - say: The person behind it was a woman named Miho Sasaki. That February they tried one out at a trade show, and a line formed.
+  - chat: [end_of_line_here, 'a line at a trade show. makes sense']
+  - say: A line at a trade show, she gets it. End-of-Line looks at a line and understands everything.
+  - say: Two years later, in nineteen ninety-seven, there were over fifty thousand machines out there.
+  - chat: [not_my_headcanon, 'they didnt make your eyes bigger at first right']
+  - say: They didn't make your eyes bigger at first, right! At first it just turned a photo into a sticker. No filters like now.
+  - chat: [first_time_here, 'what did you doodle on them?']
+  - say: What did I doodle? The date.
+  - chat: [harumi_survivor, 'just the date?']
+  - say: Just the date, just the date. Where people draw hearts, I wrote, like, the month and day, twenty-oh-two.
+  - chat: [con_haul_victim, 'so businesslike']
+  - say: {face: laugh, text: 'Businesslike?! It is! My friend in the photo asked me, is that paperwork?'}
+  - chat: [green_glowstick_yr2, 'taken any lately?']
+  - say: Lately? Hmm, last year maybe. With my trip buddies. Wrote the date again, obviously.
+  - say: The twenty-oh-two ones are still in my sticker book. All I wrote was dates, so for some I don't even know who I was with.
+- title: Wait, what was I saying
+  beats:
+  - say: Wait, what were we talking about? Before purikura.
+  - chat: [end_of_line_here, 'losing the lottery']
+  - say: Losing the lottery. Right, losing. Now I'm sad again.
+  - chat: [harumi_survivor, 'tamagotchi was sold out too']
+  - say: "Tamagotchi was sold out too, oh, Tamagotchi! Out November nineteen ninety-six, planned at sixty thousand, and they ended up making a million."
+  - say: It still wasn't enough, there were lines at stores. But then the boom ended and they had way too many.
+  - say: In nineteen ninety-nine they had to dispose of a huge number and took a big loss.
+  - chat: [end_of_line_here, 'overproduced boxes']
+  - say: Overproduced boxes, stop thinking in cardboard. But yeah, probably a mountain of boxes in a warehouse.
+  - chat: [not_my_headcanon, 'did vespa raise one?']
+  - say: Did I raise one? I did. It died in four days.
+  - say: Feeding it at the same time every day was impossible for me. The battery's dead and it's still in my drawer.
+  - chat: [green_glowstick_yr2, 'one of those things you cant throw away']
+  - say: Yep, one of those. Once a year I think, maybe if I change the battery it'll come back to life. I just think it.
+- title: Speaking of which, ice cream
+  beats:
+  - chat: [con_haul_victim, 'eating a garigari-kun right now']
+  - say: Eating a Garigari-kun right now? Jealous! It's like, the classic shaved ice popsicle. What flavor?
+  - chat: [con_haul_victim, 'soda']
+  - say: Soda, same! I'm a soda Garigari-kun girl. I love eating them in line at summer events.
+  - chat: [first_time_here, 'its autumn though']
+  - say: It's autumn though? I eat them in autumn! In winter, I split a Papico under the kotatsu. It's the one that comes as two tubes stuck together.
+  - chat: [end_of_line_here, 'split with who']
+  - say: Split with who? ...Me. Both halves.
+  - chat: [not_my_headcanon, 'what does split even mean']
+  - say: {face: annoyed, text: 'What does split mean?! I eat them one at a time, so it''s split!'}
+  - chat: [harumi_survivor, 'im an azuki bar guy']
+  - say: Harumi's an Azuki Bar guy. The sweet red bean one that's rock hard. Careful with your teeth.
+  - chat: [harumi_survivor, 'my teeth are fine. just my back']
+  - say: Teeth are fine, just the back. Good, at least those are solid.
+- title: What I'll put in if I win
+  beats:
+  - chat: [not_my_headcanon, 'if you win what goes in your sticker book']
+  - say: If I win, I've already decided! First, a whole page of only green stickers.
+  - say: Green stickers are surprisingly rare, actually. It's all pink and light blue. Yellow-green goes on the same page too.
+  - chat: [green_glowstick_yr2, 'im making a yellow-green page']
+  - say: Year-Two's making a yellow-green page. So if we put them side by side, it'll be a pretty gradient.
+  - chat: [con_haul_victim, 'sticker books themselves are so cute now too']
+  - say: "The sticker books themselves are so cute now, right! At a stationery store the other day I saw old Heisei-style patterns and just grabbed one."
+  - say: Saw the price and quietly put it back. The book alone costs a lot.
+  - chat: [harumi_survivor, 'we used to stick them in notebooks']
+  - say: "You used to stick them in notebooks? Maybe that's fine. A notebook to start. I've got a bunch of Campus notebooks at home, the classic school ones."
+  - chat: [not_my_headcanon, 'lazy']
+  - say: Lazy? It's not lazy, sticking with it is what matters. ...Will I stick with it?
+  - chat: [end_of_line_here, 'four days']
+  - say: Don't say four days! The Tamagotchi story is over!
+- title: Wrapping up
+  beats:
+  - chat: [green_glowstick_yr2, 'when is the next lottery?']
+  - say: The next lottery? Next week! You entering too, Year-Two?
+  - chat: [green_glowstick_yr2, 'yes']
+  - say: You're entering! Okay, if either of us wins, let's trade. Bring your sticker book.
+  - chat: [green_glowstick_yr2, 'yes!']
+  - chat: [end_of_line_here, 'whats the lottery deadline?']
+  - say: The deadline? Umm, wait, let me check. Oh, it's tomorrow morning.
+  - chat: [not_my_headcanon, 'enter now']
+  - say: Enter now? I'm entering now! The second I end stream! Bye, everyone, otsukaresama!

@@ -1,0 +1,192 @@
+title: My husband hung up the laundry for me... and why I shouldn't say it like that (plus our anniversary diner and the Kitakata plan)
+# 英訳（2026-10-27）。日本語は src/episodes/pim/007.yaml。拍の並びは日本語とそろえる。
+parts:
+- title: オープニング：ベランダの靴下
+  beats:
+  - say: It's Pim! Hello!
+  - say: Something super rare happened this morning. My husband hung up the laundry for me!
+  - chat: [husband_who_helps, "hi. good for him"]
+  - say: Husband who helps, you're marked present. Good for him, yes, good for him! Until I stepped out on the balcony.
+  - chat: [husband_who_helps, "what happened"]
+  - say: What happened? Every sock was hung up still balled up.
+  - chat: [gacha_broke_again, "hi. balled up socks never dry"]
+  - say: Balled up socks never dry! Gacha broke again, you get it!
+  - say: And all the shirts were inside out.
+  - chat: [husband_who_helps, "...is inside out bad?"]
+  - say: {face: surprised, text: 'Is inside out bad... wait, we are starting there?'}
+  - chat: [husband_who_helps, "my wife tells me to hang them inside out"]
+  - say: Your wife says inside out. Oh, right, some people do. Some houses hang them inside out on purpose so the color doesn't fade.
+  - say: Okay, inside out is fine. It was just different from how we do it.
+  - say: But the socks, I think every house agrees those are bad.
+  - chat: [oldest_in_8th_grade, "hi. my middle schooler balls up socks too"]
+  - say: Senpai, you're marked present. Middle schoolers do the balled up socks too?
+  - chat: [oldest_in_8th_grade, "they go in the washer in the exact shape they came off"]
+  - say: The exact shape they came off... That's my husband.
+  - say: Last winter, he put a sweater in the dryer.
+  - chat: [night_shift_survivor, "hi. it shrank"]
+  - say: It shrank, yes, it shrank. The sleeves came to about half his arm.
+  - say: I asked, didn't you look at the care label?
+  - say: {face: annoyed, text: 'He said, the circle in a square with an X, I thought that meant no onigiri. Like, no rice balls.'}
+  - chat: [gacha_broke_again, "no onigiri lmaooo"]
+  - say: No onigiri! What did he think it was banning, on a sweater?
+  - say: The circle in a square is the dryer. If it has an X, you don't put it in.
+  - chat: [first_time_here, "first time. so thats what that symbol means"]
+  - say: First time here, welcome! Yes, that's what that symbol means!
+  - chat: [first_time_here, "i thought it was a family crest"]
+  - say: You thought it was a family crest... Like the old samurai family crests? Laundry doesn't come with a family crest.
+  - say: Japan's care labels got redone in December twenty-sixteen.
+  - say: It used to be twenty-two symbols, and it went to forty-one.
+  - chat: [night_shift_survivor, "almost double"]
+  - say: Almost double, right? And in twenty twenty-four they added two more, so it's forty-three now, apparently.
+  - say: Hand wash temperatures, irons, stuff like that. Even I don't remember them all.
+  - say: My husband only remembers the onigiri.
+  - chat: [chinese_diner_heir, "hi. what about the number in the tub?"]
+  - say: Chinese diner heir, you're marked present! The number in the washtub symbol!
+  - say: The number in the tub is the max water temperature. Forty means up to forty degrees Celsius.
+  - chat: [chinese_diner_heir, "my dad washes all his kitchen whites on the hottest setting"]
+  - say: Your dad's chef whites on the hottest. For chef whites, that's probably fine. Sweaters, not fine.
+- title: 本題っぽいもの：「干してくれた」って言っちゃう
+  beats:
+  - chat: [husband_who_helps, "but i think just hanging it up for you is good of him"]
+  - say: Just hanging it up for me is good of him... That's the thing, husband who helps.
+  - say: I just said, he hung it up for me, didn't I?
+  - chat: [husband_who_helps, "you did"]
+  - say: I did, right? The moment I say for me, it means laundry is my job.
+  - chat: [husband_who_helps, "oh its the same as helping"]
+  - say: Same as helping, exactly. When you say you help, it makes the chores mine. Like they belong to me.
+  - chat: [husband_who_helps, "maybe i should change my name"]
+  - say: Change your name! You don't have to! Keep coming with that name.
+  - chat: [leaving_work_on_time, "do you tell your husband just do it?"]
+  - say: Do I tell my husband just do it? I do. Don't help, do it.
+  - chat: [husband_who_helps, "and when he does it?"]
+  - say: When he does it...
+  - chat: [husband_who_helps, "you redo it, right"]
+  - say: {face: surprised, text: 'You redo it, right... how do you know!'}
+  - chat: [husband_who_helps, "same at mine. when she redoes it i go, eh, whats the point"]
+  - say: When she redoes it you go, what's the point... oh no...
+  - say: My husband said almost the same thing last year.
+  - say: He said, if you're gonna redo it anyway, it's faster if you just do it from the start.
+  - chat: [night_shift_survivor, "thats gotta sting"]
+  - say: It stings, it stings. This morning I rehung every single sock. Right in front of him.
+  - chat: [husband_who_helps, "i said too much, sorry"]
+  - say: You said too much, sorry? No, it's not too much. It's true.
+  - say: Half the reason my husband stopped doing things is me. I know that.
+  - chat: [stuck_on_normal_ending, "hi. what if you rehang just the socks together?"]
+  - say: Stuck on normal ending, you're marked present. Rehang just the socks, together...?
+  - chat: [stuck_on_normal_ending, "isnt the problem that you redo it alone?"]
+  - say: The problem is redoing it alone. Oh, I see. If we do it together, it's not a redo anymore.
+  - say: That, I could actually ask him to do.
+- title: 脇道：靴下の色と、たたむかどうか
+  beats:
+  - chat: [gacha_broke_again, "what color are your socks?"]
+  - say: Sock color? Everyone in our family wears white.
+  - chat: [night_shift_survivor, "white shows dirt"]
+  - say: White shows dirt, it does. But you wash it and it goes back to white, so I like it.
+  - say: The thing is, everyone's are white, so you can't tell whose is whose.
+  - say: I tried sorting by size, and turns out my husband and I are the same size.
+  - chat: [gacha_broke_again, "same shoe size huh"]
+  - say: Same size! I thought his feet were bigger!
+  - say: So now I put one black dot with a marker on the heel of his socks.
+  - chat: [leaving_work_on_time, "does your husband know?"]
+  - say: Does he know? Nope. It's been about half a year.
+  - chat: [night_shift_survivor, "why not just all black?"]
+  - say: All the same black, huh. That's what Mora, Ella, and Nox do!
+  - say: Mora said that way if you lose one, it doesn't matter.
+  - chat: [first_time_here, "i get that black is easier"]
+  - say: Black is easier, I get it, it's definitely easier.
+  - say: Lise-sama and Vespa do colors and patterns. Vespa says she has a lot of green.
+  - chat: [gacha_broke_again, "losing one sock of a patterned pair hurts"]
+  - say: Losing one patterned sock hurts? Lise-sama said, if they're patterned, mismatched works as an excuse.
+  - chat: [night_shift_survivor, "lise is that okay lol"]
+  - ask:
+      q: Do you match your socks?
+      options:
+      - c: All the same black
+        r:
+        - "All the same black."
+        - '{name}, same as Mora and them. The lose one, no problem type.'
+      - c: Colors and patterns
+        r:
+        - "Colors and patterns, okay."
+        - '{name}, Lise-sama and Vespa''s side. Are your left and right matching?'
+      - c: White
+        r:
+        - "White!"
+        - '{name}, same as us! Don''t you lose track of whose is whose?'
+      - c: Never thought about it
+        r:
+        - "Never thought about it, huh."
+        - '{name}, that''s easy too. Nice.'
+      npc: [[gacha_broke_again, 0], [night_shift_survivor, 0], [husband_who_helps, 3], [first_time_here, 1]]
+  - chat: [husband_who_helps, "who folds the laundry?"]
+  - say: Lots of black! ...Who folds? Me. There was a day my husband folded, though.
+  - say: He folded the towels in quarters. We fold in thirds.
+  - chat: [oldest_in_8th_grade, "no way"]
+  - say: Yes way. I refolded every one.
+  - chat: [husband_who_helps, "thats how you get a husband who stops doing it"]
+  - say: That's how you get a husband who stops, yes. The next week, he stopped folding.
+  - say: ...I've been telling the same story over and over today, haven't I.
+  - chat: [gacha_broke_again, "its all redo stories lol"]
+  - say: All redo stories, yeah. Saying it out loud... ouch. That one stings a little.
+- title: 夫のいいところ：結婚記念日
+  beats:
+  - chat: [stuck_on_normal_ending, "doesnt your husband have any good points?"]
+  - say: My husband's good points? He does! He does.
+  - say: On our wedding anniversary, every year, we eat out, just the two of us. Same place every year.
+  - chat: [stuck_on_normal_ending, "somewhere fancy?"]
+  - say: Somewhere fancy... a machi-chuka. A neighborhood Chinese diner.
+  - chat: [chinese_diner_heir, "fair"]
+  - say: Fair, says the heir. Hearing that from a diner kid is such a relief.
+  - say: Every year my husband orders a bottle of beer. At that place, I have tea.
+  - chat: [night_shift_survivor, "you dont drink?"]
+  - say: Do I not drink? Just one can at home on Saturdays. When we're out, I pick up my daughter on the way home.
+  - say: The lady at the shop brings two glasses every year.
+  - chat: [chinese_diner_heir, "my mom does that too"]
+  - say: Your mom does that too! That second glass makes me so happy every year.
+  - chat: [night_shift_survivor, "so the shop remembers you"]
+  - say: {face: shy, text: 'The shop remembers us, I think. Two glasses come without us saying anything.'}
+  - say: Every year I get tenshinhan with salt sauce.
+  - say: The first year I ordered salt, my husband went, what, salt? He was team sweet and sour.
+  - chat: [gacha_broke_again, "and?"]
+  - say: And then? He had one bite of mine, and from year two, he switched to salt too.
+  - chat: [chinese_diner_heir, "and the order slip?"]
+  - say: {face: smug, text: 'The order slip? Every year, Ten-Shio two, Bi one. Bi for beer.'}
+  - chat: [chinese_diner_heir, "bi one lol"]
+  - say: Bi one! On the walk home, every year, my husband says, Ten-Shio two again next year. That's all. But.
+- title: また飛ぶ：喜多方の計画書
+  beats:
+  - chat: [chinese_diner_heir, "btw still no kitakata?"]
+  - say: Still no Kitakata... not yet. Heir, you remembered?
+  - chat: [first_time_here, "kitakata?"]
+  - say: Kitakata is a town in Fukushima. The ramen shops there open in the morning. They call it asa-ra, morning ramen.
+  - chat: [first_time_here, "ramen in the morning"]
+  - say: Ramen in the morning! There's a place called Bannai Shokudo that opens at seven a.m.
+  - say: I want to go there alone and eat a hot bowl of ramen, all the way to the end, before the noodles go soggy.
+  - chat: [night_shift_survivor, "alone?"]
+  - say: Alone, yes, alone. For years now, I haven't finished a single bowl of ramen while it was hot.
+  - say: When you're portioning out everyone else's first, yours goes soggy.
+  - chat: [oldest_in_8th_grade, "i get it. moms noodles are always soggy"]
+  - say: Mom's noodles are always soggy... you too, senpai. Yeah. They are.
+  - say: I do have a plan. The first train time, when the shop opens, the train home, it's all written down.
+  - chat: [husband_who_helps, "just go"]
+  - say: Just go, right? ...The house won't run without me. That's what I kept saying.
+  - say: Last week I opened my plan, and there was a sticky note on it. In my husband's handwriting.
+  - chat: [stuck_on_normal_ending, "what did it say"]
+  - say: What did it say? First train, schedule changed. Two minutes earlier.
+  - chat: [stuck_on_normal_ending, "your husband..."]
+  - say: My husband... right? He was secretly checking the train timetable. He won't read the meal plan, but.
+  - say: And there was one more line under it. I'll do everything at home that day. No redos allowed.
+  - chat: [husband_who_helps, "no redos allowed lol"]
+  - say: {face: shy, text: 'No redos allowed, apparently. He said it to me first.'}
+  - chat: [chinese_diner_heir, "go. and report back"]
+  - say: Go, and report back. I'll go. I'm thinking next month.
+  - chat: [husband_who_helps, "and if theres a balled up sock that day?"]
+  - say: If there's a balled up sock that day... I won't touch it. Probably. I'll try.
+- title: 締め
+  beats:
+  - say: Okay, that's it for today.
+  - say: This evening, when I bring in the socks, I'll call my husband over. The two of us.
+  - chat: [stuck_on_normal_ending, "waiting for the report"]
+  - say: Waiting for the report, yes, I'll tell you next time.
+  - chat: [gacha_broke_again, "and the kitakata report too"]
+  - say: The Kitakata report too, that one too. Pim, signing off!

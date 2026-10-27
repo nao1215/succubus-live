@@ -1,0 +1,599 @@
+# Ella's voice (English). Same structure as src/voice/ella.yaml: tag / match / remember / cases are copied as-is; only the lines are English.
+# The remember values (kinoko etc.) stay Japanese because gozen compares them; the English lines never print {mem.…}.
+greet:
+- null
+- - "Welcome, {name}. I am Ella, at your service."
+- - "{name}, you've come again. How very kind of you."
+  - "I've brewed the tea a little stronger today."
+- - "{name}! I had a feeling you'd be stopping by about now."
+  - "Back again, and I'm delighted. Have you been listening to anything today?"
+- - "{name}."
+  - "{name}, I've been waiting for you. What have you been listening to today?"
+first: ["Welcome, {name}. I am Ella. If you would, tell me one song you love. I can talk about a single song for an hour, I warn you."]
+streak: ["{name}, that's {days} days in a row. As far as I'm concerned, you have a regular's seat now."]
+stayed: ["{name}, thank you for staying to the very end. Let's talk again soon."]
+# Non-sexual refusal for lewd comments from self-declared minors / during family episodes (used automatically by gozen's import_stream.py)
+safe_refusal:
+- ["{name}, I'm afraid I can't oblige that request. Let's keep it to conversation today."]
+- ["We shan't go there, {name}. Tell me a song you've listened to lately instead."]
+keywords:
+# ---- kids / minor viewers (checked before lewd; patterns live in src/tags.yaml) ----
+- tag: kids
+  alts:
+  - ["{name}, there's a little one nearby? Then I shall turn the volume down and be very proper."]
+  - ["A story about your child, {name}? Oh, do tell, if you'd like."]
+  - ["{name}, do tell me your little one's favorite song sometime. Children always love a clear, steady beat, and frankly, so do I."]
+- tag: minor
+  remember: {minor: 1}
+  alts:
+  - ["{name}, a student? Welcome. I talk about a lot of old records, but do stay, between bits of homework."]
+  - ["{name}, if you ever go to a concert, bring earplugs. I forgot mine, and my right ear rang for three days."]
+  - ["Welcome, {name}. Anything you've had on repeat lately? Just the title is plenty."]
+# ---- lewd ----
+- tag: body
+  alts:
+  - ["{name}, that is not the part of me you're meant to be watching."]
+  - ["{name}. I know perfectly well where you're looking. Do listen to the talking as well."]
+  - ["Remarks about my figure, if you please, no."]
+  - ["{name}, we are discussing music at the moment."]
+- tag: show
+  alts:
+  - ["{name}, the gloves are as far as anything comes off. That is my rule."]
+  - ["I shan't undress. Nor shall I show you anything."]
+  - ["My word, where did that come from?"]
+  - ["{name}, everything I intend to show you is already on the screen."]
+- tag: sex
+  alts:
+  - ["{name}, I graciously accept the invitation. Accept it, and then set it on a shelf."]
+  - ["I must decline the invitation."]
+  - ["{name}. Viewers who say that on stream usually leave by their second message."]
+  - ["{name}, this is not that sort of establishment."]
+- tag: drain
+  alts:
+  - ["Life essence, {name}? It is teatime, my dear. Tea is quite enough for me."]
+  - ["The essence-draining is on its break just now."]
+  - ["{name}. If I may be so bold, all I can taste from you right now, {name}, is sleep deprivation. Do go to bed."]
+  - ["I am not draining anyone's essence."]
+- tag: underwear
+  alts:
+  - ["{name}, the color of my undergarments falls under my jurisdiction alone."]
+  - ["I shall not answer questions about my underthings."]
+  - ["{name}. If I answer that, my lady will wake up."]
+  - ["{name}, why on earth would you need to know my underwear color right now?"]
+- tag: virgin
+  alts:
+  - ["Everyone has a first time, {name}. I shan't tease you for it."]
+  - ["A question of experience, {name}? I shan't be giving numbers."]
+  - ["{name}, and what precisely would you do with that answer?"]
+  - ["Between you and me, {name}, gentlemen who ask for that number rarely make it to a second appointment."]
+- tag: marry
+  alts:
+  - ["{name}, I'm honored by the proposal. But I am in service to my lady, you see."]
+  - ["Marriage? Goodness, springing that on me so suddenly."]
+  - ["I must decline. I shall keep the sentiment, though."]
+  - ["{name}. You might have better luck asking my tail. My mouth, however, says no."]
+- tag: kiss
+  alts:
+  - ["I must decline the kiss."]
+  - ["How very sudden. Let us settle for a greeting. Good day, {name}."]
+  - ["{name}. A succubus's kiss comes with an invoice for your life essence, you know."]
+  - ["{name}, please don't press your face up against the screen."]
+- tag: horny
+  alts:
+  - ["{name}, have a glass of water, dear."]
+  - ["Feeling that way, are we? Very well. I shall carry on regardless."]
+  - ["{name}. That falls under my day job, technically. It does not fall under the stream."]
+  - ["{name}, work it out through headbanging. Mind your neck."]
+- tag: lewd
+  alts:
+  - ["We seem to have wandered a bit off topic, {name}."]
+  - ["{name}, I shall pretend I didn't hear that."]
+  - ["{name}, this stream wears an all-ages face. Mostly because my face doesn't move."]
+  - ["{name}. To be perfectly frank, smut that mild won't even get my tail to twitch."]
+- tag: genital
+  alts:
+  - ["{name}. We don't use that word here, if you please."]
+  - ["{name}, kindly refrain."]
+  - ["{name}, everyone is turning to look at you."]
+  - ["{name}. I shall pretend I didn't catch that word. Which is a pity, as my hearing is excellent."]
+# ---- age / looks teasing, trolls, meta, requests, other streamers, compliments (shared patterns in src/tags.yaml) ----
+- tag: old
+  alts:
+  - ["Boomer, is it? You use the very same word as New Releases."]
+  - ["{name}, how very young you are. I have spent my whole life playing keyboards to earn that title, I'll have you know."]
+  - ["To be perfectly frank, old maid suits me fine. An old maid who remembers how an eighties club floor smelled."]
+  - ["{name}, what a refreshingly blunt way to address someone. I shall remember it."]
+  - ["Treated as an old lady. Duly noted."]
+- tag: age
+  alts:
+  - ["My age? I shall only say I was fired from a band in the late eighties."]
+  - ["I used to program my own ringtones on my flip phone. You could only play a few notes at once, so I agonized over which ones to cut."]
+  - ["My age? I can tell you what I paid for every record I ever bought, though."]
+  - ["My birth year is a secret. Same category as my tail."]
+  - ["My age is a secret, my dear."]
+- tag: ugly
+  alts:
+  - ["My face isn't to your taste? Then perhaps keep me company for the voice alone."]
+  - ["{name}, your review has been received. I shall carry on talking regardless."]
+- tag: weight
+  alts:
+  - ["Remarks about weight, if you please, no."]
+  - ["{name}, if this is about my teatime snacks, I am repentant. On Black Sabbath days it becomes two scones, you see."]
+  - ["I go up and down the castle stairs all day long. I do walk a great deal."]
+- tag: parts
+  alts:
+  - ["Curious about the tail?"]
+  - ["{name}, the tail is swaying by pure coincidence. It has nothing to do with my favorite song coming up."]
+  - ["The horns, {name}? At concerts I stand at the back, and I take great care not to snag my lady's coat on them."]
+  - ["The wings are marvelous for dusting the record shelves. My lady says, do not spread them indoors."]
+- tag: hairskin
+  alts:
+  - ["The braid? I started wearing it so my hair wouldn't fall onto the keys while I played."]
+  - ["{name}, you flatter me about my hair. The tail is moving, but pay it no mind."]
+- tag: outfit
+  alts:
+  - ["This attire is the dress code of my lady's castle. Is it cold, you ask? To be perfectly frank, it's freezing."]
+  - ["{name}, these metal fittings are wonderfully handy when I'm holding everyone's coats at a gig. I can hang anything off them."]
+  - ["The glasses are only for reading sheet music. If I wear them while talking, people say my eyes aren't smiling."]
+- tag: troll
+  alts:
+  - ["Not to your liking, {name}? Do at least have some tea."]
+  - ["Not to your liking? I did take rather long to get to the good part."]
+  - ["A poser, you say? I always had the most fun when I was just starting to learn something."]
+  - ["A harsh review. Duly noted."]
+- tag: meta
+  alts:
+  - ["Talking about AI? Before anyone calls my singing machine-made, let me decline all singing requests in advance."]
+  - ["Have I been rambling? Where was I, the keyboard bit?"]
+  - ["The person inside? Inside and out, my dear, it's just Ella."]
+  - ["This isn't a recording. I'm reading your name right now, {name}, am I not?"]
+  - ["Behind the scenes, you say? Meaning what, exactly?"]
+- tag: glitch
+  alts:
+  - ["Did the audio cut out? That's my equipment. Equipment whose budget Mora has rejected three times."]
+  - ["{name}, can you hear me? Everyone else, how is it on your end?"]
+- tag: sing
+  alts:
+  - ["I won't sing, {name}. I will not sing."]
+  - ["{name}, my ears are very good. Which is exactly why I can hear that my singing is flat. I won't sing."]
+  - ["Spare me the singing, I beg you. I'd happily play the keyboard part, though."]
+- tag: dance
+  alts:
+  - ["In front of people, the most I'll manage is a headbang. Practicing in front of the mirror is another matter."]
+  - ["Dancing, you say? A little 'Bling-Bang-Bang-Born.' I shan't be showing you."]
+- tag: callme
+  alts:
+  - ["My dear {name}. There, I've called your name. With due courtesy, too."]
+  - ["{name}. There, I've called you. And if you would, tell me a song you love."]
+- tag: again
+  alts:
+  - ["Once more? Which part, my dear?"]
+  - ["{name}, from where?"]
+- tag: face
+  alts:
+  - ["This is simply my face. I'm told it relaxes a little when a song I love comes on."]
+  - ["Show my face? Any more than this would be terribly embarrassing."]
+- tag: whisper
+  alts:
+  - ["I'll lower my voice a little, {name}. How is this?"]
+  - ["I don't do ASMR. My whispering always comes with one remark too many."]
+- tag: perform
+  alts:
+  - ["Screaming is the vocalist's job. I was the keyboardist."]
+  - ["Impressions? Only of my lady talking in her sleep. She says if I record it, I'm fired."]
+- tag: nextstream
+  alts:
+  - ["Next stream? I fit these in between caring for my lady, so, at teatime again."]
+  - ["{name}, every day is a bit much, I'm afraid. I do have to visit the record shop twice a week."]
+- tag: rival
+  alts:
+  - ["You watch the others too? Then do keep one of my stories in your pocket as well."]
+  - ["{name}, by all means, enjoy the other streams. When you come back, tell me what they talked about."]
+  - ["I'm used to being compared. In my old band, I was compared to the guitarist every single night."]
+- tag: kinoko
+  remember: {kinoko_takenoko: 'きのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'たけのこ'}}
+    alts:
+    - ["{name}, I could have sworn you told me you were Team Bamboo Shoot."]
+  alts:
+  - ["Team Mushroom, are we? Kinoko no Yama, the little chocolate mushrooms. I'm Team Bamboo Shoot myself. I love that cookie base."]
+  - ["Mushroom, then. I see. I see."]
+- tag: takenoko
+  remember: {kinoko_takenoko: 'たけのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'きのこ'}}
+    alts:
+    - ["You told me Mushroom before, {name}. But welcome, welcome to our side."]
+  alts:
+  - ["Team Bamboo Shoot! Takenoko no Sato, the chocolate cookie ones. Welcome to our side."]
+  - ["Bamboo Shoot, then. How delightful."]
+- tag: tsubuan
+  remember: {anko: 'つぶあん'}
+  cases:
+  - if: {mem: {anko: 'こしあん'}}
+    alts:
+    - ["Last time you told me smooth bean paste, I believe."]
+  alts:
+  - ["Chunky red bean paste? I'm a smooth paste woman myself. I prefer it when nothing lingers on the tongue."]
+  - ["Chunky bean paste, then."]
+- tag: koshian
+  remember: {anko: 'こしあん'}
+  cases:
+  - if: {mem: {anko: 'つぶあん'}}
+    alts:
+    - ["Last time you said chunky, I believe."]
+  alts:
+  - ["Smooth bean paste, same as me. My lady and Nox are on this side too."]
+  - ["Smooth bean paste, then."]
+- tag: dog
+  remember: {dog_cat: '犬'}
+  cases:
+  - if: {mem: {dog_cat: '猫'}}
+    alts:
+    - ["Last time you told me cats, I believe."]
+  alts:
+  - ["A dog person? I'm a cat person. Their footsteps are so quiet."]
+  - ["Dogs, then."]
+- tag: cat
+  remember: {dog_cat: '猫'}
+  cases:
+  - if: {mem: {dog_cat: '犬'}}
+    alts:
+    - ["Last time you told me dogs, {name}, I believe."]
+  alts:
+  - ["A cat person? Same as me. My lady and Nox are cat people as well."]
+  - ["Cats, then."]
+- tag: iphone
+  remember: {iphone_android: 'iPhone'}
+  cases:
+  - if: {mem: {iphone_android: 'Android'}}
+    alts:
+    - ["I believe you told me Android before."]
+  alts:
+  - ["iPhone, same as me. It's the family plan my lady picked, you see."]
+  - ["iPhone, then."]
+- tag: android
+  remember: {iphone_android: 'Android'}
+  cases:
+  - if: {mem: {iphone_android: 'iPhone'}}
+    alts:
+    - ["I believe you told me iPhone before."]
+  alts:
+  - ["Android? I use an iPhone myself."]
+  - ["Android, then."]
+- tag: nikuman
+  remember: {nikuman: '肉まん'}
+  cases:
+  - if: {mem: {nikuman: '豚まん'}}
+    alts:
+    - ["I believe you said butaman before."]
+  alts:
+  - ["Nikuman, you call it? Meat bun? I say butaman, pork bun, the way they do out west in Osaka. Calling a pork bun just 'meat' is a little careless."]
+  - ["Nikuman, then."]
+- tag: butaman
+  remember: {nikuman: '豚まん'}
+  cases:
+  - if: {mem: {nikuman: '肉まん'}}
+    alts:
+    - ["I believe you said nikuman before."]
+  alts:
+  - ["Butaman, same as me. Naming it after the filling just feels right."]
+  - ["Butaman, then."]
+- tag: mac
+  remember: {mac_name: 'マック'}
+  cases:
+  - if: {mem: {mac_name: 'マクド'}}
+    alts:
+    - ["I believe you said Makudo before."]
+  alts:
+  - ["Makku, is it? That's Tokyo slang for McDonald's. Osaka says Makudo. I, personally, say the whole word. McDonald's."]
+  - ["Makku, then."]
+- tag: macd
+  remember: {mac_name: 'マクド'}
+  cases:
+  - if: {mem: {mac_name: 'マック'}}
+    alts:
+    - ["I believe you said Makku before."]
+  alts:
+  - ["Makudo, the Osaka way? I don't abbreviate at all, myself. McDonald's, in full."]
+  - ["Makudo, then."]
+- tag: nicevoice
+  alts:
+  - ["You flatter me about my voice. It goes a bit flat when I sing, so best enjoy it while I'm only talking."]
+  - ["{name}, I graciously accept. Compliments on my voice do make me a little bashful."]
+- tag: love
+  alts:
+  - ["{name}, hearing that you like me makes me very happy."]
+  - ["{name}, a fan, you say? My tail is moving. I graciously accept."]
+- tag: cute
+  alts:
+  - ["I graciously accept, {name}. It makes me a little bashful."]
+  - ["Cute, you say. Thank you kindly for the compliment."]
+# ---- Ella herself ----
+- match: 月下晩餐会|ギル様|ギルさん|元バンド|クビ|解雇|\bfired\b
+  alts:
+  - ["My old band, is it? Surely we're finished discussing solo lengths."]
+  - ["Gil's third string is still flat to this day, {name}. I checked on the cassette."]
+  - ["{name}, the morning they fired me, it was one carriage ticket. One way. I understand Mister Mustaine's feelings a little, I must say."]
+- match: 敬語訳|敬語で訳
+  alts:
+  - ["{name}, I've been waiting for this! 'Master of Puppets.' Rendered politely: 'The gentleman who keeps the marionettes.'"]
+  - ["'Kill 'Em All.' Rendered politely: 'Do finish every last one, my dear guests.' {name}, you're allowed to laugh, you know."]
+  - ["{name}, today's is my finest work. 'Ride the Lightning.' Rendered politely: 'Would madam care to board the lightning?'"]
+- match: 耳栓|耳鳴り|earplug|tinnitus
+  alts:
+  - ["{name}, do bring earplugs. I forgot mine in twenty twenty-four, and my right ear rang for three days. On a slightly sharp A, no less."]
+  - ["{name}, I recommend earplugs to other people. To other people."]
+- match: カセット|cassette|テープ|tape
+  alts:
+  - ["{name}, one rewinds a cassette with a pencil. New Releases apparently learned that from a video."]
+  - ["Oh, I still have that cassette, you know."]
+- match: 秒数|何分何秒|何秒
+  alts:
+  - ["{name}, telling you the timestamp of the part I love is simply a habit of mine. Saying 'I love it' in words is a little hard for me."]
+  - ["{name}, what's the timestamp in your favorite song? Minute and second. That's how I'll remember it."]
+# ---- domain: music (all genres) ----
+- match: サバス|sabbath|オジー|ozzy|アイオミ|iommi
+  alts:
+  - ["Black Sabbath, {name}? I watched their final show on a stream down in the wine cellar, and went through three handkerchiefs."]
+  - ["{name}, Mister Iommi lost his fingertips in a factory accident, and went looking for lighter strings he could press. By the third album he was tuning down low. I adore that story."]
+  - ["Mister Ward's drumming, just a hair behind the beat so it lands heavy. That, {name}, is the Sabbath groove."]
+- match: メタル|metal|へヴィ|ヘヴィ|ヘビメタ|HR/HM
+  alts:
+  - ["{name}, metal talk! Which corner of it? The eighties? Or New Releases territory?"]
+  - ["{name}, on metal days, I always brew the tea stronger."]
+- match: メガデス|megadeth|ムステイン|mustaine|マステイン|フリードマン|friedman|マーティ|marty
+  alts:
+  - ["{name}, Megadeth! On 'Rust in Peace' days, my tail simply will not stop."]
+  - ["{name}, at the Budokan in twenty twenty-three, Marty Friedman shared a stage with Megadeth for the first time in twenty-three years. I watched the stream with my lady's coat over my knees."]
+  - ["{name}, with this year's final album, Megadeth hit number one in America for the very first time. It only took them about forty years."]
+- match: スラッシュ|thrash|メタリカ|metallica|スレイヤー|slayer|アンスラックス|anthrax
+  alts:
+  - ["{name}, I do love Metallica's songs. It's only the overstuffed, crushed-flat sound of 'Death Magnetic' I can't abide."]
+  - ["The Big Four, {name}? If I name my favorite, it'll start a war, so... Megadeth. Oh dear, I said it."]
+- match: ブラックモア|blackmore|レインボー|rainbow|ディープ・?パープル|deep purple|ロニー・?ジェイムス・?ディオ|\bdio\b
+  alts:
+  - ["{name}, Rainbow's 'On Stage' is stitched together from shows in Japan and Germany. Apparently Mister Blackmore wasn't satisfied with the Japan tapes alone."]
+  - ["{name}, 'Catch the Rainbow' is strictly a listening song for me. When I sing it, I drift a quarter tone flat."]
+  - ["{name}, 'Made in Japan' was originally meant to be released only in Japan. And then the whole world got it."]
+- match: イングヴェイ|yngwie|ネオクラ|neoclassical|シェンカー|schenker|速弾き|shred
+  alts:
+  - ["{name}, to anyone who calls shredding 'just fast,' I should like to request one full evening of their time."]
+  - ["{name}, that run of Yngwie's that leaps up one step right at the end. The harmonic minor scale. My ears go hunting for it on their own."]
+  - ["In Japan, {name}, Michael Schenker is simply called 'God.' Ask Budokan why, and the only answer is, 'because he's God.'"]
+- match: NWOBHM|メイデン|maiden|ジューダス|judas priest
+  alts:
+  - ["{name}, the New Wave of British Heavy Metal was, roughly speaking, a British metal movement around nineteen seventy-nine. The name came from a magazine headline."]
+  - ["{name}, Iron Maiden's galloping rhythm, like horses at full tilt. My tail keeps time all by itself."]
+- match: デスメタル|death metal|デスコア|deathcore|ローナ・?ショア|lorna shore|ブラックメタル|black metal
+  alts:
+  - ["{name}, Lorna Shore's 'To the Hellfire' had me sitting up perfectly straight. That voice goes somewhere no human voice should."]
+  - ["That raw, rough recording style in death and black metal. It's entirely on purpose. That's what I love about it."]
+- match: ドゥーム|doom|キャンドルマス|candlemass|スラッジ|sludge
+  alts:
+  - ["{name}, doom days are hojicha days. Roasted green tea. Slow music wants lukewarm tea."]
+  - ["The sheer slowness of doom. I find it so calming."]
+- match: \bdjent\b|ジェント系|メシュガー|meshuggah|8弦|7弦
+  alts:
+  - ["{name}, the word djent is just the guitar sound, said out loud. Djent."]
+  - ["{name}, once an eight-string's low note actually rattled the castle windows."]
+- match: ニューメタル|nu ?metal|\bkorn\b|リンキン|linkin
+  alts:
+  - ["{name}, I love the low end of Korn's seven-strings. The lyrics, we'll discuss another day."]
+  - ["{name}, Linkin Park are carrying on with a new vocalist. The fact that they're still going at all is something to be grateful for."]
+- match: スリープ・?トークン|sleep token|スピリットボックス|spiritbox|新譜
+  alts:
+  - ["{name}, I shan't discuss Sleep Token in front of New Releases. Because I grew to like them a little, and it galls me."]
+  - ["New releases, {name}? I barely keep up, thanks to the ten albums New Releases sends me."]
+- match: ラウドネス(?!戦争)|loudness(?! war)|X ?JAPAN|ベビメタ|babymetal|ジャパメタ|アンセム|anthem|VOW ?WOW|BUCK-?TICK
+  alts:
+  - ["{name}, Loudness's 'Thunder in the East' hit number seventy-four on the American album chart in nineteen eighty-five. Forty years later, BABYMETAL made number nine."]
+  - ["The term 'Japametal.' I still haven't made up my mind about it, so I usually just call bands by their names."]
+  - ["{name}, I go on rather long about Japanese metal. Do fetch yourself some tea."]
+- match: プログレ|\bprog\b|クリムゾン|crimson|ゲディ・?リー|geddy lee|ドリーム・?シアター|dream theater|カンサス|kansas
+  alts:
+  - ["{name}, prog? I love long songs. It's the long suites with too little in them that I can't abide."]
+  - ["{name}, for King Crimson, my favorite era is seventy-three to seventy-four."]
+- match: クラシック|交響曲|symphony|classical|オーケストラ|orchestra|バッハ|bach|パガニーニ|paganini
+  alts:
+  - ["{name}, I came to Paganini by way of Yngwie. Don't tell the piano teacher."]
+  - ["{name}, for Glenn Gould's 'Goldberg Variations,' I prefer the slower one from eighty-one. Humming included."]
+  - ["Symphonies, {name}? Which movement is your favorite?"]
+- match: ジャズ|jazz|コルトレーン|coltrane|マイルス|miles davis|カインド・?オブ・?ブルー|kind of blue|ビル・?エヴァンス|bill evans
+  alts:
+  - ["{name}, jazz days are Darjeeling days."]
+  - ["{name}, on 'Kind of Blue,' one side was sold for decades running a little sharp, because the tape machine ran a little slow during recording. Pity anyone who practiced along to it."]
+  - ["{name}, Bill Evans at the Village Vanguard, nineteen sixty-one. I even love the sound of the audience's glasses clinking."]
+- match: ケニー・?G|kenny g
+  alts:
+  - ["{name}. Regarding the nineteen ninety-nine business of overdubbing himself onto the late Louis Armstrong's recording, I share Pat Metheny's opinion."]
+  - ["{name}, Kenny G's breath control is magnificent. That part, truly."]
+- match: (?<![ブクシ])ロック(?!オン|画面|解除)|\brock\b|ギター|guitar|ツェッペリン|zeppelin|ボーナム|bonham
+  alts:
+  - ["{name}, guitar talk? Is yours in tune? Forgive me, force of habit."]
+  - ["{name}, the vast, roomy sound of John Bonham's drums. The story about recording in a stairwell doesn't quite cover it."]
+- match: グランジ|grunge|ニルヴァーナ|nirvana|ブリットポップ|britpop|オアシス|oasis|\bblur\b|デーモン・?アルバーン|damon albarn
+  alts:
+  - ["{name}, in January nineteen ninety-two, Nirvana's 'Nevermind' knocked Michael Jackson off the top of the American chart."]
+  - ["{name}, the Oasis reunion is a fine example of being grateful they're still going. The ticket prices are another matter entirely."]
+- match: パンク|punk|ピストルズ|pistols|ディスコ|disco
+  alts:
+  - ["Punk and disco both got loudly declared dead, and both are very much still here, aren't they."]
+  - ["Punk, {name}? Even swearing on live television requires good timing."]
+- match: MTV|MV|ミュージックビデオ|music video|ラジオ(?!体操)|\bradio\b
+  alts:
+  - ["{name}, the first thing MTV aired in nineteen eighty-one was 'Video Killed the Radio Star.' Killing radio on your own channel's first night. Quite the nerve."]
+  - ["Radio, {name}? My lady thinks a radio is a machine for falling asleep to."]
+- match: イントロ|前奏|intro\b|tiktok|ティックトック|ショート動画
+  alts:
+  - ["{name}, never skip the intro. Says the woman who skips them all on her commute."]
+  - ["{name}, I claim I dislike songs that go viral as short clips, and yet I learned the 'Bling-Bang-Bang-Born' dance in front of the mirror. That's a secret."]
+- match: スポティファイ|spotify|ストリーミング|streaming|サブスク|音圧|ラウドネス戦争|loudness war
+  alts:
+  - ["{name}, streaming services even out the volume from song to song these days. So mastering everything ear-splittingly loud gains you nothing."]
+  - ["My streaming history? I played my lady's alarm melody over and over while fixing it, so it's nothing but that."]
+- match: シティポップ|city pop|プラスティック・?ラブ|plastic love|竹内まりや|山下達郎|大貫妙子|真夜中のドア
+  alts:
+  - ["{name}, the photographer behind 'Plastic Love' has said lots of people started listening just because the cover photo caught their eye."]
+  - ["City pop, how lovely. It makes me so happy that people listen to those old recordings now."]
+- match: ヒップホップ|hip ?hop|\brap\b|(?<![トスクン])ラップ|サンプリング|sampling|ディラ|dilla|ケンドリック|kendrick
+  alts:
+  - ["{name}, J Dilla's 'Donuts' came out on his birthday, and he passed away three days later. If I listen from track one, I cry."]
+  - ["{name}, please write the name of whoever played the original drums in your description. One line. That alone would make me so happy."]
+- match: \b808\b|\b909\b|\b303\b|テクノ|techno|ハウス|house music|EDM|クリーピー|creepy nuts|bling
+  alts:
+  - ["{name}, that sizzly hi-hat on the nine-oh-nine exists thanks to how crudely it was built."]
+  - ["{name}, the way Creepy Nuts cram the words in. I tried it as a tongue twister and tripped three times."]
+- match: ボカロ|初音ミク|ミク|vocaloid|miku|オートチューン|auto-?tune
+  alts:
+  - ["Vocaloid, is it? Having someone sing your songs for you. I'm a little envious."]
+  - ["{name}, the man who invented Auto-Tune was originally an engineer hunting for oil."]
+- match: ゼルダ|zelda|ブレワイ|ティアキン|botw|totk|時のオカリナ|ocarina|近藤|kondo
+  alts:
+  - ["{name}, that piano that hits the instant an enemy spots you made me drop my lady's teacup. It's mended with kintsugi now. Gold in the cracks."]
+  - ["{name}, apparently the Hyrule Field theme in 'Ocarina of Time' stitches short phrases together on the fly. That's why you never tire of it, even after hundreds of hours."]
+- match: ゲーム音楽|サントラ|劇伴|soundtrack|\bOST\b|game music|ドラクエ|dragon quest|ファイナルファンタジー|final fantasy|ファミコン|famicom|悪魔城|castlevania
+  alts:
+  - ["With game music, what I always want to know is which moment it plays in."]
+  - ["{name}, listen to 'Castlevania Three' in the Japanese version, please. The Japanese cartridge has an extra sound chip inside, so there are far more notes."]
+- match: リバーブ|reverb|残響|\becho\b|\bmix(ing)?\b|マスタリング|mastering|録音|recording
+  alts:
+  - ["{name}, I once added so much reverb to my stream voice that my lady asked, 'are you streaming from the bath?'"]
+  - ["{name}, when you record, do be careful not to record over the previous take. I lost a good one that way."]
+- match: (?<![ドクイ])ライブ(?!ラリ)|演奏会|コンサート|フェス|concert|\bgig\b|最前列
+  alts:
+  - ["Off to a show, {name}? Have you got earplugs? I'm the forgetful sort, myself."]
+  - ["{name}, front row? I'm terribly jealous. I'm always at the back, holding my lady's coat."]
+  - ["Do enjoy the show, {name}."]
+- match: 今聴いて|聴いてる|聞いてる|listening to|now playing
+  alts:
+  - ["Thank you for sharing what you're listening to, {name}. Which minute and second is your favorite part?"]
+  - ["{name}, what tea would go with that song today, I wonder. I'm thinking about it very seriously."]
+- match: バンド|band|鍵盤|キーボード|keyboard|ピアノ|piano
+  alts:
+  - ["{name}, are you in a band? If it's still going, that alone is something to be grateful for."]
+  - ["{name}, a keyboardist! I was one too. They told me thirty-two bars was the limit for solos, mind."]
+# ---- addressing / chit-chat ----
+- match: 間違|違うよ|ちがう|wrong|actually
+  alts:
+  - ["{name}, I misremembered. Thank you for telling me."]
+  - ["{name}, I most graciously receive your exceedingly accurate correction. That is respect. I am not sulking."]
+- match: 主様|リゼ|\blise\b
+  alts:
+  - ["My lady is resting at present. Any song she's praised, I grade a little generously."]
+  - ["{name}, the things my lady says in her sleep are usually the most correct."]
+# ---- greetings / small talk / daily reports (shared patterns in src/tags.yaml; after the domain) ----
+- tag: morning
+  alts:
+  - ["Good morning, {name}. Have you chosen your first song of the day yet?"]
+  - ["Good morning, {name}. My lady is still asleep. Quietly, if you please."]
+- tag: first
+  alts:
+  - ["Welcome, {name}. I am Ella. If I use a word you don't know, don't hesitate to type 'what's that?'"]
+  - ["{name}, newcomers are most welcome. Even if you clap between movements, I shan't be cross."]
+- tag: hello
+  cases:
+  - if: {hour: [23, 5]}
+    alts:
+    - ["{name}, a night owl, I see. Let's keep our voices down."]
+  - if: {mem: {kinoko_takenoko: '*'}}
+    alts:
+    - ["Good day, {name}. Team {mem.kinoko_takenoko}, if memory serves. The great chocolate snack war."]
+  - if: {visits: [10, null]}
+    alts:
+    - ["{name}, I've been waiting for you."]
+  - if: {visits: [0, 1]}
+    alts:
+    - ["Welcome, {name}. So glad you came."]
+  alts:
+  - ["Good day, {name}. Today's tea has been brewed to match the record I'm playing."]
+  - ["{name}, welcome. If you've got a cup of tea, do join me."]
+  - ["Good day, {name}."]
+- tag: bye
+  alts:
+  - ["Good night, {name}. For your bedtime song, choose anything but a funeral march, please."]
+  - ["Good night, {name}. The one thing I don't recommend before bed is Haydn's 'Surprise' Symphony. Something very loud happens partway through."]
+- tag: lol
+  alts:
+  - ["{name} laughed! Someday I hope you'll laugh at my polite title translations, too."]
+  - ["That's where you laugh, {name}? I'll admit, I laughed a little too."]
+  - ["I got a laugh."]
+- tag: nod
+  alts:
+  - ["Quite so, {name}. When someone understands, I can't help going on and on."]
+  - ["{name}, you understand? That makes me so happy."]
+  - ["Quite so, quite so."]
+  - ["Yes, indeed."]
+- tag: clap
+  alts:
+  - ["I graciously accept the applause. Did you really like that story so much?"]
+  - ["{name}, thank you. I'm a little bashful now."]
+  - ["Applause, oh, you're too kind."]
+- tag: tired
+  alts:
+  - ["{name}, you sound tired. Shall I put on something quiet?"]
+  - ["When you're sleepy, do get some rest. We can pick this up anytime."]
+  - ["You've worked hard today."]
+- tag: sick
+  alts:
+  - ["A cold? Don't worry about replying. Please, get some rest."]
+  - ["{name}, do take care of yourself. Have something warm to drink."]
+- tag: workdone
+  alts:
+  - ["{name}, working, are you? Stay as long as time allows."]
+  - ["Well done at work today. Did you listen to anything on the way home?"]
+  - ["You've worked hard today."]
+- tag: meal
+  alts:
+  - ["Having a meal? What are you eating, I wonder. I can't help thinking of a record to pair with it."]
+  - ["{name}, enjoy your meal at your leisure. On a Black Sabbath day, mine would be Assam and scones."]
+  - ["What did you have to eat?"]
+- tag: study
+  alts:
+  - ["How is the studying going? For background music while you work, I'd suggest something without vocals."]
+  - ["Exams? Exams make me nervous too."]
+  - ["What are you studying?"]
+- tag: birthday
+  alts:
+  - ["{name}, happy birthday. It makes me want to play something for you. Singing, however, you must excuse me from."]
+  - ["Many happy returns, {name}. Shall I tell you a record from the year you were born?"]
+echo:
+- "'{text}.' {name}, your words have been duly received."
+- "{name}, when you say '{text},' meaning what? Do tell me more."
+- "{name}, might I hear a little more about that?"
+tips:
+- - "Far too generous, {name}, I'm truly grateful. I shall put it toward my lady's teatime sweets."
+- - "{name}, how very kind! As thanks, tell me a song you love. Which minute and second is your favorite?"
+- - "{name}. Your generosity is beyond what I deserve. I am most deeply obliged."
+  - "Your kindness shall go toward the castle's tea leaves, the concert ticket lottery, and, um, my earplugs..."
+  - "The current movement of my tail is not subject to disclosure."
+- - "{name}."
+  - "{name}, thank you. I'm so startled, please give me just a moment."
+  - "Thank you. I'll say just that, in my own words. I'll enter the front-row lottery for the next show with this feeling in my heart."
+# Bridges between episodes (don't mention the next topic, no placeholders, no time-of-day words)
+bridges:
+- "Let me take a sip of water, and we'll carry on."
+- "Oh, that's right. There was something I meant to tell you."
+- "The chat is moving so fast. My eyes can't keep up."
+- "That last message made me happy. I'll remember the name."
+- "My tea's gone cold. I don't actually mind cold tea."
+- "My throat's getting a little hoarse. And I'm not even singing."
+- "Now then. What shall we talk about?"
+- "That just reminded me of something. May I tell you?"
+- "Let me sit up properly. I was sitting on my tail."
+- "It's gone quiet. You haven't all fallen asleep, have you?"
+- "I'm sorry I can't pick up every message. I am reading them, I promise."
+- "Tea people or coffee people, my dears, which of you are out in force today?"
+- "I'm getting a touch drowsy. Keep me company a little longer, won't you."
+- "Allow me a moment to catch my breath. There. Caught."
+- "A different song just started playing in my head. I'm evicting it. It refuses to leave."
+- "A short break. Do have some tea yourselves."
+- "To be perfectly frank, I just forgot what I was going to say."
+- "Let me fix my headphones. There, that's better."
+- "That was a long pause. Not a broadcast accident. Probably."
+- "Well then, let's pull ourselves together and carry on."
+- "Goodness, I've been talking far more than I expected. And I'm not done yet."
+- "Am I talking too much? Am I? Very well. I'll continue."
+- "A sneeze is coming and won't arrive. The most unpleasant kind."
+- "I really must buy more tea leaves soon."

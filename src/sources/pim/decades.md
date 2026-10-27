@@ -1,0 +1,16 @@
+# pim 年代別の材料（バイブル decades の出典）
+- Valleyspeak（1982 Valley Girl） → https://en.wikipedia.org/wiki/Valleyspeak
+- JET プログラム（1987） → https://en.wikipedia.org/wiki/JET_Programme
+- Clueless（1995） → https://en.wikipedia.org/wiki/Clueless
+- google の動詞化（2006） → https://en.wikipedia.org/wiki/Google_(verb)
+- Oxford の今年の言葉（selfie 2013、絵文字 2015）、2023〜2025年の各辞書 → https://en.wikipedia.org/wiki/Word_of_the_year
+- 1.57ショック、エンゼルプラン、合計特殊出生率、幼保無償化、こども家庭庁 → 各 ja.wikipedia の項目（bible の URL）
+- 保育園落ちた日本死ね（2016年2月15日投稿、国会、流行語大賞トップテン） → https://ja.wikipedia.org/wiki/%E4%BF%9D%E8%82%B2%E5%9C%92%E8%90%BD%E3%81%A1%E3%81%9F%E6%97%A5%E6%9C%AC%E6%AD%BB%E3%81%AD!!!
+- Safe to Sleep / Back to Sleep（1994） → https://en.wikipedia.org/wiki/Safe_to_Sleep
+- タンポポ（1985） → https://en.wikipedia.org/wiki/Tampopo
+- 新横浜ラーメン博物館（1994年3月6日） → https://ja.wikipedia.org/wiki/%E6%96%B0%E6%A8%AA%E6%B5%9C%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E5%8D%9A%E7%89%A9%E9%A4%A8
+- 野口聡一の宇宙ラーメンの希望（2005） → https://ja.wikipedia.org/wiki/%E9%87%8E%E5%8F%A3%E8%81%A1%E4%B8%80
+- 蔦、ミシュランガイド東京2016で世界初の一つ星 → https://ja.wikipedia.org/wiki/Japanese_Soba_Noodles_%E8%94%A6
+- 風営法の改正の沿革（1984/1985、1998/1999、2005/2006、2015/2016、2025、熊本のスカウトバック初検挙） → https://ja.wikipedia.org/wiki/%E9%A2%A8%E4%BF%97%E5%96%B6%E6%A5%AD%E7%AD%89%E3%81%AE%E8%A6%8F%E5%88%B6%E5%8F%8A%E3%81%B3%E6%A5%AD%E5%8B%99%E3%81%AE%E9%81%A9%E6%AD%A3%E5%8C%96%E7%AD%89%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%B3%95%E5%BE%8B
+- 確かめず使わない：日清「スペース・ラム」という製品名、うつぶせ寝の流行の正確な年代。
+- bible で〔要確認〕にしたもの：Valleyspeak、JET、Clueless、google の動詞化、Safe to Sleep、タンポポ、エンゼルプラン、1.57ショック、出生率1.26、無償化、こども家庭庁は、今回 WebFetch で本文を開いていない（定説として記した）。台本に使う前に開いて確かめること。

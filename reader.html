@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台本の読み比べ（Succubus Live）</title>
+<style>
+  :root { --bg: #0f0b14; --panel: #1a1422; --line: #2c2238; --text: #eee6f5; --dim: #9c8fae; --accent: #ff5fa2; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif; line-height: 1.7; }
+  header { position: sticky; top: 0; background: rgba(15,11,20,.95); border-bottom: 1px solid var(--line); padding: 10px 16px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; z-index: 2; }
+  header h1 { font-size: 15px; margin: 0 8px 0 0; }
+  header button { background: var(--panel); border: 1px solid var(--line); color: var(--text); border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  header button.on { border-color: var(--c); color: var(--c); }
+  main { max-width: 760px; margin: 0 auto; padding: 12px 16px 80px; }
+  h2 { font-size: 20px; margin: 18px 0 4px; }
+  .meta { color: var(--dim); font-size: 13px; margin-bottom: 14px; }
+  .line { margin: 2px 0; }
+  .say b { margin-right: 6px; }
+  .face { font-size: 11px; color: var(--dim); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-right: 4px; }
+  .chat { color: var(--dim); font-size: 14px; padding-left: 12px; }
+  .chat b { color: #7fb2ff; font-weight: 600; margin-right: 6px; }
+  .ask { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin: 10px 0; }
+  .ask .opt { margin: 6px 0 0 8px; }
+  .ask .opt > span { color: #ffd36b; font-weight: 700; }
+  .ask .r { padding-left: 16px; font-size: 14px; }
+  select { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px; font: inherit; }
+</style>
+</head>
+<body>
+<header><h1>台本の読み比べ</h1><span id="who"></span><select id="ep"></select></header>
+<main id="out"></main>
+<script>
+'use strict';
+const $ = (s) => document.querySelector(s);
+const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const FACE = { smile: '笑顔', smug: 'ドヤ', shy: '照れ', surprised: '驚き', annoyed: 'ジト目' };
+let DATA, cur = null;
+const names = {};
+function speaker(id) { const s = DATA.streamers.find((x) => x.id === id); return s ? `<b style="color:${s.color}">${esc(s.name)}</b>` : esc(id); }
+async function show(id, i) {
+  const ep = await (await fetch(`data/ja/ep/${id}/${i}.json`)).json();
+  const html = [`<h2>${esc(ep.title)}</h2><div class="meta">${Math.round(ep.secs / 60)}分・拍 ${ep.beats.length}</div>`];
+  for (const b of ep.beats) {
+    if (b[0] === 'say') html.push(`<div class="line say">${speaker(b[1])}${b[3] ? `<span class="face">${FACE[b[3]] || b[3]}</span>` : ''}${esc(b[2])}</div>`);
+    else if (b[0] === 'chat') html.push(`<div class="line chat"><b>${esc(b[1])}</b>${esc(b[2])}</div>`);
+    else {
+      const a = b[1];
+      html.push(`<div class="ask"><div>${speaker(a.who)}${esc(a.q)}</div>` + a.options.map((o) => `<div class="opt"><span>［${esc(o.c)}］</span>`
+        + o.r.map(([sp, t]) => `<div class="r">${speaker(sp)}${esc(t)}</div>`).join('') + '</div>').join('') + '</div>');
+    }
+  }
+  $('#out').innerHTML = html.join('');
+  scrollTo(0, 0);
+}
+function pickStreamer(s) {
+  cur = s;
+  document.querySelectorAll('#who button').forEach((b) => b.classList.toggle('on', b.dataset.id === s.id));
+  $('#ep').innerHTML = s.episodes.map((e, i) => `<option value="${i}">${String(i + 1).padStart(3, '0')}（${Math.round(e.secs / 60)}分）</option>`).join('');
+  show(s.id, 0);
+}
+(async () => {
+  DATA = await (await fetch('data/index.json')).json();
+  $('#who').innerHTML = DATA.streamers.map((s) => `<button data-id="${s.id}" style="--c:${s.color}">${esc(s.name)}</button>`).join(' ');
+  document.querySelectorAll('#who button').forEach((b) => { b.onclick = () => pickStreamer(DATA.streamers.find((s) => s.id === b.dataset.id)); });
+  $('#ep').onchange = () => show(cur.id, $('#ep').value);
+  pickStreamer(DATA.streamers[0]);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,785 @@
+# ヴェスパの好み（共通の雑談の話題への答え）。2026-10-27。問いは src/bible/common-topics/。派閥は likes/_factions.yaml。
+# 回によって答えを変えない。stories は持ちネタで、一つの回で一つずつ使う。
+# 住まいは城下のワンルーム（家賃をモーラに借りた件は bible の life）。子どもの頃と学校は魔界の学舎（寮）で、人間界のものに触れたのは1981年から。
+# 家族の話は出さない（bible に親・実家の設定がない）。親や実家を聞かれたら、寮・常連・ほかの5人の話にずらして答える。
+id: vespa
+likes:
+  # 食べ物
+  food_fav: 551蓬莱の豚まん。大阪遠征の帰りに新大阪で必ず買うから
+  food_last_meal: くら寿司で好きなだけ。最後の一皿でビッくらポンを回したい
+  food_dislike: 春菊。好きな人は否定しないよ、鍋に入ると全部その味になるのが苦手
+  food_overcome: パクチー。台北の屋台で避けきれずに食べたら平気になった
+  food_cupnoodle: 日清のカップヌードル シーフード。列整理の休憩室で三分きっかり待てる唯一のもの
+  food_ramen: 豚骨。バリカタで替え玉まで行ける
+  food_ramen_topping: 紅しょうがとキクラゲ。豚骨には紅しょうがを山盛り
+  food_curry_house: 店。辛口を頼んで、自分の家では作らない
+  food_curry_topping: ロースカツ。CoCo壱で辛さを上げてカツをのせる
+  food_onigiri: ファミマの紅しゃけ。遠征の朝に二個買う
+  food_sushi: 炙りサーモン。ビッくらポンのために皿を早く重ねたいから軽いのから
+  food_sushi_last: 玉子。甘い卵焼き派なので寿司も玉子で終わる
+  food_nabe_finish: ラーメン。豚骨好きなのでスープが濃い鍋ほど麺を入れたい
+  food_nabe: もつ鍋。博多の聖地巡礼で食べて以来
+  food_gyoza: 焼き。タレは酢とこしょうだけ。大阪の一口餃子が好き
+  food_karaage: もも。じゅわっとする方。レモンはかける
+  food_yakiniku: ハラミ。タンから行く作法は気にしない
+  food_yakitori: タレ。ねぎまとつくね。並ぶ屋台ならつくね
+  food_soba_udon: うどん。丸亀製麺の釜玉が遠征の朝ご飯
+  food_natto: 付属のタレとからし、あとから混ぜる。それ以上は足さない
+  food_tkg: 醤油を先にご飯にかけてから卵。混ぜすぎない
+  food_rice_friend: 明太子。博多の土産で一番うれしい
+  food_bento: 仙台の牛たん弁当。紐を引くと温まるやつ
+  food_pizza: ハワイアン。酢豚のパイナップルも賛成派なので
+  food_bread: カレーパン。並びながら片手で食べられる
+  food_sandwich: たまごサンド。ファミマのは遠征の常備食
+  food_spicy: 蒙古タンメン中本の北極まで。翌日の物販バイトがきつかった
+  food_local: 大洗のしらす丼。ガルパンの聖地で食べる用
+  food_junk: ファミチキ。夜中の二時に歩いてでも買いに行く
+  food_eat_order: 先に食べる。現場の休憩はいつ呼ばれるか分からないから
+  food_rice_amount: 大盛り。段ボール四箱運ぶ日は特盛り
+  food_mayo: 冷やし中華とお好み焼き。ポテトにもちょっと
+  food_oden: 牛すじ。ファミマのおでんで最初に取る
+  food_okonomiyaki: 関西風。大阪の遠征で鉄板の前に座るのが好き
+  food_teishoku: 唐揚げ定食。レモンはかける。ご飯おかわり
+  # お菓子
+  sweets_fav_snack: たけのこの里。チョコが多い。エラも同じ派で心強い
+  sweets_chips: コンソメ。カルビーのコンソメパンチ
+  sweets_chips_brand: プリングルズ。筒だから痛バッグの中でも割れない
+  sweets_choco: ブラックサンダー。物販の差し入れで一番うれしい
+  sweets_gummy: 硬い派。ハリボーのゴールドベア。列の待ち時間をかんで過ごせる
+  sweets_dagashi: ヤッターめん。当たりが出るまで買い続けた
+  sweets_ice: ガリガリ君ソーダ。夏の待機列で食べる
+  sweets_winter_ice: こたつでアイスは毎年やる。パピコを半分ずつ
+  sweets_ice_cup: コーン。並びながら食べても最後まで垂れない
+  sweets_konbini: ファミマのシュークリーム。夜のコンビニでつい
+  sweets_cake: いちごのショートケーキ。いちごは先に食べる
+  sweets_wagashi: たい焼き。つぶあんで、頭から
+  sweets_donut: ゴールデンチョコレート。粒が膝にこぼれるのも込みで好き
+  sweets_pudding: とろとろ。スプーンで飲めるくらいのが好き
+  sweets_omiyage: 白い恋人。北海道の遠征仲間が必ずくれる
+  sweets_omiyage_give: 551の豚まん。冷めても喜ばれる
+  sweets_salty_sweet: 甘い派。たけのこの里を一箱いってから水を飲む
+  sweets_limited: 弱い。期間限定とコラボの文字だけで買う
+  sweets_candy: ミンティア。チェキ会の前に必ず二粒
+  sweets_cookie: ブルボンのアルフォート。遠征の新幹線用
+  sweets_rice_cracker: ぼんち揚。大阪の味だと思っている
+  sweets_best_ever: 原宿で並んだ1日限定のパンケーキ。並んだ時間で美味しさが増していた
+  sweets_late: コンビニまで買いに出る。家には置かないようにしているので
+  sweets_sharing: パーティー開けする。遠征の夜は全員分
+  sweets_bread_sweet: メロンパン。海老名サービスエリアのが一番
+  sweets_kaki: 柿の種だけ。ピーナッツは隣の人にあげる
+  # 飲み物
+  drink_coffee_tea: コーヒー。現場の朝はこれがないと声が出ない
+  drink_coffee_how: ミルクたっぷり、砂糖なし。スタバならラテ
+  drink_can_coffee: BOSSのカフェオレ。冬の待機列のカイロ代わり
+  drink_tea_bottle: 伊右衛門。緑のラベルだから
+  drink_soda: メロンソーダ。緑だから。ドリンクバーで三杯は飲む
+  drink_cola: コカ・コーラ ゼロ。カロリーは段ボールで消すので気持ちの問題
+  drink_energy: モンスターの緑。徹夜の入稿の前の夜だけ
+  drink_vending: 緑のラベルのものを押しがち
+  drink_water: いろはす。水道水も平気
+  drink_milk: オーツミルク。スタバのラテはオーツミルクに替える
+  drink_beer: スーパードライ。打ち上げで最初に出てくるのがこれ
+  drink_first_order: 生ビール。乾杯の音頭を取りたがる
+  drink_chuhai: ほろよいの白いサワー。弱いのでこれで十分
+  drink_sake: 日本酒。聖地の町の地酒を一本ずつ買う
+  drink_drunk: 推しの話が止まらなくなって、最後は泣く
+  drink_hangover: ポカリを一本、あとは列整理で汗をかく
+  drink_hot_winter: コーンポタージュ。粒を全部出すまで振る
+  drink_tapioca: 並んだ。2018年の原宿で。タピオカより並ぶのが楽しかった
+  drink_morning: ポカリスエット。前の晩のバイトで汗をかいた日は特に
+  drink_nonalc: オールフリー。運転はしないけど翌朝バイトの夜に
+  drink_tea_kind: こだわりはない。紅茶はエラにいれてもらうのが一番
+  drink_yakult: カルピスウォーター。遠征の水筒の代わりに
+  # お店・チェーン
+  chain_konbini: ファミリーマート。サンクスがなくなって行き場がファミマになった
+  chain_konbini_hot: ファミチキ。一日に二回買う日もある
+  chain_cafe: スターバックス。ご当地のフラペチーノを遠征で集める
+  chain_sutaba_order: スターバックス ラテ。カスタムはミルクをオーツに替えるくらい
+  chain_burger: マクドナルド。マクドって言う
+  chain_mac_order: てりやきマックバーガーとポテトのL。揚げたてを頼む
+  chain_gyudon: なか卯。牛丼より親子丼を頼む
+  chain_famires: デニーズ。深夜の作戦会議に使う
+  chain_saize: 若鶏のディアボラ風。荷物を運んだ日は肉が要る
+  chain_sushi: くら寿司。ビッくらポンがあるから
+  chain_udon: 丸亀製麺の釜玉に、かしわ天
+  chain_ramen_chain: 一蘭。一人で集中できる席がチェキ会のあとにちょうどいい
+  chain_chicken: コンビニのチキン。ファミチキ一択
+  chain_donut: クリスピー・クリーム。遠征先で列があると並びたくなる
+  chain_teishoku: まいどおおきに食堂。おかずを棚から自分で取るのが楽しい
+  chain_super: ライフ。夜遅くまで開いている
+  chain_drugstore: ウエルシア。バイト帰りに湿布と冷却シート
+  chain_hyakkin: ダイソー。痛バッグのパーツと缶バッジのカバー
+  chain_furniture: IKEA。帰りのでかい青い袋を担いで帰るのは得意
+  chain_uniqlo: しまむら。アニメのコラボの服が出るから
+  chain_bookstore: アニメイト。池袋本店は一日いられる
+  chain_karaoke: まねきねこ。一人カラオケの割引があるから
+  chain_izakaya: 塚田農場。打ち上げのたびに名刺の肩書が上がるのが楽しい
+  chain_pizza: ドミノ・ピザ。遠征組の夜食
+  chain_costco: 行かない。車がないので運べない……運ぶのは得意なのに
+  chain_bakery: ポンパドウル。横浜の現場の帰りにカレーパン
+  chain_indie: 秋葉原の古い喫茶店。発見日誌を書きに行く
+  # 家のご飯と料理
+  cook_can: ほぼしない。得意料理は焼きそば（ソース多め）
+  cook_breakfast: パン。食パンにマヨと目玉焼きをのせて、ソース
+  cook_miso: 豚汁。インスタントでも具が多いと一杯で食事になる
+  cook_curry_secret: 作らない。店で辛口を食べる
+  cook_curry_roux: 作るならジャワカレーの辛口
+  cook_frozen: 冷凍の大阪王将の餃子。焼くのだけは上手い
+  cook_instant: サッポロ一番 みそラーメン。卵を落とす
+  cook_bento_box: 寮のお弁当の甘い卵焼き。今も甘い派の原因
+  cook_seasoning: ウスターソース。目玉焼きにも焼きそばにも
+  cook_mayo_brand: キユーピー。冷やし中華にかける量が多いので大きいボトル
+  cook_soy: スーパーの安いの。卵かけご飯用は持ってない
+  cook_fail: 焼きそばのソースを目分量で入れて、真っ黒になった
+  cook_measure: 目分量。量るとそれだけで疲れる
+  cook_leftover: 次の日の朝にパンにのせる
+  cook_delivery: Uber Eats。入稿の前の夜だけ
+  cook_takeout: なか卯の親子丼を持ち帰り
+  cook_sunday: 遠征先の駅そば。休みの日は家にいない
+  cook_tool: ホットプレート。焼きそばとお好み焼きと全部これ
+  cook_mom: 寮の大鍋のスープ。いまだに名前が分からない
+  cook_egg: 半熟で七分。目覚ましと同じ数で覚えた
+  cook_rice_cooker: パックご飯。サトウのごはんを箱で買う
+  cook_nabe_base: 博多もつ鍋の素。豚骨の締めにできるやつ
+  cook_new_year: 伊達巻が好き。数の子が苦手
+  # 朝と身支度
+  morning_alarm: 七つ。五分おき。七つ目の名前は「最後の砦」
+  morning_snooze: スヌーズはない。七つの目覚ましが全部スヌーズ代わり
+  morning_first: X を開いて、推しの朝の投稿を見る
+  morning_wake_time: バイトの日は五時半、休みは十時
+  morning_face: 洗顔料。泡で出てくるビオレ
+  morning_teeth: 前。起きてすぐ磨かないと目が覚めない
+  morning_toothpaste: オーラツーのホワイトニング。チェキ会の日は笑うので
+  morning_socks: 左から。たぶん。毎日違うかもしれない
+  morning_shoes: 左から。現場の日だけ紐を結び直して、終わったら緩める
+  morning_clothes: 朝。鏡の前で三回着替えて、だいたい遅れる
+  morning_makeup: 三十分。チェキ会の日は一時間かけて前髪を巻く
+  morning_hair: 帽子でごまかす。現場はスタッフキャップがあるので助かる
+  morning_weather: iPhone の天気。雨雲レーダーを見る
+  morning_tv: 昔は『ポンキッキーズ』の時間に起きてた。今はつけない
+  morning_late: 朝ご飯。パンをくわえて出る
+  morning_routine: 推しの朝の投稿にいいねを押す
+  morning_perfume: 8x4のせっけんの香り。汗をかく仕事なので
+  morning_nail: バイトの前の日。爪が長いと段ボールで割れる
+  morning_weekend: しない。休みの日は遠征で早起き
+  morning_key: なる。戻る。戻ったら閉まっていた
+  # お風呂と寝る
+  bath_temp: 43度のシャワー。熱くないと目が覚めない
+  bath_shower_tub: シャワー。湯船は温泉に行ったときだけ
+  bath_time: 十分。カラスの行水
+  bath_when: 両方。夜はバイトの汗、朝は寝ぐせを流す
+  bath_salt: 使わない。湯船に入らないので
+  bath_shampoo: TSUBAKI。ドラッグストアで安い日に
+  bath_phone: 歌う。コールの練習をする
+  bath_onsen: 伊香保温泉。365段の石段を測りに行った
+  bath_sento: スーパー銭湯の極楽湯。遠征の帰りにサウナだけ
+  bath_after: 瓶のコーヒー牛乳。腰に手を当てて
+  bath_hair_dry: 八割まで乾かす。最後まで待てずに推しの配信を開く
+  sleep_hours: 五時間。寝るのは二時
+  sleep_before: 発見日誌を書く。今日見つけたものと日付を一行ずつ
+  sleep_position: 大の字。布団からはみ出す
+  sleep_pillow: 低いの一個。高いと首が痛い
+  sleep_futon: 布団。ワンルームなので畳んで部屋を広くする
+  sleep_dark: テレビをつけたまま。推しの配信のアーカイブを流して寝落ちする
+  sleep_ac: つけっぱなし。26度
+  sleep_dream: チェキ会で推しに話しかけたら、口から出たのが「最後尾はこちら」だった
+  sleep_talk: 寝言で「押さないでください」と言うらしい
+  sleep_nap: バイトの休憩に十五分
+  sleep_allnighter: 冬コミの入稿の前の夜。毎回する
+  sleep_sheep: 好きなアニメのオープニングを頭の中で流す
+  sleep_pajama: 前のイベントのスタッフTシャツ
+  sleep_stuffed: 推しのグループのぬいぐるみが一個。緑の
+  # 季節と天気と行事
+  season_fav: 夏。夏コミとフェスがあるから
+  season_summer: 夏コミとTIFと聖地巡礼。家にいない
+  season_summer_food: 冷やし中華。マヨネーズをかける
+  season_winter: こたつで冬コミの原稿。こたつはある
+  season_winter_food: もつ鍋。締めはラーメン
+  season_cold_hot: 暑い方がまし。待機列の寒さは本当にきつい
+  season_rain: 苦手。紙袋の本が波打つ
+  season_umbrella: 年に三本。ビニール傘は家に五本
+  season_typhoon: イベントの中止の発表をずっと待つ
+  season_snow: はしゃぐ。坂の雪道は測らないで歩く
+  season_hanami: する。場所取りのバイトをしたことがある
+  season_hanabi: 行く。隅田川。好きなのは柳みたいに垂れるやつ
+  season_matsuri: たこ焼き。大阪の屋台と比べてしまう
+  season_halloween: 渋谷を見に行く。仮装はコスプレで十分してる
+  season_xmas: 冬コミの準備。ケーキはコンビニのショートケーキ
+  season_xmas_chicken: ファミチキで済ませる
+  season_newyear: 冬コミの帰りに、戦利品を読みながら年を越す
+  season_hatsumode: 行く。鷲宮神社。おみくじは中吉
+  season_valentine: 推しの劇場に手紙を出す。チョコは規則で渡せない
+  season_birthday: 推しのチェキ会の予定を入れたい
+  season_gw: 出かける。地方の対バンに遠征
+  season_obon: 帰らない。お盆は夏コミ
+  season_hayfever: ある。マスクで顔の半分を隠す
+  season_kotatsu_mikan: こたつにみかん、あとたけのこの里
+  season_heat: 冷房は26度。待機列には凍らせたポカリ
+  # 家
+  home_room: 散らかってる。グッズの箱が積んである
+  home_best_buy: アクスタ用のコレクションケース。並べると増える
+  home_regret_buy: 自分の背より長いコスプレの槍の材料。電車で運べなかった
+  home_must_appliance: スマホの充電器。モバイルバッテリー三台
+  home_want_appliance: 衣類スチーマー。法被のしわを伸ばしたい
+  home_cleaning: 床の上のものをどけるところから。掃除機はマキタ
+  home_laundry_fold: たたまない。干したまま着る
+  home_laundry_dry: コインランドリーの乾燥機。遠征の前の夜にまとめて
+  home_detergent: アタック。法被だけ手洗い
+  home_dishes: ためる。そもそも皿が少ない
+  home_trash: ある。段ボールの日を毎回逃す
+  home_plants: いない。世話を続けられないので
+  home_sofa: こたつ。冬も夏も
+  home_interior: 緑の法被。壁に掛けてある
+  home_neighbor: こっちが迷惑をかけた。コールの練習で壁を叩かれた
+  home_move: 五回。いちばん大変だったのはグッズの段ボール二十箱
+  home_fridge: 伊右衛門とファミマのたまごサンド
+  home_toilet: 見る。推しの配信のアーカイブ
+  home_pet_wish: コーギー。短い脚で坂を上るところが見たい
+  home_bug: 叫んで、段ボールで外に出す
+  home_key_place: 決めてない。毎朝探す
+  home_shoes_count: 五足。スニーカーばかり
+  home_storage: 2000年代の痛いうちわ
+  home_light: 白い光。グッズの色が分かるから
+  # お金と買い物
+  money_pay: 交通系IC。Suica で遠征の全部を払う
+  money_point: dポイント。ahamo だから
+  money_saving: できない。アクスタが通貨なので
+  money_splurge: ランダムのアクスタ十四個。1万5400円
+  money_impulse: 缶バッジ。ガチャガチャの前を素通りできない
+  money_lottery: 全国ツアーの全公演と、全員分のホテル（本予約）
+  money_coins: ガチャガチャ用に百円玉だけ貯める
+  money_receipt: もらう。遠征費の記録にする……つもりで捨てる
+  money_bag: 推しのグループのエコバッグ
+  money_net_shop: 楽天ブックス。予約商品は特典で選ぶ
+  money_sale: 弱いのは「限定」。セールは興味ない
+  money_subscription: dアニメストアと Apple Music。解約し忘れはない、全部使う
+  money_gacha: アクスタの十四個。推しが出たのが最後の一個
+  money_household: つけていない。モーラの帳面に私の欄がある
+  money_furusato: してる。大洗町。あんこう鍋のセット
+  money_nisa: やってない。投資先は推し
+  money_lend: 貸したことはない。借りたことはある（モーラに）
+  money_secondhand: メルカリで交換しきれなかったグッズを定価で出す
+  money_price_check: 見ない。半額シールより時間がない
+  money_gift: 得意。相手の推しの色で選ぶ
+  money_wallet_cash: 三千円。ガチャガチャ用の百円玉が別にある
+  money_luxury: 遠征の交通費。現地に行かないと分からないから
+  money_cheap: ホテル。カプセルかネットカフェ
+  # 移動と旅行
+  travel_fav_place: 大洗。商店街ごと迎えてくれる
+  travel_want: ロサンゼルスの Anime Expo。パスポートを取り直してから
+  travel_abroad: 台湾。台北の同人誌即売会（FF）に一般参加で
+  travel_plan: 行き当たりばったり。人の計画は完璧に組むのに
+  travel_pack: 多い。傾斜計アプリのためのモバイルバッテリー三台
+  travel_seat: 窓側。坂の多い町が見えるから
+  travel_shinkansen: 551の豚まん。匂いには気をつける
+  travel_sa: 海老名サービスエリアのメロンパン
+  travel_hotel: カプセル。安いのと、仮予約にしがちなので空いてる所
+  travel_hotel_first: 本予約になってるか、フロントで確認する
+  travel_souvenir: ご当地のアクスタ
+  travel_lost: 現地の人に聞く。地図アプリを見るより早い
+  travel_car: 免許はある。設営の日に機材の車を運転する
+  travel_train_bus: 夜行バス。遠征はだいたいこれで行く
+  travel_commute: 推しの過去の配信を聴く
+  travel_ic: ICOCA。大阪遠征で作ったのをそのまま使っている
+  travel_late_train: ある。ネットカフェに泊まった
+  travel_sleep_through: 終点の小田原。行きは新宿のつもりだった
+  travel_alone: 一人で行って現地で合流する派。遠征仲間はどこにでもいる
+  travel_trouble: ホテルが仮予約のままだった。何回も
+  travel_dream: 世界中のアニメのコンベンションを一年で全部回る
+  travel_airport: 三時間前。早く着いて空港を探検したい
+  # 学生時代
+  school_club: 魔界の学舎で荷運びの係。部活というより力仕事
+  school_subject: 得意は体育、苦手は暦。日付を覚えるのが下手
+  school_lunch: 寮のカレー。人間界の給食にもカレーがあると知って驚いた
+  school_lunch_hate: 春菊のおひたし。今も苦手
+  school_trip: 魔界の大きい坂の町。坂を初めて意識した
+  school_trip_buy: 竜の形の杖。今もコスプレの小道具に使う
+  school_festival: 呼び込み。声がでかいので
+  school_sports_day: 綱引き。力持ちなので毎年呼ばれた
+  school_uniform: 黒いブレザー。今の量産型の黒い服に少し似てる
+  school_seat: 窓際のいちばん前。外が見えるから
+  school_teacher: 暦の先生。「あなたは日付を書く練習をしなさい」と言われて、日誌を書き始めた
+  school_test: 一夜漬け。それでも日付は間違える
+  school_homework: 最終日。毎回。日付の欄だけは最初に全部埋めた
+  school_jiyukenkyu: 学舎の階段の段の高さを全部測った。坂の本の原点
+  school_stationery: サラサの緑。今も同じ
+  school_eraser: まとまるくん。消しかすが練り消しみたいにまとまる
+  school_bag: 背負い袋。ランドセルは人間界で初めて見た
+  school_after: 寮の裏の坂を走って上ってた
+  school_baito: 人間界に来てから。最初はチラシ配り
+  school_graduation: 泣いた。寮の大鍋のスープがもう飲めないから
+  school_kurohistory: 学舎の頃じゃなくて2000年代の前略プロフィール
+  school_juken: 験担ぎはしない。日付を書き間違えた
+  school_reading_report: 人間界に来てから書いてみた。『電車男』
+  school_pe: マット運動。倒立前転で毎回横に倒れた
+  # 子どもの頃
+  child_lesson: 魔界の聖歌隊。四回で行かなくなった
+  child_dream: 遠くの町を全部見る人
+  child_toy: 木の独楽。人間界のベイブレードを見て思い出した
+  child_anime: 子どもの頃はアニメがなかった。最初に見たのは大人になってからのガンダムの再放送
+  child_game_first: 人間界のゲームウォッチ。リゼに言うと笑われる
+  child_play: かくれんぼ。隠れたまま帰るのを忘れた
+  child_secret_base: 作った。寮の屋根裏
+  child_collect: 光る石。人間界ではビックリマンシールに替わった
+  child_scold: 寮母さんに、外泊の届けを出さずに町まで行って
+  child_mistake: 「おつかれさま」を夜の挨拶だと思っていた
+  child_scared: 静かな部屋。今も人が多い所の方が落ち着く
+  child_allowance: 寮の手伝いでもらう銅貨。全部屋台の飴に使った
+  child_santa: 魔界にはいなかった。人間界で知って、遅れて信じた
+  child_otoshidama: なかった。人間界で初めて見て、うらやましかった
+  child_summer: 寮の裏山の坂で毎日転んでた
+  child_rajio_taiso: 人間界の町内会でやってみて、四日でスタンプが止まった
+  child_book: 魔界の地図帳。行ったことのない町に印をつけた
+  child_magazine: 人間界に来てから、りぼん。1980年代の付録が好き
+  child_food_hate: 春菊。今も苦手。鍋で避けるのがうまくなっただけ
+  child_nickname: 「荷車」。何でも運んだから
+  child_birthday_party: 寮の全員の誕生日をまとめて一回。誰が何月か覚えられなかった
+  child_hurt: 坂で転んで膝を八針
+  child_pet: 寮の猫。私は犬派なのに懐かれた
+  # スマホ・ネット
+  net_charge: 20％を切ったら。モバイルバッテリーを三台
+  net_screen_time: 九時間。推しの配信と X
+  net_home_screen: 整理してない。壁紙はミナミ
+  net_notifications: ためる。推しのグループの通知だけ消す
+  net_unread: LINE が四百件。グループが多い
+  net_sns: X。推しの告知も、発見も、全部ここ
+  net_reply_speed: 早い。既読スルーは失礼だと思ってる
+  net_stamp: 推しのグループの公式スタンプ。緑のミナミのやつ
+  net_search: 聖地の坂の名前。地図で名前が付いてる坂だとうれしい
+  net_youtube: アイドルのライブ映像と、海外のファンの反応動画
+  net_sleep_video: 推しの過去の配信
+  net_password: iPhone のキーチェーン。覚えてない
+  net_photo: 二万枚。いちばん多いのは坂とアクスタ
+  net_selfie: する。コスプレの日だけ。加工はSNOW
+  net_game_app: ガチャのある音ゲー。ログボは四日で切れる
+  net_burn: 推しへのリプライを、晴海宛ての悪口とまちがえて送りかけた
+  net_typing: フリック。速い。待機列で長文の感想を打つから
+  net_pc_type: 遅い。人差し指で打つ
+  net_ai: 遠征の乗り換えを聞く。ホテルの予約はしてくれない
+  net_wifi: 言える。名前は推しの名前、パスワードはメンカラと数字
+  net_brightness: 最大。待機列の外でも見えるように
+  net_tab: Safari で百枚。全部チケットのページ
+  net_ringtone: マナーモード。現場で鳴らすと怒られる
+  net_streamer: 地下アイドルの配信。VTuber はにじさんじの初期から見ている
+  # 持ち物
+  gear_phone: iPhone 16。カメラで坂を撮る
+  gear_phone_age: 二年。画面の角が割れている
+  gear_phone_case: 透明のケース。中にミナミのチェキを挟む
+  gear_first_phone: ドコモのF501i。iモードの最初の機種を、発売の年に
+  gear_carrier: ahamo。安いのと、遠征先でもつながる
+  gear_pc: MacBook。同人誌の原稿を書く
+  gear_tablet: iPad と Apple Pencil。坂の本の絵を描く
+  gear_earphone: AirPods Pro。現場の行き帰り
+  gear_headphone: 配信のマイクは安い USB のやつ。声が大きいので足りる
+  gear_game_console: PS5。リゼに選んでもらった
+  gear_watch: しない。時刻はスマホと目覚まし七つ
+  gear_wallet: 二つ折り。推しのグループのグッズ
+  gear_bag: 痛バッグ。中身は缶バッジとモバイルバッテリー
+  gear_rice_cooker: 持ってない。パックご飯
+  gear_dryer: 安いやつ。テスコム
+  gear_vacuum: ルンバ。留守が多いので、遠征の間に走らせている
+  gear_fridge: 小さい一人用。メーカーは見てない
+  gear_tv: 32インチ。アニメのリアタイ用
+  gear_camera: ミラーレス一眼。コスプレの併せで、撮る係をやる
+  gear_pen: サラサの緑。発見日誌は全部これ
+  gear_notebook: コクヨのキャンパスノート。発見日誌はこれで三十冊
+  gear_umbrella: ビニール傘。すぐなくすので
+  gear_shoes: ニューバランス。立ち仕事でも足が痛くならない
+  gear_glasses: 度なしのカラコン。チェキ会の日だけ。目はいい
+  gear_keyboard: こだわりなし。MacBook のまま
+  gear_oldest: 緑の法被。2018年から
+  gear_broken: 電池の切れたたまごっち
+  # テレビ・映画・本・音楽
+  media_tv_now: アニメのリアタイだけ。あとは見ない
+  media_tv_child: 人間界に来てからの『夕やけニャンニャン』
+  media_drama: 『あまちゃん』。アイドルを追う話だから
+  media_variety: 『アメトーーク！』のアニメ芸人の回
+  media_m1: 毎年見る。好きなのはミルクボーイ
+  media_radio: 林原めぐみさんの『Heartful Station』を2015年の最終回まで
+  media_movie: 『超時空要塞マクロス 愛・おぼえていますか』。総集編じゃなくて全部描き直したところ
+  media_movie_theater: 真ん中の少し後ろ。キャラメル
+  media_cry: 『葬送のフリーレン』。長く生きてる身には刺さる
+  media_book: 『推し、燃ゆ』を読み返した
+  media_manga: 『うる星やつら』。何回読んでも笑う
+  media_anime_now: 『ガールズ&パンツァー もっとらぶらぶ作戦です！』と『魔法騎士レイアース』
+  media_music_now: CUTIE STREET の「かわいいだけじゃだめですか？」
+  media_karaoke_song: 「愛・おぼえていますか」
+  media_karaoke_score: 入れる。コールを入れるので、毎回七十点台
+  media_first_cd: モーニング娘。の「LOVEマシーン」。1999年の発売日に
+  media_music_app: Apple Music。サブスクで推しの曲を回す
+  media_video_sub: dアニメストアと Netflix
+  media_bgm: 推しのグループのライブ音源
+  media_speed: しない。アイドルの間を飛ばしたくない
+  media_horror: 苦手。『リング』の公開の年に見て、テレビの前で寝られなくなった
+  media_celebrity: 「声が大きいところが松岡修造さんに似てる」と言われた
+  media_ad: マクドの「パラッパッパッパー」。店の前を通るたびに頭で鳴る
+  media_live: おニャン子クラブの解散コンサート。1987年の代々木
+  media_comedy_line: 「任せて！」。自分の口癖
+  # 体と健康
+  health_cold: ポカリと冷却シート。それでも遠征はやめない
+  health_medicine: ロキソニンと湿布。立ち仕事なので
+  health_exercise: バイトが運動。段ボール四箱
+  health_walk: 遠征の日は三万歩
+  health_diet: したことはない。食べた分は運ぶ
+  health_checkup: 引っかからない。体だけは丈夫
+  health_shoulder: 肩。痛バッグの缶バッジが原因
+  health_eyes: いい。遠くのステージがよく見える
+  health_dentist: 苦手。最後に行ったのは三年前
+  health_injection: 目をそらす。見ると声が出るので、天井の染みを数える
+  health_massage: 整骨院に行く。痛バッグのせいで
+  health_fever: 推しの過去の配信を流して寝る
+  health_supplement: 飲まない。続かない
+  health_vegetable: 野菜ジュース。カゴメの野菜生活
+  health_weak: 肩と膝。坂を測りすぎた
+  health_hiccup: 息を止める。チェキ会の前はなぜか出る
+  health_age: 最後尾札を持ったまま三十分立って、膝が鳴ったとき
+  health_stretch: しない。バイトで体を伸ばしてる
+  health_stress: 一人カラオケでコールを全部入れる
+  health_sick_food: 桃缶。遠征仲間が送ってくれた
+  health_hospital: ある。子どもの頃、坂で転んで膝を縫って二日
+  # 人付き合い・恋愛
+  people_friend_count: 多い。現場ごとに知り合いがいる
+  people_best_friend: 最後尾はこちら。バイトで最初に隣に立った
+  people_first_impression: 声が大きい。あと、荷物が多い
+  people_shy: 普段はしない。推しの前でだけする
+  people_party: 好き。三次会まで行く
+  people_seat: 真ん中。全員と話したい
+  people_gift_recv: 晴海がくれた昔のコミケのカタログのコピー
+  people_type: 何かを続けている人。私にできないから
+  people_first_love: 1984年、劇場で見たミンメイ。人じゃないけど
+  people_confess: する派。でも推しの前では言えない
+  people_date: 聖地巡礼。坂を一緒に測ってくれる人
+  people_contact: マメ。返信は早い
+  people_fight: 先に謝る。そのあと発見日誌の最後のページに名前を書く
+  people_nickname_now: 隊長。遠征隊のみんなに呼ばれる
+  people_family_call: 家族よりモーラと連絡を取ってる。家賃のことで
+  people_parent_say: 親の代わりにモーラに言われる。「予約した？」
+  people_secret: MacBook の壁紙が推し。ノクスにだけはばれてる
+  people_angry: 転売を見たとき。推しにお金が届かない買い方は嫌
+  people_compliment: 声が裏返る。寄り道の話を一個増やしてごまかす
+  people_wedding: 遠征仲間の結婚式で、ペンライトの色を揃える係をやった
+  people_neighbor_greet: しない。声が大きくて驚かれてから、頭を下げるだけにした
+  people_alone: どこでも。一人焼肉も一人遠征も
+  people_group_chat: 喋る方。遠征の計画を貼る係
+  # 仕事とバイト
+  work_first_job: 人間界の最初はチラシ配り。1980年代の秋葉原で
+  work_worst_job: 夏の屋外の列整理。四十度近い日に看板を持って立った
+  work_desk: 原稿とグッズとレシートが同じ山にある
+  work_lunch: 休憩室でおにぎり二個
+  work_meeting: 好き。作戦会議は得意
+  work_phone: 得意。声が大きいので通る
+  work_remote: 外。現場に行くのが仕事
+  work_overtime: 大きいイベントの設営で、前の夜から翌日の撤収まで
+  work_payday: アクスタを買う。そのあと家賃を思い出す
+  work_mistake: 最後尾札を逆さまに持って四十分
+  work_boss: 「はがすのが遅い」と注意してくれた班長
+  work_ai: 列整理は変わらない。チケットの顔認証で入場は速くなった
+  work_dream_job: イベントの会場を作る人
+  work_motivation: 推しの写真を見る
+  work_holiday: 遠征。休みの日ほど早起きする
+  work_procrastinate: ギリギリ。解釈違いですに「原稿は？」と聞かれてから始める
+  work_resign: 推しの現場のバイトに入れないと知ったとき
+  work_skill: 人数を見ただけで「何人並んでる」が分かる
+  # 派閥
+  fac_kinoko_takenoko: たけのこの里。チョコが多い。エラとモーラと同じ派
+  fac_karaage_lemon: かける。大皿でもかける。エラと二人で
+  fac_medamayaki: ソース。ウスターソースを目玉焼きに。私だけ
+  fac_anko: つぶあん。豆の形が残ってる方が好き
+  fac_subuta_pine: あり。甘いのと酸っぱいのが一緒なのが好き
+  fac_curry_spicy: 辛口。エラと二人で
+  fac_ramen_hardness: バリカタ。博多で覚えた
+  fac_nikuman: 豚まん。大阪遠征で551に染まった
+  fac_mac_name: マクド。大阪で言い慣れて戻らない
+  fac_hiyashi_chuka: マヨネーズ。リゼと二人で
+  fac_potato_size: L。リゼと二人で、分けずに一人で食べる
+  fac_sweet_tamagoyaki: 甘い。寮のお弁当の味
+  fac_sushi_order: 気にしない。回転寿司は早く皿を重ねたい
+  fac_natto_mix: 後に混ぜる。タレを入れてからぐるぐる
+  fac_toilet_paper: 奥に垂れる。気づいたらそうなってる
+  fac_escalator: 右に立つ。大阪に行きすぎて、東京でも右に立って謝る
+  fac_wari_kan: 多く払う側。払ってからモーラに借りる
+  fac_bath_order: 頭から。シャワーなので上から順番
+  fac_towel: 数回使う。洗濯物がたまるので
+  fac_sock_color: 色や柄。緑が多い
+  fac_miso_soup_place: 気にしない。そもそも味噌汁がインスタント
+  fac_heating: こたつ。原稿もご飯も寝落ちもこたつ
+  fac_pc_phone: スマホ。チケットの先着もスマホで取る
+  fac_iphone_android: iPhone。最初のスマホからずっと
+  fac_win_mac: Mac。同人誌の原稿用
+  fac_ps_switch: PlayStation。リゼにすすめられた PS5
+  fac_tab_space: スペース。Xの下書きで行頭をそろえる
+  fac_vim_emacs: その他。文章はXの下書きで書く
+  fac_dark_light_mode: ダーク。夜の待機列で画面がまぶしくない
+  fac_line_reply: 失礼。私は早く返す
+  fac_ebook: 紙。同人誌は紙で持つもの
+  fac_shibari: 初見は攻略を見ない。聖地も地図を見ないで一回歩く
+  fac_difficulty: ふつう。リゼに怒られない程度に
+  fac_music_sub: サブスク。でも推しのCDは買う
+  fac_live_phone: 撮らない。ペンライトで手がふさがってる
+  fac_oshi_hako: 単推し。ミナミだけ。九年
+  fac_anime_original: アニメが先。好きになってから原作を全部買う
+  fac_spoiler: 絶対だめ。聖地も初見で行く
+  fac_kaji: 得意な方がやる。私は重いもの担当
+  fac_cash_cashless: キャッシュレス。ガチャガチャの百円玉だけ別
+  fac_morning_night: 夜型。バイトの日だけ朝型
+  fac_dog_cat: 犬。散歩に連れ出してくれるから
+  fac_punctual: 少し遅れる。寄り道を一個するので
+  fac_umbrella_rain: 少しならささない。でも紙袋の本には傘をさす
+  fac_zoni: あん餅（香川）。高松の遠征で食べて、白味噌とあんこにやられた
+  fac_milk_tea: ミルクが先。午後の紅茶のミルクティーで育ったから順番は知らない
+  fac_onigiri_name: おにぎり。遠征の朝はコンビニのおにぎり二個
+  fac_gif: ギフ。オタクはみんなギフって言ってる
+  fac_potesara: 惣菜で十分。遠征から帰った夜はスーパーのポテサラとビール
+  fac_dress_color: 青と黒。2015年の発見日誌にも青と黒と書いてある
+  # 究極の二択
+  vs_mountain_sea: 海。大洗の海岸を、泳がずに歩く
+  vs_rice_bread: パン。並びながら食べられる
+  vs_ramen_curry: ラーメン。豚骨バリカタ
+  vs_sweet_salty_life: しょっぱいもの禁止。たけのこの里は手放せない
+  vs_invisible_fly: 空を飛ぶ。遠征費が浮く
+  vs_past_future: 過去。1975年の第1回のコミケを見たい
+  vs_city_country: 都会。イベントの多い所
+  vs_indoor_outdoor: アウトドア。現地で確かめたい
+  vs_sukiyaki_shabu: すき焼き。甘いのが好き
+  vs_tsukemen_ramen: つけ麺。麺が多いのと、最後のスープ割りが好き
+  vs_sauce_shoyu: ソース。どばっと
+  vs_tempura_salt: 塩。抹茶塩を一回試してから戻れない
+  vs_fries_hash: フライドポテト。マクドのL
+  vs_strawberry_first: 先。最後まで残せない
+  vs_watermelon_salt: かける。夏の待機列の塩分補給
+  vs_tomato_sugar: マヨネーズ。冷やし中華と同じ理屈
+  vs_pocky_pretz: ポッキー。推しの色の限定味があるから
+  vs_cheap_sweet: ブラックサンダー。差し入れで配りやすい
+  vs_cream_bread: メロンパン。海老名のが基準
+  vs_beach_pool: 海。大洗の海で、泳がずに歩く
+  vs_sleep_eat: 寝ない。食べないと運べない
+  vs_phone_tv: テレビなし。スマホは推しとつながる道
+  vs_money_time: お金。遠征費があれば、時間は寝ずに作る
+  vs_love_friend: 恋人。遠征に付き合ってくれる人なら
+  vs_talk_listen: 話す。推しの前以外なら
+  vs_morning_onsen: 入る。朝の温泉だけは起きられる
+  vs_aisu_soft: ミックス。両方食べたい
+  vs_zaru_kake: かけ。駅そばで立って食べる
+  vs_cheese_beef: あり。しょっぱいのとチーズは合う
+  vs_donbei_redfox: どん兵衛。大阪で食べた西の味の方が好き
+  # 時代の話
+  era_pager: 使った。1990年代の半ば。14106 は打つ相手がいなかった
+  era_chakumero: 着メロは「LOVEマシーン」。鳴るたびに踊りかけた
+  era_purikura: 撮った。落書きは日付。発見日誌の癖で
+  era_garake: ドコモの折りたたみ。ストラップは推しのを六本
+  era_mail_address: 推しの名前と誕生日。推しが変わるたびに変えた
+  era_sekimen: 前略プロフィール。百の質問はもう掘らないで
+  era_wifi_first: 1990年代の終わり。ダイヤルアップの音を、つながった合図のファンファーレだと思ってた
+  era_video: 録画の予約を一週ずらした。三倍モードの画質も覚えてる
+  era_md: MD。現場に行く電車で聴く推しのセトリを作った
+  era_famicom: ふーふーした。リゼに「意味ない」と言われた
+  era_rental: TSUTAYA でアニメのビデオを借りて、延滞を三回
+  era_phone_card: 2011年の震災の日、公衆電話に並んだ
+  era_tamagotchi: 育てた。四日で死なせた
+  era_y2k: 冬コミの戦利品を読みながら、何も起きないのを見てた
+  era_bubble: バブルには縁がない。晴海のコミケのカタログの列にいた
+  era_heisei_end: 渋谷で令和のカウントダウンを見ていた。人が多い所に行きたくて
+  era_corona: オンラインのお話し会。Wi-Fi が止まって固まった
+  era_smartphone_first: 2009年、iPhone 3GS。SoftBank で
+  era_old_price: 切手。同人誌の通販の送料で毎回思い知る
+  era_fashion: ルーズソックスは履いた。アムラーの眉は失敗した
+  era_word: 「萌え〜」。前略プロフィールに書いた
+  era_school_rule: イベントの徹夜の待機列。昔はあった
+  era_new_thing: 新しい VTuber の略語。若いファンに教わる
+  era_retro_want: 晴海の会場。もう行けない
+  era_konbini_old: ココストア。名古屋の遠征で寄った店が、もうない
+  # 「最後に」「人生で一番」
+  rec_last_cry: 昨日のチェキ会。また「おつかれさまです」しか言えなかった
+  rec_last_laugh: 晴海が VTuber を「バーチャル演歌歌手」と言った
+  rec_last_angry: 推しのグッズの転売を見たとき
+  rec_last_run: 終電に向かって。間に合わなかった
+  rec_last_letter: 推しへのファンレター。月一回
+  rec_last_lie: 「原稿は進んでる」
+  rec_last_apology: モーラに、家賃のことで
+  rec_last_new: 衣装の裾上げを自分でやってみた。エラに直された
+  rec_last_lost: 身分証。米沢嘉博記念図書館の前で気づいた
+  rec_last_photo: 坂。傾斜計アプリの画面ごと
+  rec_life_best_meal: 遠征の帰りの新幹線で食べた551の豚まん
+  rec_life_worst_meal: 寝過ごした朝に食べた、冷えたカップ麺
+  rec_life_scared: 入金の締切の翌朝、メールを開いたとき
+  rec_life_embarrassing: 前略プロフィールを晴海に掘り出されたこと
+  rec_life_expensive: 緑の法被の刺繍。1万2000円
+  rec_life_lucky: 推しのグループの初めての大きいホールに当選した日
+  rec_life_unlucky: その当選の入金を忘れた日
+  rec_life_far: 台北。人間界の中では、だけど
+  rec_life_hot: C84（2013年夏）の待機列
+  rec_life_late: 推しの対バンに一時間遅れて、出番が終わってた
+  rec_life_proud: 発見日誌三十冊。続けるのが苦手な私が続いた
+  rec_life_regret: パスポートを切らしたこと
+  rec_life_change: 1981年の新宿のアニメ新世紀宣言の人だかり
+  rec_life_long_wait: 2010年代の夏コミの企業ブースの列。六時間
+  rec_life_best_present: 最後尾はこちらがくれた目覚まし時計。七つ目の「最後の砦」
+  rec_this_year: C109 のホテルを本予約で取れたこと
+  rec_this_year_buy: よかったのはコレクションケース、ダメだったのはランダムのアクスタ十四個
+  rec_streak: 発見日誌。1981年から
+  # 質問箱
+  qbox_superpower: 瞬間移動。遠征費とホテルが要らなくなる
+  qbox_island: 傾斜計アプリの入ったスマホ。島の坂を全部測る
+  qbox_reborn: 推しのグループのスタッフ。物販の机の向こう側
+  qbox_one_day_other: エラ。ライブの最前で主様の上着を持たずに観させてあげたい
+  qbox_100man: 全国ツアーの遠征。全部本予約で
+  qbox_no_internet: 無理。現場には行けるけど、チケットが取れない
+  qbox_zombie: 生き残れる。武器はコスプレの槍
+  qbox_time_machine: 2019年の自分に「入金して！」
+  qbox_hobby_new: 坂の本の英語版を作る
+  qbox_weakness: 予約を最後までやらないところ
+  qbox_charm: どこへでも行ける足と、重いものを運べる腕
+  qbox_habit: 新しい坂を見ると、測るまで動けない
+  qbox_mbti: ENFP と出た。信じてないけど当たってる気がする
+  qbox_blood: 星座占いはチケットの当落の日だけ見る
+  qbox_fear: 入金の締切。それと推しの前の沈黙
+  qbox_stress_word: 「それ認知じゃない」
+  qbox_happy_moment: 現地に着いて、最初の一歩を踏んだとき
+  qbox_dream_now: チェキ会で「おつかれさまです」以外の文を言う
+  qbox_first_stream: 見つけたものを誰かに見せたかった
+  qbox_stream_routine: 発見日誌を開いて、今日の話の日付を確かめる
+  qbox_viewer_name: 遠征隊。みんなついてくるから。私は隊長
+  qbox_retire: 坂を測る旅をずっとする
+  qbox_skill: 段ボールを四箱いっぺんに運べる
+  qbox_cant: 決まった時刻に同じことを続けること
+  qbox_collection: アクスタと、聖地の坂の角度
+  qbox_three_words: 行く人。現地に行かないと気が済まない
+  qbox_day_off: 遠征かバイト。家にいる日はほぼない
+  qbox_cooking_for: 焼きそば。ソースはたっぷり
+  qbox_word_fav: 「任せて！」。任せてから考える
+  qbox_color: 緑。黄緑も緑の一種
+  qbox_number: 七。目覚ましの数
+  qbox_smell: 刷り上がったばかりの同人誌の匂い
+  qbox_sound: コミケの開場の拍手。毎回ちょっと泣く
+  qbox_animal: ミツバチ。現場から現場へ飛び回っている
+  qbox_cast_rank: 料理はピム、寝坊はリゼ。予約を落とすのは私
+  qbox_castle_secret: 城の見張り塔の階段。段の高さが全部違う
+  qbox_human_world: 好きな人が自分で作った本を、自分で配る場所
+  qbox_makai_food: 回転寿司。魔界にはお皿が回る店がない
+stories:
+  food_fav: >-
+    新大阪の改札の中の551で、豚まんを六個入りで買うのが遠征の締め。新幹線で開けたら隣の席の人に匂いで振り向かれて、一個あげたら仲良くなった。その人、今は遠征隊のチャットにいる。
+  food_cupnoodle: >-
+    バイトの休憩は十五分しかないので、カップヌードルの三分は大事な時間。一回だけ「最後尾はこちら」に「三分測っといて」と頼んだら、きっちり三分で呼ばれて、その間に列の人数も数えてくれていた。
+  food_spicy: >-
+    中本の北極は意地で完食した。次の日は物販の設営で、段ボールを運ぶたびにお腹が鳴って、班長に「大丈夫？」と三回聞かれた。それ以来、辛いのはバイトの前の日には食べないことにしてる……一回は破った。
+  food_onigiri: >-
+    遠征の朝はファミマの紅しゃけを二個。一個は電車で、もう一個は待機列で食べる予定なのに、だいたい電車で二個とも食べて、列でお腹がすく。
+  sweets_fav_snack: >-
+    たけのこの里は、チョコとクッキーのバランスが全部。きのこ派のリゼに「持ち手がないのは不便」と言われて、こっちは「持ち手で食べるのはチョコが少ない証拠」と返した。エラが横でうなずいてて、三対三なのにこっちが勝った気がした。
+  sweets_chips_brand: >-
+    プリングルズは筒だから、痛バッグに入れても割れない。前にカルビーの袋を入れて行ったら、缶バッジ六十個に押されて粉になってた。粉は粉で美味しかった。
+  sweets_candy: >-
+    チェキ会の列に並ぶ前、ミンティアを必ず二粒。口の中がすっきりしたら喋れる気がするから。……九年間、すっきりした口で「おつかれさまです」と言ってる。
+  sweets_best_ever: >-
+    原宿で二時間並んだパンケーキ、たぶん普通に美味しいパンケーキだった。でも二時間並んだ分、一口目で「来てよかった！」って声が出た。並ぶのが調味料なの、私だけかもしれない。
+  drink_tapioca: >-
+    2018年の原宿で、タピオカの列に並んだ。並んでる間に列の人数を数えて、前の人に「あと十五分です」と言ったら、本当に十五分だった。店員さんに「バイトの人？」と聞かれた。
+  drink_tea_bottle: >-
+    ペットボトルのお茶は伊右衛門。理由は味もあるけど、ラベルが緑だから。黄緑のときもあるけど、黄緑は緑の一種なので問題ない。
+  drink_drunk: >-
+    打ち上げで飲むと、推しの話が始まって、最後は「黄緑も緑の親戚だよ」の話で泣く。最後尾はこちらは三回同じ話を聞いて、四回目で「もう覚えた」と言って先に言ってくれた。
+  chain_konbini: >-
+    昔はサンクスに通ってた。2018年にサンクスが全部ファミマになって、気づいたら同じ店でファミチキを買ってた。看板が変わっても店員さんが同じだったのが、ちょっとうれしかった。
+  chain_sushi: >-
+    くら寿司はビッくらポンのために行く。五皿で一回なので、食べる量を五の倍数にそろえる。この前は十四皿で止まって、あと一皿を誰が食べるかで遠征隊ともめた。
+  chain_ramen_chain: >-
+    チェキ会で「おつかれさまです」しか言えなかった日は、一蘭の一人の席に座る。仕切りがあって誰にも顔を見られないから、反省会にちょうどいい。替え玉を頼んだら、ちょっと元気になる。
+  chain_famires: >-
+    デニーズは深夜の作戦会議の場所。遠征隊の三人で、ほかの人の遠征の計画を朝の四時まで組んだ。全員の乗り換えは完璧だったのに、自分の帰りの電車だけ調べ忘れてた。
+  chain_costco: >-
+    コストコには行ったことがない。車がないから。……段ボール四箱運べるんだから、手で持って帰れるでしょ、と言われて、本気で考えた。電車でトイレットペーパーの大きいのを二つ抱えてる自分を想像して、やめた。
+  cook_egg: >-
+    ゆで卵は七分。目覚ましが七つだから七で覚えた。……と言ったらモーラに「関係ない」と言われた。関係なくても覚えられたらいいの。
+  cook_fail: >-
+    焼きそばのソースは目分量。一回、勢いでボトルを振ったら蓋が取れて、半分入った。真っ黒の焼きそばは、思ったより食べられた。ソース派の私でも、二口目でお茶を飲んだ。
+  morning_alarm: >-
+    目覚ましは七つ、全部別の時刻、全部別の音。最後の七つ目は「最後の砦」って名前で、最後尾はこちらにもらった時計。一回だけ六つ目で起きた日は、うれしくて配信で言った。
+  morning_routine: >-
+    朝はまず推しの投稿にいいねを押す。押し忘れた日に限って推しが「今日は早起き」って書いてて、二時間後に押した。たぶん誰も気づいてない。私だけ気づいてる。
+  bath_onsen: >-
+    伊香保温泉の石段、365段を全部測りながら上った。段ごとに傾斜計を置いてたら、後ろの観光客がずっと待ってて、途中で気づいて謝った。上り切ってから入ったお湯は熱くて、43度のシャワーより熱かった。
+  sleep_dream: >-
+    夢でやっとミナミに話しかけられた。言いたい文を言うつもりで口を開いたら、出てきたのが「最後尾はこちらです」。バイトの癖。起きてから一人で笑った。
+  sleep_allnighter: >-
+    冬コミの入稿の前の夜は毎回起きてる。解釈違いですから夜中の三時に「原稿は？」と来て、「今やってる！」と返したら「既読になるの早すぎる」と言われた。スマホを見てたのがばれた。
+  season_valentine: >-
+    推しのグループは、チョコを渡しちゃいけない決まり。だからバレンタインは手紙を書く。毎年「今年こそチェキ会で言う」と書いてる。もう九枚、同じことを書いてる。
+  season_hatsumode: >-
+    初詣は鷲宮神社。人混みに流されて、お参りする前に出口に着いた。もう一回並び直して、おみくじは中吉。「待ち人、来る」と書いてあって、推しのチェキ会のことだと思うことにした。
+  season_rain: >-
+    雨の日は苦手。夏コミで紙袋の本が八部波打った。今は紙袋の上からビニール袋を二重にかける。自分は濡れても平気。本だけ守る。
+  home_neighbor: >-
+    ワンルームでコールの練習をしてたら、隣から壁をトンと叩かれた。次の日、菓子折りを持って謝りに行ったら、隣の人もアイドルのファンで、別のグループのコールを教えてもらった。今は小声で練習してる。
+  home_regret_buy: >-
+    コスプレの槍の材料を、自分の背より長いまま買ってしまった。電車に乗せられなくて、店から家まで四十分歩いた。肩に担いで歩いてたら、小学生に「勇者だ」と言われた。悪くなかった。
+  money_furusato: >-
+    ふるさと納税は大洗町。届いたあんこう鍋のセットを、こたつで一人で食べた。坂のない町の鍋だけど、締めのラーメンを入れたら、ちゃんと豚骨じゃなくても美味しかった。
+  money_gift: >-
+    プレゼントを選ぶのは得意。相手の推しの色で選べばいいから。最後尾はこちらは推しがいないので、困って「時給の色」と言ったら、本人が「金」と答えた。金色のボールペンをあげた。
+  money_receipt: >-
+    レシートはもらう。遠征費をちゃんと記録しようと思って。財布に三か月分たまって、全部まとめてモーラに見せたら、モーラが黙って帳面に写してくれた。私の欄が赤い。
+  travel_abroad: >-
+    台北の同人誌即売会（FF）に一般参加で行った。言葉は分からないのに、サークルの人が見本を見せてくれて、指さしで買えた。帰りに屋台でパクチーを避けきれずに食べて、そこで平気になった。
+  travel_seat: >-
+    電車は絶対に窓側。坂の多い町が見えると、窓に傾斜計アプリを当てたくなる。窓に当てても測れない。分かってる。
+  travel_sleep_through: >-
+    夜の小田急で寝て、起きたら終点の小田原だった。新宿に帰るつもりだったのに。せっかくだからと小田原城の坂を測ってから帰った。損してない気がした。
+  travel_hotel_first: >-
+    ホテルに入ったら、最初に「本予約になってますか」とフロントで聞く。三回目くらいで受付の人に「チェックインできてるので、なってます」と笑われた。それでも聞く。
+  school_jiyukenkyu: >-
+    学舎の頃の自由研究で、寮の階段の段の高さを全部測った。段ごとに全部違って、先生に「なんで違うの」と聞いたら、「建てた人が違うから」と言われた。今の坂の本は、たぶんあそこから始まってる。
+  school_teacher: >-
+    暦の先生に「あなたは日付を書く練習をしなさい」と言われて、毎日日付だけ書くノートを作った。それが続いて、人間界に来てから発見日誌になった。続けるのが苦手な私が続いてる、唯一のもの。
+  child_mistake: >-
+    魔界の頃、「おつかれさま」は夜の挨拶だと思ってた。寮で夜に言うものだったから。人間界で昼に言われてびっくりした。……今は推しに昼も夜も言ってる。
+  net_burn: >-
+    推しへの返信と、晴海への「腰の具合どう？ あと話が長い」を同時に書いてた。送信の直前に宛先を見て、指が止まった。推しに「話が長い」は送ってない。セーフ。
+  net_photo: >-
+    写真は二万枚。半分が坂で、四分の一がアクスタ。推しの写真が少ないのは、現場で撮らない派だから。思い出は全部、発見日誌の文字で残ってる。
+  gear_first_phone: >-
+    初めての携帯はドコモのF501i。iモードの最初の機種で、1999年に出てすぐ買った。最初に開いたのは天気予報。発見日誌に「携帯でネットを見た」と書いてある。
+  gear_notebook: >-
+    発見日誌はコクヨのキャンパスノートで三十冊。表紙の色はなるべく緑。一冊だけ赤いのがあって、それはお店に緑がなかった日。中身は普通に大事。
+  media_live: >-
+    初めてのコンサートは、1987年のおニャン子クラブの解散コンサート、代々木。始まりを知らずに終わりから入った。それで「次は始まりから見る」と決めて、今の推しは結成の次の月から追ってる。
+  media_first_cd: >-
+    初めて買ったCDは「LOVEマシーン」。1999年の発売日に、渋谷のCD屋で買った。帰りに着メロも同じ曲にして、電車で鳴ったとき思わず腰が動いた。隣の人は見なかったことにしてくれた。
+  media_horror: >-
+    『リング』を公開の年に映画館で見て、その夜はテレビを布団で隠して寝た。次の朝、布団をどけたら録画の予約のランプが光ってて、悲鳴を上げた。予約したのは私。
+  health_shoulder: >-
+    痛バッグに缶バッジを詰めすぎて、肩がずっと痛い。整骨院の先生に「重さを半分に」と言われて、半分にしたら、空いた所に新しい缶バッジが入った。先生にはまだ言ってない。
+  health_hiccup: >-
+    チェキ会の列でなぜかしゃっくりが出る。息を止めて止めようとしてたら、ちょうど番が来て、「おつかれさまです」と一緒にしゃっくりが出た。ミナミが笑ってくれたので、あれは認知の日だと思ってる。
+  people_best_friend: >-
+    いちばん長い付き合いは、最後尾はこちら。初めてのバイトの日、隣で最後尾札を持ってて、私のが逆さまなのを四十分黙って見てた。休憩で「あれ逆」と言われて、そこから五年。
+  people_first_love: >-
+    初恋は1984年の劇場で見たミンメイ。人じゃないって言われるけど、帰りの電車で歌を口ずさんで、その日の発見日誌に二ページ書いた。今読むと、字が踊ってる。
+  people_wedding: >-
+    遠征仲間の結婚式で、余興の係をやった。ペンライトを全員分そろえて、新郎の推しの色と新婦の推しの色で客席を半分に分けた。式場の人に「初めて見ました」と言われた。
+  work_mistake: >-
+    最後尾札を逆さまに持って四十分立ってた。並ぶ人が首をかしげながら並んでくれて、列はちゃんとできてた。最後尾はこちらは今も配信で言う。「逆さでも人は並ぶ」って、私の中では教訓にしてる。
+  work_skill: >-
+    人数を見るだけで「今、二百四十人」と言える。バイトで鍛えた。初詣の行列で口に出して数えてたら、前の人に「スタッフさんですか」と聞かれて、つい「最後尾はこちらです」と言った。
+  fac_escalator: >-
+    大阪に遠征しすぎて、東京のエスカレーターでも右に立ってしまう。後ろの人に詰まられて、毎回「すみません」と左に移る。マクドも豚まんも、大阪から帰ってこない。
+  fac_wari_kan: >-
+    打ち上げではつい多めに払う。隊長だから。そのあと家賃が足りなくなって、モーラに借りる。モーラに「多く払う前に、家賃を払って」と言われた。正しい。
+  fac_live_phone: >-
+    ライブは撮らない。両手にペンライトを持ってるから物理的に無理。たまに隣の人が撮ってて、「ヴェスパさん映ってました」と送ってくれる。法被が緑すぎて、すぐ分かるらしい。
+  era_pager: >-
+    ポケベルは1990年代の半ばに持ってた。14106（アイシテル）は打つ相手がいなくて、推しのグループのファン仲間に「0840」ばっかり送ってた。返ってくるのも「0840」。平和だった。
+  era_tamagotchi: >-
+    たまごっちは四日で死なせた。毎日決まった時刻にご飯をあげるのが無理だった。その後も電池を替えずに引き出しに入れてあって、去年出てきた。捨てられない。
+  era_smartphone_first: >-
+    最初のスマホは2009年のiPhone 3GS。発売日に並んで、列の人数を数えてたら店員さんに「何人ですか」と聞かれた。答えたら合ってた。
+  rec_last_lost: >-
+    米沢嘉博記念図書館に行ったら、会員登録に身分証が要るのを忘れてた。財布の中を三回見て、看板の写真だけ撮って帰った。次は身分証を一番上に入れる。……まだ行けてない。
+  rec_life_best_present: >-
+    七つ目の目覚まし時計は、最後尾はこちらがくれた。入金を忘れた翌月に、黙って机に置いてあった。裏に「最後の砦」とテプラで貼ってあって、それがそのまま名前になった。
+  qbox_one_day_other: >-
+    一日入れ替われるならエラ。エラはいつもライブの後ろで主様の上着を持ってるから、その日は私が上着を持って、エラを最前に行かせたい。……私がエラの丁寧語をしゃべれるかは、自信ない。
+  qbox_castle_secret: >-
+    城の見張り塔の階段は、段の高さが全部違う。一回全部測ったら、上に行くほど低くなってた。建てた人が疲れたんだと思う。その数字は坂の本の付録に入れた。
+  qbox_zombie: >-
+    ゾンビが来たら、コスプレの槍を持つ。2メートルあるから届く。……コミケの規則は振り回さなければいいけど、ゾンビのときは振り回していい。そこは自分で決めた。

@@ -1,0 +1,247 @@
+# Nox 001 (English). Source: src/episodes/nox/001.yaml. Beat order matches the Japanese.
+title: "I typed LGTM and a shop's order alerts went dead for fourteen minutes on a Sunday morning"
+lobby:
+- "Hi. Tonight's story is me screwing up."
+- "I wrote 'OK' on someone's code, and on Sunday morning the notifications just stopped."
+- "If I say a word you don't know, I'll unpack it right away."
+- "There's a Cup Noodle tangent somewhere. Probably."
+parts:
+- title: Opening (Karaage-kun Red)
+  beats:
+  - say: "Oh, am I live? I'm live. Okay."
+  - say: "Hi, everyone who's still awake."
+  - chat: [lag_appreciation_club, "screen so dark lmao"]
+  - say: "'Screen so dark.' It's not dark. It's purple. You just got here and that's your opener?"
+  - chat: [lag_appreciation_club, "its basically a greeting"]
+  - say: "Basically a greeting? A greeting is 'evening'. Type 'evening'."
+  - chat: [kernel_reader, "evening"]
+  - chat: [rtos_veteran_15y, "evening"]
+  - say: "Kernel Reader, R-TOS Veteran, hi. See? Some people can do it."
+  - chat: [night_shift_survivor, "evening. just woke up"]
+  - say: "Night Shift, you just woke up? Good morning. Me too, actually. At five. P M."
+  - say: "So, um, first thing I did was go to Lawson. That's a convenience store, like, they're on every corner here."
+  - chat: [night_shift_survivor, "what'd you get"]
+  - say: "What did I get? Karaage-kun Red. Little spicy fried chicken bites in a box. It was the last one."
+  - chat: [lag_appreciation_club, "W"]
+  - say: {face: smug, text: "I won. I think I used up today's luck right there."}
+  - say: "I have this theory that Red is, like, the official food of people on night shift."
+  - chat: [first_time_here, "hi first time. why night shift?"]
+  - say: "Welcome, new person. Why night shift? At my old job, whoever came back with a box of Red was usually the one on call that day."
+  - say: "So even now, when I see someone buying Red, I'm like, oh, are you on call too?"
+  - chat: [night_shift_survivor, "i had red today too"]
+  - say: {face: smile, text: "You had Red today too, Night Shift? See! On-call person. I'm nodding at you in my heart."}
+  - chat: [leaving_work_on_time, "i clock out on time and get the regular"]
+  - say: "Leaving On Time gets the regular one. The regular's good too."
+  - chat: [second_year_dev, "evening. i'm awake today"]
+  - say: "Second Year, you made a point of saying 'I'm awake today.'"
+  - say: "So, um, did the person who was on call Sunday actually sleep? Not naming anyone."
+  - chat: [second_year_dev, "thats literally naming me"]
+  - chat: [second_year_dev, "i slept. never got paged"]
+  - say: "You never got paged. Good. I'm the one who got paged. That's tonight's story."
+- title: Four letters
+  beats:
+  - chat: [ddd_police, "what did you break"]
+  - say: "Oh, we're assuming I broke something, DDD Police. I mean, you're right."
+  - say: "So last Thursday, four in the morning, I was reading code from someone on my team. I'm, um, the lead of a five-person team at my company now."
+  - chat: [first_time_here, "reading code?"]
+  - say: "Reading code like that is called review. Before someone's code goes in, you read it and look for the scary parts. It's, like, half a lead's job."
+  - chat: [first_time_here, "so like a proofreader"]
+  - say: "Yeah, kind of a proofreader."
+  - say: "So I read one, and I typed four letters. L G T M."
+  - chat: [first_time_here, "lg..what"]
+  - say: "L G T M. Looks good to me. It's, like, the approval stamp."
+  - say: "And the code that went in on that stamp killed a shop's order alerts for fourteen minutes. Sunday morning."
+  - chat: [lag_appreciation_club, "LMAOOO"]
+  - chat: [leaving_work_on_time, "my stomach hurts already"]
+  - say: "Lot of laughing. It's fine, you can laugh. I can laugh now. Thursday me can't."
+  - say: "Leaving On Time, we're three minutes in and your stomach already hurts."
+  - chat: [leaving_work_on_time, "every on call story hits my stomach"]
+  - say: "Every on-call story hits your stomach. I get it. Keep the antacids next to you."
+  - chat: [first_time_here, "order alerts?"]
+  - say: "Order alerts, like, when an order comes in, the shop owner's phone goes ding. It didn't ding. Not once."
+  - chat: [kernel_reader, "root cause?"]
+  - say: "The root cause is actually short."
+  - say: "It held a lock while it waited on another company's API. With no timeout."
+  - chat: [rtos_veteran_15y, "ahhh"]
+  - chat: [first_time_here, "lock?"]
+  - say: "What's a lock. Okay. Inside a program there's an 'in use' sign."
+  - say: "Think of a bathroom lock. While one person's in there, everyone else waits outside."
+  - chat: [first_time_here, "ok bathrooms i understand"]
+  - say: "Everyone understands bathrooms. So this code went into the bathroom, locked the door, and then made a phone call to another company."
+  - say: "Like, 'hey, is this order legit?' That kind of call."
+  - chat: [lag_appreciation_club, "dont take calls on the toilet"]
+  - say: {face: laugh, text: "Don't take calls on the toilet. Honestly, yes. And Sunday morning, the other side didn't pick up."}
+  - chat: [first_time_here, "what about the people waiting"]
+  - say: "The people outside? Outside the whole time. All the notifications that wanted to go out were lined up at that door for fourteen minutes."
+  - chat: [second_year_dev, "i could totally see myself writing that"]
+  - say: "You could see yourself writing it, Second Year? You will. I did, years ago. Which is why I should've caught it. If it hadn't been four A M."
+  - chat: [lag_appreciation_club, "stop reviewing at 4am"]
+  - say: "Stop reviewing at four A M. Yeah. That one's just true."
+- title: Four A M snacks (Cup Noodle)
+  beats:
+  - chat: [night_shift_survivor, "what do you even eat at 4am"]
+  - say: "What do I eat at four A M? Wait, that's the question?"
+  - say: "Cup Noodle, seafood flavor. Always that one."
+  - chat: [lag_appreciation_club, "so unhealthy"]
+  - say: "Unhealthy? I eat an egg too, so it's fine. Probably."
+  - say: "And, um, I time the three minutes. With a real timer. I don't do four."
+  - chat: [kernel_reader, "you can taste one minute??"]
+  - say: "You're thinking, can she even tell one minute apart. Right. So I tested it."
+  - chat: [rtos_veteran_15y, "of course you tested it"]
+  - say: "I blindfolded myself and did three-minute versus four-minute. Six trials."
+  - chat: [first_time_here, "blindfolded cup noodles"]
+  - say: {face: smug, text: "Blindfolded cup noodles. I got four out of six."}
+  - chat: [lag_appreciation_club, "thats basically a coin flip"]
+  - say: "Basically a coin flip... someone told me that last time too."
+  - chat: [kernel_reader, "n=6 is tiny"]
+  - say: {face: annoyed, text: "I know the sample size is tiny. I got full, okay?"}
+  - chat: [second_year_dev, "i heard lise is seafood too"]
+  - say: "She is! Lise is seafood too."
+  - say: "But Lise said, 'in three minutes I can take a nap.'"
+  - chat: [lag_appreciation_club, "dont nap in 3 minutes"]
+  - say: "Don't nap in three minutes, right? The noodles go soggy. Maybe she likes them soggy."
+  - chat: [leaving_work_on_time, "curry flavor only in my house"]
+  - say: "Oh, curry people exist. Seafood is easier on your stomach at night, though."
+  - chat: [leaving_work_on_time, "stomach talk makes it hurt again"]
+  - say: "Did it start hurting again? Sorry. No more stomach talk."
+- title: Where was I (the fake was too good)
+  beats:
+  - say: "Wait. What was I talking about."
+  - chat: [kernel_reader, "phone call on the toilet"]
+  - say: "Right, phone call on the toilet. Thank you."
+  - chat: [ddd_police, "no tests?"]
+  - say: "Tests? There were tests. And they passed."
+  - say: "In tests, you don't call the real company. You use a mock. A fake that answers the phone."
+  - say: "And the mock always answered instantly."
+  - chat: [kernel_reader, "the mock was too good at its job"]
+  - say: {face: laugh, text: "The mock was too good at its job! Meanwhile the real one was asleep on Sunday morning."}
+  - say: "Nobody ever tested what happens when the answer is slow. Not once."
+  - chat: [second_year_dev, "mocks are always fast yeah"]
+  - say: "They're always fast. When you write one, you only write the happy path. There was no slow one. No one that just hangs up."
+  - chat: [ddd_police, "and the PR description?"]
+  - say: "The PR description said, quote, 'Implemented robust external integration.'"
+  - chat: [ddd_police, "robust"]
+  - chat: [lag_appreciation_club, "ROBUST lmao"]
+  - say: "Everybody's laughing at 'robust.' Whether a human or an AI wrote it doesn't really matter."
+  - say: "I saw the word 'robust' and I relaxed. That's on me. That's my mistake."
+  - chat: [rtos_veteran_15y, "how long was the fix"]
+  - say: "I figured the fix was easy. Out loud, I said, like, 'two hours.'"
+  - chat: [kernel_reader, "x3.7"]
+  - chat: [lag_appreciation_club, "x3.7"]
+  - say: {face: annoyed, text: "'Times three point seven.' Oh, both of you tonight. Cool."}
+  - chat: [first_time_here, "whats 3.7?"]
+  - say: "Three point seven is my say-it-out-loud estimate multiplier. When I say two hours, it takes three point seven times that, on average. I keep a log."
+  - chat: [first_time_here, "you log it and it doesn't get better?"]
+  - say: {face: annoyed, text: "My mouth doesn't get better. So on actual work tickets, I write a range. This one said 'half a day to a day.'"}
+  - chat: [second_year_dev, "so how long did it take"]
+  - say: "...It took until that night. So the ticket was right."
+  - chat: [lag_appreciation_club, "so only the mouth misses lol"]
+  - say: "Don't say 'only the mouth misses.' ...Accurate, though."
+- title: Ever seen one?
+  beats:
+  - say: "Hey, can I ask you all something?"
+  - ask:
+      q: "Ever seen code that holds a lock while it waits on someone else to answer?"
+      options:
+      - c: "I wrote one"
+        r:
+        - "You too, {name}? Welcome to this side."
+        - "Once you've written one, you start spotting them in other people's code. That's how it went for me."
+      - c: "I caught one in review"
+        r:
+        - "{name}, that's amazing. I needed you next to me Thursday at four A M."
+        - "Was it kind of awkward to block it? Good job, though."
+      - c: "Saw it in prod"
+        r:
+        - "You saw it in prod."
+        - "{name}... I'm so sorry. How many minutes were you down?"
+        - "If you want, tell me in chat later. I love those stories."
+      - c: "No idea what this is"
+        r:
+        - "No idea what this is, okay."
+        - "{name}, I like the honesty. It's the guy taking a phone call on the toilet. That's enough."
+        - "Next time you're stuck waiting outside a bathroom, think of me."
+      npc:
+      - [second_year_dev, 0]
+      - [rtos_veteran_15y, 1]
+      - [leaving_work_on_time, 2]
+      - [first_time_here, 3]
+      - [ddd_police, 1]
+  - chat: [second_year_dev, "i wrote one. last month"]
+  - say: "Lots of people caught it in review. That's reassuring. Second Year, you wrote one last month? What happened?"
+  - chat: [second_year_dev, "my senior blocked it in review. but i didnt get why"]
+  - say: "Your senior caught it. Do you get why now?"
+  - chat: [second_year_dev, "phone call on the toilet. got it"]
+  - say: {face: smile, text: "Phone call on the toilet, and it clicked. Good. Worth saying it like five times."}
+  - chat: [leaving_work_on_time, "ours was down 30 min in prod"]
+  - say: "Thirty minutes. Leaving On Time, you didn't leave on time that day, did you."
+  - chat: [leaving_work_on_time, "i did not"]
+  - say: "Yeah. So your stomach has a real reason to hurt."
+- title: My postmortem
+  beats:
+  - chat: [ddd_police, "did you write a postmortem?"]
+  - say: "The postmortem? I wrote it. It's the doc you write after an incident. What happened, in what order, how you fixed it."
+  - say: "Took me four days."
+  - chat: [kernel_reader, "x3.7 on the postmortem too"]
+  - say: "Postmortems don't get a multiplier."
+  - chat: [rtos_veteran_15y, "how did you stop it that morning"]
+  - say: "That morning I was running the incident. Over chat. First thing, I rolled back the change we'd just shipped. Before we even knew it was the cause."
+  - say: "Rolling back was the fastest and the safest thing. It stopped at fourteen minutes because we rolled back."
+  - say: "Then we resent the backed-up alerts. Checking a sent marker on each one. So no shop got the same alert twice."
+  - chat: [second_year_dev, "you roll back before you know the cause?"]
+  - say: "You roll back. While the shops are hurting, stopping the impact comes first. Root cause can wait a bit."
+  - say: "Under 'why it happened,' I put three things."
+  - say: "It held a lock while calling out. There was no timeout. The mock was always fast."
+  - say: "And: our process let a change that calls out to another company go in on one sleepy LGTM."
+  - chat: [second_year_dev, "you put your own name in?"]
+  - say: "My own name? In the timeline, as a fact. Four oh five, Nox approves. ...It was a little embarrassing."
+  - say: "But I didn't put the name of the person who wrote it. The cause section is about the system, not people."
+  - chat: [rtos_veteran_15y, "and the fix"]
+  - say: "The fix. Copy just what you need while holding the lock, then let go of the lock before the outside call. And every outside call gets a timeout. Always."
+  - say: "And when the call comes back, if things changed while you were gone, you don't just write over them. You check again first."
+  - say: "And I added a slow one to the test mocks. A little guy who just sits there silent for thirty seconds."
+  - chat: [lag_appreciation_club, "slow mock is kinda cute"]
+  - say: "He's so cute. I ran it, and boom, instant queue."
+  - say: "On the old code, I mean. After the fix, it flowed just fine."
+  - chat: [lag_appreciation_club, "dont be happy it broke"]
+  - say: {face: laugh, text: "Of course I'm happy! When the queue showed up I actually made a noise. A small one."}
+  - chat: [kernel_reader, "fourth item?"]
+  - say: "Fourth item. Any change that calls another service needs two reviewers now. And if you're sleepy, whatever the time, hand the review off."
+  - chat: [ddd_police, "did you test slow responses too?"]
+  - say: "Yeah. This time I also tested the answer never coming at all."
+  - say: "Besides the thirty-second guy, I added one who just hangs up without saying anything."
+  - chat: [rtos_veteran_15y, "a hang up mock huh"]
+  - say: "The real ones do it too. Like, once, in the middle of the night."
+  - chat: [second_year_dev, "did you make the acknowledgments?"]
+  - say: "Acknowledgments? I did! The on-call person at the company we were calling wrote, in their postmortem, 'Nox sent us logs with timestamps.'"
+  - say: "They were down that Sunday morning too. Our logs told them exactly when they went down."
+  - chat: [lag_appreciation_club, "not nxo?"]
+  - say: {face: shy, text: "Not nxo. They spelled it right. I was so happy I read it twice."}
+  - chat: [first_time_here, "nxo?"]
+  - say: "nxo is, um, one time I got thanked in a changelog and they misspelled my name. That's a story for another day."
+- title: Closing (Yoru)
+  beats:
+  - chat: [rtos_veteran_15y, "didnt this exact bug happen on mars"]
+  - say: {face: surprised, text: "You're bringing up Mars? I was saving that for next time!"}
+  - chat: [rtos_veteran_15y, "my bad"]
+  - say: "It's fine. Something shaped like this happened on Mars in nineteen ninety-seven. Lock holder stuck, waiters pile up. Different cause, though."
+  - say: "That's next time. We're out of time tonight."
+  - chat: [second_year_dev, "yoru?"]
+  - say: "You're asking about Yoru?"
+  - chat: [first_time_here, "whats yoru"]
+  - say: "Yoru means 'night.' It's a tiny OS I've been building for nine years, just on free nights."
+  - say: "The old version gets as far as the timer. The one I'm rewriting prints its name on one line, then crashes on the first timer interrupt."
+  - chat: [first_time_here, "its been crashing for 9 years"]
+  - say: "It's the rewrite that crashes. Tonight's hypothesis: when the interrupt comes in, it saves its notes in the wrong slot."
+  - chat: [kernel_reader, "nervous"]
+  - say: "It printed 'yoru.' Okay. Enabling interrupts."
+  - say: {face: surprised, text: "It crashed."}
+  - chat: [lag_appreciation_club, "crashed again"]
+  - chat: [rtos_veteran_15y, "crashed again"]
+  - say: {face: laugh, text: "Everyone's like 'crashed again.' But it crashed somewhere different than last week!"}
+  - chat: [kernel_reader, "progress?"]
+  - say: "It's not fixed. But I've got one more crash to compare against. The save-slot hypothesis isn't dead yet, though."
+  - say: "Thanks, everyone who's awake. That was fun."
+  - say: "Go to bed. I'm finishing my Red first, though."
+  - chat: [night_shift_survivor, "i thought there was only one"]
+  - say: {face: shy, text: "There was only one box, but... there's five in a box. I still have two."}

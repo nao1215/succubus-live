@@ -1,0 +1,185 @@
+# Ella 006 (English). Same beats as src/episodes/ella/006.yaml.
+title: "Why Japan loves shred guitar, and the karaoke scoring machine"
+parts:
+- title: Opening (three hours of tambourine)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Do forgive me, my arms are rather heavy today."
+  - chat: [headbang_whiplash, "what did u do"]
+  - say: "What did I do? Yesterday I accompanied my lady to karaoke."
+  - chat: [new_releases_only, "u sang??"]
+  - say: "Did I sing? I did not. I was in charge of the tambourine."
+  - chat: [budokan_balcony_east, "tambourine duty lol"]
+  - say: "Please don't laugh at tambourine duty. The whole time my lady sang, I kept the beat. For three hours."
+  - chat: [piano_teacher, "3 hours will wreck your arms"]
+  - say: "Three hours will wreck your arms. It does. Though I never once lost the beat, mind you."
+  - chat: [first_time_here, "which karaoke place?"]
+  - say: "Which place? Big Echo. It's one of the big karaoke chains in Japan, private rooms by the hour. The one by the station in the castle town."
+  - chat: [sold_my_keyboard, "what did lise sing"]
+  - say: "What my lady sang... for the sake of her honor, that shall remain undisclosed."
+  - say: "And then, at the very end, my lady says, 'Ella, you do one too.'"
+  - chat: [headbang_whiplash, "here we go"]
+  - say: "Here we go, yes. So I doubled the tambourine tempo and pretended I hadn't heard."
+  - chat: [new_releases_only, "thats such a lazy escape"]
+  - say: {face: smug, text: "A lazy escape. Lazy or not, my dear, an escape is an escape."}
+- title: Main story (my theory, and Teacher's rebuttal)
+  beats:
+  - chat: [budokan_balcony_east, "so is today a guitar talk?"]
+  - say: "Today is a guitar talk, yes. There's something I've wondered about for ages."
+  - say: "People in Japan do love their shred guitarists, don't they. Mister Ritchie Blackmore. Mister Yngwie Malmsteen."
+  - chat: [budokan_balcony_east, "love em"]
+  - chat: [new_releases_only, "old guys do"]
+  - say: "Budokan loves them, and according to New Releases, 'old guys do.' Old guys."
+  - chat: [new_releases_only, "old guys and ella"]
+  - say: {face: annoyed, text: "Old guys and Ella? Kindly do not file me under old guys."}
+  - say: "And then, Mister Michael Schenker. In Japan, they call him 'God.'"
+  - chat: [first_time_here, "god?"]
+  - chat: [budokan_balcony_east, "god is god"]
+  - say: "Asked 'God?', Budokan answers 'God is God.' My dear, that explains nothing."
+  - chat: [budokan_balcony_east, "because hes god"]
+  - say: "Because he's God. ...Very well. He is God."
+  - say: "Now, my theory. Not statistics, mind you. Just a notion of mine."
+  - say: "Old Japanese pop ballads, kayokyoku, are full of sad, aching melodies. These guitarists sing that for you. That's why they're loved, I think."
+  - chat: [first_time_here, "the guitar sings?"]
+  - say: "The guitar sings, yes, it plays as if it's weeping. In Japan they call it 'naki no guitar.' The crying guitar."
+  - say: "And Mister Yngwie plays classical lines, the sort of note patterns Mister Bach wrote, on an electric guitar."
+  - say: "The weeping of old pop songs, and the patterns of classical music. Both are in there, so it hits Japanese listeners right in the heart. Or so I think."
+  - chat: [piano_teacher, "yngwie uses harmonic minor a lot too"]
+  - chat: [first_time_here, "harmonic what..."]
+  - say: "Teacher means harmonic minor. Dear newcomer, the minor scale is the sad-sounding one. Harmonic minor raises just its seventh note a half step."
+  - say: "A, B, C, D, E, F, G sharp, A. At the end, it feels like taking one stair in a big leap."
+  - chat: [first_time_here, "can you sing it?"]
+  - say: {face: flustered, text: "Sing it, again? I will not sing. Play it, I would."}
+  - chat: [headbang_whiplash, "play it then"]
+  - say: "Play it, you say. I haven't got my keyboard out today, so another time."
+  - chat: [piano_teacher, "thats a different thing from the yonanuki scale in enka though"]
+  - say: "Different from enka's yonanuki, 'no four, no seven.' Do-re-mi minus the fourth and seventh, five notes left. That nostalgic old sound."
+  - chat: [piano_teacher, "theres a minor yonanuki too, and kayokyoku is all over the place"]
+  - say: "There's a minor yonanuki too, and kayokyoku is all over the place. Quite right. I was lumping sad songs and classical music together far too neatly."
+  - chat: [budokan_balcony_east, "but loving the crying guitar is real"]
+  - say: "But loving the crying guitar is real. That part, watching you, Budokan, I do believe is true."
+- title: Side track (the karaoke scoring machine)
+  beats:
+  - chat: [new_releases_only, "speaking of scales, ever done karaoke scoring ella?"]
+  - say: "Have I ever used the scoring? ...Exactly once."
+  - chat: [headbang_whiplash, "oh u have"]
+  - say: "My lady made me turn on the precision scoring mode. The one where pitch bars come up on the screen."
+  - chat: [first_time_here, "oh yeah the one that shows when ur off the line"]
+  - say: "Shows when you're off the line, yes. And every single one of my lines sat below the target."
+  - chat: [budokan_balcony_east, "every one?"]
+  - say: "Every one? Every one. Neatly, by the same distance, all of them low."
+  - chat: [sold_my_keyboard, "thats almost impressive"]
+  - say: "Almost impressive. My lady said, 'that's weirdly precise.' I was not pleased."
+  - chat: [piano_teacher, "same thing at the castle new year party right"]
+  - say: {face: flustered, text: "The castle's year-end banquet... Teacher. Please, not that story."}
+  - chat: [piano_teacher, "she sang rainbow, catch the rainbow"]
+  - chat: [budokan_balcony_east, "thats a classic"]
+  - say: "Rainbow, 'Catch the Rainbow.' A classic. And because it's a classic, I sang it."
+  - chat: [piano_teacher, "a little flat from start to finish"]
+  - chat: [new_releases_only, "but ur ears are so good?"]
+  - say: "A little flat start to finish, despite good ears? It's because my ears are good that I can hear I'm flat! I know it, and I cannot fix it!"
+  - chat: [sold_my_keyboard, "thats the worst kind"]
+  - say: "The worst kind. It truly is."
+  - chat: [headbang_whiplash, "whats everyones go-to karaoke song?"]
+  - chat: [budokan_balcony_east, "kurenai. too high, i die every time"]
+  - chat: [new_releases_only, "yoasobi idol. too fast, i die"]
+  - say: "Go-to songs. Budokan dies on the high notes of X Japan's 'Kurenai.' New Releases dies on the rap in YOASOBI's 'Idol.' Both, every time."
+  - chat: [sold_my_keyboard, "i dont sing. tambourine duty like ella"]
+  - say: "You don't sing, and you're on tambourine duty like me! Sold My Keyboard, shall we start a tambourine society?"
+  - chat: [sold_my_keyboard, "its just the two of us"]
+  - say: "Just the two of us... oh, wait. Nox said she spent an entire work after-party on tambourine too, at her old job."
+  - chat: [new_releases_only, "now its three"]
+  - chat: [headbang_whiplash, "three tambourines would be so loud"]
+  - say: "Three would be loud. Three of us, each on a different beat. That would be a proper accident."
+  - chat: [sold_my_keyboard, "ella would be the loudest"]
+  - say: {face: annoyed, text: "I'd be the loudest? I would be the most accurate. Not loud. Accurate."}
+  - say: "Even two of us can hold a beat perfectly well."
+  - chat: [headbang_whiplash, "whats the score for tambourine"]
+  - say: "What does tambourine score? Tambourines don't get scored. If they did, I am quite certain I'd get a perfect hundred."
+  - chat: [sold_my_keyboard, "ur timing does sound really precise"]
+  - say: "My timing does sound precise. Timing, at least, I'm sure of."
+  - chat: [budokan_balcony_east, "if we're talking guitar you cant skip the live albums recorded in japan"]
+  - say: {face: smile, text: "Live albums recorded in Japan! Yes, that's the one! Budokan, splendid as ever."}
+- title: Back to the story (live albums recorded in Japan)
+  beats:
+  - say: "One more thing about Japan and its guitar heroes."
+  - say: "Deep Purple's live album, 'Made in Japan.' Recorded in August nineteen seventy-two, in Osaka and at the Budokan."
+  - say: "It was originally recorded on the promise that it would only come out in Japan."
+  - chat: [budokan_balcony_east, "and then it sold all over the world"]
+  - say: "And it sold all over the world, exactly. An album meant for Japan became a classic for everyone."
+  - chat: [piano_teacher, "didnt know that"]
+  - say: "Even Teacher didn't know. Japan only, that was the plan. I was astonished when I found out, too."
+  - chat: [new_releases_only, "an accidental classic"]
+  - say: "An accidental classic, yes. The people who recorded it must have been quite startled."
+  - say: "And then Rainbow's 'On Stage.' Recorded mostly at their Japan shows in December nineteen seventy-six."
+  - say: "But it seems the Japan recordings alone didn't satisfy them, so it's stitched together with a show in Germany."
+  - chat: [budokan_balcony_east, "76 budokan, my parents wouldnt let me go"]
+  - say: {face: surprised, text: "Budokan in seventy-six, and your parents said no. So even you missed a show, Budokan."}
+  - chat: [budokan_balcony_east, "i was in middle school"]
+  - say: "You were in middle school. Somehow, I suddenly feel very fond of you."
+  - chat: [first_time_here, "what was your first concert ella?"]
+  - say: "My first concert? March, nineteen eighty-four. Rainbow, at the Budokan. Toward the back of the second floor."
+  - chat: [budokan_balcony_east, "wait i was there too"]
+  - say: "'I was there too.' You've said that before, haven't you. When I asked your seat, you were three rows in front of me."
+  - chat: [budokan_balcony_east, "took 40 years to find out"]
+  - say: "Forty years to find out. I thought I was raising my fist with strangers, and one of them was someone I knew."
+  - ask:
+      q: "Of everyone today, is there anyone you love, or would like to try?"
+      options:
+      - c: "ritchie blackmore"
+        r:
+        - "Ritchie Blackmore. {name}, a Rainbow person. I adore him too."
+        - "Do listen to 'Catch the Rainbow' on the original record, not my rendition."
+      - c: "yngwie"
+        r:
+        - "{name} says Yngwie. You like it fast, do you?"
+        - "That scale with the big leap at the end. Once you notice it, your ears go hunting for it on their own."
+      - c: "someone else / not sure yet"
+        r:
+        - "Someone else, or not sure yet. {name}, if it's someone else, do tell me in chat."
+        - "If you're not sure yet, pick one name from today and try a single song. That's plenty."
+      - c: "marty friedman"
+        r:
+        - "Marty Friedman. {name}, he's a familiar face on Japanese television too."
+        - "He lives in Tokyo now, and he's a great fan of old Japanese pop, I'm told."
+      npc:
+      - [budokan_balcony_east, 0]
+      - [sold_my_keyboard, 0]
+      - [new_releases_only, 2]
+      - [piano_teacher, 1]
+      - [headbang_whiplash, 1]
+  - say: "Plenty for Mister Ritchie and Mister Yngwie, I see."
+- title: Closing (the guitarist who moved to Tokyo)
+  beats:
+  - chat: [first_time_here, "marty is the guy from tv?"]
+  - say: "Is Marty the man from television? Yes, dear newcomer. The one whose Japanese is splendid."
+  - say: "He was in a band called Megadeth until nineteen ninety-nine, and he's lived in Tokyo since two thousand three."
+  - chat: [first_time_here, "oh he was a metal guy"]
+  - say: "Oh, a metal guy, you say. A metal man, yes. And terrifyingly fast."
+  - chat: [budokan_balcony_east, "watched hebimeta-san every week"]
+  - say: "Hebimeta-san, every week! That was a late-night TV show where he taught heavy metal to Japanese TV hosts. Budokan, do you have recordings?"
+  - chat: [budokan_balcony_east, "on vhs"]
+  - say: {face: surprised, text: "On VHS. Right now, I am genuinely jealous."}
+  - chat: [new_releases_only, "do u wind vhs with a pencil too?"]
+  - say: "Do you wind VHS with a pencil? No. That's cassettes only."
+  - say: "So, in February twenty twenty-three, Megadeth played their very first headline show at the Nippon Budokan."
+  - say: "And out came Mister Marty! The first time on a stage with Megadeth in twenty-three years."
+  - chat: [budokan_balcony_east, "i went"]
+  - say: {face: surprised, text: "'I went.' You were there!"}
+  - chat: [budokan_balcony_east, "second floor east"]
+  - say: "Second floor, east. Just like your name."
+  - chat: [budokan_balcony_east, "thats what the name is for"]
+  - say: "That's what the name is for. I'd imagine so. Mister Marty played three songs near the end. 'Tornado of Souls' among them."
+  - chat: [budokan_balcony_east, "the second floor shook during the tornado solo"]
+  - say: "The second floor shook during the Tornado solo. Did it now."
+  - chat: [budokan_balcony_east, "felt like it did"]
+  - say: "It 'felt like' it did."
+  - chat: [new_releases_only, "it always ends with felt like it"]
+  - say: "It always ends with 'felt like it.' That night, I watched on the stream. With my lady's coat across my lap."
+  - chat: [piano_teacher, "why the coat?"]
+  - say: "Why the coat? She handed it to me before going out, 'hold this,' and that was that. Business as usual."
+  - chat: [headbang_whiplash, "so why does japan love shredding in the end?"]
+  - say: "So in the end, why does Japan love shred? Hmm. I couldn't work it out. I think I can say they love a crying guitar, at least."
+  - chat: [sold_my_keyboard, "now i wanna hear a crying guitar"]
+  - say: "Now you want a crying guitar. Please do. 'Catch the Rainbow,' on the original record. Thank you for today, my dears."
+  - say: "I shall now go and ice my arms. The tambourine arms. Farewell."

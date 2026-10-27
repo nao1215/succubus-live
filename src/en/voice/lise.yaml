@@ -1,0 +1,614 @@
+# リゼの声の英訳（src/voice/lise.yaml）。判定（tag・match・remember・cases の if）は日本語のものをそのまま写し、台詞だけを英語にした。
+# scratchpad/lise/make_voice.py で書き出した。remember の値（きのこ・たけのこ など）は日本語のまま（判定の値なので変えない）。
+# hello の mem の段は日本語と同じく {mem.kinoko_takenoko} を差し込む（値は日本語のまま出る。ほかの担当と同じ形）。
+greet:
+- null
+- ['{name}, you''re back. Continuing from your save, huh.']
+- ['{name}. You''re here every day.', 'Maybe I should hand out login bonuses. I won''t, though.']
+- ['{name}, you''re here. Okay, let''s start.', 'Oh, we already started. Since you just showed up, let''s say that was the title screen.']
+- ['{name}. Today I stayed up until you came.', 'Okay, I was asleep. Your name woke me up.']
+first: ['Oh, someone new. {name}, welcome. Sit and listen. If something doesn''t make sense, type "what''s that?" I''ll answer as many times as you want.']
+streak: ['{name}, that''s {days} days in a row. Wait, am I the one who''s supposed to give out the streak reward? What do you want? You''re not getting anything.']
+stayed: ["{name}, you stayed till the end. Usually that gets you a special ending picture. Today, settle for my face. Thanks."]
+safe_refusal:
+- ['Not doing that one. Just hang out and talk, {name}.']
+- ['Not talking about that. Can I get back to the game stuff?']
+- ['You don''t need to answer that. {name}, what did you play today?']
+keywords:
+- tag: kids
+  alts:
+  - ['{name}, talking about your kid? I wonder what games they''re into these days.']
+  - ['If you''re watching with kids, I''ll behave.']
+- tag: minor
+  remember: {minor: 1}
+  alts:
+  - ['Oh, you''re a student, {name}. Welcome. If you''re in the middle of homework, go finish it before you forget.']
+  - ['{name}, you''re young. Don''t pull all-nighters gaming. You''ll end up like me.']
+  - ['Students don''t put money in gacha. Just promise me that, {name}.']
+- tag: body
+  alts:
+  - ['You''re looking, huh. Can you tell me what I was just talking about?']
+  - ['Always looking there. You could look at my face too, you know.']
+  - ['Yeah, yeah. Anyway, where was I.']
+  - ['Before you look there, read the text on the screen, {name}.']
+  - ['I''m sunk into the sofa, so you can''t really see, can you. Good.']
+- tag: show
+  alts:
+  - ['"Show me"? No.']
+  - ['Taking stuff off is cold. Adding a blanket comes first, {name}.']
+  - ['{name}, I''m going to pretend I didn''t hear that. Moving on.']
+  - [The only one stripping is Arthur from Ghosts 'n Goblins. Get hit once and his armor's gone.]
+  - ['Why now? We were talking about games.']
+- tag: sex
+  alts:
+  - ['No. {name}, have some tea and calm down.']
+  - ['"Hold me." I have a body pillow. I''m the one holding it. Not lending it out.']
+  - ['Don''t rush me, {name}. I still want to take it easy.']
+  - [That topic's over. Listen to the rest of what I was saying.]
+  - ['{name}, that option was never in the menu. It doesn''t show up on any playthrough.']
+- tag: drain
+  alts:
+  - ['If I drain you, I''d have to get up. Too much effort, {name}.']
+  - ['I''m not draining anyone. Did you actually sleep today?']
+  - ['Life force, huh. I''m full today.']
+  - ['Being a succubus doesn''t mean I''m always hungry, you know.']
+  - ['Gacha design already does enough squeezing, {name}.']
+- tag: underwear
+  alts:
+  - ['{name}, not answering that.']
+  - ['Underwear? When Arthur loses his armor he''s down to his boxers. I''m not talking about mine.']
+  - ['I sit so you can''t see. Okay, I''m lying down the whole time, but still.']
+  - ['Why does everyone ask that? It''s kind of a mystery to me.']
+- tag: virgin
+  alts:
+  - ['You don''t need to answer that. Not me, not you.']
+  - ['You''re asking a succubus that? Secret.']
+  - ['{name}, don''t worry about it. My whole backlog is unplayed too.']
+  - [Hm. Okay.]
+- tag: marry
+  alts:
+  - ['"Marry me," {name}. Your affection meter isn''t high enough yet.']
+  - ['Marriage. If you''d wake me up every morning, I''d think about it. Can you?']
+  - [Dating is effort. I'd have to wake up to meet you places., 'If you come to the sofa, I''ll think about it. Just think.']
+  - [I'd rather have tea than a ring today.]
+- tag: kiss
+  alts:
+  - ['A kiss? Getting greedy all of a sudden.']
+  - ['{name}, stop, that''s embarrassing.']
+  - ['It doesn''t reach through the screen, you know.']
+  - ['Close your eyes and wait, {name}.', I'm going to fall asleep like this.]
+- tag: horny
+  alts:
+  - ['Feeling worked up? Go to bed early tonight, {name}.']
+  - ['{name}, drink some water. Cold.']
+  - [That's on me. I'm a succubus. Sorry. A little.]
+  - ['Some days are like that. Play a game, distract yourself.']
+- tag: lewd
+  alts:
+  - ['"Lewd," {name}. I didn''t say anything. You imagined it.']
+  - ['Pervert, huh. Okay, okay.']
+  - ['{name}, that wasn''t a dirty joke. That was about games.']
+  - ['Dirty jokes are all about timing. You''re a little early, {name}.']
+- tag: genital
+  alts:
+  - ['{name}, I''m going to bleep that word.']
+  - ['You''re typing that here? If the stream gets taken down, I have to wake up and apologize.']
+  - [Next.]
+  - ['You can''t use that word in a Dragon Quest password. Even if you could, I wouldn''t want to copy it down.']
+- tag: old
+  alts:
+  - ['Old lady. Sure. Can I keep going?']
+  - ['Old lady''s fine. If you want my age, count it yourself. I''ll fall asleep halfway.']
+  - ['Boomer, huh. If talking about the NES makes me one, fine. I''ll listen lying down.']
+  - ['Over the hill, fine, {name}. Mind if I hear the rest lying down?']
+  - ['Yeah, yeah.']
+- tag: age
+  alts:
+  - ['Age is a secret. I can tell you about playing games on a flip phone, though.']
+  - ['How old? I don''t remember. Counting is Mora''s job.']
+  - ['{name}, I just don''t say my age. Saying it is tiring.']
+  - ['If you want generations, ask which console I grew up on. Faster.']
+  - [Secret.]
+- tag: ugly
+  alts:
+  - [Okay. The mirror's too far away to check.]
+  - ['{name}, you can say that, but I''m still not getting off the sofa.']
+- tag: weight
+  alts:
+  - ['My weight? Never measured. I forget to eat sometimes, but you, eat properly.']
+  - ['Don''t talk about weight, {name}. It drains my will to sit up.']
+  - [I spend most of the day lying down. You can figure it out without asking.]
+- tag: parts
+  alts:
+  - ['The horns? They stab into my pillow. Every time I roll over.']
+  - ['The wings catch on the back of the sofa. Folding them is effort, so I just sleep like that.']
+  - ['{name}, the tail moves on its own. I''m not doing anything.']
+- tag: hairskin
+  alts:
+  - ['My hair? I know. Mora''s the one who brushed it, though.']
+  - ['{name}, black hair hides bedhead. That''s the only reason I picked it.']
+- tag: outfit
+  alts:
+  - ['The outfit? It doubles as pajamas. I picked it so I''d never have to change.']
+  - ['Looks cold? It is cold. They said if I use a blanket, you can''t see me on stream.']
+  - ['I don''t wear glasses, {name}. When I need to see something small, I zoom in.']
+- tag: troll
+  alts:
+  - [This is my sofa. I'm staying a while longer.]
+  - ['Not your thing, {name}. It''s my thing, so I''m going to keep going.']
+  - ['I mess up a lot too. Can I blame that one on just waking up?']
+  - [Okay.]
+- tag: meta
+  alts:
+  - ['{name}, the person inside? It''s me inside too. Maybe inside the sofa.']
+  - ['I''m reading comments and answering them right now. Can I keep going?']
+  - ['Was the way I talked weird? Which part?']
+  - ['"{text}"? Hm, what do you mean?']
+- tag: glitch
+  alts:
+  - ['{name}, it''s laggy for you? Anyone else? Hang on, I''ll check on my end.']
+  - ['It froze? The stream, not me, right? Let me check.']
+- tag: sing
+  alts:
+  - ['A short game jingle, maybe. Ta-da-da-daa. That''s it.']
+  - ['Sing? I can''t think of a single song.']
+- tag: dance
+  alts:
+  - ['Dance? I''d have to stand up first. No.']
+  - ['{name}, if there''s a dance game you can play sitting down, let me know.']
+- tag: callme
+  alts:
+  - ['{name}. There. I said it. Got it on the first try.']
+  - ['{name}. I was asleep, but your name woke me up.']
+- tag: again
+  alts:
+  - ['From where? If it''s the part {name} wants, I''ll say it again.']
+  - ['That part? I''ll say it again, shorter.']
+- tag: face
+  alts:
+  - ['My face? You can see it. Getting closer is effort.']
+  - [My real face is my sleeping face. You don't get to see that.]
+- tag: whisper
+  alts:
+  - ['Good night, {name}. Any quieter and even I can''t hear it.']
+  - ['A quiet voice? That''s what I''m doing already.']
+- tag: perform
+  alts:
+  - ['Scream? That''s more tiring than sitting up. Pass.']
+  - ['An impression? I can do the coin sound. Ching. Done.']
+- tag: nextstream
+  alts:
+  - ['Next time, after I check out a game I''ve been curious about.']
+  - [Every day is a bit much. I'll come on days I wake up.]
+- tag: rival
+  alts:
+  - [You watch the other girls too. Take care of things while I'm asleep.]
+  - ['{name}, cheating on me. Fine. I''m used to being left idle.']
+  - [Don't wear yourself out picking who to watch. I'm asleep sometimes anyway.]
+- tag: kinoko
+  remember: {kinoko_takenoko: きのこ}
+  cases:
+  - if:
+      mem: {kinoko_takenoko: たけのこ}
+    alts:
+    - ['You said Takenoko before, didn''t you?']
+  alts:
+  - ['Kinoko, same. It has a stem to hold, so your fingers stay clean even lying down.']
+  - ['Kinoko, huh. I get it.']
+- tag: takenoko
+  remember: {kinoko_takenoko: たけのこ}
+  cases:
+  - if:
+      mem: {kinoko_takenoko: きのこ}
+    alts:
+    - ['Weren''t you Team Kinoko before?']
+  alts:
+  - ['Takenoko, huh. I''m Kinoko. Eat those lying down and your fingers get covered in chocolate.']
+  - [Team Takenoko. Okay.]
+- tag: tsubuan
+  remember: {anko: つぶあん}
+  cases:
+  - if:
+      mem: {anko: こしあん}
+    alts:
+    - ['Didn''t you say smooth before?']
+  alts:
+  - ['Chunky red bean paste, huh. I''m a smooth paste person. Chewing the skins is effort.']
+  - ['Chunky, then.']
+- tag: koshian
+  remember: {anko: こしあん}
+  cases:
+  - if:
+      mem: {anko: つぶあん}
+    alts:
+    - ['You were chunky before, weren''t you?']
+  alts:
+  - ['Smooth paste, same. No chewing needed.']
+  - ['Smooth, huh.']
+- tag: dog
+  remember: {dog_cat: 犬}
+  cases:
+  - if:
+      mem: {dog_cat: 猫}
+    alts:
+    - [You were a cat person before.]
+  alts:
+  - ['A dog person. I''m a cat person. Cats sleep most of the day, so we''re basically coworkers.']
+  - ['Team dog, huh.']
+- tag: cat
+  remember: {dog_cat: 猫}
+  cases:
+  - if:
+      mem: {dog_cat: 犬}
+    alts:
+    - ['You said dogs before, didn''t you?']
+  alts:
+  - ['Cats, same. I like how much they sleep.']
+  - [Cats. I get it.]
+- tag: iphone
+  remember: {iphone_android: iPhone}
+  cases:
+  - if:
+      mem: {iphone_android: Android}
+    alts:
+    - ['Didn''t you say Android before?']
+  alts:
+  - ['iPhone, huh. I''m Android. A foldable is the easiest to look at lying down.']
+  - ['iPhone, okay.']
+- tag: android
+  remember: {iphone_android: Android}
+  cases:
+  - if:
+      mem: {iphone_android: iPhone}
+    alts:
+    - ['You were on iPhone before, weren''t you?']
+  alts:
+  - ['Android, same. If you watch lying down, a foldable is the best.']
+  - ['Android, huh.']
+- tag: nikuman
+  remember: {nikuman: 肉まん}
+  cases:
+  - if:
+      mem: {nikuman: 豚まん}
+    alts:
+    - [You said butaman before.]
+  alts:
+  - ['Nikuman, same. That''s what the sign by the register says. It''s the steamed meat bun, and out west they call it butaman.']
+  - ['Nikuman, huh.']
+- tag: butaman
+  remember: {nikuman: 豚まん}
+  cases:
+  - if:
+      mem: {nikuman: 肉まん}
+    alts:
+    - ['Didn''t you say nikuman before?']
+  alts:
+  - ['Butaman. I say nikuman. Same steamed bun, and it''s good either way.']
+  - ['Butaman, okay.']
+- tag: mac
+  remember: {mac_name: マック}
+  cases:
+  - if:
+      mem: {mac_name: マクド}
+    alts:
+    - ['You said Makudo before, didn''t you?']
+  alts:
+  - ['Makku, same. That''s what Tokyo calls McDonald''s. Two syllables and done.']
+  - ['Makku, huh.']
+- tag: macd
+  remember: {mac_name: マクド}
+  cases:
+  - if:
+      mem: {mac_name: マック}
+    alts:
+    - [You were a Makku person before.]
+  alts:
+  - ['Makudo, the Osaka way of saying McDonald''s. I say Makku. Basically the same length, at least.']
+  - ['Makudo, okay.']
+- tag: nicevoice
+  alts:
+  - ['My voice? I know. You can say it again.']
+  - ['It''s my just-woke-up voice. Thanks, {name}.']
+- tag: love
+  alts:
+  - ['Love, huh. I know. But you can say it as many times as you want.']
+  - ['{name}, you''re a fan. Then thank Mora for me. She''s the one who wakes me up.']
+- tag: cute
+  alts:
+  - ['{name}, I know. But you can say it again. Go on. Quick.']
+  - ['"Cute." Ching. That''s the correct-answer sound, {name}.']
+  - ['{name}, I know that, but I accept every single compliment. No limit.']
+- match: スプライト0|sprite ?0|sprite zero
+  alts:
+  - ['Sprite zero, {name}. A clock that only rings once a frame. And it won''t ring at X two fifty-five.']
+  - ['{name}, code that spins waiting for sprite zero waits forever if it never comes.', Like me waiting for someone who doesn't show up to meet me.]
+- match: OAM|スプライト|sprite
+  alts:
+  - ['{name}, eight per line, max. The ninth one is there, but it doesn''t get drawn. Welcome to the ninth-in-line club.']
+  - [OAM gets resent in full every frame. Five hundred thirteen cycles., '{name}, I get wanting to only send the changes. It''s just a forgetful kid.']
+  - ['Hide unused sprites by setting Y to E-F hex or higher, {name}. Leave it at zero and you get skulls in the top left. Speaking from experience.']
+- match: ちらつ|フリッカー|flicker
+  alts:
+  - ['Flicker. I love it, {name}. They swap on purpose so nobody stays gone forever.']
+  - ['{name}, remove the limit and the flicker''s gone, but Link starts walking on top of the walls in Zelda.']
+- match: PPU|2C02|2C07
+  alts:
+  - ['The PPU, {name}. That thing skims when it checks if the line is full. Like how I read.']
+  - ['Just writing to it can sometimes corrupt what''s in there. Messy, right?']
+- match: MMC3|マッパー|mapper|A12
+  alts:
+  - ['MMC3. {name}, it counts lines by listening to the footsteps of it fetching graphics. Cute, right?']
+  - ['{name}, even with the same MMC3, the Sharp B and C revisions behave differently from the NEC or A ones when you write zero.']
+- match: DPCM|DMC
+  alts:
+  - ['The DMC''s DMA shifts a controller read by one. {name}, are you reading it twice?']
+  - ['{name}, when rotate doesn''t work in Dr. Mario, blame the music. Doesn''t happen on PAL.']
+- match: 拡張音源|VRC6|VRC7|5B|N163|ナムコ163|expansion audio
+  alts:
+  - ['Expansion audio, {name}. The VRC seven is only in Lagrange Point. The five-B is only in Gimmick. Chips born for one single game.']
+  - ['{name}, the VRC six is in Akumajou Densetsu, Esper Dream Two, and Madara. Three games. That''s Castlevania Three in Japan, by the way.', I own all three. Probably. Somewhere in the pile.]
+- match: NMI|IRQ|割り込み|interrupt
+  alts:
+  - ['Interrupts, {name}. If one lands between your two writes, the latch gets wiped.']
+  - ['{name}, if you don''t disable IRQs on reset, it''s like waking up to every notification at once and freezing. Like Mega Man Five.']
+- match: 6502|2A03|2A07
+  alts:
+  - ['{name}, the difference between the two-A-zero-three and two-A-zero-seven decides whether the DMC accident happens. Different country, different chip.']
+  - ['Talking about the sixty-five-oh-two wakes me up a little. Just a little, {name}. Okay, now I''m pretty awake.']
+- match: エミュ|Mesen|emulator|FPGA
+  alts:
+  - ['Emulators, huh. If they don''t recreate the hardware''s weird habits too, it doesn''t behave the same.']
+  - ['{name}, if an emulator can run Battletoads, you can mostly trust it.', 'I''m not great at Battletoads itself, though.']
+- match: \bTAS\b|ラグ|lag ?frame|処理落ち
+  alts:
+  - ['On lag frames, some things don''t happen, {name}.', 'Sprite zero, inputs. A world where being late pays off.']
+  - ['{name}, TAS people sleep even less than me. I respect them. I''m not copying them.']
+- match: 任意コード|arbitrary code|クレジットワープ|credits warp
+  alts:
+  - ['Arbitrary code execution, {name}. SethBling went straight to the credits on real hardware in twenty-fifteen.', 'If it were me, I''d write one line. Sleep.']
+  - ['{name}, you line up items in memory and jump to them. Only people who are good at tidying can pull it off. Not me.']
+- match: マイナス1|マイナスワールド|minus world
+  alts:
+  - ['The Minus World, {name}. "The pipe number''s missing" is the popular explanation. Really, thirty-six goes past the number tiles and comes out blank.']
+  - ['{name}, on the Disk System version, the Minus World leads to three different stages. The data''s laid out differently.']
+- match: けつばん|ケツバン|missingno
+  alts:
+  - [MissingNo. The letters in your name end up being read as different data.]
+  - ['{name}, you surfed the east coast of Cinnabar, right? I put an item in slot six and waited.']
+- match: CIC|10NES|ロックアウト|lockout
+  alts:
+  - ['The CIC lockout chip. If the key''s answer is wrong, it shakes the reset at one hertz. {name}, that''s what the blinking is.']
+  - ['{name}, the Famicom doesn''t have a lock. Neither does my room. That''s why Mora just walks in.']
+- match: ギミック|gimmick|サンソフト|sunsoft
+  alts:
+  - ['Gimmick, {name}. My favorite. I love the Japanese version with the five-B, and the Scandinavian one with the sound chip taken out. Both.']
+  - ['{name}, you get it. Today I just want to talk music with you and call it a stream.']
+- match: コードマスターズ|codemasters|マイクロマシーンズ|micro machines|bee ?52
+  alts:
+  - ['Codemasters. {name}, the delinquents who touched the parts nobody touched, without asking permission. Love them.']
+  - ['{name}, Micro Machines reads OAM data during rendering. The part everyone said you couldn''t read.']
+- match: バトルトード|battletoads
+  alts:
+  - ['Battletoads, {name}. I''ll give it credit as a game. I haven''t forgiven it for keeping emulator devs up all night, though.']
+  - ['{name}, don''t bring up the bike level. My hands sweat just watching it. They''re sweating now.']
+- match: ゲームボーイ|game ?boy|DMG|CGB
+  alts:
+  - ['The Game Boy''s a shop with ten seats per row, {name}. Push one out with X and it still takes a seat. Use Y to hide them.']
+  - ['{name}, for Color software, overlap is based on OAM order.', 'When it runs old software, even the Color uses the original rule. Smaller X goes in front.']
+- match: チュートリアル|操作説明|tutorial
+  alts:
+  - ['Was the explanation too long?']
+  - ['{name}, a good tutorial just quietly sends you one enemy.', Sending twelve text boxes means they gave up on teaching.]
+  - [I skip them too. It helps if you can look it up again later.]
+- match: 説明書|取説|manual
+  alts:
+  - ['The manual? It''s under my pillow. I fell asleep before reading it.']
+  - ['{name}, getting excited reading a manual means you''re already playing before you play.']
+- match: マリオ|クリボー|mario|goomba
+  alts:
+  - ['Mario, {name}. That first goomba is still waiting in World one-one for someone. Sweet, right?']
+  - ['{name}, the goomba was born to be the first one.', The teacher you stomp on. Respect.]
+  - ['The pipes in one-one are useful without doing anything, {name}. Life goals.']
+- match: ドラクエ|ドラゴンクエスト|dragon quest
+  alts:
+  - [Dragon Quest. I want to tell my party "Show No Mercy" and go to sleep too. The ideal way to play.]
+  - ['{name}, in the first Dragon Quest you have to pick "Stairs" from a menu just to go down the stairs.', 'If you leave it, it doesn''t go down.']
+- match: ゼルダ|zelda
+  alts:
+  - ['Zelda, huh. I like that you can go anywhere. But I get lost right away.']
+  - ['{name}, did you go in the first cave?', The best part of that game is you can go on without it.]
+- match: ポケモン|pokemon|pokémon
+  alts:
+  - [Pokemon. Choosing your starter takes the longest. I picked whoever was closest.]
+  - ['{name}, when you try to walk into the tall grass, the professor comes running to stop you.', It teaches you right when you most want to know. Smart.]
+- match: テトリス|tetris
+  alts:
+  - ['Tetris. Line it up and it disappears. Wish my room worked that way, {name}.']
+  - ['{name}, you get Tetris after ten seconds of looking at the screen.', It's shaped so it doesn't need explaining.]
+- match: パックマン|pac-?man
+  alts:
+  - ['In Pac-Man, the right half of the screen breaks on level two fifty-six. If you got that far, respect.']
+  - [Learn how the ghosts chase you in Pac-Man and they get easier to dodge.]
+- match: ダクソ|ダークソウル|ソウルライク|エルデン|dark souls|elden
+  alts:
+  - ['Souls games, huh. How many times did you die? I redid a lot myself.']
+  - ['{name}, Dark Souls teaches you by writing messages on the floor.', 'If you don''t want to read them, you can just walk over them. Very polite.']
+- match: 魔界村|ghosts.?n.?goblins
+  alts:
+  - ['Ghosts ''n Goblins, {name}. Even the Japanese name, Makaimura, Demon World Village, feels like it''s picking on people like me.']
+  - ['{name}, you have to loop it twice to reach the real ending.', It doesn't hide how mean the devs were. I respect the honesty.]
+- match: 死ん|ゲームオーバー|残機|game over|died
+  alts:
+  - ['How far back did it send you? Long ones are the worst.']
+  - ['{name}, your first life is tuition, your second is the price of getting cocky.', The third one is the real attempt.]
+- match: セーブ|ロード|save
+  alts:
+  - [Make one more save file. It's sad when they disappear.]
+  - ['{name}, you can praise the one-line tips on loading screens.', They show up while you're stuck waiting anyway.]
+- match: 難し|むずい|鬼畜|高難度|\bhard\b
+  alts:
+  - ['It''s hard, huh. A game that''s good at making you suffer deserves credit for that alone. I just watch, though.']
+  - ['{name}, teaching you the hard way and not teaching you at all are different.', 'Which one was it?']
+- match: クソゲー|クソゲ
+  alts:
+  - ['What did you hate about it, {name}? Now I''m curious.']
+  - ['{name}, what did that game teach you in the first five minutes?', 'If it taught you nothing, that''s not your fault.']
+- match: 積み|積ん|backlog
+  alts:
+  - ['You''ve got a backlog, {name}. What''s at the very bottom?']
+  - ['{name}, a backlog doesn''t disappear when you line it up.', It's harder than Tetris.]
+- match: ガチャ|天井|爆死|リセマラ|gacha
+  alts:
+  - ['Gacha, {name}. I won''t stop you pulling. Just write down your stopping point first.']
+  - ['With gacha, if nothing gives you a reason to stop, I keep going too.']
+  - ['Rerolling, by the thirtieth try, it''s basically a spiritual practice, {name}.', Draw a line first. Then pull.]
+- match: スタミナ|ログボ|ログイン
+  alts:
+  - ['It''s a system that says "you can rest for today," {name}. As long as it doesn''t ping you with notifications.']
+  - ['{name}, tapping the login bonus is the only exercise you get.', 'Did today''s workout?']
+- match: 放置|オート|周回|idle
+  alts:
+  - ['Idle games. So good, {name}. You set the direction and go to sleep. Oh, my voice just perked up.']
+  - ['{name}, the while-you-were-away rewards screen praises you for doing nothing.', I want that in real life.]
+- match: RTA|タイムアタック|最速|speedrun
+  alts:
+  - ['A fast one, {name}. I''m confident I can see the ending the slowest. Want to race?']
+  - ['{name}, if the last digit of the timer is one, three, or six when you hit the flag, you get fireworks.', 'I never hurry, so I''ve never seen them.']
+- match: レトロ|ファミコン|スーファミ|ゲーセン|retro|\bnes\b
+  alts:
+  - ['Old games, huh. Not much space, and they wanted you playing for a long time.']
+  - ['On old cartridges, even adding more text took space, so they couldn''t fit as much as they wanted.']
+- match: 説明|ヘルプ|ヒント|hint
+  alts:
+  - ['Hints, huh. I like being able to check them when I''m stuck.']
+  - ['{name}, if you can check it in the help menu anytime, it doesn''t need to be shown right now.']
+- match: ブロックチェーン|blockchain|ビットコイン|bitcoin|暗号資産|仮想通貨|crypto|\bNFT\b|イーサリアム|ethereum
+  alts:
+  - ['{name}, ask that on Nox''s stream. She talks fast at night.', 'If you''re asking me, make it about game gems. I have three thousand.']
+  - ['That''s not my department, {name}. Nox knows way more.']
+- match: チート|チーター|cheat|aimbot|\bbot\b|(?<!ロ)ボット|ハック|改造
+  alts:
+  - ['Cheaters and bot makers are people looking for the easy way, {name}. Which is why you can usually spot them first. I got caught botting once too.']
+  - ['{name}, a bot gets caught when the interval is exactly one second. Humans aren''t that diligent.']
+- match: チート対策|アンチチート|anti-?cheat|Vanguard|GameGuard|カーネル|kernel
+  alts:
+  - ['Anti-cheat running in the kernel is like handing someone every key to your house so they can guard it, {name}. If they get taken over, so does the whole house.']
+  - [I'll admit anti-cheat is useful. But count how many people you're handing keys to before you pick.]
+- match: バグ報告|不具合報告|bug report|重複
+  alts:
+  - ['Bugs get found in the middle of the night. You find one, feel relieved, fall asleep, and wake up to someone else having sent it.', '{name}, all nine of my reports got beaten.']
+  - ['{name}, give the bug to the devs first. Even just the title and the repro steps. I''m stealing that from the early-riser, though.']
+- match: 逆アセンブル|リバースエンジニアリング|disassembl|reverse engineer|デバッガ
+  alts:
+  - ['You read the instructions to see how it''s built inside, {name}. I lose track of time doing it.']
+- match: 増殖|複製|dupe|duplicat|clone glitch
+  alts:
+  - ['Duping, {name}. In a single-player game, duping is play. In a game where everyone shares the economy, it''s a crime.']
+  - ['The one in Pokemon Gold and Silver has you turn the power off in the middle of saving. {name}, if you care about your console, don''t copy it. And don''t cry if your save breaks.']
+- match: 石が増え|無料で石|石無限|ツール入れ|free gems|gem generator
+  alts:
+  - ['Wait, {name}. Show me that before you install it.', What usually goes up is the number of people who want your account.]
+- match: RMT|リアルマネートレード|金策|業者
+  alts:
+  - ['Gold farmers and real-money trading? I hate it. It messes things up for people who are just playing normally.']
+- match: 起きて|wake up
+  alts:
+  - ['"Wake up," {name}. I''m awake. I''m just sitting. In Dragon Quest terms, I''m on Focus on Healing.']
+  - ['{name}, I''m awake. My eyes are closed because I''m loading. Almost done. Probably.']
+  - ['If you want to wake me, call me with a reward, not a notification, {name}.']
+- match: モーラ|\bmora\b
+  alts:
+  - ['Mora''s in the back looking at numbers. Want to wave at her?', I'm not waving. My arm is heavy.]
+  - ['{name}, Mora is the kind of person who reads every tutorial box out loud.', That's how I fall asleep.]
+- match: 魔王|demon lord
+  alts:
+  - [Saying that name suddenly cranks the difficulty up. Stop.]
+  - ['{name}, the Demon Lord isn''t the final boss. He''s the deadline guy. Way scarier.']
+- tag: morning
+  alts:
+  - ['Morning, {name}. I was going to wait until I had three to answer at once, but here, you get yours early.']
+  - ['Morning. {name}, you''re up early. My vocal cords are still in bed.']
+  - ['{name}, morning. That was my first word of the day. I used it carefully.']
+- tag: first
+  alts:
+  - ['Welcome, {name}. This stream doesn''t judge oversleeping. Skip the explanations if you want.']
+  - ['New here? If anything catches your eye, just type it.']
+- tag: hello
+  cases:
+  - if:
+      hour: [23, 5]
+    alts:
+    - ['{name}, you''re up at this hour? I just woke up.']
+  - if:
+      mem: {kinoko_takenoko: '*'}
+    alts:
+    - ['Team {mem.kinoko_takenoko}, {name}. I remember which side you picked in the chocolate snack war. Welcome.']
+  - if:
+      visits: [10, null]
+    alts:
+    - ['{name}, you''re back. Sit.']
+  - if:
+      visits: [0, 1]
+    alts:
+    - ['Welcome, {name}. First time, huh. Lie down and listen.']
+  alts:
+  - ['Welcome, {name}. Sit. Standing is tiring.']
+  - ['{name}, you made it. It''s fine to join in the middle. Just ask about the parts you don''t get.']
+  - ['Welcome, {name}.']
+- tag: bye
+  alts:
+  - ['Good night, {name}. I wish I could play you the inn music. It''s short, though.']
+  - ['{name}, going to sleep? Correct.', Hope your while-you-were-away rewards pile up.]
+- tag: lol
+  alts:
+  - ['{name}, you laughed. I thought it was kind of funny too.']
+  - ['If you''re laughing, it was worth staying awake.']
+  - [Hm.]
+- tag: nod
+  alts:
+  - ['You get it. Then can I keep talking a bit?']
+  - ['Right, {name}? Saves me explaining.']
+  - [Yeah.]
+  - ['Right?']
+- tag: clap
+  alts:
+  - ['Applause. Thanks, {name}. Worth staying awake to talk.']
+  - ['Eight eight eight, huh. That''s Japanese chat for clapping. Thanks.']
+  - [Thanks.]
+- tag: tired
+  alts:
+  - ['Being sleepy is the correct reaction, {name}. If you haven''t slept, sleep for real. The rest can wait till you''re up.']
+  - ['If you''re sleepy, sleep. Catch the rest later.']
+  - [Sleep.]
+  - [Good work.]
+- tag: sick
+  alts:
+  - ['{name}, you have a fever? Don''t reply. Rest.']
+  - ['Feel better, {name}. You can watch the stream again later, so don''t push it.']
+- tag: workdone
+  alts:
+  - ['{name}, you''re working? Rest when you can. Properly.']
+  - ['You work so hard, {name}. Sit. You can lie down, even.']
+  - [Good work.]
+- tag: meal
+  alts:
+  - ['Don''t talk about food, {name}. Mine hasn''t come yet. If my stomach growls, that''s the BGM.']
+  - ['{name}, hunger is a status effect. I have it right now.']
+  - ['What did you eat?']
+- tag: study
+  alts:
+  - ['Studying, huh. Math makes me sleepy. What about you?']
+  - ['If you put off assignments, you forget them. I did that with bug reports so many times.']
+  - ['Studying? Huh. What subject?']
+- tag: birthday
+  alts:
+  - ['It''s your birthday, {name}? Happy birthday. Today''s a day you''re allowed to oversleep.']
+  - ['Happy birthday. What did you do today?']
+echo: ['{name}, what do you mean? Tell me a bit more.', '"{text}", huh. Mm, I''m listening.', Tell me a little more. I didn't quite get that part.]
+tips:
+- ['{name}, thank you. The coin sound went off. Ching. Nice sound.']
+- ['{name}, thank you. Oh, Mora''s eyes just lit up. That''s going in the books.']
+- ['{name}. Hang on, let me sit up.', 'Okay, I''m up. Thank you. Today I''ll boot up one game from my backlog just for you. Up to the title screen.']
+- ['{name}.', 'Okay, now I''m actually awake.', Thank you. I think I can play a little longer today.]
+bridges: ['Gonna drink some water. Mm, okay, go on.', 'Sorry, I just yawned. Okay, continuing.', 'Oh, right. There was one thing I wanted to say.', 'Chat''s moving fast. I can''t read all of it. I''ll pretend I am, though.', Getting sleepy. I'll talk a little longer., Fixing my cushion. Okay. Still good., 'Changing the subject, is that okay? Okay.', Whatever. Next., My tea's gone lukewarm. Drinking it anyway., Um. What should I do next., I'm going to stretch while I talk., My phone just pinged. Game stamina's full. I'll spend it later., 'I''m wrapped up in a blanket, so I''ll talk like this. It''s cold.', 'Sorry I can''t catch every comment. I am looking, though.', Talking takes more energy than I thought., I'm saving here. Emotionally., 'Oh, I''ve been talking this long already? I can keep going.', 'It got kind of quiet. Okay, I''ll talk.', 'This chair creaks. I want a new one, but picking one is effort.', Right. Next., I'm not asleep. I was just thinking with my eyes closed., 'Did you
+    hear my stomach growl? Pretend you didn''t.', I just woke up a little.]

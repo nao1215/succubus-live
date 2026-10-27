@@ -1,0 +1,227 @@
+# リゼ 007 の英訳（src/episodes/lise/007.yaml）。拍の並びは日本語と同じ。表情は build.py が日本語から写すので書かない。
+# 修学旅行（子ども時代が主役の脇道）があるので、日本語と同じく family: true。性的な冗談は置かない。
+title: How many sprites could the Game Boy and Super Famicom fit on one line?
+family: true
+lobby:
+- I told you before, the NES can only fit eight moving pictures side by side, right?
+- Today, the Game Boy and the Super Famicom. That's the Japanese SNES.
+- Also, the time a teacher confiscated my Game Boy stuff on a school trip.
+parts:
+- title: Opening (the battery cover)
+  beats:
+  - say: Evening. So today, I brought a Game Boy. The original one.
+  - chat: [good_morning_guy, "evening"]
+  - chat: [retro_grandpa, "the original! does it still work?"]
+  - say: Does it still work? It works. It's probably the oldest thing I own.
+  - chat: [login_bonus_only, "do u still have the battery cover on the back?"]
+  - say: The battery cover. No. I lost it twice.
+  - chat: [login_bonus_only, "twice lmao"]
+  - say: Twice. Don't laugh. The first time a friend gave me their old one, and the second time, I gave up.
+  - say: Now it's taped shut.
+  - chat: [retro_grandpa, "thats such an og game boy thing"]
+  - say: Classic original Game Boy thing, huh. Good. It's not just me.
+  - chat: [first_timer_cub, "first time here. game boys use batteries?"]
+  - say: Hi, Cub, welcome. Do Game Boys use batteries? Yep. Four double-As.
+  - say: On typhoon days, I charge everything else in case the power goes out, but this one, I line up batteries for.
+  - chat: [first_timer_cub, "did the power go out?"]
+  - say: The power didn't go out. I played through every bit of charge, and fell asleep before the typhoon even passed.
+- title: Into the topic (Game Boy fits ten across)
+  beats:
+  - say: So. Today I wanted to talk about this guy's graphics.
+  - say: The NES could only put eight moving pictures side by side on one line, remember?
+  - chat: [first_timer_cub, "didnt know that"]
+  - say: Cub doesn't know, okay. That's fine. Old consoles had a fixed number of pictures they could line up across.
+  - say: Go over it, and the extras just don't get drawn.
+  - chat: [first_timer_cub, "so they disappear?"]
+  - say: They disappear, yep. That's why things used to flicker.
+  - say: And the Game Boy can do up to ten on one line. Forty total.
+  - chat: [login_bonus_only, "two more than the nes"]
+  - say: Right, two more than the NES. A little bit of breathing room.
+  - chat: [physics_engine_believer, "but theres a catch right"]
+  - say: There's a catch. That's what I wanted to say.
+  - say: When you hide a picture you're not using, you slide it sideways off the screen, right?
+  - say: Even when it's off screen like that, it still counts as one of the ten.
+  - chat: [first_timer_cub, "even tho u cant see it?"]
+  - say: Even though you can't see it. It's off the screen and it's still holding a seat.
+  - chat: [physics_engine_believer, "so u hide them vertically"]
+  - say: Right, you move them off vertically. Push them out the bottom. Then they don't take a seat.
+  - chat: [frame_by_frame, "ive gotten stuck trying to hide them sideways"]
+  - say: Stuck hiding them sideways? Me too. Twice. Same mistake.
+  - chat: [frame_by_frame, "twice is a lot"]
+  - say: Twice is a lot, okay, but I thought I'd learned it the first time.
+  - chat: [first_timer_cub, "what were u making?"]
+  - say: What was I making. A tiny game. On the Game Boy. You just count sleeping sheep.
+  - chat: [login_bonus_only, "a game for falling asleep lol"]
+  - say: Yep, a game for falling asleep. When eleven sheep line up, one disappears. So I got stuck again.
+  - chat: [first_timer_cub, "bc the limit is ten?"]
+  - say: Yep, because the limit is ten. You learn fast.
+  - chat: [login_bonus_only, "did u finish it?"]
+  - say: Did I finish it? No. I fall asleep around sheep number three.
+- title: Side road (the school trip and the link cable)
+  beats:
+  - chat: [login_bonus_only, "did u bring ur game boy on school trips?"]
+  - say: I brought it on the school trip, yeah. Kyoto. In Japan, pretty much every school takes the whole grade on a big trip like that.
+  - say: At night, at the inn, me and my friends hooked up a link cable and played against each other.
+  - chat: [retro_grandpa, "and then the teacher finds out"]
+  - say: The teacher finds out, yep. They found out. They took the cable.
+  - chat: [first_timer_cub, "the game boy too?"]
+  - say: The Game Boy was safe. Just the cable. I got it back on the last day.
+  - say: But. On the bus home, the teacher was playing Tetris.
+  - chat: [login_bonus_only, "TEACHER lmao"]
+  - chat: [leaving_work_on_time, "with the confiscated cable?"]
+  - say: With the confiscated cable? That part I don't know. But I did see the teacher playing.
+  - say: I never said anything. I still remember.
+  - chat: [lag_appreciation_club, "u can play tetris on pc now too"]
+  - say: Tetris on PC, sure. I play the Tetris that's inside a text editor.
+  - chat: [first_timer_cub, "tetris in a text editor?"]
+  - say: Yep, Tetris in a text editor. It's called Emacs. It just comes with Tetris built in.
+  - say: And you can add something that plays the Tetris for you.
+  - chat: [login_bonus_only, "auto tetris lmao"]
+  - say: Auto Tetris. I turned it on, and it kept stacking all night while I slept.
+  - chat: [lag_appreciation_club, "does that count as playing?"]
+  - say: Does that count as playing? Maybe not. I wasn't even watching. But it feels nice.
+  - chat: [lag_appreciation_club, "nox uses vim right"]
+  - say: Right, Nox is a Vim person. If I bring up Emacs around Nox, she mutters something. Too quiet to hear.
+  - chat: [coffee_shop_regular, "my school trip was nara"]
+  - say: Nara, huh. The deer there bow at you and then take your deer crackers. Did they take yours?
+  - chat: [coffee_shop_regular, "they did. the whole bag"]
+  - say: The whole bag. The deer confiscate faster than the teacher.
+  - chat: [onsen_sommelier, "ours was hokkaido"]
+  - say: Hokkaido, nice. Sounds cold, though. I wouldn't leave the inn.
+  - ask:
+      q: Where did your school trip go?
+      options:
+      - c: Kyoto or Nara
+        r:
+        - Kyoto or Nara, {name}. Same as me. Did anything get taken from you at night?
+      - c: Tokyo area
+        r:
+        - The Tokyo side, {name}. So much to do. Must've been hard on the teachers.
+      - c: Hokkaido or Okinawa
+        r:
+        - Far away, {name}. Could you sleep on the plane?
+      - c: Overseas
+        r:
+        - Overseas, {name}? Wow. I slept through mine and it wasn't even out of the country.
+      npc:
+      - [coffee_shop_regular, 0]
+      - [onsen_sommelier, 2]
+      - [login_bonus_only, 1]
+      - [retro_grandpa, 0]
+      - [leaving_work_on_time, 1]
+      - [first_timer_cub, 2]
+  - say: Nice clean split. Kyoto and Nara, Tokyo, Hokkaido and Okinawa, all about the same.
+  - chat: [first_timer_cub, "so what about the game boy?"]
+  - say: The Game Boy. Right. The ten-per-line thing, continued.
+- title: Back (the original and the Color stack things differently)
+  beats:
+  - chat: [physics_engine_believer, "the og and the color handle overlap differently right"]
+  - say: The original and the Color stack differently, yep. That's next.
+  - say: When two pictures overlap, which one ends up in front.
+  - say: On the original Game Boy, whichever one is further left goes in front.
+  - say: In software made for the Color, the lower number goes in front.
+  - chat: [first_timer_cub, "so if u play an old game on a color does it change?"]
+  - say: Does an old game change on a Color? Nope. When it runs old software, the Color draws it using the same rule as the original.
+  - chat: [login_bonus_only, "like moving into a new house with different house rules"]
+  - say: "For the Color games, sure. The old ones still live by the old house rules, though."
+  - say: Different house rules after you move, kind of like that. When I first came to the castle, I got yelled at for sleeping in the hallway.
+  - chat: [login_bonus_only, "u would get yelled at for that anywhere"]
+  - say: Anywhere? You think? I never got yelled at for it at my old place.
+  - chat: [errata_collector, "the original has other ways of breaking too, right?"]
+  - say: Other ways the original breaks, yeah. If you use a certain instruction a certain way, it corrupts the sprite table. Only on the original.
+  - say: It's fixed on the Color.
+  - chat: [first_timer_cub, "the original breaks easy"]
+  - say: The original breaks easy. And it loses battery covers.
+- title: Another tangent (Super Famicom does thirty-two, my failures)
+  beats:
+  - chat: [retro_grandpa, "what about super famicom?"]
+  - say: The Super Famicom jumps way up. Thirty-two on one line.
+  - chat: [first_timer_cub, "thats a big jump"]
+  - say: Big jump, right? But now there's a different limit.
+  - say: Big pictures are built out of lots of little pieces put together.
+  - say: And you can only have thirty-four of those pieces on one line.
+  - chat: [first_timer_cub, "so the count is fine but u run out of pieces?"]
+  - say: Yep. You run out of pieces. When big guys line up, you run out of pieces before you run out of sprites.
+  - chat: [coffee_shop_regular, "like when a big eater shows up and the restaurant runs out of plates"]
+  - say: A big eater shows up and there aren't enough plates. Yeah, exactly that.
+  - say: Also, on the Super Famicom, you can choose which number to start from when it decides who gets priority.
+  - chat: [retro_grandpa, "the thing u had to do by hand on the nes"]
+  - say: Right, the thing you did by hand on the NES. On the NES you reshuffled the whole guest list, but on the Super Famicom you just change one number.
+  - chat: [first_timer_cub, "does it rotate them for u automatically?"]
+  - say: Automatically? No. Changing that number every frame is still the developer's job. But it got easier.
+  - say: So. I've tried to make a Super Famicom game myself. Three times.
+  - chat: [login_bonus_only, "all three??"]
+  - say: All three times, I quit partway.
+  - say: The table where you write the sprite positions is split in two, and the smaller table is confusing.
+  - chat: [errata_collector, "the high table"]
+  - say: Yep, the high table. I got stuck there every time.
+  - chat: [first_timer_cub, "gonna try again?"]
+  - say: Try again. I don't know. Attempt number four, I'll do while I'm awake.
+- title: Side road (resend everything, every frame)
+  beats:
+  - chat: [lag_appreciation_club, "on the nes u resend the sprite table every frame right"]
+  - say: Resend it every frame, yep. On the NES, if you leave the sprite table alone, its contents fall apart.
+  - say: So every time the screen gets drawn, you rewrite the whole thing. Sixty times a second.
+  - chat: [first_timer_cub, "sounds exhausting"]
+  - say: Sounds exhausting, right? But there's a special system that sends it all in one go.
+  - say: It's about four times faster than writing them one by one.
+  - chat: [login_bonus_only, "like a kid who forgets everything unless u repeat it every day"]
+  - say: A kid who forgets unless you repeat it all every day? Wow. But yeah.
+  - chat: [login_bonus_only, "like lise"]
+  - say: What do you mean, like me. I don't remember even when you repeat it.
+- title: Side road (go-to karaoke song, Pokemon Ieru ka na)
+  beats:
+  - chat: [onsen_sommelier, "game boy = pokemon"]
+  - say: "Game Boy means Pokemon, yeah. My karaoke song is \"Pokemon Ieru ka na.\" You rattle off every Pokemon name. Like the Pokerap, but longer."
+  - chat: [first_timer_cub, "can u do all of them?"]
+  - say: I've never made it through all of them. I always fall asleep around number eighty.
+  - chat: [login_bonus_only, "dont fall asleep at karaoke"]
+  - say: Don't fall asleep at karaoke, okay, but when you go alone, nobody wakes you up. So it just auto-extends.
+  - chat: [onsen_sommelier, "extension fee lol"]
+  - say: Yep, extension fee. I'm paying for time I spend asleep. It stings a little.
+  - chat: [coffee_shop_regular, "my go-to is anime songs"]
+  - say: Anime songs? Nice. Which anime?
+  - chat: [coffee_shop_regular, "secret"]
+  - say: Secret? Now I want to know.
+  - chat: [leaving_work_on_time, "at work karaoke i can only sing old showa era songs"]
+  - say: Only Showa-era songs at work karaoke. That's like old-school Japanese pop from your parents' generation. You're matching the bosses. That's rough.
+  - chat: [leaving_work_on_time, "used to it by now"]
+  - say: Used to it. If I had to match like that, I'd just sleep.
+  - ask:
+      q: What do you sing at karaoke?
+      options:
+      - c: Anime and game songs
+        r:
+        - Anime songs, {name}. My people. Got one you know every word to?
+      - c: J-pop
+        r:
+        - J-pop, {name}. Everyone knows it, so it gets the room going.
+      - c: Old classics
+        r:
+        - Old classics, {name}. Probably a lifesaver when you go with the bosses.
+      - c: I don't sing
+        r:
+        - You don't sing, {name}. Listening is an important job too. Mine is sleeping.
+      npc:
+      - [coffee_shop_regular, 0]
+      - [leaving_work_on_time, 2]
+      - [onsen_sommelier, 1]
+      - [login_bonus_only, 3]
+      - [first_timer_cub, 1]
+      - [retro_grandpa, 0]
+  - say: Anime and J-pop about even. Lots of anime. Sounds like this crowd.
+  - chat: [coffee_shop_regular, "ok so the secret anime is"]
+  - say: You're telling me the secret anime? I've been waiting.
+  - chat: [coffee_shop_regular, "nah still secret"]
+  - say: Still secret? Unfair. Fine. I'll be wondering until next time.
+- title: Wrap-up
+  beats:
+  - chat: [first_timer_cub, "now i want a game boy"]
+  - say: Now you want a Game Boy? If you're looking used, check that it still has the battery cover on the back.
+  - say: Or you'll end up taping it shut like me.
+  - chat: [retro_grandpa, "they sell just the covers"]
+  - say: They sell just the covers? Then next time I'll buy three. Because I'll lose them again.
+  - chat: [login_bonus_only, "ull lose the third one too"]
+  - say: I'll lose the third one too. Yeah. Probably.
+  - say: That's it for today. What to do next time. I'll think about it.
+  - say: Good work, everyone. I'll turn the Game Boy off before I sleep.

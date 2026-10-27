@@ -1,0 +1,245 @@
+# Mora x Pim duo 001 (English). Source: src/duo/mora-pim/001.yaml. Beat order matches the Japanese. family: true comes from the Japanese.
+# Faces come from the Japanese. Viewer names follow scratchpad en-names.yaml.
+# Potato salad: the 2020 "potato salad guy" post is explained in one line, the rest is the homemade vs store-bought fight.
+title: "Pim came over with fried chicken. And opened my fridge"
+parts:
+- title: "Hello: one of us has worked half a day, one just woke up"
+  beats:
+  - mora: "Okay, we're starting. Hi. I'm not alone today."
+  - pim: "It's Pim! I'm over at Mora's place!"
+  - chat: [counter_clerk_12yrs, "wait, pim??"]
+  - mora: "Counter Clerk goes 'wait, Pim?' Yep. She rang the doorbell three times."
+  - chat: [lives_on_points, "mora you just woke up didnt you"]
+  - mora: "Did I just wake up? Forty minutes ago."
+  - pim: "Forty minutes! I got up at four fifty and I've already been frying chicken for four hours!"
+  - mora: "I know. I opened the door and smelled fried chicken."
+  - pim: "That's my hair! On frying days my hair is fried chicken all day!"
+  - chat: [oldest_in_8th_grade, "straight from your shift huh"]
+  - pim: "Senpai, you're marked present! Straight from my shift! I've got time before daycare pickup!"
+  - mora: "You took attendance for your regulars before mine showed up."
+- title: "Pim takes attendance on Mora's regulars"
+  beats:
+  - pim: "Oh, sorry! Counter Clerk, Points, you're marked present!"
+  - chat: [counter_clerk_12yrs, "i got marked present. first time ever"]
+  - chat: [lives_on_points, "weirdly i sat up straighter"]
+  - mora: "First time I've heard about Points's posture. We don't take attendance here. You can show up and say nothing."
+  - pim: "You can just lurk! That sounds so relaxing..."
+  - chat: [ledger_counter, "pim exclamation count: 12 already"]
+  - mora: "Ledger Counter's already counting."
+  - pim: "I'm being counted?! ...That's fourteen!"
+  - chat: [ledger_counter, "mora: 0"]
+  - mora: "Zero. Same as always."
+- title: "Fried chicken: thigh or breast?"
+  beats:
+  - pim: "So, here! Leftover karaage from Manpuku-tei, the bento shop where I work! They said I could take it home!"
+  - mora: "Thanks. ...Thigh?"
+  - pim: "Thigh! Our shop is thigh only!"
+  - mora: "I'm a breast meat person, though."
+  - pim: "Same as Nox! For Nox, I fried breast meat and brought it over!"
+  - mora: "Nox gets breast fried fresh, and I get the leftover thigh."
+  - pim: "Today's leftovers! No choosing!"
+  - mora: "Fine. When you're the one getting stuff, you don't get to choose."
+  - chat: [chinese_diner_heir, "lemon on it?"]
+  - mora: "Lemon? On my own plate only."
+  - pim: "Own plate only! Me too! The House Rulebook says, lemon goes on after serving!"
+  - mora: "Same as a ledger. Other people's stuff goes in other people's column. ...We agree on this one."
+  - mora: "...It's good. It's been sitting, and the coating's still crunchy."
+  - pim: "That's chicken from someone who's been frying for four hours!"
+- title: "She opens the fridge"
+  beats:
+  - pim: "I'll put the rest in the fridge! Opening it!"
+  - mora: "Uh, sure. ...Oh, wait."
+  - pim: "...It's quiet. Your fridge is quiet."
+  - chat: [cant_make_it_home, "a quiet fridge lmao"]
+  - mora: "My fridge is always quiet."
+  - pim: "When I open ours, something falls out! Either my daughter's yogurt or my husband's mayo!"
+  - pim: "These two jelly cups are from the fever stream! The leftovers from the four Lise-sama brought, right?"
+  - mora: "Why do you remember that. ...These are two I bought myself after I got better."
+  - pim: "And this pot?"
+  - mora: "Curry. I made two servings, so it's day three. It ends today."
+  - pim: "So jealous... day three..."
+  - mora: "Jealous? By day three you can't even taste it anymore."
+  - pim: "Our curry's gone in one night! My husband gets seconds three times!"
+  - mora: "My problem is the food I make never runs out."
+  - pim: "My problem is it runs out right away!"
+  - chat: [oldest_in_8th_grade, "just swap?"]
+  - pim: "Swap? That's it! Give me your day-three curry! Then I don't have to make lunch tomorrow!"
+  - mora: "Wait, you're actually taking it home."
+  - pim: "I am! That's one lunch saved! The hour I save is my hour!"
+  - mora: "My curry turns into an hour for Pim. ...I like that."
+- title: "The freezer, and calling it even"
+  beats:
+  - pim: "Your freezer has empty space! You could fit all the ice cream you want..."
+  - chat: [tax_office_crunch, "the pork boxes tho"]
+  - pim: "Tax Office, you're marked present! Don't bring up the pork!"
+  - mora: "The hometown tax thing, right? You donate to a town and they send you gifts. Four boxes of pork showed up."
+  - pim: "Three boxes! Three towns!"
+  - mora: "Correction noted. Thanks. ...So, earlier you said Lise brought four jelly cups. It was three. I ate all three."
+  - pim: "I did say that...! Correcting it!"
+  - mora: "Now we're even."
+  - chat: [ledger_counter, "she was saving that one to call it even"]
+  - pim: "You were saving it?! You could've said it right away!"
+  - mora: "It's for when I get corrected."
+- title: "We both eat standing up"
+  beats:
+  - chat: [husband_who_helps, "pim do you sit down when you eat"]
+  - pim: "Husband who helps, you're marked present! Do I sit down to eat? ...No. I stand in the kitchen eating whatever my daughter left!"
+  - mora: "I eat standing up too. At the sink."
+  - pim: "I know! The Peyoung cup noodle stream! 'If I sit down it turns into a real meal'!"
+  - mora: "Pim stands because she has no time to sit."
+  - pim: "And you?"
+  - mora: "I stand because I have no reason to sit."
+  - chat: [cant_make_it_home, "both of you sit down"]
+  - pim: "If I sit, my daughter calls me! The second I sit down, 'Mommyyy'! Every single time!"
+  - mora: "Getting called the second you sit down. I'm kind of jealous. When I sit down, nobody calls."
+  - pim: "Then I'll call you! Every night at nine, on the phone, 'Moraaa'!"
+  - mora: "No thanks. That's a phone bill."
+  - ask:
+      who: mora
+      q: "Do you all sit down when you eat?"
+      options:
+      - c: "I sit down"
+        r:
+        - mora: "{name} sits down. Good for you."
+      - c: "I stand when I'm alone"
+        r:
+        - mora: "{name} stands too. At the sink?"
+      - c: "I eat my kid's leftovers standing up"
+        r:
+        - pim: "{name}, we're the same! They're always cold, right?!"
+      - c: "Lying down, looking at my phone"
+        r:
+        - mora: "Lying down with your phone, huh."
+        - mora: "{name}, that's not a meal anymore. That's a break."
+        - pim: "That's the most jealous I've been all day!"
+      npc: [[cant_make_it_home, 1], [oldest_in_8th_grade, 2], [lives_on_points, 3], [counter_clerk_12yrs, 0], [husband_who_helps, 0]]
+  - mora: "Some sit, some stand. Counter Clerk and Husband who helps sit down."
+  - chat: [husband_who_helps, "i sit. my wife stands"]
+  - pim: "'My wife stands.' ...When you get home today, pull out her chair for her."
+  - chat: [husband_who_helps, "yes"]
+- title: "Tangent: potato salad, homemade or store-bought?"
+  beats:
+  - chat: [lives_on_points, "no potato salad in the fridge?"]
+  - mora: "Potato salad? Nope. When I want some, I get it from the supermarket deli. If you make one serving from actual potatoes, it's potato salad for three days."
+  - pim: "I want to make it myself! Forty grams of mayo!"
+  - mora: "You measure potato salad too."
+  - chat: [counter_clerk_12yrs, "flashback to potato salad guy"]
+  - mora: "Summer twenty-twenty. Someone posted seeing an old man tell a mom at the store, 'Surely a mother can make potato salad.' It blew up."
+  - pim: "You don't make it because someone tells you to! I make it because I want to!"
+  - ask:
+      who: pim
+      q: "Potato salad! Do you want to make it yourself, or is the store kind good enough?"
+      options:
+      - c: "I want to make it"
+        r:
+        - pim: "{name}, over here! How many grams of mayo?!"
+        - mora: "Normal people don't weigh it."
+      - c: "Store-bought is fine"
+        r:
+        - mora: "{name} goes store-bought. Leave it to the pros."
+      - c: "Depends how much energy I have"
+        r:
+        - pim: "{name}, correct answer! It depends on your energy!"
+      npc: [[counter_clerk_12yrs, 1], [lives_on_points, 1], [chinese_diner_heir, 1], [oldest_in_8th_grade, 2], [parental_leave_no_sleep, 2]]
+  - mora: "Counter Clerk, Points, and Diner Heir all say store-bought."
+  - pim: "Then today I'm buying it! I'll weigh out mayo at home and add it!"
+  - mora: "And the mayo that's already in there?"
+  - pim: "...How many grams is it?"
+  - mora: "Don't call the store."
+  - pim: "I haven't even taken my phone out!"
+  - mora: "You opened your bag, though."
+  - chat: [parental_leave_no_sleep, "right now i dont have the energy for the energy option"]
+  - pim: "Parental leave, you're marked present. ...On no-energy days, it's store-bought. That's totally fine."
+- title: "Night: late-night snacks, and bedtime"
+  beats:
+  - chat: [cant_make_it_home, "what do you two do at night"]
+  - mora: "At night? I'm a night owl, so I'm up. The bookkeeping goes great, and I get hungry."
+  - pim: "So, Peyoung! 'Ready, go!'"
+  - mora: "Don't say it. ...I'm saying it, though."
+  - pim: "I do bedtime. And I fall asleep first! My voice stops in the middle of the picture book, and my daughter wakes me up, 'Mommy, keep going'!"
+  - chat: [oldest_in_8th_grade, "the parent passing out first lol"]
+  - mora: "Someone sleeping next to you. That sounds kind of nice."
+  - pim: "It's nice, but I get kicked! Three times a night, in the face! A four-year-old's feet are strong!"
+  - pim: "Also, at bedtime I play streams really quietly. With Lise-sama's stream my daughter falls asleep, and with yours, I fall asleep!"
+  - mora: "...Is that a compliment?"
+  - pim: "It is! Your voice is so calming! I'm out in three minutes!"
+  - mora: "Compliments received, one. ...Does 'puts people to sleep in three minutes' also count as one?"
+  - chat: [ledger_counter, "counts as one"]
+  - pim: "But being up alone at night and eating your Peyoung while it's still hot. I'm jealous."
+  - pim: "When was the last time I finished something while it was hot..."
+  - mora: "Then now. I'll heat up the chicken."
+  - pim: "Oh, I'll get plates! Chopsticks! How many watts is your microwave?"
+  - mora: "Sit."
+  - pim: "...So what do I do?"
+  - mora: "Nothing."
+  - pim: "I'm bad at that!"
+  - chat: [parental_leave_no_sleep, "doing nothing is the hardest thing"]
+  - mora: "Parental leave's bad at it too. ...Okay, it's hot. Careful."
+  - pim: "Hot! Hot! It's so good! I'm eating it while it's hot!"
+  - mora: "And you're sitting down."
+  - pim: "...I'm sitting!"
+- title: "Tangent: the 'single tax', misc, and ink"
+  beats:
+  - chat: [lives_on_points, "so what even is the single tax"]
+  - mora: "The 'single tax'? That's Japan's child-rearing support levy. Single people aren't the only ones paying. Parents pay it too."
+  - pim: "It's in my husband's health insurance premiums too! Starting with the April premiums!"
+  - mora: "...And since we're on money. Pim, your household ledger has a miscellaneous column, right?"
+  - pim: "It does. Miscellaneous is miscellaneous."
+  - mora: "Seventy percent of that column is convenience store desserts. You said it on your own stream. As a bookkeeper, I can't let that slide."
+  - pim: "You were listening?! ...Okay then, Mora. How many bottles of ink do you have?"
+  - mora: "...Forty-three."
+  - pim: "And how many do you use?"
+  - mora: "Two."
+  - pim: "So what column are the other forty-one in?!"
+  - mora: "...Stationery."
+  - chat: [lives_on_points, "for real?"]
+  - mora: "...About half of them might be miscellaneous."
+  - pim: "Then my desserts are stationery too!"
+  - mora: "Don't copy that part."
+- title: "Two people who can't take a day off"
+  beats:
+  - chat: [cant_make_it_home, "what do you two do on days off"]
+  - pim: "Days off? Family stuff! Saturday is the park and groceries, Sunday is my mother-in-law's place or a daycare event! How about you, Mora?"
+  - mora: "...Anyway. That's for later."
+  - chat: [counter_clerk_12yrs, "there it is. 'thats for later'"]
+  - mora: "I have nothing planned. Somehow, I still don't feel rested."
+  - chat: [oldest_in_8th_grade, "pim what about kitakata?"]
+  - mora: "Kitakata. The ramen town. You said you're going next month."
+  - pim: "Yes! I'm going! That day, I'm leaving everything at home to my husband! No redoing his stuff!"
+  - mora: "Good for you."
+  - pim: "So I wrote a house-sitting manual! Eight pages!"
+  - mora: "Eight pages."
+  - pim: "Trash days, the daycare bag, which sock goes on which foot, how much mayo my husband gets!"
+  - chat: [husband_who_helps, "isnt that the opposite of no redoing"]
+  - pim: "'The opposite of no redoing'... It is the opposite! I'm redoing it before he even does it!"
+  - mora: "Wouldn't things run better if you didn't leave that behind?"
+  - pim: "I'm not leaving it! I'm taking all eight pages to Kitakata!"
+  - mora: "Eight pages next to your ramen."
+  - pim: "I won't read it! It's a good luck charm!"
+  - mora: "You can go alone, you know. I went to yakiniku, Japanese barbecue, by myself."
+  - pim: "The stream where the grill was for three people!"
+  - mora: "Two. Correction."
+  - pim: "Correcting it! ...I'll make a rule so it doesn't happen again!"
+  - mora: "Don't make rules at my place. ...Report back when you get home. I've got nothing planned that day, so I can listen."
+  - pim: "You'll be the first to hear! Before attendance, even! And I'll hear about your days off then too!"
+  - mora: "My days off are... anyway. That's for later."
+  - chat: [ledger_counter, "'thats for later' count: 2"]
+- title: "Wrap-up: five minutes before pickup"
+  beats:
+  - pim: "Oh, the time! Daycare pickup! I like to get there five minutes early, so I'm going!"
+  - mora: "A five-minutes-early person. Me too."
+  - pim: "We match on that! I've got the curry, pot and all! I'll come back to return the pot!"
+  - chat: [counter_clerk_12yrs, "now she has an excuse to come back"]
+  - mora: "Don't call it an excuse."
+  - pim: "It's an excuse! Thank you all for attending! This was Pim!"
+  - chat: [oldest_in_8th_grade, "have a good one"]
+  - mora: "She's gone. ...It got quiet."
+  - chat: [ledger_counter, "pim exclamation count: over 100. mora: 0"]
+  - mora: "Over a hundred, and zero. Nice counting. ...Honestly, I think that's about the right balance."
+  - mora: "...Huh. There's a sticky note on the fridge."
+  - chat: [cant_make_it_home, "what does it say?"]
+  - mora: "'Fried chicken, four pieces. Eat by tomorrow. Eat sitting down.'"
+  - chat: [counter_clerk_12yrs, "she made rules"]
+  - mora: "I told her not to make rules at my place. And there's two."
+  - mora: "I'll text Pim later that I read it. She'll probably be happy."
+  - mora: "Whether I eat sitting down... anyway, that's for later. That's it for today. See you."

@@ -1,0 +1,194 @@
+# English version of src/episodes/mora/005.yaml.
+title: My friend's wedding, the cash gift, and the line for brand-new bills
+parts:
+- title: Hello, and the invitation
+  beats:
+  - say: Evening. Let's start.
+  - chat: [cant_make_it_home, 'evening']
+  - chat: [night_shift_survivor, 'hair looks kinda done today']
+  - say: You can tell my hair's done? Yeah. I went to a friend's wedding today. Just got back.
+  - chat: [first_time_here, 'yours??']
+  - say: {face: annoyed, text: "Mine? No. I said a friend's. Not mine."}
+  - chat: [first_time_here, 'sorry']
+  - say: '"Sorry," they said. It''s fine. The invitation came two months ago. A friend from school. Hadn''t seen her in, like, ten years.'
+  - say: I looked at the handwriting on the envelope and for a second I had no idea who it was.
+  - chat: [lives_on_points, 'chaotic morning?']
+  - say: Chaotic morning? Yes. I couldn't find my fukusa. It's a little cloth you wrap the money envelope in. You don't just carry it loose.
+  - say: A purple one. I used it at the last ceremony, and forgot where I put it.
+  - chat: [night_shift_survivor, 'where was it']
+  - say: Guess where. The pocket of my funeral outfit.
+  - say: Because the last time I used it was a funeral. And then, right before I left, my stockings ran.
+  - say: Good thing I keep a spare pair in my bag. Changed in the station bathroom.
+  - say: The ripped ones went in the station trash. I stood there for like three seconds deciding if they count as burnable.
+  - chat: [nameless_familiar, 'you carry spares? impressive']
+  - say: Impressive? I've done it once before. I don't make the same mistake twice. Three times, sure.
+- title: The RSVP card
+  beats:
+  - say: "So, the RSVP card. It says \"your honorable attendance.\" You can't honor yourself, so you strike out the polite bit and circle \"attend.\""
+  - chat: [leaving_work_on_time, 'i forget how every single time']
+  - say: Forget how every time? Same. I look it up on my phone before I write it. Every time.
+  - say: And when I draw the line, I use a ruler.
+  - chat: [night_shift_survivor, 'a RULER lol']
+  - say: Getting laughed at for the ruler. If I do it by hand it comes out crooked. You want a crooked line showing up at their house?
+  - chat: [third_planner_this_year, 'some people cross it out with the kotobuki kanji, the celebration one']
+  - say: "The kotobuki thing, yeah. The kanji for \"celebration\" instead of a line. So cool. My handwriting's stiff, though. Mine would look like a city hall stamp."
+  - chat: [counter_clerk_12yrs, 'rude to government stamps']
+  - say: Rude to government stamps? Oh. Sorry. Said that right in front of Counter Clerk.
+  - chat: [night_shift_survivor, 'what did you write in the message part']
+  - say: What I wrote in the message box. So, I agonized over that for three days. I couldn't get past "congratulations."
+  - say: It's been ten years, right? "How are you" is weird. "Long time no see" is weird.
+  - chat: [third_planner_this_year, '"thanks for inviting me" is plenty']
+  - say: '"Thanks for inviting me" is plenty. That''s what I went with. "Thanks for inviting me. Can''t wait for the day."'
+  - say: Three days of agonizing, and I ended up with a normal sentence. At least the handwriting was gorgeous. I put all the agonizing into that.
+- title: Thirty thousand yen, and the line at the change machine
+  beats:
+  - say: "Okay, the cash gift. Goshugi. No presents here, you bring cash in a fancy envelope. For a friend, thirty thousand yen. About two hundred dollars."
+  - chat: [first_time_here, '30k is a lot']
+  - say: It's a lot, right? It is. But apparently about eighty percent of people say that's what they give.
+  - chat: [lives_on_points, 'why not 20k']
+  - say: Why not twenty? Because an even number splits in two, and people say that means the couple splits too. So a lot of people avoid it.
+  - chat: [law_books_as_pillow, 'some ppl say 20k is fine now']
+  - say: Law Books is right, some people say twenty's fine now. You do one ten-thousand bill and two five-thousands, so it's three bills.
+  - say: Three bills, so it's odd, so it's fine. That logic is wild. But honestly? I kind of like that kind of workaround.
+  - say: And the bills have to be brand new. Crisp, never folded, so it looks like you got ready for their big day. You get them from the bank's change machine.
+  - chat: [third_planner_this_year, 'the change machine has a line too']
+  - say: It does have a line! I went the day before the wedding and there were three people waiting.
+  - say: The person in front of me was putting three ten-thousand bills, super neatly, into an envelope.
+  - say: And I thought, oh, this person's going to a wedding somewhere too.
+  - chat: [cant_make_it_home, 'what if it was the same one']
+  - say: What if it was the same wedding, right? So. Today at the reception desk I saw them again. Standing right in front of me.
+  - chat: [first_time_here, 'NO WAY same wedding lol']
+  - say: Same wedding. They were a friend of the groom. They noticed too, turned around and went "oh."
+  - say: It wasn't awkward. We both kind of laughed. That's all we said.
+  - say: We weren't seated together. But during the dress change, they looked over from their table and gave me another little nod.
+  - say: Don't even know their name, but it felt like I'd gained one acquaintance.
+  - ask:
+      q: What's the most nerve-racking part of a wedding?
+      options:
+      - c: Handing over the cash gift at the desk
+        r:
+        - '{name}, handing over the gift. I get it. Your hands fumble taking it out of the cloth.'
+        - I take forever folding the cloth back up and hold up the line behind me.
+      - c: A table where I know nobody
+        r:
+        - '{name}, the table where you know nobody. Oh, that one.'
+        - Where you and the person next to you go "so how do you know the couple?" That buys you five minutes.
+      - c: Getting asked to give a speech or do a bit
+        r:
+        - '{name}, a speech or a performance. You''ve been asked? Wow.'
+        - I've never been asked. Not once. If I were, I'd rewrite the script like ten times.
+      - c: I've never been invited
+        r:
+        - '{name}, never been invited. Honestly, that''s kind of relaxing.'
+        - No thirty thousand yen, no new-bill line. Nothing.
+      npc:
+      - [night_shift_survivor, 1]
+      - [third_planner_this_year, 0]
+      - [lives_on_points, 3]
+      - [leaving_work_on_time, 1]
+      - [cant_make_it_home, 0]
+- title: The reception food, and saving the best for last
+  beats:
+  - chat: [leaving_work_on_time, 'what was the food']
+  - say: The food? A full-course dinner. And the meat, oh my god, the meat was so good.
+  - say: And I'm a save-your-favorite-for-last person.
+  - chat: [night_shift_survivor, 'i eat the best part first']
+  - say: Night Shift eats it first. Those people exist. But if you eat it first, the rest of the plate is just running out the clock, isn't it?
+  - chat: [lives_on_points, 'and then they take your plate']
+  - say: And then they take your plate. That happened to me. At a set-meal diner.
+  - say: I'd saved the last bite of grilled mackerel, and the server goes, "May I take this?"
+  - say: I was still eating! I went "Not yet!" way too loud. The salaryman next to me turned and looked.
+  - chat: [third_planner_this_year, 'did you save the mackerel']
+  - say: The mackerel survived. And today at the reception, I'd saved one last slice of meat.
+  - chat: [night_shift_survivor, 'did they try to take it']
+  - say: Did they try? They did. A hand came reaching for the plate.
+  - say: This time I didn't say anything. I just set my fork down on the plate. Blocked it.
+  - say: You can't yell "not yet" at a wedding venue.
+  - chat: [nameless_familiar, 'did u have cake']
+  - say: Cake? Yes. I ate the strawberry last.
+  - chat: [leaving_work_on_time, 'strawberry first gang']
+  - say: Strawberry first gang. Okay. We'll never understand each other. That's fine.
+  - chat: [third_planner_this_year, 'did you get to talk to the bride']
+  - say: A little. At the photo, she said "thank you for coming."
+  - say: Ten years, and her voice was exactly the same.
+  - say: Back in school, she used to copy my notes. Her handwriting was super round, so her copy always looked nicer than mine.
+  - say: I have every friend's birthday written in my planner. And I never message anyone.
+  - chat: [night_shift_survivor, 'you write them down tho']
+  - say: Yeah, I write them down. I'm just not good at keeping in touch. And then the birthday's already gone.
+  - chat: [third_planner_this_year, 'send her a happy birthday next year']
+  - say: Send one next year? I will. Probably.
+- title: 'Side track: the after-party and splitting the bill'
+  beats:
+  - chat: [lives_on_points, 'did you go to the after party']
+  - say: The after-party? No. I'm a leave-after-round-one person at drinking parties.
+  - chat: [night_shift_survivor, 'why']
+  - say: Why? Because they make me handle the bill. Every time. I sit at the end, so the check gets passed to me.
+  - chat: [first_time_here, 'just dont sit at the end']
+  - say: Just don't sit at the end, sure. But the end is comfy. In the middle you have to talk to people on both sides.
+  - say: So the check comes. I can't do math in my head, so I pull out the calculator on my phone.
+  - say: And the second I pull it out, someone goes "wow, such a bookkeeper." I'm using a calculator!
+  - chat: [ledger_counter, 'split down to the yen?']
+  - say: Down to the yen? Down to the yen. Split exactly. I show everyone the screen.
+  - chat: [leaving_work_on_time, 'senior coworkers should pay more tho']
+  - say: Senior coworkers should pay more, yeah, some people think that. I can't do more or less. If it's not exact, I lie awake thinking about it.
+  - say: One time Lise asked me to treat her, and I said no. And then Lise paid for both of us.
+  - chat: [first_time_here, 'wait what']
+  - say: Yeah. Backwards. So I tried to pay her back to the exact yen, and the math took me ten minutes.
+  - say: By the time I was done, Lise was asleep.
+  - chat: [lives_on_points, 'should''ve just let her treat you']
+  - say: Should've just let her? I can't. Owing someone and leaving it there, I can't settle down.
+  - chat: [good_morning_guy, 'torikizoku is easy everything is the same price']
+  - say: Torikizoku, yes! It's a yakitori chain where everything on the menu is one price. So easy. You just count the plates.
+  - chat: [night_shift_survivor, 'prices went up in october tho']
+  - say: Went up in October, yeah. Four hundred ten yen a dish now. It used to be three ninety.
+  - say: Plates times four-ten, in my head, got hard all of a sudden. I couldn't do it at three-ninety either, but still.
+  - ask:
+      q: How do you handle the bill at a drinking party?
+      options:
+      - c: Split it exactly
+        r:
+        - '{name}, split it exactly. My people. Let''s pull out the calculators together.'
+        - When you show the screen, nobody argues. I love that.
+      - c: I'm the one who pays more
+        r:
+        - '{name} pays more. That''s cool, honestly.'
+        - When there's someone like you, my calculator doesn't get to come out. Kind of lonely.
+      - c: I want to be treated
+        r:
+        - '{name} wants to be treated. Same as Lise.'
+        - The ones who get treated are always asleep or in the bathroom when the check comes.
+      - c: Pay for what you drank
+        r:
+        - '{name}, pay for what you drank. That''s the least drama, yeah.'
+        - Except you need someone who remembers who had how many drinks. That ends up being me.
+      npc:
+      - [lives_on_points, 2]
+      - [leaving_work_on_time, 1]
+      - [night_shift_survivor, 3]
+      - [third_planner_this_year, 0]
+      - [first_time_here, 2]
+  - chat: [third_planner_this_year, 'what was the take home gift']
+  - say: "The thank-you gift guests take home? A catalog gift, you pick something from a booklet, plus a box of baked sweets. The paper bag was enormous."
+  - say: I had it on my lap the whole train ride home.
+  - chat: [lives_on_points, 'what are you picking from the catalog']
+  - say: What am I picking? Haven't looked yet. Probably a pot. A small one.
+  - chat: [leaving_work_on_time, 'dont you already have a one person pot']
+  - say: I already have a one-person pot. But I want a second one. With one, I can't use it while it's being washed.
+  - chat: [nameless_familiar, 'i forgot to pick from one once and it expired']
+  - say: Forgot to pick and it expired. I get it. They have a deadline. I've done that once too.
+  - say: I wrote the deadline in my planner. I just never opened that page. Writing it down made me feel like it was handled.
+- title: 'Wrap-up: the bouquet toss, and calling Mom'
+  beats:
+  - say: The ceremony was lovely, though. My friend from ten years ago looked great in the dress.
+  - chat: [nameless_familiar, 'was there a bouquet toss']
+  - say: There was a bouquet toss. I was way in the back, hands down, just watching.
+  - chat: [lives_on_points, 'go catch it']
+  - say: '"Go catch it." If I caught it, I''d have one more thing to report to my mom. That''s an extra hour on the phone.'
+  - say: The bride's little sister caught it. She jumped so high. I clapped.
+  - chat: [night_shift_survivor, 'did you tell your mom about today']
+  - say: I called my mom on the way home. Told her I went to a wedding.
+  - chat: [lives_on_points, 'and what did she say']
+  - say: What she said was, "So, did you meet anyone nice?"
+  - chat: [ledger_counter, 'LMAOOO']
+  - say: That's a lot of laughing. I didn't tell her about the change machine person. If I did, it'd turn into a whole thing.
+  - say: Okay, that's it for today. My feet hurt. Shoes I'm not used to. Good night.

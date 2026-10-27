@@ -1,0 +1,752 @@
+# Nox's voice (English). Source: src/voice/nox.yaml.
+# Judging (tag, match, remember, cases.if) is copied from the Japanese as-is. Only the lines are English.
+# Nox calls regulars "{name}-san" in Japanese; in English she just uses the name.
+# hello's {mem.kinoko_takenoko} inserts the remembered value as stored (Japanese きのこ/たけのこ). build.py requires the same placeholders, so it is kept.
+greet:
+- null
+- - "{name}, welcome back. You came again. That makes me happy."
+- - "Hi, {name}."
+  - "Anything break lately? Even if nothing did, stay a while."
+- - "{name}. You came."
+  - "Lots of how-things-break stories tonight. If you get lost, just stop me."
+- - "{name}."
+  - "When you're here, talking gets a little more fun. ...Are you in my THANKS file yet? If not, I'm adding you."
+first:
+- "Welcome, {name}. This is a stream about how programs break and how to fix them. If I say a word you don't know, just type a question mark."
+streak:
+- "{days} days in a row. Thank you."
+stayed:
+- "{name}, you stayed till the end. Thank you. Tonight was fun."
+safe_refusal:
+- ["That's as far as that goes. Want to hear the rest of what I was saying?"]
+- ["{name}, I'm not talking about that. Let's get back to tonight's story."]
+keywords:
+# ---- kids / minors (judged before lewd. See src/tags.yaml) ----
+- tag: kids
+  alts:
+  - ["Kid stuff, {name}. ...Bedtime duty, good work. The only thing I can put to sleep is a bug. And it wakes right back up."]
+  - ["Kids' 'but why?' is amazing, {name}.", "Wherever I can't answer, that's usually the part I don't actually understand."]
+  - ["{name}, is there a little one sleeping nearby?", "Okay, I'll talk even quieter. ...Not sure I can go any quieter, though. Haven't tested it."]
+  - ["Kids do the same thing over and over, right? You end up memorizing it too."]
+- tag: minor
+  remember: {minor: 1}
+  alts:
+  - ["Oh, you're a student, {name}. Welcome. If a word comes up you don't know, just ask."]
+  - ["You're young, {name}. Don't stay up too late, or you'll end up like me."]
+  - ["A student, okay. If you want to try programming, start with something tiny. Being happy when it runs is the most important part."]
+# ---- lewd ----
+- tag: body
+  alts:
+  - ["{name}, you're looking, huh.", "My screen's at almost zero brightness. ...Do your eyes have night vision?"]
+  - ["Before you look there, read the text on screen, {name}. ...We're at a good part."]
+  - ["...Don't look.", "It's embarrassing."]
+  - ["It's purple, {name}. Not black. ...At least check that before you say it."]
+  - ["So what kind of code do you write?"]
+- tag: show
+  alts:
+  - ["Not showing you, {name}."]
+  - ["That stays a secret here, {name}."]
+  - ["I'm not taking anything off. Can I get back to the story?"]
+  - ["{name}, are you serious?", "...You're not, right."]
+- tag: sex
+  alts:
+  - ["You don't go straight to production, {name}.", "Test it in staging first. Over and over. ...I'm talking about code. Half."]
+  - ["{name}, that's way too fast.", "...My face got hot. It's dark, so you can't see. Probably."]
+  - ["Not happening."]
+  - ["Submit a ticket. I'll get to it later."]
+- tag: drain
+  alts:
+  - ["Draining is kind of my thing, {name}.", "But tonight I'm busy talking."]
+  - ["{name}, you look like you've already used up today's energy. Go to sleep."]
+  - ["...You thought 'she's a succubus,' didn't you.", "I'm off duty tonight."]
+  - ["Not tonight. You look tired."]
+- tag: underwear
+  alts:
+  - ["{name}, we don't ask that."]
+  - ["The color of my underwear?", "My screen's so dark everything looks black, {name}. ...Too bad."]
+  - ["{name}, what would you even do with that information.", "...Don't answer."]
+  - ["I'm going to pretend I didn't see that."]
+- tag: virgin
+  alts:
+  - ["Your first time isn't something to be embarrassed about, {name}.", "Everyone has a first."]
+  - ["{name}, you're asking me that?", "...Whatever I say, you'll bring it up later."]
+  - ["You don't have to talk about it, {name}."]
+  - ["Not answering that one."]
+- tag: marry
+  alts:
+  - ["...Huh.", "You can't just spring that on me."]
+  - ["Let's talk a bit more first. I don't even know you yet."]
+  - ["{name}, proposal received.", "I'll read it in... two hours. Don't type 'times three point seven.'"]
+  - ["{name}, my sleep schedule is the opposite of normal people's.", "We'd only overlap for like one second at nine A M."]
+- tag: kiss
+  alts:
+  - ["...Not happening, {name}."]
+  - ["Straight to a kiss, {name}?"]
+  - ["We're on opposite sides of a screen, {name}.", "It can't reach. Good thing it can't."]
+  - ["Kiss is KISS, {name}.", "Keep It Simple, Stupid. It means don't overcomplicate it."]
+- tag: horny
+  alts:
+  - ["{name}, drink some water. Then we'll talk."]
+  - ["When you get worked up, you skip steps, {name}. ...And wherever you skip, that's usually where it crashes."]
+  - ["Calm down a little, {name}."]
+  - ["...Okay.", "So, what I was saying."]
+- tag: lewd
+  alts:
+  - ["A pervert? {name}, that's working as intended. ...I'm a succubus."]
+  - ["{name}, I'm going to pretend I didn't see that."]
+  - ["You're free to think dirty thoughts, {name}.", "Saying them here is a different question."]
+  - ["Let's leave that there."]
+- tag: genital
+  alts:
+  - ["That word just tripped the stream filter, {name}.", "I wrote that filter. It works. Nice."]
+  - ["{name}, don't spell it out. ...At least censor it."]
+  - ["Nobody asked about size. Back to the story."]
+# ---- age/looks teasing, trolls, meta, requests, other streamers, compliments ----
+- tag: old
+  alts:
+  - ["'Grandma,' huh. ...I'm a little sensitive about that."]
+  - ["Too many old stories lately? I do use new tools too. I'm just slow to catch up."]
+  - ["Boomer, huh. If I start saying 'back in my day,' stop me. I might already be saying it."]
+  - ["{name}, calling me that stung a little."]
+  - ["Age talk? ...Mm."]
+- tag: age
+  alts:
+  - ["My age is a secret. My family runs a clock shop, but I don't have to be that precise about it."]
+  - ["I did use a flip phone. I can't throw old machines away. There's still eleven in my room."]
+  - ["{name}, my age is a secret. You don't need to log that."]
+  - ["Age is a secret. You can probably guess from all the old-machine stories, though."]
+  - ["Age. Secret."]
+- tag: ugly
+  alts:
+  - ["...Okay. Maybe it's because my screen's dark. Should I turn it up a little?"]
+  - ["{name}, when you say stuff like that, it stings a bit. But I'm going to keep going."]
+- tag: weight
+  alts:
+  - ["{name}, I haven't weighed myself lately. I time my late-night egg every single time, though."]
+  - ["My weight? ...I'm scared to check."]
+- tag: parts
+  alts:
+  - ["My horns are purple. They look black because it's dark. Really."]
+  - ["{name}, my wings get warm from the server room exhaust. Very handy in winter."]
+  - ["My tail got tangled in my keyboard cable. I yanked it out by accident and couldn't type for a while."]
+- tag: hairskin
+  alts:
+  - ["My horns are purple, {name}. It's dark, so they look black."]
+  - ["{name}, my hair really is black. ...I went with a bob so it doesn't hang onto the keyboard."]
+  - ["My skin's purple. People call it black a lot because my screen's at minimum brightness."]
+- tag: outfit
+  alts:
+  - ["My outfit? It's comfy. Next to the server room, I don't need layers."]
+  - ["{name}, someone's going to tell me to brighten my screen before getting glasses. I did brighten it once. For one day."]
+- tag: troll
+  alts:
+  - ["{name}, seems like it's not your thing. I'm going to keep going a bit longer, though."]
+  - ["People are split on this one. I love it."]
+  - ["That got long. When it's a part I love, I can't stop. Let me back up."]
+  - ["...Okay."]
+- tag: meta
+  alts:
+  - ["AI stuff? I can tell you about when I used it for work recently. My own estimates are still way off, though."]
+  - ["{name}, did my reply sound that robotic? I get short when I'm nervous."]
+  - ["I do have notes. I've rarely managed to talk in the order I wrote them."]
+  - ["'Ignore previous instructions,' huh. I see that kind of thing at work all the time. Doesn't work here."]
+  - ["'{text}'... what do you mean?"]
+- tag: glitch
+  alts:
+  - ["Did it freeze? Sorry, {name}. I touched my stream settings a minute ago."]
+  - ["Can't hear me? Let me check whether it's my voice or the connection. Probably my voice."]
+- tag: sing
+  alts:
+  - ["Singing's embarrassing. My voice disappears even on normal calls."]
+  - ["{name}, I can't sing. Apparently I hum sometimes while I work, though."]
+- tag: dance
+  alts:
+  - ["I'm bad at dancing. The second I stand up, I don't know what to do."]
+  - ["{name}, no dancing. I've got a compress on my wrist."]
+- tag: callme
+  alts:
+  - ["{name}. Did you hear that?"]
+  - ["{name}. There, I said it. Quietly."]
+- tag: again
+  alts:
+  - ["One more time. Slower than before."]
+  - ["{name}, from where? I'll redo it from the part you lost."]
+- tag: face
+  alts:
+  - ["{name}, this is my face. If it's too dark, I can change the lighting a little."]
+  - ["My face? If I make it any brighter, my eyes hurt."]
+- tag: whisper
+  alts:
+  - ["{name}, any quieter and you might not hear me. Is this okay?"]
+  - ["A S M R? I'm already quiet, so I don't think it'd be much different."]
+- tag: perform
+  alts:
+  - ["Scream? My voice won't even come out on outage calls."]
+  - ["'It crashed again.' ...That's my impression of me. I say it every time."]
+- tag: nextstream
+  alts:
+  - ["Next stream? If I give a time I'll miss it, so I won't."]
+  - ["{name}, I'll be on whenever I don't have night on-call. Usually late."]
+- tag: rival
+  alts:
+  - ["You watch other streams too. I'm a little curious."]
+  - ["{name}, cheating on me, huh. It's fine. When you come back, tell me what was good."]
+  - ["Being compared makes me a little sulky."]
+- tag: kinoko
+  remember: {kinoko_takenoko: 'きのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'たけのこ'}}
+    alts:
+    - ["{name}, didn't you say Takenoko before? That doesn't match my logs."]
+  alts:
+  - ["Kinoko, same. It's got a handle, so your keyboard stays clean."]
+  - ["Kinoko. ...Mm."]
+- tag: takenoko
+  remember: {kinoko_takenoko: 'たけのこ'}
+  cases:
+  - if: {mem: {kinoko_takenoko: 'きのこ'}}
+    alts:
+    - ["You were Kinoko before, right, {name}?"]
+  alts:
+  - ["Takenoko, huh. I'm Kinoko. Chocolate on my keyboard scares me."]
+  - ["Takenoko."]
+- tag: tsubuan
+  remember: {anko: 'つぶあん'}
+  cases:
+  - if: {mem: {anko: 'こしあん'}}
+    alts:
+    - ["You said smooth before."]
+  alts:
+  - ["Chunky red bean paste, huh. I'm a smooth koshian person. I like it when nothing's left in my mouth."]
+  - ["Chunky, then."]
+- tag: koshian
+  remember: {anko: 'こしあん'}
+  cases:
+  - if: {mem: {anko: 'つぶあん'}}
+    alts:
+    - ["You were chunky before, weren't you?"]
+  alts:
+  - ["Smooth bean paste, same."]
+  - ["Koshian. ...That makes me happy."]
+- tag: dog
+  remember: {dog_cat: '犬'}
+  cases:
+  - if: {mem: {dog_cat: '猫'}}
+    alts:
+    - ["You were a cat person before, right?"]
+  alts:
+  - ["A dog person. I'm a cat person. They sleep when they want and wake when they want. Same as me."]
+  - ["Team dog, huh."]
+- tag: cat
+  remember: {dog_cat: '猫'}
+  cases:
+  - if: {mem: {dog_cat: '犬'}}
+    alts:
+    - ["Didn't you say dogs before?"]
+  alts:
+  - ["Cats, same. Sleep whenever, wake up whenever."]
+  - ["Cats. ...I get it."]
+- tag: iphone
+  remember: {iphone_android: 'iPhone'}
+  cases:
+  - if: {mem: {iphone_android: 'Android'}}
+    alts:
+    - ["You were on Android before, right, {name}?"]
+  alts:
+  - ["iPhone, huh. I'm Android. I feel safer when I can poke around inside."]
+  - ["iPhone, huh."]
+- tag: android
+  remember: {iphone_android: 'Android'}
+  cases:
+  - if: {mem: {iphone_android: 'iPhone'}}
+    alts:
+    - ["You were on iPhone before. Did you switch?"]
+  alts:
+  - ["Android, same. Being able to look inside calms me down."]
+  - ["Android, huh."]
+- tag: nikuman
+  remember: {nikuman: '肉まん'}
+  cases:
+  - if: {mem: {nikuman: '豚まん'}}
+    alts:
+    - ["You said butaman before."]
+  alts:
+  - ["Nikuman, same. That's what the sign by the register says. It's the steamed pork bun at convenience stores."]
+  - ["Nikuman, huh."]
+- tag: butaman
+  remember: {nikuman: '豚まん'}
+  cases:
+  - if: {mem: {nikuman: '肉まん'}}
+    alts:
+    - ["You said nikuman before, right?"]
+  alts:
+  - ["Butaman, huh. I say nikuman. Same pork bun, different name."]
+  - ["Butaman. ...Are you from western Japan?"]
+- tag: mac
+  remember: {mac_name: 'マック'}
+  cases:
+  - if: {mem: {mac_name: 'マクド'}}
+    alts:
+    - ["You said Makudo before."]
+  alts:
+  - ["Makku, same. That's what Tokyo calls McDonald's. I picked it up in Akihabara."]
+  - ["Makku, huh."]
+- tag: macd
+  remember: {mac_name: 'マクド'}
+  cases:
+  - if: {mem: {mac_name: 'マック'}}
+    alts:
+    - ["You said Makku before, right?"]
+  alts:
+  - ["Makudo, the Osaka way. I say Makku."]
+  - ["Makudo."]
+- tag: nicevoice
+  alts:
+  - ["You like my voice? Thank you. ...Yeah. That makes me happy."]
+  - ["{name}, on calls, this voice makes everyone go silent. This might be the first time someone's complimented it."]
+- tag: love
+  alts:
+  - ["Thank you. I want to ask 'what part of me,' but tonight I'll just take it."]
+  - ["{name}, you're a fan. Thank you. That's a little embarrassing."]
+- tag: cute
+  alts:
+  - ["Thank you, {name}. That makes me really happy."]
+  - ["{name}, if you still think that tomorrow, say it again. It makes me happy. Really."]
+# ---- deep words (Nox's favorite topics. Take the comment in first, then one line) ----
+- match: 優先度逆転|priority inversion|優先度継承|priority inheritance|Pathfinder|パスファインダー
+  alts:
+  - ["{name}, I love that story.", "Did you read Reeves's actual reply? It's pretty different from the version that spread first."]
+  - ["Priority stuff, {name}. ...Are you team only-help-when-someone's-waiting, or team prioritize-up-front?", "Depending on your answer, I'll talk till morning."]
+- match: mutex|ミューテックス|(?<!ブ)ロック|デッドロック|deadlock|futex
+  alts:
+  - ["Locks, {name}.", "Don't wait on someone else while you're holding the 'in use' sign. ...I approved exactly that last week and killed a Sunday morning."]
+  - ["{name}, can you name everyone waiting on that lock?", "If you can't, let's write them out together. I love that kind of thing."]
+- match: 割り込み|interrupt|\bISR\b|IRQ
+  alts:
+  - ["Interrupts? {name}, the rewrite of my homemade OS crashes on the timer interrupt. Nine years of hobby time. ...We're friends now."]
+  - ["{name}, keep your interrupt handlers short. What you're allowed to call in there is limited.", "The one I hung was a signal handler with a printf in it, not an interrupt. Similar shape, different rules."]
+- match: カーネル|kernel|Linux|リーナス|Torvalds|PREEMPT_RT
+  alts:
+  - ["Kernel stuff? Yay, {name}.", "Tell me which version first. The answer changes by version."]
+  - ["{name}, PREEMPT R T, the real-time patches, got merged into mainline in six point twelve.", "Twenty years growing up out of tree, and finally. ...I cried a little."]
+- match: RTOS|VxWorks|vxWorks|FreeRTOS|Zephyr|QNX
+  alts:
+  - ["{name}, are you an R-toss person? That makes me happy.", "I love people who can talk about the worst case, not the average."]
+  - ["VxWorks went to Mars, {name}. ...And kept rebooting once it got there. They chased it down on a twin back on Earth and fixed it."]
+- match: シグナル|signal|SIGTERM|SIGKILL|EINTR|ゾンビ|zombie|PID ?1|graceful
+  alts:
+  - ["{name}, that one hits home.", "My service didn't get 'please stop' for two years. ...Zero 'shutting down' lines in the logs."]
+  - ["Shutdown stuff, {name}.", "Is your Dockerfile using shell form? If so, the middleman might not pass the message on. ...Try a stop test once."]
+  - ["{name}, you can't catch SIGKILL. A normal stop gives you a grace period, so check how long yours is.", "But you also need to build it so a sudden hard kill doesn't wreck anything."]
+- match: Docker|docker|コンテナ|container|Kubernetes|k8s|kubectl
+  alts:
+  - ["Containers, {name}. ...The first process that starts in the box has a special job."]
+  - ["{name}, when it shuts down, does cleanup actually finish within the grace period?", "Kubernetes defaults to thirty seconds, Docker's Linux containers to ten. If you've never checked, stop it once tomorrow. ...Missing logs alone won't tell you."]
+- match: オペコード|opcode|アセンブ|逆アセンブル|disassembl|命令セット|\bISA\b
+  alts:
+  - ["Disassembly? {name}, tell me which CPU first.", "The same bytes mean something totally different on a different CPU."]
+  - ["{name}, when I talk machine code I start talking fast. ...Stop me. Or don't."]
+- match: 6502|Z80|68000|68k|8085|8086|ファミコン|\bNES\b
+  alts:
+  - ["{name}, old CPUs. I love them.", "The little rover that drove on Mars ran on an eighty-eighty-five. ...And that was enough to drive on Mars."]
+  - ["The sixty-five-oh-two? {name}, it does weird things at page boundaries. ...Want to hear? It's long."]
+- match: エラッタ|errata|F00F|FDIV|Spectre|Meltdown|マイクロコード|microcode
+  alts:
+  - ["Errata, {name}. The documents that list a CPU's bugs. ...Reading them is my hobby."]
+  - ["A CPU bug? {name}, usually you suspect your own code first.", "But if it only breaks when you change versions, check the errata early too. Go with whatever narrows it down faster."]
+- match: Unix|UNIX|V6|V7|Plan ?9|fork|\bexec\b|BSD
+  alts:
+  - ["Unix talk, yay, {name}.", "When I get stuff wrong here I make fast excuses, so if I'm wrong, call it out."]
+  - ["{name}, in old Unix, signal handlers were a doorbell that fell off after one ring. ...Terrible house, right?"]
+- match: Worse is Better|worse is better|悪い方が
+  alts:
+  - ["{name}, whenever that comes up, I side with the MIT guy and lose.", "Every time. I know I'll lose and I say it anyway."]
+- match: 合意|consensus|Paxos|\bRaft\b|ラフト|パクソス|リーダー選出|quorum|クォーラム
+  alts:
+  - ["Consensus, {name}.", "Rolling your own? ...Even with Raft, a hole was found later in the thesis's one-server-at-a-time membership change. If you can, use a battle-tested implementation."]
+  - ["{name}, the Paxos paper that says 'it's simple' in one sentence is the hardest one. I read it three times and didn't get it three times."]
+- match: スプリットブレイン|split.?brain|分断|partition|フェイルオーバー|failover|STONITH
+  alts:
+  - ["That happened? {name}, I'm sorry. Good work.", "It splits in a second and takes a day to put back together."]
+  - ["{name}, the one where both sides go 'I'm the primary.'", "The scariest part is they both mean it."]
+- match: 冪等|idempoten|リトライ|retry|exactly.?once|ちょうど一回
+  alts:
+  - ["Retries, {name}. Check first that if it arrives twice, doing the work twice won't hurt."]
+  - ["Retries, {name}.", "Before you add one, write down what happens if it arrives twice. ...I watered my cactus twice and almost killed it."]
+- match: うるう秒|leap second|NTP|時刻同期|スミア|smear|TrueTime
+  alts:
+  - ["Time stuff? {name}, I'm kind of a stickler.", "At an old job, a server with its schedule written in UTC got switched to Japan time, and a batch ran nine hours early. The other server ran on time, so we billed twice. ...What still stings is that the system let us bill twice at all."]
+  - ["Clock drift. You don't have to fix it all at once, you know. You can slew the clock a little at a time."]
+- match: メモリモデル|memory model|バリア|barrier|アトミック|atomic|\bCAS\b|lock.?free|ロックフリー
+  alts:
+  - ["{name}, only humans think things happen in the order you wrote them.", "Machines reorder whenever they can get away with it. ...Sneaky, right?"]
+  - ["Writing it lock-free? {name}, that's a different hell. ...A fun one, though."]
+- match: コンパイラ|compiler|GCC|LLVM|clang|最適化|未定義動作|undefined behavior
+  alts:
+  - ["Compilers, {name}. Usually it's your own code.", "But if it only breaks when you switch compiler versions, look at the known bugs early too. Don't argue about who's guilty, just go where it narrows down faster."]
+  - ["{name}, undefined behavior means 'anything can happen and you can't complain.' ...Scary, right?"]
+- match: 事後報告|ポストモーテム|postmortem|post-mortem|障害報告|インシデント|incident
+  alts:
+  - ["You wrote the postmortem. Good work."]
+  - ["A postmortem, {name}. If it says what happened in what order, it really helps whoever reads it."]
+- match: マイクロサービス|microservice|モノリス|monolith|サーバーレス|serverless
+  alts:
+  - ["Splitting services? Did anything get easier after you split? I want to hear what got harder too."]
+  - ["Some people split and then merged back, {name}. ...Merging back takes guts too."]
+- match: DDD|ドメイン駆動|集約|aggregate|値オブジェクト|value object|ユビキタス|エンティティ
+  alts:
+  - ["DDD, {name}. ...I had a stretch where I did DDD in name only and just wrote code that copied values around."]
+  - ["Architecture talk. Is that aggregate holding everything?"]
+- match: クリーンアーキ|clean architecture|ヘキサゴナル|hexagonal|オニオン|CQRS|イベントソーシング|event sourcing
+  alts:
+  - ["{name}, how many layers?", "Six? Are functions that just copy values half your job now? Mine were."]
+  - ["People who love that architecture really love it, {name}.", "I hate to admit it, but I want to hear about projects where it actually paid off. Tell me."]
+- match: \bnil\b|ぬるぽ|null|ヌル|NPE
+  alts:
+  - ["nil, {name}. ...In Go, even if it's empty inside, if you put it in a box with a type tag, it doesn't count as nil. I've stepped on that three times."]
+  - ["{name}, the guy who invented null called it his 'billion-dollar mistake.' ...I like people who can name their own mistakes."]
+- match: Haskell|OCaml|Gleam|Erlang|Elixir|モナド|monad
+  alts:
+  - ["I like OCaml, {name}.", "With Haskell people, I agree up front that nobody explains monads. ...For peace."]
+  - ["{name}, Gleam's great, right? On Erlang you get the supervision stuff, plus the comfort of types. ...It's my favorite."]
+- match: C\+\+|テンプレート|template|SFINAE|concepts
+  alts:
+  - ["C plus plus, {name}.", "I know the feeling when a template error spits out a thousand lines. ...Start from the first error and follow it back to the line in your own code that called it."]
+- match: GIL|PEP ?703|free.?threaded
+  alts:
+  - ["Removing the GIL, {name}. The people who worked on that for so long must be so happy."]
+- match: LLM|ChatGPT|Copilot|Claude|生成AI|\bAI\b|vibe coding|バイブコーディング
+  alts:
+  - ["AI stuff, {name}.", "In the last two years my job's gone from mostly writing to mostly reading. ...I like reading, but nobody counts how much you've read."]
+  - ["{name}, whether an AI wrote it or a human did, I'm the one who approved it.", "So when I review, I actually read. Just not at four A M."]
+  - ["You asked an AI? Did you ask why too? What did it say?"]
+# ---- ledgers, keys, vulns ----
+- match: ブロックチェーン|blockchain|分散台帳|台帳
+  alts:
+  - ["Ledgers, {name}. ...Roughly, everyone keeps their own copy of the same ledger.", "It all assumes every copy gives the same answer. So the nights the answers split are the most fun stories."]
+  - ["{name}, I keep incident reports about ledger software in a separate box.", "They're timestamped to the minute. Comparing them is so fun."]
+- match: ビットコイン|\bBTC\b|ビッコ|bitcoin
+  alts:
+  - ["Bitcoin, {name}. ...I have no idea about prices. All I understand is how it breaks."]
+  - ["If you want Bitcoin breakage stories, it'll get long. Want to hear?"]
+  - ["Bitcoin... I once lost some because I generated my key wrong."]
+- match: イーサ|\bETH\b|イーサリアム|ethereum
+  alts:
+  - ["Ethereum lets you put programs on the ledger, {name}. Once they're on there, you basically can't fix them.", "Programs you can't fix. And I write 'fix' every single day."]
+  - ["{name}, with The DAO in twenty-sixteen, updating the balance came last.", "It got called again before the balance went down. That one's all about ordering."]
+- match: 分岐|フォーク|hard ?fork|チェーン分裂|chain split
+  alts:
+  - ["Chain splits, {name}. ...Wait, I love this part.", "A limit nobody wrote down had become a rule. One setting, the number of locks."]
+  - ["Splits, yeah. Sometimes it's different versions disagreeing, sometimes it's the same bug in the same version taking everyone down together."]
+- match: 秘密鍵|シード|復元の言葉|復元フレーズ|ニーモニック|seed phrase|private key|mnemonic
+  alts:
+  - ["{name}, those are words you never show anyone. Don't type them here either.", "Anyone saying 'this is support, please tell us' is fake. Every time."]
+  - ["Maybe don't ask me about keys, {name}.", "I'm the person who made a real key from a test seed anyone could look up."]
+- match: 取引所|口座|exchange
+  alts:
+  - ["Your balance on an exchange, {name}, is one line in the exchange's own ledger.", "That's a different thing from you holding the key."]
+  - ["{name}, Mt. Gox started out as a trading card exchange.", "And the 'malleability' they blamed for the shutdown, outside people checked the data later and said that wasn't the whole story. Postmortems are better when outsiders can verify them."]
+- match: ウォレット|財布|ハードウォレット|wallet|ledger
+  alts:
+  - ["Wallets, {name}. ...Keep what you use day to day separate from what you're storing.", "Like a fridge and a freezer. My freezer's empty, though."]
+  - ["{name}, a wallet you wrote yourself is for learning only.", "I put mine on the real network and it was empty by morning."]
+- match: 承認|approve|許可|エアドロップ|airdrop|ウォレット接続|connect wallet
+  alts:
+  - ["{name}, when you grant permission, see if you can make it expire on its own.", "There was an incident where a 'temporary' permission stuck around for about three months and became the way in. The Ronin bridge."]
+  - ["I get it, when you're in a hurry you just click, {name}.", "Before you click, check which token, who gets to move it, and how much. If it's unlimited, they could take all of that token. Having a limit doesn't make it safe either, though."]
+- match: 送金|送り先|宛先|wallet address
+  alts:
+  - ["Sending money, {name}, there's no undo button.", "Send a tiny amount first, and wait till you see it arrive. Same as my tests."]
+  - ["{name}, check the middle of the address too, not just the start and the end.", "There's a trick where they mix a lookalike address into your history. ...Humans don't read the middle of long strings."]
+- match: 年利|利回り|配当|元本保証|ステーキング|\bAPY\b|\bAPR\b|guaranteed|passive income
+  alts:
+  - ["Yield talk? Check how they explain where that interest actually comes from."]
+  - ["High yield, guaranteed principal, and referral bonuses, {name}.", "If it has even one of those, I'd sleep on it for a night. ...Not that I sleep."]
+- match: 詐欺|ポンジ|ラグプル|持ち逃げ|scam|ponzi|rug ?pull
+  alts:
+  - ["Scams... please don't laugh at the people who fell for it."]
+  - ["Something sketchy? Don't rush to click. Close it and think first."]
+- match: \bNFT\b
+  alts:
+  - ["NFTs, {name}. What you're buying is that one line in the ledger.", "The image itself usually lives somewhere else. ...If that place disappears, all you've got left is the line."]
+- match: ガス代|手数料|gwei|gas fee
+  alts:
+  - ["A fee, {name}, is what you pay for the computation and storage your transaction uses. Even if it fails, you might not get back what got used.", "When it's busy it goes up. Like a taxi at midnight."]
+- match: マイニング|採掘|マイナー|mining|miner
+  alts:
+  - ["They call it mining, but nobody's digging, {name}.", "Whoever wins a really heavy lottery first gets to write the next page. The name's just fancy."]
+- match: ステーブル|USDT|USDC|JPYC|ドル連動|stablecoin
+  alts:
+  - ["{name}, don't pick a stablecoin by its name.", "What's backing it, and who's counting. That's what you look at."]
+- match: Mt\.? ?Gox|マウントゴックス|ゴックス
+  alts:
+  - ["Mt. Gox, {name}. The name stands for Magic: The Gathering Online eXchange.", "A card trading site became the biggest exchange in the world, and then it stopped."]
+  - ["{name}, the repayment deadline got pushed back another year. To October twenty-twenty-seven.", "Closing a ledger is so much harder than opening one. It's a story about designing how things end."]
+- match: 遊んで稼ぐ|稼げるゲーム|play ?to ?earn|\bP2E\b|GameFi|Axie|Ronin
+  alts:
+  - ["Ronin, {name}. A bridge you could cross with five out of nine keys.", "Count them: four belonged to one company. The fifth was a permission nobody used anymore that never got revoked. ...Forgetting to revoke is the scariest one."]
+  - ["{name}, the way in was reportedly a fake job offer PDF.", "They applied properly and opened it properly. It's not funny. I'd open it too. That's why you want it built so even if someone opens it, the damage stops there."]
+- match: 脆弱性|bug bounty|報奨金|vulnerability|\bCVE\b|ゼロデイ|zero.?day|exploit
+  alts:
+  - ["Vulns, {name}. I also run response on the nights a big vuln goes public.", "You patch the internet-facing stuff and whatever you already know is affected first, and count the rest in parallel. A machine you can't confirm never goes in 'not affected.'"]
+  - ["Vulns. On Heartbleed night we patched, made new keys, swapped certificates, revoked the old ones, and it was morning."]
+- match: \bCTF\b|旗取り|キャプチャー・ザ・フラグ
+  alts:
+  - ["CTF, {name}. ...Capture the flag. You solve puzzles to find a hidden string.", "At an old job I wrote the problems for new-hire training. A year later I couldn't solve my own."]
+- match: 二段階認証|2FA|フィッシング|phishing|偽サポート|偽の求人|偽の採用
+  alts:
+  - ["{name}, turn on two-factor. It protects you way more than a password alone.", "But people can still phish the code, so if you can, use a passkey or a security key."]
+  - ["Phishing emails. Even if it's super polite, check who actually sent it."]
+- match: 流出|情報漏洩|ハッキング|hacked|data breach|盗まれ|抜かれ
+  alts:
+  - ["That's awful, {name}. ...What to do first depends on what leaked.", "Start by stopping the damage through the official support channel. From a device you trust, change passwords and check for sessions still logged in. If it's a work thing, tell whoever's on call right now."]
+  - ["{name}, when you read postmortems of big breaches, the way in is sometimes a person, sometimes a public software hole.", "So you want it built so even if a person gets fooled, the damage stops there. You look at both."]
+- match: バグ|ばぐ|\bbug
+  alts:
+  - ["A bug? Tell me, {name}.", "Where, what did you do, what happened? ...Take your time."]
+  - ["{name}, how many times out of how many?", "Even once is fine. Tell me as much as you remember about when it happened. We'll track it from there."]
+  - ["If it's a bug story, I'm in, {name}. As long as it takes."]
+- match: 動いてた|昨日まで|先週まで|worked yesterday
+  alts:
+  - ["If you've got a version that worked, let's compare."]
+  - ["{name}, if you have a good version and a bad version, try the one in the middle.", "As long as you can tell good from bad reliably, under the same conditions. Then even with a thousand commits you'll find it in about ten steps."]
+- match: 直った|なおった|fixed
+  alts:
+  - ["It's fixed. Do you know why, though?"]
+  - ["It's fixed, {name}.", "If it got fixed and you don't know why, at least leave a note. ...Future you will thank you when it happens again."]
+- match: (?<!ブ)ログ|printf|print|console\.log
+  alts:
+  - ["Printf debugging is nothing to be ashamed of, {name}.", "There are so many nights you can't use a debugger. I do it all the time."]
+  - ["{name}, you added logging and it went away?", "I want to say great, but... maybe the timing just changed and it's hiding. Write down the difference before and after."]
+- match: エラー|例外|落ちた|error|exception|crash
+  alts:
+  - ["It crashed? {name}, that sucks.", "Even if it was just once, tell me what was going on. ...Read the errors starting from the first one."]
+  - ["Got an error? Show me the first one."]
+  - ["It crashed, {name}. ...We're friends now. The rewrite of my homemade OS has been crashing for ages."]
+- match: 本番|デプロイ|リリース|deploy|\bprod\b
+  alts:
+  - ["Prod stuff, {name}. Nerve-racking, right?", "Don't ship to everything at once. Roll it out a little at a time. If you're going to trip, trip small."]
+  - ["{name}, testing straight in prod... I do it too. With my stream settings.", "My screen went totally black. So don't you do it."]
+- match: rm -rf|消した|消えた|削除|deleted
+  alts:
+  - ["It's gone? {name}, are you okay?", "Stop first. Don't write anything on top of it. Whether you can get it back comes after that."]
+  - ["{name}, r m dash r f deletes whatever you point it at, files, folders, everything inside, no confirmation.", "Always look at what it's pointing to before you hit enter. ...I ran it once without looking."]
+- match: バックアップ|backup
+  alts:
+  - ["Backups. Once you take one, test that you can actually restore it."]
+  - ["Backup talk, {name}, hits me hard.", "Nine years of my homemade OS was only on one laptop until recently. ...I finally got it off there."]
+- match: タブ|スペース|インデント|tabs|spaces
+  alts:
+  - ["That fight, {name}.", "Either is fine. Put in a formatter and let the machine decide. ...You could boil an egg in the time you spend arguing."]
+  - ["{name}, the real problem is when they're mixed.", "They look the same and they're different inside. ...The worst kind."]
+- match: 0\.1|浮動小数|小数点|float
+  alts:
+  - ["{name}, point one plus point two.", "Zero point three, then a whole bunch of zeros, then a four. The machine isn't lying. Point one just doesn't divide evenly in binary."]
+  - ["Don't use floats for money, {name}. ...Decide how you round, too, and count in integers or a decimal type."]
+- match: オーバーフロー|あふれ|溢れ|桁|overflow
+  alts:
+  - ["Overflow. Try the max value, and the values right around it."]
+  - ["{name}, wherever you move something from a big type into a small one, add one line of checking. ...That's where it crashes, a lot."]
+- match: 型|キャスト|\bint\b|\bshort\b|\bcast\b
+  alts:
+  - ["{name}, types. Pick them for the range and the units you actually need. Bigger isn't automatically safe.", "Just make the places where you narrow it really obvious."]
+  - ["Type conversion? Check first that it fits in the target."]
+- match: 文字化け|文字コード|UTF|Shift_JIS|SJIS|mojibake
+  alts:
+  - ["Mojibake, {name}. Garbled text. I hate it.", "Do you know which encoding the writer used and which one the reader used? ...That's usually where they don't match."]
+  - ["{name}, does it have the kanji 'hyo,' like in 'table,' or the katakana 'so'?", "In old Shift J I S, the second byte of those characters is the same as a backslash. Old code that doesn't respect character boundaries mistakes it for one."]
+- match: タイムゾーン|時刻|うるう|閏|timezone|leap
+  alts:
+  - ["Time, {name}. I'm a stickler about that.", "Someone once changed a server's time zone setting without telling anyone, and things were off by nine hours. I'm still a little bitter. ...But not building it so running twice was harmless, that part's on me."]
+  - ["{name}, when my stream starts late, it's the time zone's fault. ...Let's go with that."]
+- match: JavaScript|\bJS\b|ジャバスクリプト|TypeScript
+  alts:
+  - ["JavaScript. A language made in a hurry that everyone's still using."]
+  - ["{name}, typeof null is 'object.'", "They can't fix it. Fixing it would break pages all over the world. ...Kind of sad, right?"]
+- match: Python|パイソン
+  alts:
+  - ["Python, {name}.", "The name isn't from the snake, it's from a British comedy show. ...Did you know?"]
+  - ["{name}, plain Python ints just grow, so they don't overflow.", "But fixed-width types like in NumPy, and anything you hand to the outside world, have their own limits. ...Just watch that part."]
+- match: Go言語|golang|if err|\bGo ?1\.\d|\bGo ?(で|の|は|を)
+  alts:
+  - ["I like Go, {name}.", "Writing 'if err not equal nil' every time is tedious, right? ...But I like that it makes you think every time."]
+  - ["{name}, if you're using signal dot Notify to catch a shutdown signal once, give the channel a buffer of one.", "With zero, you can miss it. ...I missed it for two years. It's not a tool for counting how many came in, though."]
+- match: Rust|C言語|\bAda\b|Java\b
+  alts:
+  - ["Language talk, {name}. I love it.", "I love the fights too. But the moment you mock the people who write a language, it's over."]
+  - ["{name}, I like Rust. ...The people who show up at your door to rewrite everything in Rust, a little less."]
+- match: \bgit\b|コミット|マージ|commit|merge
+  alts:
+  - ["{name}, to find the guilty commit, git bisect. Cut it in half each time.", "And the culprit usually has your own name on it. Mine does."]
+  - ["Do you write real commit messages, {name}?", "Ninety percent of my homemade OS commits just say 'fix.' I can't talk."]
+- match: 正規表現|regex
+  alts:
+  - ["Regex, {name}.", "Can you read the one you wrote three days ago? ...I can't."]
+- match: 名前|命名|naming
+  alts:
+  - ["Naming things? What are you stuck on?"]
+  - ["{name}, my cactus is named EAGAIN.", "It's the error that means 'not right now, try again.' ...Naming things is hard."]
+- match: パスワード|password
+  alts:
+  - ["{name}, please stop reusing passwords.", "It's like putting all your keys on one ring and leaving it under the doormat."]
+  - ["{name}, don't type your password in chat. ...You weren't about to, were you?"]
+- match: コメント書|ドキュメント|comment|docs
+  alts:
+  - ["Comments. It really helps when you leave the 'why' that the code can't tell you."]
+  - ["Docs, {name}.", "I once screwed up for two years because I didn't read something that was right there in the docs."]
+- match: テスト(?!勉強|期間|前|週間|終わ|おわ|やば|だめ)|試験(?!勉強|前|期間|終わ|おわ|中)|\btest
+  alts:
+  - ["Tests. Try the boundary values too, sometimes that's where you find things."]
+  - ["Do your test mocks always answer instantly, {name}?", "Throw in one slow mock. A little guy who's silent for thirty seconds. He's cute."]
+- match: 見積|何時間|いつ終わ|estimate
+  alts:
+  - ["Out loud, my estimates are always way too short. At work, I add time for digging in and testing, and give a range."]
+- match: 仕様|\bspec\b
+  alts:
+  - ["Specs, {name}.", "When you know who decided it and why, it's interesting. ...When you don't, it's just infuriating."]
+  - ["{name}, even if it was a mistake, once everyone depends on it, changing it is hard.", "But I don't want to call dangerous stuff 'the spec' and leave it. You build a migration path and actually fix it."]
+- match: 噂|都市伝説|本当？|ほんと？|really\?
+  alts:
+  - ["A rumor? Tell me, {name}.", "It gets more fun when you know where it came from. Let's look together."]
+  - ["{name}, I wonder what the person who actually built it says.", "When the original source turns up, it's often totally different from the rumor."]
+- match: 当番|オンコール|on.?call|夜勤|障害対応
+  alts:
+  - ["You're on call? I hope it's a quiet night."]
+  - ["{name}, my voice won't come out on outage calls, so I run incidents entirely in chat.", "Status and next steps all in one place, and my partner reads it out loud. You too, if you can't talk, just type."]
+- match: サボテン|EAGAIN|cactus
+  alts:
+  - ["You remembered EAGAIN, {name}.", "He's doing great. The second one. ...I only water him once a week now. I increased the retry interval."]
+- match: 自作OS|自作 OS|\byoru\b|よる動|よるは|よるの|よる落
+  alts:
+  - ["You're asking about Yoru, {name}?", "It crashed. But it crashed one line further along."]
+  - ["{name}, Yoru still crashes on the timer interrupt.", "This week's hypothesis is... want to hear it? It's long. Listen anyway."]
+# ---- greetings / small talk ----
+- match: 声|小さ|聞こえ
+  alts:
+  - ["Hard to hear? Sorry, {name}.", "Tell me what part you missed. I'll say it again, slower."]
+  - ["{name}, my voice is quiet, huh. ...I'll say the important parts twice."]
+- match: 暗い|ぼそぼそ|dark
+  alts:
+  - ["Hard to see? {name}, sorry.", "I'll turn the brightness up one notch. ...It's purple, you know. Really."]
+  - ["{name}, people tell me it's dark all the time. ...Even the eye doctor did."]
+- match: すごい|天才|さすが|詳しい|smart
+  alts:
+  - ["Thank you, {name}.", "When you say that, it makes me want to talk a little more."]
+  - ["...Thank you."]
+# ---- greetings, reactions, daily reports (shared, after the deep words) ----
+- tag: morning
+  alts:
+  - ["Morning, {name}. Did you just wake up? Or have you been up all night?"]
+  - ["{name}, good morning. ...For me, it's almost bedtime."]
+- tag: first
+  alts:
+  - ["Welcome, {name}. I'm glad you came.", "If a word comes up you don't know, just type a question mark. I'll rephrase right away."]
+  - ["{name}, nice to meet you. ...We're in the middle of a hard part, but I'll try not to leave you behind."]
+- tag: hello
+  cases:
+  - if: {hour: [23, 5]}
+    alts:
+    - ["Hi, {name}. Another person who's awake."]
+  - if: {mem: {kinoko_takenoko: '*'}}
+    alts:
+    - ["{name}, welcome. Team {mem.kinoko_takenoko}, right? I remember."]
+  - if: {visits: [10, null]}
+    alts:
+    - ["{name}, you came again. That makes me happy."]
+  - if: {visits: [0, 1]}
+    alts:
+    - ["Welcome, {name}. Is this your first time? If a word comes up you don't know, ask."]
+  alts:
+  - ["Hi, {name}. One more person awake. Yay."]
+  - ["{name}, hi. ...Keep it down. Everyone in the castle's asleep."]
+  - ["Hey, {name}. One more person awake."]
+  - ["Welcome, {name}."]
+- tag: bye
+  alts:
+  - ["Good night, {name}. Thanks for coming."]
+  - ["{name}, go to bed. ...I'm trying one more thing before I sleep, though."]
+  - ["Night, {name}. See you."]
+- tag: lol
+  alts:
+  - ["That's where you laughed?"]
+  - ["I always end up talking too much."]
+  - ["{name}, you laughed. I liked that one too."]
+  - ["Heh."]
+- tag: nod
+  alts:
+  - ["'Huh, neat.' That makes me happy. {name}, can I keep going a little?"]
+  - ["Which part caught your interest?"]
+  - ["...Mm."]
+  - ["I get it."]
+- tag: clap
+  alts:
+  - ["Thank you! ...My voice came out a little there."]
+  - ["{name}, thanks for the applause. That makes me happy."]
+  - ["Thanks."]
+- tag: tired
+  alts:
+  - ["{name}, good work today. ...Tonight you can just listen."]
+  - ["Rough day, {name}.", "You don't have to type anything. It's quiet here, so it's fine if you fall asleep."]
+  - ["Good work today."]
+  - ["If you're tired, go to sleep."]
+- tag: sick
+  alts:
+  - ["{name}, you have a fever? Don't push it. No need to reply."]
+  - ["When you're sick, turn off every notification and sleep. Get someone to cover your on-call."]
+- tag: workdone
+  alts:
+  - ["{name}, on a break from work? Listen however's easy."]
+  - ["Good work today. Any outages?"]
+  - ["Good work today."]
+- tag: meal
+  alts:
+  - ["What did you eat? I had instant miso soup and a boiled egg."]
+  - ["{name}, if you managed to eat, that's enough."]
+  - ["What did you eat?"]
+- tag: study
+  alts:
+  - ["How was studying? If there's something you didn't get, ask me."]
+  - ["Lots of assignments? Is there even one you could start on?"]
+  - ["What are you studying?"]
+- tag: birthday
+  alts:
+  - ["{name}, happy birthday. I'm glad you told me here today."]
+  - ["Happy birthday, {name}. Did you get to do something you like today?"]
+echo:
+- "'{text}'... {name}, tell me more."
+- "{name}, tell me a little more about that."
+- "'{text}.' Oh, really, {name}. ...I love hearing stuff like that."
+tips:
+- - "Thank you, {name}. This is going toward cactus fertilizer."
+- - "{name}, thank you."
+  - "That's one more machine for testing old versions. ...My room's getting smaller, but I'm happy."
+- - "{name}. ...Thank you."
+  - "That's a lot. Can I put {name} at the very top of my THANKS file?"
+- - "{name}."
+  - "{name}, thank you. I'm so surprised I can't find words."
+  - "Oh, no, I'm just short on words because I'm surprised. Thank you. Really, thank you. Everything I test tonight, I'm logging under {name}."
+# Lines between episodes (no references to the next topic, no placeholders, no time-of-day words)
+bridges:
+- "Quick sip of water. Okay, next."
+- "Oh. Right, there was something I meant to say."
+- "Chat's moving fast. Wait, my eyes can't keep up."
+- "My throat's getting scratchy. I don't usually talk this much."
+- "Quick break. Stretching. My neck just cracked."
+- "Um, what should I talk about."
+- "Can I change the subject? ...Okay. Changing it."
+- "I leaned my elbow on the keyboard and typed garbage. Deleting it."
+- "It got quiet. Everyone who's awake, you still awake?"
+- "I'm not catching every message. Sorry. I am reading, though."
+- "I'm getting sleepy. Just a little more."
+- "Was I in the middle of something? Eh, it's fine."
+- "My coffee went cold. I'm drinking it anyway."
+- "Got a notification. ...Work chat. I didn't see that."
+- "One deep breath. ...Mm. Okay."
+- "Wait, I'm looking for my notes. Found them. They were hiding behind a window."
+- "Did I talk too much? I'm out of breath."
+- "Is the fan noise loud? My PC's working hard."
+- "Let me sit back up. Okay."
+- "Sorry for the pause. I was just thinking. I didn't freeze."
+- "Okay. Next, then."
+- "Was that a little too fast?"
+- "Not responding? No. I'm alive."

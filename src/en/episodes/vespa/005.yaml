@@ -1,0 +1,179 @@
+# Vespa 005 (English): going to anime towns and measuring the hills. Translated from src/episodes/vespa/005.yaml.
+title: I Go to Anime Towns and Measure the Hills
+family: true  # has a childhood school-project story. No sexual jokes in this episode
+parts:
+- title: The hill by the station
+  beats:
+  - say: Good evening! So today I measured the hill from the station to my place.
+  - chat: [harumi_survivor, 'evening. slopes again']
+  - say: Slopes again, Harumi, it's been a while okay! It's a different one! First time doing the one by my house!
+  - chat: [first_time_here, 'first time. measure a hill?']
+  - say: Welcome! Measure a hill? Yeah, there's an app on your phone that measures angles, and you set it on the ground.
+  - say: And it was four degrees! I walk up it every day and I'd never measured it.
+  - chat: [end_of_line_here, '4 degrees isnt a hill']
+  - say: Four degrees isn't a hill? It is! On a bike it's kinda rough!
+  - chat: [first_time_here, 'why measure it']
+  - say: Why measure it? Okay so, I go to towns where anime is set, and I make a book measuring the hills there. The Slope Book.
+  - chat: [con_haul_victim, 'bought it in summer']
+  - say: You bought it in summer?! Thank you! Was it wavy?
+  - chat: [con_haul_victim, 'a little wavy']
+  - say: {face: shy, text: 'A little wavy?! I''m sorry! That''s from the rainy day!'}
+- title: Anime draws hills steeper
+  beats:
+  - chat: [first_time_here, 'and then what']
+  - say: And then what? I compare it with the hill in the anime.
+  - say: One town's hill, I measured eight degrees. But on screen it looks like twelve.
+  - chat: [first_time_here, 'the anime is steeper?']
+  - say: Yeah, the anime's steeper! I think they wanna show the effort of climbing. Hills tend to look flat on a screen.
+  - chat: [not_my_headcanon, 'hills are also the characters feelings. on bad days the hill is steeper']
+  - say: On bad days the hill is steeper... oh, that's good. That's really good.
+  - chat: [not_my_headcanon, 'your book measures them ignoring feelings']
+  - say: My book ignores feelings? It does not! I think about feelings after I measure!
+  - chat: [not_my_headcanon, 'wrong order']
+  - say: Wrong order? So what! Let's fight it out in books!
+  - chat: [first_time_here, 'steepest hill so far?']
+  - say: Steepest so far? In this one port town, a hill that's basically stairs. Fifteen degrees.
+  - chat: [end_of_line_here, '15 degrees is stairs']
+  - say: Fifteen is stairs? It's not stairs, it's a hill! The map had a name for it!
+  - say: I get so happy when a hill has a name on the map. Like, enough people walked it that someone gave it a name.
+  - chat: [harumi_survivor, 'did you look up where the name came from']
+  - say: Where the name came from? I tried, I asked a grandma nearby. And she told me about a totally different hill.
+  - say: I listened for like thirty minutes. It was fun, but I never found out what the name meant.
+  - chat: [not_my_headcanon, 'failed as research']
+  - say: Failed as research... maybe. But she gave me a mikan. A little orange.
+  - chat: [con_haul_victim, 'the mikan was a success']
+  - say: The mikan was a success, he says. Yep. The mikan was a success.
+  - chat: [first_time_here, 'why hills tho? not buildings or whatever']
+  - say: Why hills and not buildings. Hmm, why. Maybe a school project when I was a kid.
+  - say: At my school dorm in the demon world, I measured the height of every single stair. And every step was different.
+  - say: I asked the teacher, why are they different, and she said, because different people built them.
+  - say: That just kinda stuck with me. Hills too, right? Someone built them, or everyone walking wore them down.
+  - chat: [not_my_headcanon, 'i kinda want to write a story about that teacher']
+  - say: A story about my teacher?! Don't! She probably doesn't even remember!
+- title: So what's a pilgrimage
+  beats:
+  - chat: [first_time_here, 'i hear anime pilgrimage a lot but what is it']
+  - say: An anime pilgrimage, seichi junrei, is when fans go to the real places an anime is set. And you compare the view to the anime.
+  - say: My favorite is Oarai. A seaside town in Ibaraki. Where Girls und Panzer is set.
+  - chat: [harumi_survivor, 'the tank town']
+  - say: Yes, the tank town! But Oarai barely has hills. Nothing to measure, it's a little sad.
+  - chat: [end_of_line_here, 'then why go']
+  - say: Then why go? To see the people! The whole shopping street welcomes you. There are character cutouts in front of the shops.
+  - say: Their autumn festival, the Anglerfish Festival, used to get around twenty or thirty thousand, and in twenty-twelve it hit sixty thousand.
+  - say: And in twenty-fifteen, a hundred and ten thousand! Way more than double!
+  - chat: [end_of_line_here, '110k at a town festival. not enough toilets']
+  - say: {face: laugh, text: 'Not enough toilets?! That''s the first thing you worry about!'}
+  - chat: [con_haul_victim, 'what did you eat in oarai']
+  - say: What did I eat? Shirasu don! Baby whitebait on rice. It's a fishing town, so it's super fluffy.
+  - say: First place said, no shirasu came in today. Some days there's no catch. Finally got it at the second place.
+  - say: Oh, and I do my furusato nouzei to Oarai too. They send me an anglerfish hot pot set.
+  - chat: [first_time_here, 'furusato nouzei?']
+  - say: Furusato nouzei is, you send money to a town you like, you get a little off your taxes, and the town sends you local stuff. Roughly.
+  - chat: [end_of_line_here, 'did u do hot pot alone']
+  - say: Did I do hot pot alone... I ate it alone under my kotatsu. The heated table. Hot pot from the town with no hills was so good.
+  - chat: [harumi_survivor, 'hills have nothing to do with it']
+  - say: Nothing to do with it. Yeah, nothing. I just wanted to say it.
+- title: Speaking of which, the onsen stone steps
+  beats:
+  - chat: [con_haul_victim, 'not a hill but you seem like youd measure the ikaho stone steps']
+  - say: The Ikaho stone steps? I did! All three hundred sixty-five!
+  - say: I was putting the app on each step, and the tourists behind me were just waiting the whole time.
+  - say: Halfway up I noticed, and went, sorry, go ahead!, and moved aside.
+  - chat: [end_of_line_here, 'you made a line']
+  - say: I made a line... I did. I was the front of the line.
+  - chat: [harumi_survivor, 'did you go in the onsen']
+  - say: I did go in! After climbing all the way, and the water was so hot. Hotter than my usual forty-three degree shower.
+  - chat: [first_time_here, 'favorite onsen?']
+  - say: Favorite? Ikaho! Because stone steps! Also super sento on the way home from trips. Big public bathhouses. I just do the sauna.
+  - chat: [con_haul_victim, 'im team kusatsu']
+  - chat: [harumi_survivor, 'hakone']
+  - say: Kusatsu and Hakone, those both sound hilly! I wanna go!
+  - chat: [not_my_headcanon, 'you pick onsen by hills']
+  - say: {face: smug, text: 'I pick onsen by hills? I do. The water tastes better when there''s a hill.'}
+  - chat: [end_of_line_here, 'u dont drink the water']
+  - say: You don't drink the water, nope! Figure of speech!
+- title: Washimiya, and the towns that welcome you
+  beats:
+  - chat: [con_haul_victim, 'have you been to washimiya?']
+  - say: Washimiya? I have! Washinomiya Shrine in Saitama. It's the shrine from the anime Lucky Star.
+  - chat: [harumi_survivor, 'where new years visitors shot up']
+  - say: "Yep, New Year's visitors shot up there! Three-day totals, ninety thousand in twenty-oh-seven, four hundred seventy thousand by twenty-eleven."
+  - say: Five times! And the town gave the main character's family special resident certificates. Anime characters!
+  - chat: [first_time_here, 'characters as residents?']
+  - say: Characters as residents! That kind of playfulness! They even had a character mikoshi, a portable shrine, at the festival.
+  - chat: [end_of_line_here, 'new years line control sounds rough']
+  - say: New Year's line control sounds rough, yeah. I did my New Year's visit there once. The crowd carried me to the exit before I even got to pray.
+  - chat: [harumi_survivor, 'did you line up again']
+  - say: Did I line up again? I did! Got middle luck on my fortune!
+  - say: I also love Hida City in Gifu. Where Your Name is set.
+  - say: The city held a screening for the people who live there, before the visitors came.
+  - chat: [not_my_headcanon, 'thats nice']
+  - say: That's nice, right? I think it matters that the people who live there see how their town is drawn first.
+- title: The roads people live on
+  beats:
+  - say: Okay, just a little serious talk.
+  - say: Anime spots are just normal streets for the people living there. Sometimes it's kids' route to school.
+  - say: The old school building at Toyosato Elementary in Shiga drew crowds because it looks like the setting of K-On.
+  - say: And in twenty-ten the town put out a notice saying if the trouble keeps up, they might close it.
+  - say: When I went, I took one photo and left right away. People live right next to it.
+  - chat: [harumi_survivor, 'were people being loud']
+  - say: Were people loud? Yeah. And there's the railroad crossing by Kamakura Koko Mae station in Kanagawa. From the Slam Dunk opening.
+  - say: Last October, around China's big holiday week, they had seven security guards watching it.
+  - chat: [end_of_line_here, '7 at a crossing. makes sense. needed']
+  - say: Seven at a crossing, needed. Coming from End-of-Line, that hits.
+  - say: Take photos from the marked spots. Don't block the road. That alone makes a huge difference.
+  - chat: [first_time_here, 'ill be careful']
+  - say: You'll be careful, thank you! first_time_here, when you go, check the photo spots marked on the map, okay?
+- title: Have you done a pilgrimage?
+  beats:
+  - ask:
+      q: Have you been to a place where an anime or manga is set?
+      options:
+      - c: "Yes"
+        r:
+        - '{name}, where''d you go? Were there hills?'
+        - Drop the town name in chat later. I'm adding it to my list!
+      - c: No, but I want to
+        r:
+        - '{name}, nice! Start somewhere close, that''s fine.'
+        - And eat the local food too. That's like half the point!
+      - c: Not interested
+        r:
+        - '{name}''s not interested. That''s okay!'
+        - Just listen to my hill talk then. You can do that from home.
+      npc:
+      - [harumi_survivor, 0]
+      - [first_time_here, 1]
+      - [end_of_line_here, 2]
+      - [con_haul_victim, 0]
+      - [not_my_headcanon, 0]
+  - say: Lots of you have been! Tell me the town names later!
+  - chat: [end_of_line_here, 'not interested. but i go to crowded places for work']
+  - say: End-of-Line, not interested, but goes for work. I bet she's actually been to a ton of anime spots.
+- title: Pork buns on the way home
+  beats:
+  - chat: [con_haul_victim, 'what do you buy on the way home from trips?']
+  - say: On the way home? From Osaka, always five-five-one butaman. The famous pork buns. I get a six-pack at Shin-Osaka station.
+  - chat: [harumi_survivor, 'you mean nikuman']
+  - say: You mean nikuman, there it is, team nikuman! In Osaka they say butaman, pork bun, not nikuman, meat bun. I've been to Osaka so much I can't go back.
+  - chat: [first_time_here, 'does it matter?']
+  - say: Does it matter? It does, that's the thing! Ella's team butaman too. She says, calling a pork bun a meat bun is frightfully careless, my dear.
+  - chat: [not_my_headcanon, 'harsh']
+  - say: Harsh? Right? I wouldn't go that far, but I get the feeling.
+  - chat: [con_haul_victim, 'they smell if you eat them on the shinkansen']
+  - say: They smell on the bullet train, they do! One time I opened them on the shinkansen and the person next to me turned around.
+  - say: So I gave them one and we became friends. They're in my trip group chat now.
+  - chat: [end_of_line_here, 'recruiting with pork buns']
+  - say: {face: laugh, text: 'Recruiting with pork buns? I am! I lure them in with the smell!'}
+- title: Wrapping up
+  beats:
+  - say: Okay, that's it for today! Where should my next pilgrimage be?
+  - chat: [harumi_survivor, 'somewhere with lots of hills']
+  - say: Somewhere with lots of hills? Harumi's recommending hills! I'm so happy!
+  - chat: [harumi_survivor, 'just want you to finish faster']
+  - say: You just want me to finish faster?! Rude! But I'm going!
+  - chat: [not_my_headcanon, 'the manuscript for the winter book?']
+  - say: The winter manuscript? I'll draw it after the next pilgrimage! It's research!
+  - chat: [not_my_headcanon, 'deadlines dont wait']
+  - say: {face: shy, text: 'Deadlines don''t wait. I know. I''ll draw it.'}
+  - say: Thanks, everyone! Go measure the hill by your station too! Otsukaresama!

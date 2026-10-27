@@ -1,0 +1,235 @@
+# Vespa 001 (English): submitted the Winter Comiket application ten minutes before the deadline. Translated from src/episodes/vespa/001.yaml.
+title: I Submitted My Winter Comiket Application Ten Minutes Before the Deadline
+parts:
+- title: Back from the part-time job
+  beats:
+  - say: Oh, am I live? I'm live. Hiii, good evening!
+  - chat: [end_of_line_here, 'gj today']
+  - chat: [harumi_survivor, 'evening']
+  - say: End-of-Line, good work today! Evening, Harumi!
+  - say: Sorry, I'm kinda out of breath. I literally ran home from work.
+  - chat: [end_of_line_here, 'did u need to run tho']
+  - say: Did I need to run? Yes! I announced the stream time myself, so yes!
+  - chat: [first_time_here, 'first time here']
+  - say: A first-timer! Welcome welcome! Make yourself at home, first_time_here.
+  - say: So I do part-time gigs at events. Merch booths, crowd control, lines. Six hours on my feet today.
+  - chat: [first_time_here, 'crowd control?']
+  - say: Crowd control? Like, I make the line happen. I hold a sign that says End of Line Here and stand at the very back.
+  - chat: [first_time_here, 'wait thats that persons name']
+  - say: Oh, you noticed? Same as that person's name, yeah. Confusing, right? She's my coworker!
+  - chat: [end_of_line_here, 'held the sign the right way up today']
+  - say: Right way up today. Today! Don't say today!
+  - chat: [harumi_survivor, 'so it was upside down before']
+  - say: Harumi, so it was upside down before, huh... Once! One time I held it upside down. For forty minutes.
+  - say: And people still lined up behind me, tilting their heads. Isn't that sweet?
+  - chat: [end_of_line_here, 'the customers were the sweet ones']
+  - say: {face: laugh, text: 'Yes, the customers were sweet! I did nothing! Zero!'}
+- title: Winter Comiket, three whole days
+  beats:
+  - say: Okay so, what I actually wanted to talk about today. Winter Comiket!
+  - chat: [first_time_here, 'comiket? the giant crowd thing?']
+  - say: The giant crowd thing? Yes! The giant crowd thing!
+  - say: It's a festival where fans hand out books they made themselves. Doujinshi, self-published comics and novels.
+  - say: And this winter it runs three days. December twenty-ninth, thirtieth, thirty-first!
+  - say: First three-day one in eight years! It's been two days for ages.
+  - chat: [first_time_here, 'why more days']
+  - say: Why? Winter gets a ton of applications, and the venue's under construction so there are fewer halls. So they added days instead.
+  - chat: [end_of_line_here, 'smaller venue, three days. three days of lines']
+  - say: Three days of lines. Oh my god, she's already in work mode.
+  - say: Anyway, I applied as a circle. That's what they call a group with a table. I'm a seller this time.
+  - chat: [not_my_headcanon, 'how many minutes before the deadline']
+  - say: Why are you asking minutes! It could've been days!
+  - chat: [not_my_headcanon, 'you submitting days early is not my headcanon']
+  - say: {face: annoyed, text: 'Me submitting days early is not your headcanon? Rude! Correct, but rude!'}
+  - chat: [end_of_line_here, 'ten min. break room']
+  - say: Ten minutes, break room... how do you know that!
+  - chat: [end_of_line_here, 'i was next to u eating an onigiri']
+  - say: You were next to me eating an onigiri? Oh right! You were right there!
+  - say: Our break is fifteen minutes. I open the page, deadline's in twelve.
+  - say: Type the circle name, pick the genre, upload the cut. My hands were shaking.
+  - chat: [first_time_here, 'whats a cut']
+  - say: A cut is like, your circle's tiny sign drawing. The one that goes in the catalog.
+  - say: And she's sitting there eating a salmon onigiri! I asked for one bite and she said no!
+  - chat: [end_of_line_here, 'break time onigiri is not for sharing']
+  - say: Break time onigiri is not for sharing. Stingy!
+- title: Wait, which onigiri are you?
+  beats:
+  - say: Oh wait. Random question. What do you guys get at the konbini? Onigiri, I mean. The rice balls.
+  - chat: [harumi_survivor, 'ume']
+  - chat: [first_time_here, 'tuna mayo no contest']
+  - chat: [green_glowstick_yr2, 'evening senpai!! mentaiko for me']
+  - say: Pickled plum, tuna mayo, and spicy cod roe. All over the place! Evening, Year-Two! Mentaiko, nice!
+  - say: Harumi's an ume guy. That tracks! So Harumi!
+  - chat: [harumi_survivor, 'what tracks']
+  - say: What tracks? Like, it's super sour and you just take it without complaining?
+  - chat: [harumi_survivor, 'i complain']
+  - say: {face: laugh, text: 'He complains! He admits it!'}
+  - say: Me, Family Mart's red salmon. On trip mornings I always buy two.
+  - say: One for the train, one for once I'm in line. That's the plan. The plan.
+  - chat: [end_of_line_here, 'u eat both on the train']
+  - say: I eat both on the train! Every time! And then I'm starving in line!
+  - say: And when your stomach growls in line the person in front hears it. So embarrassing.
+  - chat: [ohio_fansub_crew, 'hi! they sell onigiri in america too']
+  - say: Ohio, welcome! You can get onigiri in America? Where?
+  - chat: [ohio_fansub_crew, 'japanese grocery store. pricey']
+  - say: Japanese grocery, and pricey. How much?
+  - chat: [ohio_fansub_crew, 'like 3 dollars']
+  - say: Three dollars?! So two red salmons is six bucks. If I did that every trip I'd be broke.
+- title: Team Family Mart
+  beats:
+  - chat: [first_time_here, 'so youre team family mart?']
+  - say: Konbini? Team Family Mart! I love their Famichiki, the fried chicken, enough to walk there at two in the morning.
+  - say: But back in the day I went to a Sunkus. Another chain.
+  - chat: [harumi_survivor, 'sunkus. thats a throwback']
+  - say: Harumi, total throwback, right? In twenty-eighteen every single one turned into a Family Mart.
+  - say: The sign changed but the guy at the register was the same guy. That made me kinda happy.
+  - chat: [green_glowstick_yr2, 'thats wholesome']
+  - say: Right? And next thing I know I'm buying Famichiki at the same store.
+  - chat: [end_of_line_here, 'im a 7-eleven person']
+  - say: End-of-Line's a Seven-Eleven girl. I know. It's the closest one to the break room.
+  - say: What about you guys? Oh wait, no, this is the question where chat never stops.
+  - chat: [not_my_headcanon, 'youre off topic']
+  - say: Huh, I'm off topic?
+  - chat: [not_my_headcanon, 'you were talking about the application']
+  - say: {face: surprised, text: 'The application! Oh right! Wait, what was I saying. The application!'}
+  - say: Yeah, I submitted it. Ten minutes early, but submitted is submitted.
+  - chat: [green_glowstick_yr2, 'so glad you made it!!']
+  - say: So glad I made it, aww, Year-Two, thank you. You're literally the only one who says that.
+  - chat: [not_my_headcanon, 'ok and the manuscript?']
+  - say: The manuscript? They haven't even announced who got in yet!
+  - chat: [not_my_headcanon, 'if you start after you get in you wont make it']
+  - say: {face: shy, text: 'If I start after I get in, I won''t make it. That''s. Yeah. Fair. I''ll draw.'}
+- title: Summer rain, wavy books
+  beats:
+  - say: Let me tell you about summer too. I lost the lottery for Summer Comiket, so a friend put my book on her table.
+  - chat: [first_time_here, 'put it on her table?']
+  - say: That's called consignment. My friend's circle sells my book alongside theirs.
+  - say: And summer was rainy both days, remember? On and off.
+  - say: At least it wasn't hot. The summers before that were brutal.
+  - say: But. I brought my books in a paper bag.
+  - chat: [harumi_survivor, 'paper bag on a rainy day']
+  - say: A paper bag. On a rainy day. I have a mountain of plastic bags at home.
+  - say: Eight copies went wavy. The pages all crinkly.
+  - say: So I just gave up and put them out as the Wavy Edition.
+  - say: And one person actually bought one going, can I get the Wavy Edition please!
+  - chat: [con_haul_victim, 'limited edition lol']
+  - say: {face: smug, text: 'Limited edition! Only eight in existence!'}
+  - chat: [green_glowstick_yr2, 'i want one!!']
+  - say: You want one? Year-Two, I still have seven!
+  - chat: [not_my_headcanon, 'how many sold total']
+  - say: How many total... I brought thirty. Sold twenty-two.
+  - chat: [end_of_line_here, 'so quiet lol']
+  - say: Yeah I got quiet, obviously! But twenty-two people read it, okay!
+  - chat: [first_time_here, 'whats the book about']
+  - say: What's it about? The Slope Book! I go to towns where anime is set and measure the hills with my phone.
+  - chat: [harumi_survivor, 'here come the slopes']
+  - say: Don't say here come the slopes! There's a first-timer! So anime hills are usually drawn way steeper than the real ones. It's a book where I go check!
+- title: Have you been to Comiket?
+  beats:
+  - say: Okay, what about you guys?
+  - ask:
+      q: Have you ever been to Comiket?
+      options:
+      - c: "Yes"
+        r:
+        - '{name}, you''ve been! We''re the same! Which day do you go?'
+        - Winter's three days, so maybe we'll run into each other!
+      - c: No, but I'm curious
+        r:
+        - '{name}''s curious! Welcome! I really want you to try it once.'
+        - Even just one day. I'll teach you how to walk it!
+      - c: Not my thing
+        r:
+        - '{name}''s a not-going person. That''s totally fine too!'
+        - The crowds are insane, honestly. And lots of books are on mail order anyway.
+      npc:
+      - [harumi_survivor, 0]
+      - [first_time_here, 1]
+      - [end_of_line_here, 2]
+      - [ohio_fansub_crew, 1]
+      - [green_glowstick_yr2, 0]
+  - say: Lots of been-there and lots of curious! Nice!
+  - chat: [end_of_line_here, 'no. i go to crowded places for work']
+  - say: Right, for End-of-Line, crowds are the office.
+  - chat: [harumi_survivor, 'ive been going since the harumi days']
+  - say: Here we go, Harumi's since the Harumi days!
+  - chat: [first_time_here, 'whats harumi']
+  - say: What's Harumi? The old Comiket venue. A big trade show hall in Harumi, in Tokyo. He's been going since back then.
+  - chat: [harumi_survivor, 'since C17']
+  - say: Since C-seventeen?! I've been since C-nineteen! December nineteen eighty-one, the exact one where it moved to Harumi!
+  - say: ...If you just look at the numbers, Harumi was first. Yeah. I know. But.
+  - chat: [harumi_survivor, 'i win']
+  - say: You don't win. Proof? Show me the C-seventeen catalog!
+  - chat: [harumi_survivor, 'its in my parents closet']
+  - say: In your parents' closet? If you can't show it, it doesn't count!
+  - chat: [harumi_survivor, 'you wrote your journal yourself too']
+  - say: {face: annoyed, text: 'I wrote my journal myself too? My journal is a record! Ugh, this argument literally never ends.'}
+- title: The first one was in a meeting room
+  beats:
+  - chat: [ohio_fansub_crew, 'where was the very first comiket?']
+  - say: The first Comiket? December nineteen seventy-five. A meeting room in the fire department hall in Toranomon!
+  - say: A meeting room, you guys. Thirty-two circles! Like seven hundred people!
+  - chat: [end_of_line_here, 'one sign would cover that']
+  - say: {face: laugh, text: 'One sign! Stop measuring everything in signs!'}
+  - say: And last winter, the fiftieth anniversary, three hundred thousand people. Circle applications went over thirty thousand.
+  - chat: [first_time_here, '32 to 30000']
+  - say: Yep, thirty-two to thirty thousand! So many applied they suddenly had to set up tables in another hall too.
+  - chat: [end_of_line_here, 'those long tables are heavy btw']
+  - say: I know the tables are heavy! I carry them! I can do four cardboard boxes at once, by the way.
+  - chat: [ohio_fansub_crew, 'is comiket run by the government?']
+  - say: The government? No no no! It's run by the Preparations Committee. A bunch of fans.
+  - say: They have this line. There are no customers at Comic Market.
+  - chat: [first_time_here, 'no customers??']
+  - say: No customers, what? Right? Sellers, buyers, staff, everyone's a participant.
+  - chat: [end_of_line_here, 'staff too? whats the hourly']
+  - say: Staff hourly wage? The staff are participants too. They're not there for a paycheck.
+  - chat: [end_of_line_here, 'wait what. unpaid line control??']
+  - say: {face: laugh, text: 'Wait what, unpaid line control! She is shook!'}
+  - chat: [end_of_line_here, 'wouldnt do summer even at 2000 yen an hour']
+  - say: Not even at two thousand yen an hour in summer. Same. Summer line duty is brutal. So I always hand the staff some barley tea.
+- title: Booking the hotel on stream
+  beats:
+  - chat: [green_glowstick_yr2, 'senpai did you book your hotel for winter?']
+  - say: My hotel for winter? ...I. Have not.
+  - chat: [end_of_line_here, 'summer all over again']
+  - chat: [first_time_here, 'what happened in summer']
+  - say: What happened in summer? My hotel was still a tentative booking. I found out that night and slept in a manga cafe.
+  - chat: [first_time_here, 'tentative booking?']
+  - say: Tentative means you filled it in halfway and never hit the last button. That's not a booking. That's nothing.
+  - chat: [not_my_headcanon, 'book it now']
+  - say: Now?! On stream?!
+  - chat: [harumi_survivor, 'book it now']
+  - say: Even Harumi! Okay, fine, I'll do it! If you're all watching I bet I can finish it!
+  - say: Okay, near the venue... twenty thousand yen a night! Nope!
+  - chat: [end_of_line_here, 'one station over is cheaper']
+  - say: One station... oh, it is. It went down.
+  - chat: [end_of_line_here, 'two stations even cheaper']
+  - say: Two stations is even cheaper? Why do you know this!
+  - chat: [end_of_line_here, 'i watch you book every year']
+  - say: {face: shy, text: 'She watches me. Every year.'}
+  - say: Capsule hotel, five thousand eight hundred a night! That one!
+  - say: Name, phone number... estimated arrival time? I don't know, I'm coming from the venue.
+  - chat: [end_of_line_here, 'if you help pack up, 8pm']
+  - say: If I help pack up, eight? You're assuming I'm helping! I am helping! Okay, eight!
+  - say: And the last button. Confirm reservation.
+  - chat: [green_glowstick_yr2, 'press it!!']
+  - say: Pressed! It says reservation confirmed! Not tentative!
+  - say: I did it. ...Oh, but it's kinda far from the station.
+  - say: Wait, let me look at the map again. Walking, umm, eighteen minutes? With luggage?
+  - say: Whatever. A bed is a bed. Better than summer!
+- title: Is there a Family Mart nearby?
+  beats:
+  - chat: [first_time_here, 'is there a konbini near the hotel?']
+  - say: Near the hotel? Hang on, map. Oh, there's a Family Mart! Three minutes!
+  - say: Two red salmons! And I eat one at the venue!
+  - chat: [end_of_line_here, 'u eat both on the train']
+  - say: {face: laugh, text: 'I will! I probably will! I''ll buy three!'}
+  - chat: [not_my_headcanon, 'hotel done. so the manuscript?']
+  - say: Manuscript starts tomorrow! Tomorrow morning!
+  - chat: [end_of_line_here, 'you have work tomorrow morning']
+  - say: {face: surprised, text: 'I have work tomorrow morning... oh no, I do! Tomorrow night then!'}
+  - chat: [harumi_survivor, 'next time ill tell you about C17']
+  - say: You mean C-nineteen! Mine! ...Eh, whatever, I'll listen to either.
+  - chat: [first_time_here, 'that was fun, ill be back']
+  - say: You had fun? first_time_here, thank you! Next time I'll do the slopes!
+  - say: Okay, that's it for today! Good work, everybody! Otsukaresama!

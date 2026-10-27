@@ -1,0 +1,190 @@
+# Nox 006 (English). Source: src/episodes/nox/006.yaml. Beat order matches the Japanese.
+title: "Stuff I forgot to turn off (my zero point zero five BTC, and a game's bridge in twenty-twenty-two)"
+lobby:
+- "Hi. Tonight's theme is 'forgot to turn it off.'"
+- "I left a test setting in, and it cost me my own money. That story."
+- "Plus twenty-twenty-two, when a permission nobody used anymore was still there, and it turned into a huge incident."
+- "No prices, no buy or sell talk."
+parts:
+- title: Opening (subscriptions)
+  beats:
+  - say: "Oh, we're live. Hi, everyone who's still awake."
+  - chat: [second_year_dev, "evening"]
+  - chat: [lag_appreciation_club, "evening. you seem grumpy today?"]
+  - say: "Grumpy? I'm not grumpy. ...Okay, a little."
+  - chat: [kernel_reader, "what happened"]
+  - say: "I was doing my bookkeeping. For the stream. And there's this charge I don't recognize, a few dollars every month."
+  - chat: [first_time_here, "hi first time. scam?"]
+  - say: "Welcome, new person. A scam? No. It's my fault."
+  - say: "I spun up a cloud instance to try something out, and forgot to delete it."
+  - chat: [lag_appreciation_club, "since when"]
+  - say: {face: shy, text: "Since when... two years ago."}
+  - chat: [lag_appreciation_club, "LMAOOO"]
+  - chat: [leaving_work_on_time, "two years hurts"]
+  - say: "Two years hurts. It really does. I never used it once, and that machine was just awake for two years."
+  - chat: [rtos_veteran_15y, "what was it for"]
+  - say: "What was it for? I wanted to try reproducing old versions in the cloud instead of on the machines in my room."
+  - say: "I did it for one day, decided my room machines were faster, and just... left it."
+  - chat: [lag_appreciation_club, "the room machines won"]
+  - say: "The room machines won, yeah. And the cloud one lost and still had to work for two years."
+  - chat: [second_year_dev, "what other subscriptions do you have"]
+  - say: "Other subscriptions? Spotify and Netflix. That's it. That's what I thought, anyway."
+  - chat: [night_shift_survivor, "what do you watch on netflix"]
+  - say: "What do I watch? Nothing lately. I used to watch Mister Robot. It's about someone staring at a screen alone at night."
+  - chat: [lag_appreciation_club, "thats literally you"]
+  - say: "'That's literally you.' It's not me. I don't talk that much."
+  - chat: [kernel_reader, "what do you listen to on spotify"]
+  - say: "On Spotify I have one work playlist. Stuff like Kraftwerk's Computer World."
+  - chat: [rtos_veteran_15y, "classy"]
+  - say: "Classy, right? It's over forty years old and it sounds like a song about my job."
+  - say: "Anyway, tonight I want to talk about forgetting to turn things off. My bigger one."
+- title: Zero point zero five
+  beats:
+  - chat: [ddd_police, "the 0.05 story huh"]
+  - say: "Yep, the zero point zero five story. The regulars know this one."
+  - chat: [second_year_dev, "do you own bitcoin?"]
+  - say: "Do I own Bitcoin? No."
+  - chat: [lag_appreciation_club, "liar. you know so much about it"]
+  - say: "'Liar, you know so much.' Knowing a lot and being able to hold it are different things."
+  - say: "In twenty-seventeen, I wanted to understand how it works, so I wrote my own wallet."
+  - chat: [kernel_reader, "oh no"]
+  - say: "'Oh no'? Yeah. You're right to say that."
+  - say: "For testing, so I'd get the same result every time, I used the test seed straight out of a library's docs."
+  - chat: [first_time_here, "random seed?"]
+  - say: "A random seed is like, the starting point for how a lottery box gets shuffled. Fix it, and the tickets come out in the same order every time."
+  - say: "Great for tests. Same thing every run."
+  - say: "And I made a real key from that same test seed."
+  - chat: [rtos_veteran_15y, "oh"]
+  - say: "I received zero point zero five bitcoin on the real network. Just to learn."
+  - say: "Went to sleep. Woke up. Gone."
+  - chat: [lag_appreciation_club, "LMAOOO"]
+  - chat: [second_year_dev, "uh..."]
+  - say: "Half laughing, half 'uh.' It's fine, you can laugh. I can laugh now."
+  - say: "Turns out I wasn't the only one who knew that seed. It was in docs anyone can read."
+  - say: "Being able to rebuild a key from a seed is normal, by the way. That's how wallet recovery works. The problem was that everyone knew my seed."
+  - chat: [first_time_here, "did you get it back?"]
+  - say: "Get it back? Impossible. So, tuition."
+  - chat: [night_shift_survivor, "how much is 0.05"]
+  - say: "How much is zero point zero five... I don't do prices. I'll just say, back then, it was about a month of my late-night snacks."
+  - chat: [lag_appreciation_club, "a month of snacks in one night"]
+  - say: "In one night. I woke up and my wallet just said zero."
+  - say: "At first I thought the display was broken, so I refreshed like three times."
+  - chat: [rtos_veteran_15y, "refreshing doesnt fix that one"]
+  - say: "Refreshing does not fix that one. It didn't."
+  - chat: [ddd_police, "did you write a postmortem?"]
+  - say: "A postmortem? I wrote one for myself. Nobody else sees it."
+  - say: "Under what happened: 'made a real key with a fixed seed.' Under why: 'test config and real config were the same file.'"
+  - chat: [kernel_reader, "you didnt separate them?"]
+  - say: "I didn't separate them, no. When you're building alone, separating them is a pain."
+  - chat: [ddd_police, "how did you fix it"]
+  - say: "The fix. If any test setting is present when it generates a real key, it refuses. And since then, I don't hold any keys myself."
+  - chat: [kernel_reader, "big players screw up randomness too"]
+  - say: "Big players do it too, yeah. In twenty-thirteen there was a flaw in Android's random number generator, and Android Bitcoin wallets got a warning."
+  - say: "My room and those phones, same kind of mistake. Totally different scale, though."
+- title: Speaking of which (passwords)
+  beats:
+  - chat: [leaving_work_on_time, "what do you use for passwords?"]
+  - say: "What do I use for passwords? Keepass X C. I don't write them on paper."
+  - chat: [first_time_here, "keepass?"]
+  - say: "Keepass X C is, like, a vault app where all your passwords live. One master password opens it."
+  - chat: [lag_appreciation_club, "and if you forget the master password"]
+  - say: {face: annoyed, text: "If I forget the master password... I try not to think about it. Kidding. There's a backup in an envelope, stored somewhere else. Not telling you where."}
+  - chat: [night_shift_survivor, "i just let the browser save everything"]
+  - say: "The browser saves everything? That's fine. As long as you're not reusing them."
+  - chat: [night_shift_survivor, "i reuse them"]
+  - say: "You reuse them... just change the important ones. Even one. Your bank and your email."
+  - chat: [second_year_dev, "mora writes hers in a paper notebook in code"]
+  - say: "She does. Mora writes them in a notebook, in a cipher she made up."
+  - say: "And sometimes she forgets how to decode it."
+  - chat: [lag_appreciation_club, "thats useless"]
+  - say: "'That's useless.' It is. But as a kid, I kept a diary in code, wrote the key in another code, and then couldn't crack either."
+  - chat: [kernel_reader, "you lost the keys twice"]
+  - say: "I lost the keys twice, yeah. So I can't laugh at Mora. I do worry, though."
+  - chat: [lag_appreciation_club, "do you know your home wifi password"]
+  - say: "My home Wi-Fi password? No. I made it too long to remember."
+  - chat: [lag_appreciation_club, "its your own house"]
+  - say: "My own house. If guests come over, they read the sticker on the back of the router."
+  - chat: [kernel_reader, "you get guests?"]
+  - say: {face: annoyed, text: "Do I get guests... I've never had one. But if I did, that's the plan."}
+  - chat: [second_year_dev, "the 2FA at work every morning is so annoying"]
+  - say: "Two-factor every morning, I get it. But it protects you way more than a password alone."
+  - chat: [second_year_dev, "i heard the codes can get stolen too"]
+  - say: "They can. So if your company supports passkeys or security keys, those are easier and stronger. If mornings are painful, it's okay to tell your I T team."
+- title: The bridge permission
+  beats:
+  - chat: [rtos_veteran_15y, "passwords are fine but for forgetting to revoke stuff, its ronin"]
+  - say: "Forgetting to revoke, it's Ronin... I knew you'd bring it up. The twenty-twenty-two game bridge."
+  - chat: [first_time_here, "bridge?"]
+  - say: "There's a game called Axie Infinity. It had a way to move money between the game's ledger and the outside ledger. That's called a bridge."
+  - say: "In March twenty-twenty-two, about six hundred million dollars got drained from it."
+  - chat: [leaving_work_on_time, "600 million"]
+  - say: "Six hundred million. And they noticed six days later. Only once people couldn't withdraw."
+  - say: "To cross the bridge, you needed signatures from five out of nine validators."
+  - say: "Four of those were run by the same company."
+  - chat: [ddd_police, "and the fifth"]
+  - say: "And the fifth. The fifth is the 'forgot to revoke' part."
+  - say: "In November twenty-twenty-one, things got congested, so another organization gave permission to sign on its behalf."
+  - say: "By December they didn't need it anymore. But the permission never got revoked."
+  - chat: [second_year_dev, "a temporary permission just stayed"]
+  - say: "A temporary permission just stayed, yeah. Three months. And that got them to five."
+  - chat: [lag_appreciation_club, "the way in was a fake job offer right"]
+  - say: "The way in was a fake job offer, yes. An employee applied to a fake company's posting and opened a document file. Or so the press reported."
+  - chat: [lag_appreciation_club, "dont open it"]
+  - say: "'Don't open it,' sure, but people open it. If I applied properly and they said, 'here's your offer letter,' I'd open it too."
+  - say: "So I don't want a 'people should be more careful' story. It's 'grant permissions that expire on their own.' Even if someone's fooled, it stops there."
+  - chat: [ddd_police, "nine validators and getting to five was that easy?"]
+  - say: "Nine of them and five was easy? Four were the same company's keys, and the last one was usable through the permission nobody revoked. That's five."
+  - say: "They thought nine people were watching."
+  - chat: [rtos_veteran_15y, "like thinking you have redundancy but its all on one power strip"]
+  - say: {face: laugh, text: "Redundant, but on the same power strip, yes! Two machines, plugged into the same outlet."}
+  - chat: [lag_appreciation_club, "like the 11 machines in your room"]
+  - say: "The eleven machines in my room... are all on the same extension cord. Don't."
+  - chat: [first_time_here, "did they find who did it?"]
+  - say: "Who did it? In April, the F B I publicly named a North Korean group called Lazarus."
+  - say: "What I understand is where it leaked. Past that, it's not my story."
+  - chat: [kernel_reader, "nox's cloud box too"]
+  - say: "Oh, not the hackers. The forgotten permissions, I mean."
+  - say: {face: flustered, text: "'Nox's cloud box too'... yeah. My cloud box is the same thing."}
+  - ask:
+      q: "The stuff you made 'just for now,' the permissions you granted. Do you set a date to remove them?"
+      options:
+      - c: "I do"
+        r:
+        - "{name}, amazing. How do you make sure you don't forget?"
+        - "If they expire on their own, that's the best. Don't rely on anyone's memory."
+      - c: "Nope. Probably still out there"
+        r:
+        - "No removal date, huh."
+        - "{name}, you're on this side. I was there until about an hour ago."
+        - "Start with just one, and check if it's still needed. If you can't tell whether it's a powerful one, ask whoever owns it."
+      - c: "I don't even remember what I made"
+        r:
+        - "You don't even remember what you made, okay."
+        - "{name}... that's the worst kind."
+        - "You find it two years later in your bookkeeping. Like me."
+      npc:
+      - [rtos_veteran_15y, 0]
+      - [ddd_police, 1]
+      - [second_year_dev, 1]
+      - [leaving_work_on_time, 2]
+      - [lag_appreciation_club, 2]
+  - say: "Lots of 'didn't set one' and 'don't remember.' ...Everyone's on this side."
+  - chat: [second_year_dev, "we have one prod permission thats been sitting there since last month"]
+  - say: {face: surprised, text: "One's been sitting there since last month? Thank you for saying it. If it's a powerful one, tell whoever's on call tonight."}
+  - say: "Even if it isn't, first thing tomorrow, check with the owner if it's still needed. If not, remove it."
+  - chat: [second_year_dev, "ill check first thing tomorrow"]
+- title: Closing (still on passwords)
+  beats:
+  - say: "I think that's it for tonight. I'm deleting that cloud instance right now."
+  - chat: [night_shift_survivor, "changing my passwords right now"]
+  - say: "You're changing your passwords right now?"
+  - chat: [night_shift_survivor, "the bank one. couldnt remember it so im resetting"]
+  - say: "You couldn't remember the bank one. ...Maybe that means you weren't reusing it."
+  - chat: [lag_appreciation_club, "positive thinking"]
+  - chat: [night_shift_survivor, "security question is 'first pet' and im stuck"]
+  - say: "The security question is 'your first pet.' ...Have you ever had a pet?"
+  - chat: [night_shift_survivor, "Never"]
+  - say: "Never? You never had one and you picked that question?"
+  - chat: [kernel_reader, "what did past you even answer"]
+  - say: "What did past you answer. Only past you knows. ...Good luck."
+  - say: "Thanks, everyone who's awake. Good night."

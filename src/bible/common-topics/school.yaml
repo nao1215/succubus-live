@@ -1,0 +1,27 @@
+category: school
+name: 学生時代
+topics:
+- {id: school_club, q: 部活は何をしてた？}
+- {id: school_subject, q: 得意だった科目、苦手だった科目は？}
+- {id: school_lunch, q: 給食でいちばん好きだったメニューは？}
+- {id: school_lunch_hate, q: 給食で苦手だったものは？ 残して居残りさせられた？}
+- {id: school_trip, q: 修学旅行はどこへ行った？ 何を覚えてる？}
+- {id: school_trip_buy, q: 修学旅行で買ってしまった変なお土産は？（木刀、ドラゴンのキーホルダーなど）}
+- {id: school_festival, q: 文化祭で何をした？}
+- {id: school_sports_day, q: 運動会・体育祭の思い出は？ 何の競技に出た？}
+- {id: school_uniform, q: 制服は学ラン？ ブレザー？ セーラー？ 私服？}
+- {id: school_seat, q: 好きだった席は？ 窓際のいちばん後ろ？}
+- {id: school_teacher, q: 忘れられない先生は？}
+- {id: school_test, q: テスト前は一夜漬け派？ コツコツ派？}
+- {id: school_homework, q: 夏休みの宿題は最初に終わらせる？ 最終日？}
+- {id: school_jiyukenkyu, q: 自由研究で何をした？}
+- {id: school_stationery, q: 筆箱の中身のこだわりは？ シャーペンは何？}
+- {id: school_eraser, q: 消しゴムはまとまるくん？ MONO？ 角を使う派？}
+- {id: school_bag, q: ランドセルは何色だった？ 今も実家にある？}
+- {id: school_after, q: 放課後は何をしてた？}
+- {id: school_baito, q: 学生のときのバイトは？}
+- {id: school_graduation, q: 卒業式で泣いた？ 第二ボタンの話は？}
+- {id: school_kurohistory, q: 学生時代の黒歴史は？}
+- {id: school_juken, q: 受験のときの思い出は？ 験担ぎは？}
+- {id: school_reading_report, q: 読書感想文は何の本で書いた？}
+- {id: school_pe, q: 体育で嫌いだった種目は？（持久走、マット運動、水泳など）}

@@ -1,0 +1,181 @@
+# Ella 005 (English). Same beats as src/episodes/ella/005.yaml.
+title: "The guitarist Metallica fired, and how he built Megadeth"
+parts:
+- title: Opening (the song autoplay chose)
+  beats:
+  - say: {face: smile, text: "Good day, my dears. Ella, at your service."}
+  - say: "Today's tea is a straight Ceylon. On fast-music days, I prefer a clean, crisp leaf."
+  - chat: [budokan_balcony_east, "thrash day huh"]
+  - say: "Thrash day, you say. Yes indeed, today is a thrash metal day."
+  - chat: [first_time_here, "thrash?"]
+  - say: "What is thrash? Well. Very fast metal, with guitars that chop, chop, chop. It was all the rage in eighties America."
+  - chat: [headbang_whiplash, "the bad for ur neck kind"]
+  - say: "The bad-for-your-neck kind, yes. Whiplash, today, kindly listen without moving your head."
+  - chat: [headbang_whiplash, "impossible"]
+  - say: "Impossible. Yes, I rather assumed."
+  - chat: [new_releases_only, "did u listen to the recs i sent? 10 albums from this year"]
+  - say: "Your ten picks of the year, New Releases. I listened! Every one. Thank you kindly."
+  - say: "Only, afterwards, autoplay put on the next song, and it caught me."
+  - chat: [new_releases_only, "what"]
+  - say: "Which song? Lorna Shore, 'To the Hellfire.'"
+  - chat: [new_releases_only, "thats 2021 thats not new"]
+  - say: "Twenty twenty-one, so not new. I am well aware. Five years ago."
+  - say: "The screams go so far they stop sounding human. I set my tea down and listened in seiza, kneeling perfectly upright."
+  - chat: [budokan_balcony_east, "seiza lol"]
+  - chat: [new_releases_only, "boomer got into deathcore"]
+  - say: {face: shy, text: "The boomer got into deathcore. She did. I confess it."}
+- title: Main story (one morning in April, nineteen eighty-three)
+  beats:
+  - say: "So today, I thought I'd tell a famous firing story. Far more famous than mine."
+  - chat: [sold_my_keyboard, "its mustaine"]
+  - say: "Mustaine, yes. April the eleventh, nineteen eighty-three. New York."
+  - say: "Back when Metallica had not released a single album."
+  - chat: [first_time_here, "i know metallica"]
+  - say: "You know Metallica. Well, one of Metallica's first guitarists was Mister Dave Mustaine. And that morning, he was told he was out."
+  - chat: [first_time_here, "why?"]
+  - say: "Why? Drinking, rowdy behavior, and clashes with the others, so the story goes."
+  - chat: [headbang_whiplash, "wasnt every metal guy like that back then"]
+  - say: "Every metal guy back then was like that... I do rather think so too, if I'm honest."
+  - say: "Mister Mustaine was put straight onto a long-distance bus, back to California."
+  - chat: [new_releases_only, "same as ur carriage ticket"]
+  - say: {face: surprised, text: "Same as my carriage ticket! Exactly! One way!"}
+  - say: "It would be terribly presumptuous of someone like me to claim I understand how Mister Mustaine felt."
+  - say: "But I do."
+  - chat: [budokan_balcony_east, "oh she relates"]
+  - chat: [sold_my_keyboard, "today is a picking sides day"]
+  - say: "She relates, and it's a picking-sides day. Yes. Today I take sides. Fair warning."
+  - say: "His replacement was Mister Kirk Hammett. They say he learned the songs on the plane."
+  - chat: [piano_teacher, "learning on a plane is wild"]
+  - say: "On the plane, isn't that something? I'd manage three songs before landing, at most."
+  - chat: [headbang_whiplash, "u can do three tho"]
+  - say: "Can I do three? On keys, certainly."
+  - say: "And the very next month, they recorded the first album. 'Kill 'Em All.'"
+  - chat: [new_releases_only, "here comes the polite translation"]
+  - say: "Yes, my polite translation. 'Do finish every last one, my dear guests.'"
+  - chat: [headbang_whiplash, "sounds like a school lunch lady"]
+  - say: {face: laugh, text: "A school lunch lady! In Japan they do make you finish everything on the tray. You're quite right."}
+  - say: "And here's the thing about this album. The fired man's name is still on it."
+  - chat: [first_time_here, "even tho he got fired?"]
+  - say: "Even though he was fired. In the songwriting credits, Mister Mustaine's name, on four songs."
+  - say: "'The Four Horsemen,' 'Jump in the Fire,' 'Phantom Lord,' and 'Metal Militia.'"
+  - chat: [budokan_balcony_east, "four horsemen is the famous one"]
+  - say: "The Four Horsemen is the famous one, yes. And some of Mister Hammett's solos are said to open with ideas Mister Mustaine came up with."
+  - chat: [sold_my_keyboard, "nice that his name stayed"]
+  - say: "Nice that his name stayed. Isn't it. I ought to have written my name on our cassette."
+- title: Side track (coffee or tea, and the café needle)
+  beats:
+  - chat: [here_for_bgm, "watching with coffee"]
+  - say: "Welcome, Here For BGM. Watching with coffee. A coffee person, are you?"
+  - chat: [here_for_bgm, "cant work without it"]
+  - say: "Can't work without it. I'm a tea drinker myself, but I adore the smell of coffee. If someone's brewing, I stop in my tracks."
+  - say: "Do you grind your own beans, Here For BGM?"
+  - chat: [here_for_bgm, "instant. cant taste anything after cup 3"]
+  - chat: [new_releases_only, "u dont drink coffee ella?"]
+  - say: "Instant, and it all tastes of nothing after the third cup... you poor dear. Do I drink it? Three times a year, perhaps. Black."
+  - chat: [piano_teacher, "3 times is barely any"]
+  - chat: [budokan_balcony_east, "do u go to cafes?"]
+  - say: "Barely any, quite. And cafés? Oh, I do! In the castle town there's a little place where the owner plays his own records."
+  - chat: [here_for_bgm, "love places like that"]
+  - say: "Places like that are wonderful. Now, once. The record skipped, and it kept looping the same spot, over and over."
+  - chat: [first_time_here, "is that common?"]
+  - say: "Is it common? Now and then. If there's a tiny scratch on the vinyl, the needle jumps back at that spot."
+  - say: "But the owner was washing dishes, and hadn't noticed."
+  - chat: [headbang_whiplash, "just tell him"]
+  - say: "Just tell him, you'd think. I couldn't. I waited a few loops, he still didn't notice, so I quietly stood up and lifted the needle myself."
+  - chat: [budokan_balcony_east, "u touched it without asking?"]
+  - say: "Touched it without asking. I did. ...It was the shop's turntable, too."
+  - say: "And the owner just said, 'thank you.' And he didn't charge me that day."
+  - chat: [here_for_bgm, "good place"]
+  - say: "A good place, truly. If I ever remember what record was playing, I'll tell you."
+  - chat: [new_releases_only, "u cant remember?"]
+  - say: "Can't remember, you ask. I can't. I was too busy staring at the needle."
+  - chat: [piano_teacher, "um what happened to mustaine"]
+  - say: "What happened to Mustaine. Oh! Goodness. I left the poor man on the bus."
+- title: Back to the story (the name thought up on the bus)
+  beats:
+  - say: "On that bus home, so they say, Mister Mustaine came up with the name of his new band."
+  - say: "From a word printed on a politician's pamphlet, apparently."
+  - chat: [headbang_whiplash, "naming ur band on the bus is so strong"]
+  - say: "Naming your band on the bus, what strength. All I did in my carriage was cry."
+  - chat: [sold_my_keyboard, "u cried?"]
+  - say: {face: shy, text: "Cried, you ask. Only a little."}
+  - say: "Before that year was out, Megadeth was formed in Los Angeles."
+  - chat: [new_releases_only, "polite translation of megadeth?"]
+  - say: "A polite translation for Megadeth. Their second album, 'Peace Sells... but Who's Buying?'"
+  - say: "'Peace, now on sale. And who, pray tell, will be making a purchase?'"
+  - chat: [headbang_whiplash, "ok i kinda like that one"]
+  - chat: [new_releases_only, "thats just a shop clerk"]
+  - say: "One 'kinda like that,' one 'just a shop clerk.' A shop clerk, yes, I suppose it is."
+  - say: "Now, a bit of nerd talk. 'The Four Horsemen' has an original version."
+  - say: "Written by Mister Mustaine, called 'The Mechanix.' Completely different lyrics."
+  - chat: [budokan_balcony_east, "the gas station song right"]
+  - say: "The gas station song, yes. A song about a gas station that is... a touch vulgar."
+  - chat: [headbang_whiplash, "what do u do at a gas station"]
+  - say: "What does one do at a gas station? One fills up the tank. ...In that sense."
+  - chat: [headbang_whiplash, "fills up the tank in THAT sense lmaooo"]
+  - say: {face: smug, text: "Keep going down that road in front of a succubus, my dear, and we'll be here all night."}
+  - say: "Metallica rewrote the lyrics, added a new section in the middle, and made it 'The Four Horsemen.'"
+  - say: "Mister Mustaine kept the original shape and put it on Megadeth's first album, as 'Mechanix.'"
+  - chat: [new_releases_only, "same song in two bands is kinda cool"]
+  - say: "The same song in two bands. Fascinating, isn't it? Listen side by side, and it's the same riff wearing a very different face."
+  - ask:
+      q: "My dears, are you Metallica people, or Megadeth people?"
+      options:
+      - c: "metallica"
+        r:
+        - "{name} says Metallica. On a picking-sides day, how very honest."
+        - "I love Metallica's songs too, you know."
+      - c: "megadeth"
+        r:
+        - "Megadeth! {name}, you are my comrade for today!"
+        - "I shall go and brew another cup in your honor."
+      - c: "love both"
+        r:
+        - "Love both. {name}, how grown-up of you."
+        - "Truthfully, so do I. I'm only on Megadeth's side for today."
+      - c: "slayer"
+        r:
+        - "{name} says Slayer. You have no intention of resting your neck today, have you."
+        - "Splendid. They call them the Big Four, after all, and there are four of them."
+      npc:
+      - [new_releases_only, 0]
+      - [budokan_balcony_east, 1]
+      - [sold_my_keyboard, 2]
+      - [headbang_whiplash, 3]
+      - [here_for_bgm, 0]
+  - say: "Mostly Metallica, I see. On a picking-sides day, too."
+- title: Closing (the same stage, twenty-seven years later)
+  beats:
+  - chat: [first_time_here, "did they ever make up?"]
+  - say: "Did they make up? Before that, there's one painful scene. From two thousand one."
+  - say: "In Metallica's documentary 'Some Kind of Monster,' Mister Mustaine and the drummer, Mister Lars Ulrich, sit facing each other in a hotel room."
+  - chat: [budokan_balcony_east, "that scene is painful to watch"]
+  - say: "Painful to watch, isn't it. Between them sits a counselor, hired to help the band talk things through."
+  - chat: [first_time_here, "a band therapist??"]
+  - say: "A band therapist, yes. Things inside Metallica had gotten so tangled back then that they hired someone to guide their conversations."
+  - chat: [sold_my_keyboard, "wish my band had one"]
+  - say: "Wish your band had one. Mine as well. Moonlight Banquet could have used one."
+  - say: "In that scene, Mister Mustaine talks about how it felt to always be second."
+  - say: "Though Mister Mustaine himself later said, I'm told, that he wished the scene had been left out."
+  - chat: [new_releases_only, "then maybe dont watch it"]
+  - say: {face: sad, text: "Maybe don't watch it. I know. I think so too, and yet I watch it anyway."}
+  - chat: [piano_teacher, "honest"]
+  - say: "Honest, aren't I. And then, nine years after that."
+  - say: "In twenty ten, they did share a stage."
+  - say: "In Sofia, Bulgaria, there was a show with Metallica, Slayer, Megadeth, and Anthrax, all on the same day."
+  - chat: [budokan_balcony_east, "the big four"]
+  - say: "Yes, the Big Four. At the end, Megadeth and Anthrax joined Metallica on stage for Diamond Head's 'Am I Evil?' Mister Mustaine too."
+  - chat: [headbang_whiplash, "what about slayer?"]
+  - say: "Slayer? From Slayer, only the drummer, Mister Dave Lombardo. Mister Kerry King and the others didn't come up, and later said they wished they had."
+  - say: "The first time on a stage with Metallica since April nineteen eighty-three. Twenty-seven years."
+  - chat: [sold_my_keyboard, "im glad"]
+  - say: "Glad, aren't we. I've lost count of how many times I've watched that footage."
+  - chat: [new_releases_only, "so they made up?"]
+  - say: "So they made up? Well, who can say. Only the gentlemen themselves know that."
+  - chat: [here_for_bgm, "done with work, heading out. going for coffee number 2"]
+  - say: "Work's done, well done you, Here For BGM. Off to coffee number two, then. Safe travels."
+  - chat: [headbang_whiplash, "now i want tea"]
+  - say: "Now you want tea. Please, please. What leaves have you got?"
+  - chat: [headbang_whiplash, "just teabags"]
+  - say: "Teabags are perfectly sufficient. Hot water first, then three minutes. That's all."
+  - say: "And with that, my dears, thank you for today. Farewell."

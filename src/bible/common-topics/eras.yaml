@@ -1,0 +1,29 @@
+category: eras
+name: 時代の話（1980〜2026）
+# 年代で答えが変わる問い。配信者はサキュバスで年齢不詳なので、「その頃の人間界で何をしていたか」として答えてよい。
+topics:
+- {id: era_pager, q: ポケベルは使った？ 数字の暗号（0840＝おはよう など）は打てる？, era: 1990s}
+- {id: era_chakumero, q: 着メロ・着うたは何にしてた？, era: 2000s}
+- {id: era_purikura, q: プリクラはよく撮った？ 落書きは何を書いた？, era: 1990s-2020s}
+- {id: era_garake, q: ガラケーは何だった？ ストラップは何本？, era: 2000s}
+- {id: era_mail_address, q: ガラケーのメールアドレスに何を入れてた？, era: 2000s}
+- {id: era_sekimen, q: 前略プロフィール・mixi・モバゲー・GREE は使った？, era: 2000s}
+- {id: era_wifi_first, q: 家にネットが来たのはいつ？ ダイヤルアップの音を覚えてる？, era: 1990s-2000s}
+- {id: era_video, q: ビデオテープの録画で失敗したことは？ 3倍モード？, era: 1980s-2000s}
+- {id: era_md, q: MD・カセット・CD-R で曲を作った（MDに録った）？, era: 1990s-2000s}
+- {id: era_famicom, q: ファミコンのカセットをふーふーした？, era: 1980s}
+- {id: era_rental, q: レンタルビデオ店（TSUTAYA、ゲオ）の思い出は？ 返し忘れは？, era: 1990s-2010s}
+- {id: era_phone_card, q: テレホンカードや公衆電話を使った最後はいつ？, era: 1980s-2000s}
+- {id: era_tamagotchi, q: たまごっちを育てた？ 死なせた？, era: 1990s}
+- {id: era_y2k, q: 2000年問題のとき何してた？, era: 1999}
+- {id: era_bubble, q: バブルの頃の人間界の思い出は？（サキュバスとして）, era: 1980s}
+- {id: era_heisei_end, q: 平成が終わったとき（2019年）何してた？, era: 2019}
+- {id: era_corona, q: コロナの頃（2020〜）に始めたことは？, era: 2020s}
+- {id: era_smartphone_first, q: スマホに替えたのはいつ？ 最初は何？, era: 2010s}
+- {id: era_old_price, q: 昔はいくらだったのに、と思う値段は？（ガリガリ君、うまい棒、切手）}
+- {id: era_fashion, q: 若い頃に流行っていた服装・髪型は？ やった？}
+- {id: era_word, q: 昔使っていた流行語で、今言うと恥ずかしいのは？}
+- {id: era_school_rule, q: 昔の当たり前で、今だとありえないことは？}
+- {id: era_new_thing, q: 最近の新しいもので、ついていけないものは？}
+- {id: era_retro_want, q: 今でも復活してほしい昔のものは？}
+- {id: era_konbini_old, q: 昔あったコンビニ（サンクス、am/pm、サークルK）の思い出は？}

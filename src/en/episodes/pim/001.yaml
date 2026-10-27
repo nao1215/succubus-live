@@ -1,0 +1,229 @@
+title: '[Kids Ep] Quiet chat while my daughter naps. Yes, I write her name on every single diaper'
+family: true
+# 英訳（2026-10-27）。日本語は src/episodes/pim/001.yaml。拍の並びは日本語とそろえる。
+parts:
+- title: オープニング：寝かしつけのあと
+  beats:
+  - say: Hi, it's Pim. We're doing this one quiet.
+  - say: My daughter is finally asleep in the next room! Bedtime took forty-two minutes.
+  - chat: [oldest_in_8th_grade, "hiii. forty two min is rough"]
+  - say: Oldest in eighth grade, you're marked present! And yes, it was rough!
+  - say: So on my channel, I say your name when you come in. It's attendance. Roll call!
+  - chat: [oldest_in_8th_grade, "i know. you do it every time"]
+  - say: Every time, yep! I do it every time! My parenting senpai has perfect attendance.
+  - say: Picture books, then songs, then patting her back, and now my arm hurts.
+  - chat: [husband_who_helps, "hi. the back pats destroy your arm"]
+  - say: Husband who helps, hello! The back pats destroy your arm, they really do. I'm using the mouse left-handed right now.
+  - chat: [husband_who_helps, "what about your husband?"]
+  - say: {face: annoyed, text: 'What about my husband. Oh, you are asking. Okay. Let me tell you.'}
+  - say: I hear her breathing go slow, I stand up super slowly. And right then.
+  - say: My husband comes walking down the hallway.
+  - chat: [oldest_in_8th_grade, "oh"]
+  - say: Yes. Oh no. Our hallway has one floorboard in the middle that creaks. Like, creeeak.
+  - say: I drew a map of where it creaks and taped it to the wall! With a red circle!
+  - chat: [husband_who_helps, "did he step on it"]
+  - say: Dead center. He stepped dead center.
+  - chat: [gacha_broke_again, "he's doing that on purpose"]
+  - say: I don't think it's on purpose! I want to believe it's not!
+  - say: Her eyebrows twitched, and my heart stopped.
+  - chat: [night_shift_survivor, "did she wake up?"]
+  - say: She did not! Just the eyebrows. We got away with eyebrows.
+  - chat: [night_shift_survivor, "so what did he even want"]
+  - say: What did he want? Quote, what's for lunch.
+  - chat: [leaving_work_on_time, "thats it lmao"]
+  - say: That's it! That's all! There's a meal plan on the fridge!
+  - say: I write it every Sunday. He has never once read it.
+  - chat: [husband_who_helps, "sorry, i ask my wife too"]
+  - say: {face: surprised, text: 'Wait, you ask your wife too? You too, husband who helps?'}
+  - chat: [husband_who_helps, "i thought asking counts as talking"]
+  - say: Asking counts as talking... Oh. That was a conversation?
+  - say: We have the exact same conversation every single day, but okay, it is a conversation. Sure.
+  - chat: [parental_leave_no_sleep, "hi. just finished feeding"]
+  - say: Parental leave no sleep, you're marked present. Just finished feeding? Good job. Really.
+  - say: We're keeping it quiet, so just have it on in the background.
+- title: 本題っぽいもの：おむつ一枚ずつに名前
+  beats:
+  - say: Okay so, last night.
+  - say: I spent two hours writing my kid's name on her daycare stuff.
+  - chat: [oldest_in_8th_grade, "its not even a new school year"]
+  - say: It's not a new year, no! I opened a new pack of diapers. Our daycare wants the name on every single diaper.
+  - chat: [parental_leave_no_sleep, "every single one!?"]
+  - say: Every single one. It's probably coming for you too, someday.
+  - chat: [parental_leave_no_sleep, "scary"]
+  - say: Scary, right? It's fine, your hand gets used to it. Your heart doesn't. Not yet.
+  - chat: [husband_who_helps, "dont you use a stamp?"]
+  - say: I do use a stamp! A name stamp. It's a rubber stamp with your kid's name on it, every Japanese parent has one.
+  - say: I have three inks. Fabric, paper, and diaper. I'm a little proud of that.
+  - chat: [first_time_here, "first time here. you can stamp diapers??"]
+  - say: First time here, welcome welcome! Yes, you can stamp diapers!
+  - say: "Sometimes it smudges, though. Her name is Mimi in katakana, and mi is three little lines, so smudged it looks like the kanji for three. Mi-three!"
+  - chat: [gacha_broke_again, "mi-three chan lol"]
+  - say: Mi-three-chan! Don't worry, her teachers know it's Mimi's.
+  - chat: [gacha_broke_again, "next one is mi-four"]
+  - say: {face: annoyed, text: 'Mi-four! Do not add more kids! I have my hands full with one!'}
+  - chat: [oldest_in_8th_grade, "where do you put the name?"]
+  - say: {face: smug, text: 'Where? Top right. Hiragana, the round letters, in black. That is non-negotiable.'}
+  - say: If I don't decide, my husband writes it wherever he feels like.
+  - say: Last year I asked him to label her gym clothes, and.
+  - chat: [husband_who_helps, "what did he do"]
+  - say: Across the back. Huge. In katakana. MIMI.
+  - chat: [leaving_work_on_time, "its a jersey lol"]
+  - say: It's a jersey! It's missing a number, that's all!
+  - say: But at sports day, I could spot her from across the field instantly. It was annoyingly useful.
+  - chat: [husband_who_helps, "so it worked out?"]
+  - say: The result worked out. My feelings did not work out.
+  - chat: [oldest_in_8th_grade, "in middle school you dont have to label stuff"]
+  - say: {face: surprised, text: 'No labels in middle school, senpai? Does it get easier?'}
+  - chat: [oldest_in_8th_grade, "instead the gym clothes vanish"]
+  - say: They vanish!?
+  - chat: [oldest_in_8th_grade, "left at school. on set number three"]
+  - say: Left at school, on set number three...! Then what is the name even for!
+  - chat: [oldest_in_8th_grade, "name doesnt help if the kid wont pick it up"]
+  - say: A name doesn't help if the kid won't pick it up... Hearing the future is scaring me already.
+  - ask:
+      q: How do you label your kid's stuff?
+      options:
+      - c: Name stamp
+        r:
+        - "Team name stamp!"
+        - '{name}, my people! When it smudges, you get Mi-three!'
+      - c: Stickers
+        r:
+        - '{name}, stickers are fast! Don''t they peel off in the dryer? We lost three.'
+      - c: All by hand
+        r:
+        - "All by hand?!"
+        - '{name}, wow... Please take care of your wrist.'
+      - c: Never done it
+        r:
+        - "You haven't had to label anything yet, huh."
+        - '{name}, that''s okay! Just listen like this is a story from a faraway land.'
+      npc: [[oldest_in_8th_grade, 2], [husband_who_helps, 1], [first_time_here, 3], [parental_leave_no_sleep, 3]]
+  - say: Lots of never done it! And husband who helps, you picked stickers. How did the dryer go?
+  - chat: [husband_who_helps, "she told me not to put it in the dryer. i did"]
+  - say: {face: smug, text: 'She told you not to, and you did. Called it.'}
+  - chat: [husband_who_helps, "two came off and stuck to the drum"]
+  - say: Stuck to the drum! Now the washing machine has a name! It can go to daycare!
+  - chat: [husband_who_helps, "it doesnt need to go"]
+- title: 脇道：きのこの山とたけのこの里
+  beats:
+  - chat: [gacha_broke_again, "what were you eating during those two hours"]
+  - say: What was I eating? Wait, why do you assume I was eating?
+  - chat: [gacha_broke_again, "you were 100% eating"]
+  - say: One hundred percent, huh... Okay. I was eating Kinoko no Yama.
+  - chat: [night_shift_survivor, "mushroom team huh"]
+  - say: "Mushroom team! For anyone new, it's chocolate mushrooms versus chocolate bamboo shoots. Japan's fought about it for decades. And listen to this!"
+  - say: My house is divided. Mimi is on Team Takenoko.
+  - chat: [leaving_work_on_time, "parent vs kid lmao"]
+  - say: Divided! She's four and she already has a faction!
+  - chat: [first_time_here, "what about your husband?"]
+  - say: My husband? He says, I like both. So I don't count him on either side.
+  - chat: [gacha_broke_again, "coward"]
+  - say: Right!? He just sits where nobody can fight him!
+  - say: And if you buy both boxes, the snack budget doubles, right?
+  - say: So once, I went looking for Sugi no Ko Mura. As a peace treaty.
+  - chat: [first_time_here, "whats sugi no ko mura"]
+  - say: Sugi no Ko Mura, apparently, was a third sibling of those two, a long time ago. Little cedar trees.
+  - say: I only know the name, honestly. They don't sell it anymore.
+  - chat: [oldest_in_8th_grade, "ive heard the name"]
+  - say: Just the name for you too, senpai! I only learned it existed when I went looking!
+  - say: I went to three stores... and obviously, nothing.
+  - chat: [night_shift_survivor, "well yeah lol"]
+  - say: Well yeah. Exactly. Peace treaty, gone.
+  - chat: [husband_who_helps, "so whats good about kinoko?"]
+  - say: {face: smile, text: 'What is good about Kinoko! The cracker stem is crunchy, and you get a little handle!'}
+  - say: Your fingers stay clean, so you can eat it while you're writing names!
+  - chat: [oldest_in_8th_grade, "takenoko melts in your mouth tho"]
+  - say: Takenoko melts in your mouth... senpai, you're Team Takenoko!? The enemy is here too!
+  - chat: [oldest_in_8th_grade, "happened from matching my youngest"]
+  - say: Matching your youngest... I get it. You drift toward your kids. I totally get it.
+  - say: Among the streamers, Lise-sama and Nox are Team Kinoko.
+  - say: Mora, Ella, and Vespa are Takenoko. Three versus three!
+  - chat: [gacha_broke_again, "ella being takenoko is surprising"]
+  - say: Surprising, right!? She said, more chocolate is simply justice.
+  - say: I didn't know Ella used the word justice for snacks.
+  - ask:
+      q: Kinoko no Yama or Takenoko no Sato, which team are you?
+      options:
+      - c: Kinoko no Yama
+        r:
+        - "Team Kinoko!"
+        - '{name}, welcome to the team! That makes it one to one in my house!'
+      - c: Takenoko no Sato
+        r:
+        - "Team Takenoko, okay."
+        - '{name}, same as Mimi. Mimi gained an ally today.'
+      - c: "Suginoko Mura"
+        r:
+        - "Suginoko Mura?!"
+        - '{name}! Tell me where you found it later. I''m serious.'
+      - c: I like both
+        r:
+        - "You like both, huh."
+        - '{name}, same seat as my husband. The coward seat.'
+      npc: [[gacha_broke_again, 1], [husband_who_helps, 3], [night_shift_survivor, 0], [first_time_here, 2]]
+  - chat: [first_time_here, "i picked sugi no ko mura"]
+  - say: {face: surprised, text: 'Everyone is all over the place! Wait, somebody picked Sugi no Ko Mura! First timer!'}
+  - chat: [first_time_here, "i liked the name"]
+  - say: You liked the name. Choosing by the name, honestly, valid.
+- title: 脇道の脇道：おやつの決まりに穴
+  beats:
+  - chat: [leaving_work_on_time, "what time is mimis snack time"]
+  - say: Mimi's snack is at three. We write our house rules in a notebook, actually.
+  - say: I call it the House Rulebook. Snack at three is Article Five.
+  - chat: [first_time_here, "your house has a rulebook?"]
+  - say: My house has a rulebook! It's past a hundred articles. My husband hasn't read it.
+  - chat: [gacha_broke_again, "same as the meal plan lol"]
+  - say: Same as the meal plan... So anyway, the other day my husband says something he should not have said, in front of Mimi.
+  - say: He goes, Mama's rulebook is full of holes.
+  - chat: [husband_who_helps, "oh you cant say that"]
+  - say: You can't say that, right!? Four-year-olds remember everything!
+  - say: Next day I go, okay, snack rules, and Mimi goes, is that one full of holes?
+  - chat: [night_shift_survivor, "she remembered lol"]
+  - say: She remembered. And she was right.
+  - chat: [oldest_in_8th_grade, "where's the hole"]
+  - say: Where? Article Nine says, on outing days, snacks whenever you want.
+  - chat: [oldest_in_8th_grade, "so what about three oclock on an outing day?"]
+  - say: {face: annoyed, text: 'What about three on an outing day. That! Mimi asked me exactly that!'}
+  - chat: [husband_who_helps, "so what did you do"]
+  - say: What did I do? I wrote Article Nine-B. 'Only if Mama says it's okay.'
+  - chat: [gacha_broke_again, "isnt that cheating?"]
+  - say: Isn't that cheating, yeah, Mimi said that too. Mama, that's cheating.
+  - say: {face: shy, text: 'Yes. It is cheating. I gave myself a little escape hatch.'}
+  - chat: [oldest_in_8th_grade, "losing to a four year old"]
+  - say: I'm losing. Every day, I'm losing.
+- title: 戻る：何の話でしたっけ
+  beats:
+  - say: ...Wait. What were we talking about?
+  - chat: [night_shift_survivor, "diaper names"]
+  - say: Oh right, names on diapers! How did we get to snacks?
+  - chat: [gacha_broke_again, "from kinoko"]
+  - say: From Kinoko. This is all gacha broke again's fault.
+  - chat: [gacha_broke_again, "my bad"]
+  - chat: [parental_leave_no_sleep, "do you label socks too?"]
+  - say: Socks too. Both of them, left and right.
+  - say: If you only label one, the unlabeled one disappears.
+  - chat: [parental_leave_no_sleep, "why the unlabeled one"]
+  - say: Why the unlabeled one, right? I don't know. I really don't.
+  - chat: [oldest_in_8th_grade, "ours come out of the washer three days later"]
+  - say: Three days later! They do come out! Ours did, just the other day!
+  - chat: [husband_who_helps, "the washer eats them theory"]
+  - say: The washer eats them theory. It eats them. It only picks the unlabeled ones.
+  - say: The labeled ones always stay. That's the one thing I can't explain.
+  - chat: [parental_leave_no_sleep, "noted. label both socks"]
+  - say: You wrote it down, label both socks. Parental leave, just take that one thing home today.
+- title: 締め
+  beats:
+  - say: Oh, I heard the blanket move next door. She might be up.
+  - chat: [oldest_in_8th_grade, "shes up"]
+  - say: She's probably up. That's it for today!
+  - say: Senpai, tell me the gym clothes story again next year. If you're on set number four.
+  - chat: [oldest_in_8th_grade, "i will be"]
+  - say: Set number four, yeah, sounds likely...
+  - chat: [first_time_here, "ill look for sugi no ko mura"]
+  - say: You'll look for Sugi no Ko Mura? If you find it, seriously tell me! The peace of my home depends on it!
+  - say: I'll walk around the red circle in the hallway.
+  - chat: [night_shift_survivor, "you just jinxed it"]
+  - say: I did not jinx it! It's fine, I'll step around it!
+  - say: ...Creeeak.
+  - say: {face: shy, text: 'That was me. Turns out the circle was a little off. Pim, signing off!'}

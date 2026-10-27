@@ -1,0 +1,117 @@
+# 英語版の共通の言葉。handles・ambient・tipTexts は src/common.yaml と同じ並び・同じ数。handles の最後（the overseer）は雑談に出さない。
+handles:
+- nameless_familiar
+- gacha_broke_again
+- backlog_of_1000
+- recorded_never_watched
+- any_percent_rookie
+- clip_guy_A
+- leaving_work_on_time
+- night_shift_survivor
+- login_bonus_only
+- retro_grandpa
+- first_time_here
+- support_her_while_you_can
+- 30_pulls_from_pity
+- con_haul_victim
+- drama_cd_enjoyer
+- shoujo_background_extra
+- lives_on_her_voice
+- otome_third_route
+- bad_at_keigo
+- stuck_on_normal_ending
+- terrible_at_apologizing
+- butler_cafe_regular
+- third_planner_this_year
+- physics_engine_believer
+- cant_stop_hiccuping
+- wall_corner_pusher
+- frame_by_frame
+- good_morning_guy
+- three_save_slots
+- lag_appreciation_club
+- rulebook_hoarder
+- forever_GM
+- errata_collector
+- throws_out_manuals
+- board_game_organizer
+- dice_hate_me
+- just_clicks_agree
+- falls_asleep_on_stream
+- here_for_bgm
+- weighted_blanket_gang
+- ear_cleaning_asmr_fan
+- farm_sim_year_three
+- rain_sound_collector
+- campfire_keeper
+- riichi_by_vibes
+- cursed_opening_hand
+- dex_completionist
+- three_years_of_side_quests
+- fishing_pond_legend
+- scout_goat
+- blank_spots_on_the_map
+- night_hunting_party
+- the_overseer
+ambient:
+- hi
+- "here we go"
+- lmao
+- "LMAOOO"
+- cute
+- first time here
+- evening
+- waiting
+- back again
+- same
+- real
+- "proud of you"
+- 'clap clap clap'
+- love the vibes
+- came from the clips
+- do a gacha rant
+- falling asleep lol
+- have this on while I work
+- W stream
+- the horns tho
+generic:
+  safe_refusal: [["{name}, we don't talk about that here. Let's just chat like normal."]]
+  first: ['First time here, {name}? Make yourself at home.']
+  streak: ['{name}, that is {days} days in a row. I see you.']
+  stayed: ['{name}, you stayed till the end. Thank you.']
+  greet:
+  - null
+  - ['{name}, you came back.']
+  - ['{name}, thanks for always being here.']
+  - ['{name}, I was waiting for you.']
+  - ['{name}. It doesn''t feel like the stream''s started till you show up.']
+  keywords:
+  - match: おは|good morning|morning
+    say: ['Morning, {name}.']
+  - match: かわい|可愛|美人|きれい|綺麗|cute|pretty|beautiful
+    say: ['Thank you, {name}.']
+  - match: 初見|はじめまして|first time|new here
+    say: ['Welcome, {name}. Take it easy.']
+  echo:
+  - '"{text}"... tell me a little more, {name}.'
+  tips:
+  - ['Thank you, {name}.']
+  - ['Thank you, {name}! I will spend it wisely.']
+  - ['{name}...! Thank you. You startled me.']
+  - ['{name}. ...Really. Thank you.']
+tipTexts: [thanks as always, great stream today, you are my oshi, '', can't wait for the next one, learned a lot]
+# 覚える値（voice の remember。gozen の本では言語に依らない id で覚える）の英語。台詞の {mem.鍵} に入る言葉。
+# 「Team {mem.kinoko_takenoko}」なら「Team kinoko」。id は src/tags.yaml の名前（succubus-live の tools/import_stream.py が使う）
+remember_values:
+  kinoko: Kinoko
+  takenoko: Takenoko
+  tsubuan: tsubuan
+  koshian: koshian
+  dog: dog
+  cat: cat
+  iphone: iPhone
+  android: Android
+  nikuman: nikuman
+  butaman: butaman
+  mac: Makku
+  macd: Makudo

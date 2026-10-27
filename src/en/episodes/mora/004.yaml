@@ -1,0 +1,199 @@
+# English version of src/episodes/mora/004.yaml.
+title: Went to yakiniku alone and got a grill for two
+parts:
+- title: Hello, and the smell on my clothes
+  beats:
+  - say: Evening. Let's start.
+  - chat: [leaving_work_on_time, "evening"]
+  - chat: [lives_on_points, "i can smell bbq through the screen"]
+  - say: "Smell barbecue through the screen? You can't. ...But correct. I just got back from yakiniku. Grill-it-yourself, little grill in the table."
+  - chat: [night_shift_survivor, "with who?"]
+  - say: With who? Alone.
+  - chat: [cant_make_it_home, "solo yakiniku!"]
+  - say: Solo yakiniku sounds cool when you say it. It was not cool. That's tonight's story.
+  - say: My clothes still smell. I sprayed deodorizer on them three times just now.
+  - say: I thought about spraying my hair too, and didn't. The back of the can didn't say if hair was okay.
+- title: The grill for two
+  beats:
+  - say: I walk in and say, just one. A little quietly.
+  - chat: [third_planner_this_year, "saying just one is so nerve wracking"]
+  - say: Saying just one is nerve-wracking, right? And the server goes, super cheerful, one guest, welcome!
+  - say: So loud. You don't have to announce it to the whole restaurant.
+  - say: Two people turned around. I counted.
+  - say: So I sit down, and the grill comes. And it's big.
+  - chat: [lives_on_points, "a two person grill?"]
+  - say: Two-person? Two or three, probably. I was alone at a table for four.
+  - say: It's so wide. I put down three slices of meat and the rest is just empty.
+  - say: It makes me restless. I want to put something there. There's nothing to put.
+  - chat: [cant_make_it_home, "grill some veggies"]
+  - say: Grill veggies, I did. Onion and pumpkin. Still half empty.
+  - say: Partway through the server came by and asked, want me to swap the grill?
+  - say: But if they swap it, I just get another grill the same size, right? So I said, I'm fine.
+  - chat: [third_planner_this_year, "shouldve asked for a small grill"]
+  - say: Ask for a small grill, I can't, not in the moment. I thought of it on the train home.
+  - say: Comebacks too. I think of all of them on the train home.
+  - chat: [lives_on_points, "line up your point cards in the empty spot"]
+  - say: Line up point cards on the empty part? They'd burn. Your whole wallet would burn.
+- title: What you order first
+  beats:
+  - chat: [third_planner_this_year, "what did you order first?"]
+  - say: What did I order first. Salted beef tongue. Non-negotiable.
+  - chat: [lives_on_points, "straight to kalbi obviously"]
+  - say: Straight to kalbi? The fatty short rib, huh. You start greasy, you can't keep going.
+  - chat: [lives_on_points, "cuz im young"]
+  - say: Did you just say young? To me? Right now?
+  - say: Fine. Whatever. Tongue, you dip in lemon.
+  - chat: [first_time_here, "are you a squeeze the lemon on everything person?"]
+  - say: "Squeeze it on everything? No. Lemon juice goes in a little dish, and you dip only your own piece. Same with fried chicken. A real debate here."
+  - say: If someone squeezes it on the whole plate without asking, I don't love it.
+  - chat: [leaving_work_on_time, "solo yakiniku means nobody can lemon your stuff"]
+  - say: Solo means nobody can lemon your stuff, exactly! That's the good part of being alone. You decide everything.
+  - ask:
+      q: At yakiniku, what do you order first?
+      options:
+      - c: Beef tongue
+        r:
+        - "{name} goes tongue. You get it."
+        - It's thin so it cooks fast, right? The first bite comes quick. Love that.
+      - c: Kalbi
+        r:
+        - "{name}, kalbi too? So young."
+        - I used to be like that. Now by slice two I need rice.
+      - c: Skirt steak
+        r:
+        - "{name}, skirt steak. Starting there, huh."
+        - Skirt's good too. Tender, and a portion that's easy to order alone.
+      - c: Rice and kimchi
+        r:
+        - "{name}, rice and kimchi. Setting up the base first."
+        - I get it. The wait before the meat shows up is awkward.
+      npc:
+      - [night_shift_survivor, 0]
+      - [lives_on_points, 1]
+      - [third_planner_this_year, 2]
+      - [leaving_work_on_time, 3]
+      - [cant_make_it_home, 0]
+  - say: So I'm grilling my beef tongue, and the next table is a family of four.
+  - say: Their meat keeps coming, their grill is packed. Mine, three slices of tongue.
+  - say: I compared. We were using our grills completely differently.
+  - chat: [lives_on_points, "did you get lonely?"]
+  - say: Did I get lonely? No. I could cook everything exactly how I like it.
+  - chat: [lives_on_points, "how do you like it mora? rare?"]
+  - say: Rare? I'm a well-done person. And I don't want anyone else grilling for me. I do my own grilling.
+  - chat: [lives_on_points, "grill me"]
+  - say: {face: annoyed, text: "Grill me, no. I'm not grilling you. You don't go on the grill."}
+  - chat: [night_shift_survivor, "did you get rice?"]
+  - say: Rice? Yes. Regular size.
+  - chat: [leaving_work_on_time, "yakiniku means large rice"]
+  - say: People say get the large rice, but then you run out of meat halfway. So you order more meat, and then there's rice left over again.
+  - say: It never ends. So, regular.
+  - say: At the end I almost ordered cold noodles. But going all the way to cold noodles alone, you look like you're dead serious, right?
+  - say: I didn't. I bought ice cream at a convenience store on the way home. Same thing, honestly.
+- title: 'Side road: solo seats at Saizeriya'
+  beats:
+  - chat: [first_time_here, "whats an easy place to go alone?"]
+  - say: Easy to go in alone? Saizeriya. It's a super cheap Italian family restaurant chain. You go alone and nobody notices.
+  - say: I get the Milan-style doria, a baked rice gratin, and the little shrimp salad.
+  - say: And I like that I sort of know the total. Without mental math.
+  - chat: [lives_on_points, "cuz you cant do mental math lol"]
+  - say: Because I can't do mental math, yes, I can't. That's why I like Saizeriya.
+  - chat: [third_planner_this_year, "do you do the spot the difference on the kids menu?"]
+  - say: The spot-the-difference on the kids' menu, I do! While I wait for the doria.
+  - say: One time I found nine. Couldn't get number ten.
+  - say: And while I was looking, my doria went cold.
+  - say: Sad, right? And the next time I went, they'd changed the picture.
+  - chat: [night_shift_survivor, "the one they changed last year"]
+  - say: The one they changed last year, yes. My nine, all erased.
+  - chat: [lives_on_points, "shouldve taken a pic"]
+  - say: Should've taken a picture, yeah. I should have. But taking a photo of a spot-the-difference inside a restaurant, isn't that a little embarrassing?
+  - chat: [nameless_familiar, "everyone does it"]
+  - say: Everyone does it? Then next time, I will.
+  - chat: [third_planner_this_year, "how many refills at the drink bar solo?"]
+  - say: How many at the drink bar, the all-you-can-drink soda station. Three. Tea first, then melon soda, then tea again.
+  - say: Melon soda I only drink alone. Bright green. With people it feels kind of childish.
+- title: 'Side road: how far can you go alone?'
+  beats:
+  - chat: [good_morning_guy, "do you do solo karaoke?"]
+  - say: Solo karaoke? Oh, yes! I love it.
+  - say: Did you know there are karaoke places just for solo people? It's called One Kara.
+  - say: The rooms are tiny and you sing with headphones on. It's been around since twenty eleven.
+  - chat: [third_planner_this_year, "the phone booth rooms"]
+  - say: Phone booth rooms, yes, exactly that. The first time I went, I measured the room with my shoes.
+  - say: Before singing. Heel to toe, how many feet.
+  - chat: [lives_on_points, "how many"]
+  - say: How many? I don't remember. I only remember measuring.
+  - say: Lately I go to regular karaoke places alone. With headphones, my own voice is way too close.
+  - chat: [leaving_work_on_time, "what do you sing?"]
+  - say: What do I sing? Ito, by Miyuki Nakajima. Big classic ballad. And I turn on the scoring.
+  - chat: [cant_make_it_home, "score?"]
+  - say: My score? Best is eighty-nine. I can never break ninety.
+  - say: The score screen says my pitch is fine but my expression is low. Expression. I don't know where I'm supposed to put expression.
+  - say: The other day I got eighty-nine again. And then I heard clapping from the next room.
+  - chat: [first_time_here, "wait they heard you?"]
+  - say: Did they hear me? Probably not. Next door was a group. Someone finished their song and their friends clapped. That's all.
+  - say: But I was kind of happy anyway, so I clapped too. Alone.
+  - chat: [good_morning_guy, "what about non conveyor sushi?"]
+  - say: A sushi place without a conveyor belt? Not yet. I can't sit at the counter and say, chef's choice.
+  - say: One time I made it as far as the noren, that cloth curtain over the door. And I made eye contact with the chef inside.
+  - chat: [lives_on_points, "did you go in?"]
+  - say: Did I go in? I bowed a little and kept walking.
+  - say: Then I went to Hama Sushi. It's a conveyor belt chain, you order on a touch screen, so you never make eye contact with anyone.
+  - say: Conveyor sushi alone, no problem. I finish with a cucumber roll.
+  - ask:
+      q: How far can you go alone?
+      options:
+      - c: Solo yakiniku
+        r:
+        - "{name} can do solo yakiniku. If you can do that, you're strong."
+        - Just watch the grill size. When half of it's empty, it gets weird.
+      - c: Solo karaoke
+        r:
+        - "{name}, solo karaoke. You're one of those people."
+        - If you hear clapping next door, you're allowed to clap along.
+      - c: Counter sushi
+        r:
+        - "{name}, you can do counter sushi? Amazing. I bowed at the curtain and went home."
+        - Teach me how to go in sometime. Just what to say first is enough.
+      - c: Solo travel
+        r:
+        - "{name}, solo travel. I love that too."
+        - You don't match anyone's pace, you pick every train transfer yourself. It's fun.
+      npc:
+      - [night_shift_survivor, 1]
+      - [cant_make_it_home, 3]
+      - [lives_on_points, 0]
+      - [third_planner_this_year, 3]
+      - [leaving_work_on_time, 2]
+  - chat: [nameless_familiar, "tell us about solo trips"]
+  - say: Solo trips? I mail a postcard to myself from the local post office.
+  - say: They'll stamp it with a postmark that has a little picture of the town and the date. It's called a scenery postmark. Japan Post does them.
+  - say: About three days after I get home, a postcard from my trip shows up. For me.
+  - say: My name, in my handwriting. A bit embarrassing, but I love it.
+  - chat: [night_shift_survivor, "do you do solo hot pot at home?"]
+  - say: Solo hot pot, yes! Almost every week in winter. I have a tiny clay pot for one.
+  - chat: [leaving_work_on_time, "what kind?"]
+  - say: What kind? Cod. Cod, tofu, napa cabbage, and just ponzu, the citrus soy sauce.
+  - say: And it's one pot to wash.
+  - chat: [nameless_familiar, "how do you finish it?"]
+  - say: Rice porridge to finish! You drop in an egg and throw in all the leftovers.
+  - chat: [lives_on_points, "ramen finish for me"]
+  - say: Ramen people exist too. Fine. But alone, if you do porridge, nothing's left for tomorrow. That's what I like.
+  - chat: [first_time_here, "you like when nothing's left?"]
+  - say: I like when nothing's left, yeah. When you're alone, everything has leftovers. So I like things that just get finished.
+  - chat: [night_shift_survivor, "where do you even keep the clay pot"]
+  - say: Where to keep the clay pot, ugh! All summer it lives on top of the fridge.
+  - chat: [ledger_counter, "so what happened with the grill"]
+  - say: What happened with the grill in the end. Right. The grill.
+- title: 'Closing: half the grill'
+  beats:
+  - say: In the end, half the grill stayed empty the whole time.
+  - say: Tongue, kalbi, skirt, onion. All of it grilled on the near half.
+  - chat: [night_shift_survivor, "cuz you cant reach the back"]
+  - say: Couldn't reach the back, that too. The back is far. Far side of a table for four.
+  - chat: [first_time_here, "what will you do next time?"]
+  - say: Next time? When I walk in and say just one, I'll also ask about the grill size.
+  - chat: [lives_on_points, "never seen anyone ask about grill size"]
+  - say: Never seen anyone ask about grill size? I'll be the first. Excuse me, do you have a small grill.
+  - chat: [leaving_work_on_time, "just go to a place with counter seats?"]
+  - say: Go somewhere with counter seats... that's it. A yakiniku place with a counter. I'm looking it up.
+  - say: Okay, that's it for today. Going to spray my clothes one more time. Night.
