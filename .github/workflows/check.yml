@@ -1,0 +1,16 @@
+name: Check
+
+# Pull requests and main run the checks of verify.yml. A pull request that changes src/ or
+# assets/ must commit the game/ that tools/import_stream.py writes from them.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    uses: ./.github/workflows/verify.yml

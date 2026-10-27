@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # The gozen version in go.mod: the CLI and the player runtimes follow it
+  - package-ecosystem: gomod
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "20:00"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"

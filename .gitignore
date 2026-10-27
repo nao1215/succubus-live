@@ -1,33 +1,17 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Exports and the gozen runtimes they are made with (make web, make desktop)
+/dist/
+/.cache/
 
-# Test binary, built with `go test -c`
-*.test
+# The browser reader's data, written by tools/build.py
+/data/
 
-# Code coverage profiles and other test artifacts
-*.out
-coverage.*
-!coverage.go
-*.coverprofile
-profile.cov
+# The face tools of the drafts are not published (they hold paths of the author's machine)
+/tools/face/
+__pycache__/
+*.log
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-go.work.sum
-
-# env file
-.env
-
-# Editor/IDE
-# .idea/
-# .vscode/
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+.claude/
