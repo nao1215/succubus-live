@@ -46,6 +46,8 @@ github.com/mattn/go-runewidth v0.0.30 h1:+KUuiDA4fF0R1p5FeueHefjDm+GIM+kWfFnDjyb
 github.com/mattn/go-runewidth v0.0.30/go.mod h1:3qAiGCV4Koz/yuveO58qUefmUTRm8r0IGEXZ9jeHp/8=
 github.com/nao1215/gozen v0.14.0 h1:BMh6XtKnHV1JL1O3RfWb69rKHmn8o3BTi+nZKj8luac=
 github.com/nao1215/gozen v0.14.0/go.mod h1:fB1FHYMkketQafXMSApHwow+nzUwrqUODSX07/rPRzw=
+github.com/nao1215/gozen v0.14.1 h1:Rhs0aw54QlmX9R9Uv1ARtIR9T7ZXuqNVc7NB/5MkiUw=
+github.com/nao1215/gozen v0.14.1/go.mod h1:fB1FHYMkketQafXMSApHwow+nzUwrqUODSX07/rPRzw=
 github.com/nao1215/markdown v1.1.1 h1:pxldfD84w/a8YNuYB0ehnLuRf+wBE89y13H6yoOvQyc=
 github.com/nao1215/markdown v1.1.1/go.mod h1:djmRvXG8gjnCJ98sapWoY+hvH2y+LQdxr4YMYjtTmVA=
 github.com/olekukonko/cat v0.0.0-20250911104152-50322a0618f6 h1:zrbMGy9YXpIeTnGj4EljqMiZsIcE09mmF8XsD5AYOJc=
