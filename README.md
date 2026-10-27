@@ -13,29 +13,25 @@ Succubus Live is a chat-stream game for web browsers, Windows, macOS and Linux: 
 
 <p align="center"><b>▶ <a href="https://nao1215.github.io/succubus-live/">Watch in your browser</a></b> — no download, on PC or your phone · or get a zip for your desktop from <a href="https://github.com/nao1215/succubus-live/releases">the releases</a></p>
 
-<p align="center"><img src="./doc/img/demo.gif" width="720" alt="moving between streams, typing a comment and sending a tip"></p>
+<p align="center"><img src="./doc/img/demo.gif" width="720" alt="opening a stream, typing a comment, sending a tip, full screen, and moving to another stream"></p>
 
-| Lobby: every channel, live, the busiest first | Stream: captions, chat, comment and tip |
+| Lobby: every channel, live, the busiest first | Chat: she reads your comment and answers |
 | :---: | :---: |
-| ![the lobby](./doc/img/lobby.jpg) | ![Vespa on her stream](./doc/img/watch.jpg) |
-| Chat: she reads your comment and answers | Tip: your name stays pinned in the chat |
-| ![Lise answering Alex's comment](./doc/img/chat.jpg) | ![Pim thanking Alex for a tip](./doc/img/tip.jpg) |
-| Collab: two streamers in one room | Guest: Gyaru from Rabbit Run drops by |
-| ![Ella and Vespa streaming together](./doc/img/collab.jpg) | ![Lise and Gyaru streaming together](./doc/img/guest.jpg) |
-| Question: answer her, and she reacts | |
-| ![Mora asking the chat a question](./doc/img/question.jpg) | |
+| ![the lobby](./doc/img/lobby.jpg) | ![Lise answering Alex's comment](./doc/img/chat.jpg) |
+| Tip: your name stays pinned in the chat | Collab: two streamers in one room |
+| ![Pim thanking Alex for a tip](./doc/img/tip.jpg) | ![Ella and Vespa streaming together](./doc/img/collab.jpg) |
 
 ## Streamers
 
 | | Streamer | Talks about | Streams |
 | :---: | --- | --- | :---: |
-| <img src="./doc/img/faces/lise.png" width="64" alt="Lise"> | Lise | Games, retro to new | 7 |
-| <img src="./doc/img/faces/mora.png" width="64" alt="Mora"> | Mora | Single life | 8 |
-| <img src="./doc/img/faces/pim.png" width="64" alt="Pim"> | Pim | Family life | 7 |
-| <img src="./doc/img/faces/ella.png" width="64" alt="Ella"> | Ella | Music | 10 |
-| <img src="./doc/img/faces/nox.png" width="64" alt="Nox"> | Nox | Programming | 10 |
-| <img src="./doc/img/faces/vespa.png" width="64" alt="Vespa"> | Vespa | Pop culture | 9 |
-| <img src="./doc/img/faces/gyal.png" width="64" alt="Gyaru"> | Gyaru (guest) | Rabbit Run, the game she comes from | collab only |
+| <img src="./doc/img/faces/lise.png" width="120" alt="Lise"> | Lise | Games | 7 |
+| <img src="./doc/img/faces/mora.png" width="120" alt="Mora"> | Mora | Single life | 8 |
+| <img src="./doc/img/faces/pim.png" width="120" alt="Pim"> | Pim | Family life | 7 |
+| <img src="./doc/img/faces/ella.png" width="120" alt="Ella"> | Ella | Music | 10 |
+| <img src="./doc/img/faces/nox.png" width="120" alt="Nox"> | Nox | Programming | 10 |
+| <img src="./doc/img/faces/vespa.png" width="120" alt="Vespa"> | Vespa | Pop culture | 9 |
+| <img src="./doc/img/faces/gyal.png" width="120" alt="Gyaru"> | Gyaru (guest) | From Rabbit Run | collab only |
 
 There are four collabs: Lise and Gyaru, Lise and Nox, Mora and Pim, Ella and Vespa. A pair starts to stream together after you have watched each of them for 30 minutes. The streams tease now and then but have nothing explicit.
 
