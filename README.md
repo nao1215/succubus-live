@@ -86,7 +86,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ### Verifying release integrity
 
-Each release has `checksums.txt`, its keyless cosign signature and a GitHub build attestation of every zip.
+Each release has `checksums.txt`, its keyless cosign signature, a GitHub build attestation of every zip and SLSA provenance (`multiple.intoto.jsonl`).
 
 ```shell
 cosign verify-blob \
@@ -96,4 +96,5 @@ cosign verify-blob \
   checksums.txt
 sha256sum --ignore-missing -c checksums.txt
 gh attestation verify succubus-live_linux-amd64.zip --repo nao1215/succubus-live
+slsa-verifier verify-artifact --provenance-path multiple.intoto.jsonl --source-uri github.com/nao1215/succubus-live --source-tag vX.Y.Z succubus-live_linux-amd64.zip
 ```

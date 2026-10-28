@@ -2,7 +2,7 @@
 """src/ と assets/<id>/ から、gozen のゲーム game/ のデータを作り直す。
 
   書くのは game/ の下だけ（リポジトリの src/・assets/・data/ には書かない・消さない）。
-  game/game.yaml、game/assets/fonts/、game/assets/voice/（tools/voices.py が作る）、game/assets/logo.png は手で置くもので、ここでは消さない。
+  game/game.yaml、game/assets/fonts/、game/assets/voice/（tools/voices.py が作る）、game/assets/logo.png、game/assets/og-image.jpg（リンクのカードの絵）は手で置くもので、ここでは消さない。
   ここで書くもの（手で直さない。直すなら src/ を直して流し直す）：
     game/data/cast.yaml             話すだけの人物（6人とゲスト）
     game/data/streams.yaml          配信の決まりとチャンネル（gozen の ADR 0048 の形）。ゲスト（src/cast.yaml の guest: true）は
