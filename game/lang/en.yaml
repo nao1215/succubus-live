@@ -101,6 +101,7 @@ text:
   もう始まってたわね。あなたが来たから、今のがタイトル画面だったことにするわ。: Oh, we already started. Since you just showed up, let's say that was the title screen.
   '{from}。今日は、あなたが来るまで起きてたの。': '{from}. Today I stayed up until you came.'
   寝てたけど、あなたの名前で起きたわ。: Okay, I was asleep. Your name woke me up.
+  うん、聞いてるわ。: Mm, I'm listening.
   あら、初めての人！ {from}ね、いらっしゃい。座って聞いてて。分からないところは「それ何？」って書いて。何回でも答えるから。: Oh, someone new. {from}, welcome. Sit and listen. If something doesn't make sense, type "what's that?" I'll answer as many times as you want.
   '{from}、{days}日続けて来てるわね。えっ、私が連続ログインの報酬を出す側なの？ 何がいい？ 何も出ないけど。': '{from}, that''s {days} days in a row. Wait, am I the one who''s supposed to give out the streak reward? What do you want? You''re not getting anything.'
   '{from}、最後までいたのね！ エンディングまで見た人には、本当は特別な一枚絵が出るのよ。今日は私の顔で我慢して。ありがとう。': '{from}, you stayed till the end. Usually that gets you a special ending picture. Today, settle for my face. Thanks.'
@@ -472,6 +473,7 @@ text:
   今日はどうだった？ 何もなかったなら、それでいい。来てくれて嬉しい。: How was today? If nothing happened, that's fine too. I'm glad you're here.
   '{from}の来る頃合い、もう分かるようになっちゃった。': '{from}, I can tell when you''re about to show up now.'
   '{from}、来てくれてうれしいよ。今日はどうだった？': '{from}, I''m really glad you came. How was today?'
+  へえ。もう少し詳しく聞かせて。: Huh. Tell me more.
   いらっしゃい、{from}！ 普段の話をする枠だよ。役に立つ話は出ないけど、私がやらかした話ならいっぱい出る。: Welcome, {from}! This is the everyday stuff stream. Nothing useful happens here, but I've got plenty of stories about me messing up.
   初めまして。ゆっくりしてって。: Nice to meet you. Make yourself comfortable.
   '{from}、{days}日続けて来てる。数えたのは帳面で、指じゃないからね。': '{from}, that''s {days} days straight. I counted in my ledger, not on my fingers.'
@@ -807,6 +809,7 @@ text:
   最近よく来てくれますね！ うれしいです！: You've been coming a lot lately! I'm so happy!
   '{from}さん！ 出席確認……しなくても分かります！': '{from}! Roll call... I don''t even need to check!'
   ……訂正します！ 確認はします！ {from}さん、出席です！ いつもありがとうございます！: '...Correction! I will check! {from}, present! Thank you, always!'
+  気になります！ もう少し教えてください！: I'm curious! Tell me more!
   '{from}さん、はじめまして！ 出席確認しました！ 名簿のいちばん新しい行に書きました！': '{from}, nice to meet you! You''re marked present! I wrote you on the newest line of the roster!'
   いらっしゃいませ、{from}さん！ ここは、家の話をする配信です！ 子どもと、夫と、家計と、町中華です！ 分からない言葉が出たら聞いてください！: Welcome, {from}! This is a stream about home life! Kids, husband, budget, and little neighborhood Chinese diners! If a word confuses you, just ask!
   '{from}さん、{days}日連続の出席です！ 皆勤賞の規則を、今から作ります！': '{from}, that''s {days} days of attendance in a row! I''m writing a perfect attendance rule right now!'
@@ -1131,6 +1134,7 @@ text:
   また来てくださったんですね。今日は、何か聴いておられました？: Back again, and I'm delighted. Have you been listening to anything today?
   '{from}様。': '{from}.'
   '{from}様、お待ちしておりました。今日は何をお聴きでしたか？': '{from}, I''ve been waiting for you. What have you been listening to today?'
+  確かに頂戴いたしました。: Duly received.
   ようこそお越しくださいました、{from}様。エラと申します。よろしければ、お好きな曲を一つ教えてくださいまし。当方、それだけで一時間話せますので。: Welcome, {from}. I am Ella. If you would, tell me one song you love. I can talk about a single song for an hour, I warn you.
   '{from}様、{days}日続けてお越しでございますね。当方の中では、もう常連様の席でございます。': '{from}, that''s {days} days in a row. As far as I''m concerned, you have a regular''s seat now.'
   '{from}様、最後までありがとうございました。またお話ししましょう。': '{from}, thank you for staying to the very end. Let''s talk again soon.'
@@ -1452,6 +1456,7 @@ text:
   '{from}さん。来てくれたのね。': '{from}. You came.'
   今日もいっぱい壊れ方の話をするわ。分からない所は、遠慮なく止めて。: Lots of how-things-break stories tonight. If you get lost, just stop me.
   あなたがいると、話すのが少し楽しくなるの。……THANKS に、もう名前あったかしら。なかったら足すわ。: When you're here, talking gets a little more fun. ...Are you in my THANKS file yet? If not, I'm adding you.
+  ……うん。もう少し聞かせて。: '...Mm. Tell me a little more.'
   いらっしゃい、{from}。ここは、プログラムの壊れ方と直し方の話をする配信。知らない言葉が出たら、そのまま「？」って打ってね。: Welcome, {from}. This is a stream about how programs break and how to fix them. If I say a word you don't know, just type a question mark.
   '{days}日続けて来てくれたのね。ありがとう。': '{days} days in a row. Thank you.'
   '{from}、最後までいてくれたのね。ありがとう。今夜、楽しかった。': '{from}, you stayed till the end. Thank you. Tonight was fun.'
@@ -1954,6 +1959,7 @@ text:
   行けたなら、あとで感想聞かせて！ 私はまた「おつかれさまです」しか言えなかった！: If you did, tell me how it went later! I said otsukaresama and nothing else, again!
   '{from}！ 待ってたぞ！': '{from}! I was waiting for you!'
   '{from}、待ってたぞ！ 今日もよろしくね！': '{from}, I was waiting! Let''s have a good one today!'
+  もうちょっと聞きたい！: I wanna hear more!
   いらっしゃい、{from}！ ここは流行りとオタクの話をする配信だよ。知らない言葉が出たら、遠慮なく聞いてね！: Welcome, {from}! This is a stream about trends and otaku stuff. If I say a word you don't know, just ask!
   '{from}、初めまして！ 隊長のヴェスパだよ。来てくれる人はみんな「遠征隊」！ よろしくね！': '{from}, nice to meet you! I''m Vespa, your captain. Everyone who comes here is part of the expedition squad! Let''s go!'
   '{from}、{days}日連続！ すごい！ 私、ログボ四日で切れる人だから、尊敬しかない！': '{from}, {days} days in a row! No way! My login bonuses break after four days, so I literally just respect you!'

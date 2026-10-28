@@ -626,10 +626,12 @@ def streams(src, cast, guests, duos, common):
             'greet': [from_name(g) or [] for g in v['greet']],
             'first': from_name(v['first']), 'streak': from_name(v['streak']), 'stayed': from_name(v['stayed']),
             'bridges': v.get('bridges') or [],  # 回と回のあいだに挟む一言（差し込みなし。試作の build.py が確かめる）
+            'voice_fallback': v.get('fallback'),  # 遊ぶ人の言葉の入る台詞で鳴らす一言（声は tools/voices.py が作る）
         })
     out = ['# 配信の決まり（ADR 0048）。tools/import_stream.py が試作の src/ から作る。',
            f'logo: {LOGO}   # 上の帯の題名の前の印',
            f'voices: {VOICES}   # 台詞の音声の置き場（assets/ の下、tools/voices.py が作る）',
+           'missing_voice: captions   # 声の無い行はブラウザの読み上げにせず字幕だけ（2026-10-28 作者「音声が見つからないときは、ブラウザ版の音声読み上げがない方が良い」）',
            f'timing: {flow(TIMING)}   # 拍の長さ（秒）',
            f'live: {flow(LIVE)}',
            'slot: {minutes: 60, rest: 0}   # 1枠60分の雑談をつなぎ、終わったらすぐ次の枠（いつも配信中）',
@@ -651,6 +653,8 @@ def streams(src, cast, guests, duos, common):
         out += [f'  - {flow(g)}' for g in c['greet']]
         for k in ('first', 'streak', 'stayed'):
             out.append(f'  {k}: {flow(c[k])}')
+        if c['voice_fallback']:
+            out.append(f'  voice_fallback: {flow(c["voice_fallback"])}   # 遊ぶ人の言葉の入る台詞で鳴らす一言')
         if c['bridges']:
             out.append('  bridges:   # 回と回のあいだに、この中から一つ挟む')
             out += [f'  - {flow(b)}' for b in c['bridges']]

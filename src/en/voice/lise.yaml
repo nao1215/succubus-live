@@ -7,6 +7,8 @@ greet:
 - ['{name}. You''re here every day.', 'Maybe I should hand out login bonuses. I won''t, though.']
 - ['{name}, you''re here. Okay, let''s start.', 'Oh, we already started. Since you just showed up, let''s say that was the title screen.']
 - ['{name}. Today I stayed up until you came.', 'Okay, I was asleep. Your name woke me up.']
+# 遊ぶ人が書いた言葉の入る台詞（「{text}」など）で、字幕はその台詞のまま、声はこの一言（gozen の voice_fallback。2026-10-28）
+fallback: 'Mm, I''m listening.'
 first: ['Oh, someone new. {name}, welcome. Sit and listen. If something doesn''t make sense, type "what''s that?" I''ll answer as many times as you want.']
 streak: ['{name}, that''s {days} days in a row. Wait, am I the one who''s supposed to give out the streak reward? What do you want? You''re not getting anything.']
 stayed: ["{name}, you stayed till the end. Usually that gets you a special ending picture. Today, settle for my face. Thanks."]

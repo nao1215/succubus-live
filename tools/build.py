@@ -176,7 +176,7 @@ def check_cases(where, kw, alts):
 
 def voice(where, v):
     out = {}
-    for k in ('greet', 'first', 'streak', 'stayed', 'echo', 'tips'):
+    for k in ('greet', 'first', 'streak', 'stayed', 'echo', 'tips', 'fallback'):
         if k in v:
             out[k] = v[k]
     if 'keywords' in v:
@@ -238,7 +238,7 @@ SLOT = re.compile(r'\{[^{}]*\}')  # {name} {days} {text} {mem.x} などの差し
 JA_CHAR = re.compile(r'[぀-ヿ㐀-鿿ｦ-ﾟ]')  # かな・漢字・半角カナ（訳し残しの目安）
 # voice の英訳で、日本語と同じでなければならない鍵（判定。台詞ではない）。ほかの文字列は全部台詞として組にする
 JUDGE = {'tag', 'match', 'remember', 'if'}
-VOICE_KEYS = {'greet', 'first', 'streak', 'stayed', 'safe_refusal', 'keywords', 'echo', 'tips', 'bridges'}
+VOICE_KEYS = {'greet', 'first', 'streak', 'stayed', 'safe_refusal', 'keywords', 'echo', 'tips', 'bridges', 'fallback'}
 
 
 def load_en(where, p):

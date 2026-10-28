@@ -8,6 +8,8 @@ greet:
   - You've been coming a lot lately! I'm so happy!
 - - '{name}! Roll call... I don''t even need to check!'
   - ...Correction! I will check! {name}, present! Thank you, always!
+# 遊ぶ人が書いた言葉の入る台詞（「{text}」など）で、字幕はその台詞のまま、声はこの一言（gozen の voice_fallback。2026-10-28）
+fallback: 'I''m curious! Tell me more!'
 first:
 - '{name}, nice to meet you! You''re marked present! I wrote you on the newest line of the roster!'
 - Welcome, {name}! This is a stream about home life! Kids, husband, budget, and little neighborhood Chinese diners! If a word confuses you, just ask!

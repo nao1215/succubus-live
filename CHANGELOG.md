@@ -4,6 +4,16 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-10-28
+
+### Fixed
+- The streamers' lines that hold a name (answers to your choices, replies to comments and tips) are voiced. They were read by the browser's speech synthesis; they are now recorded once without the name, and the subtitle still shows it.
+- A comment of your own read out on stream plays the streamer's short reply instead of the browser's speech synthesis, and the browser never reads a line aloud with speech synthesis.
+- The first line of a stream no longer falls back to speech synthesis on a slow connection: it waits longer for its voice, and the lobby starts loading the opening lines.
+
+### Changed
+- Gozen v0.15.0.
+
 ## [0.1.1] - 2026-10-28
 
 ### Added
