@@ -11,6 +11,8 @@ greet:
   - "Lots of how-things-break stories tonight. If you get lost, just stop me."
 - - "{name}."
   - "When you're here, talking gets a little more fun. ...Are you in my THANKS file yet? If not, I'm adding you."
+# 遊ぶ人が書いた言葉の入る台詞（「{text}」など）で、字幕はその台詞のまま、声はこの一言（gozen の voice_fallback。2026-10-28）
+fallback: '...Mm. Tell me a little more.'
 first:
 - "Welcome, {name}. This is a stream about how programs break and how to fix them. If I say a word you don't know, just type a question mark."
 streak:

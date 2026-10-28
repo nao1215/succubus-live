@@ -9,6 +9,8 @@ greet:
   - How was today? If nothing happened, that's fine too. I'm glad you're here.
 - - '{name}, I can tell when you''re about to show up now.'
   - '{name}, I''m really glad you came. How was today?'
+# 遊ぶ人が書いた言葉の入る台詞（「{text}」など）で、字幕はその台詞のまま、声はこの一言（gozen の voice_fallback。2026-10-28）
+fallback: 'Huh. Tell me more.'
 first:
 - Welcome, {name}! This is the everyday stuff stream. Nothing useful happens here, but I've got plenty of stories about me messing up.
 - 'Nice to meet you. Make yourself comfortable.'

@@ -9,6 +9,8 @@ greet:
   - If you did, tell me how it went later! I said otsukaresama and nothing else, again!
 - - '{name}! I was waiting for you!'
   - '{name}, I was waiting! Let''s have a good one today!'
+# 遊ぶ人が書いた言葉の入る台詞（「{text}」など）で、字幕はその台詞のまま、声はこの一言（gozen の voice_fallback。2026-10-28）
+fallback: 'I wanna hear more!'
 first:
 - Welcome, {name}! This is a stream about trends and otaku stuff. If I say a word you don't know, just ask!
 - '{name}, nice to meet you! I''m Vespa, your captain. Everyone who comes here is part of the expedition squad! Let''s go!'

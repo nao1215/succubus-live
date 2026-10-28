@@ -9,6 +9,8 @@ greet:
   - "Back again, and I'm delighted. Have you been listening to anything today?"
 - - "{name}."
   - "{name}, I've been waiting for you. What have you been listening to today?"
+# 遊ぶ人が書いた言葉の入る台詞（「{text}」など）で、字幕はその台詞のまま、声はこの一言（gozen の voice_fallback。2026-10-28）
+fallback: 'Duly received.'
 first: ["Welcome, {name}. I am Ella. If you would, tell me one song you love. I can talk about a single song for an hour, I warn you."]
 streak: ["{name}, that's {days} days in a row. As far as I'm concerned, you have a regular's seat now."]
 stayed: ["{name}, thank you for staying to the very end. Let's talk again soon."]

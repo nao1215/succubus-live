@@ -69,6 +69,10 @@ IRODORI_REPO = 'https://github.com/Aratako/Irodori-TTS.git'
 IRODORI_COMMIT = '59be938c99d48b5653ca5aa3fdd0cddaa56940e5'  # 2026-10-25（v4.1）
 CACHE = Path(os.environ.get('SUCCUBUS_VOICE_CACHE', Path.home() / '.cache' / 'succubus-live-voice'))
 SLOT = re.compile(r'\{[^{}]*\}')  # {from} {days} {text} {mem.x} などの差し込み
+# {from}（遊ぶ人・台本の視聴者の名前）だけを差し込む行は、名前を言わない読みで 1 本作り、差し込む前の行のハッシュで置く。
+# gozen は埋めた後の行の声が無ければ、差し込む前の行の声を探す（字幕には名前が出る）。{text}・{days} などのある行は作らない
+# （遊ぶ人が書いた言葉。channel の voice_fallback を鳴らす）。2026-10-28 作者が選んだ（名前ごとに作ると 10 万行を越える）。
+NAME = '{from}'
 VORBIS_Q = '2'  # libvorbis の品質。0〜3 を測って、日英約1万行・平均8秒で 600MB に収まる中で一番良い値
 SAMPLE_RATE = 44100  # gozen の sound.SampleRate。これより低いモデルの出力（Kokoro の 24kHz）はそのまま（gozen が変換する）
 
@@ -119,7 +123,7 @@ class Lines:
     def add(self, who, text):
         if not isinstance(text, str) or not text.strip():
             return
-        if SLOT.search(text):
+        if SLOT.search(text) and not only_name(text):
             self.slotted += 1
             return
         if who not in self.known:
@@ -189,7 +193,7 @@ def collect(duos=False):
         cid = c['id']
         for rel in c.get('episodes') or []:
             episode(lines, cid, rel)
-        for k in ('greet', 'first', 'streak', 'stayed', 'bridges'):
+        for k in ('greet', 'first', 'streak', 'stayed', 'bridges', 'voice_fallback'):
             lines.adds(cid, c.get(k))
         if not c.get('guest'):  # ほかの視聴者の投げ銭の文（crowd.tip_lines）は、ホストが自分の声で読む（引用符を付ける前の文が鍵）
             lines.adds(cid, (data.get('crowd') or {}).get('tip_lines'))
@@ -229,13 +233,13 @@ def collect(duos=False):
 
 def english(lines):
     """日本語の台詞を lang/en.yaml の text で英語に。(英語の行 channel id -> {hash: text}, 訳の無い行の数 channel id -> n,
-    反応の本の英語の行 channel id -> {hash: text})。差し込みのある英語（訳で {…} が入った行）は作らない。"""
+    反応の本の英語の行 channel id -> {hash: text})。{from} のほかの差し込みのある英語は作らない。"""
     table = (load(LANG_EN) or {}).get('text') or {} if LANG_EN.exists() else {}
     by, book, lacking = {}, {}, {}
     for cid, m in lines.by.items():
         for h, ja in m.items():
             en = table.get(ja)
-            if not isinstance(en, str) or not en.strip() or en == ja or SLOT.search(en):
+            if not isinstance(en, str) or not en.strip() or en == ja or (SLOT.search(en) and not only_name(en)):
                 lacking[cid] = lacking.get(cid, 0) + 1
                 continue
             dst = book if h in lines.book.get(cid, {}) else by
@@ -289,8 +293,52 @@ def bootstrap_en(argv):
     os.execve(str(py), [str(py), str(Path(__file__).resolve()), *argv], dict(os.environ))
 
 
+def only_name(text):
+    """差し込みが {from} だけの行か"""
+    return set(SLOT.findall(text)) == {NAME}
+
+
+def spoken_ja(text):
+    """{from} を言わない読み。呼びかけ（「{from}、」「…よ、{from}！」）は抜き、文の一部（「{from}は」）は「あなた」"""
+    s = re.sub(r'[、，]\s*\{from\}(?:さん|様)?(?=[。！？…」]|$)', '', text)
+    s = re.sub(r'(^|(?<=[。！？…」\s]))\{from\}(?:さん|様)?[、，！？]+\s*', '', s)
+    return s.replace('{from}さん', 'あなた').replace(NAME, 'あなた').strip()
+
+
+THIRD_PERSON = {'is': 'are', 'was': 'were', 'has': 'have', 'does': 'do',
+                "doesn't": "don't", "isn't": "aren't", "wasn't": "weren't", "hasn't": "haven't"}
+ADVERB = r'(?:just|really|always|never|still|also|often|usually|only|even|already|probably|totally) '
+
+
+def _you(m):
+    """「{from} keeps」の動詞を you に合わせる（keeps → keep、is → are）"""
+    adv, w = m.group(1) or '', m.group(2)
+    if w in THIRD_PERSON:
+        w = THIRD_PERSON[w]
+    elif w.endswith(('ches', 'shes', 'sses', 'xes', 'zes', 'oes')):
+        w = w[:-2]
+    elif w.endswith('ies') and len(w) > 4:
+        w = w[:-3] + 'y'
+    elif w.endswith('s') and not w.endswith('ss'):
+        w = w[:-1]
+    return f'you {adv}{w}'
+
+
+def spoken_en(text):
+    """{from} を言わない英語の読み。呼びかけ（"{from}, …"・"…, {from}."）は抜き、主語・所有は you・your"""
+    s = re.sub(r',\s*\{from\}(?=[.!?"]|$)', '', text)
+    s = re.sub(r'(^|(?<=[.!?]\s))\{from\}[,!?.]+\s*', '', s)
+    s = re.sub(r"\{from\}'s\b(?=\s+(?:a|an|the|so|really|very|not|just|still|always|got|been)\b)", "you're", s)
+    s = re.sub(r"\{from\}'s\b", 'your', s)
+    s = re.sub(r"\{from\} (" + ADVERB + r")?([a-z']+)\b", _you, s)
+    s = s.replace(NAME, 'you')
+    return re.sub(r'(^|[.!?]\s+|")([a-z])', lambda m: m.group(1) + m.group(2).upper(), s).strip()
+
+
 def reading(text, table):
-    """表示の文字列を、読み上げに渡す文字列に（tools/voice/voices.yaml の readings）。ハッシュは表示の文字列のまま。"""
+    """表示の文字列を、読み上げに渡す文字列に（tools/voice/voices.yaml の readings）。ハッシュは表示の文字列のまま。
+    {from} の行は名前を言わない読み（spoken_ja）にしてから。"""
+    text = spoken_ja(text)
     for a, b in table:
         text = text.replace(a, b)
     return text
@@ -302,7 +350,9 @@ ONE_READING = re.compile(r'\[([^\[\]]+)\]\(/([^/]+)/\)')
 def reading_en(text, table):
     """英語の readings：語の単位で、大文字小文字を区別せずに置き換える（Nox が Noxious の中で変わらないように）。
     読みは misaki の [語](/IPA/)。置き換えた後の [ ] の中は置き換えない（Kinoko no Yama の後に Kinoko を書いてよい）。
-    「Harumi's」のような所有の 's は、読みが一語のとき /…z/（s・ʃ などの後は ɪz、無声音の後は s）を足して一語にする。"""
+    「Harumi's」のような所有の 's は、読みが一語のとき /…z/（s・ʃ などの後は ɪz、無声音の後は s）を足して一語にする。
+    {from} の行は名前を言わない読み（spoken_en）にしてから。"""
+    text = spoken_en(text)
     def sub(b):
         def f(m):
             one = ONE_READING.fullmatch(b)
