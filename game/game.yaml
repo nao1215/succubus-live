@@ -3,6 +3,11 @@ id: succubus-live
 title: Succubus Live
 language: ja
 languages: [ja, en]
+# リンクを貼ったときのカード（ブラウザ版の書き出し。画像はリポジトリの Social preview と同じ）
+web:
+  url: https://nao1215.github.io/succubus-live/
+  description: A streaming-site game with succubus VTubers for web browsers, Windows, macOS, and Linux
+  image: og-image.jpg
 fonts:
   regular: fonts/mplus-1p-regular.ttf
 screen:

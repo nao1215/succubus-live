@@ -4,6 +4,15 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-28
+
+### Added
+- A link to the game shows a card with its picture and description.
+
+### Fixed
+- The first visit opens in the language of your device, so English speakers choose their name in English; the language buttons work on the name screen too.
+- The streamer's next line after reading out your tip message is no longer silent.
+
 ### Security
 - Run CodeQL on the Python tools and the workflows for every pull request, push to main and once a week.
 - Attach SLSA provenance (`multiple.intoto.jsonl`) to each release and verify it with slsa-verifier.
