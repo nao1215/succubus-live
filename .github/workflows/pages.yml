@@ -18,7 +18,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Named apart from check.yml's verify job, whose "verify / verify" is the required
+  # status check, so a failure here alone cannot block a pull request.
   verify:
+    name: pages verify
     uses: ./.github/workflows/verify.yml
 
   build:
