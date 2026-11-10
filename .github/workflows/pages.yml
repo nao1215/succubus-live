@@ -53,13 +53,24 @@ jobs:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    # A Pages deploy usually finishes within two minutes, but Pages sometimes stalls in
+    # syncing_files for longer than the ten minutes that deploy-pages allows (its timeout
+    # input is capped at 600000 ms). The action then cancels the deployment, so a second
+    # deployment of the same artifact is tried. The job bound covers both attempts.
+    timeout-minutes: 25
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+      - name: Deploy to GitHub Pages again after a stalled deployment
+        id: retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
