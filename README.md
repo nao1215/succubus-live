@@ -1,6 +1,7 @@
 [![Check](https://github.com/nao1215/succubus-live/actions/workflows/check.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/check.yml)
 [![Pages](https://github.com/nao1215/succubus-live/actions/workflows/pages.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/pages.yml)
 [![gitleaks](https://github.com/nao1215/succubus-live/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/gitleaks.yml)
+[![Trivy](https://github.com/nao1215/succubus-live/actions/workflows/trivy.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/trivy.yml)
 [![made with gozen](https://img.shields.io/badge/made%20with-gozen-ff5c8a)](https://github.com/nao1215/gozen)
 ![GitHub](https://img.shields.io/github/license/nao1215/succubus-live)
 [![GitHub Release](https://img.shields.io/github/v/release/nao1215/succubus-live)](https://github.com/nao1215/succubus-live/releases)
