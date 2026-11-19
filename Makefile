@@ -1,4 +1,4 @@
-.PHONY: check verify scripts draft game committed notices gozen-check voice-size run web web-size desktop voices voices-en clean help
+.PHONY: check verify scripts compare draft game committed notices gozen-check voice-size run web web-size desktop voices voices-en clean help
 
 # gozen comes from go.mod (the tool directive), so the CLI and the player runtimes are one version.
 GOZEN = go tool gozen
@@ -30,6 +30,9 @@ verify: ## check, and fail when game/ differs from the commit
 scripts: ## Check the scripts in src/ and the reactions against the expected comments (needs Node.js); writes nothing
 	python3 tools/build.py --check
 	python3 tools/kwtest.py
+
+compare: ## Fail when the game's lexicon (game/assets/react.yaml) and the regexes of src/ disagree on a comment not listed in tools/compare-baseline.tsv
+	python3 tools/import_stream.py --compare --baseline tools/compare-baseline.tsv
 
 game: ## Write game/ from src/ and assets/
 	python3 tools/import_stream.py

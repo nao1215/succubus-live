@@ -52,6 +52,17 @@ There are four collabs: Lise and Gyaru, Lise and Nox, Mora and Pim, Ella and Ves
 
 The Japanese lines are voiced with Irodori-TTS and the English ones with Kokoro-82M, all rendered in advance; no recording of a real person was used. [NOTICE.md](./NOTICE.md) lists the models and their terms.
 
+## Testing
+
+| Technique | Bug class caught here |
+|---|---|
+| [Example comments](./tools/kwtest.py) | A reaction that misses the comments written for it, or answers ordinary chat |
+| [Differential: regexes against the game's lexicon](./tools/compare-baseline.tsv) | A comment that kwtest's regexes judge one way and the game, after gozen folds the text, another |
+| [gozen check](./Makefile) | Broken references, expressions, assets and text layout in `game/` |
+| [Committed game/](./.github/workflows/verify.yml) | A `game/` that differs from what `src/` and `assets/` build |
+
+`make check` runs the scripts' checks, writes `game/` and runs gozen check; `make compare` runs the differential test (a few minutes); CI runs both on every pull request.
+
 ## Contributing
 
 Bug reports, ideas and pull requests are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md).

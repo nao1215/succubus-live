@@ -25,6 +25,10 @@
 使い方:
   python3 tools/import_stream.py [入力のフォルダ]          作り直す（入力の既定はリポジトリのルート：その src/ と assets/<id>/ を読む）
   python3 tools/import_stream.py --compare [入力のフォルダ]  src/ の正規表現と、作った語彙の当たり方を比べる
+  python3 tools/import_stream.py --compare --baseline tools/compare-baseline.tsv
+                                                          比べた食い違いが baseline のとおりでなければ失敗する（make compare）
+  python3 tools/import_stream.py --compare --write-baseline tools/compare-baseline.tsv
+                                                          今の食い違いを baseline に書く（確かめてから）
   python3 tools/import_stream.py --conflicts               作り直し、英訳の食い違いを全部出す
 """
 import itertools
@@ -895,7 +899,16 @@ def hits(entry, raw):
     return False
 
 
-def compare(src):
+def compare(src, baseline=None, write_baseline=False):
+    """Print where the regexes in src/ and the built lexicon disagree; with baseline, check them against it.
+
+    The lexicon is what the game matches comments with (gozen folds the comment and the words
+    with react.Normalize), and tools/kwtest.py tests the regexes as JavaScript sees them, so a
+    disagreement is a comment that kwtest's verdict does not hold for in the game. Some are known
+    and accepted (gozen folds エラー and エラ to the same text); baseline lists them, one
+    "person, comment, regex verdict, lexicon verdict" per line, tab separated. Returns the number
+    of disagreements, or with baseline the number of lines that differ from it.
+    """
     sys.dont_write_bytecode = True  # 試作のフォルダに何も書かない
     sys.path.insert(0, str(src / 'tools'))
     import kwtest  # 試作の試しの例文（共通の判定ごとの例文と、普通の雑談）
@@ -907,6 +920,7 @@ def compare(src):
                    for p in load(e)['parts'] for b in p['beats'] if 'chat' in b]
     corpus = list(dict.fromkeys(str(c) for c in corpus))
     bad = 0
+    found = []
     for p in bk['people']:
         v = load(src / f'src/voice/{p["id"]}.yaml')
         pats = [(tags[k['tag']] if 'tag' in k else k['match']) for k in v['keywords']]
@@ -917,11 +931,31 @@ def compare(src):
             a = next((i for i, r in enumerate(res) if r.search(t)), -1)
             b = next((i for i, r in enumerate(rules) if hits(bk['lexicon'][r['id']], t)), -1)
             if a != b:
-                diff.append(f'  {t[:40]}  試作:{rules[a]["id"] if a >= 0 else "-"}  本:{rules[b]["id"] if b >= 0 else "-"}')
+                ra, rb = rules[a]['id'] if a >= 0 else '-', rules[b]['id'] if b >= 0 else '-'
+                diff.append(f'  {t[:40]}  試作:{ra}  本:{rb}')
+                found.append('\t'.join((p['id'], t.replace('\t', ' ').replace('\n', ' '), ra, rb)))
         print(f'== {p["id"]}: 例文 {len(corpus)} のうち食い違い {len(diff)}')
         print('\n'.join(diff))
         bad += len(diff)
-    return bad
+    if baseline is None:
+        return bad
+    if write_baseline:
+        baseline.write_text(''.join(f'{line}\n' for line in found), encoding='utf-8')
+        print(f'wrote {len(found)} disagreements to {baseline}')
+        return 0
+    known = baseline.read_text(encoding='utf-8').splitlines() if baseline.exists() else []
+    new = [line for line in found if line not in set(known)]
+    gone = [line for line in known if line not in set(found)]
+    for line in new:
+        print('new disagreement:', line)
+    for line in gone:
+        print('no longer disagrees (remove it from the baseline):', line)
+    if new or gone:
+        print(f'{len(new)} new and {len(gone)} stale lines against {baseline}; '
+              f'after checking them, rewrite it with: python3 tools/import_stream.py --compare --write-baseline {baseline}')
+    else:
+        print(f'all {len(found)} disagreements are the known ones in {baseline}')
+    return len(new) + len(gone)
 
 
 def main():
@@ -929,10 +963,18 @@ def main():
     cmp_only = '--compare' in args
     global CONFLICTS_ALL
     CONFLICTS_ALL = '--conflicts' in args
+    baseline, write_baseline = None, False
+    for flag in ('--baseline', '--write-baseline'):
+        if flag in args:
+            i = args.index(flag)
+            baseline, write_baseline = Path(args[i + 1]), write_baseline or flag == '--write-baseline'
+            del args[i:i + 2]
     args = [a for a in args if a not in ('--compare', '--conflicts')]
     src = Path(args[0]).resolve() if args else SRC
     if cmp_only:
-        compare(src)
+        bad = compare(src, baseline, write_baseline)
+        if baseline is not None and bad:
+            sys.exit(1)
     else:
         build(src)
 
