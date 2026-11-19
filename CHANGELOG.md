@@ -4,6 +4,8 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-11-19
+
 ### Changed
 
 - Gozen v0.26.0 (from v0.15.0): the player gains a text size setting, can be added to a phone's home screen from the browser, asks to turn a phone held the other way, and keeps the autosave when the page is hidden. Go 1.26.11, which gozen v0.26.0 requires, is the minimum to build the game.
