@@ -1,12 +1,14 @@
 [![Check](https://github.com/nao1215/succubus-live/actions/workflows/check.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/check.yml)
 [![Pages](https://github.com/nao1215/succubus-live/actions/workflows/pages.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/pages.yml)
-[![gitleaks](https://github.com/nao1215/succubus-live/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/gitleaks.yml)
+[![Gitleaks](https://github.com/nao1215/succubus-live/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/gitleaks.yml)
 [![Trivy](https://github.com/nao1215/succubus-live/actions/workflows/trivy.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/trivy.yml)
-[![made with gozen](https://img.shields.io/badge/made%20with-gozen-ff5c8a)](https://github.com/nao1215/gozen)
-![GitHub](https://img.shields.io/github/license/nao1215/succubus-live)
-[![GitHub Release](https://img.shields.io/github/v/release/nao1215/succubus-live)](https://github.com/nao1215/succubus-live/releases)
+[![OSV-Scanner](https://github.com/nao1215/succubus-live/actions/workflows/osv-scan.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/osv-scan.yml)
+[![reviewdog](https://github.com/nao1215/succubus-live/actions/workflows/reviewdog.yml/badge.svg)](https://github.com/nao1215/succubus-live/actions/workflows/reviewdog.yml)
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/nao1215/succubus-live/total)](https://github.com/nao1215/succubus-live/releases)
+[![License](https://img.shields.io/github/license/nao1215/succubus-live)](./LICENSE)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/nao1215/succubus-live/badge)](https://scorecard.dev/viewer/?uri=github.com/nao1215/succubus-live)
+[![made with gozen](https://img.shields.io/badge/made%20with-gozen-ff5c8a)](https://github.com/nao1215/gozen)
+[![GitHub Release](https://img.shields.io/github/v/release/nao1215/succubus-live)](https://github.com/nao1215/succubus-live/releases)
 
 ![Ella on her stream, with a tip pinned in the chat](./doc/img/stream.jpg)
 

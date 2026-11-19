@@ -20,12 +20,16 @@ concurrency:
 jobs:
   # Named apart from check.yml's verify job, whose "verify / verify" is the required
   # status check, so a failure here alone cannot block a pull request.
+  # A pull request gets the same checks from check.yml, so here they run only
+  # before a deployment.
   verify:
     name: pages verify
+    if: github.event_name != 'pull_request'
     uses: ./.github/workflows/verify.yml
 
+  # The export does not wait for verify: nothing is published until deploy,
+  # which needs both, so the two run side by side.
   build:
-    needs: verify
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -51,7 +55,7 @@ jobs:
   # Only main is published, also when the workflow is run by hand on another branch.
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    needs: build
+    needs: [verify, build]
     runs-on: ubuntu-latest
     # A Pages deploy usually finishes within two minutes, but Pages sometimes stalls in
     # syncing_files for longer than the ten minutes that deploy-pages allows (its timeout

@@ -6,6 +6,8 @@ All notable changes to this project are documented in this file. The format is b
 
 ### Changed
 
+- Gozen v0.26.0 (from v0.15.0): the player gains a text size setting, can be added to a phone's home screen from the browser, asks to turn a phone held the other way, and keeps the autosave when the page is hidden. Go 1.26.11, which gozen v0.26.0 requires, is the minimum to build the game.
+- CI scans the Go modules in go.mod with osv-scanner and the commits with gitleaks on every pull request and push to main.
 - CI scans the repository with Trivy on every pull request (Trivy covers dependency vulnerabilities, committed secrets and misconfigurations, and also runs daily). Workflow actions are recorded in `.github/workflows/actions.lock`, which CI verifies against the pinned commits.
 
 ## [0.1.2] - 2026-10-28
