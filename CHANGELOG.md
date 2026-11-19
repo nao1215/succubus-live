@@ -4,6 +4,8 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-11-19
+
 ### Fixed
 
 - The streamers no longer answer a comment about a word that is only hidden in it: `やらせてもらった` is not Mora's name, `エラー出た` is not Ella's, `heads or tails` is no speedrun (RTA), `we'll meet again` is no talk of LLMs, and `本当は17歳ですよね` is not the question `本当？`. Words in Latin letters, and short words whose long-vowel mark or punctuation tells them apart (モーラ, 本当？, ブーツ), are matched in the comment as written, so they no longer form across spaces or out of other words. English phrases such as `virgin olive oil`, `chicken wings` and `I'm 15 minutes late` no longer reach the reactions their exceptions are there to keep them out of.
