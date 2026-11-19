@@ -4,6 +4,11 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+### Fixed
+
+- The streamers no longer answer a short word that the comment only forms once katakana is read as hiragana or a long-vowel mark is dropped: `フルネーム` is not sleepy (ねむ), `ヨナ抜きも` is not an insult (キモ), `自分はゲーム` is not about hair (ハゲ), `たぶん` is not Nox's tabs, `ハンバーグ` is no bug, `ぬるすぎ` is not null, `マイナ保険証` is no miner, `ネタバレじゃん` and `れじすた？` are not Mora's checkout, and `ほんとに` is not the question `ほんと？`. Every Japanese word that folds into three characters or fewer is matched in the comment as written. Such a word written in hiragana or half-width katakana instead (`てすと` for `テスト`) no longer reaches it, as the regexes in `src/` never did.
+- `make compare` now finds 2 differences from kwtest's regexes instead of 30, and `tools/compare-baseline.tsv` says why each one left is accepted.
+
 ## [0.1.4] - 2026-11-19
 
 ### Fixed
