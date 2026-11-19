@@ -270,20 +270,27 @@ def as_written(w):
     """Whether a word has to be matched in the comment as written (gozen's exact) rather than folded.
 
     gozen folds the comment before matching a normal word: spaces and punctuation go, so
-    "heads or tails" holds "rta" and "we'll meet" holds "llm", and the long-vowel mark goes,
-    so モーラ is もら in やらせてもらった. The regexes in src/ (JavaScript, i flag) see the
-    comment as written, so a word made of Latin letters, and a short word that folding
-    shortens (モーラ, 本当？ to 本当), is matched as written, ignoring only case.
+    "heads or tails" holds "rta" and "we'll meet" holds "llm"; the long-vowel mark goes,
+    so モーラ is もら in やらせてもらった and ハンバーグ holds ばぐ; and katakana becomes
+    hiragana, so フルネーム holds ねむ, たぶん holds タブ and 自分はゲーム holds ハゲ. The
+    regexes in src/ (JavaScript, i flag) see the comment as written, so a word made of
+    Latin letters, and a short Japanese word (short_ja), is matched as written, ignoring
+    only case. A longer word stays folded: it rarely forms inside other words, and folding
+    lets it match other spellings (まいくろさーびす for マイクロサービス).
     """
     if w.isascii():
         return any(c.isalpha() for c in w)
-    return short_ja(w) and len(norm(w)) < len(w)
+    return short_ja(w)
+
+
+SHORT_JA = 3  # The longest folded Japanese word that is matched as written (ほんと？ and マイナー fold into three)
 
 
 def short_ja(w):
-    """A word that folds into two characters or fewer, not all of them Latin letters or digits."""
+    """A word that folds into SHORT_JA characters or fewer, not all of them Latin letters or digits
+    (ｗｗ and ８８８ fold into ASCII and stay folded, so that www still holds ｗｗ)."""
     n = norm(w)
-    return len(n) <= 2 and not n.isascii()
+    return len(n) <= SHORT_JA and not n.isascii()
 
 
 def expand(pat):
@@ -307,12 +314,9 @@ def expand(pat):
                 excepts.append(b + w)
             for a in ahead:
                 excepts.append(w + a)
-    # An except word that folds into a short Japanese word of the tag (エラー for the name
-    # エラ(?!ー)) would cancel every occurrence of it, so that word is matched as written
-    # instead, where the except word still tells them apart. Any other except word that folds
-    # into a folded word is left out below, as before.
-    clash = {norm(e) for e in excepts if e.lower() not in {w.lower() for w, _ in words}}
-    words = [(w, EXACT if m == FOLDED and norm(w) in clash and short_ja(w) else m) for w, m in words]
+    # A short word is matched as written, so an except word that folds into it (エラー for the
+    # name エラ(?!ー)) still tells them apart. An except word that folds into a folded word
+    # would cancel every occurrence of it, so it is left out below.
     seen, ws = set(), []
     for w, m in words:
         key = (norm(w) if m == FOLDED else w.lower(), m)
@@ -938,16 +942,25 @@ def hits(entry, raw):
 LEX_RUNS = {}  # id(entry) -> (entry, words, folded excepts, lowered excepts); the entry is kept so its id is not reused
 
 
+# Why a disagreement in the baseline is accepted, by comment (written above it by --write-baseline).
+ACCEPTED = {
+    'AIに仕事取られた': "gozen's whole word needs a neighbour that is no letter, and Japanese is a letter to it,"
+                       ' so the regex \\bAI\\b (whose \\b is ASCII) finds AIに and the whole word AI does not;'
+                       ' gozen has no word boundary of ASCII letters only to follow it',
+    'はじめまして。まいくろさーびす？': 'the game is right: マイクロサービス is long enough to stay folded and matches'
+                                       ' the hiragana spelling, which the regex does not list',
+}
+
+
 def compare(src, baseline=None, write_baseline=False):
     """Print where the regexes in src/ and the built lexicon disagree; with baseline, check them against it.
 
     The lexicon is what the game matches comments with (gozen folds the comment and the words
     with react.Normalize), and tools/kwtest.py tests the regexes as JavaScript sees them, so a
     disagreement is a comment that kwtest's verdict does not hold for in the game. Some are known
-    and accepted (gozen folds the katakana of フルネーム into ねむ, and needs a non-letter next to
-    a whole word, so \\bAI\\b misses AIに); baseline lists them, one
-    "person, comment, regex verdict, lexicon verdict" per line, tab separated. Returns the number
-    of disagreements, or with baseline the number of lines that differ from it.
+    and accepted (ACCEPTED); baseline lists them, one "person, comment, regex verdict, lexicon
+    verdict" per line, tab separated, each group after a "#" line with the reason it is accepted.
+    Returns the number of disagreements, or with baseline the number of lines that differ from it.
     """
     sys.dont_write_bytecode = True  # 試作のフォルダに何も書かない
     sys.path.insert(0, str(src / 'tools'))
@@ -980,10 +993,18 @@ def compare(src, baseline=None, write_baseline=False):
     if baseline is None:
         return bad
     if write_baseline:
-        baseline.write_text(''.join(f'{line}\n' for line in found), encoding='utf-8')
+        out, said = [], set()
+        for line in found:
+            why = ACCEPTED.get(line.split('\t')[1])
+            if why and why not in said:
+                said.add(why)
+                out.append(f'# {why}')
+            out.append(line)
+        baseline.write_text(''.join(f'{line}\n' for line in out), encoding='utf-8')
         print(f'wrote {len(found)} disagreements to {baseline}')
         return 0
     known = baseline.read_text(encoding='utf-8').splitlines() if baseline.exists() else []
+    known = [line for line in known if line and not line.startswith('#')]  # "#" lines give the reasons
     new = [line for line in found if line not in set(known)]
     gone = [line for line in known if line not in set(found)]
     for line in new:
