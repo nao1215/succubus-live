@@ -20,3 +20,25 @@ concurrency:
 jobs:
   verify:
     uses: ./.github/workflows/verify.yml
+
+  # Differential test of the comment reactions: tools/kwtest.py checks the regexes in src/ the
+  # way JavaScript reads them, while the game matches the lexicon tools/import_stream.py builds
+  # from them, after gozen folds the comment (react.Normalize). make compare runs every
+  # example comment through both and fails on a disagreement that tools/compare-baseline.tsv
+  # does not list. It takes a few minutes, so it runs beside verify.
+  compare:
+    name: compare reactions
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install PyYAML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-yaml
+
+      - name: make compare
+        run: make compare

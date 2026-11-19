@@ -5,7 +5,8 @@ version: 'v0.0.3'
 workflows:
     '.github/workflows/actions-lock.yml':
         - 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
-    '.github/workflows/check.yml': []
+    '.github/workflows/check.yml':
+        - 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
     '.github/workflows/codeql.yml':
         - 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
         - 'github/codeql-action@33d7b85da1a04171e211befe2c739303b9a4c066'
