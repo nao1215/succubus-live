@@ -189,7 +189,7 @@ def episode(src, host, where):
 class Rx:
     """試作の反応の正規表現（使っている範囲だけ）を、語の並びに開く。
 
-    words: [(語, whole)]  whole は前後が \\b の英字の語
+    words: [(word, mode)]  mode is WHOLE (a Latin word with \\b on both sides), EXACT (matched in the comment as written) or FOLDED
     excepts: 否定の先読み・後読みを語に付けた、打ち消す語
     """
 
@@ -263,8 +263,31 @@ def strings(items):
     return [''.join(p) for p in itertools.product(*parts)]
 
 
+WHOLE, EXACT, FOLDED = 'whole', 'exact', ''  # how gozen matches a lexicon word (lexEntry in gozen's react/book.go)
+
+
+def as_written(w):
+    """Whether a word has to be matched in the comment as written (gozen's exact) rather than folded.
+
+    gozen folds the comment before matching a normal word: spaces and punctuation go, so
+    "heads or tails" holds "rta" and "we'll meet" holds "llm", and the long-vowel mark goes,
+    so モーラ is もら in やらせてもらった. The regexes in src/ (JavaScript, i flag) see the
+    comment as written, so a word made of Latin letters, and a short word that folding
+    shortens (モーラ, 本当？ to 本当), is matched as written, ignoring only case.
+    """
+    if w.isascii():
+        return any(c.isalpha() for c in w)
+    return short_ja(w) and len(norm(w)) < len(w)
+
+
+def short_ja(w):
+    """A word that folds into two characters or fewer, not all of them Latin letters or digits."""
+    n = norm(w)
+    return len(n) <= 2 and not n.isascii()
+
+
 def expand(pat):
-    """正規表現ひとつを (words, excepts) に。"""
+    """One regex as (words, excepts); words is [(word, WHOLE / EXACT / FOLDED)]."""
     words, excepts = [], []
     for alt in Rx(pat).alts():
         bare = [it for it in alt if it[0] not in ('behind', 'ahead')]
@@ -278,21 +301,30 @@ def expand(pat):
         # 前だけ \b（\btoddler）は複数形などを落とさないよう部分一致のまま。後ろに \b があれば語として
         for w in strings(core):
             # C++ や 0.1 は正規化で短くなり、何にでも当たるので語として
-            words.append((w, trail or (len(norm(w)) < 3 and w.isascii())))
+            whole = trail or (len(norm(w)) < 3 and w.isascii())
+            words.append((w, WHOLE if whole else EXACT if as_written(w) else FOLDED))
             for b in behind:
                 excepts.append(b + w)
             for a in ahead:
                 excepts.append(w + a)
+    # An except word that folds into a short Japanese word of the tag (エラー for the name
+    # エラ(?!ー)) would cancel every occurrence of it, so that word is matched as written
+    # instead, where the except word still tells them apart. Any other except word that folds
+    # into a folded word is left out below, as before.
+    clash = {norm(e) for e in excepts if e.lower() not in {w.lower() for w, _ in words}}
+    words = [(w, EXACT if m == FOLDED and norm(w) in clash and short_ja(w) else m) for w, m in words]
     seen, ws = set(), []
-    for w, wh in words:
-        key = (w.lower() if wh else norm(w), wh)
+    for w, m in words:
+        key = (norm(w) if m == FOLDED else w.lower(), m)
         if key not in seen:
             seen.add(key)
-            ws.append((w, wh))
-    # 正規化で語と同じになる打ち消し（エラ(?!ー) の「エラー」）は、語ごと消してしまうので書かない
-    plain = {norm(w) for w, wh in ws}
-    ex = sorted({norm(e) for e in excepts} - plain)
-    return ws, ex
+            ws.append((w, m))
+    # gozen folds an except word for the folded words and only lowers it for the others, so
+    # one that holds a word matched as written is written as in the regex, the rest folded.
+    folded = {norm(w) for w, m in ws if m == FOLDED}
+    written = [w.lower() for w, m in ws if m != FOLDED]
+    ex = {e.lower() if any(w in e.lower() for w in written) else norm(e) for e in excepts if norm(e) not in folded}
+    return ws, sorted(ex)
 
 
 def norm(s):
@@ -317,7 +349,7 @@ def norm(s):
 
 
 def lex_entry(words, excepts):
-    ws = [{'word': w, 'whole': True} if wh else w for w, wh in words]
+    ws = [{'word': w, m: True} if m != FOLDED else w for w, m in words]
     return {'words': ws, 'except': excepts} if excepts else ws
 
 
@@ -871,32 +903,39 @@ def spans(sub, text):
         i = text.find(sub, i + 1)
 
 
-def hits(entry, raw):
-    """作った語彙の一項目が、コメントに当たるか（gozen の本の照合を真似る）。
+def edge(ch):
+    """gozen's word boundary for a whole word: no letter or digit (unicode.IsLetter, IsDigit)."""
+    c = unicodedata.category(ch)
+    return c[0] != 'L' and c != 'Nd'
 
-    打ち消しは「語の出現が打ち消す語の出現の中にあれば数えない」として真似る。
-    """
-    words, ex = (entry['words'], entry['except']) if isinstance(entry, dict) else (entry, [])
-    n = norm(raw)
-    blocked = None  # 打ち消しの範囲。語が見つかったときだけ求める（minor の打ち消しは数千あるので）
 
-    def covered():
-        nonlocal blocked
-        if blocked is None:
-            blocked = set()
-            for e in ex:
-                for a, b in spans(e, n):
-                    blocked.update(range(a, b))
-        return blocked
-    for w in words:
-        if isinstance(w, dict):
-            if re.search(r'\b' + re.escape(w['word'].lower()) + r'\b', raw.lower(), re.ASCII) and not any(norm(w['word']) in e and e in n for e in ex):
-                return True
+def occurs(text, word, excepts, whole):
+    """gozen's occurs: text holds word somewhere not inside an occurrence of an except word,
+    and, when whole, with no letter or digit right before or after it."""
+    for at, end in spans(word, text):
+        if whole and not ((at == 0 or edge(text[at - 1])) and (end == len(text) or edge(text[end]))):
             continue
-        for a, b in spans(norm(w), n):
-            if not set(range(a, b)) <= covered():
-                return True
+        if not any(a <= at and end <= b for x in excepts for a, b in spans(x, text)):
+            return True
     return False
+
+
+def hits(entry, raw):
+    """Whether one lexicon entry finds the comment, as gozen's react.Mind.match does: a folded
+    word in the folded comment against the folded except words, an exact or whole word in the
+    comment as written, lowered, against the lowered except words."""
+    key = id(entry)
+    if key not in LEX_RUNS:  # gozen prepares these once per mind (react.New)
+        words, ex = (entry['words'], entry['except']) if isinstance(entry, dict) else (entry, [])
+        run = [(w['word'].lower(), True, bool(w.get('whole'))) if isinstance(w, dict) and (w.get('exact') or w.get('whole'))
+               else (norm(w if isinstance(w, str) else w['word']), False, False) for w in words]
+        LEX_RUNS[key] = (entry, run, [norm(e) for e in ex], [e.lower() for e in ex])
+    _, run, ex_norm, ex_low = LEX_RUNS[key]
+    n, low = norm(raw), raw.lower()
+    return any(occurs(low, w, ex_low, whole) if exact else occurs(n, w, ex_norm, False) for w, exact, whole in run)
+
+
+LEX_RUNS = {}  # id(entry) -> (entry, words, folded excepts, lowered excepts); the entry is kept so its id is not reused
 
 
 def compare(src, baseline=None, write_baseline=False):
@@ -905,7 +944,8 @@ def compare(src, baseline=None, write_baseline=False):
     The lexicon is what the game matches comments with (gozen folds the comment and the words
     with react.Normalize), and tools/kwtest.py tests the regexes as JavaScript sees them, so a
     disagreement is a comment that kwtest's verdict does not hold for in the game. Some are known
-    and accepted (gozen folds エラー and エラ to the same text); baseline lists them, one
+    and accepted (gozen folds the katakana of フルネーム into ねむ, and needs a non-letter next to
+    a whole word, so \\bAI\\b misses AIに); baseline lists them, one
     "person, comment, regex verdict, lexicon verdict" per line, tab separated. Returns the number
     of disagreements, or with baseline the number of lines that differ from it.
     """
