@@ -12,9 +12,9 @@
 
 ![Ella on her stream, with a tip pinned in the chat](./doc/img/stream.jpg)
 
-Succubus Live is a chat-stream game for web browsers, Windows, macOS and Linux: six succubus VTubers are always live, and you watch, comment and tip, in Japanese or English. Why succubi? I had been making a strategy game with succubi, but it grew too big to finish, so I took its streamers out and finished them as a game of their own. It is a project for learning how to make a game with AI, made with [gozen](https://github.com/nao1215/gozen).
+Succubus Live is a chat-stream game for web browsers, Windows, macOS and Linux. Six succubus VTubers are always live, and you watch, comment and tip in Japanese or English. Why succubi? I had been making a strategy game with succubi, but it grew too big to finish, so I took its streamers out and finished them as a game of their own. It is a project for learning how to make a game with AI, made with [gozen](https://github.com/nao1215/gozen).
 
-<p align="center"><b>▶ <a href="https://nao1215.github.io/succubus-live/">Watch in your browser</a></b> — no download, on PC or your phone · or get a zip for your desktop from <a href="https://github.com/nao1215/succubus-live/releases">the releases</a></p>
+<p align="center"><a href="https://nao1215.github.io/succubus-live/">Watch in your browser</a> on a PC or a phone without downloading anything, or get a desktop zip from <a href="https://github.com/nao1215/succubus-live/releases">the releases</a>.</p>
 
 <p align="center"><img src="./doc/img/demo.gif" width="720" alt="opening a stream, typing a comment, sending a tip, full screen, and moving to another stream"></p>
 
@@ -61,7 +61,7 @@ The Japanese lines are voiced with Irodori-TTS and the English ones with Kokoro-
 | [gozen check](./Makefile) | Broken references, expressions, assets and text layout in `game/` |
 | [Committed game/](./.github/workflows/verify.yml) | A `game/` that differs from what `src/` and `assets/` build |
 
-`make check` runs the scripts' checks, writes `game/` and runs gozen check; `make compare` runs the differential test (a few minutes); CI runs both on every pull request.
+`make check` runs the scripts' checks, writes `game/` and runs gozen check, and `make compare` runs the differential test (a few minutes). CI runs both on every pull request.
 
 ## Contributing
 
